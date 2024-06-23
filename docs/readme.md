@@ -1,8 +1,6 @@
 ### docs
 
 
-
-### References
 VistA Document Library  
 	https://www.va.gov/vdl  
 	
