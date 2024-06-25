@@ -1,8 +1,9 @@
 ### docs
 
-CPRS. 
+CPRS  
  - userguide. 
- - userguide-readonly
+ - userguide-ro
+ - techguide
 
 
 
