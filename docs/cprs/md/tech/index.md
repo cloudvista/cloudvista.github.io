@@ -1,16 +1,46 @@
 # Technical Manual
+CPRS: GUI Version  
+April 2024
 
-### CPRS: GUI Version
+Auto-Summary
+Auto-Summary Summary
+```text
+Introduction
+General Application Settings
+Personal Preferences (GUI)
+Patient Selection Settings
+Graphing Configuration
+Remote Data View Configuration
+Overview of Clinical Indicators Data Capture
+SNOMED to Describe Problems in CPRS
+Cover Sheet Settings
+Problem Tab Settings
+Medications Tab Settings
+Orders Tab Settings
+Notes Tab
+Consults Tab Settings
+Discharge Summary Tab Settings
+Labs Tab Settings
+Reports tab
+Printing
+Appendix A - RPCs
+Appendix B - New Fields
+Appendix C - Parameters by Function
+Appendix D - Parameters By Name
+Appendix E - Creating CPRS Extension COM Object in Delphi
+Appendix F - Interface Specifications
+Appendix G - Accessibility
+Appendix H – USING NEWPERS DEBUGGER
+Glossary
+Index
+```
 
-### April 2024
-
-# 
 
 [**Introduction** ](#_tjcfya)**1**  
 [What is CPRS? 1](#what-is-cprs)  
 [Using CPRS Documentation 1](#using-cprs-documentation)  
 [*Related Manuals 1*](#related-manuals)  
-[*World Wide Web 1*](#world-wide-web)  
+[*World Wide Web 1*](#world-wide-web) 
 [CPRS GUI Interface 1](#cprs-gui-interface)  
 [The Organization of this Manual 1](#the-organization-of-this-manual)  
 [**General Application Settings** ](#_3dizym3)**3**  

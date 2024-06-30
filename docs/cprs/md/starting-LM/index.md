@@ -1,8 +1,8 @@
 # Getting Started
+CPRS: List Manager Version  
+March 2005
 
-# CPRS: List Manager Version
-
-# March 2005
+***
 
 **INTRODUCTION 6**
 

@@ -1,8 +1,6 @@
 # Setup Guide
-
-# CPRS: GUI Version
-
-# June 2023
+CPRS: GUI Version  
+June 2023
 
 [**I. Introduction 1**](#i-introduction)  
 [**Purpose of CPRS Setup Guide 1**](#purpose-of-cprs-setup-guide)  

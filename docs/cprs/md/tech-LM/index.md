@@ -1,8 +1,38 @@
-# **Technical Manual**
-
-# CPRS: List Manager Version
-
+# Technical Manual
+CPRS: List Manager Version  
 December 2023
+
+```text
+Introduction
+Implementation & Maintenance
+Exported Routines
+Menus and Options
+Creating and Updating Orders
+Ordering Reports and Utilities
+Copy/Paste Reports and Parameters
+HIPAA Code Set Versioning (CSV)
+CPRS Files
+Cross-References
+External Relations
+CPRS Remote Procedure Calls (RPCs)
+Package-Wide Variables
+How to Get Online Documentation
+Glossary
+Troubleshooting & Helpful Hints
+Appendix A: CPRS Package Security
+Appendix B: Electronic Signature
+Appendix C: How Notifications Work - Technical Overview
+Appendix D: Notification Parameters in CPRS 1 – Technical Overview
+Appendix E: Exported (Default) Values for Notification Parameters
+Appendix F: Order Check
+Appendix G: Creating, Editing, and Viewing Release Events
+Appendix H: Automatically Discontinuing Orders (Auto-DC Rules)
+Appendix I: Event Delayed Order FAQ
+Appendix J: CPRS Parameters vs. OE/RR Parameters: File Locations
+Appendix K: Tracking Completed Text (Nursing) Orders
+Index
+'''
+
 
 [**1.**](#introduction) <#introduction>**Introduction 25**  
 [Purpose and Contents of This Manual 25](#purpose-and-contents-of-this-manual)  
