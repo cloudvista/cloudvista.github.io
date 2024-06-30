@@ -1,8 +1,28 @@
 # User Guide
+CPRS: Read-Only Version  
+December 2023  
 
-# CPRS: Read-Only Version
+### Outline
+```text
+What is CPRS Read-Only ?
+Online Help
+CPRS Graphical User Interface (GUI)
+The Organization of this Manual
+Patient Inquiry Button
+Primary Care Information
+The Reminders Button
+Postings (CWAD)
+Setting up Reports Options
+Viewing a Report
+Available Reports on the Reports Tab
+Sorting a Report (Table View)
+Printing a Report
+Copying Data from a Report
+Viewing a Health Summary
+Remote Data
+```
 
-December 2023
+### Content
 
 [**Introduction** ](#_23ckvvd)**4**  
 [What is CPRS Read-Only ? 4](#what-is-cprs-read-only-)  

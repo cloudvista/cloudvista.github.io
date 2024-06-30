@@ -2,8 +2,7 @@
 CPRS: GUI Version  
 April 2024
 
-Auto-Summary
-Auto-Summary Summary
+### Outline
 ```text
 Introduction
 General Application Settings
@@ -34,7 +33,7 @@ Appendix H – USING NEWPERS DEBUGGER
 Glossary
 Index
 ```
-
+### Content
 
 [**Introduction** ](#_tjcfya)**1**  
 [What is CPRS? 1](#what-is-cprs)  

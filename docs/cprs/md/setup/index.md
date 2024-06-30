@@ -2,6 +2,32 @@
 CPRS: GUI Version  
 June 2023
 
+### Outline
+```text
+Purpose of CPRS Setup Guide
+Overview of CPRS
+Differences between OE/RR 2.5 and CPRS
+CPRS Competency Assessment
+A. OE/RR-CPRS Clean-up
+B. CPRS Configuration (Clinical Coordinator)
+C. CPRS Configuration (IRM)
+D. Other CPRS Configuration
+Parameters for Packages Related to CPRS
+A. Adverse Reaction Tracking (ART)
+B. Patient Movement
+C. Consult/Request Tracking
+D. Dietetics
+E. Health Summary
+F. Laboratory
+G. Pharmacy Packages
+H. Problem List
+I. Radiology/Nuclear Medicine
+J. Text Integration Utilities (TIU)
+VA and VISTA Acronyms
+```
+
+### Contents
+
 [**I. Introduction 1**](#i-introduction)  
 [**Purpose of CPRS Setup Guide 1**](#purpose-of-cprs-setup-guide)  
 [**Overview of CPRS 2**](#overview-of-cprs)  

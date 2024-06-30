@@ -1,6 +1,184 @@
 # User Guide
-### CPRS: GUI Version
-#### December 2023
+CPRS: GUI Version  
+December 2023
+
+
+### Outline
+```text
+Introduction
+General Application Settings
+Personal Preferences (GUI)
+Patient Selection Settings
+Graphing Configuration
+Remote Data View Configuration
+Overview of Clinical Indicators Data Capture
+SNOMED to Describe Problems in CPRS
+Cover Sheet Settings
+Problem Tab Settings
+Medications Tab Settings
+Orders Tab Settings
+Notes Tab
+Consults Tab Settings
+Discharge Summary Tab Settings
+Labs Tab Settings
+Reports tab
+Printing
+Appendix A - RPCs
+Appendix B - New Fields
+Appendix C - Parameters by Function
+Appendix D - Parameters By Name
+Appendix E - Creating CPRS Extension COM Object in Delphi
+Appendix F - Interface Specifications
+Appendix G - Accessibility
+Appendix H – USING NEWPERS DEBUGGER
+Glossary
+Index
+```
+
+### In this document
+```text
+What is CPRS?
+Using CPRS Documentation
+CPRS Graphical User Interface (GUI)
+The Organization of this Manual
+Entering Dates and Times into CPRS
+National Provider Identifier (NPI) Display in CPRS
+How CPRS Sorts Names
+Patient Selection Messages
+Patient Lists
+Notifications
+Refreshing a Patient Record
+Cover Sheet Displays
+CPRS Time Out
+Clinical Context Management (CCOW) Icon
+Patient Inquiry Button
+Primary Care Information
+Other than Honorable (OTH)
+Patient Insurance and MyHealtheVet Information
+Presumptive Psychosis
+Prescription Drug-Monitoring Program (PDMP)
+Patient Record Flags
+Remote Data
+The Reminders Button
+Postings (CWADPL)
+COVID-19 Identifier/New EHR Banner
+CPRS Graphing
+Using CPRS Graphing
+Electronic Signatures
+Digital Signatures
+Understanding Service Connection and Treatment Factors
+Review / Sign Changes Dialog
+Sign Selected Orders Command
+Signing Orders before Selecting a New Patient or Exiting CPRS
+Criteria Used to Determine if the Service Connection and Treatment Factor Buttons are Displayed in the Review/Sign Changes Dialog
+The Sign Note Now and Sign Discharge Summary Now Commands
+Add to Signature List
+Viewing Unsigned Notes or Discharge Summaries
+Identify Additional Signers
+Printing Single Items
+Printing Multiple Notes, Consults, or Discharge Summaries
+Lab Test Information
+Options
+SMART Features
+Potentially Unsafe Medications or Exposures (Teratogens)
+Navigating a Patient Chart
+Additional Patient Information
+Entering or Changing Encounter Information
+Viewing Clinical Reminders
+Viewing and Entering Vitals
+How CPRS Displays Vitals
+Recording Vitals
+Assessing, Entering, and Reviewing Allergies/Adverse Reactions
+Reviewing and Creating Postings
+Service-Connected Conditions
+Coding Systems Used to Represent Problems
+Customizing the Problems List
+Adding a New Problem
+Annotating a Problem
+Changing a Problem
+Making a Problem Inactive
+Removing a Problem
+Verifying a Problem
+Medication Details
+Medication Administration History
+Other Medication Actions (popup menu)
+Indications
+Order Checks
+Sorting the Medications View
+Ordering Inpatient Medications
+Ordering Inpatient Medications for Outpatients
+Outpatient Medications
+Documenting Non-VA Medications
+Release Hold
+Hold Orders
+Park a Prescription
+Renewing Orders
+Discontinuing Orders
+Changing Orders
+Viewing a Medication Order
+Transfer Outpatient Meds Order to Inpatient
+Transfer Inpatient Meds Order to Outpatient
+Refilling a Medication
+Using the Unified Action Profile View
+Using the Discharge Meds View
+Viewing Orders on the Orders Tab
+Writing Orders
+Entering a Fine Needle Aspirate Lab Test
+Entering a General Fluid Lab Test
+Text Only Orders
+Event-Delayed Orders
+Notifying a User when Order Results Are Available
+Flagging an Order
+Unflagging an Order
+Overview of CPRS/POE Functionality
+Group Notes
+Icons on the Notes Tab
+Viewing Progress Notes
+Customizing the Notes Tab
+Additional Customization
+Improving the Tree View Custom View Display
+Searching for Text (Within Current View)
+Setting a Default View
+Creating and Editing Progress Notes
+Encounter Information
+Encounter Form Data
+Clinical Reminders
+Reminders Processing
+Document Templates
+Locking Consult Templates
+Creating Personal Document Templates
+Template Fields
+Changing the View on the Consults tab
+Ordering Consults
+Viewing Consults
+Tracking Consult Requests
+Complete a Consult or Clinical Procedure the Consults Tab
+Ordering a New Consult from the Consults Tab
+Requesting a New Procedure from the Consults Tab
+HCP RAS Consult Communication Error Message
+COMMUNITY CARE Direct Schedule or Administrative Consults
+Unique Consult ID (UCID) Display
+Customizing the Surgery Tab
+Signing a Surgery Report
+Creating Surgery Report Addenda
+Changing Views on the Discharge Summaries Tab
+Writing Discharge Summaries
+Display of Laboratory Test Results
+Changing Views on the Labs Tab
+Viewing a Report
+Available Reports on the Reports Tab
+Sorting a Report (Table View)
+Graphing a Report
+Printing a Report
+Copying Data from a Report
+Viewing a Health Summary
+Changing the Font Size
+Changing the Window Background Color
+Keyboard Shortcuts for Common CPRS Commands
+Using JAWS with CPRS
+```
+
+#### Contents
 
 [**Introduction 1**](#introduction)  
 [**What is CPRS? 1**](#what-is-cprs)  

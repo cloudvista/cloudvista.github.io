@@ -2,6 +2,8 @@
 CPRS: List Manager Version  
 December 2023
 
+
+#### Outline
 ```text
 Introduction
 Implementation & Maintenance
@@ -32,6 +34,8 @@ Appendix J: CPRS Parameters vs. OE/RR Parameters: File Locations
 Appendix K: Tracking Completed Text (Nursing) Orders
 Index
 '''
+
+#### Contents
 
 
 [**1.**](#introduction) <#introduction>**Introduction 25**  

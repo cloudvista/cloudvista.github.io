@@ -1,8 +1,8 @@
-##Installation Guide
-
-CPRS: GUI Version
-
+# Installation Guide
+CPRS: GUI Version  
 April 2007
+
+### Content
 
 [**Introduction 6**](#introduction)  
 [**Pre-Install Instructions 7**](#pre-install-instructions)

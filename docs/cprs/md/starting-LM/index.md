@@ -2,92 +2,98 @@
 CPRS: List Manager Version  
 March 2005
 
-***
+
+### Outline
+```text
+What is CPRS?
+Using CPRS Documentation
+Conventions in This Manual
+Notifications
+CPRS and the List Manager User Interface
+List Manager Conventions
+Entering CPRS
+Selecting a Patient
+Actions
+More Actions
+Alerts, Allergies, and Patient Postings
+Reviewing orders
+Change View
+Order Screen Actions
+Order Actions
+Quick Orders
+Order Sets
+Reviewing and Signing New Orders
+Adding New Orders
+Patient Movement
+Ordering Diets
+Overview of New CPRS/POE Functionality
+Ordering Outpatient Medications with a Simple Dose
+Ordering Inpatient Medications with a Simple Dose
+Ordering Inpatient Medications with a Complex Dose
+Ordering IV Fluids
+Ordering Imaging or Radiology Exams
+Ordering Consults & Procedures
+Meds Change View
+Lab Change View
+Change View
+Results Reporting
+Personal Preferences Menu
+GUI Cover Sheet Display Parameters
+Notification Mgmt Menu Options
+Order Checking Mgmt Menu
+Personal Patient List Menu
+Patient Selection Preference Menu
+Display Patients Linked to Me via Teams
+Display My Teams
+```
+
+### Content
 
 **INTRODUCTION 6**
-
 WHAT IS CPRS? 6
-
 Using CPRS Documentation 6
-
 Conventions in This Manual 7
-
 Notifications 9
-
 CPRS and the List Manager User Interface 9
-
 LIST MANAGER CONVENTIONS 10  
 **USING CPRS 11**
-
 ENTERING CPRS 11
-
 Selecting a Patient 11
-
 **THE COVER SHEET 12**
-
 Actions 12
-
 More Actions 13
-
 Alerts, Allergies, and Patient Postings 13
-
 Allergies/Alerts Detailed Display 14
-
 **CHART CONTENTS 15**
-
 **PROBLEMS 16**
-
 **NOTES 19**
-
 **ORDERS 23**
-
 Reviewing orders 23
-
 Change View 24
-
 Order Screen Actions 26
-
 Order Actions 27
-
 Add New Orders 28
-
 Event-Delayed Orders 30
-
 *Placing an Event-Delayed Order 31*
-
 *Changing the Release Event of an Existing Order 31*
-
 *Removing the Release Event from an Existing Order 32*
-
 *Manually Releasing Event-Delayed Orders 32*
-
 *Viewing Event Delayed Orders After they are Released 34*
-
 Quick Orders 34
-
 Order Sets 34
-
 Reviewing and Signing New Orders 35
-
 Ordering, by Service/Category 38
-
 Patient Movement 38
-
 ORDERING DIETS 39
-
 OVERVIEW OF NEW CPRS/POE FUNCTIONALITY 40
-
 ORDERING OUTPATIENT MEDICATIONS WITH A SIMPLE DOSE 41  
 ORDERING OUTPATIENT MEDICATIONS WITH COMPLEX DOSES 43  
 ORDERING INPATIENT MEDICATIONS WITH A SIMPLE DOSE 46  
 ORDERING INPATIENT MEDICATIONS WITH A COMPLEX DOSE 48  
 ORDERING IV FLUIDS 50
-
 ORDERING IMAGING OR RADIOLOGY EXAMS 51  
 ORDERING LABS 51
-
 ORDERING CONSULTS & PROCEDURES 51
-
 **MEDS 52**  
 [Meds Change View 54](#meds-change-view)  
 [**LABS 55**](#labs)  
@@ -113,18 +119,9 @@ ORDERING CONSULTS & PROCEDURES 51
 **APPENDIX: SCREEN ACTIONS 87**  
 [A](#_zu0gcz)[CTIONS AVAILABLE](#_zu0gcz)[,](#_zu0gcz) [BY TAB](#_zu0gcz) [87](#_zu0gcz)  
 [**INDEX 89**](#index)  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+
+
+
 **Introduction**
 
 ## What is CPRS?
@@ -133,7 +130,7 @@ The Computerized Patient Record System V. 1.0 (CPRS) is a Veterans Health Inform
 ***
 
 CPRS not only allows you to keep comprehensive patient records, it enables you to review and analyze the data gathered on any patient in a way that directly supports clinical decision-making.  
-***  
+ 
 ## Using CPRS Documentation
 
 **Related Manuals**
@@ -152,18 +149,12 @@ Intranet address: vista.med.va.gov/cprs/
 **First Time V***IST***A Users**
 
 If you are unfamiliar with this package or other Veterans Health Information Systems and Technology Architecture (**V***IST***A**) software applications, we recommend that you study the *User’s Guide to Computing.* This orientation guide is a comprehensive handbook for first-time users of any **V***IST***A** application to help you become familiar with basic computer terms and the components of a computer. It is reproduced and distributed periodically by the Kernel Development Group. To request a copy, contact your local Ination Resources Management Service (IRMS) staff.  
-***  
-***  
-***  
-***  
-***  
-***  
-***
+
 
 ## Conventions in This Manual
 
 **Option examples:** Menus and examples of computer dialogue that you see on the screen are shown in courier font in boxes:  
-***  
+ 
 **User responses:** User responses are shown here in **bold**, but do not appear bold on the screen. The bold part of the entry is the letter or letters that must be typed so that the computer can identify the response. In most cases, you need only enter the first few letters. This increases speed and accuracy.  
 ***
 
@@ -181,13 +172,7 @@ If you are unfamiliar with this package or other Veterans Health Information Sys
 
 **Defaults (//)** Defaults are responses provided to speed up your entry process. They are either the most common responses, the safest responses, or the previous response.  
 **Example:** Select Action: Quit//  
-***  
-***  
-***  
-***  
-***  
-***  
-***
+
 
 **Conventions, cont’d**  
 **Replace..With** If the default entry is longer than 20 characters, you will see the “Replace. With”  
@@ -220,37 +205,25 @@ Provider: Clinical Coordinator Replace **Co...** With **Nurse**
 
 s  
 \+ Indicates important information that the user should take note of.  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
 ## Notifications
 
 Notifications are important messages that alert providers to certain clinical events (for example, a critical lab value). Some notifications are for information only; others allow you to take follow-up action to the event that triggered the notification. They may also notify providers of conditions such as unsigned orders. Notifications are automatically deleted after being displayed or when a follow-up action is taken.  
 ***
 
 Notifications are retained for a predetermined amount of time (up to 30 days), after which they may be sent to another destination, such as your MailMan surrogate or your supervisor. Confer with your CAC to establish and set up these options. You can also confer with your CAC to select what types of notifications you will receive. Some notifications are mandatory, however, and cannot be disabled. See the Personal Preferences section in this manual for further information about notifications.  
-***  
+ 
 ## CPRS and the List Manager User Interface
 
 CPRS was built to run in both the Windows operating environment (usually referred to simply as Windows) and on terminals. The Windows version of CPRS is described in another manual. This manual describes the terminal, text-based version of CPRS.  
 If you are not already familiar with List Manager applications, this section will take you on a quick tour of the interface. If you are already familiar with the List Manager interface, you can skip to the next section, **Using CPRS**.  
 List Manager is designed to display a list of clinical items (based on criteria you set) that you perform various actions on. An example of a CPRS screen in List Manager format is shown here, with explanations of the various components on the screen.  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
+ 
 ***
 
 ## List Manager Conventions
@@ -266,11 +239,11 @@ List Manager is a tool designed so that a list of items can be presented to the 
 | List area      | (scrolling region) This area scrolls and displays the information that you can take action on.                                                                                                                                                                                                                                                                                                                                               |
 | Message window | This section displays a plus (+) sign, minus (-) sign, \>\> symbols, or informational text (i.e., Enter ?? for more actions). A plus sign means more information is available; enter it at the action prompt to “jump” forward a page; a minus sign “jumps” back a screen.; \> moves you to more information on the right; and \< moves you back to the left or main screen. Other allowable actions may be displayed in the message window. |
 | Action area    | A list of actions display in this area of the screen. If you enter double question marks (??) at the “Select Action(s)” prompt, you are shown a “hidden” list of additional actions that are available to you.                                                                                                                                                                                                                               |  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
 ## Entering CPRS
 
 You can take several routes to get into CPRS to enter orders and progress notes, review them, and display reports and results for individual patients. The route you choose depends on how your site has set up your menus, what your primary purpose is, and what seems most convenient to you.  
@@ -284,7 +257,7 @@ This Guide describes going through the CPRS Clinician Menu, which provides a mul
 
 When you enter the CPRS Clinician Menu, you will see this screen:  
 ![CPRS Clinician Menu](97259670e65c6f316674972c864a78a1.png)  
-***  
+ 
 ## Selecting a Patient
 
 The Patient Selection screen offers three methods for finding your patient:  
@@ -293,12 +266,12 @@ The Patient Selection screen offers three methods for finding your patient:
 -   Entering a name from a list (if you have one defined and set as your default,  
 -   Entering a patient’s name (or last initial + last 4 letters of SSN) at the Select Patient prompt, or  
 -   Entering FD (Find Patient), entering a ward or clinic name, then selecting a patient name from the list that appears.  
-***  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
+ 
 The Cover Sheet of the selected patient chart displays the patient’s name, SSN, date of birth, age, unit/location, allergies/adverse reactions, patient postings, vitals, immunizations, and service connection.  
 ***
 
@@ -306,7 +279,7 @@ The Cover Sheet of the selected patient chart displays the patient’s name, SSN
 
 -   **You may only have one patient chart open at any given time**  
 -   **Two users may not simultaneously take actions on orders for the same patient**![Cover Sheet with CWAD (Cautions, Warnings, Allergies, or Directives) label highlighted](6f61dc244bf0a709ccca783d63c270a6.png)  
-***  
+ 
 ## Actions
 
 Enter the display numbers of the items you wish to change or act on. A menu of available actions is then presented for selection. You can also choose the action first and then the item.  
@@ -315,15 +288,15 @@ Enter the display numbers of the items you wish to change or act on. A menu of a
 -   Enter CC to see a list of the other “pages” of the chart.  
 -   Enter SP to select a different patient.  
 -   Enter ?? to see a list of other actions available.  
-***  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
+ 
 ## More Actions  
 When you enter two question marks (??) at the prompt, the following (hidden) actions are displayed. They can also be used at any prompt.  
-***  
+ 
 ## Alerts, Allergies, and Patient Postings  
 You can access some patient information directly from the Cover Sheet, without going to other tabs.  
 ***
@@ -336,26 +309,14 @@ You can access some patient information directly from the Cover Sheet, without g
 -     
 From this screen, you can view a detailed display of any of these items, or you can record new allergies.  
 ![Cover Sheet showing alerts, allergies, and patient postings](63246ee3fad463ba17c88af8a89eb9f6.png)  
-***  
-***  
-***  
+ 
+ 
+ 
 **Allergies/Alerts Detailed Display**
 
 ![Allergies/Alerts Detailed Display](2f40b113a59136e760a6671cc7b6d0d2.png)  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***
+  
+
 
 # Chart Contents
 
@@ -372,11 +333,11 @@ When you choose most of these, the first thing you see is a list of current item
 
 **HINT**: To quickly jump through a series of screens, enter the names or abbreviations of the actions, separated by semi-colons. Example: CC;Orders;Meds.  
 ![Patient Chart Cover Sheet](8a47bdccd8195c5a0e48cd63e0b212cd.png)  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
 # Problems
 
 The Problems tab is used to document and track a patient’s health care problems. It provides you with a current and historical view of the patient’s problems across clinical specialties and it allows you to trace each identified problem through the **V***IST***A** system in terms of treatment, test results, and outcome. To go to the Problems screen, select the Problems tab at the bottom of the Chart Contents screen.  
@@ -395,11 +356,11 @@ In the Problems tab, you can change the display to see customized lists of probl
 
 **Hint:** Enter CC;P for a shortcut![Patient Chart Problems screen](b9d40c76fe7322e56a5a5581007cb55b.png)  
 1.  Choose Problems from the Chart Contents list.  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
 ***
 
 **Problems, cont’d**  
@@ -413,22 +374,16 @@ In the Problems tab, you can change the display to see customized lists of probl
 
 1.  To add a new problem, enter NW at the Select: Chart Contents: prompt, and then answer the prompts as shown in the example below:  
 ![Prompts displayed when selecting Chart Contents](5cde2d7e601a94fb7023392a85145551.png)  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
 **Problems, cont’d**![Problem List example continued](aeaa834a481c300ef926e134fcd22106.png)  
 **Note:** When you enter a new problem, CPRS will check to see if the code for that problem is active as of the date entered as part of Code Set Versioning (CSV). If not, it will ask you change the code for the problem before allowing the user to enter the problem.
 
 **Change View**  
 If you select Change View here, you can change the display to a different status; i.e., inactive problems or both inactive and active problems.![Change View screen](f6f5caba101f6a7099aad1fe9e1231a6.png)  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
 You can review, enter, sign, or edit progress notes for one patient at a time through the CPRS. To review, edit, or sign progress notes for multiple patients, use the Text Integration Utilities menu.  
 **To enter a Progress Note:**  
 1.  Go into the Clinician Menu and select OE for CPRS Clinician Menu.  
@@ -440,20 +395,14 @@ You can review, enter, sign, or edit progress notes for one patient at a time th
 
 ![Cover Sheet screen](60dc4a7ebe69828316ac49a32a54ea47.png)  
 6\. Choose Notes from the Chart Contents list.  
-***  
-***  
-***  
-***  
-***  
-***  
-***
+
 
 **Notes, cont’d**  
 1.  A list of notes appears (the default is to show Signed Notes).![Signed Notes screen displaying notes](08f91c43df2f4da6bae2b8413a01a1a2.png)  
-***  
+ 
 1.  Enter NW for Write New Note. Respond to the following prompts as appropriate.![Graphical user interface, text, application Description automatically generated](9a766f34465a2b57976087c39da59644.png)  
-***  
-***  
+ 
+ 
 ***
 
 **Notes, cont’d**
@@ -465,29 +414,17 @@ You can review, enter, sign, or edit progress notes for one patient at a time th
 10\. Select CV for Change View, to see all your unsigned notes.![Screen showing unsigned notes](2a154d9734a1dc4c7d7562380ae0f79f.png)
 
 11\. Enter the number of the note to be signed.![Screen showing number of notes to be signed](c32cf539868e7f5686d7203285285444.png)  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
 12\. The selected unsigned note and actions appear. Select Sign  
 ***
 
 ![Screen showing the selected unsigned note and available actions](6ca04b4764162696b97c2c427c7f4bff.png)  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+  
+ 
 ***
 
 # Orders  
@@ -496,11 +433,11 @@ From the Orders tab, you can review current orders for a patient and place new o
 
 ## Reviewing orders  
 1\. After selecting a patient, select the Chart Contents (CC) action.![Chart Contents screen](dd725066f515cc4089d913547bb267dd.png)  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
 **Orders, cont’d**  
 3\. The Active Orders screen for your patient is displayed.![Active Orders screen](2df5c2f7c6c108bd3b4fe7d913b44434.png)  
 **NOTE: +** in front of a Lab order indicates that this order will be done multiple times according to a selected schedule.
@@ -513,8 +450,8 @@ You can change the way orders are displayed by selecting Change View at the Acti
 **Short Format Example**
 
 This format doesn’t list the requestor or stop date.![Short Format example screen](b0cc0bbc3e95dc4b7f03ef58c8dc257c.png)  
-***  
-***  
+ 
+ 
 **Orders, cont’d**  
 ## Order Screen Actions
 
@@ -522,17 +459,11 @@ When you select an order (by entering the number of the order at the Select Acti
 ***
 
 **+** **NOTE:** This is a significant change from OE/RR, where the actions were visible at the bottom of the review screen before you selected an order.![Order Screen Actions](822af62ffab7191906d392fbd849c348.png)  
-***  
+ 
 These actions are described on the next page.  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
 ***
 
 **Orders, cont’d**  
@@ -554,11 +485,11 @@ These actions are described on the next page.
 | Alert Results                                                     | Allows you to (enter or view) alert results for an order.                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Copy                                                              | This is a shortcut that allows you to copy an order, rather than having to completely write a new order. This action is useful for when hospital policy requires that new orders be written periodically, or when orders are discontinued for ward transfers.                                                                                                                                                                                                                                                                        |
 | Print Labels Work Copies Service Copies Requisitions Chart Copies | When you select the Print action, it presents the types of printing allowed. You can print Labels or Requisitions. You can print a copy of all current orders, by service or Ward, using a pre-defined format. Each hospital can only have one format for Service Copies or Work Copies. These copies will normally be printed on a service printer. You can print a copy of all current orders that would appear on a patient’s chart, using a pre-defined format. **Each hospital can only** **have one format for Chart Copies.** |  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
 ***
 
 **Add New Orders**  
@@ -578,11 +509,11 @@ An event-delayed order is an order that is executed only after a predefined even
 ***
 
 A CAC defines the release events at your site. (For more information on defining release events, see Appendix G of the *CPRS List Manager Technical Manual* or the Event- Delayed Orders topic in the *CPRS GUI Technical Manual*). Once a CAC has defined a release event, you can write an order that will not execute until that release event occurs.  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
 NW Add New Orders CV Change View ... SP Select New Patient RV Review New Orders CC Chart Contents ... Q Close Patient Chart TD Delayed Orders
 
 Select: Chart Contents// Event-delayed orders for the Admit to Medicine release event appear on the Orders tab.  
@@ -623,8 +554,8 @@ Bedside \| 11:00
 1.  Tubefeeding: MAGNACAL FULL strength 2000\| CPRSPROV,T 03/00/02 actv  
 KCAL/QD \| 08:00  
 NW Add New Orders CV Change View ... SP Select New Patient RV Review New Orders CC Chart Contents ... Q Close Patient Chart TD Delayed Orders  
-***  
-***  
+ 
+ 
 ***
 
 1.  Select Edit Release Event by typing **Edit Release** at the *Select Action* prompt.  
@@ -642,7 +573,7 @@ The orders associated with that release event will appear.
 ***
 
 1.  Type the number of the order that you would like to change.![Removing the Release Event from an Existing Order screen](5f242923199f3c40f943ccfe2894e5e2.png)  
-***  
+ 
 1.  Select Edit Release Event by typing **Edit Release** at the *Select Action* prompt.  
 1.  Type **Yes** at the *Remove the release event from these orders?* prompt.  
 ***
@@ -656,7 +587,7 @@ The orders associated with that release event will appear.
 ***
 
 The orders that are associated with the release event will appear in a numbered list.  
-***  
+ 
 1.  Type the number of the order that you would like to release.  
 The order that you selected will be highlighted.  
 4\. Select Release Orders by typing R.  
@@ -666,23 +597,11 @@ The order that you selected will be highlighted.
 8\. Enter the appropriate response at the Print CHART COPY for the orders ? prompt.  
 9\. Enter the appropriate response at the Print LABELS? for the orders prompt  
 ![Manually Releasing Event-Delayed Orders, with blue text denoting track changes.](ab7691604d46477fc710b2d065f70491.png)  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+  
+ 
+ 
+ 
 ### Viewing Event Delayed Orders After they are Released  
 1.  From the Orders tab, select Change View by typing **CV**.  
 1.  Select Auto DC/Release Event by typing **A**.  
@@ -701,26 +620,20 @@ Quick Orders allow you to enter diets, labs, meds, etc. without going through as
 
 Order sets are comprised of a group of related quick orders. The purpose is to minimize the number of prompts to answer for a common protocol or set of orders.  
 See your coordinator or the CPRS Set-Up Guide for instructions about creating order sets. If your site has created order sets (e.g., for admission orders, pre-op orders, etc.), you can select one from the Add Orders screen.  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
+ 
+ 
+ 
 ## Reviewing and Signing New Orders
 
 ![Key Icon](2b0b96256d908d4345300e039b6576dc.png)  
 After you have entered all of your orders for a patient and you accept the default of DONE at the Select Action Prompt, you are returned to the Cover Sheet. If you enter Q to exit the patient chart, the New Orders screen is displayed and you are prompted to sign all orders you have just placed.  
 You can also enter RV from other screens where Review New Orders doesn’t appear as an action (it’s on the hidden menu). You can then sign all orders, if you wish.  
 ![Reviewing and Signing New Orders screen](91c8aaa5eb23afa546763c0b12a7b614.png)  
-***  
-***  
+ 
+ 
 If the current patient has outpatient medication orders that need to be signed and certain additional conditions are met, the Copay prompts may appear. The Copay prompts are usedIn order to sign some medication orders, you may need to indicate whetheran outpatient medication order is related to some (or all) of the conditions below.  
 ***
 
@@ -729,18 +642,18 @@ If the current patient has outpatient medication orders that need to be signed a
 -   Radiation  
 -   Persian Gulf War  
 -   Head or Neck Cancer  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
 ## Adding New Orders
 
 **Sequence of Screens and Actions**  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
 **Ordering, by Service/Category**  
 ## Patient Movement
 
@@ -760,13 +673,7 @@ Examples of these various kinds of nursing orders are:
 | Patient Care   | skin and wound care, drains, hemodynamics |
 | Free text      | immunizations                             |  
 Pre-defined nursing orders (quick orders) may be available under various sub-menus. Nursing orders may also be composed by selecting the Text Only option from the Order Screen. These orders require the ward staff to take action to complete the request.  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
 **Patient Care Orders Example**![Patient Care Orders Example](f24a49d4e32958f5b75e80102375d7e1.png)  
 ***
 
@@ -781,11 +688,11 @@ Pre-defined nursing orders (quick orders) may be available under various sub-men
 ***
 
 **NOTE**: If you enter a diet request after routine meal times, you will automatically be prompted for a late tray. If needed, select the time of delivery.  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
 ## Overview of New CPRS/POE Functionality
 
 To make it easier for providers to enter medication orders and have fewer orders that needed to be changed by pharmacy and sent back for provider signature, the Pharmacy Ordering Enhancement (POE) project was undertaken. The aim of this project was to make it easier for clinicians to enter medication orders and have the computer do the work in the background to also get pharmacists the information they need to fill the orders appropriately.  
@@ -800,17 +707,11 @@ Therefore, the old INPATIENT MEDS, OUTPATIENT MEDS, and IV FLUIDS items should s
 ***
 
 There are several other changes that are explained in the POE Release Notes.  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
+ 
+ 
 ***
 
 ## Ordering Outpatient Medications with a Simple Dose  
@@ -843,17 +744,11 @@ A message may display indicating what the normal fill for the selected medicatio
 1.  The prescription displays. Select Edit, Cancel, or Place.  
 1.  Enter another medication if desired. If you are finished and want to exit, press  
 \<Enter\>.  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
 ***
 
 **Example: Ordering an Outpatient Medication with a Simple Dose**![Example: Ordering an Outpatient Medication with a Simple Dose](680f46c93402b26b6c4d661b9598b60c.png)  
-***  
+ 
 **Ordering Outpatient Medications with Complex Doses**  
 1.  Select Medications or your normal outpatient medications menu item from your Add Order Screen (AD).  
 1.  Type in the medication name.  
@@ -889,9 +784,9 @@ A message may display indicating what the normal fill for the selected medicatio
 1.  The prescription displays. Select Edit, Cancel, or Place.  
 1.  Enter another medication if desired. If you are finished and want to exit, press  
 \<**Enter**\>.  
-***  
-***  
-***  
+ 
+ 
+ 
 **Example: Entering an Outpatient Order with a Complex Dose**![Example: Entering an Outpatient Order with a Complex Dose](798cfab00e434d860cf4157f6ba412dd.png)  
 ***
 
@@ -906,27 +801,9 @@ A message may display indicating what the normal fill for the selected medicatio
 | How long: 30          |         |
 | And/then/except: THEN |         |
 | Another Dose: 4 5MG   | \$0.266 |  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+  
+  
 ## Ordering Inpatient Medications with a Simple Dose  
 1.  Select Medications or your normal inpatient medications menu item from the Add Order Screen (AD).  
 1.  Type in the medication name.  
@@ -950,18 +827,12 @@ if you type in aspirin as the medication.
 1.  Type in provider comments, if any, e.g., X 7 days, or special instructions.  
 1.  The order displays. Select Edit, Cancel, or Place.  
 1.  Enter another medication if desired or at the Medication prompt, press \<**Enter**\>.  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
 ***
 
 **Example: Entering an Inpatient Medication with a Simple Dose**![Example: Entering an Inpatient Medication with a Simple Dose](1ceff9d75288f56eef6f45c37996ecc8.png)  
-***  
+ 
 ***
 
 ## Ordering Inpatient Medications with a Complex Dose  
@@ -990,22 +861,10 @@ if you type in aspirin as the medication.
 1.  Type in provider comments, if any, e.g., X 7 days, or special instructions.  
 1.  The order displays. Select Edit, Cancel, or Place.  
 1.  Enter another medication if desired or at the Medication prompt, press \<Enter\>.  
-***  
-***  
-***  
-***  
-***  
-***  
-***
+
 
 **Example: Entering an Inpatient Order with Complex Dosing**![Example: Entering an Inpatient Order with Complex Dosing](f4f6ad3393e2394e29d5d8a32f323c83.png)  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
 ***
 
 ## Ordering IV Fluids  
@@ -1027,24 +886,18 @@ if you type in aspirin as the medication.
 ***
 
 **Note:** An IV MEDICATION leads to the Inpatient Medication package. Answer these prompts like any other inpatient medication. If you enter an IV MEDICATION with more than one additive, it will be saved as an IV FLUID so that all additives can be saved and displayed.  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
+ 
+ 
 ## Ordering Imaging or Radiology Exams  
 1.  Select the radiology procedure from the Common Radiology Procedure List by entering the appropriate number. This list automatically displays (enter ?? for additional choices).  
 1.  Enter Modifier(s) if appropriate, e.g., Right, Portable (enter ?? for a complete list of choices).  
 1.  Enter a Reason for the Request.  
 1.  The order displays. Select Edit, Cancel, or Place.  
 1.  Respond Y or N to the prompt for Another Request.  
-***  
+ 
 **Ordering Labs**  
 1.  Enter the name of the lab tests desired.  
 1.  Choose the method of collection ⎯Send to Lab, Ward Collect and Deliver, Lab Blood Team, or Immediate Collect by Lab Team.  
@@ -1072,7 +925,7 @@ if you type in aspirin as the medication.
 
 1.  A list of the categories and their responses is displayed; verify or edit these by selecting Place, Edit, or Cancel.  
 1.  You can now add another consult order or exit.  
-***  
+ 
 ***
 
 # Meds
@@ -1086,8 +939,8 @@ You can review and order Meds either through the Meds tab in Chart Contents or t
 
 ![Meds example continued](8bf7cf01711feacc1fd4b0271d0c174a.png)  
 ###### Meds Detailed Display![Meds Detailed Display](71f376d2ccbca5b35e499c8be20b8f47.png)  
-***  
-***  
+ 
+ 
 ***
 
 **Meds, cont’d**  
@@ -1100,34 +953,28 @@ Change View in Meds lets you change your view from Inpatient to Outpatient or to
 
 ![Outpatient Medications screen](2fcf73e1df06bd2704a2620f306b43af.png)  
 **Note:** The Active status for outpatient meds will display as “active (susp)” to improve clarity.  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
 # Labs
 
 You can review and order Labs either through the Labs tab in Chart Contents or through the Add New Orders option on the Orders tab.![Chart Contents showing Labs tab](1333f17786cbc3013806cfd5c6726f1c.png)![Lab Cumulative Display](bdad685d198436b306a994fab06928df.png)  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
 ## Lab Change View  
 Change View in Lab lets you change the date range to be displayed, to go to a specific section of Lab to see results, or to use a list format for display. Examples of the Go To a Section and List Format are shown here.  
 ![Lab Change View](2a95c0a46eb2b1e0b3623babdf2ffa60.png)  
 ***
 
 **Go To a Section Example:**![Go To a Section Example](92b3bd28ccb2cfe8cd250055b1c5b3cb.png)  
-***  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
+ 
 **Labs, cont’d**  
 **Go To a Section Example, cont’d:**
 
@@ -1135,10 +982,10 @@ Change View in Lab lets you change the date range to be displayed, to go to a sp
 ***
 
 **Use List Format Example:**![Use List Format Example](03589cefc91f0fe38d8678b1c4d84120.png)  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
 ***
 
 # Consults
@@ -1156,17 +1003,17 @@ You can enter, edit, and review consult and procedure requests through CPRS.
 
 1.  Choose Chart Contents and then Consults (**Shortcut:** CC;CONS).  
 1.  The Consults screen appears with a list of consults for this patient, and possible actions you can perform at this time (e.g., order a new consult or procedure).![Consults screen with a list of consults for patient](d2d8b710c64e75b19e249da477931602.png)  
-***  
-***  
-***  
+ 
+ 
+ 
 ***
 
 **Consults, cont’d**  
 1.  You can also see more details about any of the consults listed, view results for completed consults, or you can print the Consult Form 513, by entering the number of one of the consults and then the appropriate action’s initial.![Print the Consult Form 513 screen](489fbdeae68e2008668e5e97c46235b1.png)  
 ![Consult/Procedure Display screen](f5790baa05c52def942a30c365a75896.png)![Consult/Procedure Display screen continued](a96c109e906c2d06e862a6230fa8c63e.png)  
-***  
-***  
-***  
+ 
+ 
+ 
 ***
 
 **Consults, cont’d**  
@@ -1175,10 +1022,10 @@ You can enter, edit, and review consult and procedure requests through CPRS.
 
 1.  You can now print a 513, order new consults or procedures, return to Chart Contents, select a new patient, or exit from the patient’s chart.  
 **+** **NOTE**: Occasionally a consult result is linked to the wrong consult. Information on how to make corrections is contained in the Consult/Request Tracking documentation.  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
 ***
 
 # Imaging
@@ -1193,9 +1040,9 @@ You can review Radiology results by choosing the Imaging tab in Chart Contents o
 ***
 
 1.  The Imaging Procedures screen appears:![Imaging Procedures screen](af665d3eda6b1c6e3853ad889bb7ff29.png)  
-***  
-***  
-***  
+ 
+ 
+ 
 ***
 
 **Imaging, cont’d**
@@ -1207,18 +1054,12 @@ The Change View action in Imaging lets you change your view to a different date 
 a smaller number of items.![Change View action in Imaging ](87e64d0aedd9bd0018d9b4575018dd34.png)![Change View action in Imaging continued](fe005fc7180feb6e03ff5b76d7540a79.png)
 
 ##   
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
+ 
+ 
+ 
 ***
 
 # D/C Summaries
@@ -1230,19 +1071,13 @@ You can review, edit, and write new Discharge Summaries through CPRS.
 1.  If one or more Discharge Summaries are listed, select a number of one you wish to review or take action on. If you pick Detailed Display, the entire Discharge Summary is displayed (screen-by-screen) in the List Manager list area.  
 ![Completed Discharge Summaries screen](a116ccd4ff6f11d4eb33ee0e3e2a62e0.png)  
 1.  New actions are displayed on the screen; select one of these.![Discharge Summaries new actions screen](1d058a0962f8b4f8fa168b4a76fa899f.png)  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
 **D/C Summaries, cont’d**  
 **Discharge Summary Detailed Display Example**![Discharge Summary Detailed Display Example](d03a87264bac070ab767d1d108c6ddbf.png)  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
 # Reports
 
 You can view or print reports and results from either the Results Reporting option on the Clinician Menu or from the Reports tab on the Chart Contents screen. The Reports tab only lets you print for individual patients. The RR option lets you select more than one patient at a time.  
@@ -1251,57 +1086,51 @@ You can view or print reports and results from either the Results Reporting opti
 **Reports Tab Example: Shortcut:** Select CC;R![Reports Tab Example](c358c84d85dba4fc428d22200a9c6da2.png)
 
 ![Reports Tab Example continued](1887c1dbde3502ea67cb071b5605160b.png)  
-***  
+ 
 ***
 
 **Reports, cont’d**![Reports Tab Example continued](31b168dea4963377e9991ae733b7cd82.png)  
 ##### Lab Cumulative Example![Lab Cumulative Example](46d83fe40ef2972a5ff7549207d96679.png)  
-***  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
+ 
 **Reports, cont’d**
 
 ##### Dietetic Profile Example![Dietetic Profile Example](9fed4e7662c4d2ce5932eaa551669658.png)  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
+ 
+ 
+ 
 **Reports, cont’d**
 
 **Health Summary Example**
 
 ![Health Summary Example](8e38ba018a7f3067bcadeb825d95488d.png)  
-***  
-***  
-***  
+ 
+ 
+ 
 ## Results Reporting  
 You can print reports for multiple patients (e.g., all of the patients in a ward, or all of a patients on a Personal or Team List) through the Results Reporting option on the Clinician Menu.  
 ***
 
 **Order Summary for Date/Time Range Example**![Order Summary for Date/Time Range Example](9c76f77c17086661246189bc3cd574ca.png)  
-***  
-***  
-***  
+ 
+ 
+ 
 ***
 
 **Order Summary for Date/Time Range Example, cont’d**![Order Summary for Date/Time Range Example continued](85ab36aa52cadb3f6db919cb1e1556b5.png)  
-***  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
+ 
 # Personal Preferences
 
 You can change many of the parameters that control the way CPRS works for you. The Personal Preferences Menu on your Clinician Menu contains sub-menus that may allow you to change which notifications and order checking messages you get, the team or personal lists you will use, and the default patients you’ll have.  
@@ -1318,11 +1147,11 @@ You can change many of the parameters that control the way CPRS works for you. T
 | Display My Teams                        | This option displays teams linked to the current user.                                                                                                                                                                                                                                                                                                                                                          |
 
 **To access the Personal Preferences Menu:**![Personal Preferences Menu example](e66ccf459729fae4fe408f4afda9e75c.png)  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
 **Personal Preferences, cont’d**
 
 ## GUI Cover Sheet Display Parameters
@@ -1330,16 +1159,10 @@ You can change many of the parameters that control the way CPRS works for you. T
 **Example**
 
 ![GUI Cover Sheet Display Parameters example](ba5b7db2ac7ac39502ffd88efc4e86fb.png)  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
+ 
 ***
 
 ## Notification Mgmt Menu Options
@@ -1357,9 +1180,9 @@ The following options may be available on your Personal Preference Menu, dependi
 | Show Me the Notifications I Can Receive       | This option displays if and why you are a recipient for each notification.                                                                                                                                                                                                                         |   |   |                 |   |
 | Set Surrogate to Receive My Notifications     | Sets up a surrogate to receive all notifications (OE/RR alerts) for you.                                                                                                                                                                                                                           |   |   |                 |   |  
 **Show Me the Notifications I Can Receive**![Show Me the Notifications I Can Receive example](a754f06c14b550f107024369ddf25f87.png)  
-***  
-***  
-***  
+ 
+ 
+ 
 ***
 
 **Show Me the Notifications I Can Receive, cont’d**![Show Me the Notifications I Can Receive continued](50cb40dc4370107bea59905924f10df0.png)  
@@ -1374,23 +1197,17 @@ The following options may be available on your Personal Preference Menu, dependi
 **Disabling a Notification Example**
 
 The process for disabling a notification seems counter-intuitive. When the program asks if you want to add a new Notification, logically you’d want to say “No,” but the program is really asking if you want to add a new notification to a temporary list for consideration about enabling or disabling. The program is using a generic FileMan call⎯we hope that in the near future a more user- friendly utility will be written for this option.  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
 **Notifications, cont’d**![Notifications example continued](5e86349527990f76a0c1529e7d9f6188.png)  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
+ 
+ 
 **Personal Preferences, cont’d**
 
 ## Order Checking Mgmt Menu  
@@ -1399,8 +1216,8 @@ The process for disabling a notification seems counter-intuitive. When the progr
 | Show Me the Order Checks I Can Receive     | This option processes each order check to determine if and why you receive an order check message during the ordering process.       |
 | Enable/Disable an Order Check for Yourself | A list of available order checks is displayed when you enter a question mark. You can then select order checks to enable or disable. |  
 **Enable/Disable an Order Check for Yourself Example**![Enable/Disable an Order Check for Yourself Example](159df8b81d275aacb8cb22c827598a12.png)  
-***  
-***  
+ 
+ 
 **Personal Preferences, cont’d**
 
 ## Personal Patient List Menu
@@ -1417,27 +1234,21 @@ The team lists also help determine who receives notifications for patients defin
 | Examine/ Print Existing List(s) | EX          | This option allows you to examine or print an existing patient list.                                                                                                                        |
 | Load Primary Patient List       | LO          | This option loads into the current session the user’s primary patient list.                                                                                                                 |
 | Merge Existing Lists            | ME          | This option lets you merge the patients from one or several lists together to create a bigger or more comprehensive list.                                                                   |  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
+ 
+ 
+ 
 **Personal Preferences, cont’d**  
 **Build Patient List Menu Example**
 
 ![Build Patient List Menu Example](ac96a9cb2a6412f94776530faefabed4.png)  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
 ***
 
 **Personal Preferences, cont’d**  
@@ -1464,11 +1275,11 @@ This menu contains options that let you set default parameters for patient lists
 | 14. Set My Preferred Team List                   | This option lets you specify the Team/Personal list to be the default source of patients.                                                                                                                                     |
 | 15. Set My Preferred Treating Specialty          | This option lets you specify the Treating Specialty used as a source for patients on the Specialty List.                                                                                                                      |
 | 16. Set My Preferred Ward                        | This option lets you specify the Ward that will be the default list of patients.                                                                                                                                              |  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
 ***
 
 **Personal Preferences, cont’d**  
@@ -1481,25 +1292,19 @@ This option lets you see what patients are on teams that you are currently on.
 ***
 
 **Example**![Display Patients Linked to Me via Teams example](1c8d529d6f1969ac9f2976603cc93ebb.png)  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
 ## Display My Teams
 
 This option lets you see what teams you are currently on.  
 ![Example screen showing what teams you're currently on](828a15469fed3da9006b81e7595f2079.png)  
 **Example**  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
+ 
+ 
+ 
 ###### ACTIONS
 
 Actions (also known as protocols) are the items listed on the bottom part of the list manager screens. Sometimes these are processes that you can perform on screen items (processes such as sign, print, discontinue, renew, etc.), and sometimes they are the names of other screens (chart tabs) that you can go to.  
@@ -1530,12 +1335,12 @@ An Electronic signature must accompany all orders entered by a physician, nurse 
 ###### EXPIRED MED ORDERS
 
 Expired Med orders remain on the order screen for a time designated by your site.  
-***  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
+ 
 **Helpful Hints, cont’d**  
 ###### \>\> INDICATORS
 
@@ -1564,13 +1369,7 @@ PRN Q4-6H PRN
 1.  Meds for discharge or pass can be selected and converted to outpatient status. This prevents the need for carbon copies of orders with original signatures. To place Meds on hold, enter a free-text order. Pharmacy considers orders to be either active or discontinued. They do not act on Hold orders. This is an action taken only by a unit’s nursing staff.  
 1.  If an order is questioned by pharmacy, it will be flagged, stating the reason for the flag, and the physician receives a View Alert. A Med can be unflagged if you choose the Med in question and then select UNFLAG.  
 1.  Verbal orders cause a View Alert to be automatically generated for the physician who needs to electronically sign the order.  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+  
 **Helpful Hints, cont’d**  
 ###### NOTES
 
@@ -1597,16 +1396,7 @@ Reports for individual patients are available from the Reports tab. Reports for 
 1.  Enter date range  
 1.  Answer Yes to *Display only those orders placed on this day: NO//*  
 1.  Enter a printer name or hit ENTER at the DEVICE: HOME// prompt (This can also be queued)  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***
+
 
 # Glossary
 
@@ -1651,8 +1441,8 @@ Summaries are components of patient information extracted from other **V***IST**
 ***
 
 **Glossary, cont’d**  
-***  
-***  
+ 
+ 
 Imaging A **V***IST***A** product that is also a component of CPRS; it includes Radiology, X-rays, Nuclear Medicine, etc.  
 ***
 
@@ -1690,13 +1480,13 @@ VISN Veterans Information System Network, the regional organizations for managin
 ***
 
 **V***IST***A** Veterans Information Systems Technology Architecture, the new name for DHCP.  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 ***
 
 | **Actions available, by tab**                         |    |                                |    |                     |
@@ -1728,9 +1518,9 @@ VISN Veterans Information System Network, the regional organizations for managin
 | Change Renew                                                                 | Discontinue Hold      | Transfer to Outpt Copy | Detailed Display      |           |
 |  **Change View**                                                             |                       |                        |                       |           |
 | Date range Save as Preferred View List Outpatient Meds Remove Preferred View |                       |                        |                       |           |  
-***  
-***  
-***  
+ 
+ 
+ 
 ***
 
 **Actions available, by tab**  
@@ -1753,10 +1543,10 @@ VISN Veterans Information System Network, the regional organizations for managin
 **Actions**  
 **Reports**  
 **Change View**  
-***  
-***  
-***  
-***  
+ 
+ 
+ 
+ 
 # Index
 
 GUI, 77, 80
@@ -1915,8 +1705,8 @@ Patient Selection Preference Menu, 74 PCMM, 81
 Personal Preferences, 15, 18, 53, 66, 67, 71, 72, 73,
 
 74, 75  
-***  
-***  
+ 
+ 
 **PHARMACY**, 78
 
 Problem List, 16, 17, 80
@@ -1957,19 +1747,5 @@ VA number, 36, 38, 41, 43
 VISN, 81
 
 V*IST*A, 80, 81  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***
+  
+
