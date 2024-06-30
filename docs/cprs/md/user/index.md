@@ -5,41 +5,14 @@
 # December 2023
 
 [**Introduction 1**](#introduction)
-
-***
-
 [**What is CPRS? 1**](#what-is-cprs)
-
-***
-
 [**Using CPRS Documentation 1**](#using-cprs-documentation)
-
-***
-
 [Related Manuals 1](#related-manuals)
-
-***
-
 [VistA Intranet 1](#vista-intranet)
-
-***
-
 [Online Help 1](#online-help)
-
-***
-
 [**CPRS Graphical User Interface (GUI) 1**](#cprs-graphical-user-interface-gui)
-
-***
-
 [**The Organization of this Manual 1**](#the-organization-of-this-manual)
-
-***
-
 [**Conventions in the CPRS Interface 2**](#conventions-in-the-cprs-interface)
-
-***
-
 [**Entering Dates and Times into CPRS 2**](#entering-dates-and-times-into-cprs)
 
 ***
