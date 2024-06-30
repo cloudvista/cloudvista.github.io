@@ -1,8 +1,7 @@
 ### CPRS Docs
 
-#### Path
-docs/cprs/html...  
-docs/cprs/md...   
+__Path__  
+docs/cprs/md/[doc]/index.md
 1. install
 2. setup
 3. starting-LM
@@ -12,17 +11,16 @@ docs/cprs/md...
 7. user-ro
 
 
-#### Source
+__Source__  
 * https://www.va.gov/vdl
 * https://www.va.gov/vdl/application.asp?appid=61  
 
 
-#### Conversion
-1. docx - clean1
-2. docx -> gdoc - clean2
-3. gdoc [saveAs] html
-4. gdoc [saveAs] docx
-5. docx [writeage:saveAs] md
-
-
-
+__Conversion__  
+1. VA VDL [download] docx
+2. docx: clean1 (standard title, delete rev history)
+3. docx [upload] gdoc [clean2] (toc fonts:Arial)
+4. gdoc [saveAs] html
+5. gdoc [saveAs] docx
+6. docx [writeage:saveAs] md
+7. md [vscode] clean3 (find/replace)

@@ -4,510 +4,132 @@
 
 # June 2023
 
-[**I. Introduction 1**](#i-introduction)
-
-***
-
-[**Purpose of CPRS Setup Guide 1**](#purpose-of-cprs-setup-guide)
-
-***
-
-[**Overview of CPRS 2**](#overview-of-cprs)
-
-***
-
-[**Differences between OE/RR 2.5 and CPRS 5**](#differences-between-oerr-25-and-cprs)
-
-***
-
-[**II. Preparation & Implementation Checklist 8**](#ii-preparation--implementation-checklist)
-
-***
-
-[**CPRS Competency Assessment 14**](#cprs-competency-assessment)
-
-***
-
-[**III. CPRS Setup Instructions 18**](#iii-cprs-setup-instructions)
-
-***
-
-[**A. OE/RR-CPRS Clean-up 19**](#a-oerr-cprs-clean-up)
-
-***
-
-[**B. CPRS Configuration (Clinical Coordinator) 21**](#b-cprs-configuration-clinical-coordinator)
-
-***
-
-[1. Auto-DC Parameters 22](#1-auto-dc-parameters)
-
-***
-
-[2. Key Assignment and Electronic Signature Set-up 23](#2-key-assignment-and-electronic-signature-set-up)
-
-***
-
-[Check for Multiple Keys 25](#check-for-multiple-keys)
-
-***
-
-[Electronic Signature 25](#electronic-signature)
-
-***
-
-[3. Edit DC Reasons 29](#3-edit-dc-reasons)
-
-***
-
-[4. GUI Setup 30](#4-gui-setup)
-
-***
-
-[GUI Parameters Menu Options 32](#gui-parameters-menu-options)
-
-***
-
-[GUI Cover Sheet Display Parameters Menu 32](#gui-cover-sheet-display-parameters-menu)
-
-***
-
-[GUI Health Summary Types 35](#gui-health-summary-types)
-
-***
-
-[GUI Tool Menu Items 36](#gui-tool-menu-items)
-
-***
-
-[Adding an Add Orders Menu to the GUI 37](#adding-an-add-orders-menu-to-the-gui)
-
-***
-
-[GUI Add/Edit Local Message for OTH Button 39](#gui-addedit-local-message-for-oth-button)
-
-***
-
-[Add Local Message for OTH Button 39](#add-local-message-for-oth-button)
-
-***
-
-[Edit/Remove Local Message 40](#editremove-local-message)
-
-***
-
-[ZIPM Enter/Edit Missing ZIP Code Message Parameter 41](#_kgcv8k)
-
-***
-
-[Enter/Edit Missing ZIP Code Message Parameter 41](#enteredit-missing-zip-code-message-parameter)
-
-***
-
-[Edit/Remove Local Message 42](#editremove-local-message-1)
-
-***
-
-[Document Templates 43](#document-templates)
-
-***
-
-[Template Editor 43](#_3hv69ve)
-
-***
-
-[Personal and Shared Templates 44](#_2w5ecyt)
-
-***
-
-[Types of Templates 47](#_3vac5uf)
-
-***
-
-[Folders 48](#_pkwqa1)
-
-***
-
-[Reminder Dialog 48](#_39kk8xu)
-
-***
-
-[Arranging Templates for Ease of Use 48](#_1opuj5n)
-
-***
-
-[Adding a Template to a Note 48](#_48pi1tg)
-
-***
-
-[Searching for Templates 50](#_2nusc19)
-
-***
-
-[Previewing a Template 50](#_1302m92)
-
-***
-
-[Deleting Document Templates 50](#_3mzq4wv)
-
-***
-
-[**Creating Personal Document Templates 51**](#_2250f4o)
-
-***
-
-[Personal Template 51](#_haapch)
-
-***
-
-[Group Template 51](#_319y80a)
-
-***
-
-[Associating a Template with a Document Title, Consult, or Procedure 53](#_1gf8i83)
-
-***
-
-[Importing a Document Template 54](#_40ew0vw)
-
-***
-
-[Exporting a Document Template 54](#_2fk6b3p)
-
-***
-
-[Dialog Template 55](#_upglbi)
-
-***
-
-[Reminder Dialog 56](#_3ep43zb)
-
-***
-
-[Folder 57](#_1tuee74)
-
-***
-
-[View Template Notes 57](#_4du1wux)
-
-***
-
-[Copying Template Text 58](#_2szc72q)
-
-***
-
-[**Template Fields 59**](#_184mhaj)
-
-***
-
-[Using the Template Field Editor 60](#_3s49zyc)
-
-***
-
-[Inserting Template Fields into a Template 62](#_279ka65)
-
-***
-
-[5. Miscellaneous Parameters 63](#5-miscellaneous-parameters)
-
-***
-
-[6. Notifications 66](#6-notifications)
-
-***
-
-[Notification Management Menu 71](#notification-management-menu)
-
-***
-
-[7. Order Checking 83](#7-order-checking)
-
-***
-
-[Order Checking Management Menu 85](#order-checking-management-menu)
-
-***
-
-[8. Menu Management 102](#8-menu-management)
-
-***
-
-[a. CPRS Menu Assignment 102](#a-cprs-menu-assignment)
-
-***
-
-[b. Order Menu Management 105](#b-order-menu-management)
-
-***
-
-[Generic Orders 106](#generic-orders)
-
-***
-
-[Naming Conventions 106](#naming-conventions)
-
-***
-
-[Enter/Edit Orderable Items 107](#enteredit-orderable-items)
-
-***
-
-[Enter/edit Prompts 108](#enteredit-prompts)
-
-***
-
-[Enter/edit Generic Orders 111](#enteredit-generic-orders)
-
-***
-
-[Enter/Edit Quick Orders 119](#enteredit-quick-orders)
-
-***
-
-[Enter/Edit Order Sets 133](#enteredit-order-sets)
-
-***
-
-[Enter/Edit Actions 135](#enteredit-actions)
-
-***
-
-[Enter/Edit Order Menus 136](#enteredit-order-menus)
-
-***
-
-[Assign Primary Order Menu 142](#assign-primary-order-menu)
-
-***
-
-[Convert Protocols 143](#convert-protocols)
-
-***
-
-[Search/Replace Components 144](#searchreplace-components)
-
-***
-
-[List Primary Order Menus 145](#list-primary-order-menus)
-
-***
-
-[9. Patient and Team Lists 146](#9-patient-and-team-lists)
-
-***
-
-[Patient Selection Preference Management Menu 149](#patient-selection-preference-management-menu)
-
-***
-
-[10. Print Formats 150](#10-print-formats)
-
-***
-
-[11. Print/Report Parameters 158](#11-printreport-parameters)
-
-***
-
-[12. Release/Delete Delayed Orders 168](#12-releasedelete-delayed-orders)
-
-***
-
-[**C. CPRS Configuration (IRM) 169**](#c-cprs-configuration-irm)
-
-***
-
-[1. Order Check Expert System 170](#1-order-check-expert-system)
-
-***
-
-[2. ORMTIME and Job Tasking 176](#2-ormtime-and-job-tasking)
-
-***
-
-[ORMTIME Main Menu [ORMTIME MAIN] 176](#ormtime-main-menu-ormtime-main)
-
-***
-
-[3. CPRS Clean-up Utilities 178](#3-cprs-clean-up-utilities)
-
-***
-
-[4. General Parameter Tools 181](#4-general-parameter-tools)
-
-***
-
-[Disabling Ordering per User 184](#disabling-ordering-per-user)
-
-***
-
-[**D. Other CPRS Configuration 187**](#d-other-cprs-configuration)
-
-***
-
-[List Manager Terminal Setup 187](#list-manager-terminal-setup)
-
-***
-
-[Nature of Order File 188](#nature-of-order-file)
-
-***
-
-[Workstation Hardware 190](#_434ayfz)
-
-***
-
-[Local Area Networks 190](#_2i9l8ns)
-
-***
-
-[**IV. Set-Up for Other CPRS Packages 192**](#iv-set-up-for-other-cprs-packages)
-
-***
-
-[**Parameters for Packages Related to CPRS 192**](#parameters-for-packages-related-to-cprs)
-
-***
-
-[**A. Adverse Reaction Tracking (ART) 196**](#a-adverse-reaction-tracking-art)
-
-***
-
-[**B. Patient Movement 197**](#b-patient-movement)
-
-***
-
-[**C. Consult/Request Tracking 199**](#c-consultrequest-tracking)
-
-***
-
-[Sample Hierarchy 200](#sample-hierarchy)
-
-***
-
-[Consults Install, Planning, and Implementation Checklist 201](#consults-install-planning-and-implementation-checklist)
-
-***
-
-[IMPLEMENTATION AND MAINTENANCE (Abbreviated guidelines) 203](#implementation-and-maintenance-abbreviated-guidelines)
-
-***
-
-[Multi-Site 205](#multi-site)
-
-***
-
-[**D. Dietetics 206**](#d-dietetics)
-
-***
-
-[**E. Health Summary 207**](#e-health-summary)
-
-***
-
-[**F. Laboratory 208**](#f-laboratory)
-
-***
-
-[Lab Site parameters set within CPRS 208](#lab-site-parameters-set-within-cprs)
-
-***
-
-[Inpt Lab Order/Result Search Range 209](#inpt-lab-orderresult-search-range)
-
-***
-
-[Lab Site parameters set within Lab 210](#lab-site-parameters-set-within-lab)
-
-***
-
-[Lab Patch LR\*5.2\*121 211](#lab-patch-lr52121)
-
-***
-
-[**G. Pharmacy Packages 217**](#g-pharmacy-packages)
-
-***
-
-[G-1. Pharmacy Data Management (PDM) 217](#g-1-pharmacy-data-management-pdm)
-
-***
-
-[G-2. Outpatient Pharmacy Setup 218](#g-2-outpatient-pharmacy-setup)
-
-***
-
-[G-3. Inpatient Medications 220](#g-3-inpatient-medications)
-
-***
-
-[Inpatient Medications Conversion 220](#inpatient-medications-conversion)
-
-***
-
-[*Inpatient Medications Options*](#inpatient-medications-options) [223](#inpatient-medications-options)
-
-***
-
-[Inpatient Medications Security Keys 223](#inpatient-medications-security-keys)
-
-***
-
-[*Auto-Discontinue Setup*](#auto-discontinue-setup) [223](#auto-discontinue-setup)
-
-***
-
-[*Medication Administration Setup*](#medication-administration-setup) [224](#medication-administration-setup)
-
-***
-
-[G-3.a IV Setup 224](#g-3a-iv-setup)
-
-***
-
-[Site Parameters (IV) [PSJI SITE PARAMETERS] 225](#site-parameters-iv-psji-site-parameters)
-
-***
-
-[G-3.b Unit Dose Setup 225](#g-3b-unit-dose-setup)
-
-***
-
-[Menus and Security Keys 225](#menus-and-security-keys)
-
-***
-
-[Files Needed to Run Unit Dose 226](#files-needed-to-run-unit-dose)
-
-***
-
-[**H. Problem List 227**](#h-problem-list)
-
-***
-
-[**I. Radiology/Nuclear Medicine 228**](#i-radiologynuclear-medicine)
-
-***
-
-[**J. Text Integration Utilities (TIU) 229**](#j-text-integration-utilities-tiu)
-
-***
-
-[**V. Troubleshooting 234**](#v-troubleshooting)
-
-***
-
-[**VI. Glossary 241**](#vi-glossary)
-
-***
-
-[**VA and V**](#va-and-vista-acronyms)[**IST**](#va-and-vista-acronyms)[**A Acronyms 247**](#va-and-vista-acronyms)
-
-***
-
-[**Appendix A: Order Set Examples 253**](#appendix-a-order-set-examples)
-
-***
-
+[**I. Introduction 1**](#i-introduction)  
+[**Purpose of CPRS Setup Guide 1**](#purpose-of-cprs-setup-guide)  
+[**Overview of CPRS 2**](#overview-of-cprs)  
+[**Differences between OE/RR 2.5 and CPRS 5**](#differences-between-oerr-25-and-cprs)  
+[**II. Preparation & Implementation Checklist 8**](#ii-preparation--implementation-checklist)  
+[**CPRS Competency Assessment 14**](#cprs-competency-assessment)  
+[**III. CPRS Setup Instructions 18**](#iii-cprs-setup-instructions)  
+[**A. OE/RR-CPRS Clean-up 19**](#a-oerr-cprs-clean-up)  
+[**B. CPRS Configuration (Clinical Coordinator) 21**](#b-cprs-configuration-clinical-coordinator)  
+[1. Auto-DC Parameters 22](#1-auto-dc-parameters)  
+[2. Key Assignment and Electronic Signature Set-up 23](#2-key-assignment-and-electronic-signature-set-up)  
+[Check for Multiple Keys 25](#check-for-multiple-keys)  
+[Electronic Signature 25](#electronic-signature)  
+[3. Edit DC Reasons 29](#3-edit-dc-reasons)  
+[4. GUI Setup 30](#4-gui-setup)  
+[GUI Parameters Menu Options 32](#gui-parameters-menu-options)  
+[GUI Cover Sheet Display Parameters Menu 32](#gui-cover-sheet-display-parameters-menu)  
+[GUI Health Summary Types 35](#gui-health-summary-types)  
+[GUI Tool Menu Items 36](#gui-tool-menu-items)  
+[Adding an Add Orders Menu to the GUI 37](#adding-an-add-orders-menu-to-the-gui)  
+[GUI Add/Edit Local Message for OTH Button 39](#gui-addedit-local-message-for-oth-button)  
+[Add Local Message for OTH Button 39](#add-local-message-for-oth-button)  
+[Edit/Remove Local Message 40](#editremove-local-message)  
+[ZIPM Enter/Edit Missing ZIP Code Message Parameter 41](#_kgcv8k)  
+[Enter/Edit Missing ZIP Code Message Parameter 41](#enteredit-missing-zip-code-message-parameter)  
+[Edit/Remove Local Message 42](#editremove-local-message-1)  
+[Document Templates 43](#document-templates)  
+[Template Editor 43](#_3hv69ve)  
+[Personal and Shared Templates 44](#_2w5ecyt)  
+[Types of Templates 47](#_3vac5uf)  
+[Folders 48](#_pkwqa1)  
+[Reminder Dialog 48](#_39kk8xu)  
+[Arranging Templates for Ease of Use 48](#_1opuj5n)  
+[Adding a Template to a Note 48](#_48pi1tg)  
+[Searching for Templates 50](#_2nusc19)  
+[Previewing a Template 50](#_1302m92)  
+[Deleting Document Templates 50](#_3mzq4wv)  
+[**Creating Personal Document Templates 51**](#_2250f4o)  
+[Personal Template 51](#_haapch)  
+[Group Template 51](#_319y80a)  
+[Associating a Template with a Document Title, Consult, or Procedure 53](#_1gf8i83)  
+[Importing a Document Template 54](#_40ew0vw)  
+[Exporting a Document Template 54](#_2fk6b3p)  
+[Dialog Template 55](#_upglbi)  
+[Reminder Dialog 56](#_3ep43zb)  
+[Folder 57](#_1tuee74)  
+[View Template Notes 57](#_4du1wux)  
+[Copying Template Text 58](#_2szc72q)  
+[**Template Fields 59**](#_184mhaj)  
+[Using the Template Field Editor 60](#_3s49zyc)  
+[Inserting Template Fields into a Template 62](#_279ka65)  
+[5. Miscellaneous Parameters 63](#5-miscellaneous-parameters)  
+[6. Notifications 66](#6-notifications)  
+[Notification Management Menu 71](#notification-management-menu)  
+[7. Order Checking 83](#7-order-checking)  
+[Order Checking Management Menu 85](#order-checking-management-menu)  
+[8. Menu Management 102](#8-menu-management)  
+[a. CPRS Menu Assignment 102](#a-cprs-menu-assignment)  
+[b. Order Menu Management 105](#b-order-menu-management)  
+[Generic Orders 106](#generic-orders)  
+[Naming Conventions 106](#naming-conventions)  
+[Enter/Edit Orderable Items 107](#enteredit-orderable-items)  
+[Enter/edit Prompts 108](#enteredit-prompts)  
+[Enter/edit Generic Orders 111](#enteredit-generic-orders)  
+[Enter/Edit Quick Orders 119](#enteredit-quick-orders)  
+[Enter/Edit Order Sets 133](#enteredit-order-sets)  
+[Enter/Edit Actions 135](#enteredit-actions)  
+[Enter/Edit Order Menus 136](#enteredit-order-menus)  
+[Assign Primary Order Menu 142](#assign-primary-order-menu)  
+[Convert Protocols 143](#convert-protocols)  
+[Search/Replace Components 144](#searchreplace-components)  
+[List Primary Order Menus 145](#list-primary-order-menus)  
+[9. Patient and Team Lists 146](#9-patient-and-team-lists)  
+[Patient Selection Preference Management Menu 149](#patient-selection-preference-management-menu)  
+[10. Print Formats 150](#10-print-formats)  
+[11. Print/Report Parameters 158](#11-printreport-parameters)  
+[12. Release/Delete Delayed Orders 168](#12-releasedelete-delayed-orders)  
+[**C. CPRS Configuration (IRM) 169**](#c-cprs-configuration-irm)  
+[1. Order Check Expert System 170](#1-order-check-expert-system)  
+[2. ORMTIME and Job Tasking 176](#2-ormtime-and-job-tasking)  
+[ORMTIME Main Menu [ORMTIME MAIN] 176](#ormtime-main-menu-ormtime-main)  
+[3. CPRS Clean-up Utilities 178](#3-cprs-clean-up-utilities)  
+[4. General Parameter Tools 181](#4-general-parameter-tools)  
+[Disabling Ordering per User 184](#disabling-ordering-per-user)  
+[**D. Other CPRS Configuration 187**](#d-other-cprs-configuration)  
+[List Manager Terminal Setup 187](#list-manager-terminal-setup)  
+[Nature of Order File 188](#nature-of-order-file)  
+[Workstation Hardware 190](#_434ayfz)  
+[Local Area Networks 190](#_2i9l8ns)  
+[**IV. Set-Up for Other CPRS Packages 192**](#iv-set-up-for-other-cprs-packages)  
+[**Parameters for Packages Related to CPRS 192**](#parameters-for-packages-related-to-cprs)  
+[**A. Adverse Reaction Tracking (ART) 196**](#a-adverse-reaction-tracking-art)  
+[**B. Patient Movement 197**](#b-patient-movement)  
+[**C. Consult/Request Tracking 199**](#c-consultrequest-tracking)  
+[Sample Hierarchy 200](#sample-hierarchy)  
+[Consults Install, Planning, and Implementation Checklist 201](#consults-install-planning-and-implementation-checklist)  
+[IMPLEMENTATION AND MAINTENANCE (Abbreviated guidelines) 203](#implementation-and-maintenance-abbreviated-guidelines)  
+[Multi-Site 205](#multi-site)  
+[**D. Dietetics 206**](#d-dietetics)  
+[**E. Health Summary 207**](#e-health-summary)  
+[**F. Laboratory 208**](#f-laboratory)  
+[Lab Site parameters set within CPRS 208](#lab-site-parameters-set-within-cprs)  
+[Inpt Lab Order/Result Search Range 209](#inpt-lab-orderresult-search-range)  
+[Lab Site parameters set within Lab 210](#lab-site-parameters-set-within-lab)  
+[Lab Patch LR\*5.2\*121 211](#lab-patch-lr52121)  
+[**G. Pharmacy Packages 217**](#g-pharmacy-packages)  
+[G-1. Pharmacy Data Management (PDM) 217](#g-1-pharmacy-data-management-pdm)  
+[G-2. Outpatient Pharmacy Setup 218](#g-2-outpatient-pharmacy-setup)  
+[G-3. Inpatient Medications 220](#g-3-inpatient-medications)  
+[Inpatient Medications Conversion 220](#inpatient-medications-conversion)  
+[*Inpatient Medications Options*](#inpatient-medications-options) [223](#inpatient-medications-options)  
+[Inpatient Medications Security Keys 223](#inpatient-medications-security-keys)  
+[*Auto-Discontinue Setup*](#auto-discontinue-setup) [223](#auto-discontinue-setup)  
+[*Medication Administration Setup*](#medication-administration-setup) [224](#medication-administration-setup)  
+[G-3.a IV Setup 224](#g-3a-iv-setup)  
+[Site Parameters (IV) [PSJI SITE PARAMETERS] 225](#site-parameters-iv-psji-site-parameters)  
+[G-3.b Unit Dose Setup 225](#g-3b-unit-dose-setup)  
+[Menus and Security Keys 225](#menus-and-security-keys)  
+[Files Needed to Run Unit Dose 226](#files-needed-to-run-unit-dose)  
+[**H. Problem List 227**](#h-problem-list)  
+[**I. Radiology/Nuclear Medicine 228**](#i-radiologynuclear-medicine)  
+[**J. Text Integration Utilities (TIU) 229**](#j-text-integration-utilities-tiu)  
+[**V. Troubleshooting 234**](#v-troubleshooting)  
+[**VI. Glossary 241**](#vi-glossary)  
+[**VA and V**](#va-and-vista-acronyms)[**IST**](#va-and-vista-acronyms)[**A Acronyms 247**](#va-and-vista-acronyms)  
+[**Appendix A: Order Set Examples 253**](#appendix-a-order-set-examples)  
 # I. Introduction
 
 ## Purpose of CPRS Setup Guide
@@ -660,246 +282,87 @@ CPRS provides clinicians, managers, support staff, researchers, and others an in
 
     *CPRS Configuration (Clin Coord) Options:*
 
-    Allocate OE/RR Security Keys
-
-***
-
-Check for Multiple Keys
-
-***
-
-Edit DC Reasons
-
-***
-
-GUI Parameters ...
-
-***
-
-Miscellaneous Parameters
-
-***
-
-Notification Mgmt
-
-***
-
-Order Checking Mgmt
-
-***
-
-Order Menu Management
-
-***
-
-Patient List Mgmt
-
-***
-
-Print Formats
-
-***
-
-Print/Report Parameters
-
-***
-
-Release/Cancel Delayed Orders
-
-***
-
+    Allocate OE/RR Security Keys  
+Check for Multiple Keys  
+Edit DC Reasons  
+GUI Parameters ...  
+Miscellaneous Parameters  
+Notification Mgmt  
+Order Checking Mgmt  
+Order Menu Management  
+Patient List Mgmt  
+Print Formats  
+Print/Report Parameters  
+Release/Cancel Delayed Orders  
 **Pre-Installation/Implementation Activities, cont’d**
 
 *CPRS Configuration (IRM) Options:*
 
-Order Check Expert System Main Menu ...
-
-***
-
-ORMTIME Main Menu ...
-
-***
-
-CPRS Clean-up Utilities ...
-
-***
-
-General Parameter Tools ...
-
-***
-
+Order Check Expert System Main Menu ...  
+ORMTIME Main Menu ...  
+CPRS Clean-up Utilities ...  
+General Parameter Tools ...  
 1.  **Consults**
 
     Establish a good understanding of how to set up services as well as all the consult actions that can be taken on a consult. A Consult expert must be able to help users manage consults through CPRS, TIU, and Consults Requests/Tracking.
 
-    Receive Forward Add Comments
-
-***
-
-Cancel Discontinue Detailed Display
-
-***
-
-Complete Make Addendum Print SF 513
-
-***
-
+    Receive Forward Add Comments  
+Cancel Discontinue Detailed Display  
+Complete Make Addendum Print SF 513  
 1.  **Order Checks**
 
     Establish a good understanding of what triggers an order check as well as how to manage order checks.
 
     *Management Options*
 
-    Enable/Disable an Order Check
-
-***
-
-Set Clinical Danger Level for an Order Check
-
-***
-
-CT Scanner Height Limit
-
-***
-
-CT Scanner Weight Limit
-
-***
-
-MRI Scanner Height Limit
-
-***
-
-MRI Scanner Weight Limit
-
-***
-
-Orderable Item Duplicate Order Range
-
-***
-
-Lab Duplicate Order Range
-
-***
-
-Radiology Duplicate Order Range
-
-***
-
-Enable or Disable Order Checking System
-
-***
-
-Enable or Disable Debug Message Logging
-
-***
-
-Display the Order Checks a User Can Receive
-
-***
-
-Link Local Terms with Nat'l Expert System Terms
-
-***
-
+    Enable/Disable an Order Check  
+Set Clinical Danger Level for an Order Check  
+CT Scanner Height Limit  
+CT Scanner Weight Limit  
+MRI Scanner Height Limit  
+MRI Scanner Weight Limit  
+Orderable Item Duplicate Order Range  
+Lab Duplicate Order Range  
+Radiology Duplicate Order Range  
+Enable or Disable Order Checking System  
+Enable or Disable Debug Message Logging  
+Display the Order Checks a User Can Receive  
+Link Local Terms with Nat'l Expert System Terms  
 1.  **Notifications**:
 
     Establish a good understanding of what triggers a notification, as well as how to manage notifications.
 
     *Management Options*
 
-    1 Enable/Disable Notifications
-
-***
-
-2 Erase Notifications
-
-***
-
-3 Set Urgency for Notifications (GUI)
-
-***
-
-4 Set Deletion Parameters for Notifications
-
-***
-
-5 Set Default Recipient(s) for Notifications
-
-***
-
-6 Set Default Recipient Device(s) for Notifications
-
-***
-
-7 Set Provider Recipients for Notifications
-
-***
-
-8 Flag Orderable Item(s) to Send Notifications
-
-***
-
+    1 Enable/Disable Notifications  
+2 Erase Notifications  
+3 Set Urgency for Notifications (GUI)  
+4 Set Deletion Parameters for Notifications  
+5 Set Default Recipient(s) for Notifications  
+6 Set Default Recipient Device(s) for Notifications  
+7 Set Provider Recipients for Notifications  
+8 Flag Orderable Item(s) to Send Notifications  
 **Pre-Installation/Implementation Activities, cont’d**
 
 *Notifications Management Options, cont’d*
 
-9 Archive(delete) after \<x\> Days
-
-***
-
-10 Forward Notifications ...
-
-***
-
-11 Set Delays for Unverified Orders ...
-
-***
-
-12 Set Notification Display Sort Method (GUI)
-
-***
-
-13 Send Flagged Orders Bulletin
-
-***
-
-14 Determine Recipients for a Notification
-
-***
-
-15 Display Patient Alerts and Alert Recipients
-
-***
-
-16 Enable or Disable Notification System
-
-***
-
-17 Display the Notifications a User Can Receive
-
-***
-
-18 Set Surrogate Notification Recipient for a User
-
-***
-
+9 Archive(delete) after \<x\> Days  
+10 Forward Notifications ...  
+11 Set Delays for Unverified Orders ...  
+12 Set Notification Display Sort Method (GUI)  
+13 Send Flagged Orders Bulletin  
+14 Determine Recipients for a Notification  
+15 Display Patient Alerts and Alert Recipients  
+16 Enable or Disable Notification System  
+17 Display the Notifications a User Can Receive  
+18 Set Surrogate Notification Recipient for a User  
 1.  **Order Management**
 
     Establish a good understanding of all the actions that can be taken on an order for each category of order such as Radiology, Pharmacy, Laboratory, Dietetics, and Consults.
 
-    Change Sign on Chart Flag Verify Details
-
-***
-
-Renew Hold Unflag Copy Results Discontinue
-
-***
-
-Print… Release Hold Ward Comments
-
-***
-
+    Change Sign on Chart Flag Verify Details  
+Renew Hold Unflag Copy Results Discontinue  
+Print… Release Hold Ward Comments  
 1.  **Time Delay Orders**
 
     Establish a good understanding of how time-delayed orders are placed and activated
@@ -1020,18 +483,12 @@ B. CPRS Configuration (Clinical Coordinator)
 
 -   Menus and menu assignment
 
-7\. Patient and team lists
-
-***
-
+7\. Patient and team lists  
 8\. Printing set-up
 
 -   Chart copies, labels, requisitions, and other copies
 
--   Print Formats
-
-***
-
+-   Print Formats  
 C. CPRS Configuration (IRM)
 
 1\. Order Check Expert System
@@ -1042,94 +499,46 @@ C. CPRS Configuration (IRM)
 
 D. Other CPRS Configuration
 
-1.  List Manager Terminal Settings
-
+1.  List Manager Terminal Settings  
+1.  Nature of Order File  
+## A. OE/RR-CPRS Clean-up  
 ***
 
-1.  Nature of Order File
-
+We recommend cleaning up and re-setting various files, menus, and parameters before beginning to use CPRS.  
 ***
 
-## A. OE/RR-CPRS Clean-up
-
+**1. CPRS Clean-up Utilities Menu**  
 ***
 
+The Lab Order Checks options on this menu are used to check and clean up some files as you move from OE/RR 2.5 to CPRS.  
 ***
 
-We recommend cleaning up and re-setting various files, menus, and parameters before beginning to use CPRS.
-
+**2. Alerts**  
 ***
 
-***
-
-**1. CPRS Clean-up Utilities Menu**
-
-***
-
-***
-
-The Lab Order Checks options on this menu are used to check and clean up some files as you move from OE/RR 2.5 to CPRS.
-
-***
-
-***
-
-**2. Alerts**
-
-***
-
-***
-
-Clean up old alerts, either through the option Erase Notifications [ORB3 ERASE NOTIFICATIONS] or by running the Kernel utility XQALERT DELETE OLD.
-
-***
-
-*Erase Notifications* lets you do one of the following:
-
-***
-
+Clean up old alerts, either through the option Erase Notifications [ORB3 ERASE NOTIFICATIONS] or by running the Kernel utility XQALERT DELETE OLD.  
+*Erase Notifications* lets you do one of the following:  
 1\. Erase all notifications for a User
 
 2\. Erase all notifications for a Patient
 
-3\. Erase all instances of a notification (regardless of patient).
-
-***
-
+3\. Erase all instances of a notification (regardless of patient).  
 The XQALERT DELETE OLD option can be queued to run regularly. You can set the number of days an alert is held with the option *Archive(delete) after \<x\> Days [ORB3 ARCHIVE PERIOD*] on the Notification Mgmt Menu*.* You can also designate that alerts be forwarded to a surrogate or supervisor after a certain number of days.
 
-Because this option cleans up old alerts (the archives are still kept), it should be run daily/nightly.
-
+Because this option cleans up old alerts (the archives are still kept), it should be run daily/nightly.  
+**3. Patient Lists**  
 ***
 
-**3. Patient Lists**
-
+Review patient and team lists set up at your hospital to determine if they are all being used, or if some could be combined.  
 ***
 
+**4. Lab pending orders**  
 ***
 
-Review patient and team lists set up at your hospital to determine if they are all being used, or if some could be combined.
-
+Go through lab orders, especially those with statuses of pending, to see if these are still active orders. Lab doesn't purge old orders as many packages do. At test sites, many inactive lab orders were shown as pending, which caused problems. Clean up your records by discontinuing lab orders you don’t need.  
 ***
 
-***
-
-**4. Lab pending orders**
-
-***
-
-***
-
-Go through lab orders, especially those with statuses of pending, to see if these are still active orders. Lab doesn't purge old orders as many packages do. At test sites, many inactive lab orders were shown as pending, which caused problems. Clean up your records by discontinuing lab orders you don’t need.
-
-***
-
-***
-
-**5. Ward and clinic names**
-
-***
-
+**5. Ward and clinic names**  
 ***
 
 You may want to rename wards and clinics if you have defined a lot of wards and clinics, especially if many begin with the same standard identifiers.
@@ -1142,188 +551,68 @@ ATC/AL Dual Dx Indiv
 
 ATC/AL Dual Dx Int Outpt Gp
 
-It’s hard to do look-ups on this kind of naming system.
-
+It’s hard to do look-ups on this kind of naming system.  
+**6. Consults**  
 ***
 
-**6. Consults**
-
-***
-
-***
-
-If you had consults categorized as Progress Notes before the Consult/ Request Tracking link to TIU, you may want to delete these if you create new Document Classes and Titles for Consults.
-
-***
-
+If you had consults categorized as Progress Notes before the Consult/ Request Tracking link to TIU, you may want to delete these if you create new Document Classes and Titles for Consults.  
 ## B. CPRS Configuration (Clinical Coordinator)
 
 The options and functionality described in this section are in alphabetical order, as listed on the Clinical Coordinator’s CPRS Configuration menu.
 
 **CPRS Configuration (Clin Coord) Menu**
 
-AU Auto-DC Parameters
-
-***
-
-AL Allocate OE/RR Security Keys
-
-***
-
-KK Check for Multiple Keys
-
-***
-
-DC Edit DC Reasons
-
-***
-
-GP GUI Parameters ...
-
-***
-
-MI Miscellaneous Parameters
-
-***
-
-NO Notification Mgmt Menu ...
-
-***
-
-OC Order Checking Mgmt Menu ...
-
-***
-
-MM Order Menu Management ...
-
-***
-
-LI Patient List Mgmt Menu ...
-
-***
-
-FP Print Formats
-
-***
-
-PR Print/Report Parameters ...
-
-***
-
-RE Release/Cancel Delayed Orders
-
-***
-
+AU Auto-DC Parameters  
+AL Allocate OE/RR Security Keys  
+KK Check for Multiple Keys  
+DC Edit DC Reasons  
+GP GUI Parameters ...  
+MI Miscellaneous Parameters  
+NO Notification Mgmt Menu ...  
+OC Order Checking Mgmt Menu ...  
+MM Order Menu Management ...  
+LI Patient List Mgmt Menu ...  
+FP Print Formats  
+PR Print/Report Parameters ...  
+RE Release/Cancel Delayed Orders  
 ### 1. Auto-DC Parameters
 
 This option is for editing hospital-wide parameters that control how CPRS automatically discontinues orders on patient movements.
 
 **Example:**
 
-Select CPRS Configuration (Clin Coord) Option: **au** Auto-DC Parameters
-
+Select CPRS Configuration (Clin Coord) Option: **au** Auto-DC Parameters  
 ***
 
+Auto-DC Parameters for System: OEX.ISC-SLC.VA.GOV  
+\------------------------------------------------------------------------------  
+DC Generic Orders on Admission NO  
+DC Generic Orders on Ward Transfer NO  
+DC on Specialty Change ORDER ENTRY/RESULTS REPORTING YES  
+INPATIENT MEDICATIONS YES  
+\------------------------------------------------------------------------------  
+DC GENERIC ORDERS ON ADMISSION: NO// **\<Enter\>**  
+DC GENERIC ORDERS ON WARD TRANSFER: NO// **\<Enter\>**  
 ***
 
-Auto-DC Parameters for System: OEX.ISC-SLC.VA.GOV
-
+For DC on Specialty Change -  
+Select PACKAGE: **lab**  
+1 LAB HL7 OERR LR7O  
+2 LAB MESSAGING LA7  
+3 LAB ORDER ENTRY LRX  
+4 LAB PRE-RELEASE OERR_V3 LR02  
+5 LAB SERVICE LR  
+Press \<RETURN\> to see more, '\^' to exit this list, OR  
+CHOOSE 1-5: **5** LAB SERVICE LR  
+Are you adding LAB SERVICE as a new PACKAGE? Yes// **\<Enter\>** YES  
 ***
 
-\------------------------------------------------------------------------------
-
+PACKAGE: LAB SERVICE//**\<Enter\>** LAB SERVICE LR LAB SERVICE  
+Value: **y** YES  
 ***
 
-DC Generic Orders on Admission NO
-
-***
-
-DC Generic Orders on Ward Transfer NO
-
-***
-
-DC on Specialty Change ORDER ENTRY/RESULTS REPORTING YES
-
-***
-
-INPATIENT MEDICATIONS YES
-
-***
-
-\------------------------------------------------------------------------------
-
-***
-
-DC GENERIC ORDERS ON ADMISSION: NO// **\<Enter\>**
-
-***
-
-DC GENERIC ORDERS ON WARD TRANSFER: NO// **\<Enter\>**
-
-***
-
-***
-
-For DC on Specialty Change -
-
-***
-
-Select PACKAGE: **lab**
-
-***
-
-1 LAB HL7 OERR LR7O
-
-***
-
-2 LAB MESSAGING LA7
-
-***
-
-3 LAB ORDER ENTRY LRX
-
-***
-
-4 LAB PRE-RELEASE OERR_V3 LR02
-
-***
-
-5 LAB SERVICE LR
-
-***
-
-Press \<RETURN\> to see more, '\^' to exit this list, OR
-
-***
-
-CHOOSE 1-5: **5** LAB SERVICE LR
-
-***
-
-Are you adding LAB SERVICE as a new PACKAGE? Yes// **\<Enter\>** YES
-
-***
-
-***
-
-PACKAGE: LAB SERVICE//**\<Enter\>** LAB SERVICE LR LAB SERVICE
-
-***
-
-Value: **y** YES
-
-***
-
-***
-
-For DC on Specialty Change -
-
-***
-
-Select PACKAGE: **\<Enter\>**
-
-***
-
+For DC on Specialty Change -  
+Select PACKAGE: **\<Enter\>**  
 ### 2. Key Assignment and Electronic Signature Set-up
 
 **Allocate CPRS Security Keys**
@@ -1358,192 +647,81 @@ The ORES, ORELSE, and OREMAS keys deal with authorization for writing orders. Mo
 
     **Allocate CPRS Security Keys Example**
 
-    Select CPRS Configuration (Clin Coord) Option: AL Allocate OE/RR Security Keys
-
+    Select CPRS Configuration (Clin Coord) Option: AL Allocate OE/RR Security Keys  
 ***
 
+KEY: ORES  
 ***
 
-KEY: ORES
-
+This key is given to users that are authorized to write orders in  
+the chart. Users with this key can verify with their electronic  
+signature patient orders.  
 ***
 
+This key is typically given to licensed Physicians.  
 ***
 
-This key is given to users that are authorized to write orders in
-
+Orders entered by users with this key can be released to the ancillary  
+service for immediate action.  
 ***
 
-the chart. Users with this key can verify with their electronic
-
+DO NOT give users both the ORES key and the ORELSE key.  
 ***
 
-signature patient orders.
-
+Edit Holders? Yes// **\<Enter\>** (Yes)  
 ***
 
+Select HOLDER: **CPRSPROVIDER,ONE**  
+Added.  
 ***
 
-This key is typically given to licensed Physicians.
-
+Select HOLDER: **\<Enter\>**  
+==============================================================================  
 ***
 
+KEY: ORELSE  
 ***
 
-Orders entered by users with this key can be released to the ancillary
-
+This key is given to users that are authorized to release doctors  
+orders to an ancillary service for action.  
 ***
 
-service for immediate action.
-
+This key is typically given to Nurses.  
+Users with this key are allowed to put verbal orders in the system  
+and release them to the service for action.  
+***  
+DO NOT give users both the ORES key and the ORELSE key.  
 ***
 
+Edit Holders? Yes// **\<Enter\>** (Yes)  
 ***
 
-DO NOT give users both the ORES key and the ORELSE key.
-
+Select HOLDER: **CPRSNURSE,ONE**  NO  
+Added.  
 ***
 
+Select HOLDER: **\<Enter\>**  
+==============================================================================  
 ***
 
-Edit Holders? Yes// **\<Enter\>** (Yes)
-
+KEY: OREMAS  
 ***
 
+This is the key given to MAS Ward Clerks. It allows the user to  
+specify patient orders as 'signed on chart' when entered, which  
+releases the orders to the service for action. Users with this  
+key are not allowed to put verbal orders in the system.  
 ***
 
-Select HOLDER: **CPRSPROVIDER,ONE**
-
+Edit Holders? Yes// **Y** (Yes)  
 ***
 
-Added.
-
+Select HOLDER: **CPRSUSER,ONE** CNO  
+Added.  
 ***
 
-***
-
-Select HOLDER: **\<Enter\>**
-
-***
-
-==============================================================================
-
-***
-
-***
-
-KEY: ORELSE
-
-***
-
-***
-
-This key is given to users that are authorized to release doctors
-
-***
-
-orders to an ancillary service for action.
-
-***
-
-***
-
-This key is typically given to Nurses.
-
-***
-
-Users with this key are allowed to put verbal orders in the system
-
-***
-
-and release them to the service for action.
-
-***
-
-***
-
-***
-
-DO NOT give users both the ORES key and the ORELSE key.
-
-***
-
-***
-
-Edit Holders? Yes// **\<Enter\>** (Yes)
-
-***
-
-***
-
-Select HOLDER: **CPRSNURSE,ONE**  NO
-
-***
-
-Added.
-
-***
-
-***
-
-Select HOLDER: **\<Enter\>**
-
-***
-
-==============================================================================
-
-***
-
-***
-
-KEY: OREMAS
-
-***
-
-***
-
-This is the key given to MAS Ward Clerks. It allows the user to
-
-***
-
-specify patient orders as 'signed on chart' when entered, which
-
-***
-
-releases the orders to the service for action. Users with this
-
-***
-
-key are not allowed to put verbal orders in the system.
-
-***
-
-***
-
-Edit Holders? Yes// **Y** (Yes)
-
-***
-
-***
-
-Select HOLDER: **CPRSUSER,ONE** CNO
-
-***
-
-Added.
-
-***
-
-***
-
-Select HOLDER: **\<Enter\>**
-
-***
-
-====================================== ========================================
-
-***
-
+Select HOLDER: **\<Enter\>**  
+====================================== ========================================  
 ### Check for Multiple Keys
 
 This option identifies users who have more than one OR key assigned. It also displays which keys they have.
@@ -1552,56 +730,20 @@ Users with more than one key can encounter problems when adding orders.
 
 Use the *Allocate CPRS Security Keys* option to delete and re-assign keys for the users listed.
 
-Select CPRS Configuration (Clin Coord) Option: **KK**  Check for Multiple Keys
-
+Select CPRS Configuration (Clin Coord) Option: **KK**  Check for Multiple Keys  
+This utility identifies users that have more than one OR key assigned.  
+Users with more than one key can encounter problems when adding orders.  
+Any users listed will need to have their Keys edited and correctly assigned.  
 ***
 
-This utility identifies users that have more than one OR key assigned.
-
-***
-
-Users with more than one key can encounter problems when adding orders.
-
-***
-
-Any users listed will need to have their Keys edited and correctly assigned.
-
-***
-
-***
-
-Ok to continue? Yes//**\<Enter\>** (Yes)
-
-***
-
-CPRSUSER,TWO (1088) has more than 1 OR key: ORES ORELSE OREMAS
-
-***
-
-CPRSUSER,ONE (1117) has more than 1 OR key: ORES OREMAS
-
-***
-
-CPRSUSER,THREE (1119) has more than 1 OR key: ORES ORELSE OREMAS
-
-***
-
-CPRSUSER,FOUR (1306) has more than 1 OR key: ORES ORELSE OREMAS
-
-***
-
-CPRSUSER,FIVE (1307) has more than 1 OR key: ORELSE OREMAS
-
-***
-
-CPRSUSER,SIX (1314) has more than 1 OR key: ORES ORELSE OREMAS
-
-***
-
-CPRS,COORDINATOR (1340) has more than 1 OR key: ORES ORELSE OREMAS
-
-***
-
+Ok to continue? Yes//**\<Enter\>** (Yes)  
+CPRSUSER,TWO (1088) has more than 1 OR key: ORES ORELSE OREMAS  
+CPRSUSER,ONE (1117) has more than 1 OR key: ORES OREMAS  
+CPRSUSER,THREE (1119) has more than 1 OR key: ORES ORELSE OREMAS  
+CPRSUSER,FOUR (1306) has more than 1 OR key: ORES ORELSE OREMAS  
+CPRSUSER,FIVE (1307) has more than 1 OR key: ORELSE OREMAS  
+CPRSUSER,SIX (1314) has more than 1 OR key: ORES ORELSE OREMAS  
+CPRS,COORDINATOR (1340) has more than 1 OR key: ORES ORELSE OREMAS  
 ### Electronic Signature
 
 An electronic signature is the private code that an authorized user types into the system after performing certain actions. For CPRS, it’s used by clinicians entering orders. This signature has the same validity as the written signature on the chart.
@@ -1650,236 +792,83 @@ If key holders forget their electronic signature codes, they must contact their 
 
 If the ORES key holder hits Enter at the electronic signature prompt (in the List Manager version of CPRS), this dialogue appears:
 
-You did not enter a signature code!
-
-***
-
-...orders requiring signature will be marked as 'SIGNED ON CHART'.
-
-***
-
+You did not enter a signature code!  
+...orders requiring signature will be marked as 'SIGNED ON CHART'.  
 ***
 
 Once ORES keyholders add their signature codes, they will see:
 
-To electronically sign these orders...
-
-***
-
-Enter Signature Code: (xxxxxxx) \<hidden\>
-
-***
-
-SIGNED
-
-***
-
+To electronically sign these orders...  
+Enter Signature Code: (xxxxxxx) \<hidden\>  
+SIGNED  
 4\. Users with the ORELSE and OREMAS keys will see the following prompts after entering orders:
 
-Select Action: Accept Orders// **\<Enter\>** Accept Orders
-
+Select Action: Accept Orders// **\<Enter\>** Accept Orders  
 ***
 
-***
-
-...insufficient signature authority
-
-***
-
-NOT SIGNED
-
-***
-
-Do you want to mark these orders as 'Signed on Chart'? YES// **\<Enter\>** (YES)
-
-***
-
+...insufficient signature authority  
+NOT SIGNED  
+Do you want to mark these orders as 'Signed on Chart'? YES// **\<Enter\>** (YES)  
 4 a. If ORELSE key holders answer no, the computer dialogue will be:
 
-...insufficient signature authority
-
-***
-
-NOT SIGNED
-
-***
-
-Do you want to mark these orders as 'Signed on Chart'? YES// **n** (NO)
-
-***
-
-These orders have not been signed by an authorized physician
-
-***
-
-Do you still want to release these orders to the service? YES//**\<Enter\>**
-
-***
-
-NATURE OF ORDER: VERBAL// **\<Enter\>**
-
-***
-
+...insufficient signature authority  
+NOT SIGNED  
+Do you want to mark these orders as 'Signed on Chart'? YES// **n** (NO)  
+These orders have not been signed by an authorized physician  
+Do you still want to release these orders to the service? YES//**\<Enter\>**  
+NATURE OF ORDER: VERBAL// **\<Enter\>**  
 4 b. If OREMAS key holders answer no, the dialogue will be :
 
-...insufficient signature authority
-
-***
-
-NOT SIGNED
-
-***
-
-Do you want to mark these orders as 'Signed on Chart'? YES// **n** (NO)
-
-***
-
-UNRELEASED ORDERS:
-
-***
-
-\$ PROTHROMBIN TIME BLOOD PLASMA LB \#1971 WC
-
-***
-
+...insufficient signature authority  
+NOT SIGNED  
+Do you want to mark these orders as 'Signed on Chart'? YES// **n** (NO)  
+UNRELEASED ORDERS:  
+\$ PROTHROMBIN TIME BLOOD PLASMA LB \#1971 WC  
 **Electronic Signature Code Edit [XUSESIG]**
 
-**This option on the User’s Toolbox menu (on any VISTA menu) lets you enter or change your initials, signature block information, or office phone number. You can also enter a new Electronic Signature Code or change an existing code. If you forget your existing signature code, you will have to have it deleted by your clinical coordinator or site manager before you can enter a new one.**
-
+**This option on the User’s Toolbox menu (on any VISTA menu) lets you enter or change your initials, signature block information, or office phone number. You can also enter a new Electronic Signature Code or change an existing code. If you forget your existing signature code, you will have to have it deleted by your clinical coordinator or site manager before you can enter a new one.**  
 ***
 
+Select Option: **tb** User’s Toolbox  
+Select User's Toolbox Option: **electronic Signature code Edit**  
+This option is designed to permit you to enter or change your Initials, Signature Block Information Office Phone number , and Voice and Digital Pagers numbers. In addition, you are permitted to enter a new Electronic Signature Code or to change an existing code.  
+***  
+INITIALS: JG// **\<Enter\>**  
+SIGNATURE BLOCK PRINTED NAME: **?**  
+Enter your name as you want it to appear on official documents  
+SIGNATURE BLOCK PRINTED NAME: CPRSUSER/SEVEN// **??**  
+The name entered must contain the surname of the user.  
 ***
 
-Select Option: **tb** User’s Toolbox
-
+This field can then contain the name of the user as they wish it  
+to be displayed with the notation that they signed the document  
+electronically.  
+For example: CPRSPROVIDER,TWO M.D. or CPRSNURSE,TWO RN.  
 ***
 
-Select User's Toolbox Option: **electronic Signature code Edit**
-
+SIGNATURE BLOCK TITLE: CPRSUSER/SEVEN // **??**  
+This field should contain the title of the person who is  
+electronically signing a document. Examples of titles are Chief  
+of Surgery, Dietician, Clinical Pharmacist, etc. This title will  
+print next to the name of the person who signs the document. The  
+person's name will be taken from the SIGNATURE BLOCK PRINTED NAME  
+field.  
+SIGNATURE BLOCK TITLE: **Chief of Surgery**  
+OFFICE PHONE:  
+ANALOG PAGER:  
+DIGITAL PAGER:  
+Enter your Current Signature Code: \<hidden **CU1234\>** SIGNATURE VERIFIED  
 ***
 
-This option is designed to permit you to enter or change your Initials, Signature Block Information Office Phone number , and Voice and Digital Pagers numbers. In addition, you are permitted to enter a new Electronic Signature Code or to change an existing code.
-
+ENTER NEW SIGNATURE CODE:\<hidden **CUSER7\>** SIGNATURE VERIFIED  
 ***
 
+Your typing will not show.  
+RE-ENTER SIGNATURE CODE FOR VERIFICATION:\<hidden\> **CUSER7**  
 ***
 
-***
-
-INITIALS: JG// **\<Enter\>**
-
-***
-
-SIGNATURE BLOCK PRINTED NAME: **?**
-
-***
-
-Enter your name as you want it to appear on official documents
-
-***
-
-SIGNATURE BLOCK PRINTED NAME: CPRSUSER/SEVEN// **??**
-
-***
-
-The name entered must contain the surname of the user.
-
-***
-
-***
-
-This field can then contain the name of the user as they wish it
-
-***
-
-to be displayed with the notation that they signed the document
-
-***
-
-electronically.
-
-***
-
-For example: CPRSPROVIDER,TWO M.D. or CPRSNURSE,TWO RN.
-
-***
-
-***
-
-SIGNATURE BLOCK TITLE: CPRSUSER/SEVEN // **??**
-
-***
-
-This field should contain the title of the person who is
-
-***
-
-electronically signing a document. Examples of titles are Chief
-
-***
-
-of Surgery, Dietician, Clinical Pharmacist, etc. This title will
-
-***
-
-print next to the name of the person who signs the document. The
-
-***
-
-person's name will be taken from the SIGNATURE BLOCK PRINTED NAME
-
-***
-
-field.
-
-***
-
-SIGNATURE BLOCK TITLE: **Chief of Surgery**
-
-***
-
-OFFICE PHONE:
-
-***
-
-ANALOG PAGER:
-
-***
-
-DIGITAL PAGER:
-
-***
-
-Enter your Current Signature Code: \<hidden **CU1234\>** SIGNATURE VERIFIED
-
-***
-
-***
-
-ENTER NEW SIGNATURE CODE:\<hidden **CUSER7\>** SIGNATURE VERIFIED
-
-***
-
-***
-
-Your typing will not show.
-
-***
-
-RE-ENTER SIGNATURE CODE FOR VERIFICATION:\<hidden\> **CUSER7**
-
-***
-
-***
-
-DONE
-
-***
-
-***
-
-***
-
+DONE  
+***  
 **Note:**  If the SIGNATURE BLOCK PRINTED NAME and SIGNATURE BLOCK TITLE fields are disabled at your site, contact your supervisor to request entry of your name and title.
 
 ### 3. Edit DC Reasons
@@ -1902,102 +891,33 @@ Obsolete Order
 
 **Example**
 
-Select CPRS Configuration (Clin Coord) Option: **Edit** DC Reasons
-
+Select CPRS Configuration (Clin Coord) Option: **Edit** DC Reasons  
 ***
 
+Select DC REASON: **Entered in error**  
+Are you adding 'Entered in error' as a new ORDER REASON? No// **y** (Yes)  
+ORDER REASON NUMBER: 16// **\<Enter\>**  
+NAME: Entered in error// **\<Enter\>**  
+SYNONYM: **ER**  
+INACTIVE: **\<Enter\>**  
+NATURE OF ACTIVITY: **?**  
+Answer with NATURE OF ORDER NUMBER, or NAME, or CODE  
+Do you want the entire 11-Entry NATURE OF ORDER List? **y** (Yes)  
+Choose from:  
+1 WRITTEN W  
+2 VERBAL V  
+3 TELEPHONED P  
+4 SERVICE CORRECTION S  
+5 POLICY I  
+6 DUPLICATE D  
+7 REJECTED X  
+8 PHYSICIAN ENTERED E  
+9 AUTO A  
+10 CHANGED C  
+11 MAINTENANCE M  
 ***
 
-Select DC REASON: **Entered in error**
-
-***
-
-Are you adding 'Entered in error' as a new ORDER REASON? No// **y** (Yes)
-
-***
-
-ORDER REASON NUMBER: 16// **\<Enter\>**
-
-***
-
-NAME: Entered in error// **\<Enter\>**
-
-***
-
-SYNONYM: **ER**
-
-***
-
-INACTIVE: **\<Enter\>**
-
-***
-
-NATURE OF ACTIVITY: **?**
-
-***
-
-Answer with NATURE OF ORDER NUMBER, or NAME, or CODE
-
-***
-
-Do you want the entire 11-Entry NATURE OF ORDER List? **y** (Yes)
-
-***
-
-Choose from:
-
-***
-
-1 WRITTEN W
-
-***
-
-2 VERBAL V
-
-***
-
-3 TELEPHONED P
-
-***
-
-4 SERVICE CORRECTION S
-
-***
-
-5 POLICY I
-
-***
-
-6 DUPLICATE D
-
-***
-
-7 REJECTED X
-
-***
-
-8 PHYSICIAN ENTERED E
-
-***
-
-9 AUTO A
-
-***
-
-10 CHANGED C
-
-***
-
-11 MAINTENANCE M
-
-***
-
-***
-
-NATURE OF ACTIVITY: **4**
-
-***
-
+NATURE OF ACTIVITY: **4**  
 ### 4. GUI Setup
 
 **Required Files:**
@@ -2020,82 +940,25 @@ HOSTS should reside on the client already
 | Windows NT 3.51           | C:\\WINDOWS\\SYSTEM32\\DRIVERS\\ETC\\HOSTS |
 | Windows NT 4.0            | C:\\WINNT\\SYSTEM32\\DRIVERS\\ETC\\HOSTS   |
 
-**Example of a Windows 95 HOSTS file**
-
-***
-
-\# Copyright (c) 1994 Microsoft Corp.
-
-***
-
-\#
-
-***
-
-\# This is a sample HOSTS file used by Microsoft TCP/IP for Chicago
-
-***
-
-\#
-
-***
-
-\# This file contains the mappings of IP addresses to host names. Each
-
-***
-
-\# entry should be kept on an individual line. The IP address should
-
-***
-
-\# be placed in the first column followed by the corresponding host name.
-
-***
-
-\# The IP address and the host name should be separated by at least one
-
-***
-
-\# space.
-
-***
-
-\#
-
-***
-
-\# Additionally, comments (such as these) may be inserted on individual
-
-***
-
-\# lines or following the machine name denoted by a '\#' symbol.
-
-***
-
-\#
-
-***
-
-\# For example:
-
-***
-
-\#
-
-***
-
-\# 102.54.94.97 rhino.acme.com \# source server
-
-***
-
-\# 38.25.63.10 x.acme.com \# x client host
-
-***
-
-\#
-
-***
-
+**Example of a Windows 95 HOSTS file**  
+\# Copyright (c) 1994 Microsoft Corp.  
+\#  
+\# This is a sample HOSTS file used by Microsoft TCP/IP for Chicago  
+\#  
+\# This file contains the mappings of IP addresses to host names. Each  
+\# entry should be kept on an individual line. The IP address should  
+\# be placed in the first column followed by the corresponding host name.  
+\# The IP address and the host name should be separated by at least one  
+\# space.  
+\#  
+\# Additionally, comments (such as these) may be inserted on individual  
+\# lines or following the machine name denoted by a '\#' symbol.  
+\#  
+\# For example:  
+\#  
+\# 102.54.94.97 rhino.acme.com \# source server  
+\# 38.25.63.10 x.acme.com \# x client host  
+\#  
 1) Move the cursor to the end of the last line displayed in the file.
 
 2) Press the Enter Key to create a new line.
@@ -2106,14 +969,8 @@ HOSTS should reside on the client already
 
 For example, the entry for a server at your site with an IP address of 192.1.1.1 would look like this:
 
-127.0.0.1 localhost \# loopback **\<---existing entry**
-
-***
-
-192.1.1.1 DHCPSERVER \# cprs **\<---added entry**
-
-***
-
+127.0.0.1 localhost \# loopback **\<---existing entry**  
+192.1.1.1 DHCPSERVER \# cprs **\<---added entry**  
 4) Repeat steps a - d until you have entered all of the IP addresses and corresponding Host names you wish to enter.
 
 5) When your entries are complete, use Notepad's **File \| Save** command to save the HOSTS file.
@@ -2168,520 +1025,181 @@ This option allows you to modify the *user’s* default number of days to displa
 
 All of the options on this menu are very similar to this example.
 
-Select GUI Parameters Option: **US**  GUI Cover Sheet Display Parameters
-
+Select GUI Parameters Option: **US**  GUI Cover Sheet Display Parameters  
 ***
 
+SY GUI Cover Sheet System Display Parameters  
+DI GUI Cover Sheet Division Display Parameters  
+SE GUI Cover Sheet Service Display Parameters  
+LO GUI Cover Sheet Location Display Parameters  
+US GUI Cover Sheet User Display Parameters  
 ***
 
-SY GUI Cover Sheet System Display Parameters
-
+Select GUI Cover Sheet Display Parameters Option: US GUI Cover Sheet User Display Parameters  
+Select NEW PERSON NAME: **CPRSPROVIDER,FIVE** CPF  
 ***
 
-DI GUI Cover Sheet Division Display Parameters
-
+GUI Cover Sheet - User for User: CPRSPROVIDER,FIVE  
+\----------------------------------------------------------------------------  
+Lab Order/Result Inpatient Date Range 60  
+Lab Order/Result Outpatient Date Range  
+Appt Search Start Date  
+Appt Search Stop Date  
+Visit Search Start Date  
+Visit Search Stop Date  
+Clinical Reminders for Search  
+\----------------------------------------------------------------------------  
+Inpatient Lab Number of Display Days: 60//  
+Outpatient Lab Number of Display Days: 120  
+Appt Search Start Date: T// T-30  
+Appt Search Stop Date: T+90// T+60  
+Visit Search Start Date:T-365// T-30  
+Visit Search Stop Date: T// T+60  
 ***
 
-SE GUI Cover Sheet Service Display Parameters
-
+For Clinical Reminders for Search -  
+Select Number: 10  
+Are you adding 10 as a new Number? Yes// YES  
 ***
 
-LO GUI Cover Sheet Location Display Parameters
-
-***
-
-US GUI Cover Sheet User Display Parameters
-
-***
-
-***
-
-Select GUI Cover Sheet Display Parameters Option: US GUI Cover Sheet User Display Parameters
-
-***
-
-Select NEW PERSON NAME: **CPRSPROVIDER,FIVE** CPF
-
-***
-
-***
-
-GUI Cover Sheet - User for User: CPRSPROVIDER,FIVE
-
-***
-
-\----------------------------------------------------------------------------
-
-***
-
-Lab Order/Result Inpatient Date Range 60
-
-***
-
-Lab Order/Result Outpatient Date Range
-
-***
-
-Appt Search Start Date
-
-***
-
-Appt Search Stop Date
-
-***
-
-Visit Search Start Date
-
-***
-
-Visit Search Stop Date
-
-***
-
-Clinical Reminders for Search
-
-***
-
-\----------------------------------------------------------------------------
-
-***
-
-Inpatient Lab Number of Display Days: 60//
-
-***
-
-Outpatient Lab Number of Display Days: 120
-
-***
-
-Appt Search Start Date: T// T-30
-
-***
-
-Appt Search Stop Date: T+90// T+60
-
-***
-
-Visit Search Start Date:T-365// T-30
-
-***
-
-Visit Search Stop Date: T// T+60
-
-***
-
-***
-
-For Clinical Reminders for Search -
-
-***
-
-Select Number: 10
-
-***
-
-Are you adding 10 as a new Number? Yes// YES
-
-***
-
-***
-
-Number: 10//**\<Enter\>** 10
-
-***
-
-Value: **?**
-
-***
-
-Answer with PCE REMINDER/MAINTENANCE ITEM NAME, or REMINDER TYPE, or
-
-***
-
-PRINT NAME
-
-***
-
-Do you want the entire 34-Entry PCE REMINDER/MAINTENANCE ITEM List? **Y** (Yes)
-
-***
-
-Choose from:
-
-***
-
-VA-\*BREAST CANCER SCREEN
-
-***
-
-VA-\*CERVICAL CANCER SCREEN
-
-***
-
-VA-\*CHOLESTEROL SCREEN (F)
-
-***
-
-VA-\*CHOLESTEROL SCREEN (M)
-
-***
-
-VA-\*COLORECTAL CANCER SCREEN (
-
-***
-
-VA-\*COLORECTAL CANCER SCREEN (
-
-***
-
-VA-\*FITNESS AND EXERCISE SCREE
-
-***
-
-VA-\*HYPERTENSION SCREEN
-
-***
-
-VA-\*INFLUENZA IMMUNIZATION
-
-***
-
-VA-\*PNEUMOCOCCAL VACCINE
-
-***
-
-VA-\*PROBLEM DRINKING SCREEN
-
-***
-
-VA-\*SEAT BELT AND ACCIDENT SCR
-
-***
-
+Number: 10//**\<Enter\>** 10  
+Value: **?**  
+Answer with PCE REMINDER/MAINTENANCE ITEM NAME, or REMINDER TYPE, or  
+PRINT NAME  
+Do you want the entire 34-Entry PCE REMINDER/MAINTENANCE ITEM List? **Y** (Yes)  
+Choose from:  
+VA-\*BREAST CANCER SCREEN  
+VA-\*CERVICAL CANCER SCREEN  
+VA-\*CHOLESTEROL SCREEN (F)  
+VA-\*CHOLESTEROL SCREEN (M)  
+VA-\*COLORECTAL CANCER SCREEN (  
+VA-\*COLORECTAL CANCER SCREEN (  
+VA-\*FITNESS AND EXERCISE SCREE  
+VA-\*HYPERTENSION SCREEN  
+VA-\*INFLUENZA IMMUNIZATION  
+VA-\*PNEUMOCOCCAL VACCINE  
+VA-\*PROBLEM DRINKING SCREEN  
+VA-\*SEAT BELT AND ACCIDENT SCR  
 **GUI Cover Sheet User Display Parameters, cont’d**
 
-VA-\*TETANUS DIPTHERIA IMMUNIZA
-
+VA-\*TETANUS DIPTHERIA IMMUNIZA  
+VA-\*TOBACCO USE SCREEN  
+VA-\*WEIGHT AND NUTRITION SCREE  
+VA-ADVANCED DIRECTIVES EDUCATI  
+VA-ALCOHOL ABUSE EDUCATION  
+VA-BLOOD PRESSURE CHECK  
+VA-BREAST EXAM  
+VA-BREAST SELF EXAM EDUCATION  
+VA-DIGITAL RECTAL (PROSTATE) E  
+VA-EXERCISE EDUCATION  
+VA-FECAL OCCULT BLOOD TEST  
+VA-FLEXISIGMOIDOSCOPY  
+VA-INFLUENZA VACCINE  
+VA-MAMMOGRAM  
+VA-NUTRITION/OBESITY EDUCATION  
+VA-PAP SMEAR  
+VA-PNEUMOVAX  
+VA-PPD  
+VA-PSA  
+VA-SEAT BELT EDUCATION  
+VA-TOBACCO EDUCATION  
+VA-WEIGHT  
 ***
 
-VA-\*TOBACCO USE SCREEN
-
+Value: INFLUENZA **??**  
+Value: **VA-INFLUENZA VACCINE**  
 ***
 
-VA-\*WEIGHT AND NUTRITION SCREE
-
-***
-
-VA-ADVANCED DIRECTIVES EDUCATI
-
-***
-
-VA-ALCOHOL ABUSE EDUCATION
-
-***
-
-VA-BLOOD PRESSURE CHECK
-
-***
-
-VA-BREAST EXAM
-
-***
-
-VA-BREAST SELF EXAM EDUCATION
-
-***
-
-VA-DIGITAL RECTAL (PROSTATE) E
-
-***
-
-VA-EXERCISE EDUCATION
-
-***
-
-VA-FECAL OCCULT BLOOD TEST
-
-***
-
-VA-FLEXISIGMOIDOSCOPY
-
-***
-
-VA-INFLUENZA VACCINE
-
-***
-
-VA-MAMMOGRAM
-
-***
-
-VA-NUTRITION/OBESITY EDUCATION
-
-***
-
-VA-PAP SMEAR
-
-***
-
-VA-PNEUMOVAX
-
-***
-
-VA-PPD
-
-***
-
-VA-PSA
-
-***
-
-VA-SEAT BELT EDUCATION
-
-***
-
-VA-TOBACCO EDUCATION
-
-***
-
-VA-WEIGHT
-
-***
-
-***
-
-Value: INFLUENZA **??**
-
-***
-
-Value: **VA-INFLUENZA VACCINE**
-
-***
-
-***
-
-For Clinical Reminders for Search -
-
-***
-
-Select Number: **\<Enter\>**
-
-***
-
+For Clinical Reminders for Search -  
+Select Number: **\<Enter\>**  
 ***
 
 ### GUI Health Summary Types
 
 Use this option to enter Health Summary types that may be displayed on the Reports screen. Include only health summaries that do no additional prompting, such as for time and occurrence limits; these must be already defined. Since the GUI can’t drop into a character-based scrolling dialog, ad hoc health summaries are not allowed.
 
-Select GUI Parameters Option: **HS** GUI Health Summary Types
-
+Select GUI Parameters Option: **HS** GUI Health Summary Types  
 ***
 
+\--- Setting Allowable Health Summary Types for System: OEX.ISC-SLC.VA.GOV  
 ***
 
-\--- Setting Allowable Health Summary Types for System: OEX.ISC-SLC.VA.GOV
-
+Sequence: **?**  
 ***
 
+Enter the sequence in which this health summary should appear in the list.  
+Select Sequence: 1  
+Sequence: 1// 1  
+Health Summary: **GMTS HS EYE CLINIC**  
+Select Sequence: **\<Enter\>**  
 ***
 
-Sequence: **?**
-
+CS GUI Cover Sheet Display Parameters ...  
+HS GUI Health Summary Types  
+TM GUI Tool Menu Items  
 ***
 
-***
-
-Enter the sequence in which this health summary should appear in the list.
-
-***
-
-Select Sequence: 1
-
-***
-
-Sequence: 1// 1
-
-***
-
-Health Summary: **GMTS HS EYE CLINIC**
-
-***
-
-Select Sequence: **\<Enter\>**
-
-***
-
-***
-
-CS GUI Cover Sheet Display Parameters ...
-
-***
-
-HS GUI Health Summary Types
-
-***
-
-TM GUI Tool Menu Items
-
-***
-
-***
-
-Select GUI Parameters Option: \<Enter\>
-
-***
-
+Select GUI Parameters Option: \<Enter\>  
 ### GUI Tool Menu Items
 
 This option lets you add items that will appear on your Tools menu in the CPRS GUI. Items that appear on the tools menu should be Windows executable files. Enter them in this format: “Display Text=Executable.”
 
 For example, Vista Terminal Emulator=KEA.EXE VISTA.
 
-Select GUI Parameters Option: tm **GUI** Tool Menu Items
-
+Select GUI Parameters Option: tm **GUI** Tool Menu Items  
 ***
 
+CPRS GUI Tools Menu may be set for the following:  
 ***
 
-CPRS GUI Tools Menu may be set for the following:
-
+1 User USR [choose from NEW PERSON]  
+2 Location LOC [choose from HOSPITAL LOCATION]  
+3 Division DIV [REGION 5]  
+4 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
+Enter selection: **1** User NEW PERSON  
+Select NEW PERSON NAME: **CPRSPROVIDER,FIVE** CPF  
 ***
 
-1 User USR [choose from NEW PERSON]
-
+\------------- Setting CPRS GUI Tools Menu for User: CPRSPROVIDER,FIVE----------  
+Sequence: **?**  
 ***
 
-2 Location LOC [choose from HOSPITAL LOCATION]
-
+Enter the sequence in which this menu item should appear.  
+Select Sequence: **1**  
+Are you adding 1 as a new Sequence? Yes// **YES**  
+Sequence: 2// **\<Enter\>**  
 ***
 
-3 Division DIV [REGION 5]
-
+Name=Command: **??**  
 ***
 
-4 System SYS [OEX.ISC-SLC.VA.GOV]
-
+This parameter may be used to identify which items should appear on the  
+tools menu which is displayed by the CPRS GUI. Each item should contain  
+a name that should be displayed on the menu, followed by an equal sign,  
+followed by the command string used to invoke the executable. This  
+string may also include parameters that are passed to the executable.  
+Some example entries are:  
 ***
 
+Hospital Policy=C:\\WINNT\\SYSTEM32\\VIEWERS\\QUIKVIEW.EXE LOCPLCY.DOC  
+VISTA Terminal=C:\\PROGRA\~1\\KEA\\KEAVT.EXE VISTA.KTC  
 ***
 
-Enter selection: **1** User NEW PERSON
-
+An ampersand may be used in the name portion to identify a letter that  
+should be underlined on the menu for quick keyboard access. For example,  
+to underscore the letter H in Hospital Policy, enter \&Hospital Policy as  
+the name part.  
 ***
 
-Select NEW PERSON NAME: **CPRSPROVIDER,FIVE** CPF
-
+Name=Command: **c:\\MSOFFICE\\\$WINWORD.EXE**  
 ***
 
+Example: Notepad=C:\\WINDOWS\\NOTEPAD.EXE.  
 ***
 
-\------------- Setting CPRS GUI Tools Menu for User: CPRSPROVIDER,FIVE----------
-
-***
-
-Sequence: **?**
-
-***
-
-***
-
-Enter the sequence in which this menu item should appear.
-
-***
-
-Select Sequence: **1**
-
-***
-
-Are you adding 1 as a new Sequence? Yes// **YES**
-
-***
-
-Sequence: 2// **\<Enter\>**
-
-***
-
-***
-
-Name=Command: **??**
-
-***
-
-***
-
-This parameter may be used to identify which items should appear on the
-
-***
-
-tools menu which is displayed by the CPRS GUI. Each item should contain
-
-***
-
-a name that should be displayed on the menu, followed by an equal sign,
-
-***
-
-followed by the command string used to invoke the executable. This
-
-***
-
-string may also include parameters that are passed to the executable.
-
-***
-
-Some example entries are:
-
-***
-
-***
-
-Hospital Policy=C:\\WINNT\\SYSTEM32\\VIEWERS\\QUIKVIEW.EXE LOCPLCY.DOC
-
-***
-
-VISTA Terminal=C:\\PROGRA\~1\\KEA\\KEAVT.EXE VISTA.KTC
-
-***
-
-***
-
-An ampersand may be used in the name portion to identify a letter that
-
-***
-
-should be underlined on the menu for quick keyboard access. For example,
-
-***
-
-to underscore the letter H in Hospital Policy, enter \&Hospital Policy as
-
-***
-
-the name part.
-
-***
-
-***
-
-Name=Command: **c:\\MSOFFICE\\\$WINWORD.EXE**
-
-***
-
-***
-
-Example: Notepad=C:\\WINDOWS\\NOTEPAD.EXE.
-
-***
-
-***
-
-Name=Command:
-
-***
-
+Name=Command:  
 ### Adding an Add Orders Menu to the GUI
 
 The parameters that control the "Write Orders" list are edited through the General Parameter Tools menu (XPAR MENU TOOLS).
@@ -2706,274 +1224,94 @@ You can find what was on the "Write Orders" list to start with by using the para
 
 The "Write Orders" list, as exported, contains the following dialogs:
 
-Sequence Value Display Name
-
-***
-
-30 FHW1 Diet
-
-***
-
-52 PSJ OR PAT OE Meds, Inpatient
-
-***
-
-55 PSO OERR Meds, Outpatient
-
-***
-
-58 PSJI OR PAT FLUID OE IV Fluids
-
-***
-
-60 LR OTHER LAB TESTS Lab Tests
-
-***
-
-70 RA OERR EXAM Radiology
-
-***
-
-80 GMRCOR CONSULT Consult
-
-***
-
-85 GMRCOR REQUEST Procedure
-
-***
-
-90 GMRVOR Vitals
-
-***
-
-99 OR GXTEXT WORD PROCESSING ORDER Text Only Order
-
-***
-
+Sequence Value Display Name  
+30 FHW1 Diet  
+52 PSJ OR PAT OE Meds, Inpatient  
+55 PSO OERR Meds, Outpatient  
+58 PSJI OR PAT FLUID OE IV Fluids  
+60 LR OTHER LAB TESTS Lab Tests  
+70 RA OERR EXAM Radiology  
+80 GMRCOR CONSULT Consult  
+85 GMRCOR REQUEST Procedure  
+90 GMRVOR Vitals  
+99 OR GXTEXT WORD PROCESSING ORDER Text Only Order  
 The sequence is just an arbitrary number to indicate the order that the dialog should be in the list.
 
-Select OPTION NAME: **ORMGR** CPRS Manager Menu menu
-
+Select OPTION NAME: **ORMGR** CPRS Manager Menu menu  
 ***
 
+CL Clinician Menu ...  
+NM Nurse Menu ...  
+WC Ward Clerk Menu ...  
+PE CPRS Configuration (Clin Coord) ...  
+IR CPRS Configuration (IRM) ...  
 ***
 
-CL Clinician Menu ...
-
+Select CPRS Manager Menu Option: **IR** CPRS Configuration (IRM)  
 ***
 
-NM Nurse Menu ...
-
+OC Order Check Expert System Main Menu ...  
+TI ORMTIME Main Menu ...  
+UT CPRS Clean-up Utilities ...  
+XX General Parameter Tools ...  
 ***
 
-WC Ward Clerk Menu ...
-
+Select CPRS Configuration (IRM) Option: **XX** General Parameter Tools  
 ***
 
-PE CPRS Configuration (Clin Coord) ...
-
+LV List Values for a Selected Parameter  
+LE List Values for a Selected Entity  
+LP List Values for a Selected Package  
+LT List Values for a Selected Template  
+EP Edit Parameter Values  
+ET Edit Parameter Values with Template  
 ***
 
-IR CPRS Configuration (IRM) ...
-
+Select General Parameter Tools Option: **EP** Edit Parameter Values  
+\--- Edit Parameter Values ---  
 ***
 
+Select PARAMETER DEFINITION NAME:**ORWDX** WRITE ORDERS LIST Menu for Write  
+Orders List  
 ***
 
-Select CPRS Manager Menu Option: **IR** CPRS Configuration (IRM)
-
+ORWDX WRITE ORDERS LIST may be set for the following:  
 ***
 
+2 User USR [choose from NEW PERSON]  
+7 Division DIV [REGION 5]  
+8 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-OC Order Check Expert System Main Menu ...
-
+Enter selection: **2** User NEW PERSON  
+Select NEW PERSON NAME: **CPRSPROVIDER,FIVE** CPF  
 ***
 
-TI ORMTIME Main Menu ...
-
+\----------- Setting ORWDX WRITE ORDERS LIST for User: CPRSPROVIDER,FIVE------  
+Order Dialog: **??**  
 ***
 
-UT CPRS Clean-up Utilities ...
-
+Choose from:  
+FHWMENU  
+GMRVORMENU  
+OR ADD MENU CLINICIAN  
+OR GMENU ACTIVITY ORDERS  
+OR GMENU ORDER SETS  
+OR GMENU OTHER ORDERS  
+OR GMENU PATIENT CARE ORDERS  
+OR GXMOVE PATIENT MOVEMENT  
+ORZ WHATEVER  
+ZZCURTIS  
+ZZJFR MENU  
+ZZJFR TEST MENU  
+ZZKCM MENU  
+ZZKCM MENU 1  
+ZZMARCIA  
+ZZMEL MENU  
+ZZRV1  
 ***
 
-XX General Parameter Tools ...
-
-***
-
-***
-
-Select CPRS Configuration (IRM) Option: **XX** General Parameter Tools
-
-***
-
-***
-
-LV List Values for a Selected Parameter
-
-***
-
-LE List Values for a Selected Entity
-
-***
-
-LP List Values for a Selected Package
-
-***
-
-LT List Values for a Selected Template
-
-***
-
-EP Edit Parameter Values
-
-***
-
-ET Edit Parameter Values with Template
-
-***
-
-***
-
-Select General Parameter Tools Option: **EP** Edit Parameter Values
-
-***
-
-\--- Edit Parameter Values ---
-
-***
-
-***
-
-Select PARAMETER DEFINITION NAME:**ORWDX** WRITE ORDERS LIST Menu for Write
-
-***
-
-Orders List
-
-***
-
-***
-
-ORWDX WRITE ORDERS LIST may be set for the following:
-
-***
-
-***
-
-2 User USR [choose from NEW PERSON]
-
-***
-
-7 Division DIV [REGION 5]
-
-***
-
-8 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **2** User NEW PERSON
-
-***
-
-Select NEW PERSON NAME: **CPRSPROVIDER,FIVE** CPF
-
-***
-
-***
-
-\----------- Setting ORWDX WRITE ORDERS LIST for User: CPRSPROVIDER,FIVE------
-
-***
-
-Order Dialog: **??**
-
-***
-
-***
-
-Choose from:
-
-***
-
-FHWMENU
-
-***
-
-GMRVORMENU
-
-***
-
-OR ADD MENU CLINICIAN
-
-***
-
-OR GMENU ACTIVITY ORDERS
-
-***
-
-OR GMENU ORDER SETS
-
-***
-
-OR GMENU OTHER ORDERS
-
-***
-
-OR GMENU PATIENT CARE ORDERS
-
-***
-
-OR GXMOVE PATIENT MOVEMENT
-
-***
-
-ORZ WHATEVER
-
-***
-
-ZZCURTIS
-
-***
-
-ZZJFR MENU
-
-***
-
-ZZJFR TEST MENU
-
-***
-
-ZZKCM MENU
-
-***
-
-ZZKCM MENU 1
-
-***
-
-ZZMARCIA
-
-***
-
-ZZMEL MENU
-
-***
-
-ZZRV1
-
-***
-
-***
-
-Order Dialog: **ZZMEL MENU**
-
-***
-
+Order Dialog: **ZZMEL MENU**  
 ### GUI Add/Edit Local Message for OTH Button
 
 This option lets you add, edit and remove a local message that displays in the OTH/OTH-90 pop-up window in CPRS GUI. To navigate to this option, select option OTH from the GUI Parameters menu option; see new option highlighted (yellow) below:
@@ -3014,22 +1352,10 @@ EIE GUI Mark Allergy Entered in Error
 
 To add a local message to display in the OTH-90 pop-up window in CPRS GUI follow the steps below:
 
-1.  Select GUI Parameters Option: OTH GUI Add/Edit Local Message for OTH Button OR OTH BTN LOCAL MSG ADD/EDIT.
-
-***
-
-1.  Add optional text in line 1 and press enter when finished.
-
-***
-
-1.  Add optional text in line 2 and press enter when finished.
-
-***
-
-The following is an example of the new feature.
-
-***
-
+1.  Select GUI Parameters Option: OTH GUI Add/Edit Local Message for OTH Button OR OTH BTN LOCAL MSG ADD/EDIT.  
+1.  Add optional text in line 1 and press enter when finished.  
+1.  Add optional text in line 2 and press enter when finished.  
+The following is an example of the new feature.  
 Add/Edit Text for Display in OTH Button in CPRS
 
 \-----------------------------------------------
@@ -3060,30 +1386,15 @@ The figure below is an example of the local message displayed in OTH pop-up wind
 
 ![Example of the local message displayed in OTH popup window in CPRS GUI.](ed9de514fc92cfd5399c8dc21b51b654.png)
 
-**Figure 1 OTH popup window in CPRS GUI**
-
-***
-
+**Figure 1 OTH popup window in CPRS GUI**  
 ### Edit/Remove Local Message
 
 To edit a local message follow the steps below:
 
-1.  From GUI Parameters menu, enter option: OTH GUI Add/Edit Local Message for OTH Button.
-
-***
-
-1.  Editing is consistent with fileman options, such as Replace \<type the text you with to replace\> With \<type new text to display\>.
-
-***
-
-1.  To remove a line of text, type @ and press enter.
-
-***
-
-1.  Once you press enter at line two (2), you will be returned to the GUI Parameters menu.
-
-***
-
+1.  From GUI Parameters menu, enter option: OTH GUI Add/Edit Local Message for OTH Button.  
+1.  Editing is consistent with fileman options, such as Replace \<type the text you with to replace\> With \<type new text to display\>.  
+1.  To remove a line of text, type @ and press enter.  
+1.  Once you press enter at line two (2), you will be returned to the GUI Parameters menu.  
 ### ZIPM Enter/Edit Missing ZIP Code Message Parameter
 
 This option lets you add, edit and remove a local message that displays in the pop-up window in CPRS GUI when an attempt is made to place an Outpatient Controlled Substance medication order for a patient with a United States address and no ZIP code. The custom message should contain contact information for the person or office responsible for updating patient address information at the local facility.
@@ -3126,56 +1437,26 @@ EIE GUI Mark Allergy Entered in Error
 
 To add a custom missing ZIP code message to display in the “Controlled substance prescriptions require a patient address” pop-up window in CPRS GUI, follow the steps below:
 
-1.  At the “Enter selection:” prompt, select “Division” to enter/edit a custom message for a specific Division, or “System” to enter/edit a custom default message for the entire facility. If a custom message is entered for both a specific Division and System, the System message will continue to display for Divisions for which a specific custom message was not entered.
-
-***
-
-1.  If “Division” was entered in Step 1, enter the division at the “INSTITUTION NAME:” prompt. If “System” was entered in Step 1, proceed to step 3.
-
-***
-
-1.  At the “Value:” prompt, enter the contact information for the person or office responsible for updating patient address information at the local facility.
-
-***
-
+1.  At the “Enter selection:” prompt, select “Division” to enter/edit a custom message for a specific Division, or “System” to enter/edit a custom default message for the entire facility. If a custom message is entered for both a specific Division and System, the System message will continue to display for Divisions for which a specific custom message was not entered.  
+1.  If “Division” was entered in Step 1, enter the division at the “INSTITUTION NAME:” prompt. If “System” was entered in Step 1, proceed to step 3.  
+1.  At the “Value:” prompt, enter the contact information for the person or office responsible for updating patient address information at the local facility.  
 When you press Enter on line three, you will be returned to the GUI Parameters menu options.
 
 Example, entering custom ZIP code message:
 
-Patient Missing ZIP Code Message may be set for the following:
-
+Patient Missing ZIP Code Message may be set for the following:  
 ***
 
+1 Division DIV [choose from INSTITUTION]  
+2 System SYS [DOSO.FO-BIRM.MED.VA.GOV]  
 ***
 
-1 Division DIV [choose from INSTITUTION]
-
+Enter selection: 1 Division INSTITUTION  
+Select INSTITUTION NAME: ALBANY OPC NY OCMC 500A4  
 ***
 
-2 System SYS [DOSO.FO-BIRM.MED.VA.GOV]
-
-***
-
-***
-
-Enter selection: 1 Division INSTITUTION
-
-***
-
-Select INSTITUTION NAME: ALBANY OPC NY OCMC 500A4
-
-***
-
-***
-
-\--- Setting Patient Missing ZIP Code Message for Division: ALBANY OPC ---
-
-***
-
-Value: Please contact Cprsname Admin at (800) 555-1212.
-
-***
-
+\--- Setting Patient Missing ZIP Code Message for Division: ALBANY OPC ---  
+Value: Please contact Cprsname Admin at (800) 555-1212.  
 Example of the pop-up window that displays when an attempt is made to place an Outpatient Controlled Substance medication order for a patient with a United States address and no ZIP code:
 
 ![Pop-up window titled "Order Not Placed - Missing Patient Address" the message reads, "Controlled substance prescriptions required a patient address. Please contact Cprsname Admin at (800) 555-1212.](23618855106b5b962881edb62919a858.png)
@@ -3184,116 +1465,41 @@ Example of the pop-up window that displays when an attempt is made to place an O
 
 To edit or remove a custom ZIP code message follow the steps below:
 
-1.  From GUI Parameters menu, enter option: ZIPM Enter/Edit Missing ZIP Code Message Parameter.
-
-***
-
-1.  Editing is consistent with fileman options, such as Replace \<type the text you with to replace\> With \<type new text to display\>.
-
-***
-
-1.  To remove a line of text, type @ and press enter.
-
-***
-
-1.  Once you press enter at line two (2), you will be returned to the GUI Parameters menu.
-
-***
-
+1.  From GUI Parameters menu, enter option: ZIPM Enter/Edit Missing ZIP Code Message Parameter.  
+1.  Editing is consistent with fileman options, such as Replace \<type the text you with to replace\> With \<type new text to display\>.  
+1.  To remove a line of text, type @ and press enter.  
+1.  Once you press enter at line two (2), you will be returned to the GUI Parameters menu.  
 ### Document Templates
 
-With the CPRS GUI, you can create document templates to make writing or editing progress notes, completing consults, or writing discharge summaries quicker and easier. In addition, you can import or export templates and convert Microsoft Word files to document templates.
-
-***
-
-**Template Editor**
-
-***
-
+With the CPRS GUI, you can create document templates to make writing or editing progress notes, completing consults, or writing discharge summaries quicker and easier. In addition, you can import or export templates and convert Microsoft Word files to document templates.  
+**Template Editor**  
 The Template Editor is used to create and manage document templates. To access the Template Editor select **Options \| Create New Template…**from the Notes, Consults, or D/C Summ tab.**  
-**
-
-***
-
+**  
 ![The Template editor dialog enables users to create templates that they can user to create documents. There are several different kinds of templates, some for simply organizing and others that have dialogs associated with them.](a7c969662b0af6aa15524928e64c87f7.png)
 
-The Template Editor window
-
-***
-
+The Template Editor window  
 For an explanation of the icons used in the Template Editor, select **Tools** \| **Template Icon Legend** and click the **Templates** tab.   
   
 ![The Reminders icon legend](e8c9f7d790d30b24491957f0ea6a0f80.png)  
 The Icon Legend
 
-**Personal and Shared Templates**
-
-***
-
-You can create and use your own templates or you can use shared templates created by your Clinical Coordinator.
-
-***
-
-**Personal Templates**
-
-***
-
-Authorized users can create personal templates. You can copy and paste text into a template, type in new content, add template fields, or copy a shared template into your personal templates folder. A shared template that you simply copy into your personal templates folder without changing continues to be updated whenever the original template is changed or modified in the Shared Templates folder. Once you personalize or change the copy of the shared template in your personal templates field, the icon used to represent it changes and it becomes a personal template. From that moment on, the personal template is not related to the shared template and is not updated with the original. In the tree view, personal template and folder icons have a folded upper right corner.
-
-***
-
-**Shared Templates.**
-
-***
-
-Only members of the Clinical Coordinator Authorization/Subscription Utility (ASU) class can create shared templates. Shared templates are available to all users. Clinical Coordinators can copy and paste text into a template, type in new content, add Template Fields, or copy a personal template and then modify it as needed. In the tree view, shared template and folder icons do not have a folded corner.
-
-***
-
-**Note**: When you install CPRS, a copy of all your existing boilerplate titles is placed in the inactive boilerplates folder under shared templates.
-
-***
-
-Clinical Coordinators can arrange the boilerplate titles that have been copied into the shared templates, use them to create new shared templates, or make them available to users by moving them out of the inactive boilerplates folder. Users will not see the inactive boilerplates folder or its templates unless you choose to make the folder active.
-
-***
-
-**To activate the boilerplates folder, Clinical Coordinators should follow these steps:**
-
-***
-
-1.  Open the Templates Editor.
-
-***
-
-1.  Verify that Edit Shared Templates is checked.
-
-***
-
-1.  Uncheck Hide Inactive (under shared templates).
-
-***
-
-1.  Click the plus sign beside the shared icon.
-
-***
-
-Shared Templates includes a lock property that prevents users from making personal changes when it has been set. The status of the lock property is displayed in a check box on the Template Editor dialog. When the Shared Templates root template is locked, no shared templates can be modified.
-
-***
-
-For more information on boilerplates, refer to the *Text Integration Utility User Manual*.
-
-***
-
-Another area of shared templates is creating Patient Data Object templates for newly created TIU objects that will enable users to place these objects into their other templates.
-
-***
-
-**To create a new Patient Data Object template, use the following steps:**
-
-***
-
+**Personal and Shared Templates**  
+You can create and use your own templates or you can use shared templates created by your Clinical Coordinator.  
+**Personal Templates**  
+Authorized users can create personal templates. You can copy and paste text into a template, type in new content, add template fields, or copy a shared template into your personal templates folder. A shared template that you simply copy into your personal templates folder without changing continues to be updated whenever the original template is changed or modified in the Shared Templates folder. Once you personalize or change the copy of the shared template in your personal templates field, the icon used to represent it changes and it becomes a personal template. From that moment on, the personal template is not related to the shared template and is not updated with the original. In the tree view, personal template and folder icons have a folded upper right corner.  
+**Shared Templates.**  
+Only members of the Clinical Coordinator Authorization/Subscription Utility (ASU) class can create shared templates. Shared templates are available to all users. Clinical Coordinators can copy and paste text into a template, type in new content, add Template Fields, or copy a personal template and then modify it as needed. In the tree view, shared template and folder icons do not have a folded corner.  
+**Note**: When you install CPRS, a copy of all your existing boilerplate titles is placed in the inactive boilerplates folder under shared templates.  
+Clinical Coordinators can arrange the boilerplate titles that have been copied into the shared templates, use them to create new shared templates, or make them available to users by moving them out of the inactive boilerplates folder. Users will not see the inactive boilerplates folder or its templates unless you choose to make the folder active.  
+**To activate the boilerplates folder, Clinical Coordinators should follow these steps:**  
+1.  Open the Templates Editor.  
+1.  Verify that Edit Shared Templates is checked.  
+1.  Uncheck Hide Inactive (under shared templates).  
+1.  Click the plus sign beside the shared icon.  
+Shared Templates includes a lock property that prevents users from making personal changes when it has been set. The status of the lock property is displayed in a check box on the Template Editor dialog. When the Shared Templates root template is locked, no shared templates can be modified.  
+For more information on boilerplates, refer to the *Text Integration Utility User Manual*.  
+Another area of shared templates is creating Patient Data Object templates for newly created TIU objects that will enable users to place these objects into their other templates.  
+**To create a new Patient Data Object template, use the following steps:**  
 1.  Open the Template Editor by selecting from the Notes, Consults, or DC/Summ tab by selecting **Options \| Edit Shared Templates…**.
 
 2.  Verify that Edit Shared Templates is checked.
@@ -3308,496 +1514,169 @@ Another area of shared templates is creating Patient Data Object templates for n
 
 7.  Click the appropriate TIU object (that was probably just created).
 
-8.  Click **Apply** or **OK** to make the new object available in GUI templates.
-
-***
-
-**Mark a Template as Default**
-
-***
-
+8.  Click **Apply** or **OK** to make the new object available in GUI templates.  
+**Mark a Template as Default**  
 A default template will automatically be selected the first time you open the Templates Drawer. The default template can also be accessed at any time with the Go to Default Template option. Each tab (Notes, Consults, and D/C Summ) can have its own default templates.
 
-**To set a template as your default template, follow these steps:**
-
-***
-
+**To set a template as your default template, follow these steps:**  
 1.  Open the Template Drawer on the Notes tab by clicking on it.  
-    The available templates will be displayed in a tree view.
-
-***
-
-1.  Right-click on any template and select Mark as Default from the right-click menu.
-
-***
-
+    The available templates will be displayed in a tree view.  
+1.  Right-click on any template and select Mark as Default from the right-click menu.  
 ![Users can open the Templates drawer on the Notes tab and use the predefined items there to complete their progress notes. This screen shot also shows a right-click dialog that is available when clicking on the items in the Tempates drawer.](623354dbfb720274c9b079a7d95e4152.png)
 
 You can set a template as your default template with a right click menu option.
 
-**Hide Child Templates**
-
+**Hide Child Templates**  
+**To make child templates unavailable from the template drawer, follow these steps:**  
+1.  Start the Template Editor by selecting **Options** \| **Edit Templates** from the Notes tab.  
+1.  Click Hide Dialog Items from the Dialog Properties option group.  
+1.  Click **OK**.  
+**Display Only**  
+Click this check box to make individual parts of a dialog as display only. When a template is display only, the check box is removed and the item is used for information or instructions  
 ***
 
-**To make child templates unavailable from the template drawer, follow these steps:**
-
+**Only Show First Line**  
+Click on this check box and the template will display only the first line of text followed by an ellipsis (...). The ellipsis indicates that more text exists. Hold the cursor over the line of text and a Hint box displays the complete text. This feature gives you the ability to have long paragraphs of text that do not take up a lot of room on the template. If selected, the entire paragraph is be inserted into the note.  
 ***
 
-1.  Start the Template Editor by selecting **Options** \| **Edit Templates** from the Notes tab.
-
+**Indent Dialog Items**  
+Clicking on this check box affects the way that children items are displayed on the template. When selected, this feature gives the ability to show hierarchical structure in the dialog. All of the subordinate items for the selected item are indented.  
+**One Item Only**  
+Clicking on this check box affects the way that children items are displayed on the template. Click on this check box if you want to allow only one of the subordinate items to be selectable. Clicking on this check box changes the check boxes into radio buttons so that only one item can be selected at a time. To deselect all items, click on the one that is selected and the radio button will be cleared.  
 ***
 
-1.  Click Hide Dialog Items from the Dialog Properties option group.
-
+**Hide Dialog Items**  
+Clicking on this check box affects the way that children items are displayed on the template. Click on this option to have subordinate items appear only if the parent item is selected. This feature allows for custom user input. The user only sees the options related to the items selected. This feature requires boilerplated text at the parent level.  
 ***
 
-1.  Click **OK**.
-
-***
-
-**Display Only**
-
-***
-
-Click this check box to make individual parts of a dialog as display only. When a template is display only, the check box is removed and the item is used for information or instructions
-
-***
-
-***
-
-**Only Show First Line**
-
-***
-
-Click on this check box and the template will display only the first line of text followed by an ellipsis (...). The ellipsis indicates that more text exists. Hold the cursor over the line of text and a Hint box displays the complete text. This feature gives you the ability to have long paragraphs of text that do not take up a lot of room on the template. If selected, the entire paragraph is be inserted into the note.
-
-***
-
-***
-
-**Indent Dialog Items**
-
-***
-
-Clicking on this check box affects the way that children items are displayed on the template. When selected, this feature gives the ability to show hierarchical structure in the dialog. All of the subordinate items for the selected item are indented.
-
-***
-
-**One Item Only**
-
-***
-
-Clicking on this check box affects the way that children items are displayed on the template. Click on this check box if you want to allow only one of the subordinate items to be selectable. Clicking on this check box changes the check boxes into radio buttons so that only one item can be selected at a time. To deselect all items, click on the one that is selected and the radio button will be cleared.
-
-***
-
-***
-
-**Hide Dialog Items**
-
-***
-
-Clicking on this check box affects the way that children items are displayed on the template. Click on this option to have subordinate items appear only if the parent item is selected. This feature allows for custom user input. The user only sees the options related to the items selected. This feature requires boilerplated text at the parent level.
-
-***
-
-***
-
-**Allow Long Lines**
-
-***
-
+**Allow Long Lines**  
 *A check box in the Template Editor named “Allow Long Lines” allows template lines to be up to 240 characters in length. This feature mainly accommodates template field markup.*
 
-**Types of Templates**
-
+**Types of Templates**  
+When you create templates, you can go directly into the Template Editor. There, you can type in text, and add Template Fields. If you are in a document and type in something you will use repeatedly, you simply select that text, right-click, select Create New Template, and the editor comes up with the selected text in the editing area. You can create individual templates, group templates, dialog templates, folders, or link templates to Reminder dialogs. Template dialogs are resizable.  
 ***
 
-When you create templates, you can go directly into the Template Editor. There, you can type in text, and add Template Fields. If you are in a document and type in something you will use repeatedly, you simply select that text, right-click, select Create New Template, and the editor comes up with the selected text in the editing area. You can create individual templates, group templates, dialog templates, folders, or link templates to Reminder dialogs. Template dialogs are resizable.
-
+**Templates**  
+Templates contain text, TIU objects, and Template Fields that you can place in a document.  
 ***
 
+**Group Templates**  
+Group templates contain text and TIU objects and can also contain other templates. If you place a group template in a document, all text and objects in the group template and all the templates it contains (unless they are excluded from the group template) will be placed in the document. You can also expand the view of the group template and place the individual templates it contains in a document one at a time.  
 ***
 
-**Templates**
-
-***
-
-Templates contain text, TIU objects, and Template Fields that you can place in a document.
-
-***
-
-***
-
-**Group Templates**
-
-***
-
-Group templates contain text and TIU objects and can also contain other templates. If you place a group template in a document, all text and objects in the group template and all the templates it contains (unless they are excluded from the group template) will be placed in the document. You can also expand the view of the group template and place the individual templates it contains in a document one at a time.
-
-***
-
-***
-
-**Dialog Templates**
-
-***
-
-Dialog templates are like group templates in that they contain other templates. You can place a number of other templates under a dialog template. Then, when you drag the dialog template into your document, a dialog appears that has a checkbox for each template under the Dialog template. The person writing the document can check the items they want and click OK to place them in the note.
-
-***
-
-**Folders**
-
-***
-
-Folders are used to group and organize templates and assist in navigating the template tree view. For example, you could create a folder called "radiology" for all of the templates relating to radiology.
-
-***
-
-**Reminder Dialog**
-
-***
-
-Reminder dialogs can be linked to templates. This allows you to place orders and enter PCE information, vitals information, and mental health data from a template. (Refer to Creating Reminder Dialogs for this procedure.)
-
-***
-
-**Arranging Templates for Ease of Use**
-
-***
-
-You can use file cabinets and folders to group similar templates together to make them easier to find and use. For example, you may want to place all of the pulmonary templates together rather than listing the templates in alphabetical order.
-
-***
-
-**Adding a Template to a Note**
-
-***
-
-**To add a template to a Note, use the following steps:**
-
-***
-
-1.  From the Notes tab, create a new note by clicking on **New Note**.
-
-***
-
-1.  Complete the Progress Note Properties dialog.
-
-***
-
+**Dialog Templates**  
+Dialog templates are like group templates in that they contain other templates. You can place a number of other templates under a dialog template. Then, when you drag the dialog template into your document, a dialog appears that has a checkbox for each template under the Dialog template. The person writing the document can check the items they want and click OK to place them in the note.  
+**Folders**  
+Folders are used to group and organize templates and assist in navigating the template tree view. For example, you could create a folder called "radiology" for all of the templates relating to radiology.  
+**Reminder Dialog**  
+Reminder dialogs can be linked to templates. This allows you to place orders and enter PCE information, vitals information, and mental health data from a template. (Refer to Creating Reminder Dialogs for this procedure.)  
+**Arranging Templates for Ease of Use**  
+You can use file cabinets and folders to group similar templates together to make them easier to find and use. For example, you may want to place all of the pulmonary templates together rather than listing the templates in alphabetical order.  
+**Adding a Template to a Note**  
+**To add a template to a Note, use the following steps:**  
+1.  From the Notes tab, create a new note by clicking on **New Note**.  
+1.  Complete the Progress Note Properties dialog.  
 1.  Click **OK**.  
-    The Progress Note Properties dialog will close and the Templates Drawer will appear above the Reminder Drawer.
-
-***
-
-![2004-12-13 tr template drawer outline in red](69a19589575879c2c70b48c2c8ccff58.png)The Templates Drawer
-
-***
-
+    The Progress Note Properties dialog will close and the Templates Drawer will appear above the Reminder Drawer.  
+![2004-12-13 tr template drawer outline in red](69a19589575879c2c70b48c2c8ccff58.png)The Templates Drawer  
 1.  Click the **Templates** drawer  
-    The available templates will appear.
-
-***
-
-1.  Select the template that you would like to use (click the + to expand a heading)
-
-***
-
+    The available templates will appear.  
+1.  Select the template that you would like to use (click the + to expand a heading)  
 1.  Drag the template into the detail area of the note  
     \-or-  
     double click on the template  
     \-or-  
-    right click on the template and select Insert Template.
-
-***
-
-![To place the contents of the template into the detail of the note, the user drags the things in.](17e7cba0391e71c588759c293e153e94.png)
-
-***
-
-Drag the template into the detail area of the note.
-
-***
-
-**Searching for Templates**
-
-***
-
-**To search for a template, use the following steps:**
-
-***
-
-1.  Right-click in the tree view (in either the Template Editor or the Templates drawer).
-
-***
-
+    right click on the template and select Insert Template.  
+![To place the contents of the template into the detail of the note, the user drags the things in.](17e7cba0391e71c588759c293e153e94.png)  
+Drag the template into the detail area of the note.  
+**Searching for Templates**  
+**To search for a template, use the following steps:**  
+1.  Right-click in the tree view (in either the Template Editor or the Templates drawer).  
 1.  Select the appropriate option: Find Templates, Find Personal Templates, or Find Shared Templates (depending on which tree view you are in).  
-    A search screen will appear.
-
-***
-
-**Note**: You may want to narrow your search by using the Find Options feature.
-
-***
-
-1.  Enter the word or words you want to find and check the appropriate boxes.
-
-***
-
-1.  Click **Find**.
-
-***
-
-1.  If you do not find the template you want, scan the list or click **Find Next**.
-
-***
-
-1.  Repeat step 5 until you find the desired template.
-
-***
-
-**Previewing a Template**
-
-***
-
-**To preview a template before inserting it into your document, follow these steps:**
-
-***
-
-1.  Right-click the template in the Templates drawer on the Notes tab.
-
-***
-
+    A search screen will appear.  
+**Note**: You may want to narrow your search by using the Find Options feature.  
+1.  Enter the word or words you want to find and check the appropriate boxes.  
+1.  Click **Find**.  
+1.  If you do not find the template you want, scan the list or click **Find Next**.  
+1.  Repeat step 5 until you find the desired template.  
+**Previewing a Template**  
+**To preview a template before inserting it into your document, follow these steps:**  
+1.  Right-click the template in the Templates drawer on the Notes tab.  
 1.  Select Preview/Print Template.  
     The preview dialog will appear.  
       
-    **Note**: You can print a copy of the template by pressing the Print button.
-
-***
-
-**Deleting Document Templates**
-
-***
-
-**To delete a document template, follow these steps:**
-
-***
-
-1.  Click the **Notes**, **Consults**, or **D/C Summ** tab.
-
-***
-
+    **Note**: You can print a copy of the template by pressing the Print button.  
+**Deleting Document Templates**  
+**To delete a document template, follow these steps:**  
+1.  Click the **Notes**, **Consults**, or **D/C Summ** tab.  
 1.  Select **Options \| Edit Templates**   
     \-or-  
-    if the Templates drawer is open, right-click in the drawer and select **Edit Templates**.
-
-***
-
-1.  Find the template you want to delete. (Click the + sign to expand a heading.)
-
-***
-
+    if the Templates drawer is open, right-click in the drawer and select **Edit Templates**.  
+1.  Find the template you want to delete. (Click the + sign to expand a heading.)  
 1.  Right-click the template you want to delete and select **Delete**.   
     \-or-  
-    select the template you want to delete and then click the **Delete** button under the tree view.
-
-***
-
-1.  Click **Yes** to confirm the deletion.
-
-***
-
-**Creating Personal Document Templates**
-
-***
-
-To speed document creation, you can create personal templates consisting of text, Template Fields, and Patient Data Objects. You can use the templates to create progress notes, complete consults, and write discharge summaries.
-
-***
-
-**Personal Template**
-
-***
-
+    select the template you want to delete and then click the **Delete** button under the tree view.  
+1.  Click **Yes** to confirm the deletion.  
+**Creating Personal Document Templates**  
+To speed document creation, you can create personal templates consisting of text, Template Fields, and Patient Data Objects. You can use the templates to create progress notes, complete consults, and write discharge summaries.  
+**Personal Template**  
 To create a personal document template, follow these steps**:**
 
-1.  Click the **Notes**, **Consults**, or **D/C Summ** tab.
-
-***
-
+1.  Click the **Notes**, **Consults**, or **D/C Summ** tab.  
 1.  Start the Template Editor by selecting **Options** \| **Create New Template**   
     \-or-  
-    Select the text that you would like to save as a template, right-click the text, and select **Copy into New Template**.
-
-***
-
-1.  Type in a name for the new template in the Name field under Personal Template Properties.
-
-***
-
-**Note:** Template names must begin with a letter or a number, be between 3 and 30 characters in length (including spaces), and cannot be named "New Template."
-
-***
-
-1.  Click the drop-down button in the Template Type field and select **Template**.
-
-***
-
-1.  Enter the content for the template by copying and pasting from documents outside CPRS, typing in text, and/or inserting Template Fields.
-
-***
-
-**Note**: After you enter the content, you can right-click in the Template Boilerplate area to select spell check, grammar check, or check for errors (which looks for invalid Template Fields).
-
-***
-
-1.  Place the template in the tree view in the desired location. (To do this, click the plus sign next to an item to view its subordinate objects and then drag-and-drop the template to its desired location. You can also move the template by using the arrows below the personal templates tree view.)
-
-***
-
-1.  Click **Apply** to save the template.
-
-***
-
-1.  Click **OK** to save and exit the editor.
-
-***
-
-**Note**: You are not required to click Apply after each template, but it is recommended. If you click Cancel, you will lose all changes you have made since the last time you clicked Apply or OK.
-
-***
-
-**Group Template**
-
-***
-
-You can create group templates which contain other templates. You can then place the entire group template in the note, which brings in the text and Template Fields from all templates in that group, or expands the tree view in the Templates drawer and places the individual templates under the group template in the note.
-
-***
-
-**To create a personal Group Template, follow these steps:**
-
-***
-
-1.  Click the **Notes**, **Consults**, or **D/C Summ** tab
-
-***
-
+    Select the text that you would like to save as a template, right-click the text, and select **Copy into New Template**.  
+1.  Type in a name for the new template in the Name field under Personal Template Properties.  
+**Note:** Template names must begin with a letter or a number, be between 3 and 30 characters in length (including spaces), and cannot be named "New Template."  
+1.  Click the drop-down button in the Template Type field and select **Template**.  
+1.  Enter the content for the template by copying and pasting from documents outside CPRS, typing in text, and/or inserting Template Fields.  
+**Note**: After you enter the content, you can right-click in the Template Boilerplate area to select spell check, grammar check, or check for errors (which looks for invalid Template Fields).  
+1.  Place the template in the tree view in the desired location. (To do this, click the plus sign next to an item to view its subordinate objects and then drag-and-drop the template to its desired location. You can also move the template by using the arrows below the personal templates tree view.)  
+1.  Click **Apply** to save the template.  
+1.  Click **OK** to save and exit the editor.  
+**Note**: You are not required to click Apply after each template, but it is recommended. If you click Cancel, you will lose all changes you have made since the last time you clicked Apply or OK.  
+**Group Template**  
+You can create group templates which contain other templates. You can then place the entire group template in the note, which brings in the text and Template Fields from all templates in that group, or expands the tree view in the Templates drawer and places the individual templates under the group template in the note.  
+**To create a personal Group Template, follow these steps:**  
+1.  Click the **Notes**, **Consults**, or **D/C Summ** tab  
 1.  Select **Options** \| **Create New Template**   
     \-or-  
-    Select the text that you would like to save as a template, right-click the text, and select **Copy into New Template.**
-
-***
-
-1.  Enter a name for the new template in the Name field under Personal Template Properties.
-
-***
-
-**Note:** Template names must begin with a letter or a number, be between 3 and 30 characters in length (including spaces), and cannot be named "New Template."
-
-***
-
-1.  Click the drop-down button in the Template Type field and select Group Template.
-
-***
-
-1.  Enter the text and Template Fields to create content in the main text area of the group template, if desired. (You can enter content by copying and pasting from documents outside CPRS, typing in text, and/or inserting Template Fields.)
-
-***
-
-**Note**: After you enter the content, you can right-click in the Template Boilerplate area to select spell check, grammar check, or Check Boilerplate for Errors, which looks for invalid Template Fields.
-
-***
-
-**Note:** You can also create additional templates under the Group Template that you just created. To do this, simply highlight the appropriate group template and click New Template. Then complete the steps for creating a new template outlined above.
-
-***
-
-1.  Place the template in the tree view in the desired location. (To do this, click the plus sign next to an item to view its subordinate objects and then drag-and-drop the template to its desired location. You can also move the template by using the arrows below the personal templates tree view.)
-
-***
-
-1.  Click **Apply** to save the template.
-
-***
-
-1.  Click **OK** to exit the template editor.
-
-***
-
-**Note**: You are not required to click Apply after each template, but it is recommended. If you click Cancel, you will lose all changes you have made since the last time you clicked Apply or OK.
-
-***
-
-**Associating a Template with a Document Title, Consult, or Procedure**
-
-***
-
-Clinical Coordinators and others who are authorized to edit shared templates and who are also members of the appropriate user class (specified in the EDITOR CLASS field, \#.07 of the TIU TEMPLATE file \#8927) may see the Document Titles, Consult Reasons for Request, and/or the Procedure Reasons for Request template folders. These folders allow you to associate a template with a progress note title, a procedure, or a type of consult. After an association is created, the appropriate template content is inserted in either the body of a note (when a new note is started) or in the Reason for Request field (when a new consult or procedure is ordered).
-
-***
-
+    Select the text that you would like to save as a template, right-click the text, and select **Copy into New Template.**  
+1.  Enter a name for the new template in the Name field under Personal Template Properties.  
+**Note:** Template names must begin with a letter or a number, be between 3 and 30 characters in length (including spaces), and cannot be named "New Template."  
+1.  Click the drop-down button in the Template Type field and select Group Template.  
+1.  Enter the text and Template Fields to create content in the main text area of the group template, if desired. (You can enter content by copying and pasting from documents outside CPRS, typing in text, and/or inserting Template Fields.)  
+**Note**: After you enter the content, you can right-click in the Template Boilerplate area to select spell check, grammar check, or Check Boilerplate for Errors, which looks for invalid Template Fields.  
+**Note:** You can also create additional templates under the Group Template that you just created. To do this, simply highlight the appropriate group template and click New Template. Then complete the steps for creating a new template outlined above.  
+1.  Place the template in the tree view in the desired location. (To do this, click the plus sign next to an item to view its subordinate objects and then drag-and-drop the template to its desired location. You can also move the template by using the arrows below the personal templates tree view.)  
+1.  Click **Apply** to save the template.  
+1.  Click **OK** to exit the template editor.  
+**Note**: You are not required to click Apply after each template, but it is recommended. If you click Cancel, you will lose all changes you have made since the last time you clicked Apply or OK.  
+**Associating a Template with a Document Title, Consult, or Procedure**  
+Clinical Coordinators and others who are authorized to edit shared templates and who are also members of the appropriate user class (specified in the EDITOR CLASS field, \#.07 of the TIU TEMPLATE file \#8927) may see the Document Titles, Consult Reasons for Request, and/or the Procedure Reasons for Request template folders. These folders allow you to associate a template with a progress note title, a procedure, or a type of consult. After an association is created, the appropriate template content is inserted in either the body of a note (when a new note is started) or in the Reason for Request field (when a new consult or procedure is ordered).  
 **To associate a template with a document title, type of consult, or a procedure, follow these steps:**
 
 1.  Create a new template (by following the instructions above for either the personal template or the group template)   
     \-or-  
-    edit an existing template by selecting **Options** \| **Edit Templates**….from the Notes, Consults, or D/C Summ tab.
-
-***
-
-1.  Click the Edit Shared Templates check box located in the lower left-hand corner of the Template Editor window.
-
-***
-
-1.  Select the template you would like to associate from the Personal Templates section of the Template Editor window.
-
-***
-
-1.  Drag and drop the template into either the Document Titles, Consult Reasons for Request, or Procedure Reasons for Request folder in the Shared Templates area of the window.
-
-***
-
-1.  Select the template that you just moved (click “+” to expand a heading) in the Shared Templates area of the window.
-
-***
-
+    edit an existing template by selecting **Options** \| **Edit Templates**….from the Notes, Consults, or D/C Summ tab.  
+1.  Click the Edit Shared Templates check box located in the lower left-hand corner of the Template Editor window.  
+1.  Select the template you would like to associate from the Personal Templates section of the Template Editor window.  
+1.  Drag and drop the template into either the Document Titles, Consult Reasons for Request, or Procedure Reasons for Request folder in the Shared Templates area of the window.  
+1.  Select the template that you just moved (click “+” to expand a heading) in the Shared Templates area of the window.  
 1.  Select a procedure from the Associated Procedure drop-down list   
     \-or-  
-    select a consult service from the Associated Consult Service drop-down list.
-
-***
-
+    select a consult service from the Associated Consult Service drop-down list.  
 1.  Click **OK**.  
-    The template is now associated.
-
-***
-
-When you order a consult or a procedure, the associated template text will appear in the Reason for Request field. When you enter a new progress note the associated template text will appear in the text of the note.
-
-***
-
-**Importing a Document Template**
-
-***
-
-You can import existing template files (.txml), Microsoft Word files (Word 97 or higher), or XML files into the CPRS Template Editor.
-
-***
-
-To import a template, follow these steps:
-
-***
-
+    The template is now associated.  
+When you order a consult or a procedure, the associated template text will appear in the Reason for Request field. When you enter a new progress note the associated template text will appear in the text of the note.  
+**Importing a Document Template**  
+You can import existing template files (.txml), Microsoft Word files (Word 97 or higher), or XML files into the CPRS Template Editor.  
+To import a template, follow these steps:  
 1.  Start the Template Editor.
 
 2.  Browse to the file cabinet or folder where you would like to store the imported template (click “+” to expand a heading).
 
-    **Note**: In order to import a template to the Shared Templates area of the screen, you must be authorized to edit shared temples *and* place a checkmark in the Edit Shared Templates check box (located in the lower left side of the Template Editor).
-
-***
-
+    **Note**: In order to import a template to the Shared Templates area of the screen, you must be authorized to edit shared temples *and* place a checkmark in the Edit Shared Templates check box (located in the lower left side of the Template Editor).  
 1.  Select Tools \| Import Template.
 
 2.  Select the file you would like to import and click Open.
@@ -3806,489 +1685,147 @@ To import a template, follow these steps:
 
 4.  If you press OK, the template will be imported without the new fields. If you press Cancel, the import process will be cancelled.
 
-    **Note**: If you do not have authorization to edit template fields, you may see this dialog.
-
-***
-
-![If the user is not authorized to create new fields and attempts to import a tempate that has fields, CPRS displays a warning that the user is not authroized and if the user clicks OK to continue, the tempate will be improted without those fields. ](a22cef5643fa947336324948aaada480.png)
-
-***
-
-The template field warning dialog
-
-***
-
-**Exporting a Document Template**
-
-***
-
-You can also export a template or a group of templates with the Template Editor. Exported templates are saved with the .txml file extension.
-
-***
-
-**Note**: Patient data objects are not exported with a template.
-
-***
-
-**To export a template or a group of templates, follow these steps:**
-
-***
-
-1.  Start the Template Editor.
-
-***
-
-1.  Select the template or group of templates (file cabinet) that you would like to export.
-
-***
-
-1.  Select **Tools \| Export Template**.
-
-***
-
-1.  Choose a destination and file name for the template file.
-
-***
-
-1.  Click **Save**.
-
-***
-
-**Dialog Template**
-
-***
-
-Dialog templates contain other templates. If there is more than one template, each template under a dialog template will have a check box next to it when the template is placed in a document. A single template under a dialog template will not have a check box. Pressing the OK button inserts the dialog element into the note.
-
-***
-
-If you double-click a dialog template or drag it onto the note, a dialog appears. The dialog shows the text for each template preceded by a check box.
-
-***
-
-Click the box to check which items are to be included in the note. You can click All to select all of the elements or None to start over. Click OK when you have completed your selection.
-
-***
-
-![One kind of template is a dialog template. Users can create personal templates or use shared templates. Dialog templates guide provide a way for users to quickly enter information into a progress note. Users can create their own or CACs can create shared templates.](e34ee77e6d585fcab81cd8269449ab3d.png)
-
-***
-
+    **Note**: If you do not have authorization to edit template fields, you may see this dialog.  
+![If the user is not authorized to create new fields and attempts to import a tempate that has fields, CPRS displays a warning that the user is not authroized and if the user clicks OK to continue, the tempate will be improted without those fields. ](a22cef5643fa947336324948aaada480.png)  
+The template field warning dialog  
+**Exporting a Document Template**  
+You can also export a template or a group of templates with the Template Editor. Exported templates are saved with the .txml file extension.  
+**Note**: Patient data objects are not exported with a template.  
+**To export a template or a group of templates, follow these steps:**  
+1.  Start the Template Editor.  
+1.  Select the template or group of templates (file cabinet) that you would like to export.  
+1.  Select **Tools \| Export Template**.  
+1.  Choose a destination and file name for the template file.  
+1.  Click **Save**.  
+**Dialog Template**  
+Dialog templates contain other templates. If there is more than one template, each template under a dialog template will have a check box next to it when the template is placed in a document. A single template under a dialog template will not have a check box. Pressing the OK button inserts the dialog element into the note.  
+If you double-click a dialog template or drag it onto the note, a dialog appears. The dialog shows the text for each template preceded by a check box.  
+Click the box to check which items are to be included in the note. You can click All to select all of the elements or None to start over. Click OK when you have completed your selection.  
+![One kind of template is a dialog template. Users can create personal templates or use shared templates. Dialog templates guide provide a way for users to quickly enter information into a progress note. Users can create their own or CACs can create shared templates.](e34ee77e6d585fcab81cd8269449ab3d.png)  
 A dialog template
 
-**To create a personal Dialog Template, follow these steps:**
-
-***
-
+**To create a personal Dialog Template, follow these steps:**  
 1.  Select **Options** \| **Create New Template** on the Notes, Consults, or D/C Summ tab to bring up the Template Editor  
     \-or-  
-    Select the text that you would like to save as a template, right-click the text, and select **Copy into New Template.**
-
-***
-
-1.  Enter a name for the new template in the Name field under Personal Template Properties.
-
-***
-
-**Note:** Template names must begin with a letter or a number, be between 3 and 30 characters in length (including spaces), and cannot be named "New Template."
-
-***
-
-1.  Click the drop-down button in the Template Type field and select **Dialog**.
-
-***
-
-1.  Enter the text and Template Fields to create content in the main text area of the template, if desired. You can enter content by copying and pasting from documents outside CPRS, typing in text, and/or inserting Template Fields.
-
-***
-
-**Note**: After you enter the content, you can right-click in the Template Boilerplate area to select spell check, grammar check, or Check Boilerplate for Errors, which looks for invalid Template Fields.
-
-***
-
-**Note:** You can also create additional templates under the Group Template that you just created. To do this, simply highlight the appropriate group template and click New Template. Then complete the steps for creating a new template outlined above.
-
-***
-
-1.  Place the template in the tree view in the desired location. (To do this, click the plus sign next to an item to view its subordinate objects and then drag-and-drop the template to its desired location. You can also move the template by using the arrows below the personal templates tree view.)
-
-***
-
-1.  Click **Apply** to save the template.
-
-***
-
-1.  Click **OK** to exit the template editor.
-
-***
-
-**Note**: You are not required to click Apply after each template, but it is recommended. If you click Cancel, you will lose all changes you have made since the last time you clicked Apply or OK.
-
-***
-
-**Reminder Dialog**
-
-***
-
-Templates can be linked to Reminder dialogs that are listed in the TIU Reminder Dialogs parameter. This enables you to use templates to place orders, enter PCE information, and enter vital signs and mental health data. If there are no Reminder Dialogs in the TIU Reminders Dialog parameter, the Reminder Dialog template type will not be available.
-
-***
-
-**To create a Reminder Dialog, follow these steps:**
-
-***
-
+    Select the text that you would like to save as a template, right-click the text, and select **Copy into New Template.**  
+1.  Enter a name for the new template in the Name field under Personal Template Properties.  
+**Note:** Template names must begin with a letter or a number, be between 3 and 30 characters in length (including spaces), and cannot be named "New Template."  
+1.  Click the drop-down button in the Template Type field and select **Dialog**.  
+1.  Enter the text and Template Fields to create content in the main text area of the template, if desired. You can enter content by copying and pasting from documents outside CPRS, typing in text, and/or inserting Template Fields.  
+**Note**: After you enter the content, you can right-click in the Template Boilerplate area to select spell check, grammar check, or Check Boilerplate for Errors, which looks for invalid Template Fields.  
+**Note:** You can also create additional templates under the Group Template that you just created. To do this, simply highlight the appropriate group template and click New Template. Then complete the steps for creating a new template outlined above.  
+1.  Place the template in the tree view in the desired location. (To do this, click the plus sign next to an item to view its subordinate objects and then drag-and-drop the template to its desired location. You can also move the template by using the arrows below the personal templates tree view.)  
+1.  Click **Apply** to save the template.  
+1.  Click **OK** to exit the template editor.  
+**Note**: You are not required to click Apply after each template, but it is recommended. If you click Cancel, you will lose all changes you have made since the last time you clicked Apply or OK.  
+**Reminder Dialog**  
+Templates can be linked to Reminder dialogs that are listed in the TIU Reminder Dialogs parameter. This enables you to use templates to place orders, enter PCE information, and enter vital signs and mental health data. If there are no Reminder Dialogs in the TIU Reminders Dialog parameter, the Reminder Dialog template type will not be available.  
+**To create a Reminder Dialog, follow these steps:**  
 1.  Select **Options** \| **Create New Template**… on the Notes, Consults, or D/C Summ tab   
-    The Template Editor will appear.
-
-***
-
-1.  Type in a name for the new template in the *Name* field under Personal Template Properties.
-
-***
-
-**Note:** Template names must begin with a letter or a number, be between 3 and 30 characters in length (including spaces), and cannot be named "New Template."
-
-***
-
-1.  Click the drop-down button in the Template Type field and select Reminder Dialog.
-
-***
-
-1.  Click the drop-down button in the Dialog field and select the Reminder Dialog desired.
-
-***
-
-1.  Place the template in the tree view in the desired location. (To do this, click the plus sign next to an item to view its subordinate objects and then drag-and-drop the template to its desired location. You can also move the template by using the arrows below the personal templates tree view.)
-
-***
-
-1.  Click Apply to save the template.
-
-***
-
-1.  Click OK to exit the editor.
-
-***
-
-**Note:** You do not have to click Apply after each template, but it is recommended because if you click Cancel, you will lose all changes you have made since the last time you clicked Apply or OK.
-
-***
-
-**Folder**
-
-***
-
-Folders are simply containers that allow you to organize and categorize your templates. For example, you might want to create a folder for templates about diabetes or one for templates about mental health issues.
-
-***
-
-**To create a personal template folder, complete the following steps:**
-
-***
-
+    The Template Editor will appear.  
+1.  Type in a name for the new template in the *Name* field under Personal Template Properties.  
+**Note:** Template names must begin with a letter or a number, be between 3 and 30 characters in length (including spaces), and cannot be named "New Template."  
+1.  Click the drop-down button in the Template Type field and select Reminder Dialog.  
+1.  Click the drop-down button in the Dialog field and select the Reminder Dialog desired.  
+1.  Place the template in the tree view in the desired location. (To do this, click the plus sign next to an item to view its subordinate objects and then drag-and-drop the template to its desired location. You can also move the template by using the arrows below the personal templates tree view.)  
+1.  Click Apply to save the template.  
+1.  Click OK to exit the editor.  
+**Note:** You do not have to click Apply after each template, but it is recommended because if you click Cancel, you will lose all changes you have made since the last time you clicked Apply or OK.  
+**Folder**  
+Folders are simply containers that allow you to organize and categorize your templates. For example, you might want to create a folder for templates about diabetes or one for templates about mental health issues.  
+**To create a personal template folder, complete the following steps:**  
 1.  Select **Options** \| **Create New Template** on the Notes, Consults, or D/C Summ tab to bring up the Template Editor  
     \-or-  
-    Select the text that you would like to save as a template, right-click the text, and select **Copy into New Template**.
-
-***
-
-1.  In the Name field under Personal Template Properties, enter a name for the new folder. For ease of use, you should create a name that describes the content of the template.
-
-***
-
-1.  Click the template type: Folder.
-
-***
-
-1.  Drag-and-drop relevant templates into the template folder that you have created.
-
-***
-
-**Note**: It is recommended that you click Apply after adding a template to save your changes. If you accidentally click Cancel, you will lose all the changes you have made since the last time you clicked Apply or OK.
-
-***
-
-**View Template Notes**
-
-***
-
-Template Notes can be used to describe what is in the template or to track changes to the template.
-
-***
-
+    Select the text that you would like to save as a template, right-click the text, and select **Copy into New Template**.  
+1.  In the Name field under Personal Template Properties, enter a name for the new folder. For ease of use, you should create a name that describes the content of the template.  
+1.  Click the template type: Folder.  
+1.  Drag-and-drop relevant templates into the template folder that you have created.  
+**Note**: It is recommended that you click Apply after adding a template to save your changes. If you accidentally click Cancel, you will lose all the changes you have made since the last time you clicked Apply or OK.  
+**View Template Notes**  
+Template Notes can be used to describe what is in the template or to track changes to the template.  
 **To add or display Template Notes, follow these steps:**
 
-1.  Click the **Notes** tab.
-
-***
-
-1.  Click **Options** *\|* **Edit Templates**.
-
-***
-
-1.  Select the shared or personal template for which you wish to add or change the Template Notes.
-
-***
-
-1.  Click the Show Template Notes check box at the bottom of the dialog. The *Template Notes* field appears below the *Template Boilerplate* field.
-
-***
-
-1.  Add or change the note as much as you wish.
-
-***
-
-**Note**: If the template you wish to edit is a shared template and you have the authority to edit it, you will need to click the Edit Shared Templates check box on the lower left corner of the Template Editor dialog.
-
-***
-
-**To add or display Template Notes from the Template Drawer, complete the following steps:**
-
-***
-
+1.  Click the **Notes** tab.  
+1.  Click **Options** *\|* **Edit Templates**.  
+1.  Select the shared or personal template for which you wish to add or change the Template Notes.  
+1.  Click the Show Template Notes check box at the bottom of the dialog. The *Template Notes* field appears below the *Template Boilerplate* field.  
+1.  Add or change the note as much as you wish.  
+**Note**: If the template you wish to edit is a shared template and you have the authority to edit it, you will need to click the Edit Shared Templates check box on the lower left corner of the Template Editor dialog.  
+**To add or display Template Notes from the Template Drawer, complete the following steps:**  
 1.  Select **Options** \| **Edit Templates…** from the Notes, Orders, or D/C Summ tab.   
-    The Template Editor will appear.
-
+    The Template Editor will appear.  
+1.  Select the shared or personal template for which you wish to add or change the Template Notes.  
+1.  Click the Show Template Notes check box at the bottom of the dialog. The *Template Notes* field appears below the *Template Boilerplate* field.  
+1.  Add or change the note as much as you wish.  
+**Note**: If the template you wish to edit is a shared template and you have the authority to edit it, you will need to click the Edit Shared Templates check box on the lower left corner of the Template Editor dialog.  
+**Copying Template Text**  
+**To copy text from a template to any text field, complete the following steps:**  
+1.  Open a new note, consult or discharge summary.  
+1.  Select a note, consult or discharge summary title.  
+1.  Click the **Notes** tab  
+1.  Click the Templates drawer button.  
+1.  Expand either the Shared Template or Personal Templates tree.  
+1.  Right-click the desired template.  
+1.  Click **Copy Template Text** (or press Control+C) to copy the text to the clipboard.  
+**Note:** You can paste the copied text into any text field by right clicking in the desired field and selecting Paste.  
+**Template Fields**  
+Template fields allow you to create text edit boxes and lists of text that can be selected via combo boxes, buttons, check boxes, or radio buttons. Through a new type of markup syntax {FLD:TemplateFieldName}, these controls can be added to templates, boilerplate titles, boiler plate reasons for request, and reminder dialogs. A Template field editor has also been added that can be used by members of the ASU user classes listed in the new TIU FIELD EDITOR CLASSES parameter. You can access the template field editor through the options menu on Notes, Consults and D/C Summaries tabs, as well as through the new Template Editor Tools menu. There is also a new Insert Template Field menu option in the Template Editor, following the Insert Patient Data Object menu option. You can enter free text into Template Field Combo boxes.  
+Template Dialogs will now show an asterisk ( \* ) before required template fields, and will not allow you to press the OK button if you have not completed the required fields. A message has also been added at the bottom of the template dialogs that states "\* Indicates a Required Field.”  
 ***
 
-1.  Select the shared or personal template for which you wish to add or change the Template Notes.
-
+Template Fields can also be used in boilerplate text that can be associated to a new Note, Consult, or Discharge Summary.  
 ***
 
-1.  Click the Show Template Notes check box at the bottom of the dialog. The *Template Notes* field appears below the *Template Boilerplate* field.
-
+![The Template Field Editor dialog enables users to add text, combo boxes, and other features to enable users to quickly enter the necessary information. It is available to users in ASU classes listed in the TIU FIELD EDITOR CLASSES parameter.](f39310af8bd3ff5271796fcf97c547c0.png)The Template Field Editor  
 ***
 
-1.  Add or change the note as much as you wish.
-
-***
-
-**Note**: If the template you wish to edit is a shared template and you have the authority to edit it, you will need to click the Edit Shared Templates check box on the lower left corner of the Template Editor dialog.
-
-***
-
-**Copying Template Text**
-
-***
-
-**To copy text from a template to any text field, complete the following steps:**
-
-***
-
-1.  Open a new note, consult or discharge summary.
-
-***
-
-1.  Select a note, consult or discharge summary title.
-
-***
-
-1.  Click the **Notes** tab
-
-***
-
-1.  Click the Templates drawer button.
-
-***
-
-1.  Expand either the Shared Template or Personal Templates tree.
-
-***
-
-1.  Right-click the desired template.
-
-***
-
-1.  Click **Copy Template Text** (or press Control+C) to copy the text to the clipboard.
-
-***
-
-**Note:** You can paste the copied text into any text field by right clicking in the desired field and selecting Paste.
-
-***
-
-**Template Fields**
-
-***
-
-Template fields allow you to create text edit boxes and lists of text that can be selected via combo boxes, buttons, check boxes, or radio buttons. Through a new type of markup syntax {FLD:TemplateFieldName}, these controls can be added to templates, boilerplate titles, boiler plate reasons for request, and reminder dialogs. A Template field editor has also been added that can be used by members of the ASU user classes listed in the new TIU FIELD EDITOR CLASSES parameter. You can access the template field editor through the options menu on Notes, Consults and D/C Summaries tabs, as well as through the new Template Editor Tools menu. There is also a new Insert Template Field menu option in the Template Editor, following the Insert Patient Data Object menu option. You can enter free text into Template Field Combo boxes.
-
-***
-
-Template Dialogs will now show an asterisk ( \* ) before required template fields, and will not allow you to press the OK button if you have not completed the required fields. A message has also been added at the bottom of the template dialogs that states "\* Indicates a Required Field.”
-
-***
-
-***
-
-Template Fields can also be used in boilerplate text that can be associated to a new Note, Consult, or Discharge Summary.
-
-***
-
-***
-
-![The Template Field Editor dialog enables users to add text, combo boxes, and other features to enable users to quickly enter the necessary information. It is available to users in ASU classes listed in the TIU FIELD EDITOR CLASSES parameter.](f39310af8bd3ff5271796fcf97c547c0.png)The Template Field Editor
-
-***
-
-***
-
-When you click the Preview button, you can view how the template dialog will appear. Since the Separate Lines check box is enabled on the Template field Editor dialog, the check box items on the preview are listed on a separate line. You can mark these fields as required if desired. Template Field Preview forms are resizable.
-
-***
-
-![When working with the Template Field editor, users can preview what they have done with the Preview button.](9e0df11297814618fef3734ef5d9cfd7.png)
-
-***
-
-You can use the Preview button to preview a template dialog.
-
-***
-
-**Using the Template Field Editor**
-
-***
-
-You can reduce the time required to complete a note, consult, or discharge summary by adding template fields to your templates and dialogs. Information that you would normally have to look up can be pulled directly into your note, consult, or discharge summary from the template fields in your templates.
-
-***
-
+When you click the Preview button, you can view how the template dialog will appear. Since the Separate Lines check box is enabled on the Template field Editor dialog, the check box items on the preview are listed on a separate line. You can mark these fields as required if desired. Template Field Preview forms are resizable.  
+![When working with the Template Field editor, users can preview what they have done with the Preview button.](9e0df11297814618fef3734ef5d9cfd7.png)  
+You can use the Preview button to preview a template dialog.  
+**Using the Template Field Editor**  
+You can reduce the time required to complete a note, consult, or discharge summary by adding template fields to your templates and dialogs. Information that you would normally have to look up can be pulled directly into your note, consult, or discharge summary from the template fields in your templates.  
 **To view the predefined characteristics of the template fields:**
 
-1.  Click either the **Notes**, **Consults**, or **D/C Summ** tab.
-
-***
-
+1.  Click either the **Notes**, **Consults**, or **D/C Summ** tab.  
 1.  Select **Options** \| **Edit Templates**.  
-    Click the desired template field in the Template Fields list on the left side of the dialog. The field is copied to the Name field on the right side of the dialog and all of the existing elements of the field are displayed.
-
+    Click the desired template field in the Template Fields list on the left side of the dialog. The field is copied to the Name field on the right side of the dialog and all of the existing elements of the field are displayed.  
+1.  Click Preview to see how the Template Field will appear on a template or click **OK** to complete the procedure.  
+1.  To create a new template field:  
+1.  Click either the **Notes**, **Consults**, or **D/C Summ tab**.  
+1.  Select **Options** \| **Edit Templates**.  
+1.  Click New Template in the upper right corner of the Template Field Editor dialog.  
+1.  Type a unique name for the new template field.  
+1.  Select a Type.  
+If Edit Box is selected, type or select a number between 1 and 70 into the Maximum Number of Characters field. If Combo Box, Button, Check Boxes or Radio Buttons are selected as the Type, the Default field and Maximum Number of Characters fields are unavailable. The Items field and the Default field below Items are active.  
+The Default field below the Type field is available only when Edit Box is the Type selected. Type the text that you wish to have appears in the Edit Box by default. On the template, the user can accept the default text or change it, as long as the new text is within the Maximum Number of Characters limit.  
 ***
 
-1.  Click Preview to see how the Template Field will appear on a template or click **OK** to complete the procedure.
-
+If the Type is Combo Box, Button, Check Boxes, or Radio Buttons, the Items field will be active. Type the different choices from which you wish to let the user choose. Each item must be on a separate line in the Items field. However, if you wish to have the Items listed on separate lines in the template, you must enable the Separate Lines check box.  
+If the Type is Combo Box, Button, Check Boxes, or Radio Buttons, the second Default field will be active. If you wish, you may click the drop-down button and select one of the items as the default.  
 ***
 
-1.  To create a new template field:
-
+If you wish, you may type text in the LM Text field and it will appear in the List Manager version. Template Fields have been developed strictly for GUI functionality. If you are still using LM, the text {FLD:TEMPLATE FIELD NAME} will appear in LM body of the note. To avoid this, type text in this field.  
 ***
 
-1.  Click either the **Notes**, **Consults**, or **D/C Summ tab**.
-
-***
-
-1.  Select **Options** \| **Edit Templates**.
-
-***
-
-1.  Click New Template in the upper right corner of the Template Field Editor dialog.
-
-***
-
-1.  Type a unique name for the new template field.
-
-***
-
-1.  Select a Type.
-
-***
-
-If Edit Box is selected, type or select a number between 1 and 70 into the Maximum Number of Characters field. If Combo Box, Button, Check Boxes or Radio Buttons are selected as the Type, the Default field and Maximum Number of Characters fields are unavailable. The Items field and the Default field below Items are active.
-
-***
-
-The Default field below the Type field is available only when Edit Box is the Type selected. Type the text that you wish to have appears in the Edit Box by default. On the template, the user can accept the default text or change it, as long as the new text is within the Maximum Number of Characters limit.
-
-***
-
-***
-
-If the Type is Combo Box, Button, Check Boxes, or Radio Buttons, the Items field will be active. Type the different choices from which you wish to let the user choose. Each item must be on a separate line in the Items field. However, if you wish to have the Items listed on separate lines in the template, you must enable the Separate Lines check box.
-
-***
-
-If the Type is Combo Box, Button, Check Boxes, or Radio Buttons, the second Default field will be active. If you wish, you may click the drop-down button and select one of the items as the default.
-
-***
-
-***
-
-If you wish, you may type text in the LM Text field and it will appear in the List Manager version. Template Fields have been developed strictly for GUI functionality. If you are still using LM, the text {FLD:TEMPLATE FIELD NAME} will appear in LM body of the note. To avoid this, type text in this field.
-
-***
-
-***
-
-If the field being created on the template is required, enable the Required check box, which will prevent the template from being closed without the field being selected or completed.
-
-***
-
-You may include text in the Notes field that will explain or describe the Template Field. You may also use it to record changes that have been made to the Template field. The text typed into this field will not appear on the template. These notes will not appear to a user when entering a note. They are for development use only as notes to the creator.
-
-***
-
-Click Preview to see how the Template Field will appear on a template or click OK to complete the procedure.
-
-***
-
-**Inserting Template Fields into a Template**
-
-***
-
-Once you have decided which Template fields to use or you have defined the Template Field that you need, you can add them into a template. With the Template field in the Template, you can quickly and easily select the items you wish to add to a note, consult or discharge summary.
-
-***
-
+If the field being created on the template is required, enable the Required check box, which will prevent the template from being closed without the field being selected or completed.  
+You may include text in the Notes field that will explain or describe the Template Field. You may also use it to record changes that have been made to the Template field. The text typed into this field will not appear on the template. These notes will not appear to a user when entering a note. They are for development use only as notes to the creator.  
+Click Preview to see how the Template Field will appear on a template or click OK to complete the procedure.  
+**Inserting Template Fields into a Template**  
+Once you have decided which Template fields to use or you have defined the Template Field that you need, you can add them into a template. With the Template field in the Template, you can quickly and easily select the items you wish to add to a note, consult or discharge summary.  
 **To add a Template Field into a Template:**
 
-1.  From the **Notes**, **Consults** or D**/C Summ tab**, click **Options** \| **Edit Templates**... or **Create Templates**, **Edit Shared Templates**, or **Create New Shared Template**...
-
-***
-
-1.  From the Template Editor, select the template to which you wish to add a Template Field.
-
-***
-
-1.  Insert the cursor at the place in the Template Boilerplate field where you wish to insert the Template Field.
-
-***
-
-1.  From the toolbar, click **Edit** \| **Insert Template** Field or right-click in the template and select Insert Template Field.
-
-***
-
-1.  On the Insert Template Field dialog, type the first few letters of the desired field or scroll through the list until the desired field is located.
-
-***
-
-1.  Click the field you wish to insert.
-
-***
-
-1.  Click **Insert Field**.
-
-***
-
-1.  Repeat steps 5 through 7 for each additional Template Field you wish to insert.
-
-***
-
-1.  Click Done when you have added all of the desired template fields.
-
-***
-
-1.  From the tool bar, click **Edit** \| **Preview/Print Template** or right-click in the template and select Preview/Print Template. This will preview the template. If the template does not display with the desired appearance, you may continue to edit it.
-
-***
-
-1.  On the Template Editor dialog, click **OK** to save the changes to the template.
-
-***
-
-**Note**: The Insert Template Field dialog is non-modal and can be used as a boilerplate if desired.
-
-***
-
+1.  From the **Notes**, **Consults** or D**/C Summ tab**, click **Options** \| **Edit Templates**... or **Create Templates**, **Edit Shared Templates**, or **Create New Shared Template**...  
+1.  From the Template Editor, select the template to which you wish to add a Template Field.  
+1.  Insert the cursor at the place in the Template Boilerplate field where you wish to insert the Template Field.  
+1.  From the toolbar, click **Edit** \| **Insert Template** Field or right-click in the template and select Insert Template Field.  
+1.  On the Insert Template Field dialog, type the first few letters of the desired field or scroll through the list until the desired field is located.  
+1.  Click the field you wish to insert.  
+1.  Click **Insert Field**.  
+1.  Repeat steps 5 through 7 for each additional Template Field you wish to insert.  
+1.  Click Done when you have added all of the desired template fields.  
+1.  From the tool bar, click **Edit** \| **Preview/Print Template** or right-click in the template and select Preview/Print Template. This will preview the template. If the template does not display with the desired appearance, you may continue to edit it.  
+1.  On the Template Editor dialog, click **OK** to save the changes to the template.  
+**Note**: The Insert Template Field dialog is non-modal and can be used as a boilerplate if desired.  
 ***
 
 ### 5. Miscellaneous Parameters
@@ -4297,594 +1834,174 @@ Once you have decided which Template fields to use or you have defined the Templ
 
 This option is for editing miscellaneous hospital-wide CPRS parameters, such as the length of time orders are displayed as Active after they have been completed, what prompts to suppress, whether to display statuses, etc.
 
-AL Allocate OE/RR Security Keys
-
+AL Allocate OE/RR Security Keys  
+KK Check for Multiple Keys  
+DC Edit DC Reasons  
+GP GUI Parameters ...  
+MI Miscellaneous Parameters  
+NO Notification Mgmt Menu ...  
+OC Order Checking Mgmt Menu ...  
+MM Order Menu Management ...  
+LI Patient List Mgmt Menu ...  
+FP Print Formats  
+PR Print/Report Parameters ...  
+RE Release/Cancel Delayed Orders  
+Select CPRS Configuration (Clin Coord) Option: **mi** Miscellaneous Parameters  
 ***
 
-KK Check for Multiple Keys
-
+Miscellaneous OE/RR Definition for System: OEX.ISC-SLC.VA.GOV  
+\-------------------------------------------------------------------------  
+Active Orders Context Hours 1  
+Auto Unflag YES  
+Confirm Provider NO  
+Default Provider YES  
+DC Generic Orders on Admission NO  
+DC Generic Orders on Transfer SPECIALTY TRANSFER  
+Error Days 30  
+Grace Days before Purge 90  
+Lapse Delayed Orders in \#Days 180  
+New Orders Default Sign All Orders  
+Restrict Requestor NO  
+Review on Patient Movement YES  
+Show Lab \# YES  
+Show Status Description YES  
+Signature Default Action Release w/o Signature  
+Signed on Chart Default NO  
+\-------------------------------------------------------------------------  
+ACTIVE ORDERS CONTEXT HOURS: 0// **??**  
+This parameter defines the number of hours that orders remain in the  
+"Active/Current Orders" context after they have been completed.  
 ***
 
-DC Edit DC Reasons
-
+ACTIVE ORDERS CONTEXT HOURS: 0// **2**  
+AUTO UNFLAG: YES// **??**  
+This parameter, when set to YES, will automatically cancel  
+the Flag Orders Notification and unflag all orders for a  
+patient when a user process a Flagged Orders Notification.  
 ***
 
-GP GUI Parameters ...
-
-***
-
-MI Miscellaneous Parameters
-
-***
-
-NO Notification Mgmt Menu ...
-
-***
-
-OC Order Checking Mgmt Menu ...
-
-***
-
-MM Order Menu Management ...
-
-***
-
-LI Patient List Mgmt Menu ...
-
-***
-
-FP Print Formats
-
-***
-
-PR Print/Report Parameters ...
-
-***
-
-RE Release/Cancel Delayed Orders
-
-***
-
-Select CPRS Configuration (Clin Coord) Option: **mi** Miscellaneous Parameters
-
-***
-
-***
-
-Miscellaneous OE/RR Definition for System: OEX.ISC-SLC.VA.GOV
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-Active Orders Context Hours 1
-
-***
-
-Auto Unflag YES
-
-***
-
-Confirm Provider NO
-
-***
-
-Default Provider YES
-
-***
-
-DC Generic Orders on Admission NO
-
-***
-
-DC Generic Orders on Transfer SPECIALTY TRANSFER
-
-***
-
-Error Days 30
-
-***
-
-Grace Days before Purge 90
-
-***
-
-Lapse Delayed Orders in \#Days 180
-
-***
-
-New Orders Default Sign All Orders
-
-***
-
-Restrict Requestor NO
-
-***
-
-Review on Patient Movement YES
-
-***
-
-Show Lab \# YES
-
-***
-
-Show Status Description YES
-
-***
-
-Signature Default Action Release w/o Signature
-
-***
-
-Signed on Chart Default NO
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-ACTIVE ORDERS CONTEXT HOURS: 0// **??**
-
-***
-
-This parameter defines the number of hours that orders remain in the
-
-***
-
-"Active/Current Orders" context after they have been completed.
-
-***
-
-***
-
-ACTIVE ORDERS CONTEXT HOURS: 0// **2**
-
-***
-
-AUTO UNFLAG: YES// **??**
-
-***
-
-This parameter, when set to YES, will automatically cancel
-
-***
-
-the Flag Orders Notification and unflag all orders for a
-
-***
-
-patient when a user process a Flagged Orders Notification.
-
-***
-
-***
-
-AUTO UNFLAG: YES// **\<Enter\>**
-
-***
-
-CONFIRM PROVIDER: NO// **??**
-
-***
-
-This field will allow an additional prompt to confirm the provider
-
-***
-
-selection when adding new orders.
-
-***
-
-Entering 2 in this field will exclude holders of the ORES key
-
-***
-
-(providers) from this check.
-
-***
-
-Notice that these parameters also control the default presented to the user:
-
-***
-
-'Are you sure? \<no -or- yes\>'
-
-***
-
+AUTO UNFLAG: YES// **\<Enter\>**  
+CONFIRM PROVIDER: NO// **??**  
+This field will allow an additional prompt to confirm the provider  
+selection when adding new orders.  
+Entering 2 in this field will exclude holders of the ORES key  
+(providers) from this check.  
+Notice that these parameters also control the default presented to the user:  
+'Are you sure? \<no -or- yes\>'  
 **Miscellaneous Parameters, cont’d**
 
-CONFIRM PROVIDER: NO// **?**
-
-***
-
-Enter YES to prompt the user for confirmation whenever a provider is
-
-***
-
-entered.
-
-***
-
-Select one of the following:
-
-***
-
-0 NO
-
-***
-
-1 YES (Default NO)
-
-***
-
-2 YES (Exclude ORES)
-
-***
-
-3 YES (Default YES)
-
-***
-
-CONFIRM PROVIDER: NO// **2** YES (Exclude ORES)
-
-***
-
-DEFAULT PROVIDER: YES// **??**
-
-***
-
-This parameter allows the attending physician to be prompted as a default
-
-***
-
-when adding new orders.
-
-***
-
-DEFAULT PROVIDER: YES//**\<Enter\>**
-
-***
-
-DC GENERIC ORDERS ON ADMISSION: NO// **??**
-
-***
-
-This parameter controls the DC'ing of generic orders (orders that are not
-
-***
-
-transmitted to any ancillary service for action) when a patient is
-
-***
-
-admitted. If set to YES, then generic orders are DC'd whenever a patient
-
-***
-
-is admitted to the hospital; if empty or set to NO, no automatic DC'ing
-
-***
-
-will take place on admission.
-
-***
-
-DC GENERIC ORDERS ON ADMISSION: NO// **\<Enter\>**
-
-***
-
-DC GENERIC ORDERS ON: SPECIALTY TRANSFER// **?**
-
-***
-
-Select the type of transfer on which to DC a patient's generic orders.
-
-***
-
-Select one of the following:
-
-***
-
-0 NONE
-
-***
-
-1 WARD TRANSFER
-
-***
-
-2 SPECIALTY TRANSFER
-
-***
-
-DC GENERIC ORDERS ON: SPECIALTY TRANSFER// **\<Enter\>**
-
-***
-
-ERROR DAYS: 1// **?**
-
-***
-
-This response must be a number.
-
-***
-
-ERROR DAYS: 1//**\<Enter\>**
-
-***
-
-GRACE DAYS BEFORE PURGE: 30//**\<Enter\>**
-
-***
-
-LAPSE DELAYED ORDERS IN \#DAYS: 180// **??**
-
-***
-
-This parameter sets a limit on the number of days that delayed orders may
-
-***
-
-remain in the Orders file able to be released and activated. If a value
-
-***
-
-is entered here, then any order awaiting release via an MAS event that
-
-***
-
-has been in the Orders file more than the number days specified by this
-
-***
-
-value will be set to a status of "lapsed" instead of released to the
-
-***
-
-service for action. If no value is entered here, then the orders will be
-
-***
-
-processed regardless of the length of time they have been in the file
-
-***
-
-awaiting action.
-
-***
-
-LAPSE DELAYED ORDERS IN \#DAYS: 180// **\<Enter\>**
-
-***
-
-NEW ORDERS DEFAULT: Sign All Orders// **??**
-
-***
-
-This parameter determines the default action to be presented at the end of
-
-***
-
-the Review New Orders screen; the action 'Next Screen' will be used until
-
-***
-
-the last screen of orders, if there are more than one. If there is no
-
-***
-
-action specified here, then 'Sign All Orders' will be used.
-
-***
-
-NEW ORDERS DEFAULT: Sign All Orders// **\<Enter\>**
-
-***
-
-RESTRICT REQUESTOR: YES (ORELSE & OREMAS)// **??**
-
-***
-
-This field allows a site to restrict the selection of providers
-
-***
-
-when adding new orders at the 'Requesting CLINICIAN: ' prompt for
-
-***
-
-holders of the ORELSE and OREMAS key. The restriction being that
-
-***
-
-they cannot select themselves as the requestor even though they may
-
-***
-
-also hold the PROVIDER key.
-
-***
-
-1 YES (ORELSE) -restricts only holders of the ORELSE key.
-
-***
-
-2 YES (ORELSE & OREMAS) -restricts holders of either key.
-
-***
-
-RESTRICT REQUESTOR: YES (ORELSE & OREMAS)//**\<Enter\>**
-
-***
-
+CONFIRM PROVIDER: NO// **?**  
+Enter YES to prompt the user for confirmation whenever a provider is  
+entered.  
+Select one of the following:  
+0 NO  
+1 YES (Default NO)  
+2 YES (Exclude ORES)  
+3 YES (Default YES)  
+CONFIRM PROVIDER: NO// **2** YES (Exclude ORES)  
+DEFAULT PROVIDER: YES// **??**  
+This parameter allows the attending physician to be prompted as a default  
+when adding new orders.  
+DEFAULT PROVIDER: YES//**\<Enter\>**  
+DC GENERIC ORDERS ON ADMISSION: NO// **??**  
+This parameter controls the DC'ing of generic orders (orders that are not  
+transmitted to any ancillary service for action) when a patient is  
+admitted. If set to YES, then generic orders are DC'd whenever a patient  
+is admitted to the hospital; if empty or set to NO, no automatic DC'ing  
+will take place on admission.  
+DC GENERIC ORDERS ON ADMISSION: NO// **\<Enter\>**  
+DC GENERIC ORDERS ON: SPECIALTY TRANSFER// **?**  
+Select the type of transfer on which to DC a patient's generic orders.  
+Select one of the following:  
+0 NONE  
+1 WARD TRANSFER  
+2 SPECIALTY TRANSFER  
+DC GENERIC ORDERS ON: SPECIALTY TRANSFER// **\<Enter\>**  
+ERROR DAYS: 1// **?**  
+This response must be a number.  
+ERROR DAYS: 1//**\<Enter\>**  
+GRACE DAYS BEFORE PURGE: 30//**\<Enter\>**  
+LAPSE DELAYED ORDERS IN \#DAYS: 180// **??**  
+This parameter sets a limit on the number of days that delayed orders may  
+remain in the Orders file able to be released and activated. If a value  
+is entered here, then any order awaiting release via an MAS event that  
+has been in the Orders file more than the number days specified by this  
+value will be set to a status of "lapsed" instead of released to the  
+service for action. If no value is entered here, then the orders will be  
+processed regardless of the length of time they have been in the file  
+awaiting action.  
+LAPSE DELAYED ORDERS IN \#DAYS: 180// **\<Enter\>**  
+NEW ORDERS DEFAULT: Sign All Orders// **??**  
+This parameter determines the default action to be presented at the end of  
+the Review New Orders screen; the action 'Next Screen' will be used until  
+the last screen of orders, if there are more than one. If there is no  
+action specified here, then 'Sign All Orders' will be used.  
+NEW ORDERS DEFAULT: Sign All Orders// **\<Enter\>**  
+RESTRICT REQUESTOR: YES (ORELSE & OREMAS)// **??**  
+This field allows a site to restrict the selection of providers  
+when adding new orders at the 'Requesting CLINICIAN: ' prompt for  
+holders of the ORELSE and OREMAS key. The restriction being that  
+they cannot select themselves as the requestor even though they may  
+also hold the PROVIDER key.  
+1 YES (ORELSE) -restricts only holders of the ORELSE key.  
+2 YES (ORELSE & OREMAS) -restricts holders of either key.  
+RESTRICT REQUESTOR: YES (ORELSE & OREMAS)//**\<Enter\>**  
 **Miscellaneous Parameters, cont’d**
 
-REVIEW ORDERS ON PATIENT MOVEMENT: YES// **??**
-
+REVIEW ORDERS ON PATIENT MOVEMENT: YES// **??**  
+This parameter allows orders to be reviewed when a patient is transferred  
+or discharged, and when a clinic appointment is made or canceled.  
+REVIEW ORDERS ON PATIENT MOVEMENT: YES//**\<Enter\>**  
+SHOW LAB \#: NO// ??  
+This field controls the listing of lab orders for holders of the ORES key,  
+after the electronic signature has been entered when entering new orders.  
+Only after the order is released to Lab service is the number assigned;  
+if physicians want to see the lab order \# with the order after entering  
+and signing the orders, this parameter must be set to YES. All other  
+users get the listing regardless of what this parameter is set to.  
+SHOW LAB \#: NO//\<Enter\>  
+SHOW STATUS DESCRIPTION: YES// ??  
+This parameter allows the description associated with a status to be  
+displayed with the current status of an order when a detailed  
+display is requested.  
+SHOW STATUS DESCRIPTION: YES// \<Enter\>  
+SIGNATURE DEFAULT ACTION: Release w/o Signature// ?  
+Enter the desired default signature action for ORELSE key holders.  
+Select one of the following:  
+OC Signed on Chart  
+RS Release w/o Signature  
 ***
 
-This parameter allows orders to be reviewed when a patient is transferred
-
-***
-
-or discharged, and when a clinic appointment is made or canceled.
-
-***
-
-REVIEW ORDERS ON PATIENT MOVEMENT: YES//**\<Enter\>**
-
-***
-
-SHOW LAB \#: NO// ??
-
-***
-
-This field controls the listing of lab orders for holders of the ORES key,
-
-***
-
-after the electronic signature has been entered when entering new orders.
-
-***
-
-Only after the order is released to Lab service is the number assigned;
-
-***
-
-if physicians want to see the lab order \# with the order after entering
-
-***
-
-and signing the orders, this parameter must be set to YES. All other
-
-***
-
-users get the listing regardless of what this parameter is set to.
-
-***
-
-SHOW LAB \#: NO//\<Enter\>
-
-***
-
-SHOW STATUS DESCRIPTION: YES// ??
-
-***
-
-This parameter allows the description associated with a status to be
-
-***
-
-displayed with the current status of an order when a detailed
-
-***
-
-display is requested.
-
-***
-
-SHOW STATUS DESCRIPTION: YES// \<Enter\>
-
-***
-
-SIGNATURE DEFAULT ACTION: Release w/o Signature// ?
-
-***
-
-Enter the desired default signature action for ORELSE key holders.
-
-***
-
-Select one of the following:
-
-***
-
-OC Signed on Chart
-
-***
-
-RS Release w/o Signature
-
-***
-
-***
-
-SIGNATURE DEFAULT ACTION: Release w/o Signature//\<Enter\>
-
-***
-
-SIGNED ON CHART DEFAULT: NO// ??
-
-***
-
-This defines the default value to be presented when the user gets the
-
-***
-
-prompt to mark orders as Signed on Chart; if no value is entered, then
-
-***
-
-NO is used as the default.
-
-***
-
-SIGNED ON CHART DEFAULT: NO// \<Enter\>
-
-***
-
+SIGNATURE DEFAULT ACTION: Release w/o Signature//\<Enter\>  
+SIGNED ON CHART DEFAULT: NO// ??  
+This defines the default value to be presented when the user gets the  
+prompt to mark orders as Signed on Chart; if no value is entered, then  
+NO is used as the default.  
+SIGNED ON CHART DEFAULT: NO// \<Enter\>  
 ### 6. Notifications
 
 ##### Overview
 
 The Notifications component in CPRS generates clinical alerts regarding patient information from DHCP packages such as CPRS, Lab, Radiology, and Consults. A notification consists of one line of text that is displayed to the user at sign-on and option prompts.
 
-CPRSUSER,EIGHT (T2342): New order(s) placed.
-
-***
-
-CPRSPROVIDER,FOUR (A3456): Order requires electronic signature.
-
-***
-
-CPRSUSER,TEN (A4321): Medication order(s) unverified by nurse.
-
-***
-
-CPRSUSER1,ONE (N4723): Medications nearing expiration.
-
-***
-
+CPRSUSER,EIGHT (T2342): New order(s) placed.  
+CPRSPROVIDER,FOUR (A3456): Order requires electronic signature.  
+CPRSUSER,TEN (A4321): Medication order(s) unverified by nurse.  
+CPRSUSER1,ONE (N4723): Medications nearing expiration.  
 Some notifications allow the user to perform a follow-up action to the notification. Notifications are deleted after being displayed and/or a follow-up action is taken. Sites have control over the use of CPRS Notifications at their Medical Centers. Kernel utilities handle the display, deletion, and follow-up actions for CPRS Notifications.
 
 CPRS Notifications furnish providers with timely feedback regarding clinically relevant events. Some notifications allow the notification recipient to take direct follow-up action to the clinically relevant event.
 
 The Team List utility (discussed in the next section) is used by the Notification utility to help identify potential notification recipients.
 
-**Setup**
-
-***
-
-To initiate notifications after the CPRS installation is complete, do the following steps:
-
-***
-
+**Setup**  
+To initiate notifications after the CPRS installation is complete, do the following steps:  
 **a. Enable Notifications, as needed by your site.** Notifications are exported as disabled to allow the conversions and install to run more rapidly. To enable Notifications, use the Notification Mgmt Menu for CPRS Mgr [ORB NOT MGR MENU] under the CPRS Configuration Menu (Clin Coord), then pick *Enable or Disable Notification System* If your site is multidivisional, you can enable or disable the system for each division. If it isn’t, or you want to enable for all divisions at once, select “System.” For each division or the system enter “Enable” at the value prompt.
 
-**The new notifications that didn’t exist in OE/RR 2.5 are exported as “disabled.” This allows you to review and enable new notifications as needed by your site. Early installations of CPRS with all new notifications enabled tended to overwhelm users. Therefore, we recommend that you enable the new notifications for a few users at a time or a ward/clinic/service-section at a time.**
-
+**The new notifications that didn’t exist in OE/RR 2.5 are exported as “disabled.” This allows you to review and enable new notifications as needed by your site. Early installations of CPRS with all new notifications enabled tended to overwhelm users. Therefore, we recommend that you enable the new notifications for a few users at a time or a ward/clinic/service-section at a time.**  
 ***
 
-***
-
-**b. Use the options on the Notification Management Menu to control the way notifications work for individuals, departments/services, or the entire medical center. (These options are described in following pages.)**
-
-***
-
+**b. Use the options on the Notification Management Menu to control the way notifications work for individuals, departments/services, or the entire medical center. (These options are described in following pages.)**  
 ***
 
 **c. Edit Site Local Terms**
@@ -4920,204 +2037,75 @@ After CPRS installation, each site must run this option to link terms used in th
 
 **Edit Site Local Terms Example**
 
-**Select Order Checking Mgmt Menu Option: 13 Edit Site Local Terms**
-
-***
-
-**Order Check National Terms**
-
-***
-
-**SERUM CREATININE**
-
-***
-
-**SERUM UREA NITROGEN**
-
-***
-
-**DNR**
-
-***
-
-**PROTHROMBIN TIME**
-
-***
-
-**NPO**
-
-***
-
-**SERUM SPECIMEN**
-
-***
-
-**PARTIAL THROMBOPLASTIN TIME**
-
-***
-
-**ANGIOGRAM (PERIPHERAL)**
-
-***
-
-**WBC**
-
-***
-
-**BLOOD SPECIMEN**
-
-***
-
-**\< Enter ?? to see the rest of the national terms on this list\>**
-
-***
-
+**Select Order Checking Mgmt Menu Option: 13 Edit Site Local Terms**  
+**Order Check National Terms**  
+**SERUM CREATININE**  
+**SERUM UREA NITROGEN**  
+**DNR**  
+**PROTHROMBIN TIME**  
+**NPO**  
+**SERUM SPECIMEN**  
+**PARTIAL THROMBOPLASTIN TIME**  
+**ANGIOGRAM (PERIPHERAL)**  
+**WBC**  
+**BLOOD SPECIMEN**  
+**\< Enter ?? to see the rest of the national terms on this list\>**  
 **Edit Site Local Terms Example, cont‘d**
 
-**Select National Term: PROTHROMBIN TIME**
-
+**Select National Term: PROTHROMBIN TIME**  
 ***
 
+**National Term: PROTHROMBIN TIME**  
 ***
 
-**National Term: PROTHROMBIN TIME**
-
+**Translated from file: 'ORDERABLE ITEMS' 101.43**  
 ***
 
+**PROTHROMBIN TIME (2623)**  
 ***
 
-**Translated from file: 'ORDERABLE ITEMS' 101.43**
-
+Select ORDERABLE ITEMS NAME: PT  
+1 PT (2977)  
+2 PT CONTROL (2906)  
+3 PT WITH MIX (3391)  
+4 PT. TEMP (2645)  
+5 PTH (C-TERMINAL) (2790)  
+Press \<RETURN\> to see more, '\^' to exit this list, OR  
+CHOOSE 1-5: 1 PT (2977)  
+National Term: PROTHROMBIN TIME  
 ***
 
+Translated from file: 'ORDERABLE ITEMS' 101.43  
 ***
 
-**PROTHROMBIN TIME (2623)**
-
+PROTHROMBIN TIME (2623)  
+PT (2977)  
 ***
 
-***
-
-Select ORDERABLE ITEMS NAME: PT
-
-***
-
-1 PT (2977)
-
-***
-
-2 PT CONTROL (2906)
-
-***
-
-3 PT WITH MIX (3391)
-
-***
-
-4 PT. TEMP (2645)
-
-***
-
-5 PTH (C-TERMINAL) (2790)
-
-***
-
-Press \<RETURN\> to see more, '\^' to exit this list, OR
-
-***
-
-CHOOSE 1-5: 1 PT (2977)
-
-***
-
-National Term: PROTHROMBIN TIME
-
-***
-
-***
-
-Translated from file: 'ORDERABLE ITEMS' 101.43
-
-***
-
-***
-
-PROTHROMBIN TIME (2623)
-
-***
-
-PT (2977)
-
-***
-
-***
-
-Select ORDERABLE ITEMS NAME: \<Enter\>
-
-***
-
+Select ORDERABLE ITEMS NAME: \<Enter\>  
 **Mail message sent after automatic recompiling**
 
-Subj: Order Check Compiler Status [\#16691] 00 Jan 98 10:53 14 Lines
-
+Subj: Order Check Compiler Status [\#16691] 00 Jan 98 10:53 14 Lines  
+From: POSTMASTER (Sender: CPRSPROVIDER,FIVE) in 'IN' basket. Page 1 \*\*NEW\*\*  
+\----------------------------------------------------------------------------  
 ***
 
-From: POSTMASTER (Sender: CPRSPROVIDER,FIVE) in 'IN' basket. Page 1 \*\*NEW\*\*
-
+The Order Check routine compiler has completed normally  
+on JAN 00,1998 at 10:53 by [15] CPRSPROVIDER,FIVE.  
 ***
 
-\----------------------------------------------------------------------------
-
+ORDER CHECK EXPERT version 1.0 (rev15) released DEC 15,1997 at 12:18  
 ***
 
+Elapsed time: 6 minutes 50 seconds  
+Queued  
+Execution Trace Mode: ON  
+Elapsed time Logging Mode:  
+Raw Data Logging Mode: ON Keep data for 3 days then purge.  
+Lines of code generated: 7835  
 ***
 
-The Order Check routine compiler has completed normally
-
-***
-
-on JAN 00,1998 at 10:53 by [15] CPRSPROVIDER,FIVE.
-
-***
-
-***
-
-ORDER CHECK EXPERT version 1.0 (rev15) released DEC 15,1997 at 12:18
-
-***
-
-***
-
-Elapsed time: 6 minutes 50 seconds
-
-***
-
-Queued
-
-***
-
-Execution Trace Mode: ON
-
-***
-
-Elapsed time Logging Mode:
-
-***
-
-Raw Data Logging Mode: ON Keep data for 3 days then purge.
-
-***
-
-Lines of code generated: 7835
-
-***
-
-***
-
-Select MESSAGE Action: IGNORE (in IN basket)//
-
-***
-
+Select MESSAGE Action: IGNORE (in IN basket)//  
 **Clean-up of OE/RR 2.5 Alerts**
 
 Some active notifications are converted to information-only alerts when CPRS 1.0 is installed, because CPRS no longer supports their follow-up action. The following alerts are converted:
@@ -5162,18 +2150,9 @@ New Service Consult/Request
 
 This is what the newly converted alerts will look like:
 
-[CONV] CPRSUSER1,TWO (O6641): Order requires electronic signature.
-
-***
-
-[CONV] CPRSUSER1,THREE(A8900): LAB Critical GLUC.:NA:K:CA:PO4:URIC AC:...
-
-***
-
-[CONV] CPRSUSER1,FOUR (S5293): Orders needing clarification.
-
-***
-
+[CONV] CPRSUSER1,TWO (O6641): Order requires electronic signature.  
+[CONV] CPRSUSER1,THREE(A8900): LAB Critical GLUC.:NA:K:CA:PO4:URIC AC:...  
+[CONV] CPRSUSER1,FOUR (S5293): Orders needing clarification.  
 **Lab Alert Changes**
 
 The lab series of alerts have been altered to work in conjunction as follows:
@@ -5279,474 +2258,147 @@ D (Disabled): notification disabled for entity unless entity of higher precedenc
 
 **Enable/Disable Notifications Example**
 
-Select Notification Mgmt Menu Option: **1** Enable/Disable Notifications
-
-***
-
-***
-
-Set PROCESSING FLAG Parameters for Notifications
-
-***
-
-\---------------------------------------------------------------------------
-
-***
-
-may be set for the following:
-
-***
-
-1 User USR [choose from NEW PERSON]
-
-***
-
-2 Team TEA [choose from TEAM]
-
-***
-
-3 Service SRV [choose from SERVICE/SECTION]
-
-***
-
-4 Location LOC [choose from HOSPITAL LOCATION]
-
-***
-
-5 Division DIV [REGION 5]
-
-***
-
-6 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **1** User NEW PERSON
-
-***
-
-Select NEW PERSON NAME: **CPRSUSER1,FIVE** DM CPRSUSER1,SIX
-
-***
-
-***
-
-\--------------------- Setting for User: CPRSUSER1,FIVE -------------------
-
-***
-
-Select Notification: **??**
-
-***
-
-Notification Value
-
-***
-
-\------------ -----
-
-***
-
-ORDER REQUIRES ELEC SIGNATURE Enabled
-
-***
-
-***
-
-Answer with OE/RR NOTIFICATIONS NUMBER, or NAME, or PACKAGE ID, or
-
-***
-
-MESSAGE TEXT, or RECIPIENT USERS
-
-***
-
-***
-
-Do you want the entire 47-Entry OE/RR NOTIFICATIONS List? y (Yes)
-
-***
-
-Choose from:
-
-***
-
-3 LAB RESULTS
-
-***
-
-5 ORDER REQUIRES CHART SIGNATURE
-
-***
-
-6 FLAG ORDER FOR CLARIFICATION
-
-***
-
-12 ORDER REQUIRES ELEC SIGNATURE
-
-***
-
-14 ABNORMAL LAB RESULTS (ACTION)
-
-***
-
-18 ADMISSION
-
-***
-
-19 UNSCHEDULED VISIT
-
-***
-
-20 DECEASED PATIENT
-
-***
-
-21 IMAGING PATIENT EXAMINED
-
-***
-
-22 IMAGING RESULTS
-
-***
-
-23 CONSULT/REQUEST RESOLUTION
-
-***
-
-24 CRITICAL LAB RESULT (INFO)
-
-***
-
-25 ABNORMAL IMAGING RESULTS
-
-***
-
-26 IMAGING REQUEST CANCEL/HELD
-
-***
-
-27 NEW SERVICE CONSULT/REQUEST
-
-***
-
-28 SERVICE ORDER REQ CHART SIGN
-
-***
-
-30 CONSULT/REQUEST CANCEL/HOLD
-
-***
-
-31 NPO DIET MORE THAN 72 HRS
-
-***
-
-32 FLAGGED OI RESULTS - INPT
-
-***
-
-33 ORDERER-FLAGGED RESULTS
-
-***
-
-35 DISCHARGE
-
-***
-
-36 TRANSFER FROM PSYCHIATRY
-
-***
-
-37 ORDER REQUIRES CO-SIGNATURE
-
-***
-
-41 FLAGGED OI ORDER - INPT
-
-***
-
-42 LAB ORDER CANCELED
-
-***
-
-43 STAT ORDER
-
-***
-
-44 STAT RESULTS
-
-***
-
-45 DNR EXPIRING
-
-***
-
-46 FREE TEXT
-
-***
-
-47 MEDICATIONS EXPIRING
-
-***
-
-48 UNVERIFIED MEDICATION ORDER
-
-***
-
-50 NEW ORDER
-
-***
-
-51 STAT IMAGING REQUEST
-
-***
-
-52 URGENT IMAGING REQUEST
-
-***
-
-53 IMAGING RESULTS AMENDED
-
-***
-
-54 ORDER CHECK
-
-***
-
-55 FOOD/DRUG INTERACTION
-
-***
-
-56 ERROR MESSAGE
-
-***
-
-57 CRITICAL LAB RESULTS (ACTION)
-
-***
-
-58 ABNORMAL LAB RESULT (INFO)
-
-***
-
-59 UNVERIFIED ORDER
-
-***
-
-60 FLAGGED OI RESULTS - OUTPT
-
-***
-
-61 FLAGGED OI ORDER - OUTPT
-
-***
-
-62 DC ORDER
-
-***
-
-63 CONSULT/REQUEST UPDATED
-
-***
-
-64 FLAGGED OI EXPIRING - INPT
-
-***
-
-65 FLAGGED OI EXPIRING - OUTPT
-
-***
-
-Notification: STAT RESULTS// **\<Enter\>** STAT RESULTS STAT RESULTS
-
-***
-
-Value: **?**
-
-***
-
-Code indicating processing flag for the entity and notification.
-
-***
-
-Select one of the following:
-
-***
-
-M Mandatory
-
-***
-
-E Enabled
-
-***
-
-D Disabled
-
-***
-
-Value: **e** Enabled
-
-***
-
-***
-
-**Disabling a Notification**
-
-***
-
-Disabling a notification follows the same process, but it seems counter-intuitive. When the program asks if you want to add a new Notification, logically you’d want to say “No,” but the program is really asking if you want to add a new notification to a temporary list for consideration about enabling or disabling. The program is using a generic FileMan call⎯we hope that in the near future a more user-friendly utility will be written for this option.
-
-***
-
-***
-
-Select Notification Mgmt Menu Option: **1** Enable/Disable Notifications
-
-***
-
-***
-
-Set PROCESSING FLAG Parameters for Notifications
-
-***
-
-***
-
-Processing Flag may be set for the following:
-
-***
-
-1 User USR [choose from NEW PERSON]
-
-***
-
-2 Team (OE/RR) OTL [choose from OE/RR LIST]
-
-***
-
-3 Service SRV [choose from SERVICE/SECTION]
-
-***
-
-4 Location LOC [choose from HOSPITAL LOCATION]
-
-***
-
-5 Division DIV [REGION 5]
-
-***
-
-6 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-7 Package PKG [ORDER ENTRY/RESULTS REPORTING]
-
-***
-
-**Notifications, cont’d**
-
-***
-
-Enter selection: 1 **User** NEW PERSON
-
-***
-
-Select NEW PERSON NAME: **CPRSPROVIDER,FIVE** CPF
-
-***
-
-***
-
-\--------------- Setting Processing Flag for User: CPRSPROVIDER,FIVE --------------
-
-***
-
-Select Notification: **?**
-
-***
-
-***
-
-Notification Value
-
-***
-
-\------------ -----
-
-***
-
-LAB RESULTS Disabled
-
-***
-
-ORDER REQUIRES ELEC SIGNATURE Mandatory
-
-***
-
-CRITICAL LAB RESULT (INFO) Mandatory
-
-***
-
-STAT RESULTS Mandatory
-
-***
-
-FREE TEXT Disabled
-
-***
-
-***
-
-Answer with OE/RR NOTIFICATIONS NUMBER, or NAME, or PACKAGE ID, or
-
-***
-
-MESSAGE TEXT, or RECIPIENT USERS
-
-***
-
-Do you want the entire 41-Entry OE/RR NOTIFICATIONS List? **N** (NO)
-
-***
-
-***
-
-Select Notification: **ADMISSION**
-
-***
-
-Are you adding ADMISSION as a new Notification? Yes// \<Enter\> YES
-
+Select Notification Mgmt Menu Option: **1** Enable/Disable Notifications  
+***
+
+Set PROCESSING FLAG Parameters for Notifications  
+\---------------------------------------------------------------------------  
+may be set for the following:  
+1 User USR [choose from NEW PERSON]  
+2 Team TEA [choose from TEAM]  
+3 Service SRV [choose from SERVICE/SECTION]  
+4 Location LOC [choose from HOSPITAL LOCATION]  
+5 Division DIV [REGION 5]  
+6 System SYS [OEX.ISC-SLC.VA.GOV]  
+***
+
+Enter selection: **1** User NEW PERSON  
+Select NEW PERSON NAME: **CPRSUSER1,FIVE** DM CPRSUSER1,SIX  
+***
+
+\--------------------- Setting for User: CPRSUSER1,FIVE -------------------  
+Select Notification: **??**  
+Notification Value  
+\------------ -----  
+ORDER REQUIRES ELEC SIGNATURE Enabled  
+***
+
+Answer with OE/RR NOTIFICATIONS NUMBER, or NAME, or PACKAGE ID, or  
+MESSAGE TEXT, or RECIPIENT USERS  
+***
+
+Do you want the entire 47-Entry OE/RR NOTIFICATIONS List? y (Yes)  
+Choose from:  
+3 LAB RESULTS  
+5 ORDER REQUIRES CHART SIGNATURE  
+6 FLAG ORDER FOR CLARIFICATION  
+12 ORDER REQUIRES ELEC SIGNATURE  
+14 ABNORMAL LAB RESULTS (ACTION)  
+18 ADMISSION  
+19 UNSCHEDULED VISIT  
+20 DECEASED PATIENT  
+21 IMAGING PATIENT EXAMINED  
+22 IMAGING RESULTS  
+23 CONSULT/REQUEST RESOLUTION  
+24 CRITICAL LAB RESULT (INFO)  
+25 ABNORMAL IMAGING RESULTS  
+26 IMAGING REQUEST CANCEL/HELD  
+27 NEW SERVICE CONSULT/REQUEST  
+28 SERVICE ORDER REQ CHART SIGN  
+30 CONSULT/REQUEST CANCEL/HOLD  
+31 NPO DIET MORE THAN 72 HRS  
+32 FLAGGED OI RESULTS - INPT  
+33 ORDERER-FLAGGED RESULTS  
+35 DISCHARGE  
+36 TRANSFER FROM PSYCHIATRY  
+37 ORDER REQUIRES CO-SIGNATURE  
+41 FLAGGED OI ORDER - INPT  
+42 LAB ORDER CANCELED  
+43 STAT ORDER  
+44 STAT RESULTS  
+45 DNR EXPIRING  
+46 FREE TEXT  
+47 MEDICATIONS EXPIRING  
+48 UNVERIFIED MEDICATION ORDER  
+50 NEW ORDER  
+51 STAT IMAGING REQUEST  
+52 URGENT IMAGING REQUEST  
+53 IMAGING RESULTS AMENDED  
+54 ORDER CHECK  
+55 FOOD/DRUG INTERACTION  
+56 ERROR MESSAGE  
+57 CRITICAL LAB RESULTS (ACTION)  
+58 ABNORMAL LAB RESULT (INFO)  
+59 UNVERIFIED ORDER  
+60 FLAGGED OI RESULTS - OUTPT  
+61 FLAGGED OI ORDER - OUTPT  
+62 DC ORDER  
+63 CONSULT/REQUEST UPDATED  
+64 FLAGGED OI EXPIRING - INPT  
+65 FLAGGED OI EXPIRING - OUTPT  
+Notification: STAT RESULTS// **\<Enter\>** STAT RESULTS STAT RESULTS  
+Value: **?**  
+Code indicating processing flag for the entity and notification.  
+Select one of the following:  
+M Mandatory  
+E Enabled  
+D Disabled  
+Value: **e** Enabled  
+***
+
+**Disabling a Notification**  
+Disabling a notification follows the same process, but it seems counter-intuitive. When the program asks if you want to add a new Notification, logically you’d want to say “No,” but the program is really asking if you want to add a new notification to a temporary list for consideration about enabling or disabling. The program is using a generic FileMan call⎯we hope that in the near future a more user-friendly utility will be written for this option.  
+***
+
+Select Notification Mgmt Menu Option: **1** Enable/Disable Notifications  
+***
+
+Set PROCESSING FLAG Parameters for Notifications  
+***
+
+Processing Flag may be set for the following:  
+1 User USR [choose from NEW PERSON]  
+2 Team (OE/RR) OTL [choose from OE/RR LIST]  
+3 Service SRV [choose from SERVICE/SECTION]  
+4 Location LOC [choose from HOSPITAL LOCATION]  
+5 Division DIV [REGION 5]  
+6 System SYS [OEX.ISC-SLC.VA.GOV]  
+7 Package PKG [ORDER ENTRY/RESULTS REPORTING]  
+**Notifications, cont’d**  
+Enter selection: 1 **User** NEW PERSON  
+Select NEW PERSON NAME: **CPRSPROVIDER,FIVE** CPF  
 ***
 
+\--------------- Setting Processing Flag for User: CPRSPROVIDER,FIVE --------------  
+Select Notification: **?**  
 ***
 
-Notification: ADMISSION// \<Enter\> ADMISSION ADMISSION
-
-***
-
+Notification Value  
+\------------ -----  
+LAB RESULTS Disabled  
+ORDER REQUIRES ELEC SIGNATURE Mandatory  
+CRITICAL LAB RESULT (INFO) Mandatory  
+STAT RESULTS Mandatory  
+FREE TEXT Disabled  
 ***
 
-Value: **Disabled**
-
+Answer with OE/RR NOTIFICATIONS NUMBER, or NAME, or PACKAGE ID, or  
+MESSAGE TEXT, or RECIPIENT USERS  
+Do you want the entire 41-Entry OE/RR NOTIFICATIONS List? **N** (NO)  
 ***
 
-Select Notification: \<Enter\>
-
+Select Notification: **ADMISSION**  
+Are you adding ADMISSION as a new Notification? Yes// \<Enter\> YES  
 ***
 
+Notification: ADMISSION// \<Enter\> ADMISSION ADMISSION  
 ***
-
-**Erase Notifications [ORB3 ERASE NOTIFICATIONS]**
 
+Value: **Disabled**  
+Select Notification: \<Enter\>  
 ***
 
+**Erase Notifications [ORB3 ERASE NOTIFICATIONS]**  
 This option allows you to do one of the following:
 
 1\. Erase all notifications for a User
@@ -5765,10 +2417,7 @@ This option lets you set the Urgency for a notification. The urgency is mainly u
 
 3.  (Low): notification is of Low urgency.
 
-    **Set Deletion Parameters for Notifications [ORB3 DELETE MECHANISM]**
-
-***
-
+    **Set Deletion Parameters for Notifications [ORB3 DELETE MECHANISM]**  
 This option lets you set parameters to determine deletion conditions.
 
 It uses a set of codes to determine how a notification will be deleted at a site. The codes include:
@@ -5787,68 +2436,32 @@ b) that individual reviews notifications without follow-up actions.
 
 2.  any recipient reviews notifications without follow-up actions.
 
-    **Set Default Recipient(s) for Notifications [ORB3 DEFAULT RECIPIENTS]**
-
-***
-
+    **Set Default Recipient(s) for Notifications [ORB3 DEFAULT RECIPIENTS]**  
 Enter “Yes” if the recipient should always receive this notification. Recipients (users, teams) will receive the notification on a regular basis⎯despite settings in the option Enable/Disable Notifications. These recipients will always receive the notification, regardless of patient.
 
 **Set Default Recipient Device(s) for Notifications [ORB3 DEFAULT DEVICE RECIPIENTS]**
 
 Enter “Yes” if the device (from the Device file) should always receive this notification. Recipient devices will receive the notification on a regular basis⎯despite settings in the option Enable/Disable Notifications. These recipient devices will always receive the notification, regardless of patient.
 
-**Set Provider Recipients for Notifications [ORB3 PROVIDER RECIPIENTS]**
-
-***
-
+**Set Provider Recipients for Notifications [ORB3 PROVIDER RECIPIENTS]**  
 This option lets you set any one or combination of a set of codes indicating default [provider] recipients of a notification by their title or relationship to the patient. Notifications can be set up with any or all of the following codes:
 
-P (Primary Provider): deliver notification to the patient’s Inpatient Primary Provider.
-
-***
-
-A (Attending Physician): deliver notification to the patient's Attending Physician
-
-***
-
-T (Patient Care Team): deliver notification to the patient's primary care Team.
-
-***
-
-O (Ordering Provider): deliver notification to the provider who placed the order that triggered the notification.
-
-***
-
+P (Primary Provider): deliver notification to the patient’s Inpatient Primary Provider.  
+A (Attending Physician): deliver notification to the patient's Attending Physician  
+T (Patient Care Team): deliver notification to the patient's primary care Team.  
+O (Ordering Provider): deliver notification to the provider who placed the order that triggered the notification.  
 The providers, physicians, and teams must be set up properly and accurately for the correct individuals to receive the notification.
 
 **Notifications, cont’d**
 
 **Flag Orderable Item(s) to Send Notifications [ORB3 FLAG ORDERABLE ITEMS]**
 
-This option has two sub-options to flag specific orderable items to send notifications when they are ordered, resulted, or expiring.
-
-***
-
-**Archive(delete) after \<x\> Days [ORB3 ARCHIVE PERIOD]**
-
-***
-
-Enter the number of days to archive this notification before deletion in the Alert Tracking file. If not indicated, the default period of 30 days is used. The maximum number of days is 100,000 or about 220 years. This value is passed to the Kernel Alert Utility where the actual archiving and deletion of alerts/notifications occurs.
-
-***
-
-**Forward Unprocessed Notification to Supervisor [ORB3 FORWARD SUPERVISOR]**
-
-***
-
-This option lets you set the number of days to hold a notification before forwarding it to the recipient’s supervisor. The maximum is 30 days. If not indicated or zero, the notification will not be forwarded. For example, if a notification has a value of 14 for this option, it will be forwarded to the supervisor of each recipient who hasn’t processed the notification after 14 days. Determination of recipients who have not processed the notification and who their supervisors are is made by the Kernel Alert Utility. Kernel identifies the supervisor as the service chief of the user’s service. The notification will not be forwarded to supervisors of recipients who have processed the alert within 14 days. If the value of this option is zero or non-existent, the alert/notification will never be forwarded. Forwarding of unprocessed alerts is triggered by the option XQALERT DELETE OLD. This option is a Kernel option that should be tasked to run periodically. In addition to forwarding alerts, it cleans up old alerts greater than 14 days old.
-
-***
-
-**Forward Unprocessed Notification to Surrogates [ORB3 FORWARD SURROGATES]**
-
-***
-
+This option has two sub-options to flag specific orderable items to send notifications when they are ordered, resulted, or expiring.  
+**Archive(delete) after \<x\> Days [ORB3 ARCHIVE PERIOD]**  
+Enter the number of days to archive this notification before deletion in the Alert Tracking file. If not indicated, the default period of 30 days is used. The maximum number of days is 100,000 or about 220 years. This value is passed to the Kernel Alert Utility where the actual archiving and deletion of alerts/notifications occurs.  
+**Forward Unprocessed Notification to Supervisor [ORB3 FORWARD SUPERVISOR]**  
+This option lets you set the number of days to hold a notification before forwarding it to the recipient’s supervisor. The maximum is 30 days. If not indicated or zero, the notification will not be forwarded. For example, if a notification has a value of 14 for this option, it will be forwarded to the supervisor of each recipient who hasn’t processed the notification after 14 days. Determination of recipients who have not processed the notification and who their supervisors are is made by the Kernel Alert Utility. Kernel identifies the supervisor as the service chief of the user’s service. The notification will not be forwarded to supervisors of recipients who have processed the alert within 14 days. If the value of this option is zero or non-existent, the alert/notification will never be forwarded. Forwarding of unprocessed alerts is triggered by the option XQALERT DELETE OLD. This option is a Kernel option that should be tasked to run periodically. In addition to forwarding alerts, it cleans up old alerts greater than 14 days old.  
+**Forward Unprocessed Notification to Surrogates [ORB3 FORWARD SURROGATES]**  
 This option lets you set the number of days before a notification is forwarded to a recipient's Mailman surrogates. The maximum is 30 days. If not indicated or zero, the notification will not be forwarded. For example, if a notification has a value of 14 for this option, it will be forwarded to the Mailman surrogates of each recipient who hasn't processed the notification after 14 days.
 
 The Kernel Alert Utility determines recipients who have not processed the notification and their Mailman surrogates. If the value of this option is zero or non-existent, the alert/notification will never be forwarded. Forwarding of unprocessed alerts is triggered by the option XQALERT DELETE OLD, a Kernel option that should be tasked to run periodically. In addition to forwarding alerts, it cleans up old alerts greater than 14 days old.
@@ -5857,550 +2470,187 @@ The Kernel Alert Utility determines recipients who have not processed the notifi
 
 **Example of forwarded alerts:**
 
-1\. CPRSUSER1,SEVEN (H2591): New order(s) placed.
-
-***
-
-Forwarded by: CPRSPROVIDER,FOUR Generated: 07/02/97 16:26:36
-
-***
-
-ALERT NOT PROCESSED BY CPRSPROVIDER,FOUR
-
-***
-
-2\. CPRSUSER1,EIGHT (F1990): New order(s) placed.
-
-***
-
-Forwarded by: CPRSPROVIDER,FOUR Generated: 07/02/97 14:40:32
-
-***
-
-ALERT NOT PROCESSED BY CPRSPROVIDER,FOUR
-
-***
-
+1\. CPRSUSER1,SEVEN (H2591): New order(s) placed.  
+Forwarded by: CPRSPROVIDER,FOUR Generated: 07/02/97 16:26:36  
+ALERT NOT PROCESSED BY CPRSPROVIDER,FOUR  
+2\. CPRSUSER1,EIGHT (F1990): New order(s) placed.  
+Forwarded by: CPRSPROVIDER,FOUR Generated: 07/02/97 14:40:32  
+ALERT NOT PROCESSED BY CPRSPROVIDER,FOUR  
 For this notification to work, a link must exist between the term DNR used by the CPRS expert system and each site’s local term used to denote DNR. After CPRS installation, each site must run the option OCX NATIONAL TERM EDIT (on the CPRS Configuration Menu (IRM). This option links terms used in the expert system to local terms. Some terms like DNR and NPO diet must be mapped to one or more entries in the orderable item file. Other terms like Serum Creatinine must be mapped to the lab test file.
 
-**Set Delays for Unverified Orders [ORB3 UNVERIFIED ORDERS MENU]**
-
+**Set Delays for Unverified Orders [ORB3 UNVERIFIED ORDERS MENU]**  
+This menu provides access to options that set up parameters for delaying unverified orders alert triggers.  
 ***
 
-This menu provides access to options that set up parameters for delaying unverified orders alert triggers.
-
+**Set Delay for All Unverified Orders [ORB3 UNVERIFIED ORDER]**  
+This option lets you enter the number of hours delay to wait after an order is placed before triggering an Unverified Order notification/alert. The maximum number of hours is 10,000.  
 ***
 
+**Set Delay for Unverified Medication Orders [ORB3 UNVERIFIED MED ORDER]**  
+This option lets you enter the number of hours delay to wait after a medication order is placed before triggering an Unverified Medication Order notification/alert. The maximum number of hours is 10,000.  
 ***
 
-**Set Delay for All Unverified Orders [ORB3 UNVERIFIED ORDER]**
-
-***
-
-This option lets you enter the number of hours delay to wait after an order is placed before triggering an Unverified Order notification/alert. The maximum number of hours is 10,000.
-
-***
-
-***
-
-**Set Delay for Unverified Medication Orders [ORB3 UNVERIFIED MED ORDER]**
-
-***
-
-This option lets you enter the number of hours delay to wait after a medication order is placed before triggering an Unverified Medication Order notification/alert. The maximum number of hours is 10,000.
-
-***
-
-***
-
-**Set Notification Display Sort Method (GUI) [ORB3 SORT METHOD]**
-
-***
-
+**Set Notification Display Sort Method (GUI) [ORB3 SORT METHOD]**  
 This option lets you determine the order in which items of a notification are displayed in the GUI. The items include: by Patient, by Type (Notification name), and by Urgency. Within these sort methods notifications are presented in reverse chronological order.
 
-**Send Flagged Orders Bulletin [ORB3 FLAGGED ORDERS BULLETIN]**
-
-***
-
+**Send Flagged Orders Bulletin [ORB3 FLAGGED ORDERS BULLETIN]**  
 This option lets you indicate whether to send a bulletin when an order is flagged for clarification. “Yes” indicates a MailMan bulletin will be sent to the order’s Current Provider (usually the Ordering Provider). This option has no effect on the Flagged Orders notification which is also triggered when an order is flagged for clarification.
 
 **Notifications, cont’d**
 
-**Determine Recipients for a Notification [ORB3 DETERMINE RECIPIENTS]**
-
-***
-
-This option lets you create a simulated notification recipient list, without sending the alert. You are prompted for information about recipients: patient, and notification, with the option to enter an order number and/or a recipient. Output can be directed to a device. This option is intended to serve as a tool to help determine why a user did or did not receive a particular notification. Please note: if team lists, patient-provider relationships (e.g. Attending and Primary), and/or parameter values have changed between the moment when the original notification was triggered and when this option is triggered, the outcome of the recipient list may be different.
-
-***
-
-**Display Patient Alerts and Alert recipients [ORB3 ALERT RECIPIENTS]**
-
-***
-
+**Determine Recipients for a Notification [ORB3 DETERMINE RECIPIENTS]**  
+This option lets you create a simulated notification recipient list, without sending the alert. You are prompted for information about recipients: patient, and notification, with the option to enter an order number and/or a recipient. Output can be directed to a device. This option is intended to serve as a tool to help determine why a user did or did not receive a particular notification. Please note: if team lists, patient-provider relationships (e.g. Attending and Primary), and/or parameter values have changed between the moment when the original notification was triggered and when this option is triggered, the outcome of the recipient list may be different.  
+**Display Patient Alerts and Alert recipients [ORB3 ALERT RECIPIENTS]**  
 This option produces a list of all OE/RR alerts for a specified patient for the dates you enter. You can also get a detailed listing on specific alerts attached to the patient record. The detailed report shows each recipient and gives dates and times of key actions concerning the alert (such as 1st displayed, processed, deleted, etc.)
 
 In the following example, the alerts are listed for a specific patient and details are listed on one of the alerts. The order number, if it exists, (and sometimes other information) is included in brackets after the alert name. This information is here for troubleshooting purposes.
 
 Display Patient Alerts and Alert recipients example
 
-Select Notification Mgmt Menu Option: 15 Display Patient Alerts and Alert Recipients
-
+Select Notification Mgmt Menu Option: 15 Display Patient Alerts and Alert Recipients  
+PATIENT (req'd): CPRSPATIENT,ONE 9-00-44 000000001 YES SC VETE  
+RAN  
+Enrollment Priority: GROUP 1 Category: IN PROCESS End Date:  
 ***
 
-PATIENT (req'd): CPRSPATIENT,ONE 9-00-44 000000001 YES SC VETE
-
+Start Date/Time (req'd): T-30// (JUL 22, 2000)  
+End Date/Time (req'd): NOW// (AUG 21, 2000@14:27)  
 ***
 
-RAN
-
+Processing.................................................................  
 ***
 
-Enrollment Priority: GROUP 1 Category: IN PROCESS End Date:
-
+ALERTS FOR PATIENT: CPRSPATIENT,ONE  
 ***
 
+1 [2B M] WARFARIN TAB ordered - adjust diet according 8/00/00@00:00  
+2 [2B M] New order(s) placed. [7094486] 8/00/00@00:00  
+3 [2B M] New order(s) placed. [7095466] 8/00/00@00:00  
+4 Lab order canceled: POTASSIUM BLOOD SERUM LC LB \# [70954648/00/00@00:00  
+5 Lab order canceled: POTASSIUM BLOOD SERUM LC LB \# [70954628/00/00@00:00  
+6 Lab order canceled: POTASSIUM BLOOD SERUM LC LB \# [70954638/00/00@00:00  
+7 Lab order canceled: POTASSIUM BLOOD SERUM LC LB \# [70954618/00/00@00:00  
+8 Lab order canceled: POTASSIUM BLOOD SERUM LC LB \# [70954608/00/00@00:00  
+9 Lab order canceled: POTASSIUM BLOOD SERUM WC LB \# [70954588/00/00@00:00  
+10 Lab order canceled: POTASSIUM BLOOD SERUM WC LB \# [70954598/00/00@00:00  
+11 [2B MED] New DC order(s) placed. [7095457] 8/00/00@00:00  
+999 MORE...  
 ***
 
-Start Date/Time (req'd): T-30// (JUL 22, 2000)
-
-***
-
-End Date/Time (req'd): NOW// (AUG 21, 2000@14:27)
-
-***
-
-***
-
-Processing.................................................................
-
-***
-
-***
-
-ALERTS FOR PATIENT: CPRSPATIENT,ONE
-
-***
-
-***
-
-1 [2B M] WARFARIN TAB ordered - adjust diet according 8/00/00@00:00
-
-***
-
-2 [2B M] New order(s) placed. [7094486] 8/00/00@00:00
-
-***
-
-3 [2B M] New order(s) placed. [7095466] 8/00/00@00:00
-
-***
-
-4 Lab order canceled: POTASSIUM BLOOD SERUM LC LB \# [70954648/00/00@00:00
-
-***
-
-5 Lab order canceled: POTASSIUM BLOOD SERUM LC LB \# [70954628/00/00@00:00
-
-***
-
-6 Lab order canceled: POTASSIUM BLOOD SERUM LC LB \# [70954638/00/00@00:00
-
-***
-
-7 Lab order canceled: POTASSIUM BLOOD SERUM LC LB \# [70954618/00/00@00:00
-
-***
-
-8 Lab order canceled: POTASSIUM BLOOD SERUM LC LB \# [70954608/00/00@00:00
-
-***
-
-9 Lab order canceled: POTASSIUM BLOOD SERUM WC LB \# [70954588/00/00@00:00
-
-***
-
-10 Lab order canceled: POTASSIUM BLOOD SERUM WC LB \# [70954598/00/00@00:00
-
-***
-
-11 [2B MED] New DC order(s) placed. [7095457] 8/00/00@00:00
-
-***
-
-999 MORE...
-
-***
-
-***
-
-Enter alerts to display in detail:
-
-***
-
+Enter alerts to display in detail:  
 **Notifications, cont’d**
 
-CPRSPATIENT,TWO
-
+CPRSPATIENT,TWO  
+1st displayed to recipient:  
+1st selected by recipient:  
+Processed by recipient:  
+Deleted via follow-up:  
+Auto deleted:  
+Forwarded by:  
+Press RETURN to continue or '\^' to exit:  
 ***
 
-1st displayed to recipient:
-
+RECIPIENTS OF ALERTS FOR PATIENT: CPRSPATIENT,ONE Page: 2  
 ***
 
-1st selected by recipient:
-
+Forwarded to recipient:  
 ***
 
-Processed by recipient:
-
+CPRSPATIENT,THREE  
+1st displayed to recipient: Nov 00, 1997@00:00:00  
+1st selected by recipient:  
+Processed by recipient:  
+Deleted via follow-up:  
+Auto deleted:  
+Forwarded by:  
+Forwarded to recipient:  
 ***
 
-Deleted via follow-up:
-
-***
-
-Auto deleted:
-
-***
-
-Forwarded by:
-
-***
-
-Press RETURN to continue or '\^' to exit:
-
-***
-
-***
-
-RECIPIENTS OF ALERTS FOR PATIENT: CPRSPATIENT,ONE Page: 2
-
-***
-
-***
-
-Forwarded to recipient:
-
-***
-
-***
-
-CPRSPATIENT,THREE
-
-***
-
-1st displayed to recipient: Nov 00, 1997@00:00:00
-
-***
-
-1st selected by recipient:
-
-***
-
-Processed by recipient:
-
-***
-
-Deleted via follow-up:
-
-***
-
-Auto deleted:
-
-***
-
-Forwarded by:
-
-***
-
-Forwarded to recipient:
-
-***
-
-***
-
-\- End of Report -
-
-***
-
-Press RETURN to continue:
-
-***
-
-Select Notification Mgmt Menu Option:
-
-***
-
-**Enable or Disable Notification System** **[ORB3 ENABLE/DISABLE ]**
-
-***
-
+\- End of Report -  
+Press RETURN to continue:  
+Select Notification Mgmt Menu Option:  
+**Enable or Disable Notification System** **[ORB3 ENABLE/DISABLE ]**  
 This option turns on or off the entire Notifications system for a medical center.
 
-**Display the Notifications a User Can Receive [ORB3 RECIP NOTIFICATIONS]**
-
-***
-
+**Display the Notifications a User Can Receive [ORB3 RECIP NOTIFICATIONS]**  
 This is a debugging tool to help determine why (or why not) notifications are being received by a particular individual. It lists each notification and its processing flag. It also lists the reason for the processing flag value.
 
 \*OERR is the exported value for a parameter. It can’t be altered at a site.
 
-**Example**
-
+**Example**  
+Select Notification Mgmt Menu for OE/RR Mgr Option: 17 Display the Notifications a User Can Receive  
+Enter user's name: CPRSUSER1,NINE//**\<Enter\>**  
 ***
 
-Select Notification Mgmt Menu for OE/RR Mgr Option: 17 Display the Notifications a User Can Receive
-
+Would you like help understanding the list of notifications? No//**\<Enter\>**(No)  
 ***
 
-Enter user's name: CPRSUSER1,NINE//**\<Enter\>**
-
-***
-
-***
-
-Would you like help understanding the list of notifications? No//**\<Enter\>**(No)
-
-***
-
-***
-
-This will take a moment or two, please stand by.......................
-
-***
-
-DEVICE: HOME//**\<Enter\>** ALPHA
-
-***
-
+This will take a moment or two, please stand by.......................  
+DEVICE: HOME//**\<Enter\>** ALPHA  
 ***
 
 **Notifications, cont’d**
 
-**Example Notifications List**
-
+**Example Notifications List**  
+Notification List for CPRSUSER1,NINE Page: 1  
+***  
+Notification ON/OFF For This User and Why  
+\-------------------------------------------------------------------------------  
+ABNORMAL IMAGING RESULTS ON OERR value is Mandatory  
+ABNORMAL LAB RESULT (INFO) OFF User's service MEDICINE value is Disabled  
+ABNORMAL LAB RESULTS (ACTION) OFF OERR value is Disabled  
+ADMISSION ON OERR value is Enabled  
+CONSULT/REQUEST CANCEL/HOLD ON OERR value is Enabled  
+CONSULT/REQUEST RESOLUTION ON OERR value is Enabled  
+CONSULT/REQUEST UPDATED OFF OERR value is Disabled  
+CRITICAL LAB RESULT (INFO) ON OERR value is Mandatory  
+CRITICAL LAB RESULTS (ACTION) ON OERR value is Mandatory  
+DC ORDER OFF OERR value is Disabled  
+DECEASED PATIENT ON OERR value is Enabled  
+DISCHARGE OFF OERR value is Disabled  
+DNR EXPIRING OFF OERR value is Disabled  
+ERROR MESSAGE OFF User's service MEDICINE value is Disabled  
+FLAG ORDER FOR CLARIFICATION ON OERR value is Enabled  
+FLAGGED OI EXPIRING – INPT OFF OERR value is Disabled  
+FLAGGED OI EXPIRING – OUTPT OFF OERR value is Disabled  
+FLAGGED OI ORDER – INPT OFF OERR value is Disabled  
+FLAGGED OI ORDER – OUTPT ON System value is Enabled  
+FLAGGED OI RESULTS – INPT OFF OERR value is Disabled  
+FLAGGED OI RESULTS – OUTPT OFF OERR value is Disabled  
+FOOD/DRUG INTERACTION OFF OERR value is Disabled  
+FREE TEXT OFF OERR value is Disabled  
+IMAGING PATIENT EXAMINED ON OERR value is Enabled  
+IMAGING REQUEST CANCEL/HELD ON OERR value is Enabled  
+IMAGING RESULTS ON OERR value is Enabled  
+IMAGING RESULTS AMENDED OFF OERR value is Disabled  
+LAB ORDER CANCELED OFF OERR value is Disabled  
+LAB RESULTS OFF OERR value is Disabled  
+MEDICATIONS EXPIRING OFF OERR value is Disabled  
+NEW ORDER ON Division ISC SALT LAKE value is Mandatory  
+NEW SERVICE CONSULT/REQUEST ON OERR value is Enabled  
+NPO DIET MORE THAN 72 HRS OFF OERR value is Disabled  
+ORDER CHECK OFF OERR value is Disabled  
+ORDER REQUIRES CHART SIGNATURE ON OERR value is Mandatory  
+ORDER REQUIRES CO-SIGNATURE OFF OERR value is Disabled  
+ORDER REQUIRES ELEC SIGNATURE ON Division ISC SALT LAKE value is Mandatory  
+ORDERER-FLAGGED RESULTS OFF OERR value is Disabled  
+SERVICE ORDER REQ CHART SIGN ON OERR value is Mandatory  
+STAT IMAGING REQUEST OFF OERR value is Disabled  
+STAT ORDER OFF OERR value is Disabled  
+STAT RESULTS OFF OERR value is Disabled  
+TRANSFER FROM PSYCHIATRY OFF OERR value is Disabled  
+UNSCHEDULED VISIT ON OERR value is Enabled  
+UNVERIFIED MEDICATION ORDER OFF OERR value is Disabled  
+UNVERIFIED ORDER OFF OERR value is Disabled  
+URGENT IMAGING REQUEST OFF OERR value is Disabled  
 ***
 
-Notification List for CPRSUSER1,NINE Page: 1
-
-***
-
-***
-
-***
-
-Notification ON/OFF For This User and Why
-
-***
-
-\-------------------------------------------------------------------------------
-
-***
-
-ABNORMAL IMAGING RESULTS ON OERR value is Mandatory
-
-***
-
-ABNORMAL LAB RESULT (INFO) OFF User's service MEDICINE value is Disabled
-
-***
-
-ABNORMAL LAB RESULTS (ACTION) OFF OERR value is Disabled
-
-***
-
-ADMISSION ON OERR value is Enabled
-
-***
-
-CONSULT/REQUEST CANCEL/HOLD ON OERR value is Enabled
-
-***
-
-CONSULT/REQUEST RESOLUTION ON OERR value is Enabled
-
-***
-
-CONSULT/REQUEST UPDATED OFF OERR value is Disabled
-
-***
-
-CRITICAL LAB RESULT (INFO) ON OERR value is Mandatory
-
-***
-
-CRITICAL LAB RESULTS (ACTION) ON OERR value is Mandatory
-
-***
-
-DC ORDER OFF OERR value is Disabled
-
-***
-
-DECEASED PATIENT ON OERR value is Enabled
-
-***
-
-DISCHARGE OFF OERR value is Disabled
-
-***
-
-DNR EXPIRING OFF OERR value is Disabled
-
-***
-
-ERROR MESSAGE OFF User's service MEDICINE value is Disabled
-
-***
-
-FLAG ORDER FOR CLARIFICATION ON OERR value is Enabled
-
-***
-
-FLAGGED OI EXPIRING – INPT OFF OERR value is Disabled
-
-***
-
-FLAGGED OI EXPIRING – OUTPT OFF OERR value is Disabled
-
-***
-
-FLAGGED OI ORDER – INPT OFF OERR value is Disabled
-
-***
-
-FLAGGED OI ORDER – OUTPT ON System value is Enabled
-
-***
-
-FLAGGED OI RESULTS – INPT OFF OERR value is Disabled
-
-***
-
-FLAGGED OI RESULTS – OUTPT OFF OERR value is Disabled
-
-***
-
-FOOD/DRUG INTERACTION OFF OERR value is Disabled
-
-***
-
-FREE TEXT OFF OERR value is Disabled
-
-***
-
-IMAGING PATIENT EXAMINED ON OERR value is Enabled
-
-***
-
-IMAGING REQUEST CANCEL/HELD ON OERR value is Enabled
-
-***
-
-IMAGING RESULTS ON OERR value is Enabled
-
-***
-
-IMAGING RESULTS AMENDED OFF OERR value is Disabled
-
-***
-
-LAB ORDER CANCELED OFF OERR value is Disabled
-
-***
-
-LAB RESULTS OFF OERR value is Disabled
-
-***
-
-MEDICATIONS EXPIRING OFF OERR value is Disabled
-
-***
-
-NEW ORDER ON Division ISC SALT LAKE value is Mandatory
-
-***
-
-NEW SERVICE CONSULT/REQUEST ON OERR value is Enabled
-
-***
-
-NPO DIET MORE THAN 72 HRS OFF OERR value is Disabled
-
-***
-
-ORDER CHECK OFF OERR value is Disabled
-
-***
-
-ORDER REQUIRES CHART SIGNATURE ON OERR value is Mandatory
-
-***
-
-ORDER REQUIRES CO-SIGNATURE OFF OERR value is Disabled
-
-***
-
-ORDER REQUIRES ELEC SIGNATURE ON Division ISC SALT LAKE value is Mandatory
-
-***
-
-ORDERER-FLAGGED RESULTS OFF OERR value is Disabled
-
-***
-
-SERVICE ORDER REQ CHART SIGN ON OERR value is Mandatory
-
-***
-
-STAT IMAGING REQUEST OFF OERR value is Disabled
-
-***
-
-STAT ORDER OFF OERR value is Disabled
-
-***
-
-STAT RESULTS OFF OERR value is Disabled
-
-***
-
-TRANSFER FROM PSYCHIATRY OFF OERR value is Disabled
-
-***
-
-UNSCHEDULED VISIT ON OERR value is Enabled
-
-***
-
-UNVERIFIED MEDICATION ORDER OFF OERR value is Disabled
-
-***
-
-UNVERIFIED ORDER OFF OERR value is Disabled
-
-***
-
-URGENT IMAGING REQUEST OFF OERR value is Disabled
-
-***
-
-***
-
-\- End of Report -
-
-***
-
+\- End of Report -  
 ***
 
 **Notifications, cont’d**
 
-**Explanations of ON/OFF For This User and Why**
-
-***
-
+**Explanations of ON/OFF For This User and Why**  
 | **Reason**                         | **Explanation**                                                                              |
 |------------------------------------|----------------------------------------------------------------------------------------------|
 | Division/System value is Mandatory | The site determined that the notification is mandatory for either a division or a hospital.  |
@@ -6410,82 +2660,34 @@ URGENT IMAGING REQUEST OFF OERR value is Disabled
 | User value is Enabled              | A manager, coordinator, or user has enabled this notification for this user.                 |
 | User value is Disabled             | A manager, coordinator, or user has disabled this notification for this user.                |
 | Division value is Disabled         | A manager or coordinator has disabled this notification for the division.                    |
-| System value is Disabled           | A manager or coordinator has disabled this notification for the system.                      |
-
-***
-
+| System value is Disabled           | A manager or coordinator has disabled this notification for the system.                      |  
 **Set Surrogate Notification Recipient for a User [ORB3 SET SURROGATE RECIPIENT]**
 
 This option sets up a surrogate to receive all notifications (OE/RR alerts) for a user.
 
-Select Notification Mgmt Menu Option: **Set Surrogate Notification Recipient for a User**
-
+Select Notification Mgmt Menu Option: **Set Surrogate Notification Recipient for a User**  
+Current Recipient:  **CPRSPROVIDER,FOUR**  CPF PHYSICIAN  
 ***
 
-Current Recipient:  **CPRSPROVIDER,FOUR**  CPF PHYSICIAN
-
+\--------------------------------- Setting -------------------------------  
+Surrogate Recipient: **CPRSPROVIDER,**FIVE CPF  
+Sending bulletin to CPRSPROVIDER,FIVE...  
+Subj: Surrogate Recipient for OE/RR Notifications/Alerts [\#16738]  
+00 Jan 98 00:00 2 Lines  
+From: CPRSPROVIDER,FIVE in 'IN' basket. Page 1 \*\*NEW\*\*  
+\---------------------------------------------------------------------------  
 ***
 
+You have been designated as the surrogate to receive  
+OE/RR Notifications/Alerts for CPRSPROVIDER,FOUR.  
 ***
 
-\--------------------------------- Setting -------------------------------
-
-***
-
-Surrogate Recipient: **CPRSPROVIDER,**FIVE CPF
-
-***
-
-Sending bulletin to CPRSPROVIDER,FIVE...
-
-***
-
-Subj: Surrogate Recipient for OE/RR Notifications/Alerts [\#16738]
-
-***
-
-00 Jan 98 00:00 2 Lines
-
-***
-
-From: CPRSPROVIDER,FIVE in 'IN' basket. Page 1 \*\*NEW\*\*
-
-***
-
-\---------------------------------------------------------------------------
-
-***
-
-***
-
-You have been designated as the surrogate to receive
-
-***
-
-OE/RR Notifications/Alerts for CPRSPROVIDER,FOUR.
-
-***
-
-***
-
-Select MESSAGE Action: IGNORE (in IN basket)//
-
-***
-
-### 7. Order Checking
-
-***
-
-**Order checking, a component of order entry, is based on a system of rules, which review orders to see if they meet defined criteria. If they meet the criteria, an electronic message is sent to the ordering provider before the order is completed (such as duplicate order, drug-lab interaction, etc.). The provider can then choose to cancel the order or override the order check and place the order.**
-
-***
-
+Select MESSAGE Action: IGNORE (in IN basket)//  
+### 7. Order Checking  
+**Order checking, a component of order entry, is based on a system of rules, which review orders to see if they meet defined criteria. If they meet the criteria, an electronic message is sent to the ordering provider before the order is completed (such as duplicate order, drug-lab interaction, etc.). The provider can then choose to cancel the order or override the order check and place the order.**  
 **☞ NOTE:** All order checks are exported disabled at the system level. When IRMS turns them on at the system level, they are then turned on for everyone. IRMS, Clinical Coordinators, individuals, or services can then disable individual order checks if they choose to.
 
-**IMPORTANT:** If your site doesn’t want individuals to be able to disable order checks, consider not assigning users the option *Enable/Disable Order Checks.*
-
-***
-
+**IMPORTANT:** If your site doesn’t want individuals to be able to disable order checks, consider not assigning users the option *Enable/Disable Order Checks.*  
 **Relationship of Order Checking to Notifications**
 
 Order Checks are similar to Notifications in that both review existing data and current events to produce a relevant message that is presented to patient care-givers. Also, both systems use the CPRS expert system (OCX namespace), to define logical expressions for this evaluation and message creation. In addition to the expert system, both systems have some hard-coded algorithms. For example, the critical drug interaction order check is made via an entry point in the pharmacy package whereas renal functions for patients over 65 is defined as a rule in the CPRS expert system.
@@ -6498,110 +2700,38 @@ The main difference between the two systems is their focus. Order Checks are a r
 
 Order Checking performs checks while ordering is taking place.
 
-Before orders go to services such as Lab and Pharmacy, they are sent to Order Checking where the ordered item is evaluated by an expert system rule against data from patient files. If one or more of the designated rules of logic for that type of order is met, order check messages are presented to the clinician placing the order.
-
-***
-
+Before orders go to services such as Lab and Pharmacy, they are sent to Order Checking where the ordered item is evaluated by an expert system rule against data from patient files. If one or more of the designated rules of logic for that type of order is met, order check messages are presented to the clinician placing the order.  
 **Order checks exported with CPRS**
 
-ALLERGY-CONTRAST MEDIA INTERACTION
-
-***
-
-ALLERGY-DRUG INTERACTION
-
-***
-
-AMINOGLYCOSIDE ORDERED
-
-***
-
-BIOCHEM ABNORMALITY FOR CONTRAST MEDIA
-
-***
-
-CLOZAPINE APPROPRIATENESS
-
-***
-
-CRITICAL DRUG INTERACTION
-
-***
-
-CT & MRI PHYSICAL LIMITATIONS
-
-***
-
-DISPENSE DRUG NOT SELECTED
-
-***
-
-DUPLICATE DRUG THERAPY ORDER (new with CPRS GUI v.28)
-
-***
-
-DUPLICATE DRUG ORDER
-
-***
-
-DUPLICATE ORDER (Non-Med)
-
-***
-
-ERROR MESSAGE
-
-***
-
-ESTIMATED CREATININE CLEARANCE
-
-***
-
-GLUCOPHAGE-CONTRAST MEDIA
-
-***
-
-LAB ORDER FREQ RESTRICTIONS
-
-***
-
-MISSING LAB TESTS FOR ANGIOGRAM PROCEDURE
-
-***
-
-ORDER CHECKING NOT AVAILABLE
-
-***
-
-POLYPHARMACY
-
-***
-
-RECENT BARIUM STUDY
-
-***
-
-RECENT ORAL CHOLECYSTOGRAM
-
-***
-
-RENAL FUNCTIONS OVER AGE 65
-
-***
-
-SIGNIFICANT DRUG INTERACTION
-
-***
-
+ALLERGY-CONTRAST MEDIA INTERACTION  
+ALLERGY-DRUG INTERACTION  
+AMINOGLYCOSIDE ORDERED  
+BIOCHEM ABNORMALITY FOR CONTRAST MEDIA  
+CLOZAPINE APPROPRIATENESS  
+CRITICAL DRUG INTERACTION  
+CT & MRI PHYSICAL LIMITATIONS  
+DISPENSE DRUG NOT SELECTED  
+DUPLICATE DRUG THERAPY ORDER (new with CPRS GUI v.28)  
+DUPLICATE DRUG ORDER  
+DUPLICATE ORDER (Non-Med)  
+ERROR MESSAGE  
+ESTIMATED CREATININE CLEARANCE  
+GLUCOPHAGE-CONTRAST MEDIA  
+LAB ORDER FREQ RESTRICTIONS  
+MISSING LAB TESTS FOR ANGIOGRAM PROCEDURE  
+ORDER CHECKING NOT AVAILABLE  
+POLYPHARMACY  
+RECENT BARIUM STUDY  
+RECENT ORAL CHOLECYSTOGRAM  
+RENAL FUNCTIONS OVER AGE 65  
+SIGNIFICANT DRUG INTERACTION  
 **Note:** The DRUG-DRUG INTERACTION order check has been renamed CRITICAL DRUG INTERACTION. All parameter values associated with DRUG-DRUG are now associated with CRITICAL DRUG INTERACTION. A new order check, SIGNIFICANT DRUG INTERACTION, has been added to the Order Check File ([\#100.8]. The exported, package-level parameter values for this new order check are ORK PROCESSING FLAG = "Enabled" and ORK CLINICAL DANGER LEVEL = "Moderate". The new order check lets sites designate significant drug interaction with a lower clinical danger level.
 
 **☞ REMEMBER:** All of these order checks are exported disabled at the system level. When IRMS turns them on at the system level, they are then turned on for everyone. IRMS, Clinical Coordinators, individuals, or services can then disable individual order checks if they choose to.
 
 ### Order Checking Management Menu
 
-**Several parameters must be set before certain order checks can work properly. Options in the Order Checking Management Options Menu allow you to set these parameters.**
-
-***
-
+**Several parameters must be set before certain order checks can work properly. Options in the Order Checking Management Options Menu allow you to set these parameters.**  
 | **Option**                                     | **Description**                                                                                                                  |
 |------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | 1 Enable/Disable an Order Check                | Enter the processing flag for an entity.                                                                                         |
@@ -6619,10 +2749,7 @@ SIGNIFICANT DRUG INTERACTION
 | 13 Edit Site Local Terms                       | Map local orderable items or laboratory test names to standard terms used by the Order Checking system.                          |
 | 14. Set Number of Medications for Polypharmacy | Use this option to set the number of medications for determining polypharmacy.                                                   |
 
-**☞ NOTE:** The pharmacy duplicate order range is not determined by CPRS parameters. It is determined within the Pharmacy packages. See the Pharmacy National Drug File (NDF) documentation for a list of Pharmacy order checks.
-
-***
-
+**☞ NOTE:** The pharmacy duplicate order range is not determined by CPRS parameters. It is determined within the Pharmacy packages. See the Pharmacy National Drug File (NDF) documentation for a list of Pharmacy order checks.  
 **Order Checking, cont’d**
 
 **Enable/Disable an Order Check**
@@ -6635,278 +2762,92 @@ Use this option to turn specific order checks on or off for a user or location. 
 
 **D** (Disabled): Order check is disabled for the entity unless an entity of higher precedence has the order check Enabled (e.g. if Disabled at System level and Enabled at User level, order check is processed).
 
-**Example**
-
+**Example**  
+Select Order Checking Management Options Option: **1** Enable/Disable an Order Check  
+Enable/Disable an Order Check  
+\------------------------------------------------------------------------  
+may be set for the following:  
 ***
 
-Select Order Checking Management Options Option: **1** Enable/Disable an Order Check
-
+1 User USR [choose from NEW PERSON]  
+2 Location LOC [choose from HOSPITAL LOCATION]  
+3 Service SRV [choose from SERVICE/SECTION]  
+4 Division DIV [REGION 5]  
+5 System SYS [OEX.ISC-SLC.VA.GOV]  
+Enter selection: **1** User NEW PERSON  
+Select NEW PERSON NAME: **CRPSPROVIDER**,THREE CPT PHYSICIAN  
 ***
 
-Enable/Disable an Order Check
-
+\---------------- Setting for User: CPRSPROVIDER,THREE ----------------  
+Order Check Value  
+\----------- -----  
+DUPLICATE ORDER Enabled  
 ***
 
-\------------------------------------------------------------------------
-
-***
-
-may be set for the following:
-
-***
-
-***
-
-1 User USR [choose from NEW PERSON]
-
-***
-
-2 Location LOC [choose from HOSPITAL LOCATION]
-
-***
-
-3 Service SRV [choose from SERVICE/SECTION]
-
-***
-
-4 Division DIV [REGION 5]
-
-***
-
-5 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-Enter selection: **1** User NEW PERSON
-
-***
-
-Select NEW PERSON NAME: **CRPSPROVIDER**,THREE CPT PHYSICIAN
-
-***
-
-***
-
-\---------------- Setting for User: CPRSPROVIDER,THREE ----------------
-
-***
-
-Order Check Value
-
-***
-
-\----------- -----
-
-***
-
-DUPLICATE ORDER Enabled
-
-***
-
-***
-
-Select Order Check: **?**
-
-***
-
-Answer with ORDER CHECKS NAME
-
-***
-
-Do you want the entire 21-Entry ORDER CHECKS List? Y (Yes)
-
-***
-
-Choose from:
-
-***
-
-ALLERGY-CONTRAST MEDIA INTERAC
-
-***
-
-ALLERGY-DRUG INTERACTION
-
-***
-
-AMINOGLYCOSIDE ORDERED
-
-***
-
-BIOCHEM ABNORMALITY FOR CONTRA
-
-***
-
-CLOZAPINE APPROPRIATENESS
-
-***
-
-CRITICAL DRUG INTERACTION
-
-***
-
-CT & MRI PHYSICAL LIMITATIONS
-
-***
-
-DISPENSE DRUG NOT SELECTED
-
-***
-
-DUPLICATE DRUG THERAPY ORDER (changed with CPRS GUI v.28)
-
-***
-
-DUPLICATE DRUG ORDER
-
-***
-
-DUPLICATE ORDER
-
-***
-
-ERROR MESSAGE
-
-***
-
-ESTIMATED CREATININE CLEARANCE
-
-***
-
-GLUCOPHAGE-CONTRAST MEDIA
-
-***
-
-LAB ORDER FREQ RESTRICTIONS
-
-***
-
-MISSING LAB TESTS FOR ANGIOGRA
-
-***
-
-ORDER CHECKING NOT AVAILABLE
-
-***
-
-POLYPHARMACY
-
-***
-
+Select Order Check: **?**  
+Answer with ORDER CHECKS NAME  
+Do you want the entire 21-Entry ORDER CHECKS List? Y (Yes)  
+Choose from:  
+ALLERGY-CONTRAST MEDIA INTERAC  
+ALLERGY-DRUG INTERACTION  
+AMINOGLYCOSIDE ORDERED  
+BIOCHEM ABNORMALITY FOR CONTRA  
+CLOZAPINE APPROPRIATENESS  
+CRITICAL DRUG INTERACTION  
+CT & MRI PHYSICAL LIMITATIONS  
+DISPENSE DRUG NOT SELECTED  
+DUPLICATE DRUG THERAPY ORDER (changed with CPRS GUI v.28)  
+DUPLICATE DRUG ORDER  
+DUPLICATE ORDER  
+ERROR MESSAGE  
+ESTIMATED CREATININE CLEARANCE  
+GLUCOPHAGE-CONTRAST MEDIA  
+LAB ORDER FREQ RESTRICTIONS  
+MISSING LAB TESTS FOR ANGIOGRA  
+ORDER CHECKING NOT AVAILABLE  
+POLYPHARMACY  
 **Order Checking, cont’d**
 
 **Enable/Disable an Order Check, cont’d**
 
-RECENT BARIUM STUDY
-
+RECENT BARIUM STUDY  
+RECENT ORAL CHOLECYSTOGRAM  
+RENAL FUNCTIONS OVER AGE 65  
+SIGNIFICANT DRUG INTERACTION  
 ***
 
-RECENT ORAL CHOLECYSTOGRAM
-
+Order Check Value  
+\----------- -----  
+DUPLICATE ORDER Enabled  
+***  
+Select Order Check: **EST**IMATED CREATININE CLEARANCE  
+Are you adding ESTIMATED CREATININE CLEARANCE as a new Order Check? Yes// **\<Enter\>** YES  
+1 Enabled  
+2 Disabled  
+Choose 1-2: **1** Enabled  
 ***
 
-RENAL FUNCTIONS OVER AGE 65
-
+Value: Enabled  
+Select Order Check: \<Enter\>  
 ***
 
-SIGNIFICANT DRUG INTERACTION
-
+may be set for the following:  
 ***
 
+1 User USR [choose from NEW PERSON]  
+2 Location LOC [choose from HOSPITAL LOCATION]  
+3 Service SRV [choose from SERVICE/SECTION]  
+4 Division DIV [REGION 5]  
+5 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-Order Check Value
-
+Enter selection: **\<Enter\>**  
 ***
 
-\----------- -----
-
-***
-
-DUPLICATE ORDER Enabled
-
-***
-
-***
-
-***
-
-Select Order Check: **EST**IMATED CREATININE CLEARANCE
-
-***
-
-Are you adding ESTIMATED CREATININE CLEARANCE as a new Order Check? Yes// **\<Enter\>** YES
-
-***
-
-1 Enabled
-
-***
-
-2 Disabled
-
-***
-
-Choose 1-2: **1** Enabled
-
-***
-
-***
-
-Value: Enabled
-
-***
-
-Select Order Check: \<Enter\>
-
-***
-
-***
-
-may be set for the following:
-
-***
-
-***
-
-1 User USR [choose from NEW PERSON]
-
-***
-
-2 Location LOC [choose from HOSPITAL LOCATION]
-
-***
-
-3 Service SRV [choose from SERVICE/SECTION]
-
-***
-
-4 Division DIV [REGION 5]
-
-***
-
-5 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **\<Enter\>**
-
-***
-
-***
-
-Select Order Checking Management Option:
-
-***
-
+Select Order Checking Management Option:  
 **Set Clinical Danger Level for an Order Check**
 
-**Enter the code indicating the clinical danger level of an order check. Order checks come with a pre-set danger level as given in the following table:**
-
-***
-
+**Enter the code indicating the clinical danger level of an order check. Order checks come with a pre-set danger level as given in the following table:**  
 | **PARAMETER: ORK CLINICAL DANGER LEVEL** **ENTITY: ORDER ENTRY/RESULTS REPORTING** |           |
 |------------------------------------------------------------------------------------|-----------|
 | **Order Check**                                                                    | **Value** |
@@ -6931,14 +2872,8 @@ Select Order Checking Management Option:
 | RECENT BARIUM STUDY                                                                | High      |
 | RECENT ORAL CHOLECYSTOGRAM                                                         | High      |
 | RENAL FUNCTIONS OVER AGE 65                                                        | Moderate  |
-| SIGNIFICANT DRUG INTERACTION                                                       | Moderate  |
-
-***
-
-**These danger levels are based on rules supplied by a panel of physicians.**
-
-***
-
+| SIGNIFICANT DRUG INTERACTION                                                       | Moderate  |  
+**These danger levels are based on rules supplied by a panel of physicians.**  
 **Danger level codes:**
 
 **1** (High): Order check indicates a potentially high danger to the patient.
@@ -6953,298 +2888,103 @@ Select Order Checking Management Option:
 
 **Example: Changing the clinical danger level on an order check**
 
-Select CPRS Configuration Menu (Clin Coord)Option: **OC** Order Checking Management Options
-
+Select CPRS Configuration Menu (Clin Coord)Option: **OC** Order Checking Management Options  
+Select Order Checking Management Options Option: **2** Set Clinical Danger Level for an Order Check  
+Set Clinical Danger Level for an Order Check  
+\------------------------------------------------------------------------  
+may be set for the following:  
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-Select Order Checking Management Options Option: **2** Set Clinical Danger Level for an Order Check
-
+Enter selection: **1** Division REGION 5  
 ***
 
-Set Clinical Danger Level for an Order Check
-
+\--------- Setting CLINICAL DANGER LEVEL for Division: REGION 5 -------  
+Order Check Value  
+\----------- -----  
+CRITICAL DRUG INTERACTION High  
+DUPLICATE DRUG THERAPY ORDER High  
+Select Order Check: **?**  
+Answer with ORDER CHECKS NAME  
+Do you want the entire 20-Entry ORDER CHECKS List? **Y** (Yes)  
+Choose from:  
+ALLERGY-CONTRAST MEDIA INTERAC  
+ALLERGY-DRUG INTERACTION  
+AMINOGLYCOSIDE ORDERED  
+BIOCHEM ABNORMALITY FOR CONTRA  
+CLOZAPINE APPROPRIATENESS  
+CRITICAL DRUG INTERACTION  
+CT & MRI PHYSICAL LIMITATIONS  
+DUPLICATE DRUG THERAPY ORDER  
+DUPLICATE DRUG ORDER  
+DUPLICATE ORDER  
+ESTIMATED CREATININE CLEARANCE  
+GLUCOPHAGE-CONTRAST MEDIA  
+LAB ORDER FREQ RESTRICTIONS  
+MISSING LAB TESTS FOR ANGIOGRA  
+ORDER CHECKING NOT AVAILABLE  
+PT & PTT FOR FRESH FROZEN PLAS  
+RECENT BARIUM STUDY  
+RECENT ORAL CHOLECYSTOGRAM  
+RENAL FUNCTIONS OVER AGE 65  
+SIGNIFICANT DRUG INTERACTION  
+Order Check Value  
+\----------- -----  
+CRITICAL DRUG INTERACTION High  
+DUPLICATE DRUG THERAPY ORDER High  
 ***
 
-\------------------------------------------------------------------------
-
+Select Order Check: **DUPLICATE DRUG THERAPY ORDER**  
 ***
 
-may be set for the following:
-
-***
-
-1 Division DIV [REGION 5]
-
-***
-
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **1** Division REGION 5
-
-***
-
-***
-
-\--------- Setting CLINICAL DANGER LEVEL for Division: REGION 5 -------
-
-***
-
-Order Check Value
-
-***
-
-\----------- -----
-
-***
-
-CRITICAL DRUG INTERACTION High
-
-***
-
-DUPLICATE DRUG THERAPY ORDER High
-
-***
-
-Select Order Check: **?**
-
-***
-
-Answer with ORDER CHECKS NAME
-
-***
-
-Do you want the entire 20-Entry ORDER CHECKS List? **Y** (Yes)
-
-***
-
-Choose from:
-
-***
-
-ALLERGY-CONTRAST MEDIA INTERAC
-
-***
-
-ALLERGY-DRUG INTERACTION
-
-***
-
-AMINOGLYCOSIDE ORDERED
-
-***
-
-BIOCHEM ABNORMALITY FOR CONTRA
-
-***
-
-CLOZAPINE APPROPRIATENESS
-
-***
-
-CRITICAL DRUG INTERACTION
-
-***
-
-CT & MRI PHYSICAL LIMITATIONS
-
-***
-
-DUPLICATE DRUG THERAPY ORDER
-
-***
-
-DUPLICATE DRUG ORDER
-
-***
-
-DUPLICATE ORDER
-
-***
-
-ESTIMATED CREATININE CLEARANCE
-
-***
-
-GLUCOPHAGE-CONTRAST MEDIA
-
-***
-
-LAB ORDER FREQ RESTRICTIONS
-
-***
-
-MISSING LAB TESTS FOR ANGIOGRA
-
-***
-
-ORDER CHECKING NOT AVAILABLE
-
-***
-
-PT & PTT FOR FRESH FROZEN PLAS
-
-***
-
-RECENT BARIUM STUDY
-
-***
-
-RECENT ORAL CHOLECYSTOGRAM
-
-***
-
-RENAL FUNCTIONS OVER AGE 65
-
-***
-
-SIGNIFICANT DRUG INTERACTION
-
-***
-
-Order Check Value
-
-***
-
-\----------- -----
-
-***
-
-CRITICAL DRUG INTERACTION High
-
-***
-
-DUPLICATE DRUG THERAPY ORDER High
-
-***
-
-***
-
-Select Order Check: **DUPLICATE DRUG THERAPY ORDER**
-
-***
-
-***
-
-Order Check: DUPLICATE DRUG THERAPY ORDER Replace **\<Enter\>** DUPLICATE DRUG THERAPY ORDER
-
-***
-
-Value: High// **Moderate** Moderate
-
-***
-
-Order Check Value
-
-***
-
-\----------- -----
-
-***
-
-CRITICAL DRUG INTERACTION High
-
-***
-
-DUPLICATE DRUG THERAPY ORDER Moderate
-
-***
-
-Select Order Check: **\<Enter\>**
-
-***
-
+Order Check: DUPLICATE DRUG THERAPY ORDER Replace **\<Enter\>** DUPLICATE DRUG THERAPY ORDER  
+Value: High// **Moderate** Moderate  
+Order Check Value  
+\----------- -----  
+CRITICAL DRUG INTERACTION High  
+DUPLICATE DRUG THERAPY ORDER Moderate  
+Select Order Check: **\<Enter\>**  
 **Order Checking, cont’d**
 
 **CAT Scanner Height Limit**
 
 Enter the maximum height that the Computerized Axial Tomography (CAT) scanner can accommodate. This figure is then used in the built-in order check for patient height triggered whenever an order is submitted for a CAT scan procedure. The height is entered in whole inches.
 
-**Example: the maximum height for system is changed from 75 (6' 3") to 76 inches (6' 4").**
-
+**Example: the maximum height for system is changed from 75 (6' 3") to 76 inches (6' 4").**  
+Select Order Checking Management Options Option:**3** CAT Scanner Height Limit  
+TITLE = CT Scanner Height Limit  
+CT Scanner Height Limit  
+\-----------------------------------------------------------------------  
 ***
 
-Select Order Checking Management Options Option:**3** CAT Scanner Height Limit
-
+may be set for the following:  
 ***
 
-TITLE = CT Scanner Height Limit
-
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-CT Scanner Height Limit
-
+Enter selection: **2** System OEX.ISC-SLC.VA.GOV  
 ***
 
-\-----------------------------------------------------------------------
-
+\--------------- Setting for System: OEX.ISC-SLC.VA.GOV ---------------  
 ***
 
+Value: 75// **76** 76  
 ***
 
-may be set for the following:
-
+may be set for the following:  
 ***
 
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-1 Division DIV [REGION 5]
-
+Enter selection: **\<Enter\>**  
 ***
 
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **2** System OEX.ISC-SLC.VA.GOV
-
-***
-
-***
-
-\--------------- Setting for System: OEX.ISC-SLC.VA.GOV ---------------
-
-***
-
-***
-
-Value: 75// **76** 76
-
-***
-
-***
-
-may be set for the following:
-
-***
-
-***
-
-1 Division DIV [REGION 5]
-
-***
-
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **\<Enter\>**
-
-***
-
-***
-
-Select Order Checking Management Options Option: **\<Enter\>**
-
-***
-
+Select Order Checking Management Options Option: **\<Enter\>**  
 **Order Checking, cont’d**
 
 **CAT Scanner Weight Limit**
@@ -7253,84 +2993,39 @@ Enter the maximum weight the CAT scanner can accommodate. This figure is then us
 
 **Example: the maximum weight for system is changed from 200 to 225 pounds.**
 
-Select Order Checking Management Options Option:4 CAT Scanner Weight Limit
-
+Select Order Checking Management Options Option:4 CAT Scanner Weight Limit  
+TITLE = CAT Scanner Weight Limit  
+CAT Scanner Weight Limit  
+\----------------------------------------------------------------------  
 ***
 
-TITLE = CAT Scanner Weight Limit
-
+may be set for the following:  
 ***
 
-CAT Scanner Weight Limit
-
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-\----------------------------------------------------------------------
-
+Enter selection: **2** System OEX.ISC-SLC.VA.GOV  
 ***
 
+\--------------- Setting for System: OEX.ISC-SLC.VA.GOV --------------  
 ***
 
-may be set for the following:
-
+Value: 200// **225** 225  
 ***
 
+may be set for the following:  
 ***
 
-1 Division DIV [REGION 5]
-
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
+Enter selection: **\<Enter\>**  
 ***
 
-***
-
-Enter selection: **2** System OEX.ISC-SLC.VA.GOV
-
-***
-
-***
-
-\--------------- Setting for System: OEX.ISC-SLC.VA.GOV --------------
-
-***
-
-***
-
-Value: 200// **225** 225
-
-***
-
-***
-
-may be set for the following:
-
-***
-
-***
-
-1 Division DIV [REGION 5]
-
-***
-
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **\<Enter\>**
-
-***
-
-***
-
-Select Order Checking Management Options Option: **\<Enter\>**
-
-***
-
+Select Order Checking Management Options Option: **\<Enter\>**  
 **Order Checking, cont’d**
 
 **MRI Scanner Height Limit**
@@ -7339,304 +3034,130 @@ Enter the maximum height that the Magnetic Resonance Imaging (MRI) scanner can a
 
 In the following example, the height limit for the scanner at division is changed from 6 feet 5 inches (77 inches) to 6 feet 3 inches:
 
-Select Order Checking Management Option: **5** MRI Scanner Height Limit
-
+Select Order Checking Management Option: **5** MRI Scanner Height Limit  
+TITLE = MRI Scanner Height Limit  
+MRI Scanner Height Limit  
+\-------------------------------------------------------------------------  
 ***
 
-TITLE = MRI Scanner Height Limit
-
+may be set for the following:  
 ***
 
-MRI Scanner Height Limit
-
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-\-------------------------------------------------------------------------
-
+Enter selection: **1** Division REGION 5  
 ***
 
+\---------------------- Setting for Division: REGION 5 ------------------  
 ***
 
-may be set for the following:
-
+Value: 77// **75** 75  
 ***
 
+may be set for the following:  
 ***
 
-1 Division DIV [REGION 5]
-
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **1** Division REGION 5
-
-***
-
-***
-
-\---------------------- Setting for Division: REGION 5 ------------------
-
-***
-
-***
-
-Value: 77// **75** 75
-
-***
-
-***
-
-may be set for the following:
-
-***
-
-***
-
-1 Division DIV [REGION 5]
-
-***
-
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection:**\<Enter\>**
-
-***
-
+Enter selection:**\<Enter\>**  
 **Order Checking, cont’d**
 
 **MRI Scanner Weight Limit**
 
-This parameter is used by order checking to determine if a patient is too heavy to be examined in the MRI scanner. The value indicates the maximum weight (in pounds) allowed.
-
-***
-
+This parameter is used by order checking to determine if a patient is too heavy to be examined in the MRI scanner. The value indicates the maximum weight (in pounds) allowed.  
 **Example: the MRI weight limit for system is changed from 275 to 250 pounds:**
 
-Select Order Checking Management Option: **6** MRI Scanner Weight Limit
-
+Select Order Checking Management Option: **6** MRI Scanner Weight Limit  
+TITLE = MRI Scanner Weight Limit  
+***  
 ***
 
-TITLE = MRI Scanner Weight Limit
-
+MRI Scanner Weight Limit  
+\-------------------------------------------------------------------------  
 ***
 
+may be set for the following:  
 ***
 
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
+Enter selection: **2** System OEX.ISC-SLC.VA.GOV  
 ***
 
-MRI Scanner Weight Limit
-
+\------------------ Setting for System: OEX.ISC-SLC.VA.GOV --------------  
 ***
 
-\-------------------------------------------------------------------------
-
+Value: 275// **250** 250  
 ***
 
+may be set for the following:  
 ***
 
-may be set for the following:
-
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-***
-
-1 Division DIV [REGION 5]
-
-***
-
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **2** System OEX.ISC-SLC.VA.GOV
-
-***
-
-***
-
-\------------------ Setting for System: OEX.ISC-SLC.VA.GOV --------------
-
-***
-
-***
-
-Value: 275// **250** 250
-
-***
-
-***
-
-may be set for the following:
-
-***
-
-***
-
-1 Division DIV [REGION 5]
-
-***
-
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection:**\<Enter\>**
-
-***
-
+Enter selection:**\<Enter\>**  
 **Order Checking, cont’d**
 
 **Orderable Item Duplicate Order Range**
 
 Use this option to set the number of hours backwards in time to look for duplicate orders related to specific orderable items. The duplicate order range for lab and radiology procedures in general is set by the Lab Duplicate Order Range and Radiology Duplicate Order Range options.
 
-**Example:**
-
+**Example:**  
+Select Order Checking Mgmt Menu Option: **7** Orderable Item Duplicate Order Range  
+TITLE = Orderable Item Duplicate Order Range  
+***  
+Orderable Item Duplicate Order Range  
+\---------------------------------------------------------------------------  
 ***
 
-Select Order Checking Mgmt Menu Option: **7** Orderable Item Duplicate Order Range
-
+may be set for the following:  
 ***
 
-TITLE = Orderable Item Duplicate Order Range
-
+1 Location LOC [choose from HOSPITAL LOCATION]  
+2 Service SRV [choose from SERVICE/SECTION]  
+3 Division DIV [REGION 5]  
+4 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
+Enter selection: **1** Location HOSPITAL LOCATION  
+Select HOSPITAL LOCATION NAME: **CARDIOLOGY** CPRSPATIENT,THREE  
 ***
 
+\--------------------- Setting for Location: CARDIOLOGY ------------------  
+Select Instance: **GASTROENTEROLOGY**  
+Are you adding GASTROENTEROLOGY as a new Instance? Yes//**\<Enter\>** YES  
 ***
 
-Orderable Item Duplicate Order Range
-
+Instance: GASTROENTEROLOGY// **\<Enter\>** GASTROENTEROLOGY GASTROENTEROLOGY  
+Value: **?**  
 ***
 
-\---------------------------------------------------------------------------
-
+Enter the number of hours back in time you wish to check for duplicate  
+orders.  
 ***
 
+Value: **24**  
+Select Instance: **\<Enter\>**  
 ***
 
-may be set for the following:
-
+may be set for the following:  
 ***
 
+1 Location LOC [choose from HOSPITAL LOCATION]  
+2 Service SRV [choose from SERVICE/SECTION]  
+3 Division DIV [REGION 5]  
+4 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-1 Location LOC [choose from HOSPITAL LOCATION]
-
-***
-
-2 Service SRV [choose from SERVICE/SECTION]
-
-***
-
-3 Division DIV [REGION 5]
-
-***
-
-4 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **1** Location HOSPITAL LOCATION
-
-***
-
-Select HOSPITAL LOCATION NAME: **CARDIOLOGY** CPRSPATIENT,THREE
-
-***
-
-***
-
-\--------------------- Setting for Location: CARDIOLOGY ------------------
-
-***
-
-Select Instance: **GASTROENTEROLOGY**
-
-***
-
-Are you adding GASTROENTEROLOGY as a new Instance? Yes//**\<Enter\>** YES
-
-***
-
-***
-
-Instance: GASTROENTEROLOGY// **\<Enter\>** GASTROENTEROLOGY GASTROENTEROLOGY
-
-***
-
-Value: **?**
-
-***
-
-***
-
-Enter the number of hours back in time you wish to check for duplicate
-
-***
-
-orders.
-
-***
-
-***
-
-Value: **24**
-
-***
-
-Select Instance: **\<Enter\>**
-
-***
-
-***
-
-may be set for the following:
-
-***
-
-***
-
-1 Location LOC [choose from HOSPITAL LOCATION]
-
-***
-
-2 Service SRV [choose from SERVICE/SECTION]
-
-***
-
-3 Division DIV [REGION 5]
-
-***
-
-4 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **\<Enter\>**
-
-***
-
+Enter selection: **\<Enter\>**  
 **Order Checking, cont’d**
 
 **Lab Duplicate Order Range**
@@ -7647,92 +3168,41 @@ Use this option to set the number of hours backwards in time to look for duplica
 
 **Example**: the duplicate lab order range is changed from 24 hours to 48 hours for System:
 
-Select Order Checking Management Option: **8** Lab Duplicate Order Range
-
+Select Order Checking Management Option: **8** Lab Duplicate Order Range  
+TITLE = Lab Duplicate Order Range  
+***  
 ***
 
-TITLE = Lab Duplicate Order Range
-
+Lab Duplicate Order Range  
+\-------------------------------------------------------------------------  
 ***
 
+may be set for the following:  
 ***
 
+1 Service SRV [choose from SERVICE/SECTION]  
+2 Division DIV [REGION 5]  
+3 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
+Enter selection: **3** System OEX.ISC-SLC.VA.GOV  
 ***
 
-Lab Duplicate Order Range
-
+\------------------ Setting for System: OEX.ISC-SLC.VA.GOV --------------  
 ***
 
-\-------------------------------------------------------------------------
-
+Value: 24// **48** 48  
 ***
 
+may be set for the following:  
 ***
 
-may be set for the following:
-
+1 Service SRV [choose from SERVICE/SECTION]  
+2 Division DIV [REGION 5]  
+3 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-***
-
-1 Service SRV [choose from SERVICE/SECTION]
-
-***
-
-2 Division DIV [REGION 5]
-
-***
-
-3 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **3** System OEX.ISC-SLC.VA.GOV
-
-***
-
-***
-
-\------------------ Setting for System: OEX.ISC-SLC.VA.GOV --------------
-
-***
-
-***
-
-Value: 24// **48** 48
-
-***
-
-***
-
-may be set for the following:
-
-***
-
-***
-
-1 Service SRV [choose from SERVICE/SECTION]
-
-***
-
-2 Division DIV [REGION 5]
-
-***
-
-3 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection:**\<Enter\>**
-
-***
-
+Enter selection:**\<Enter\>**  
 In this example, all lab procedures except those with an entry in the Orderable Item Duplicate Order Range option will have a duplicate order range of 48 hours.
 
 **☞NOTE**: Previously entered orders, which are unsigned, are not included in duplicate order checking.
@@ -7743,110 +3213,53 @@ In this example, all lab procedures except those with an entry in the Orderable 
 
 **Radiology Duplicate Order Range**
 
-**Use this option to set the number of hours backwards in time to look for duplicate radiology orders. For example, a value of “48” indicates a radiology procedure intended to be performed within 48 hours of the completion of the same radiology procedure will trigger an order check indicating duplicate radiology order.**
-
+**Use this option to set the number of hours backwards in time to look for duplicate radiology orders. For example, a value of “48” indicates a radiology procedure intended to be performed within 48 hours of the completion of the same radiology procedure will trigger an order check indicating duplicate radiology order.**  
 ***
 
-***
-
-**☞ NOTE: If the radiology procedure has an entry in the option (parameter) ORK DUP ORDER RANGE OI, the OI parameter value takes precedence.**
-
-***
-
+**☞ NOTE: If the radiology procedure has an entry in the option (parameter) ORK DUP ORDER RANGE OI, the OI parameter value takes precedence.**  
 **Example: The duplicate radiology order range is changed from 48 hours to 24 hours for Division:**
 
-Select Order Checking Management Option: **9** Radiology Duplicate Order Range
-
+Select Order Checking Management Option: **9** Radiology Duplicate Order Range  
+TITLE = Imaging Duplicate Order Range  
 ***
 
-TITLE = Imaging Duplicate Order Range
-
+Imaging Duplicate Order Range  
+\---------------------------------------------------------------------------  
 ***
 
+may be set for the following:  
 ***
 
-Imaging Duplicate Order Range
-
+1 Service SRV [choose from SERVICE/SECTION]  
+2 Division DIV [REGION 5]  
+3 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-\---------------------------------------------------------------------------
-
+Enter selection: **2** Division REGION 5  
 ***
 
+\---------------------- Setting for Division: REGION 5 --------------------  
 ***
 
-may be set for the following:
-
+Value: 48// **24** 24  
 ***
 
+may be set for the following:  
 ***
 
-1 Service SRV [choose from SERVICE/SECTION]
-
+1 Service SRV [choose from SERVICE/SECTION]  
+2 Division DIV [REGION 5]  
+3 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-2 Division DIV [REGION 5]
-
-***
-
-3 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **2** Division REGION 5
-
-***
-
-***
-
-\---------------------- Setting for Division: REGION 5 --------------------
-
-***
-
-***
-
-Value: 48// **24** 24
-
-***
-
-***
-
-may be set for the following:
-
-***
-
-***
-
-1 Service SRV [choose from SERVICE/SECTION]
-
-***
-
-2 Division DIV [REGION 5]
-
-***
-
-3 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection:**\<Enter\>**
-
-***
-
+Enter selection:**\<Enter\>**  
 In this example, all radiology procedures except those with an entry in the Orderable Item Duplicate Order Range option will have a duplicate order range of 24 hours.
 
 **Order Checking, cont’d**
 
 **Enable or Disable Order Checking System**
 
-**This option lets you determine if any order checking processing occurs in the entire Order Checking system.**
-
-***
-
+**This option lets you determine if any order checking processing occurs in the entire Order Checking system.**  
 **E** (Enabled): Indicates the Order Checking system is enabled and running.
 
 **D** (Disabled): Indicates the Order Checking system is disabled and not running.
@@ -7855,196 +3268,88 @@ This parameter is set to Disabled in the exported version of Order Checking. IRM
 
 **Example: Order Checking is enabled on the Division level:**
 
-Select Order Checking Management Option: 10 Enable or Disable Order Checking System
-
+Select Order Checking Management Option: 10 Enable or Disable Order Checking System  
+***  
+Enable or Disable Order Checking System  
+\--------------------------------------------------------------------------  
 ***
 
+may be set for the following:  
 ***
 
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-Enable or Disable Order Checking System
-
+Enter selection: **1** Division REGION 5  
 ***
 
-\--------------------------------------------------------------------------
-
+\---------------------- Setting for Division: REGION 5 -------------------  
 ***
 
+Value: Disable// **e** Enable Enable  
 ***
 
-may be set for the following:
-
+may be set for the following:  
 ***
 
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-1 Division DIV [REGION 5]
-
-***
-
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **1** Division REGION 5
-
-***
-
-***
-
-\---------------------- Setting for Division: REGION 5 -------------------
-
-***
-
-***
-
-Value: Disable// **e** Enable Enable
-
-***
-
-***
-
-may be set for the following:
-
-***
-
-***
-
-1 Division DIV [REGION 5]
-
-***
-
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection:**\<Enter\>**
-
-***
-
+Enter selection:**\<Enter\>**  
 **Order Checking, cont’d**
 
 **Enable or Disable Debug Message Logging**
 
-**The Order Checking system can keep a log of special messages designed to assist in debugging Order Checking problems.**
-
+**The Order Checking system can keep a log of special messages designed to assist in debugging Order Checking problems.**  
+**Example: Turning on Order Checking Debug Messages log**  
+Select Order Checking Management Option: **11** Enable or Disable Debug Message Logging  
+TITLE = Enable or Disable Logging Debug Messages  
+***  
 ***
 
-**Example: Turning on Order Checking Debug Messages log**
-
+Enable or Disable Logging Debug Messages  
+\--------------------------------------------------------------------------  
 ***
 
-Select Order Checking Management Option: **11** Enable or Disable Debug Message Logging
-
+may be set for the following:  
 ***
 
-TITLE = Enable or Disable Logging Debug Messages
-
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
+Enter selection: **2** System OEX.ISC-SLC.VA.GOV  
 ***
 
+\------------------ Setting for System: OEX.ISC-SLC.VA.GOV ---------------  
 ***
 
+Value: **?**  
 ***
 
-Enable or Disable Logging Debug Messages
-
+Enter 'Enable/E' to log debug messages.  
 ***
 
-\--------------------------------------------------------------------------
-
+Select one of the following:  
 ***
 
+E Enable  
+D Disable  
 ***
 
-may be set for the following:
-
+Value: **E** Enable Enable  
 ***
 
+may be set for the following:  
 ***
 
-1 Division DIV [REGION 5]
-
+1 Division DIV [REGION 5]  
+2 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **2** System OEX.ISC-SLC.VA.GOV
-
-***
-
-***
-
-\------------------ Setting for System: OEX.ISC-SLC.VA.GOV ---------------
-
-***
-
-***
-
-Value: **?**
-
-***
-
-***
-
-Enter 'Enable/E' to log debug messages.
-
-***
-
-***
-
-Select one of the following:
-
-***
-
-***
-
-E Enable
-
-***
-
-D Disable
-
-***
-
-***
-
-Value: **E** Enable Enable
-
-***
-
-***
-
-may be set for the following:
-
-***
-
-***
-
-1 Division DIV [REGION 5]
-
-***
-
-2 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection:
-
-***
-
+Enter selection:  
 **☞ NOTE**: **The Log File takes a large amount of disk space when it is enabled. This option should be disabled again as soon as logging is no longer needed for debugging purposes.**
 
 **Order Checking, cont’d**
@@ -8065,260 +3370,86 @@ ENTITY PRECEDENCE: 4 ENTITY TYPE: Division
 
 ENTITY PRECEDENCE: 5 ENTITY TYPE: System
 
-**Example List:**
-
+**Example List:**  
+Select Order Checking Management Option: **12** Display the Order Checks a User Can Receive  
+Enter user's name: **CPRSPROVIDER,THREE**// **\<Enter\>** CPT  
 ***
 
-Select Order Checking Management Option: **12** Display the Order Checks a User Can Receive
-
+Would you like help understanding the list of order checks? No// **Y** (Yes)  
+DEVICE: HOME// **\<Enter\>** VAX  
 ***
 
-Enter user's name: **CPRSPROVIDER,THREE**// **\<Enter\>** CPT
-
+Order Check List Help Message Page: 1  
+***  
+The delivery of order checks is determined from values set for Users,  
+Inpatient Locations, Service/Sections, Hospital Divisions, Computer System and  
+OERR. Possible values include 'Enabled' and 'Disabled'. These values indicate  
+a User's, Location's, Service/Section's, Division's, System's and OERR's  
+desire for the order check to be 'Enabled' (displayed under most  
+circumstances) or 'Disabled' (normally not displayed.)  
 ***
 
+All values, except the OERR (Order Entry) value, can be set by IRM  
+or Clinical Coordinators. Individual users can set their 'Enabled/Disabled'  
+values for each specific order check via the 'Enable/Disable My Order Checks'  
+option under the Personal Preferences and Order Check Management for Users.  
+'ON' indicates the user will receive the order check under normal conditions.  
+'OFF' indicates the user normally will not receive the order check.  
+Order check recipient determination can also be influenced by patient  
+location (inpatients only.) This list does not consider patient location  
+when calculating the ON/OFF value for an order check because a patient is  
+not known when the option is selected.  
 ***
 
-Would you like help understanding the list of order checks? No// **Y** (Yes)
-
+Press RETURN to continue or '\^' to exit:  
 ***
 
-DEVICE: HOME// **\<Enter\>** VAX
-
+Order Check List Help Message Page: 2  
+\- End of Report -  
 ***
 
+Press RETURN to continue: **\<Enter\>**  
 ***
 
-Order Check List Help Message Page: 1
-
-***
-
-***
-
-***
-
-The delivery of order checks is determined from values set for Users,
-
-***
-
-Inpatient Locations, Service/Sections, Hospital Divisions, Computer System and
-
-***
-
-OERR. Possible values include 'Enabled' and 'Disabled'. These values indicate
-
-***
-
-a User's, Location's, Service/Section's, Division's, System's and OERR's
-
-***
-
-desire for the order check to be 'Enabled' (displayed under most
-
-***
-
-circumstances) or 'Disabled' (normally not displayed.)
-
-***
-
-***
-
-All values, except the OERR (Order Entry) value, can be set by IRM
-
-***
-
-or Clinical Coordinators. Individual users can set their 'Enabled/Disabled'
-
-***
-
-values for each specific order check via the 'Enable/Disable My Order Checks'
-
-***
-
-option under the Personal Preferences and Order Check Management for Users.
-
-***
-
-'ON' indicates the user will receive the order check under normal conditions.
-
-***
-
-'OFF' indicates the user normally will not receive the order check.
-
-***
-
-Order check recipient determination can also be influenced by patient
-
-***
-
-location (inpatients only.) This list does not consider patient location
-
-***
-
-when calculating the ON/OFF value for an order check because a patient is
-
-***
-
-not known when the option is selected.
-
-***
-
-***
-
-Press RETURN to continue or '\^' to exit:
-
-***
-
-***
-
-Order Check List Help Message Page: 2
-
-***
-
-\- End of Report -
-
-***
-
-***
-
-Press RETURN to continue: **\<Enter\>**
-
-***
-
-***
-
-This will take a moment or two, please stand by......................
-
-***
-
-DEVICE: HOME// **\<Enter\>** VAX
-
-***
-
+This will take a moment or two, please stand by......................  
+DEVICE: HOME// **\<Enter\>** VAX  
 **Order Checking, cont’d**
 
 **Display the Order Checks a User Can Receive, cont’d**
 
-Order Check List for CPRSUSER,SEVEN Page: 1
-
+Order Check List for CPRSUSER,SEVEN Page: 1  
+***  
+Order Check ON/OFF For This User and Why  
+\-------------------------------- -----------------------------------------  
+ALLERGY-CONTRAST MEDIA INTERAC ON OERR value is Enabled  
+ALLERGY-DRUG INTERACTION ON User's service MEDICINE value is Enabled  
+AMINOGLYCOSIDE ORDERED OFF Division value is Disabled  
+BIOCHEM ABNORMALITY FOR CONTRA ON OERR value is Enabled  
+CLOZAPINE APPROPRIATENESS ON OERR value is Enabled  
+CRITICAL DRUG INTERACTION ON User value is Enabled  
+CT & MRI PHYSICAL LIMITATIONS OFF User's service MEDICINE value is Disabled  
+DISPENSE DRUG NOT SELECTED ON OERR value is Enabled  
+DUPLICATE DRUG THERAPY ORDER ON OERR value is Enabled  
+DUPLICATE DRUG ORDER ON User value is Enabled  
+DUPLICATE ORDER ON System value is Enabled  
+ERROR MESSAGE ON OERR value is Enabled  
+ESTIMATED CREATININE CLEARANCE ON OERR value is Enabled  
+GLUCOPHAGE-CONTRAST MEDIA ON Division value is Enabled  
+GLUCOPHAGE-LAB RESULTS ON OERR is Enabled  
+LAB ORDER FREQ RESTRICTIONS OFF Division value is Disabled  
+MISSING LAB TESTS FOR ANGIOGRA ON OERR value is Enabled  
+ORDER CHECKING NOT AVAILABLE ON OERR value is Enabled  
+POLYPHARMACY ON OERR value is Enabled  
+RECENT BARIUM STUDY ON OERR value is Enabled  
+RECENT ORAL CHOLECYSTOGRAM ON OERR value is Enabled  
+RENAL FUNCTIONS OVER AGE 65 ON OERR value is Enabled  
+SIGNIFICANT DRUG INTERACTION ON User value is Enabled  
 ***
 
+\- End of Report -  
 ***
 
-***
-
-Order Check ON/OFF For This User and Why
-
-***
-
-\-------------------------------- -----------------------------------------
-
-***
-
-ALLERGY-CONTRAST MEDIA INTERAC ON OERR value is Enabled
-
-***
-
-ALLERGY-DRUG INTERACTION ON User's service MEDICINE value is Enabled
-
-***
-
-AMINOGLYCOSIDE ORDERED OFF Division value is Disabled
-
-***
-
-BIOCHEM ABNORMALITY FOR CONTRA ON OERR value is Enabled
-
-***
-
-CLOZAPINE APPROPRIATENESS ON OERR value is Enabled
-
-***
-
-CRITICAL DRUG INTERACTION ON User value is Enabled
-
-***
-
-CT & MRI PHYSICAL LIMITATIONS OFF User's service MEDICINE value is Disabled
-
-***
-
-DISPENSE DRUG NOT SELECTED ON OERR value is Enabled
-
-***
-
-DUPLICATE DRUG THERAPY ORDER ON OERR value is Enabled
-
-***
-
-DUPLICATE DRUG ORDER ON User value is Enabled
-
-***
-
-DUPLICATE ORDER ON System value is Enabled
-
-***
-
-ERROR MESSAGE ON OERR value is Enabled
-
-***
-
-ESTIMATED CREATININE CLEARANCE ON OERR value is Enabled
-
-***
-
-GLUCOPHAGE-CONTRAST MEDIA ON Division value is Enabled
-
-***
-
-GLUCOPHAGE-LAB RESULTS ON OERR is Enabled
-
-***
-
-LAB ORDER FREQ RESTRICTIONS OFF Division value is Disabled
-
-***
-
-MISSING LAB TESTS FOR ANGIOGRA ON OERR value is Enabled
-
-***
-
-ORDER CHECKING NOT AVAILABLE ON OERR value is Enabled
-
-***
-
-POLYPHARMACY ON OERR value is Enabled
-
-***
-
-RECENT BARIUM STUDY ON OERR value is Enabled
-
-***
-
-RECENT ORAL CHOLECYSTOGRAM ON OERR value is Enabled
-
-***
-
-RENAL FUNCTIONS OVER AGE 65 ON OERR value is Enabled
-
-***
-
-SIGNIFICANT DRUG INTERACTION ON User value is Enabled
-
-***
-
-***
-
-\- End of Report -
-
-***
-
-***
-
-Press RETURN to continue:
-
-***
-
+Press RETURN to continue:  
 **Edit Site Local Terms**
 
 After CPRS installation, each site must run this option to link terms used in the expert system to local terms. Some terms like DNR and NPO diet must be mapped to one or more entries in the orderable item file. Other terms like Serum Creatinine must be mapped to the lab test file. See the Notifications section in this manual for a description of this option.
@@ -8481,154 +3612,52 @@ This option lets you enter new generic orderable items to be placed on CPRS Add 
 
 **1.** Select Enter/edit orderable items from the Order Menu Management menu.
 
-Select Option: **Order Menu Management** Option
-
+Select Option: **Order Menu Management** Option  
 ***
 
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+AO Assign Primary Order Menu  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menu  
 ***
 
-OI Enter/edit orderable items
-
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
 ***
 
-PM Enter/edit prompts
-
-***
-
-GO Enter/edit generic orders
-
-***
-
-QO Enter/edit quick orders
-
-***
-
-ST Enter/edit order sets
-
-***
-
-AC Enter/edit actions
-
-***
-
-MN Enter/edit order menus
-
-***
-
-AO Assign Primary Order Menu
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menu
-
-***
-
-***
-
-You have PENDING ALERTS
-
-***
-
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-***
-
-Select Order Menu Management Option: **OI** Enter/edit orderable items
-
-***
-
+Select Order Menu Management Option: **OI** Enter/edit orderable items  
 **2.** Enter the Type of orderable item, Activity or Nursing that you wish to add or edit.
 
 **3.** Enter the orderable item for the type you chose. If you enter two question marks, a list of generic orders for your site is displayed. Select the orderable item you wish to edit, or enter a new orderable item.
 
 **Activity order**
 
-Type of Orderable: **?**
-
-***
-
-Answer with DISPLAY GROUP NAME
-
-***
-
-Do you want the entire DISPLAY GROUP List? **Y** (Yes)
-
-***
-
-Choose from:
-
-***
-
-ACTIVITY
-
-***
-
-NURSING
-
-***
-
-Type of Orderable: **Activity**
-
-***
-
-Select ORDERABLE ITEMS: **?**
-
-***
-
-Answer with ORDERABLE ITEMS
-
-***
-
-Do you want the entire ORDERABLE ITEMS List? **Y** (Yes)
-
-***
-
-Choose from:
-
-***
-
-AIR MATTRESS
-
-***
-
-ARTERIAL LINE
-
-***
-
-ARTERIAL SHEATH
-
-***
-
-**\^**
-
-***
-
-You may enter a new ORDERABLE ITEMS, if you wish
-
-***
-
-Answer must be 3-63 characters in length.
-
-***
-
-Select ORDERABLE ITEMS: **EXERCISE**
-
-***
-
-Are you adding 'EXERCISE' as a new ORDERABLE ITEMS (the 3364TH)? No// **Y** (Yes)
-
-***
-
+Type of Orderable: **?**  
+Answer with DISPLAY GROUP NAME  
+Do you want the entire DISPLAY GROUP List? **Y** (Yes)  
+Choose from:  
+ACTIVITY  
+NURSING  
+Type of Orderable: **Activity**  
+Select ORDERABLE ITEMS: **?**  
+Answer with ORDERABLE ITEMS  
+Do you want the entire ORDERABLE ITEMS List? **Y** (Yes)  
+Choose from:  
+AIR MATTRESS  
+ARTERIAL LINE  
+ARTERIAL SHEATH  
+**\^**  
+You may enter a new ORDERABLE ITEMS, if you wish  
+Answer must be 3-63 characters in length.  
+Select ORDERABLE ITEMS: **EXERCISE**  
+Are you adding 'EXERCISE' as a new ORDERABLE ITEMS (the 3364TH)? No// **Y** (Yes)  
 #### Enter/edit Prompts
 
 Prompts are the second component of the order dialog that makes up a generic order dialog. This type of order dialog corresponds to the *term type* protocol in OE/RR 2.5. However, rather than using VA FileMan to create the prompt, you can now use this option.
@@ -8653,344 +3682,107 @@ W word processing
 
 **Date/Time Example**
 
-Select Order Menu Management Option: **Enter/edit prompts**
-
+Select Order Menu Management Option: **Enter/edit prompts**  
+Select PROMPT: **start date/tim**e ORZ GTX START DATE/TIME  
+Are you adding 'ORZ GTX START DATE/TIME **'** as  
+a new ORDER DIALOG? No// **y** YES  
+TEXT OF PROMPT: **Start Date/Time**  
+TYPE OF PROMPT: **date/time**  
+CAN DATE BE IMPRECISE? NO// **?**  
 ***
 
-Select PROMPT: **start date/tim**e ORZ GTX START DATE/TIME
-
+Enter either 'Y' or 'N'.  
 ***
 
-Are you adding 'ORZ GTX START DATE/TIME **'** as
-
-***
-
-a new ORDER DIALOG? No// **y** YES
-
-***
-
-TEXT OF PROMPT: **Start Date/Time**
-
-***
-
-TYPE OF PROMPT: **date/time**
-
-***
-
-CAN DATE BE IMPRECISE? NO// **?**
-
-***
-
-***
-
-Enter either 'Y' or 'N'.
-
-***
-
-***
-
-CAN DATE BE IMPRECISE? NO// **y**  YES
-
-***
-
-CAN TIME OF DAY BE ENTERED? YES//**\<Enter\>**
-
-***
-
-CAN SECONDS BE ENTERED? NO//**\<Enter\>**
-
-***
-
-IS TIME REQUIRED? NO// **y**  YES
-
-***
-
-DESCRIPTION:
-
-***
-
-1\>**\<Enter\>**
-
-***
-
-Select PROMPT:**\<Enter\>**
-
-***
-
+CAN DATE BE IMPRECISE? NO// **y**  YES  
+CAN TIME OF DAY BE ENTERED? YES//**\<Enter\>**  
+CAN SECONDS BE ENTERED? NO//**\<Enter\>**  
+IS TIME REQUIRED? NO// **y**  YES  
+DESCRIPTION:  
+1\>**\<Enter\>**  
+Select PROMPT:**\<Enter\>**  
 **Free Text Example**
 
-Select Order Menu Management Option: **Enter/edit prompts**
-
-***
-
-Select PROMPT: **Free Text** ORZ GTX FREE TEXT JG
-
-***
-
-Are you adding 'ORZ GTX FREE TEXT JG' as
-
-***
-
-a new ORDER DIALOG? No// **y** YES
-
-***
-
-NAME: ORZ GTX FREE TEXT JG Replace **\<Enter\>**
-
-***
-
-TEXT OF PROMPT: Special Instructions: Replace
-
-***
-
-TYPE OF PROMPT: **free text//**
-
-***
-
-DESCRIPTION:
-
-***
-
-No existing text
-
-***
-
-Edit? NO// **\<Enter\>**
-
-***
-
-Min/max length
-
-***
-
+Select Order Menu Management Option: **Enter/edit prompts**  
+Select PROMPT: **Free Text** ORZ GTX FREE TEXT JG  
+Are you adding 'ORZ GTX FREE TEXT JG' as  
+a new ORDER DIALOG? No// **y** YES  
+NAME: ORZ GTX FREE TEXT JG Replace **\<Enter\>**  
+TEXT OF PROMPT: Special Instructions: Replace  
+TYPE OF PROMPT: **free text//**  
+DESCRIPTION:  
+No existing text  
+Edit? NO// **\<Enter\>**  
+Min/max length  
 *Enter/edit Prompts, cont’d*
 
 **Numeric Example**
 
-Select Order Menu Management Option: **Enter/edit prompts**
-
-***
-
-Select PROMPT: **start date/tim**e ORZ NUMBER 1-24
-
-***
-
-Are you adding 'ORZ NUMBER 1-24**'** as
-
-***
-
-a new ORDER DIALOG? No// **y** YES
-
-***
-
-TEXT OF PROMPT: Number of hours:
-
-***
-
-TYPE OF PROMPT: **numeric**
-
-***
-
-INCLUSIVE LOWER BOUND: 1// **\<Enter\>**
-
-***
-
-INCLUSIVE UPPER BOUND: 24// **\<Enter\>**
-
-***
-
-MAXIMUM NUMBER OF FRACTIONAL DIGITS: 1// **\<Enter\>**
-
-***
-
-DESCRIPTION:
-
-***
-
-**No existing text**
-
-***
-
-Edit? NO// **\<Enter\>**
-
-***
-
+Select Order Menu Management Option: **Enter/edit prompts**  
+Select PROMPT: **start date/tim**e ORZ NUMBER 1-24  
+Are you adding 'ORZ NUMBER 1-24**'** as  
+a new ORDER DIALOG? No// **y** YES  
+TEXT OF PROMPT: Number of hours:  
+TYPE OF PROMPT: **numeric**  
+INCLUSIVE LOWER BOUND: 1// **\<Enter\>**  
+INCLUSIVE UPPER BOUND: 24// **\<Enter\>**  
+MAXIMUM NUMBER OF FRACTIONAL DIGITS: 1// **\<Enter\>**  
+DESCRIPTION:  
+**No existing text**  
+Edit? NO// **\<Enter\>**  
 **Set of Codes Example**
 
-Select Order Menu Management Option: **Enter/edit prompts**
-
-***
-
-Select PROMPT: **DAY OF WEEK** ORZ DAY OF WEEK
-
-***
-
-Are you adding **'** ORZ DAY OF WEEK**'** as
-
-***
-
-a new ORDER DIALOG? No// **y** YES
-
-***
-
-TEXT OF PROMPT: **DAY OF WEEK**
-
-***
-
-TYPE OF PROMPT: **set of codes**
-
-***
-
-INTERNALLY-STORED CODE: M// WILL STAND FOR: Monday// **\<Enter\>**
-
-***
-
-INTERNALLY-STORED CODE: T// WILL STAND FOR: Tuesday//**\<Enter\>**
-
-***
-
-INTERNALLY-STORED CODE: W// WILL STAND FOR: Wednesday//**\<Enter\>**
-
-***
-
-INTERNALLY-STORED CODE: TH// WILL STAND FOR: Thursday//**\<Enter\>**
-
-***
-
-INTERNALLY-STORED CODE: F// WILL STAND FOR: Friday//**\<Enter\>**
-
-***
-
-DESCRIPTION: **\<Enter\>**
-
-***
-
-This prompt will ask for a selection from the local treatment group file.
-
-***
-
-Edit? NO//**\<Enter\>**
-
-***
-
+Select Order Menu Management Option: **Enter/edit prompts**  
+Select PROMPT: **DAY OF WEEK** ORZ DAY OF WEEK  
+Are you adding **'** ORZ DAY OF WEEK**'** as  
+a new ORDER DIALOG? No// **y** YES  
+TEXT OF PROMPT: **DAY OF WEEK**  
+TYPE OF PROMPT: **set of codes**  
+INTERNALLY-STORED CODE: M// WILL STAND FOR: Monday// **\<Enter\>**  
+INTERNALLY-STORED CODE: T// WILL STAND FOR: Tuesday//**\<Enter\>**  
+INTERNALLY-STORED CODE: W// WILL STAND FOR: Wednesday//**\<Enter\>**  
+INTERNALLY-STORED CODE: TH// WILL STAND FOR: Thursday//**\<Enter\>**  
+INTERNALLY-STORED CODE: F// WILL STAND FOR: Friday//**\<Enter\>**  
+DESCRIPTION: **\<Enter\>**  
+This prompt will ask for a selection from the local treatment group file.  
+Edit? NO//**\<Enter\>**  
 ***
 
 **Pointer Example**
 
-Select Order Menu Management Option: **Enter/edit prompts**
-
-***
-
-Select PROMPT: **location**: ORZ GTX LOCATION
-
-***
-
-TEXT OF PROMPT: Location: //**\<Enter\>**
-
-***
-
-TYPE OF PROMPT: pointer to a file//**\<Enter\>**
-
-***
-
-POINT TO WHICH FILE: HOSPITAL LOCATION//**\<Enter\>**
-
-***
-
-DESCRIPTION:
-
-***
-
-1\>The ward the patient is in or the clinic he is visiting.
-
-***
-
-2\>**\<Enter\>**
-
-***
-
-EDIT Option:**\<Enter\>**
-
-***
-
+Select Order Menu Management Option: **Enter/edit prompts**  
+Select PROMPT: **location**: ORZ GTX LOCATION  
+TEXT OF PROMPT: Location: //**\<Enter\>**  
+TYPE OF PROMPT: pointer to a file//**\<Enter\>**  
+POINT TO WHICH FILE: HOSPITAL LOCATION//**\<Enter\>**  
+DESCRIPTION:  
+1\>The ward the patient is in or the clinic he is visiting.  
+2\>**\<Enter\>**  
+EDIT Option:**\<Enter\>**  
 **Yes/No Example**
 
-Select Order Menu Management Option: **Enter/edit prompts**
-
-***
-
-Select PROMPT: ORZ GTX **YES/NO**
-
-***
-
-Are you adding 'ORZ GTX YES/NO' as
-
-***
-
-a new ORDER DIALOG? No// **y** YES
-
-***
-
-TEXT OF PROMPT: YES/NO PROMPT//**\<Enter\>**
-
-***
-
-TYPE OF PROMPT: yes/no//**\<Enter\>**
-
-***
-
-DESCRIPTION:
-
-***
-
-No existing text
-
-***
-
-Edit? NO// **\<Enter\>**
-
-***
-
+Select Order Menu Management Option: **Enter/edit prompts**  
+Select PROMPT: ORZ GTX **YES/NO**  
+Are you adding 'ORZ GTX YES/NO' as  
+a new ORDER DIALOG? No// **y** YES  
+TEXT OF PROMPT: YES/NO PROMPT//**\<Enter\>**  
+TYPE OF PROMPT: yes/no//**\<Enter\>**  
+DESCRIPTION:  
+No existing text  
+Edit? NO// **\<Enter\>**  
 *Enter/edit Prompts, cont’d*
 
 **Word-processing Example**
 
-Select Order Menu Management Option: **Enter/edit prompts**
-
-***
-
-Select PROMPT: **WORD-PROCESSING**: ORZ GTX WORD-PROCESSING JG
-
-***
-
-Are you adding 'ORZ GTX WORD-PROCESSING JG' as
-
-***
-
-a new ORDER DIALOG? No// **y** YES
-
-***
-
-TEXT OF PROMPT: Comment: //**\<Enter\>**
-
-***
-
-TYPE OF PROMPT: word processing//**\<Enter\>**
-
-***
-
-DESCRIPTION:
-
-***
-
-No existing text
-
-***
-
-Edit? NO// **\<Enter\>**
-
-***
-
+Select Order Menu Management Option: **Enter/edit prompts**  
+Select PROMPT: **WORD-PROCESSING**: ORZ GTX WORD-PROCESSING JG  
+Are you adding 'ORZ GTX WORD-PROCESSING JG' as  
+a new ORDER DIALOG? No// **y** YES  
+TEXT OF PROMPT: Comment: //**\<Enter\>**  
+TYPE OF PROMPT: word processing//**\<Enter\>**  
+DESCRIPTION:  
+No existing text  
+Edit? NO// **\<Enter\>**  
 #### Enter/edit Generic Orders
 
 Generic order dialogs in CPRS serve the same function as generic text orders in OE/RR v 2.5. They define a patient’s activities or document instructions to nursing or ward staff for the care of the patient. Text order protocols used in OE/RR are converted to the ORDER DIALOG (\#101.41) file and can now be used in CPRS.
@@ -9009,1216 +3801,349 @@ The following sequence shows:
 
     **1.** Select *Enter/edit generic orders* from the Order Menu Management menu.
 
-OI Enter/edit orderable items
-
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+AO Assign Primary Order Menu  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menu  
 ***
 
-PM Enter/edit prompts
-
-***
-
-GO Enter/edit generic orders
-
-***
-
-QO Enter/edit quick orders
-
-***
-
-ST Enter/edit order sets
-
-***
-
-AC Enter/edit actions
-
-***
-
-MN Enter/edit order menus
-
-***
-
-AO Assign Primary Order Menu
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menu
-
-***
-
-***
-
-Select Order Menu Management Option: **GO** Enter/edit generic orders
-
-***
-
+Select Order Menu Management Option: **GO** Enter/edit generic orders  
 **2.** Enter the generic order name. You can choose from the list of generic orders used at your site, or enter a new one.
 
 ** NOTE:** The shaded fields in the example are only available to programmers with the @ as their FileManager access code.
 
 **Creating or editing a generic order, cont’d**
 
-Select Order Menu Management Option: **GO** Enter/Edit generic orders
-
+Select Order Menu Management Option: **GO** Enter/Edit generic orders  
+Select ORDER DIALOG NAME: **ORZ PATIENT COUNSELING**  
+Are you adding ‘ORZ PATIENT COUNSELING’ as a new ORDER DIALOG? No// **Y**  (Yes)  
+ORDER DIALOG DISPLAY GROUP: **??**  
+This field determines what display group this dialog has been defined for. It will define which orderable items are selectable with this dialog, as well as what service to send the order to when it is complete.  
+Choose from:  
+ACTIVITY  
+ALL SERVICES  
+ALLERGIES  
+ANATOMIC PATHOLOGY  
+.  
+.  
+.  
+ORDER DIALOG DISPLAY GROUP: NURS NURSING  
+ORDERABLE ITEM: ??  
 ***
 
-Select ORDER DIALOG NAME: **ORZ PATIENT COUNSELING**
-
-***
-
-Are you adding ‘ORZ PATIENT COUNSELING’ as a new ORDER DIALOG? No// **Y**  (Yes)
-
-***
-
-ORDER DIALOG DISPLAY GROUP: **??**
-
-***
-
-This field determines what display group this dialog has been defined for. It will define which orderable items are selectable with this dialog, as well as what service to send the order to when it is complete.
-
-***
-
-Choose from:
-
-***
-
-ACTIVITY
-
-***
-
-ALL SERVICES
-
-***
-
-ALLERGIES
-
-***
-
-ANATOMIC PATHOLOGY
-
-***
-
-.
-
-***
-
-.
-
-***
-
-.
-
-***
-
-ORDER DIALOG DISPLAY GROUP: NURS NURSING
-
-***
-
-ORDERABLE ITEM: ??
-
-***
-
-***
-
-Choose from:
-
-***
-
-AIR MATTRESS Air Mattress
-
-***
-
-ARTERIAL LINE Arterial Line
-
-***
-
-ARTERIAL SHEATH Arterial Sheath
-
-***
-
-CALL HO ON Call HO on
-
-***
-
-.
-
-***
-
-.
-
-***
-
-Do you wish to copy an existing order dialog? YES// \<Enter\>
-
-***
-
-Select ORDER DIALOG TO COPY: **OR GXMISC GENERAL**
-
-***
-
-Copying ...
-
-***
-
-NAME: ORZ PATIENT COUNSELING Replace \<Enter\>
-
-***
-
-DISPLAY TEXT: **??**
-
-***
-
-The text of this dialog's name as it appears on a menu or subheader.
-
-***
-
-DISPLAY TEXT: **Patient Counseling**
-
-***
-
-SIGNATURE REQUIRED: ??
-
-***
-
-This field indicates what signature will be required for orders created by this dialog, to be considered complete and ready to release to the service for action. If this flag is set to NO and the dialog contains a prompt for item(s) from the Orderable Item file, the order created may still require a signature if any of the items ordered are individually flagged as requiring a signature.
-
-***
-
-Choose from:
-
-***
-
-0 NONE
-
-***
-
-1 ORELSE
-
-***
-
-2 ORES
-
-***
-
-SIGNATURE REQUIRED: **ORELSE**
-
-***
-
-VERIFY ORDER: ??
-
-***
-
-This field is a flag, which determines if the order created by this dialog will be presented to the user for verification before saving in the Orders file; for most quick orders, this flag should be set to 0 (no).
-
-***
-
+Choose from:  
+AIR MATTRESS Air Mattress  
+ARTERIAL LINE Arterial Line  
+ARTERIAL SHEATH Arterial Sheath  
+CALL HO ON Call HO on  
+.  
+.  
+Do you wish to copy an existing order dialog? YES// \<Enter\>  
+Select ORDER DIALOG TO COPY: **OR GXMISC GENERAL**  
+Copying ...  
+NAME: ORZ PATIENT COUNSELING Replace \<Enter\>  
+DISPLAY TEXT: **??**  
+The text of this dialog's name as it appears on a menu or subheader.  
+DISPLAY TEXT: **Patient Counseling**  
+SIGNATURE REQUIRED: ??  
+This field indicates what signature will be required for orders created by this dialog, to be considered complete and ready to release to the service for action. If this flag is set to NO and the dialog contains a prompt for item(s) from the Orderable Item file, the order created may still require a signature if any of the items ordered are individually flagged as requiring a signature.  
+Choose from:  
+0 NONE  
+1 ORELSE  
+2 ORES  
+SIGNATURE REQUIRED: **ORELSE**  
+VERIFY ORDER: ??  
+This field is a flag, which determines if the order created by this dialog will be presented to the user for verification before saving in the Orders file; for most quick orders, this flag should be set to 0 (no).  
 **Enter/edit generic orders, cont’d**
 
-Choose from:
-
+Choose from:  
+1 YES  
+0 NO  
+VERIFY ORDER: **YES**  
+ASK FOR ANOTHER ORDER: NO// ??  
+This field allows the user to add another order from this dialog, when the initial order is accepted and placed; if set to YES, the user will be asked "Add another \<dialog display text\> order?" to allow for either exiting the processor or adding an additional order of the same type. This field can also be set to YES-DON'T ASK to force the processor to automatically drop into prompting for another order without asking first.  
+Choose from:  
+0 NO  
+1 YES  
+2 YES-DON'T ASK  
+ASK FOR ANOTHER ORDER: NO// **\<Enter\>**  
+DESCRIPTION:  
+This dialog will allow assignment of patient to a counseling group.  
+Edit? NO//  
+ENTRY ACTION:  
+EXIT ACTION:  
+VALIDATION: ??  
+This is MUMPS code that will be executed at the time of releasing an order created with this dialog; dialog responses may be checked again  
+here before releasing the order To the service.  
+VALIDATION:  
+ADDITIONAL TEXT: ??  
+This is MUMPS code that will be executed when order ORIFN created by this dialog is about to be displayed; any string that should be appended to the order text should be returned in Y.  
+ADDITIONAL TEXT:  
 ***
 
-1 YES
-
-***
-
-0 NO
-
-***
-
-VERIFY ORDER: **YES**
-
-***
-
-ASK FOR ANOTHER ORDER: NO// ??
-
-***
-
-This field allows the user to add another order from this dialog, when the initial order is accepted and placed; if set to YES, the user will be asked "Add another \<dialog display text\> order?" to allow for either exiting the processor or adding an additional order of the same type. This field can also be set to YES-DON'T ASK to force the processor to automatically drop into prompting for another order without asking first.
-
-***
-
-Choose from:
-
-***
-
-0 NO
-
-***
-
-1 YES
-
-***
-
-2 YES-DON'T ASK
-
-***
-
-ASK FOR ANOTHER ORDER: NO// **\<Enter\>**
-
-***
-
-DESCRIPTION:
-
-***
-
-This dialog will allow assignment of patient to a counseling group.
-
-***
-
-Edit? NO//
-
-***
-
-ENTRY ACTION:
-
-***
-
-EXIT ACTION:
-
-***
-
-VALIDATION: ??
-
-***
-
-This is MUMPS code that will be executed at the time of releasing an order created with this dialog; dialog responses may be checked again
-
-***
-
-here before releasing the order To the service.
-
-***
-
-VALIDATION:
-
-***
-
-ADDITIONAL TEXT: ??
-
-***
-
-This is MUMPS code that will be executed when order ORIFN created by this dialog is about to be displayed; any string that should be appended to the order text should be returned in Y.
-
-***
-
-ADDITIONAL TEXT:
-
-***
-
-***
-
-Select PROMPT: **1** ORZ GTX COUNSELING GROUP
-
-***
-
-SEQUENCE: 1//
-
-***
-
-PROMPT: **ORZ GTX COUNSELING GROUP** pointer to a file
-
-***
-
-INDEX: **??**
-
-***
-
-For pointer-type prompts, this is the index to use when searching the file; it must be in the form of a regular cross-reference. To search on multiple indices, enter a string of index names separated by semi-colons, i.e."B;C"
-
-***
-
-INDEX: **\<Enter\>**
-
-***
-
-SCREEN: ??
-
-***
-
-For pointer-type prompts, this field may contain MUMPS code that will be set into DIC("S") to screen the possible choices in the pointed-to file.
-
-***
-
-SCREEN:
-
-***
-
-SPECIAL LOOKUP ROUTINE: ??
-
-***
-
-This field contains a routine to execute that will replace the standard DIC lookup for this prompt; it must be entered here as LINETAG;ROUTINE using a ; instead of \^ and where LINETAG is optional.
-
-***
-
-SPECIAL LOOKUP ROUTINE:
-
-***
-
-DISPLAY TEXT: ??
-
-***
-
-This field allows the text that normally appears for this item to
-
-***
-
-be replaced with alternate text for use in this dialog or menu.
-
-***
-
-DISPLAY TEXT: **Choose group:**
-
-***
-
-REQUIRED: **??**
-
-***
-
-This field indicates that the user must enter a response to this
-
-***
-
-prompt.
-
-***
-
-Choose from:
-
-***
-
-1 YES
-
-***
-
-0 NO
-
-***
-
-REQUIRED: **YES**
-
-***
-
+Select PROMPT: **1** ORZ GTX COUNSELING GROUP  
+SEQUENCE: 1//  
+PROMPT: **ORZ GTX COUNSELING GROUP** pointer to a file  
+INDEX: **??**  
+For pointer-type prompts, this is the index to use when searching the file; it must be in the form of a regular cross-reference. To search on multiple indices, enter a string of index names separated by semi-colons, i.e."B;C"  
+INDEX: **\<Enter\>**  
+SCREEN: ??  
+For pointer-type prompts, this field may contain MUMPS code that will be set into DIC("S") to screen the possible choices in the pointed-to file.  
+SCREEN:  
+SPECIAL LOOKUP ROUTINE: ??  
+This field contains a routine to execute that will replace the standard DIC lookup for this prompt; it must be entered here as LINETAG;ROUTINE using a ; instead of \^ and where LINETAG is optional.  
+SPECIAL LOOKUP ROUTINE:  
+DISPLAY TEXT: ??  
+This field allows the text that normally appears for this item to  
+be replaced with alternate text for use in this dialog or menu.  
+DISPLAY TEXT: **Choose group:**  
+REQUIRED: **??**  
+This field indicates that the user must enter a response to this  
+prompt.  
+Choose from:  
+1 YES  
+0 NO  
+REQUIRED: **YES**  
 **Enter/edit generic orders, cont’d**
 
-MULTIPLE VALUED: **??**
-
-***
-
-This field determines if this prompt will be allowed to have multiple values, or be prompted for only once; if this prompt is a sub-dialog, the entire dialog will be asked once or many times, as a group.
-
-***
-
-Choose from:
-
-***
-
-1 YES
-
-***
-
-0 NO
-
-***
-
-MULTIPLE VALUED: **N** NO
-
-***
-
-ASK ON EDIT ONLY: **??**
-
-***
-
-This field determines the behavior of the dialog driver for this prompt; if no value or the defined default is usually correct for this prompt, enter YES here to have this prompt skipped on the first pass through this dialog when creating an order.
-
-***
-
-Choose from:
-
-***
-
-1 YES
-
-***
-
-0 NO
-
-***
-
-ASK ON EDIT ONLY: **\<Enter\>**
-
-***
-
-ASK ON ACTION: **??**
-
-***
-
-This field determines the behavior of the dialog driver for this prompt when taking a particular action on an order created by this dialog. If this string contains "R", this prompt will be asked when renewing an order if this string contains "C", this prompt will be asked when changing an order; if this string contains "W", this prompt will be asked when
-
-***
-
-rewriting an order.
-
-***
-
-ASK ON ACTION: **\<Enter\>**
-
-***
-
-HELP MESSAGE: **??**
-
-***
-
-This field contains the help message to be presented when the user enters a question mark at this prompt.
-
-***
-
-HELP MESSAGE: Choose the event corresponding to the need for counseling.
-
-***
-
-Replace
-
-***
-
+MULTIPLE VALUED: **??**  
+This field determines if this prompt will be allowed to have multiple values, or be prompted for only once; if this prompt is a sub-dialog, the entire dialog will be asked once or many times, as a group.  
+Choose from:  
+1 YES  
+0 NO  
+MULTIPLE VALUED: **N** NO  
+ASK ON EDIT ONLY: **??**  
+This field determines the behavior of the dialog driver for this prompt; if no value or the defined default is usually correct for this prompt, enter YES here to have this prompt skipped on the first pass through this dialog when creating an order.  
+Choose from:  
+1 YES  
+0 NO  
+ASK ON EDIT ONLY: **\<Enter\>**  
+ASK ON ACTION: **??**  
+This field determines the behavior of the dialog driver for this prompt when taking a particular action on an order created by this dialog. If this string contains "R", this prompt will be asked when renewing an order if this string contains "C", this prompt will be asked when changing an order; if this string contains "W", this prompt will be asked when  
+rewriting an order.  
+ASK ON ACTION: **\<Enter\>**  
+HELP MESSAGE: **??**  
+This field contains the help message to be presented when the user enters a question mark at this prompt.  
+HELP MESSAGE: Choose the event corresponding to the need for counseling.  
+Replace  
 XECUTABLE HELP: **??**
 
-This is code that is to be executed when the user enters two or more question marks at this prompt.
-
-***
-
+This is code that is to be executed when the user enters two or more question marks at this prompt.  
 XECUTABLE HELP:
 
 ASK ON CONDITION: ??
 
-This is MUMPS code that sets \$T to determine if prompt should be asked or simply given a default value and presented to the user for acceptance or editing. For example, the prompt "Pregnant: " may have code here to check the sex of the current patient, i.e. I ORSEX="F" will allow it to be asked for female patients.
-
-***
-
+This is MUMPS code that sets \$T to determine if prompt should be asked or simply given a default value and presented to the user for acceptance or editing. For example, the prompt "Pregnant: " may have code here to check the sex of the current patient, i.e. I ORSEX="F" will allow it to be asked for female patients.  
 ASK ON CONDITION:
 
 INPUT TRANSFORM: ??
 
 This is code that will be used as the third piece of DIR(0) when asking this prompt.
 
-INPUT TRANSFORM:
-
-***
-
-DEFAULT: **??**
-
-***
-
-Choose from:
-
-***
-
-DEPRESSION
-
-***
-
-FAMILY COUNSELING
-
-***
-
-FAMILY LOSS
-
-***
-
-NEW PROSTHESIS
-
-***
-
-PTSD
-
-***
-
-UNEMPLOYMENT
-
-***
-
-DEFAULT: **\<Enter\>**
-
-***
-
+INPUT TRANSFORM:  
+DEFAULT: **??**  
+Choose from:  
+DEPRESSION  
+FAMILY COUNSELING  
+FAMILY LOSS  
+NEW PROSTHESIS  
+PTSD  
+UNEMPLOYMENT  
+DEFAULT: **\<Enter\>**  
 VALIDATION: ??
 
-This is code that will be executed after a response is entered to this prompt; if this prompt should be re-asked, kill the variable DONE.
-
-***
-
-If execution of the ordering dialog should be stopped, set ORQUIT=1.
-
-***
-
-VALIDATION:
-
-***
-
+This is code that will be executed after a response is entered to this prompt; if this prompt should be re-asked, kill the variable DONE.  
+If execution of the ordering dialog should be stopped, set ORQUIT=1.  
+VALIDATION:  
 **Enter/edit generic orders, cont’d**
 
-ORDER TEXT SEQUENCE: ??
-
-***
-
-This field indicates the order in which values will be concatenated
-
-***
-
-together to build the order text; this may differ from the prompting
-
-***
-
-sequence defined in the .01 Position field.
-
-***
-
-ORDER TEXT SEQUENCE: **1**
-
-***
-
-FORMAT: ??
-
-***
-
-This is a string of characters that will define any exceptions to how
-
-***
-
-the external form of this value is generated. Possible values
-
-***
-
-include:
-
-***
-
-Pointer -\> Field number (default = .01)
-
-***
-
-Set of Codes -\> 1 to return code instead of name
-
-***
-
-Date/Time -\> Format string to pass \$\$FMTE\^XLFDT (default = 2)
-
-***
-
-Suppress value -\> @
-
-***
-
-Replace value -\> @\<ptr\> where ptr is the Dialog IEN of the prompt
-
-***
-
-whose value, when present, supersedes this
-
-***
-
-value
-
-***
-
-Required value -\> \*\<ptr\> where ptr is the Dialog IEN of the prompt
-
-***
-
-whose value is required to be present to
-
-***
-
-include this value
-
-***
-
-FORMAT:
-
-***
-
-OMIT TEXT: **??**
-
-***
-
-This is the external form of a value that is not to be included when building the order text. E.g. to include the urgency in the order text unless it is routine, enter "ROUTINE" here.
-
-***
-
-OMIT TEXT: **\<Enter\>**
-
-***
-
-LEADING TEXT: **??**
-
-***
-
-This field contains text that will be appended to the order text
-
-***
-
-immediately in front of this value, e.g. "Instructions:.” If this text is contained in a variable, enter @NAME where NAME is the variable name
-
-***
-
-LEADING TEXT: **Assign patient to:**
-
-***
-
-TRAILING TEXT: **??**
-
-***
-
-This field contains text that will be appended to the order text
-
-***
-
-immediately following this value, e.g. "refills.” If this text is
-
-***
-
-contained in a variable, enter @NAME where NAME is the variable name
-
-***
-
-TRAILING TEXT: **group**
-
-***
-
-Select PROMPT: **2**
-
-***
-
-SEQUENCE: 2//
-
-***
-
-PROMPT: **ORZ GTX DATE OF EVENT** date/time
-
-***
-
-DISPLAY TEXT: **Date of event:**
-
-***
-
-REQUIRED: NO// **\<Enter\>**
-
-***
-
-MULTIPLE VALUED: NO// **\<Enter\>**
-
-***
-
-ASK ON EDIT ONLY: **\<Enter\>**
-
-***
-
-.
-
-***
-
-.
-
-***
-
-.
-
-***
-
-ORDER TEXT SEQUENCE: **2**
-
-***
-
-FORMAT:
-
-***
-
-OMIT TEXT: **\<Enter\>**
-
-***
-
-LEADING TEXT: **following event on/about**
-
-***
-
-TRAILING TEXT: **\<Enter\>**
-
-***
-
-Select PROMPT: **3**
-
-***
-
-SEQUENCE: 3// **\<Enter\>**
-
-***
-
-PROMPT: **ORZ GTX DAY OF WEEK** set of codes
-
-***
-
-DISPLAY TEXT: **Day group meets:**
-
-***
-
-REQUIRED: NO// **\<Enter\>**
-
-***
-
-MULTIPLE VALUED: **Y** YES
-
-***
-
-MAX NUMBER OF MULTIPLES: **??**
-
-***
-
-This is the maximum number of values that may be entered for this prompt, if it is flagged as being multiple-valued. For example, a diet order may have up to 5 diet modifications entered, where 5 is the maximum allowed that would be entered here.
-
-***
-
-MAX NUMBER OF MULTIPLES: **3**
-
-***
-
+ORDER TEXT SEQUENCE: ??  
+This field indicates the order in which values will be concatenated  
+together to build the order text; this may differ from the prompting  
+sequence defined in the .01 Position field.  
+ORDER TEXT SEQUENCE: **1**  
+FORMAT: ??  
+This is a string of characters that will define any exceptions to how  
+the external form of this value is generated. Possible values  
+include:  
+Pointer -\> Field number (default = .01)  
+Set of Codes -\> 1 to return code instead of name  
+Date/Time -\> Format string to pass \$\$FMTE\^XLFDT (default = 2)  
+Suppress value -\> @  
+Replace value -\> @\<ptr\> where ptr is the Dialog IEN of the prompt  
+whose value, when present, supersedes this  
+value  
+Required value -\> \*\<ptr\> where ptr is the Dialog IEN of the prompt  
+whose value is required to be present to  
+include this value  
+FORMAT:  
+OMIT TEXT: **??**  
+This is the external form of a value that is not to be included when building the order text. E.g. to include the urgency in the order text unless it is routine, enter "ROUTINE" here.  
+OMIT TEXT: **\<Enter\>**  
+LEADING TEXT: **??**  
+This field contains text that will be appended to the order text  
+immediately in front of this value, e.g. "Instructions:.” If this text is contained in a variable, enter @NAME where NAME is the variable name  
+LEADING TEXT: **Assign patient to:**  
+TRAILING TEXT: **??**  
+This field contains text that will be appended to the order text  
+immediately following this value, e.g. "refills.” If this text is  
+contained in a variable, enter @NAME where NAME is the variable name  
+TRAILING TEXT: **group**  
+Select PROMPT: **2**  
+SEQUENCE: 2//  
+PROMPT: **ORZ GTX DATE OF EVENT** date/time  
+DISPLAY TEXT: **Date of event:**  
+REQUIRED: NO// **\<Enter\>**  
+MULTIPLE VALUED: NO// **\<Enter\>**  
+ASK ON EDIT ONLY: **\<Enter\>**  
+.  
+.  
+.  
+ORDER TEXT SEQUENCE: **2**  
+FORMAT:  
+OMIT TEXT: **\<Enter\>**  
+LEADING TEXT: **following event on/about**  
+TRAILING TEXT: **\<Enter\>**  
+Select PROMPT: **3**  
+SEQUENCE: 3// **\<Enter\>**  
+PROMPT: **ORZ GTX DAY OF WEEK** set of codes  
+DISPLAY TEXT: **Day group meets:**  
+REQUIRED: NO// **\<Enter\>**  
+MULTIPLE VALUED: **Y** YES  
+MAX NUMBER OF MULTIPLES: **??**  
+This is the maximum number of values that may be entered for this prompt, if it is flagged as being multiple-valued. For example, a diet order may have up to 5 diet modifications entered, where 5 is the maximum allowed that would be entered here.  
+MAX NUMBER OF MULTIPLES: **3**  
 **Enter/edit generic orders, cont’d**
 
-TITLE : **??**
-
+TITLE : **??**  
+This is text that will be used in place of the prompt when the order is displayed for place, edit, or cancel, or at the top of a multiple-valued prompt. The Display Text for the prompt will be used together with the instance number to prompt for user input; for example if Title="Lab Tests:" and Display Text="Test:" the user would see  
+Lab Tests:  
+1\. Test:  
+2\. Test:  
+TITLE: **Meeting Dates:**  
+.  
+.  
+.  
+ORDER TEXT SEQUENCE: **3**  
+FORMAT:  
+OMIT TEXT: **\<Enter\>**  
+LEADING TEXT: **Group meets**  
+TRAILING TEXT: **.**  
 ***
 
-This is text that will be used in place of the prompt when the order is displayed for place, edit, or cancel, or at the top of a multiple-valued prompt. The Display Text for the prompt will be used together with the instance number to prompt for user input; for example if Title="Lab Tests:" and Display Text="Test:" the user would see
-
+Select PROMPT: **4**  
+SEQUENCE: 4// **\<Enter\>**  
+PROMPT: **ORZ GTX YES/NO** yes/no  
+DISPLAY TEXT: **Family participation:**  
+REQUIRED: NO// **YES**  
+MULTIPLE VALUED: **\<Enter\>**  
+.  
+.  
+.  
+ORDER TEXT SEQUENCE: **4**  
+FORMAT:  
+OMIT TEXT: **YES**  
+LEADING TEXT: **\<Enter\>**  
+TRAILING TEXT: **family participation.**  
 ***
 
-Lab Tests:
-
+Select PROMPT: **5**  
+SEQUENCE: 5// **\<Enter\>**  
+PROMPT: **ORZ GTX WP**  
+DISPLAY TEXT: **Comments:**  
+REQUIRED: **\<Enter\>**  
+MULTIPLE VALUED: **\<Enter\>**  
+ASK ON EDIT ONLY: **YES**  
+ASK ON ACTION: **\<Enter\>**  
+HELP MESSAGE: **\<Enter\>**  
+XECUTABLE HELP:  
+ASK ON CONDITION:  
+INPUT TRANSFORM:  
+DEFAULT WORD-PROCESSING TEXT:  
+No existing text  
+Edit? NO// **\<Enter\>**  
+VALIDATION:  
+ORDER TEXT SEQUENCE: **5**  
+FORMAT:  
+OMIT TEXT: **\<Enter\>**  
+LEADING TEXT: **\<Enter\>**  
+TRAILING TEXT: **\<Enter\>**  
 ***
 
-1\. Test:
-
-***
-
-2\. Test:
-
-***
-
-TITLE: **Meeting Dates:**
-
-***
-
-.
-
-***
-
-.
-
-***
-
-.
-
-***
-
-ORDER TEXT SEQUENCE: **3**
-
-***
-
-FORMAT:
-
-***
-
-OMIT TEXT: **\<Enter\>**
-
-***
-
-LEADING TEXT: **Group meets**
-
-***
-
-TRAILING TEXT: **.**
-
-***
-
-***
-
-Select PROMPT: **4**
-
-***
-
-SEQUENCE: 4// **\<Enter\>**
-
-***
-
-PROMPT: **ORZ GTX YES/NO** yes/no
-
-***
-
-DISPLAY TEXT: **Family participation:**
-
-***
-
-REQUIRED: NO// **YES**
-
-***
-
-MULTIPLE VALUED: **\<Enter\>**
-
-***
-
-.
-
-***
-
-.
-
-***
-
-.
-
-***
-
-ORDER TEXT SEQUENCE: **4**
-
-***
-
-FORMAT:
-
-***
-
-OMIT TEXT: **YES**
-
-***
-
-LEADING TEXT: **\<Enter\>**
-
-***
-
-TRAILING TEXT: **family participation.**
-
-***
-
-***
-
-Select PROMPT: **5**
-
-***
-
-SEQUENCE: 5// **\<Enter\>**
-
-***
-
-PROMPT: **ORZ GTX WP**
-
-***
-
-DISPLAY TEXT: **Comments:**
-
-***
-
-REQUIRED: **\<Enter\>**
-
-***
-
-MULTIPLE VALUED: **\<Enter\>**
-
-***
-
-ASK ON EDIT ONLY: **YES**
-
-***
-
-ASK ON ACTION: **\<Enter\>**
-
-***
-
-HELP MESSAGE: **\<Enter\>**
-
-***
-
-XECUTABLE HELP:
-
-***
-
-ASK ON CONDITION:
-
-***
-
-INPUT TRANSFORM:
-
-***
-
-DEFAULT WORD-PROCESSING TEXT:
-
-***
-
-No existing text
-
-***
-
-Edit? NO// **\<Enter\>**
-
-***
-
-VALIDATION:
-
-***
-
-ORDER TEXT SEQUENCE: **5**
-
-***
-
-FORMAT:
-
-***
-
-OMIT TEXT: **\<Enter\>**
-
-***
-
-LEADING TEXT: **\<Enter\>**
-
-***
-
-TRAILING TEXT: **\<Enter\>**
-
-***
-
-***
-
-Select PROMPT: 6 OR GTX START DATE/TIME
-
-***
-
-SEQUENCE: 6//
-
-***
-
-PROMPT: OR GTX START DATE/TIME// relative date/time
-
-***
-
-DISPLAY TEXT: **Start date:**
-
-***
-
-REQUIRED: NO// **YES**
-
-***
-
+Select PROMPT: 6 OR GTX START DATE/TIME  
+SEQUENCE: 6//  
+PROMPT: OR GTX START DATE/TIME// relative date/time  
+DISPLAY TEXT: **Start date:**  
+REQUIRED: NO// **YES**  
 **Enter/edit generic orders, cont’d**
 
-MULTIPLE VALUED: **\<Enter\>**
-
+MULTIPLE VALUED: **\<Enter\>**  
+.  
+.  
+DEFAULT: "NOW"// **\<Enter\>**  
+VALIDATION:  
+ORDER TEXT SEQUENCE: **\<Enter\>**  
+FORMAT:  
+OMIT TEXT: **\<Enter\>**  
+LEADING TEXT: **\<Enter\>**  
+TRAILING TEXT: **\<Enter\>**  
 ***
 
-.
-
-***
-
-.
-
-***
-
-DEFAULT: "NOW"// **\<Enter\>**
-
-***
-
-VALIDATION:
-
-***
-
-ORDER TEXT SEQUENCE: **\<Enter\>**
-
-***
-
-FORMAT:
-
-***
-
-OMIT TEXT: **\<Enter\>**
-
-***
-
-LEADING TEXT: **\<Enter\>**
-
-***
-
-TRAILING TEXT: **\<Enter\>**
-
-***
-
-***
-
-Select PROMPT: **7** OR GTX STOP DATE/TIME
-
-***
-
-SEQUENCE: 7// **\<Enter\>**
-
-***
-
-PROMPT: OR GTX STOP DATE/TIME// **\<Enter\>** relative date/time
-
-***
-
-DISPLAY TEXT: **Stop date:**
-
-***
-
-REQUIRED: NO// **\<Enter\>**
-
-***
-
-MULTIPLE VALUED: **\<Enter\>**
-
-***
-
-.
-
-***
-
-.
-
-***
-
-.
-
-***
-
-DEFAULT: **\<Enter\>**
-
-***
-
-VALIDATION: I \$\$FTDCOMP\^ORCD("START DATE/TIME","STOP DATE/TIME","\>") K DONE W \$C(7),!," Cannot end before start date/time!",! Replace
-
-***
-
-ORDER TEXT SEQUENCE: **\<Enter\>**
-
-***
-
-FORMAT:
-
-***
-
-OMIT TEXT: **\<Enter\>**
-
-***
-
-LEADING TEXT: **\<Enter\>**
-
-***
-
-TRAILING TEXT: **\<Enter\>**
-
-***
-
+Select PROMPT: **7** OR GTX STOP DATE/TIME  
+SEQUENCE: 7// **\<Enter\>**  
+PROMPT: OR GTX STOP DATE/TIME// **\<Enter\>** relative date/time  
+DISPLAY TEXT: **Stop date:**  
+REQUIRED: NO// **\<Enter\>**  
+MULTIPLE VALUED: **\<Enter\>**  
+.  
+.  
+.  
+DEFAULT: **\<Enter\>**  
+VALIDATION: I \$\$FTDCOMP\^ORCD("START DATE/TIME","STOP DATE/TIME","\>") K DONE W \$C(7),!," Cannot end before start date/time!",! Replace  
+ORDER TEXT SEQUENCE: **\<Enter\>**  
+FORMAT:  
+OMIT TEXT: **\<Enter\>**  
+LEADING TEXT: **\<Enter\>**  
+TRAILING TEXT: **\<Enter\>**  
 #### 
 
 **Ordering this Generic order from an Add Order Menu**
 
-Select Item(s): Next Screen// **Patient Counseling**
-
+Select Item(s): Next Screen// **Patient Counseling**  
 ***
 
+\-- Patient Counseling --  
 ***
 
-\-- Patient Counseling --
-
+Choose group: **PTSD**  
+Date of event: **1991** (1991)  
+Day group meets: **Wednesday**  
+Another Day group meets: **Friday**  
+Another Day group meets: **\<Enter\>**  
+Family participation: **NO**  
+Start date: NOW// **\<Enter\>**  
+Stop date: **T+60** (NOV 01, 1997)  
 ***
 
-***
-
-Choose group: **PTSD**
-
-***
-
-Date of event: **1991** (1991)
-
-***
-
-Day group meets: **Wednesday**
-
-***
-
-Another Day group meets: **Friday**
-
-***
-
-Another Day group meets: **\<Enter\>**
-
-***
-
-Family participation: **NO**
-
-***
-
-Start date: NOW// **\<Enter\>**
-
-***
-
-Stop date: **T+60** (NOV 01, 1997)
-
-***
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-Orderable Item: PATIENT COUNSELING
-
-***
-
-Choose group: PTSD
-
-***
-
-Date of event: 1991
-
-***
-
-Meeting Dates: Wednesday
-
-***
-
-Friday
-
-***
-
-Family participation: NO
-
-***
-
-Start date: NOW (9/2/97@13:10)
-
-***
-
-Stop date: T+60 (11/1/97)
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-(P)lace, (E)dit, or (C)ancel this order? PLACE// **\<Enter\>**
-
-***
-
-... order placed.
-
-***
-
+\------------------------------------------------------------------------  
+Orderable Item: PATIENT COUNSELING  
+Choose group: PTSD  
+Date of event: 1991  
+Meeting Dates: Wednesday  
+Friday  
+Family participation: NO  
+Start date: NOW (9/2/97@13:10)  
+Stop date: T+60 (11/1/97)  
+\------------------------------------------------------------------------  
+(P)lace, (E)dit, or (C)ancel this order? PLACE// **\<Enter\>**  
+... order placed.  
 This dialog will create an order with the order text as follows on the next page, depending on the answer to the question regarding family participation.
 
 **Enter/edit generic orders, cont’d**
@@ -10245,10 +4170,7 @@ This dialog will create an order with the order text as follows on the next page
 
 #### Enter/Edit Quick Orders
 
-**Quick orders in CPRS have the same functionality as they did in OE/RR V. 2.5⎯they speed up the ordering process by predefining many of the answers that a user would normally have to type in while placing orders.**
-
-***
-
+**Quick orders in CPRS have the same functionality as they did in OE/RR V. 2.5⎯they speed up the ordering process by predefining many of the answers that a user would normally have to type in while placing orders.**  
 The process for creating quick orders has been standardized with this option. In OE/RR v 2.5, quick orders for Radiology, Inpatient Medications, Vitals, and Consults were created using an option in those packages. Lab and Dietetics quick orders required programmer level access. With CPRS, quick orders for all packages are created and edited using this option; no special VA FileManager access is required.
 
 The dialog presented while creating quick orders varies, depending on the package associated with the quick order. The dialog is very similar to what is seen while actually placing an order for that package. In addition, you may indicate for each quick order if the ordering person will be allowed/should be required to review and verify the order before accepting.
@@ -10291,2012 +4213,596 @@ Quick Orders should follow a consistent naming convention. Starting each quick o
 
     **1.** Select *Enter/edit quick orders* from the Order Menu Management menu.
 
-Select Option: **Order Menu Management**
-
-***
-
-OI Enter/edit orderable items
-
-***
-
-PM Enter/edit prompts
-
-***
-
-GO Enter/edit generic orders
-
-***
-
-QO Enter/edit quick orders
-
-***
-
-ST Enter/edit order sets
-
-***
-
-AC Enter/edit actions
-
-***
-
-MN Enter/edit order menus
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menu
-
-***
-
-You have PENDING ALERTS
-
-***
-
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-Select Order Menu Management Option: **QO** Enter/edit quick orders
-
-***
-
+Select Option: **Order Menu Management**  
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menu  
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
+Select Order Menu Management Option: **QO** Enter/edit quick orders  
 **2.** Enter the order dialog name. You can choose from a list of quick orders used at your site, or create a new one.
 
-Select QUICK ORDER DIALOG NAME: ??
-
-***
-
-Choose from:
-
-***
-
-FHWN1
-
-***
-
-FHWN2
-
-***
-
-GMRVORADMIT V/M
-
-***
-
-GMRVORB/P
-
-***
-
-GMRVORHT
-
-***
-
-GMRVORPULSE
-
-***
-
-GMRVORRESP
-
-***
-
-GMRVORTEMP
-
-***
-
-GMRVORTPR
-
-***
-
-GMRVORTPR B/P
-
-***
-
-GMRVORWT
-
-***
-
-OR GXACTV AD LIB
-
-***
-
-OR GXACTV AMBULATE
-
-***
-
-OR GXACTV AMBULATE TID
-
-***
-
-OR GXACTV BATHROOM PRIVILEGES
-
-***
-
-OR GXACTV BED REST
-
-***
-
-OR GXACTV BED REST / BRP
-
-***
-
-OR GXACTV HOB UP
-
-***
-
+Select QUICK ORDER DIALOG NAME: ??  
+Choose from:  
+FHWN1  
+FHWN2  
+GMRVORADMIT V/M  
+GMRVORB/P  
+GMRVORHT  
+GMRVORPULSE  
+GMRVORRESP  
+GMRVORTEMP  
+GMRVORTPR  
+GMRVORTPR B/P  
+GMRVORWT  
+OR GXACTV AD LIB  
+OR GXACTV AMBULATE  
+OR GXACTV AMBULATE TID  
+OR GXACTV BATHROOM PRIVILEGES  
+OR GXACTV BED REST  
+OR GXACTV BED REST / BRP  
+OR GXACTV HOB UP  
 **Enter/edit quick orders, cont’d**
 
-OR GXACTV MAY LEAVE WARD
-
-***
-
-OR GXACTV OUT OF BED
-
-***
-
-OR GXACTV PROVIDE TRAPEZE
-
-***
-
-OR GXACTV ROM EXERCISE
-
-***
-
-OR GXACTV TURN PATIENT
-
-***
-
-OR GXACTV UP IN CHAIR
-
-***
-
-OR GXACTV UP IN CHAIR TID
-
-***
-
-OR GXHEMO ARTERIAL LINE
-
-***
-
-OR GXHEMO ARTERIAL SHEATH
-
-***
-
-OR GXHEMO CARDIAC OUTPUT
-
-***
-
-OR GXHEMO HEMODYNAMICS ITEM
-
-***
-
-OR GXHEMO SWAN GANZ CATHETER
-
-***
-
-OR GXHEMO VENOUS SHEATH
-
-***
-
-OR GXNURS CHEST TUBE
-
-***
-
-OR GXNURS GLASCOW COMA
-
-***
-
-OR GXNURS GUAIAC ASPIRATE
-
-***
-
-OR GXNURS GUAIAC EMESIS
-
-***
-
-OR GXNURS GUAIAC STOOLS
-
-***
-
-OR GXNURS NEURO CHECK
-
-***
-
-OR GXNURS NURSING ITEM
-
-***
-
-OR GXNURS PUSH FLUIDS
-
-***
-
-OR GXNURS URINE PH
-
-***
-
-OR GXNURS URINE SPEC GRAV
-
-***
-
-OR GXOXGN MASK 35 PER CENT
-
-***
-
-OR GXOXGN MASK 40 PER CENT
-
-***
-
-OR GXOXGN MASK 50 PER CENT
-
-***
-
-OR GXOXGN O2 3 LT NASAL CANNUL
-
-***
-
-OR GXOXGN O2 4 LT NASAL CANNUL
-
-***
-
-OR GXOXGN OXYGEN THERAPY ITEM
-
-***
-
-OR GXOXGN VENTILATOR
-
-***
-
-OR GXPARM I AND O
-
-***
-
-OR GXRESP CHEST PT
-
-***
-
-OR GXRESP INCENTIVE SPIROMETER
-
-***
-
-OR GXRESP RESPIRATORY ITEM
-
-***
-
-OR GXRESP SUCTION
-
-***
-
-OR GXRESP TCDB
-
-***
-
-OR GXRESP TRACH CARE
-
-***
-
-OR GXSKIN AIR MATTRESS
-
-***
-
-OR GXSKIN COLD PACKS
-
-***
-
-OR GXSKIN SHEEPSKIN
-
-***
-
-OR GXSKIN SKIN AND WOUND ITEM
-
-***
-
-OR GXSKIN WARM PACKS
-
-***
-
-OR GXSKIN WARM SOAKS
-
-***
-
-OR GXSKIN WATER MATTRESS
-
-***
-
-OR GXTUBE COLOSTOMY
-
-***
-
-OR GXTUBE CONDOM CATHETER
-
-***
-
-OR GXTUBE DRAINS ITEM
-
-***
-
-OR GXTUBE HEMOVAC
-
-***
-
-OR GXTUBE ILEOSTOMY
-
-***
-
-OR GXTUBE INDWELLING URINARY C
-
-***
-
-OR GXTUBE JACKSON PRATT
-
-***
-
-OR GXTUBE NASOGASTRIC
-
-***
-
-OR GXTUBE PENROSE
-
-***
-
-OR GXTUBE RECTAL TUBE
-
-***
-
-OR GXTUBE SUPRAPUBIC CATHETER
-
-***
-
-OR GXTUBE UROSTOMY
-
-***
-
-You may enter a new ORDER DIALOG, if you wish
-
-***
-
-Answer must be 3-63 characters in length.
-
-***
-
+OR GXACTV MAY LEAVE WARD  
+OR GXACTV OUT OF BED  
+OR GXACTV PROVIDE TRAPEZE  
+OR GXACTV ROM EXERCISE  
+OR GXACTV TURN PATIENT  
+OR GXACTV UP IN CHAIR  
+OR GXACTV UP IN CHAIR TID  
+OR GXHEMO ARTERIAL LINE  
+OR GXHEMO ARTERIAL SHEATH  
+OR GXHEMO CARDIAC OUTPUT  
+OR GXHEMO HEMODYNAMICS ITEM  
+OR GXHEMO SWAN GANZ CATHETER  
+OR GXHEMO VENOUS SHEATH  
+OR GXNURS CHEST TUBE  
+OR GXNURS GLASCOW COMA  
+OR GXNURS GUAIAC ASPIRATE  
+OR GXNURS GUAIAC EMESIS  
+OR GXNURS GUAIAC STOOLS  
+OR GXNURS NEURO CHECK  
+OR GXNURS NURSING ITEM  
+OR GXNURS PUSH FLUIDS  
+OR GXNURS URINE PH  
+OR GXNURS URINE SPEC GRAV  
+OR GXOXGN MASK 35 PER CENT  
+OR GXOXGN MASK 40 PER CENT  
+OR GXOXGN MASK 50 PER CENT  
+OR GXOXGN O2 3 LT NASAL CANNUL  
+OR GXOXGN O2 4 LT NASAL CANNUL  
+OR GXOXGN OXYGEN THERAPY ITEM  
+OR GXOXGN VENTILATOR  
+OR GXPARM I AND O  
+OR GXRESP CHEST PT  
+OR GXRESP INCENTIVE SPIROMETER  
+OR GXRESP RESPIRATORY ITEM  
+OR GXRESP SUCTION  
+OR GXRESP TCDB  
+OR GXRESP TRACH CARE  
+OR GXSKIN AIR MATTRESS  
+OR GXSKIN COLD PACKS  
+OR GXSKIN SHEEPSKIN  
+OR GXSKIN SKIN AND WOUND ITEM  
+OR GXSKIN WARM PACKS  
+OR GXSKIN WARM SOAKS  
+OR GXSKIN WATER MATTRESS  
+OR GXTUBE COLOSTOMY  
+OR GXTUBE CONDOM CATHETER  
+OR GXTUBE DRAINS ITEM  
+OR GXTUBE HEMOVAC  
+OR GXTUBE ILEOSTOMY  
+OR GXTUBE INDWELLING URINARY C  
+OR GXTUBE JACKSON PRATT  
+OR GXTUBE NASOGASTRIC  
+OR GXTUBE PENROSE  
+OR GXTUBE RECTAL TUBE  
+OR GXTUBE SUPRAPUBIC CATHETER  
+OR GXTUBE UROSTOMY  
+You may enter a new ORDER DIALOG, if you wish  
+Answer must be 3-63 characters in length.  
 **Enter/edit quick orders, cont’d**
 
-**Consults Quick Order Example**
-
+**Consults Quick Order Example**  
+Select Order Menu Management Option: **QO** Enter/edit quick orders  
+Select QUICK ORDER NAME: **GMRCZ EKG STAT ER**  
+Are you adding 'GMRCZ EKG STAT ER' as a new ORDER DIALOG? No// **Y** (Yes)  
+TYPE OF QUICK ORDER: **CONSULTS**  
+NAME: GMRCZ EKG STAT ER// **\<Enter\>**  
+DISPLAY TEXT: **Stat EKG**  
+VERIFY ORDER: **\<Enter\>**  
+DESCRIPTION:  
+1\> **\<Enter\>**  
+ENTRY ACTION: **\<Enter\>**  
 ***
 
-Select Order Menu Management Option: **QO** Enter/edit quick orders
-
+Consult to Service/Specialty: **CARDIOLOGY**  
+1 CARDIOLOGY  
+2 CARDIOLOGY CLINIC  
+CHOOSE 1-2: **1** CARDIOLOGY  
+Reason for Request:  
+1\>**r/o MI and arrythmia**  
+2\>  
+EDIT Option: **\<Enter\>**  
+Category: **O**UTPATIENT  
+Urgency: **STAT**  
+Place of Consultation: **EMERGENCY ROOM**  
+Attention: **\<Enter\>**  
+Provisional Diagnosis: **\<Enter\>**  
 ***
 
-Select QUICK ORDER NAME: **GMRCZ EKG STAT ER**
-
+\------------------------------------------------------------------------  
+Consult to Service/Specialty: CARDIOLOGY  
+Reason for Request: r/o MI and arrythmia  
+Category: OUTPATIENT  
+Urgency: STAT  
+Place of Consultation: Emergency Room  
+\------------------------------------------------------------------------  
 ***
 
-Are you adding 'GMRCZ EKG STAT ER' as a new ORDER DIALOG? No// **Y** (Yes)
-
+(P)lace, (E)dit, or (C)ancel this quick order? PLACE// **\<Enter\>**  
 ***
 
-TYPE OF QUICK ORDER: **CONSULTS**
-
-***
-
-NAME: GMRCZ EKG STAT ER// **\<Enter\>**
-
-***
-
-DISPLAY TEXT: **Stat EKG**
-
-***
-
-VERIFY ORDER: **\<Enter\>**
-
-***
-
-DESCRIPTION:
-
-***
-
-1\> **\<Enter\>**
-
-***
-
-ENTRY ACTION: **\<Enter\>**
-
-***
-
-***
-
-Consult to Service/Specialty: **CARDIOLOGY**
-
-***
-
-1 CARDIOLOGY
-
-***
-
-2 CARDIOLOGY CLINIC
-
-***
-
-CHOOSE 1-2: **1** CARDIOLOGY
-
-***
-
-Reason for Request:
-
-***
-
-1\>**r/o MI and arrythmia**
-
-***
-
-2\>
-
-***
-
-EDIT Option: **\<Enter\>**
-
-***
-
-Category: **O**UTPATIENT
-
-***
-
-Urgency: **STAT**
-
-***
-
-Place of Consultation: **EMERGENCY ROOM**
-
-***
-
-Attention: **\<Enter\>**
-
-***
-
-Provisional Diagnosis: **\<Enter\>**
-
-***
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-Consult to Service/Specialty: CARDIOLOGY
-
-***
-
-Reason for Request: r/o MI and arrythmia
-
-***
-
-Category: OUTPATIENT
-
-***
-
-Urgency: STAT
-
-***
-
-Place of Consultation: Emergency Room
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-***
-
-(P)lace, (E)dit, or (C)ancel this quick order? PLACE// **\<Enter\>**
-
-***
-
-***
-
-Select QUICK ORDER NAME: **\<Enter\>**
-
-***
-
+Select QUICK ORDER NAME: **\<Enter\>**  
  NOTE: No changes are saved until PLACE is selected.
 
-**Diet Quick Order Example**
-
-***
-
-Select QUICK ORDER NAME: **OR FHWN3**
-
-***
-
-Are you adding 'OR FHWN3' as a new ORDER DIALOG? No// **Y** (Yes)
-
-***
-
-TYPE OF QUICK ORDER: **DIET**
-
-***
-
-1 DIET ADDITIONAL ORDERS
-
-***
-
-2 DIET ORDERS
-
-***
-
-CHOOSE 1-2: **2**
-
-***
-
-DISPLAY TEXT: **Junk Food**
-
-***
-
-VERIFY ORDER: **?**
-
-***
-
-Enter YES to have orders created by this dialog presented to the
-
-***
-
-user before saving, with the opportunity to edit.
-
-***
-
-Choose from:
-
-***
-
-1 YES
-
-***
-
-0 NO
-
-***
-
-VERIFY ORDER: **0** NO
-
-***
-
-DESCRIPTION:
-
-***
-
-1\>Junk food consists of a double Mac cheeseburger with fries and
-
-***
-
-2\>a coke, available whenever the patient requests it.
-
-***
-
-3\> **\<Enter\>**
-
-***
-
-EDIT Option: **\<Enter\>**
-
-***
-
-Diets:
-
-***
-
-1\. Diet: **?**
-
-***
-
-Choose from:
-
-***
-
-DIRT HIGH MINERAL
-
-***
-
-HIGH MINERAL HIGH MINERAL
-
-***
-
-REGULAR REGULAR
-
-***
-
-Enter a diet modifications to be ordered for this patient.
-
-***
-
-1\. Diet: **High Mineral**
-
-***
-
-Effective date/time: NOW// **\<Enter\>**
-
-***
-
-Expiration date/time: **\<Enter\>**
-
-***
-
-Delivery: TRAY// **\<Enter\>**
-
-***
-
-Special Instructions: **\<Enter\>**
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-Diets: HIGH MINERAL
-
-***
-
-Effective date/time: NOW
-
-***
-
-Delivery: TRAY
-
-***
-
-Special Instructions: Always be polite (don't say "You shouldn't
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-(P)lace, (E)dit, or (C)ancel this quick order? PLACE// **\<Enter\>**
-
-***
-
-Select QUICK ORDER DIALOG NAME: **\<Enter\>**
-
-***
-
+**Diet Quick Order Example**  
+Select QUICK ORDER NAME: **OR FHWN3**  
+Are you adding 'OR FHWN3' as a new ORDER DIALOG? No// **Y** (Yes)  
+TYPE OF QUICK ORDER: **DIET**  
+1 DIET ADDITIONAL ORDERS  
+2 DIET ORDERS  
+CHOOSE 1-2: **2**  
+DISPLAY TEXT: **Junk Food**  
+VERIFY ORDER: **?**  
+Enter YES to have orders created by this dialog presented to the  
+user before saving, with the opportunity to edit.  
+Choose from:  
+1 YES  
+0 NO  
+VERIFY ORDER: **0** NO  
+DESCRIPTION:  
+1\>Junk food consists of a double Mac cheeseburger with fries and  
+2\>a coke, available whenever the patient requests it.  
+3\> **\<Enter\>**  
+EDIT Option: **\<Enter\>**  
+Diets:  
+1\. Diet: **?**  
+Choose from:  
+DIRT HIGH MINERAL  
+HIGH MINERAL HIGH MINERAL  
+REGULAR REGULAR  
+Enter a diet modifications to be ordered for this patient.  
+1\. Diet: **High Mineral**  
+Effective date/time: NOW// **\<Enter\>**  
+Expiration date/time: **\<Enter\>**  
+Delivery: TRAY// **\<Enter\>**  
+Special Instructions: **\<Enter\>**  
+\------------------------------------------------------------------------  
+Diets: HIGH MINERAL  
+Effective date/time: NOW  
+Delivery: TRAY  
+Special Instructions: Always be polite (don't say "You shouldn't  
+\------------------------------------------------------------------------  
+(P)lace, (E)dit, or (C)ancel this quick order? PLACE// **\<Enter\>**  
+Select QUICK ORDER DIALOG NAME: **\<Enter\>**  
 **IV Medications Quick Order Example**
 
-Select Order Menu Management Option: **Enter/edit quick orders**
-
+Select Order Menu Management Option: **Enter/edit quick orders**  
 ***
 
+Select QUICK ORDER NAME: **PSJZ AMINOPH 1GM**  
+Are you adding 'PSJZ AMINOPH 1GM' as a new ORDER DIALOG? No// **Y** (Yes)  
+TYPE OF QUICK ORDER: **IV MEDICATIONS**  
+NAME: PSJZ AMINOPH 1GM// **\<Enter\>**  
+DISPLAY TEXT: **Aminophylline drip**  
+VERIFY ORDER: NO// **\<Enter\>**  
+DESCRIPTION:  
+No existing text  
+Edit? NO// **\<Enter\>**  
 ***
 
-Select QUICK ORDER NAME: **PSJZ AMINOPH 1GM**
-
+Solution: **D5W INJ,SOLN IV**  
+Volume (in ml): 50// **1000**  
+Additive**: AMINOPHYLLINE INJ,SOLN IV** AMINOPHYLLINE INJ,SOLN IV AMINOPHYLLINE  
+INJ,SOLN IV  
+(Units for this additive are MG)  
+Strength: **1000**  
+Another Additive: **\<Enter\>**  
+Infusion Rate: **10**  
+Priority: ROUTINE// **\<Enter\>**Provider Comments:  
+1\> **Titrate to effect.**  
+2\> **\<Enter\>**  
+Edit OPTION: **\<Enter\>**  
 ***
 
-Are you adding 'PSJZ AMINOPH 1GM' as a new ORDER DIALOG? No// **Y** (Yes)
-
+\------------------------------------------------------------------------  
+Solutions: D5W INJ,SOLN IV 1000 ml  
+Additives: AMINOPHYLLINE INJ,SOLN IV 1000 MG  
+Infusion Rate: 10 ml/hr  
+Priority: ROUTINE  
+Provider Comments: Titrate to effect.  
+\------------------------------------------------------------------------  
 ***
 
-TYPE OF QUICK ORDER: **IV MEDICATIONS**
-
-***
-
-NAME: PSJZ AMINOPH 1GM// **\<Enter\>**
-
-***
-
-DISPLAY TEXT: **Aminophylline drip**
-
-***
-
-VERIFY ORDER: NO// **\<Enter\>**
-
-***
-
-DESCRIPTION:
-
-***
-
-No existing text
-
-***
-
-Edit? NO// **\<Enter\>**
-
-***
-
-***
-
-Solution: **D5W INJ,SOLN IV**
-
-***
-
-Volume (in ml): 50// **1000**
-
-***
-
-Additive**: AMINOPHYLLINE INJ,SOLN IV** AMINOPHYLLINE INJ,SOLN IV AMINOPHYLLINE
-
-***
-
-INJ,SOLN IV
-
-***
-
-(Units for this additive are MG)
-
-***
-
-Strength: **1000**
-
-***
-
-Another Additive: **\<Enter\>**
-
-***
-
-Infusion Rate: **10**
-
-***
-
-Priority: ROUTINE// **\<Enter\>**Provider Comments:
-
-***
-
-1\> **Titrate to effect.**
-
-***
-
-2\> **\<Enter\>**
-
-***
-
-Edit OPTION: **\<Enter\>**
-
-***
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-Solutions: D5W INJ,SOLN IV 1000 ml
-
-***
-
-Additives: AMINOPHYLLINE INJ,SOLN IV 1000 MG
-
-***
-
-Infusion Rate: 10 ml/hr
-
-***
-
-Priority: ROUTINE
-
-***
-
-Provider Comments: Titrate to effect.
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-***
-
-(P)lace, (E)dit, or (C)ancel this quick order? PLACE//\<Enter\>
-
-***
-
+(P)lace, (E)dit, or (C)ancel this quick order? PLACE//\<Enter\>  
 **Lab Quick Order Example**
 
-Select QUICK ORDER NAME: **LR GLUCOSE**
-
+Select QUICK ORDER NAME: **LR GLUCOSE**  
+NAME: LR GLUCOSE// **\<Enter\>**  
+DISPLAY TEXT: GLUCOSE// **\<Enter\>**  
+VERIFY ORDER: NO// **\<Enter\>**  
+DESCRIPTION:  
+1\>**\<Enter\>**  
+ENTRY ACTION: **\<Enter\>**  
 ***
 
-NAME: LR GLUCOSE// **\<Enter\>**
-
+Lab Test: GLUCOSE// **\<Enter\>**  
+SEND TO LAB - Means the patient is ambulatory and will be sent to the  
+Laboratory draw room to have blood drawn.  
+WARD COLLECT - Means that either the physician or a nurse will be collecting the sample on the ward.  
+LAB BLOOD TEAM - Means the phlebotomist from Lab will draw the blood on the ward. This method is limited to laboratory defined collection times.  
 ***
 
-DISPLAY TEXT: GLUCOSE// **\<Enter\>**
-
+SP Send patient to lab  
+WC Ward collect & deliver  
+LC Lab blood team  
+Collected By: **SP** Send patient to lab  
+Is BLOOD MARBLED TOP the correct sample to collect? Yes// **\<Enter\>** YES  
+Collection Date/Time: **N** (JUN 18, 1997@14:11)  
+Enter Order Comment: **\<Enter\>**  
 ***
 
-VERIFY ORDER: NO// **\<Enter\>**
-
-***
-
-DESCRIPTION:
-
-***
-
-1\>**\<Enter\>**
-
-***
-
-ENTRY ACTION: **\<Enter\>**
-
-***
-
-***
-
-Lab Test: GLUCOSE// **\<Enter\>**
-
-***
-
-SEND TO LAB - Means the patient is ambulatory and will be sent to the
-
-***
-
-Laboratory draw room to have blood drawn.
-
-***
-
-WARD COLLECT - Means that either the physician or a nurse will be collecting the sample on the ward.
-
-***
-
-LAB BLOOD TEAM - Means the phlebotomist from Lab will draw the blood on the ward. This method is limited to laboratory defined collection times.
-
-***
-
-***
-
-SP Send patient to lab
-
-***
-
-WC Ward collect & deliver
-
-***
-
-LC Lab blood team
-
-***
-
-Collected By: **SP** Send patient to lab
-
-***
-
-Is BLOOD MARBLED TOP the correct sample to collect? Yes// **\<Enter\>** YES
-
-***
-
-Collection Date/Time: **N** (JUN 18, 1997@14:11)
-
-***
-
-Enter Order Comment: **\<Enter\>**
-
-***
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-Lab Test: GLUCOSE
-
-***
-
-Collected By: Send patient to lab
-
-***
-
-Collection Sample: BLOOD
-
-***
-
-Specimen: SERUM
-
-***
-
-Collection Date/Time: NOW
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-(P)lace, (E)dit, or (C)ancel this quick order? PLACE//**\<Enter\>**
-
-***
-
+\------------------------------------------------------------------------  
+Lab Test: GLUCOSE  
+Collected By: Send patient to lab  
+Collection Sample: BLOOD  
+Specimen: SERUM  
+Collection Date/Time: NOW  
+\------------------------------------------------------------------------  
+(P)lace, (E)dit, or (C)ancel this quick order? PLACE//**\<Enter\>**  
 **Outpatient Medications Quick Order Example**
 
-Select Order Menu Management Option: **Enter/edit quick orders**
-
+Select Order Menu Management Option: **Enter/edit quick orders**  
 ***
 
+Select QUICK ORDER NAME: **PSO DIGOXIN QD**  
+Are you adding 'PSO DIGOXIN QD' as a new ORDER DIALOG? No// **Y** (Yes)  
+TYPE OF QUICK ORDER: **OUTPATIENT MEDICATIONS**  
+NAME: PSO DIGOXIN QD// **\<Enter\>**  
+DISPLAY TEXT: **Digoxin QD** (opt)  
+VERIFY ORDER: **\<Enter\>**  
+DESCRIPTION:  
+No existing text  
+Edit? NO// **\<Enter\>**  
 ***
 
-Select QUICK ORDER NAME: **PSO DIGOXIN QD**
-
+Medication: **DIGOXIN TAB**  
 ***
 
-Are you adding 'PSO DIGOXIN QD' as a new ORDER DIALOG? No// **Y** (Yes)
-
+Choose from:  
+1 DIGOXIN 0.125MG TAB \$0.210  
+2 DIGOXIN 0.25MG TAB TAB \$0.114  
+Dispense Drug: **2** DIGOXIN 0.25MG TAB TAB \$0.114  
+Complex dose? NO// **\<cr\>**  
+Take (in TABLET(S)): **1**  
+Route: ORAL// **\<Enter\>**  
+Schedule: **QD**  
 ***
 
-TYPE OF QUICK ORDER: **OUTPATIENT MEDICATIONS**
-
+Limit duration to (in DAYS): 30  
+Quantity: **30**  
+Refills (0-11): **1**  
+Pick Up: WINDOW// **\<Enter\>**  
+Provider Instructions:  
+No existing text  
+Edit? No// **\<Enter\>** (No)  
+Priority: ROUTINE// **\<Enter\>**  
+\------------------------------------------------------------------------  
+Medication: DIGOXIN TAB  
+Dispense Drug: DIGOXIN 0.25MG TAB  
+Take: 1 TABLET(S) ORAL QD for 30 days  
+Quantity: 30  
+Refills (0-11): 1  
+Pick Up: WINDOW  
+Priority: ROUTINE  
+SC: NO  
+\------------------------------------------------------------------------  
 ***
 
-NAME: PSO DIGOXIN QD// **\<Enter\>**
-
-***
-
-DISPLAY TEXT: **Digoxin QD** (opt)
-
-***
-
-VERIFY ORDER: **\<Enter\>**
-
-***
-
-DESCRIPTION:
-
-***
-
-No existing text
-
-***
-
-Edit? NO// **\<Enter\>**
-
-***
-
-***
-
-Medication: **DIGOXIN TAB**
-
-***
-
-***
-
-Choose from:
-
-***
-
-1 DIGOXIN 0.125MG TAB \$0.210
-
-***
-
-2 DIGOXIN 0.25MG TAB TAB \$0.114
-
-***
-
-Dispense Drug: **2** DIGOXIN 0.25MG TAB TAB \$0.114
-
-***
-
-Complex dose? NO// **\<cr\>**
-
-***
-
-Take (in TABLET(S)): **1**
-
-***
-
-Route: ORAL// **\<Enter\>**
-
-***
-
-Schedule: **QD**
-
-***
-
-***
-
-Limit duration to (in DAYS): 30
-
-***
-
-Quantity: **30**
-
-***
-
-Refills (0-11): **1**
-
-***
-
-Pick Up: WINDOW// **\<Enter\>**
-
-***
-
-Provider Instructions:
-
-***
-
-No existing text
-
-***
-
-Edit? No// **\<Enter\>** (No)
-
-***
-
-Priority: ROUTINE// **\<Enter\>**
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-Medication: DIGOXIN TAB
-
-***
-
-Dispense Drug: DIGOXIN 0.25MG TAB
-
-***
-
-Take: 1 TABLET(S) ORAL QD for 30 days
-
-***
-
-Quantity: 30
-
-***
-
-Refills (0-11): 1
-
-***
-
-Pick Up: WINDOW
-
-***
-
-Priority: ROUTINE
-
-***
-
-SC: NO
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-***
-
-(P)lace, (E)dit, or (C)ancel this quick order? PLACE// \<Enter\>
-
-***
-
+(P)lace, (E)dit, or (C)ancel this quick order? PLACE// \<Enter\>  
 **Radiology Quick Order Example**
 
-Select Order Menu Management Option: **Enter/edit quick orders**
-
+Select Order Menu Management Option: **Enter/edit quick orders**  
 ***
 
+Select QUICK ORDER NAME: **RAZ CHEST 2 VIEWS STAT TODAY**  
+Are you adding 'RAZ CHEST 2 VIEWS STAT TODAY' as a new ORDER DIALOG? No// **Y** (Yes)  
+TYPE OF QUICK ORDER: **IMAGING**  
+NAME: RAZ CHEST 2 VIEWS STAT TODAY Replace  
+DISPLAY TEXT: **Stat Chest 2 views**  
+VERIFY ORDER: **N** NO  
+DESCRIPTION:  
+1\> **\<Enter\>**  
+Edit OPTION: **\<Enter\>**  
+Select one of the following imaging types:  
+NUCLEAR MEDICINE  
+GENERAL RADIOLOGY  
 ***
 
-Select QUICK ORDER NAME: **RAZ CHEST 2 VIEWS STAT TODAY**
-
+Select IMAGING TYPE: **GENERAL RADIOLOGY**  
+Common General Radiology Procedures:  
+1 ABDOMEN 1 VIEW 21 FOOT 3 OR MORE VIEWS  
+2 ABDOMEN 2 VIEWS 22 FOREARM 2 VIEWS  
+3 ANKLE 3 OR MORE VIEWS 23 HAND 3 OR MORE VIEWS  
+4 CALCANEOUS 2 VIEWS 24 HIP 1 VIEW  
+5 CHEST 2 VIEWS PA&LAT 25 HUMERUS 2 OR MORE VIEWS  
+6 CHEST SINGLE VIEW 26 KNEE 3 VIEWS  
+7 CHOLECYSTOGRAM ORAL CONT 27 NASAL BONES MIN 3 VIEWS  
+8 COLON AIR CONTRAST 28 NON-INVAS.,DUPLEX SCAN OF CRAN  
+9 COLON BARIUM ENEMA 29 PELVIS 1 VIEW  
+10 CT ABDOMEN W/O CONT 30 RIBS UNILAT 2 VIEWS  
+11 CT CERVICAL SPINE W/O CONT 31 SHOULDER 2 OR MORE VIEWS  
+12 CT HEAD W/O CONT 32 SINUSES 3 OR MORE VIEWS  
+13 CT LUMBAR SPINE W/O CONT 33 SKULL 4 OR MORE VIEWS  
+14 CT MAXILLOFACIAL W/O CONT 34 SPINE CERVICAL MIN 4 VIEWS  
+15 CT NECK SOFT TISSUE W/O CONT 35 SPINE LUMBOSACRAL MIN 2 VIEWS  
+16 CT THORAX W/O CONT 36 SPINE THORACIC 2 VIEWS  
+17 ELBOW 3 OR MORE VIEWS 37 TIBIA & FIBULA 2 VIEWS  
+18 ESOPHAGUS 38 UPPER GI AIR CONT W/O KUB  
+19 ESOPHAGUS RAPID SEQUENCE FILMS 39 UROGRAM IV W NEPHROTOMOGRAMS  
+20 FEMUR 2 VIEWS 40 WRIST 3 OR MORE VIEWS  
+Radiology Procedure: **5** CHEST 2 VIEWS PA&LAT  
+Modifier:  
+History and Reason for Exam:  
+1.  **R/O pneumonia or mass.**  
+1.  **\<Enter\>**  
+Edit OPTION: **\<Enter\>**  
+Category: **\<Enter\>**  
+Is this patient scheduled for pre-op? NO// **\<Enter\>**  
+Date Desired: TODAY// **T** (AUG 30, 1997)  
+Mode of Transport: **P** PORTABLE  
+Is patient on isolation procedures? **\<Enter\>**  
+Urgency: ROUTINE// **STAT**  
+Submit request to: **TUSCALOOSA VAMC**  
+\--------------------------------------------------------------------------  
+Radiology Procedure: CHEST 2 VIEWS PA&LAT  
+History and Reason for Exam: R/O pneumonia or mass.  
+Date Desired: NOW  
+Mode of Transport: PORTABLE  
+Urgency: STAT  
+Submit request to: TUSCALOOSA VAMC  
+\--------------------------------------------------------------------------  
 ***
 
-Are you adding 'RAZ CHEST 2 VIEWS STAT TODAY' as a new ORDER DIALOG? No// **Y** (Yes)
-
-***
-
-TYPE OF QUICK ORDER: **IMAGING**
-
-***
-
-NAME: RAZ CHEST 2 VIEWS STAT TODAY Replace
-
-***
-
-DISPLAY TEXT: **Stat Chest 2 views**
-
-***
-
-VERIFY ORDER: **N** NO
-
-***
-
-DESCRIPTION:
-
-***
-
-1\> **\<Enter\>**
-
-***
-
-Edit OPTION: **\<Enter\>**
-
-***
-
-Select one of the following imaging types:
-
-***
-
-NUCLEAR MEDICINE
-
-***
-
-GENERAL RADIOLOGY
-
-***
-
-***
-
-Select IMAGING TYPE: **GENERAL RADIOLOGY**
-
-***
-
-Common General Radiology Procedures:
-
-***
-
-1 ABDOMEN 1 VIEW 21 FOOT 3 OR MORE VIEWS
-
-***
-
-2 ABDOMEN 2 VIEWS 22 FOREARM 2 VIEWS
-
-***
-
-3 ANKLE 3 OR MORE VIEWS 23 HAND 3 OR MORE VIEWS
-
-***
-
-4 CALCANEOUS 2 VIEWS 24 HIP 1 VIEW
-
-***
-
-5 CHEST 2 VIEWS PA&LAT 25 HUMERUS 2 OR MORE VIEWS
-
-***
-
-6 CHEST SINGLE VIEW 26 KNEE 3 VIEWS
-
-***
-
-7 CHOLECYSTOGRAM ORAL CONT 27 NASAL BONES MIN 3 VIEWS
-
-***
-
-8 COLON AIR CONTRAST 28 NON-INVAS.,DUPLEX SCAN OF CRAN
-
-***
-
-9 COLON BARIUM ENEMA 29 PELVIS 1 VIEW
-
-***
-
-10 CT ABDOMEN W/O CONT 30 RIBS UNILAT 2 VIEWS
-
-***
-
-11 CT CERVICAL SPINE W/O CONT 31 SHOULDER 2 OR MORE VIEWS
-
-***
-
-12 CT HEAD W/O CONT 32 SINUSES 3 OR MORE VIEWS
-
-***
-
-13 CT LUMBAR SPINE W/O CONT 33 SKULL 4 OR MORE VIEWS
-
-***
-
-14 CT MAXILLOFACIAL W/O CONT 34 SPINE CERVICAL MIN 4 VIEWS
-
-***
-
-15 CT NECK SOFT TISSUE W/O CONT 35 SPINE LUMBOSACRAL MIN 2 VIEWS
-
-***
-
-16 CT THORAX W/O CONT 36 SPINE THORACIC 2 VIEWS
-
-***
-
-17 ELBOW 3 OR MORE VIEWS 37 TIBIA & FIBULA 2 VIEWS
-
-***
-
-18 ESOPHAGUS 38 UPPER GI AIR CONT W/O KUB
-
-***
-
-19 ESOPHAGUS RAPID SEQUENCE FILMS 39 UROGRAM IV W NEPHROTOMOGRAMS
-
-***
-
-20 FEMUR 2 VIEWS 40 WRIST 3 OR MORE VIEWS
-
-***
-
-Radiology Procedure: **5** CHEST 2 VIEWS PA&LAT
-
-***
-
-Modifier:
-
-***
-
-History and Reason for Exam:
-
-***
-
-1.  **R/O pneumonia or mass.**
-
-***
-
-1.  **\<Enter\>**
-
-***
-
-Edit OPTION: **\<Enter\>**
-
-***
-
-Category: **\<Enter\>**
-
-***
-
-Is this patient scheduled for pre-op? NO// **\<Enter\>**
-
-***
-
-Date Desired: TODAY// **T** (AUG 30, 1997)
-
-***
-
-Mode of Transport: **P** PORTABLE
-
-***
-
-Is patient on isolation procedures? **\<Enter\>**
-
-***
-
-Urgency: ROUTINE// **STAT**
-
-***
-
-Submit request to: **TUSCALOOSA VAMC**
-
-***
-
-\--------------------------------------------------------------------------
-
-***
-
-Radiology Procedure: CHEST 2 VIEWS PA&LAT
-
-***
-
-History and Reason for Exam: R/O pneumonia or mass.
-
-***
-
-Date Desired: NOW
-
-***
-
-Mode of Transport: PORTABLE
-
-***
-
-Urgency: STAT
-
-***
-
-Submit request to: TUSCALOOSA VAMC
-
-***
-
-\--------------------------------------------------------------------------
-
-***
-
-***
-
-(P)lace, (E)dit, or (C)ancel this quick order? PLACE// **\<Enter\>**
-
-***
-
+(P)lace, (E)dit, or (C)ancel this quick order? PLACE// **\<Enter\>**  
 **Unit Dose Medications Quick Order Example**
 
-Select Order Menu Management Option: **Enter/edit quick orders**
-
+Select Order Menu Management Option: **Enter/edit quick orders**  
 ***
 
+Select QUICK ORDER NAME: **PSJZ CIMETIDINE**  
+Are you adding 'PSJZ CIMETIDINE ' as a new ORDER DIALOG? No// **Y** (Yes)  
+TYPE OF QUICK ORDER: **UNIT DOSE MEDICATIONS**  
+NAME: PSJZ CIMETIDINE // **\<Enter\>**  
+DISPLAY TEXT: **Tagamet q8h**  
+VERIFY ORDER: **\<Enter\>**  
+DESCRIPTION:  
+1\> **\<cr\>**  
+Edit OPTION: **\<Enter\>**  
+***  
+Medication: **CIMETIDINE TAB**  
 ***
 
-Select QUICK ORDER NAME: **PSJZ CIMETIDINE**
-
+Choose from:  
+1 CIMETIDINE 200MG TAB UD PK \$0.018  
+2 CIMETIDINE 300MG TAB UD PK \$0.107  
+3 CIMETIDINE 400MG TAB UD TAB \$0.251  
+Dispense Drug: **CIMETIDINE 200MG TAB UD PK \$0.018 U.D.**  
+Dosage: **200mg**  
+Route: ORAL// **\<Enter\>**  
+Schedule: **Q8H**  
+Priority: ROUTINE// **\<Enter\>**  
+Provider Comments:  
+No existing text Edit? No// **\<Enter\>** (No)  
+\------------------------------------------------------------------------  
+Medication: CIMETIDINE TAB  
+Dispense Drug: CIMETIDINE 200MG TAB UD  
+Dosage: 200mg  
+Route: ORAL  
+Schedule: Q8H  
+Priority: ROUTINE  
+\------------------------------------------------------------------------  
 ***
 
-Are you adding 'PSJZ CIMETIDINE ' as a new ORDER DIALOG? No// **Y** (Yes)
-
-***
-
-TYPE OF QUICK ORDER: **UNIT DOSE MEDICATIONS**
-
-***
-
-NAME: PSJZ CIMETIDINE // **\<Enter\>**
-
-***
-
-DISPLAY TEXT: **Tagamet q8h**
-
-***
-
-VERIFY ORDER: **\<Enter\>**
-
-***
-
-DESCRIPTION:
-
-***
-
-1\> **\<cr\>**
-
-***
-
-Edit OPTION: **\<Enter\>**
-
-***
-
-***
-
-***
-
-Medication: **CIMETIDINE TAB**
-
-***
-
-***
-
-Choose from:
-
-***
-
-1 CIMETIDINE 200MG TAB UD PK \$0.018
-
-***
-
-2 CIMETIDINE 300MG TAB UD PK \$0.107
-
-***
-
-3 CIMETIDINE 400MG TAB UD TAB \$0.251
-
-***
-
-Dispense Drug: **CIMETIDINE 200MG TAB UD PK \$0.018 U.D.**
-
-***
-
-Dosage: **200mg**
-
-***
-
-Route: ORAL// **\<Enter\>**
-
-***
-
-Schedule: **Q8H**
-
-***
-
-Priority: ROUTINE// **\<Enter\>**
-
-***
-
-Provider Comments:
-
-***
-
-No existing text Edit? No// **\<Enter\>** (No)
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-Medication: CIMETIDINE TAB
-
-***
-
-Dispense Drug: CIMETIDINE 200MG TAB UD
-
-***
-
-Dosage: 200mg
-
-***
-
-Route: ORAL
-
-***
-
-Schedule: Q8H
-
-***
-
-Priority: ROUTINE
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-***
-
-(P)lace, (E)dit, or (C)ancel this quick order? PLACE// **\<Enter\>**
-
-***
-
+(P)lace, (E)dit, or (C)ancel this quick order? PLACE// **\<Enter\>**  
 **Vital Measurements Quick Order Example**
 
-Select Order Menu Management Option: **Enter/edit quick orders**
-
+Select Order Menu Management Option: **Enter/edit quick orders**  
 ***
 
+Select QUICK ORDER NAME: **GMRVZ BP**  
+Are you adding ‘GMRVZ BP’ as a new ORDER DIALOG? No// **Y** (Yes)  
+TYPE OF QUICK ORDER: **VITALS/MEASUREMENTS**  
+NAME: GMRVZ BP// **\<Enter\>**  
+DISPLAY TEXT: **BP Q4h**  
+VERIFY ORDER: **\<Enter\>**  
+DESCRIPTION:  
+1.  **\<Enter\>**  
+Edit OPTION: **\<Enter\>**  
 ***
 
-Select QUICK ORDER NAME: **GMRVZ BP**
-
+Vital Sign: **B/P** B/P  
+Start Date/Time: **NOW**  
+Schedule: **Q4H**  
+Stop Date/Time: **NOW**  
+Special Instructions: **\<cr\>**  
 ***
 
-Are you adding ‘GMRVZ BP’ as a new ORDER DIALOG? No// **Y** (Yes)
-
+\------------------------------------------------------------------------  
+Vital Sign: B/P  
+Start Date/Time: NOW  
+Schedule: Q4H  
+Stop Date/Time: NOW  
+\------------------------------------------------------------------------  
 ***
 
-TYPE OF QUICK ORDER: **VITALS/MEASUREMENTS**
-
+(P)lace, (E)dit, or (C)ancel this quick order? PLACE// **EDIT**  
+Vital Sign: B/P// **\<Enter\>**  
+Start Date/Time: NOW// **\<Enter\>**  
+Schedule: Q4H// **\<Enter\>**  
+Stop Date/Time: NOW// **@**  
+Are you sure you want to delete this value? NO// **YES**  
+Special Instructions: **\<Enter\>**  
 ***
 
-NAME: GMRVZ BP// **\<Enter\>**
-
+\------------------------------------------------------------------------  
+Vital Sign: B/P  
+Start Date/Time: NOW  
+Schedule: Q4H  
+\------------------------------------------------------------------------  
 ***
 
-DISPLAY TEXT: **BP Q4h**
-
-***
-
-VERIFY ORDER: **\<Enter\>**
-
-***
-
-DESCRIPTION:
-
-***
-
-1.  **\<Enter\>**
-
-***
-
-Edit OPTION: **\<Enter\>**
-
-***
-
-***
-
-Vital Sign: **B/P** B/P
-
-***
-
-Start Date/Time: **NOW**
-
-***
-
-Schedule: **Q4H**
-
-***
-
-Stop Date/Time: **NOW**
-
-***
-
-Special Instructions: **\<cr\>**
-
-***
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-Vital Sign: B/P
-
-***
-
-Start Date/Time: NOW
-
-***
-
-Schedule: Q4H
-
-***
-
-Stop Date/Time: NOW
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-***
-
-(P)lace, (E)dit, or (C)ancel this quick order? PLACE// **EDIT**
-
-***
-
-Vital Sign: B/P// **\<Enter\>**
-
-***
-
-Start Date/Time: NOW// **\<Enter\>**
-
-***
-
-Schedule: Q4H// **\<Enter\>**
-
-***
-
-Stop Date/Time: NOW// **@**
-
-***
-
-Are you sure you want to delete this value? NO// **YES**
-
-***
-
-Special Instructions: **\<Enter\>**
-
-***
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-Vital Sign: B/P
-
-***
-
-Start Date/Time: NOW
-
-***
-
-Schedule: Q4H
-
-***
-
-\------------------------------------------------------------------------
-
-***
-
-***
-
-(P)lace, (E)dit, or (C)ancel this quick order? PLACE// **\<Enter\>**
-
-***
-
+(P)lace, (E)dit, or (C)ancel this quick order? PLACE// **\<Enter\>**  
 **Edit Personal Quick Orders by User**
 
 The ORCM QUICK ORDERS BY USER "Edit personal quick orders by user” option is designed to allow selection of a user, to show a list of personal quick orders for that user, allow the selection of any personal quick order on that list, and then allow the editing of that personal quick order.
 
 1.  Select **Edit personal quick orders by user**  from the Order Menu Management menu:
 
-OI Enter/edit orderable items
-
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+**QU Edit personal quick orders by user**  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+AO Assign Primary Order Menu  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menu  
+DS Disable/Enable order dialogs  
+CS Review Quick Orders for Inactive ICD9 Codes  
 ***
 
-PM Enter/edit prompts
-
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
 ***
 
-GO Enter/edit generic orders
-
+Select Order Menu Management Option: **QU** **Edit personal quick orders by user**  
+1.  Enter a user name. If you select a user that does not have any personal quick orders, you will be asked if you would like to see a list of users with personal quick orders. If you say yes, only users with personal quick orders will appear on the list.  
+Select Order Menu Management Option: QU Edit personal quick orders by user  
+Select NEW PERSON NAME: CPRSUser,one  
 ***
 
-QO Enter/edit quick orders
-
+CPRSUser,one does not have any personal quick orders.  
+Would you like to see a list of users with personal quick orders? YES//  
 ***
 
-**QU Edit personal quick orders by user**
-
+Choose from:  
+CPRSUser,two  
+CPRSUser,three  
+CPRSUser,four  
 ***
 
-ST Enter/edit order sets
-
-***
-
-AC Enter/edit actions
-
-***
-
-MN Enter/edit order menus
-
-***
-
-AO Assign Primary Order Menu
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menu
-
-***
-
-DS Disable/Enable order dialogs
-
-***
-
-CS Review Quick Orders for Inactive ICD9 Codes
-
-***
-
-***
-
-You have PENDING ALERTS
-
-***
-
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-***
-
-Select Order Menu Management Option: **QU** **Edit personal quick orders by user**
-
-***
-
-1.  Enter a user name. If you select a user that does not have any personal quick orders, you will be asked if you would like to see a list of users with personal quick orders. If you say yes, only users with personal quick orders will appear on the list.
-
-***
-
-Select Order Menu Management Option: QU Edit personal quick orders by user
-
-***
-
-Select NEW PERSON NAME: CPRSUser,one
-
-***
-
-***
-
-CPRSUser,one does not have any personal quick orders.
-
-***
-
-Would you like to see a list of users with personal quick orders? YES//
-
-***
-
-***
-
-Choose from:
-
-***
-
-CPRSUser,two
-
-***
-
-CPRSUser,three
-
-***
-
-CPRSUser,four
-
-***
-
-***
-
-'\^' TO STOP:
-
-***
-
+'\^' TO STOP:  
 ***
 
 **Edit Personal Quick Orders by User, con’t**
 
-1.  As soon as you select a user with personal quick orders, you will see all the user’s personal quick orders displayed, grouped by display group.
-
+1.  As soon as you select a user with personal quick orders, you will see all the user’s personal quick orders displayed, grouped by display group.  
+Select NEW PERSON NAME: CPRSUser,three  
 ***
 
-Select NEW PERSON NAME: CPRSUser,three
-
+CPRSUser,three personal quick orders.  
+LABORATORY  
+1 H. Pylori  
+2 Dhea  
+3 ebv titer  
+4 lipids  
+5 free T4  
+6 HBA1C  
+7 HEPATITIS B PROFILE  
+8 BLOOD SUGAR  
+NUCLEAR MEDICINE  
+9 dexa scan  
+OUTPATIENT MEDICATIONS  
+10 calcium carbonate  
+11 robaxin  
+12 septra  
+13 naprosyn  
+14 ACYCLOVIR CAPS  
+15 amoxicillin xxxx  
 ***
 
+Press \<RETURN\> to see more, '\^' to exit this list, OR  
+CHOOSE 1-15:  
 ***
 
-CPRSUser,three personal quick orders.
-
+CPRSUser,three personal quick orders:  
+OUTPATIENT MEDICATIONS  
+16 triphasil  
+17 motrin  
+18 naprosyn  
+19 DOXCYCLINE  
+GENERAL RADIOLOGY  
+20 UGI Series  
+21 hands  
+22 foot  
+23 knee  
+24 sinus  
+GENERAL RADIOLOGY  
+25 Thoracic Spine  
+26 LUMBAR SPINE  
+27 CXR  
+ULTRASOUND  
+28 Pelvic ultrasound  
 ***
 
-LABORATORY
-
-***
-
-1 H. Pylori
-
-***
-
-2 Dhea
-
-***
-
-3 ebv titer
-
-***
-
-4 lipids
-
-***
-
-5 free T4
-
-***
-
-6 HBA1C
-
-***
-
-7 HEPATITIS B PROFILE
-
-***
-
-8 BLOOD SUGAR
-
-***
-
-NUCLEAR MEDICINE
-
-***
-
-9 dexa scan
-
-***
-
-OUTPATIENT MEDICATIONS
-
-***
-
-10 calcium carbonate
-
-***
-
-11 robaxin
-
-***
-
-12 septra
-
-***
-
-13 naprosyn
-
-***
-
-14 ACYCLOVIR CAPS
-
-***
-
-15 amoxicillin xxxx
-
-***
-
-***
-
-Press \<RETURN\> to see more, '\^' to exit this list, OR
-
-***
-
-CHOOSE 1-15:
-
-***
-
-***
-
-CPRSUser,three personal quick orders:
-
-***
-
-OUTPATIENT MEDICATIONS
-
-***
-
-16 triphasil
-
-***
-
-17 motrin
-
-***
-
-18 naprosyn
-
-***
-
-19 DOXCYCLINE
-
-***
-
-GENERAL RADIOLOGY
-
-***
-
-20 UGI Series
-
-***
-
-21 hands
-
-***
-
-22 foot
-
-***
-
-23 knee
-
-***
-
-24 sinus
-
-***
-
-GENERAL RADIOLOGY
-
-***
-
-25 Thoracic Spine
-
-***
-
-26 LUMBAR SPINE
-
-***
-
-27 CXR
-
-***
-
-ULTRASOUND
-
-***
-
-28 Pelvic ultrasound
-
-***
-
-***
-
-CHOOSE 1-28:
-
-***
-
+CHOOSE 1-28:  
 ***
 
 **Edit Personal Quick Orders by User, con’t**
 
-1.  Because personal quick orders are stored by the quick order definition, rather than by user, it is possible that multiple users can share the same personal quick order. When you attempt to edit such a quick order, you will be informed about all other users that share the quick order.
-
+1.  Because personal quick orders are stored by the quick order definition, rather than by user, it is possible that multiple users can share the same personal quick order. When you attempt to edit such a quick order, you will be informed about all other users that share the quick order.  
+Select NEW PERSON NAME: CPRSUser,four  
 ***
 
-Select NEW PERSON NAME: CPRSUser,four
-
+CPRSUser,four personal quick orders.  
+LABORATORY  
+1 ca 125  
+2 H. Pylori  
+3 CBC  
+4 Dhea  
 ***
 
+CHOOSE 1-4: 3  
+***  
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*  
+\*\*\*\*\* WARNING \*\*\*\*\*  
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*  
 ***
 
-CPRSUser,four personal quick orders.
-
+Multiple users share this personal quick order.  
+Modifying this personal quick order will change  
+it for all of the following users:  
 ***
 
-LABORATORY
-
+CPRSuser,two  
+CPRSuser,four  
+CPRSuser,seven  
 ***
 
-1 ca 125
-
-***
-
-2 H. Pylori
-
-***
-
-3 CBC
-
-***
-
-4 Dhea
-
-***
-
-***
-
-CHOOSE 1-4: 3
-
-***
-
-***
-
-***
-
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-
-***
-
-\*\*\*\*\* WARNING \*\*\*\*\*
-
-***
-
-\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-
-***
-
-***
-
-Multiple users share this personal quick order.
-
-***
-
-Modifying this personal quick order will change
-
-***
-
-it for all of the following users:
-
-***
-
-***
-
-CPRSuser,two
-
-***
-
-CPRSuser,four
-
-***
-
-CPRSuser,seven
-
-***
-
-***
-
-Are you sure you want to edit this personal quick order? NO//
-
-***
-
+Are you sure you want to edit this personal quick order? NO//  
 ***
 
 If you proceed and modify the personal quick order, you should contact each individual who uses the personal quick order, to make sure they are aware of the changes.
@@ -12305,446 +4811,143 @@ If you proceed and modify the personal quick order, you should contact each indi
 
 #### Enter/Edit Order Sets
 
-**This option lets you add or edit order sets. Order sets are groups of quick orders that are commonly ordered together for certain situations, such as pre-admission, pre-operative, etc. The sets can be created through this option by selecting quick orders from all services. Then when you enter the order screens for CPRS, you can pick an order set by the name you gave it in this option.**
-
+**This option lets you add or edit order sets. Order sets are groups of quick orders that are commonly ordered together for certain situations, such as pre-admission, pre-operative, etc. The sets can be created through this option by selecting quick orders from all services. Then when you enter the order screens for CPRS, you can pick an order set by the name you gave it in this option.**  
 ***
 
-***
-
-** NOTE:** Order Sets in CPRS are slightly different than they were in OE/RR v 2.5. In version 2.5, order sets could be of the protocol menu type where ordering items could be grouped and the user would choose which items to order from that menu. Order sets could also be extended action type protocols which ordered all of the items upon choice of the order set. CPRS considers all order sets to be extended action types and doesn’t prompt the user for the items contained within.
-
-***
-
+** NOTE:** Order Sets in CPRS are slightly different than they were in OE/RR v 2.5. In version 2.5, order sets could be of the protocol menu type where ordering items could be grouped and the user would choose which items to order from that menu. Order sets could also be extended action type protocols which ordered all of the items upon choice of the order set. CPRS considers all order sets to be extended action types and doesn’t prompt the user for the items contained within.  
 **1.** Select *Enter/edit order sets* from the Order Menu Management menu
 
-OI Enter/edit orderable items
-
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+AO Assign Primary Order Menu  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menu  
 ***
 
-PM Enter/edit prompts
-
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
 ***
 
-GO Enter/edit generic orders
-
-***
-
-QO Enter/edit quick orders
-
-***
-
-ST Enter/edit order sets
-
-***
-
-AC Enter/edit actions
-
-***
-
-MN Enter/edit order menus
-
-***
-
-AO Assign Primary Order Menu
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menu
-
-***
-
-***
-
-You have PENDING ALERTS
-
-***
-
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-***
-
-Select **Order** Menu Management Option: **st** Enter/edit order sets
-
-***
-
+Select **Order** Menu Management Option: **st** Enter/edit order sets  
 **2.** Enter an order set name (either a pre-existing one or a new one).
 
-Select ORDER SET NAME: **??**
-
-***
-
-Answer with ORDER DIALOG NAME
-
-***
-
-Do you want the entire ORDER DIALOG List? **Y** (Yes)
-
-***
-
-Choose from:
-
-***
-
-ORZ GMENU AD PROTOCOL
-
-***
-
-ORZ GMENU ROPES COURSE VERBAL
-
-***
-
-ORZ GMENU SLIDING SCALE INSULI
-
-***
-
-ORZ GMENU URINE DRUGS OF ABUSE
-
-***
-
-ORZ GSET MAURI
-
-***
-
-ORZ GXTEXT NPO AT MN X MEDS
-
-***
-
-ORZ GXTEXT NPO X MEDS
-
-***
-
-PSJQOS ACET PO/PR
-
-***
-
-PSJQOS ACETPO/PR
-
-***
-
-PSJQOS ADMIT 3ET
-
-***
-
-PSJQOS ADMIT 61C
-
-***
-
-Press RETURN to continue or \^ to exit: **\^**
-
-***
-
-You may enter a new ORDER DIALOG, if you wish
-
-***
-
+Select ORDER SET NAME: **??**  
+Answer with ORDER DIALOG NAME  
+Do you want the entire ORDER DIALOG List? **Y** (Yes)  
+Choose from:  
+ORZ GMENU AD PROTOCOL  
+ORZ GMENU ROPES COURSE VERBAL  
+ORZ GMENU SLIDING SCALE INSULI  
+ORZ GMENU URINE DRUGS OF ABUSE  
+ORZ GSET MAURI  
+ORZ GXTEXT NPO AT MN X MEDS  
+ORZ GXTEXT NPO X MEDS  
+PSJQOS ACET PO/PR  
+PSJQOS ACETPO/PR  
+PSJQOS ADMIT 3ET  
+PSJQOS ADMIT 61C  
+Press RETURN to continue or \^ to exit: **\^**  
+You may enter a new ORDER DIALOG, if you wish  
 **Enter/edit order sets, cont’d**
 
-Select ORDER SET NAME: **ZZPRE-OP**
-
+Select ORDER SET NAME: **ZZPRE-OP**  
+Are you adding 'ZZPRE-OP' as a new ORDER DIALOG? No// **Y** (Yes)  
+Do you wish to copy an existing order set? YES// **NO**  
+NAME: PRE-OP//**\<Enter\>**  
+DISPLAY TEXT: **Pre-Operative Order Set**  
+DESCRIPTION:  
+1\>**A set of standard orders for patients prior to surgery**  
+2\>**\<Enter\>**  
+EDIT Option:**\<Enter\>**  
+**3.** Enter the items you want to include in the order set.  
+Select ORDER SET COMPONENT: **?**  
+This field specifies the order in which this item will be displayed  
+or processed.  
+Select ORDER SET COMPONENT: **1**  
+SEQUENCE: 1//**\<Enter\>**  
+ITEM: **ADMIT PATIENT** OR GXMOVE ADMIT PATIENT  
 ***
 
-Are you adding 'ZZPRE-OP' as a new ORDER DIALOG? No// **Y** (Yes)
-
+Select ORDER SET COMPONENT: **2**  
+SEQUENCE: 2//**\<Enter\>**  
+ITEM: **LRTZ CHEM 7**  
 ***
 
-Do you wish to copy an existing order set? YES// **NO**
-
+Select ORDER SET COMPONENT: **3**  
+SEQUENCE: 3//**\<Enter\>**  
+ITEM: ACETOMENOPHINE??  
+Enter an order dialog; a dialog that is an ancestor may not also be a  
+sub-item.  
+Answer with ORDER DIALOG NAME, or DISPLAY TEXTITEM: **??**  
 ***
 
-NAME: PRE-OP//**\<Enter\>**
-
+This field points to an order dialog which is subordinate to this.  
+dialog NOTE: The parent dialog menu or one of its ancestors may not  
+be entered as an item.  
 ***
 
-DISPLAY TEXT: **Pre-Operative Order Set**
-
+ITEM: **ORWD GENERIC VITALS**  
 ***
 
-DESCRIPTION:
-
-***
-
-1\>**A set of standard orders for patients prior to surgery**
-
-***
-
-2\>**\<Enter\>**
-
-***
-
-EDIT Option:**\<Enter\>**
-
-***
-
-**3.** Enter the items you want to include in the order set.
-
-***
-
-Select ORDER SET COMPONENT: **?**
-
-***
-
-This field specifies the order in which this item will be displayed
-
-***
-
-or processed.
-
-***
-
-Select ORDER SET COMPONENT: **1**
-
-***
-
-SEQUENCE: 1//**\<Enter\>**
-
-***
-
-ITEM: **ADMIT PATIENT** OR GXMOVE ADMIT PATIENT
-
-***
-
-***
-
-Select ORDER SET COMPONENT: **2**
-
-***
-
-SEQUENCE: 2//**\<Enter\>**
-
-***
-
-ITEM: **LRTZ CHEM 7**
-
-***
-
-***
-
-Select ORDER SET COMPONENT: **3**
-
-***
-
-SEQUENCE: 3//**\<Enter\>**
-
-***
-
-ITEM: ACETOMENOPHINE??
-
-***
-
-Enter an order dialog; a dialog that is an ancestor may not also be a
-
-***
-
-sub-item.
-
-***
-
-Answer with ORDER DIALOG NAME, or DISPLAY TEXTITEM: **??**
-
-***
-
-***
-
-This field points to an order dialog which is subordinate to this.
-
-***
-
-dialog NOTE: The parent dialog menu or one of its ancestors may not
-
-***
-
-be entered as an item.
-
-***
-
-***
-
-ITEM: **ORWD GENERIC VITALS**
-
-***
-
-***
-
-Select ORDER SET COMPONENT: **4**
-
-***
-
-SEQUENCE: 4//**\<Enter\>**
-
-***
-
-ITEM: **\<Enter\>**
-
-***
-
+Select ORDER SET COMPONENT: **4**  
+SEQUENCE: 4//**\<Enter\>**  
+ITEM: **\<Enter\>**  
 #### Enter/Edit Actions
 
 This option provides the equivalent of a feature of OE/RR 2.5 that allowed sites to have access to a protocol's entry or exit actions. This enables you to add Surgery or other programs to a CPRS menu.
 
 **☞  NOTE:** This option is intended for programmers who can modify M code.
 
-OI Enter/edit orderable items
-
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+AO Assign Primary Order Menu  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menu  
 ***
 
-PM Enter/edit prompts
-
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
 ***
 
-GO Enter/edit generic orders
-
+Select Order Menu Management Option: **AC** Enter/edit actions  
+Select ACTION NAME: **?**  
+Answer with ORDER DIALOG NAME  
+Do you want the entire ORDER DIALOG List? Y (Yes)  
+Choose from:  
+LRX NEW COLLECTION TYPE  
+LRX NEW TIME  
+ZDGOERR TRANSFER  
 ***
 
-QO Enter/edit quick orders
-
+This is the name of the dialog; entries that were converted from the  
+Protocol file will retain the same name. Namespacing is not required,  
+but still encouraged.  
+You may enter a new ORDER DIALOG, if you wish  
+Answer must be 3-63 characters in length.  
+Select ACTION NAME: **ZDGOERR TRANSFER**  
+NAME: ZDGOERR TRANSFER// **\<Enter\>**  
+DISPLAY TEXT: TRANSFER PATIENT// **\<Enter\>**  
+ENTRY ACTION: D SAVE\^ORXD S DGPMT=2 D LO\^DGUTL,OREN\^DGPMV K VAINDT D INP\^VADPT,R  
+EAD\^ORUTL  
+Replace **\<Enter\>**  
+EXIT ACTION: K DGPMASIH D RSTR\^ORXD Replace **\<Enter\>**  
+DESCRIPTION:  
+1\>**\<Enter\>**  
 ***
 
-ST Enter/edit order sets
-
-***
-
-AC Enter/edit actions
-
-***
-
-MN Enter/edit order menus
-
-***
-
-AO Assign Primary Order Menu
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menu
-
-***
-
-***
-
-You have PENDING ALERTS
-
-***
-
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-***
-
-Select Order Menu Management Option: **AC** Enter/edit actions
-
-***
-
-Select ACTION NAME: **?**
-
-***
-
-Answer with ORDER DIALOG NAME
-
-***
-
-Do you want the entire ORDER DIALOG List? Y (Yes)
-
-***
-
-Choose from:
-
-***
-
-LRX NEW COLLECTION TYPE
-
-***
-
-LRX NEW TIME
-
-***
-
-ZDGOERR TRANSFER
-
-***
-
-***
-
-This is the name of the dialog; entries that were converted from the
-
-***
-
-Protocol file will retain the same name. Namespacing is not required,
-
-***
-
-but still encouraged.
-
-***
-
-You may enter a new ORDER DIALOG, if you wish
-
-***
-
-Answer must be 3-63 characters in length.
-
-***
-
-Select ACTION NAME: **ZDGOERR TRANSFER**
-
-***
-
-NAME: ZDGOERR TRANSFER// **\<Enter\>**
-
-***
-
-DISPLAY TEXT: TRANSFER PATIENT// **\<Enter\>**
-
-***
-
-ENTRY ACTION: D SAVE\^ORXD S DGPMT=2 D LO\^DGUTL,OREN\^DGPMV K VAINDT D INP\^VADPT,R
-
-***
-
-EAD\^ORUTL
-
-***
-
-Replace **\<Enter\>**
-
-***
-
-EXIT ACTION: K DGPMASIH D RSTR\^ORXD Replace **\<Enter\>**
-
-***
-
-DESCRIPTION:
-
-***
-
-1\>**\<Enter\>**
-
-***
-
-***
-
-Select ACTION NAME: **\<Enter\>**
-
-***
-
+Select ACTION NAME: **\<Enter\>**  
 #### Enter/Edit Order Menus
 
 Use this option to edit the items on an existing order menu or to create new order menus. Order menus you create here will be available to your users in both the List Manager and GUI interfaces when you assign them as primary order menus.
@@ -12761,598 +4964,187 @@ To make order menus as friendly to users as possible, you should try to keep the
 
 **1.** Select Enter/edit order menus from the CPRS Implementation Menu.
 
-Select Option: **Order Menu Management** Option
-
+Select Option: **Order Menu Management** Option  
 ***
 
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+AO Assign Primary Order Menu  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menu  
 ***
 
-OI Enter/edit orderable items
-
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
 ***
 
-PM Enter/edit prompts
-
-***
-
-GO Enter/edit generic orders
-
-***
-
-QO Enter/edit quick orders
-
-***
-
-ST Enter/edit order sets
-
-***
-
-AC Enter/edit actions
-
-***
-
-MN Enter/edit order menus
-
-***
-
-AO Assign Primary Order Menu
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menu
-
-***
-
-***
-
-You have PENDING ALERTS
-
-***
-
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-***
-
-Select **Order Menu Management** Option: **mn** Enter/edit order menus
-
-***
-
+Select **Order Menu Management** Option: **mn** Enter/edit order menus  
 *Enter/edit order menus, cont’d*
 
 **2.** Select an existing menu to add items to or enter the name of a new menu.
 
-Select ORDER MENU: **?**
-
+Select ORDER MENU: **?**  
+Answer with ORDER DIALOG NAME  
+Do you want the entire ORDER DIALOG List? **Y** (Yes)  
+Choose from:  
+FHWMENU  
+GMRVORMENU  
+OR ADD MENU CLINICIAN  
+OR GMENU ACTIVITY ORDERS  
+OR GMENU ORDER SETS  
+OR GMENU OTHER ORDERS  
+OR GMENU PATIENT CARE ORDERS  
+OR GXMOVE PATIENT MOVEMENT  
 ***
 
-Answer with ORDER DIALOG NAME
-
-***
-
-Do you want the entire ORDER DIALOG List? **Y** (Yes)
-
-***
-
-Choose from:
-
-***
-
-FHWMENU
-
-***
-
-GMRVORMENU
-
-***
-
-OR ADD MENU CLINICIAN
-
-***
-
-OR GMENU ACTIVITY ORDERS
-
-***
-
-OR GMENU ORDER SETS
-
-***
-
-OR GMENU OTHER ORDERS
-
-***
-
-OR GMENU PATIENT CARE ORDERS
-
-***
-
-OR GXMOVE PATIENT MOVEMENT
-
-***
-
-***
-
-You may enter a new ORDER DIALOG, if you wish
-
-***
-
-Answer must be 3-63 characters in length.
-
-***
-
-Select ORDER MENU: **ORZ ADD MENU CLINICIAN**
-
-***
-
+You may enter a new ORDER DIALOG, if you wish  
+Answer must be 3-63 characters in length.  
+Select ORDER MENU: **ORZ ADD MENU CLINICIAN**  
 **3.** The menu editor appears. Choose an action (add items, remove items, edit items, etc.). Note that the menu editor has horizontal and vertical coordinates. These let you specify where on the menu to place items.
 
 **Clinician Menu Example**
 
 **1.** Select Enter/edit order menus, then enter ORZ ADD MENU CLINICIAN.
 
-Select **Order Menu Management** Option: **mn** Enter/edit order menus
-
-***
-
-Select ORDER MENU: **ORZ ADD MENU CLINICIAN**
-
-***
-
+Select **Order Menu Management** Option: **mn** Enter/edit order menus  
+Select ORDER MENU: **ORZ ADD MENU CLINICIAN**  
 **2.** After the Menu Editor screen appears, select Add to add items, then select Menu, to add menu items.
 
 *Enter/edit order menus, cont’d*
 
 **Clinician Menu Example**
 
-**Menu Editor**  Jul 15, 1997 14:01:13 Page: 1 of 1
-
-***
-
-Menu: ORZ ADD MENU CLINICIAN Column Width: 26
-
-***
-
-1 2 3 4
-
-***
-
-\|0 ORDER SETS... 30 PATIENT CARE... 70 LABORATORY...
-
-***
-
-\|1 Patient Movement 31 Condom Catheter 71 Chem 7
-
-***
-
-\|2 Diagnosis 32 Guaiac Stools 72 T&S
-
-***
-
-\|3 Condition 33 Incentive Spirometer 73 Glucose
-
-***
-
-\+4 Allergies 34 Dressing Change 74 CBC w/Diff
-
-***
-
-\| 75 PT
-
-***
-
-\|10 PARAMETERS... 40 DIETETICS... 76 PTT
-
-***
-
-\|11 TPR B/P 41 Regular Diet 77 CPK
-
-***
-
-\|12 Weight 42 Tubefeeding 78 CPK
-
-***
-
-113 I & O 43 NPO at Midnight 79 LDH
-
-***
-
-\|14 Call HO on 80 Urinalysis
-
-***
-
-\| 50 IV FLUIDS... 81 Culture & Suscept
-
-***
-
-\|20 ACTIVITY... 51 OUTPATIENT MEDS...
-
-***
-
-\|21 Ad Lib 55 INPATIENT MEDS... 90 OTHER ORDERS...
-
-***
-
-\+23 Bed Rest / BRP 91 EKG: Portable
-
-***
-
-\|24 Ambulate TID 60 IMAGING ...
-
-***
-
-\|25 Up in Chair TID 61 Chest 2 views PA&LAT 99 Text Only Order
-
-***
-
-**+ Next Screen - Prev Screen ?? More Actions \>\>\>**
-
-***
-
-Add ... Edit ... Assign to User(s) Select New Menu
-
-***
-
-Remove ... Toggle Display Order Dialogs ... Quit
-
-***
-
-Select Action: Quit//
-
-***
-
+**Menu Editor**  Jul 15, 1997 14:01:13 Page: 1 of 1  
+Menu: ORZ ADD MENU CLINICIAN Column Width: 26  
+1 2 3 4  
+\|0 ORDER SETS... 30 PATIENT CARE... 70 LABORATORY...  
+\|1 Patient Movement 31 Condom Catheter 71 Chem 7  
+\|2 Diagnosis 32 Guaiac Stools 72 T&S  
+\|3 Condition 33 Incentive Spirometer 73 Glucose  
+\+4 Allergies 34 Dressing Change 74 CBC w/Diff  
+\| 75 PT  
+\|10 PARAMETERS... 40 DIETETICS... 76 PTT  
+\|11 TPR B/P 41 Regular Diet 77 CPK  
+\|12 Weight 42 Tubefeeding 78 CPK  
+113 I & O 43 NPO at Midnight 79 LDH  
+\|14 Call HO on 80 Urinalysis  
+\| 50 IV FLUIDS... 81 Culture & Suscept  
+\|20 ACTIVITY... 51 OUTPATIENT MEDS...  
+\|21 Ad Lib 55 INPATIENT MEDS... 90 OTHER ORDERS...  
+\+23 Bed Rest / BRP 91 EKG: Portable  
+\|24 Ambulate TID 60 IMAGING ...  
+\|25 Up in Chair TID 61 Chest 2 views PA&LAT 99 Text Only Order  
+**+ Next Screen - Prev Screen ?? More Actions \>\>\>**  
+Add ... Edit ... Assign to User(s) Select New Menu  
+Remove ... Toggle Display Order Dialogs ... Quit  
+Select Action: Quit//  
 ***
 
 **3.** Answer the following prompts about the new orderable.
 
-Select Action: Quit// **A** Add Items
-
+Select Action: Quit// **A** Add Items  
 ***
 
+Menu Items Text or Header Row  
 ***
 
-Menu Items Text or Header Row
-
-***
-
-***
-
-Add: **M**
-
-***
-
-ITEM: **ORZ GXACTV EXERCISE**
-
-***
-
-ROW: **17**
-
-***
-
-COLUMN: **1**
-
-***
-
-DISPLAY TEXT: **Exercise**
-
-***
-
-MNEMONIC**: 25**
-
-***
-
-ITEM**: \<Enter\>**
-
-***
-
-Rebuilding menu display ...
-
-***
-
+Add: **M**  
+ITEM: **ORZ GXACTV EXERCISE**  
+ROW: **17**  
+COLUMN: **1**  
+DISPLAY TEXT: **Exercise**  
+MNEMONIC**: 25**  
+ITEM**: \<Enter\>**  
+Rebuilding menu display ...  
 *Enter/edit order menus, cont’d*
 
 **4.** The new menu appears with your new item on it. You can now perform any of the actions listed below: Add another item, remove an item, edit, and toggle display (to show the technical name of the item; e.g., ORZ GXACTV, instead of the menu text), assign to User(s), etc.
 
-**Menu Editor**  Jul 15, 1997 14:01:13 Page: 1 of 1
-
-***
-
-Menu: OR ADD MENU CLINICIAN Column Width: 26
-
-***
-
-1 2 3 4
-
-***
-
-\|0 ORDER SETS... 30 PATIENT CARE... 70 LABORATORY...
-
-***
-
-\|1 Patient Movement 31 Condom Catheter 71 Chem 7
-
-***
-
-\|2 Diagnosis 32 Guaiac Stools 72 T&S
-
-***
-
-\|3 Condition 33 Incentive Spirometer 73 Glucose
-
-***
-
-\+4 Allergies 34 Dressing Change 74 CBC w/Diff
-
-***
-
-\| 75 PT
-
-***
-
-\|10 PARAMETERS... 40 DIETETICS... 76 PTT
-
-***
-
-\|11 TPR B/P 41 Regular Diet 77 CPK
-
-***
-
-\|12 Weight 42 Tubefeeding 78 CPK
-
-***
-
-113 I & O 43 NPO at Midnight 79 LDH
-
-***
-
-\|14 Call HO on 80 Urinalysis
-
-***
-
-\| 50 IV FLUIDS... 81 Culture & Suscept
-
-***
-
-\|20 ACTIVITY... 51 OUTPATIENT MEDS...
-
-***
-
-\|21 Ad Lib 55 INPATIENT MEDS... 90 OTHER ORDERS...
-
-***
-
-\+23 Bed Rest / BRP 91 EKG: Portable
-
-***
-
-\|24 Ambulate TID 60 IMAGING ...
-
-***
-
-\|25 Exercise 61 Chest 2 views PA&LAT 99 Text Only Order
-
-***
-
-**+ Next Screen - Prev Screen ?? More Actions \>\>\>**
-
-***
-
-Add ... Edit ... Assign to User(s) Select New Menu
-
-***
-
-Remove ... Toggle Display Order Dialogs ... Quit
-
-***
-
-Select Action: Quit// **A** Add Items
-
-***
-
+**Menu Editor**  Jul 15, 1997 14:01:13 Page: 1 of 1  
+Menu: OR ADD MENU CLINICIAN Column Width: 26  
+1 2 3 4  
+\|0 ORDER SETS... 30 PATIENT CARE... 70 LABORATORY...  
+\|1 Patient Movement 31 Condom Catheter 71 Chem 7  
+\|2 Diagnosis 32 Guaiac Stools 72 T&S  
+\|3 Condition 33 Incentive Spirometer 73 Glucose  
+\+4 Allergies 34 Dressing Change 74 CBC w/Diff  
+\| 75 PT  
+\|10 PARAMETERS... 40 DIETETICS... 76 PTT  
+\|11 TPR B/P 41 Regular Diet 77 CPK  
+\|12 Weight 42 Tubefeeding 78 CPK  
+113 I & O 43 NPO at Midnight 79 LDH  
+\|14 Call HO on 80 Urinalysis  
+\| 50 IV FLUIDS... 81 Culture & Suscept  
+\|20 ACTIVITY... 51 OUTPATIENT MEDS...  
+\|21 Ad Lib 55 INPATIENT MEDS... 90 OTHER ORDERS...  
+\+23 Bed Rest / BRP 91 EKG: Portable  
+\|24 Ambulate TID 60 IMAGING ...  
+\|25 Exercise 61 Chest 2 views PA&LAT 99 Text Only Order  
+**+ Next Screen - Prev Screen ?? More Actions \>\>\>**  
+Add ... Edit ... Assign to User(s) Select New Menu  
+Remove ... Toggle Display Order Dialogs ... Quit  
+Select Action: Quit// **A** Add Items  
 ***
 
 **Dietetics Order Menu Example**
 
-**1.** Select Enter/edit order menus, then enter FHMENUZ for Dietetics.
-
-***
-
-Select **Order Menu Management** Option: **mn** Enter/edit order menus
-
-***
-
-Select ORDER MENU: **FHMENUZ**
-
-***
-
+**1.** Select Enter/edit order menus, then enter FHMENUZ for Dietetics.  
+Select **Order Menu Management** Option: **mn** Enter/edit order menus  
+Select ORDER MENU: **FHMENUZ**  
 **2.** After the Menu Editor screen appears, select the Add action.
 
-**Menu Editor**  Jul 15, 1997 16:11:17 Page: 1 of 1
-
+**Menu Editor**  Jul 15, 1997 16:11:17 Page: 1 of 1  
+Menu: FHWMENUZ Column Width: 40  
+1 2  
+\|1 Diet Order  
+\|2 NPO N1 NPO Now  
+\|3 Early/Late Tray N2 NPO at Midnight  
+\|4 Tubefeeding  
+\+5 Additional Orders  
+\|  
+\|7 Isolation/Precautions  
+\|  
+\|  
+1  
+\|  
+\|  
+\|  
+\|  
+\+  
+***  
+**+ Next Screen - Prev Screen ?? More Actions \>\>\>**  
+Add ... Edit ... Assign to User(s) Select New Menu  
+Remove ... Toggle Display Order Dialogs ... Quit  
+Select Action: Quit// **A** ADD  
+**Menu Editor** Jul 15, 1997 16:11:17 Page: 1 of 1  
+Menu: FHWMENUZ Column Width: 40  
+1 2  
+\|1 Diet Order  
+\|2 NPO N1 NPO Now  
+\|3 Early/Late Tray N2 NPO at Midnight  
+\|4 Tubefeeding  
+\+5 Additional Orders  
+\|  
+\|7 Isolation/Precautions  
+\|  
+\|  
+1  
+\|  
+\|  
+\|  
+\|  
+\+  
+**+ Next Screen - Prev Screen ?? More Actions \>\>\>**  
+Menu Items Text or Header Row  
 ***
 
-Menu: FHWMENUZ Column Width: 40
-
-***
-
-1 2
-
-***
-
-\|1 Diet Order
-
-***
-
-\|2 NPO N1 NPO Now
-
-***
-
-\|3 Early/Late Tray N2 NPO at Midnight
-
-***
-
-\|4 Tubefeeding
-
-***
-
-\+5 Additional Orders
-
-***
-
-\|
-
-***
-
-\|7 Isolation/Precautions
-
-***
-
-\|
-
-***
-
-\|
-
-***
-
-1
-
-***
-
-\|
-
-***
-
-\|
-
-***
-
-\|
-
-***
-
-\|
-
-***
-
-\+
-
-***
-
-***
-
-***
-
-**+ Next Screen - Prev Screen ?? More Actions \>\>\>**
-
-***
-
-Add ... Edit ... Assign to User(s) Select New Menu
-
-***
-
-Remove ... Toggle Display Order Dialogs ... Quit
-
-***
-
-Select Action: Quit// **A** ADD
-
-***
-
-**Menu Editor** Jul 15, 1997 16:11:17 Page: 1 of 1
-
-***
-
-Menu: FHWMENUZ Column Width: 40
-
-***
-
-1 2
-
-***
-
-\|1 Diet Order
-
-***
-
-\|2 NPO N1 NPO Now
-
-***
-
-\|3 Early/Late Tray N2 NPO at Midnight
-
-***
-
-\|4 Tubefeeding
-
-***
-
-\+5 Additional Orders
-
-***
-
-\|
-
-***
-
-\|7 Isolation/Precautions
-
-***
-
-\|
-
-***
-
-\|
-
-***
-
-1
-
-***
-
-\|
-
-***
-
-\|
-
-***
-
-\|
-
-***
-
-\|
-
-***
-
-\+
-
-***
-
-**+ Next Screen - Prev Screen ?? More Actions \>\>\>**
-
-***
-
-Menu Items Text or Header Row
-
-***
-
-***
-
-Add: M
-
-***
-
+Add: M  
 ***
 
 **Enter/edit order menus, cont’d**
@@ -13361,106 +5153,34 @@ Add: M
 
 1.  Answer the following prompts about the new orderable.
 
-ITEM: **FHW9Z**
-
+ITEM: **FHW9Z**  
+ROW: **4**  
+COLUMN: **2**  
+DISPLAY TEXT: **Junk Food**  
+MNEMONIC**: JF**  
 ***
 
-ROW: **4**
-
+ITEM: **\<Enter\>**  
 ***
 
-COLUMN: **2**
-
-***
-
-DISPLAY TEXT: **Junk Food**
-
-***
-
-MNEMONIC**: JF**
-
-***
-
-***
-
-ITEM: **\<Enter\>**
-
-***
-
-***
-
-Rebuilding menu display ...
-
-***
-
-**Menu Editor** Jul 15, 1997 16:20:20 Page: 1 of 1
-
-***
-
-Menu: FHWMENU Column Width: 40
-
-***
-
-1 2
-
-***
-
-\|1 Diet Order
-
-***
-
-\|2 NPO N1 NPO Now
-
-***
-
-\|3 Early/Late Tray N2 NPO at Midnight
-
-***
-
-\|4 Tubefeeding JF Junk Food
-
-***
-
-\+5 Additional Orders
-
-***
-
-\|
-
-***
-
-\|7 Isolation/Precautions
-
-***
-
-\|
-
-***
-
-\|
-
-***
-
-\|
-
-***
-
-**+ Next Screen - Prev Screen ?? More Actions \>\>\>**
-
-***
-
-Add ... Edit ... Assign to User(s) Select New Menu
-
-***
-
-Remove ... Toggle Display Order Dialogs ... Quit
-
-***
-
-Select Action: Quit// **ASSIGN TO USER(S)**
-
-***
-
+Rebuilding menu display ...  
+**Menu Editor** Jul 15, 1997 16:20:20 Page: 1 of 1  
+Menu: FHWMENU Column Width: 40  
+1 2  
+\|1 Diet Order  
+\|2 NPO N1 NPO Now  
+\|3 Early/Late Tray N2 NPO at Midnight  
+\|4 Tubefeeding JF Junk Food  
+\+5 Additional Orders  
+\|  
+\|7 Isolation/Precautions  
+\|  
+\|  
+\|  
+**+ Next Screen - Prev Screen ?? More Actions \>\>\>**  
+Add ... Edit ... Assign to User(s) Select New Menu  
+Remove ... Toggle Display Order Dialogs ... Quit  
+Select Action: Quit// **ASSIGN TO USER(S)**  
 #### Assign Primary Order Menu
 
 This option is used to assign a primary order menu to users. A primary order menu must be assigned to each user who will add orders in CPRS. This menu appears in the List Manager interface after assignment.
@@ -13475,566 +5195,191 @@ OR ADD MENU WARD CLERK
 
 ORZ ADD MENU DR BROWN
 
-OI Enter/edit orderable items
-
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+AO Assign Primary Order Menu  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menu  
 ***
 
-PM Enter/edit prompts
-
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
 ***
 
-GO Enter/edit generic orders
-
+Select Order Menu Management Option: **A** Assign Primary Order Menu  
 ***
 
-QO Enter/edit quick orders
-
+Select NEW PERSON NAME: **CPRSPROVIDER,FIVE** CPF  
 ***
 
-ST Enter/edit order sets
-
+Add Orders Menu Default for User: **CPRSPROVIDER,FIVE**  
+\-------------------------------------------------------------------------  
+Add New Orders ORZ ADD MENU CLINICIAN  
+\-------------------------------------------------------------------------  
+Add Order Menu Default: ORZ ADD MENU CLINICIAN// **\<Enter\>** ORZ ADD MENU CLINICIAN  
 ***
 
-AC Enter/edit actions
-
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+AO Assign Primary Order Menu  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menu  
 ***
 
-MN Enter/edit order menus
-
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
 ***
 
-AO Assign Primary Order Menu
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menu
-
-***
-
-***
-
-You have PENDING ALERTS
-
-***
-
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-***
-
-Select Order Menu Management Option: **A** Assign Primary Order Menu
-
-***
-
-***
-
-Select NEW PERSON NAME: **CPRSPROVIDER,FIVE** CPF
-
-***
-
-***
-
-Add Orders Menu Default for User: **CPRSPROVIDER,FIVE**
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-Add New Orders ORZ ADD MENU CLINICIAN
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-Add Order Menu Default: ORZ ADD MENU CLINICIAN// **\<Enter\>** ORZ ADD MENU CLINICIAN
-
-***
-
-***
-
-OI Enter/edit orderable items
-
-***
-
-PM Enter/edit prompts
-
-***
-
-GO Enter/edit generic orders
-
-***
-
-QO Enter/edit quick orders
-
-***
-
-ST Enter/edit order sets
-
-***
-
-AC Enter/edit actions
-
-***
-
-MN Enter/edit order menus
-
-***
-
-AO Assign Primary Order Menu
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menu
-
-***
-
-***
-
-You have PENDING ALERTS
-
-***
-
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-***
-
-Select Order Menu Management Option: **\<Enter\>**
-
-***
-
+Select Order Menu Management Option: **\<Enter\>**  
 #### Convert Protocols
 
 This option lets you convert individual protocols used in OE/RR 2.5 to CPRS orderable items.
 
 **☞ NOTE:** Most protocols currently on OE/RR 2.5 menus at a site are automatically converted to CPRS menus. However, many quick orders created by sites have entry and exit actions containing M code, which the conversion utility can’t convert. Before converting these, you need to use the *Enter/Edit Orderable Items* to delete the entry and exit actions.
 
-1.  Select Convert Protocols from the Order Menu Management menu on the CPRS Implementation menu.
-
+1.  Select Convert Protocols from the Order Menu Management menu on the CPRS Implementation menu.  
 ***
 
+Select CPRS Configuration Menu Option: **MM** Order Menu Management  
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+AO Assign primary order menu  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menu  
 ***
 
-Select CPRS Configuration Menu Option: **MM** Order Menu Management
-
-***
-
-OI Enter/edit orderable items
-
-***
-
-PM Enter/edit prompts
-
-***
-
-GO Enter/edit generic orders
-
-***
-
-QO Enter/edit quick orders
-
-***
-
-ST Enter/edit order sets
-
-***
-
-AC Enter/edit actions
-
-***
-
-MN Enter/edit order menus
-
-***
-
-AO Assign primary order menu
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menu
-
-***
-
-***
-
-Select Order Menu Management Option: **CP** Convert protocols
-
-***
-
+Select Order Menu Management Option: **CP** Convert protocols  
 ***
 
 **2.** Enter the protocol name that you want to convert.
 
-Select PROTOCOL NAME: **?**
-
-***
-
-Answer with PROTOCOL NAME, or ITEM TEXT, or SYNONYM, or ACCESS, or
-
-***
-
-SET MEMBERSHIP
-
-***
-
-Do you want the entire 3405-Entry PROTOCOL List? **N** (NO)
-
-***
-
-Select PROTOCOL NAME:**LRTZ CHOLESTEROL SERUM MARBLED**
-
-***
-
-Add this item to the same menus again? YES// **\<Enter\>**
-
-***
-
-Converting ...done
-
-***
-
+Select PROTOCOL NAME: **?**  
+Answer with PROTOCOL NAME, or ITEM TEXT, or SYNONYM, or ACCESS, or  
+SET MEMBERSHIP  
+Do you want the entire 3405-Entry PROTOCOL List? **N** (NO)  
+Select PROTOCOL NAME:**LRTZ CHOLESTEROL SERUM MARBLED**  
+Add this item to the same menus again? YES// **\<Enter\>**  
+Converting ...done  
 #### Search/Replace Components
 
 This option lets you search for a specific component (orderable item, order dialog, order set, protocol, etc.). You can then replace any or all instances of the component with a new component or delete the component. The option displays the ancestors of the component to let you choose which instances to change.
 
 **Example**
 
-OI Enter/edit orderable items
-
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+AO Assign Primary Order Menu  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menu  
+Select Order Menu Management Option: **SR** Search/replace components  
+Search for: LRTZ  
+1 LRTZ CBC  
+2 LRTZ CBC W/DIFF  
+3 LRTZ GLUCOSE SERUM  
+4 LRTZ UA  
+CHOOSE 1-4: **1**  
 ***
 
-PM Enter/edit prompts
-
+Ancestors of LRTZ CBC  
+Name Type  
+\-----------------------------------------------------------------------------  
+1 ORZ ADD MENU CLINICIAN menu  
+2 LRZ TEST SET order set  
+\-----------------------------------------------------------------------------  
+Replace LRTZ CBC with: **?**  
 ***
 
-GO Enter/edit generic orders
-
+Enter the name of the item you to replace this one with, or @ to remove  
+this item; to quit without changing anything, press \<return\>.  
 ***
 
-QO Enter/edit quick orders
-
+Replace LRTZ CBC with: LRTZ CBC W/DIFF  
+Replace in: 1-2// **1**  
 ***
 
-ST Enter/edit order sets
-
+Are you ready? NO// **YES**  
 ***
 
-AC Enter/edit actions
-
+Replacing LRTZ CBC with LRTZ CBC W/DIFF in:  
+ORZ ADD MENU CLINICIAN ...done.  
 ***
 
-MN Enter/edit order menus
-
+Search for: **\<Enter\>**  
 ***
 
-AO Assign Primary Order Menu
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menu
-
-***
-
-Select Order Menu Management Option: **SR** Search/replace components
-
-***
-
-Search for: LRTZ
-
-***
-
-1 LRTZ CBC
-
-***
-
-2 LRTZ CBC W/DIFF
-
-***
-
-3 LRTZ GLUCOSE SERUM
-
-***
-
-4 LRTZ UA
-
-***
-
-CHOOSE 1-4: **1**
-
-***
-
-***
-
-Ancestors of LRTZ CBC
-
-***
-
-Name Type
-
-***
-
-\-----------------------------------------------------------------------------
-
-***
-
-1 ORZ ADD MENU CLINICIAN menu
-
-***
-
-2 LRZ TEST SET order set
-
-***
-
-\-----------------------------------------------------------------------------
-
-***
-
-Replace LRTZ CBC with: **?**
-
-***
-
-***
-
-Enter the name of the item you to replace this one with, or @ to remove
-
-***
-
-this item; to quit without changing anything, press \<return\>.
-
-***
-
-***
-
-Replace LRTZ CBC with: LRTZ CBC W/DIFF
-
-***
-
-Replace in: 1-2// **1**
-
-***
-
-***
-
-Are you ready? NO// **YES**
-
-***
-
-***
-
-Replacing LRTZ CBC with LRTZ CBC W/DIFF in:
-
-***
-
-ORZ ADD MENU CLINICIAN ...done.
-
-***
-
-***
-
-Search for: **\<Enter\>**
-
-***
-
-***
-
-OI Enter/edit orderable items
-
-***
-
-PM Enter/edit prompts
-
-***
-
-GO Enter/edit generic orders
-
-***
-
-QO Enter/edit quick orders
-
-***
-
-ST Enter/edit order sets
-
-***
-
-AC Enter/edit actions
-
-***
-
-MN Enter/edit order menus
-
-***
-
-AO Assign Primary Order Menu
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menu
-
-***
-
-Select Order Menu Management Option: **\<Enter\>**
-
-***
-
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+AO Assign Primary Order Menu  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menu  
+Select Order Menu Management Option: **\<Enter\>**  
 ### List Primary Order Menus
 
 This option lets you print a list of all the users who have a particular add order menu assigned to them. You will also get a list of the locations, divisions etc. that have those menus. You can also request a complete list of all add order menus and all users.
 
 **Example**
 
-OI Enter/edit orderable items
-
+OI Enter/edit orderable items  
+PM Enter/edit prompts  
+GO Enter/edit generic orders  
+QO Enter/edit quick orders  
+ST Enter/edit order sets  
+AC Enter/edit actions  
+MN Enter/edit order menus  
+AO Assign Primary Order Menu  
+CP Convert protocols  
+SR Search/replace components  
+LM List Primary Order Menus  
 ***
 
-PM Enter/edit prompts
-
+Select Order Menu Management Option: **LM** List Primary Order Menus  
 ***
 
-GO Enter/edit generic orders
-
+START WITH Add order menu: FIRST// OR ADD MENU CLINICIAN  
+DEVICE: ANYWHERE RIGHT MARGIN: 80//  
+***  
+CPRS Add order menu list NOV 2,1998 09:09 PAGE 1  
+Menu User/Location/etc.  
+\--------------------------------------------------------------------------  
 ***
 
-QO Enter/edit quick orders
-
-***
-
-ST Enter/edit order sets
-
-***
-
-AC Enter/edit actions
-
-***
-
-MN Enter/edit order menus
-
-***
-
-AO Assign Primary Order Menu
-
-***
-
-CP Convert protocols
-
-***
-
-SR Search/replace components
-
-***
-
-LM List Primary Order Menus
-
-***
-
-***
-
-Select Order Menu Management Option: **LM** List Primary Order Menus
-
-***
-
-***
-
-START WITH Add order menu: FIRST// OR ADD MENU CLINICIAN
-
-***
-
-DEVICE: ANYWHERE RIGHT MARGIN: 80//
-
-***
-
-***
-
-***
-
-CPRS Add order menu list NOV 2,1998 09:09 PAGE 1
-
-***
-
-Menu User/Location/etc.
-
-***
-
-\--------------------------------------------------------------------------
-
-***
-
-***
-
-OR ADD MENU CLINICIAN ORDER ENTRY/RESULTS REPORTING
-
-***
-
-CPRSCLINICIAN,ONE
-
-***
-
-CPRSCLINICIAN,TWO
-
-***
-
-CPRSCLINICIAN,THREE
-
-***
-
-CPRSCLINICIAN,FOUR
-
-***
-
-CPRSCLINICIAN,FIVE
-
-***
-
-CPRSCLINICIAN,SIX
-
-***
-
+OR ADD MENU CLINICIAN ORDER ENTRY/RESULTS REPORTING  
+CPRSCLINICIAN,ONE  
+CPRSCLINICIAN,TWO  
+CPRSCLINICIAN,THREE  
+CPRSCLINICIAN,FOUR  
+CPRSCLINICIAN,FIVE  
+CPRSCLINICIAN,SIX  
 ***
 
 ### 9. Patient and Team Lists
@@ -14073,296 +5418,107 @@ The team lists also help determine who receives notifications for patients defin
 
 **Create/Add to Team List Example**
 
-Select Team List Mgmt Menu Option: **CR** Create/Add to Team List
-
+Select Team List Mgmt Menu Option: **CR** Create/Add to Team List  
 ***
 
+A team list is a list containing patients related to several providers.  
+These providers are the list's users. You may now create a new team list  
+or add autolinks, users and/or patients to an existing team list. Autolinks  
+automatically add or remove patients with ADT movements. Users on the list  
+may receive notifications regarding patients on the same list. Please prefix  
+your list name with 'TEAM' or 'SERVICE' (e.g. TEAM7B, SERVICECARDIOLOGY.)  
 ***
 
-A team list is a list containing patients related to several providers.
-
+Enter team list name: **teamqa**  
+Are you adding 'teamqa' as a new OE/RR LIST? No// **y** (Yes)  
+TYPE: **??**  
+This is the type of list being defined. List type currently includes  
+team and personal.  
+o Team lists  
+o TM - Manually maintained (addition and removal)  
+o TA - Maintained by Autolinks for addition and removal of  
+patients.  
+o MRAL - Manual removal of patients from the list with Autolink  
+addition of patients to the list.  
 ***
 
-These providers are the list's users. You may now create a new team list
-
+o Personal lists  
+o P - Manually maintained (addition and removal)  
 ***
 
-or add autolinks, users and/or patients to an existing team list. Autolinks
-
-***
-
-automatically add or remove patients with ADT movements. Users on the list
-
-***
-
-may receive notifications regarding patients on the same list. Please prefix
-
-***
-
-your list name with 'TEAM' or 'SERVICE' (e.g. TEAM7B, SERVICECARDIOLOGY.)
-
-***
-
-***
-
-Enter team list name: **teamqa**
-
-***
-
-Are you adding 'teamqa' as a new OE/RR LIST? No// **y** (Yes)
-
-***
-
-TYPE: **??**
-
-***
-
-This is the type of list being defined. List type currently includes
-
-***
-
-team and personal.
-
-***
-
-o Team lists
-
-***
-
-o TM - Manually maintained (addition and removal)
-
-***
-
-o TA - Maintained by Autolinks for addition and removal of
-
-***
-
-patients.
-
-***
-
-o MRAL - Manual removal of patients from the list with Autolink
-
-***
-
-addition of patients to the list.
-
-***
-
-***
-
-o Personal lists
-
-***
-
-o P - Manually maintained (addition and removal)
-
-***
-
-***
-
-Choose from:
-
-***
-
-P PERSONAL PATIENT
-
-***
-
-TA TEAM PATIENT AUTOLINKED
-
-***
-
-TM TEAM PATIENT MANUAL
-
-***
-
-MRAL MANUAL REMOVAL/AUTOLINK ADDITION
-
-***
-
+Choose from:  
+P PERSONAL PATIENT  
+TA TEAM PATIENT AUTOLINKED  
+TM TEAM PATIENT MANUAL  
+MRAL MANUAL REMOVAL/AUTOLINK ADDITION  
 ***
 
 **Create/Add to Team List, cont’d**
 
-TYPE: **TM** TEAM PATIENT MANUAL
-
+TYPE: **TM** TEAM PATIENT MANUAL  
 ***
 
+Select one of the following:  
 ***
 
-Select one of the following:
-
+N NAME  
+W WARD  
+C CLINIC  
+P PROVIDER  
+T TREATING SPECIALTY  
 ***
 
+to enter additional patients. (? for help): **?**  
 ***
 
-N NAME
-
+You may add patients to this list individually by patient NAME, or as a  
+group such as an entire WARD, patients in a CLINIC, all patients seeing  
+a PROVIDER, or patients in a TREATING SPECIALTY.  
 ***
 
-W WARD
-
+\*\* CAUTION \*\*  
+The patients added here will create a static list that will not change  
+through MAS movements.  
 ***
 
-C CLINIC
-
+Select one of the following:  
+N NAME  
+W WARD  
+C CLINIC  
+P PROVIDER  
+T TREATING SPECIALTY  
 ***
 
-P PROVIDER
-
+to enter additional patients. (? for help): **CLINIC**  
+Select CLINIC: **CARDIOLOGY**  
+Patient Appointment STARTING DATE: T//**T-60** (AUG 28, 1997)  
+Patient Appointment ENDING DATE: AUG 28, 1997//**T+60** (DEC 26, 1997)  
+Working...  
+Select CLINIC:  
+12 patient(s) added.  
+Storing list for future reference...  
 ***
 
-T TREATING SPECIALTY
-
+Select one of the following:  
 ***
 
+N NAME  
+W WARD  
+C CLINIC  
+P PROVIDER  
+T TREATING SPECIALTY  
 ***
 
-to enter additional patients. (? for help): **?**
-
+to enter additional patients. (? for help): **\<Enter\>**  
+Enter Team Provider/User: **\<Enter\>**  
 ***
 
-***
-
-You may add patients to this list individually by patient NAME, or as a
-
-***
-
-group such as an entire WARD, patients in a CLINIC, all patients seeing
-
-***
-
-a PROVIDER, or patients in a TREATING SPECIALTY.
-
-***
-
-***
-
-\*\* CAUTION \*\*
-
-***
-
-The patients added here will create a static list that will not change
-
-***
-
-through MAS movements.
-
-***
-
-***
-
-Select one of the following:
-
-***
-
-N NAME
-
-***
-
-W WARD
-
-***
-
-C CLINIC
-
-***
-
-P PROVIDER
-
-***
-
-T TREATING SPECIALTY
-
-***
-
-***
-
-to enter additional patients. (? for help): **CLINIC**
-
-***
-
-Select CLINIC: **CARDIOLOGY**
-
-***
-
-Patient Appointment STARTING DATE: T//**T-60** (AUG 28, 1997)
-
-***
-
-Patient Appointment ENDING DATE: AUG 28, 1997//**T+60** (DEC 26, 1997)
-
-***
-
-Working...
-
-***
-
-Select CLINIC:
-
-***
-
-12 patient(s) added.
-
-***
-
-Storing list for future reference...
-
-***
-
-***
-
-Select one of the following:
-
-***
-
-***
-
-N NAME
-
-***
-
-W WARD
-
-***
-
-C CLINIC
-
-***
-
-P PROVIDER
-
-***
-
-T TREATING SPECIALTY
-
-***
-
-***
-
-to enter additional patients. (? for help): **\<Enter\>**
-
-***
-
-Enter Team Provider/User: **\<Enter\>**
-
-***
-
-***
-
-Enter Device: **\<Enter\>**
-
-***
-
+Enter Device: **\<Enter\>**  
 ***
 
 #### Patient Selection Preference Management Menu
 
-This menu on the Clinical Coordinator Menu or on a clinician’s Personal Preferences Menu contains options that let coordinators or users set default parameters for patient lists.
-
-***
-
+This menu on the Clinical Coordinator Menu or on a clinician’s Personal Preferences Menu contains options that let coordinators or users set default parameters for patient lists.  
 | **Option**                                | **Description**                                                                                                                                                                               |
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Display User’s Patient List Source        | Display a user’s default patient list source.                                                                                                                                                 |
@@ -14380,56 +5536,26 @@ This menu on the Clinical Coordinator Menu or on a clinician’s Personal Prefer
 | Set Preferred Primary Provider            | Provider who is basis for building the Provider List of patients.                                                                                                                             |
 | Set Preferred Treating Specialty          | Treating Specialty used as a source for patients on the Specialty List.                                                                                                                       |
 | Set Preferred Team List                   | Team/Personal list to be default source of patients.                                                                                                                                          |
-| Set Preferred Ward                        | Ward for default list of patients.                                                                                                                                                            |
-
+| Set Preferred Ward                        | Ward for default list of patients.                                                                                                                                                            |  
+**Display your Patient List Source example**  
+Select Patient Selection Preference Menu Option: **1** Display Your Patient List Source  
 ***
 
-**Display your Patient List Source example**
-
+Your default list of patients is based on: Ward 2B  
+\<RETURN\> to continue: **\<Enter\>**  
 ***
 
-Select Patient Selection Preference Menu Option: **1** Display Your Patient List Source
-
+Select Patient Selection Preference Menu Option: **13** Set Default Provider  
 ***
 
+Set Default Provider  
+\-------------------------------------------------------------------------  
 ***
 
-Your default list of patients is based on: Ward 2B
-
+\----------------------- Setting for User: CPRSPROVIDER,FIVE ------------  
 ***
 
-\<RETURN\> to continue: **\<Enter\>**
-
-***
-
-***
-
-Select Patient Selection Preference Menu Option: **13** Set Default Provider
-
-***
-
-***
-
-Set Default Provider
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-***
-
-\----------------------- Setting for User: CPRSPROVIDER,FIVE ------------
-
-***
-
-***
-
-Value: CPRSPROVIDER,FIVE // **CPRSPROVIDER,ONE**, Doctor
-
-***
-
+Value: CPRSPROVIDER,FIVE // **CPRSPROVIDER,ONE**, Doctor  
 ### 10. Print Formats
 
 The CPRS *Print Formats* option allows a lot of flexibility in customizing reports for CPRS. Each site must select the print formats it will use for printing labels, requisitions, order copies, and chart copies. The hospital’s Medical Records Committee needs to approve the print formats chosen for its site. Be sure to determine how many printers you’ll need for each ward, and where they’ll be located.
@@ -14448,914 +5574,251 @@ We distribute pre-defined print formats that point to pre-defined print fields. 
 
 **Defining a New Print Format**
 
-Select Clinical Coordinators Menu Option: **FP** Print Formats
-
-***
-
-Select CPRS PRINT FORMATS NAME: **?**
-
-***
-
-Answer with CPRS PRINT FORMATS NUMBER, or NAME
-
-***
-
-Do you want the entire 26-Entry OE/RR PRINT FORMATS List? **Y**  (Yes)
-
-***
-
-Choose from:
-
-***
-
-1 LAB LABEL/INTERMEC
-
-***
-
-2 LOCAL RX LABEL
-
-***
-
-1002 LAB ORDER LABEL
-
-***
-
-1003 LAB REQUISITION
-
-***
-
-1004 CHART COPY 1
-
-***
-
-1005 CHART COPY 2
-
-***
-
-1006 CHART COPY HEADER
-
-***
-
-1007 CHART COPY FOOTER
-
-***
-
-1008 SHORT
-
-***
-
-1009 LONG
-
-***
-
-1010 DOCTOR'S ORDERS
-
-***
-
-1011 CONSULTATION FOOTER
-
-***
-
-1012 CONSULTATION HEADER
-
-***
-
-1013 CONSULTATION BODY
-
-***
-
-1015 CHART COPY BODY
-
-***
-
-1016 DOCTORS ORDERS FOOTER
-
-***
-
-1017 DOCTOR'S ORDERS HEADER
-
-***
-
-1018 LAB SERVICE COPY HEADER
-
-***
-
-1019 RX HEADER
-
-***
-
-1020 LAB LABEL (Buffalo)
-
-***
-
-1021 RX FOOTER
-
-***
-
-1022 GENERIC ORDER LABEL
-
-***
-
-1023 WORK COPY FORMAT
-
-***
-
-1024 WORK COPY HEADER
-
-***
-
-1025 WORK COPY FOOTER
-
-***
-
-1026 RX LABEL FORMAT
-
-***
-
-Select OE/RR PRINT FORMATS NAME: DOCTORS ORDERS
-
-***
-
-NAME: DOCTORS ORDERS// **\<Enter\>**
-
-***
-
-Select FIELDS: AGE of Patient// **?**
-
-***
-
-Answer with FIELDS
-
-***
-
-Choose from:
-
-***
-
-NAME of Patient Row: 1 Col: 41 Caption: NONE
-
-***
-
-SSN of Patient Row: 2 Col: 41 Caption: NONE
-
-***
-
-AGE of Patient Row: 2 Col: 66 Caption: NONE
-
-***
-
-DOB of Patient Row: 2 Col: 55 Caption: NONE
-
-***
-
-REQUESTING PHYSICIAN Row: 4 Col: 1 Caption:
-
-***
-
-ROOM/BED of Patient Row: 3 Col: 58 Caption: NONE
-
-***
-
-LOCATION of Patient Row: 4 Col: 58 Caption: NONE
-
-***
-
-ORDER TEXT Row: 2 Col: 1 Caption: NONE
-
-***
-
-START DATE Row: 1 Col: 1 Caption: Start Date:
-
-***
-
-You may enter a new FIELDS, if you wish
-
-***
-
-Enter the field to be added to this format.
-
-***
-
-Answer with OE/RR PRINT FIELDS NUMBER, or NAME
-
-***
-
-Do you want the entire 59-Entry OE/RR PRINT FIELDS List? **Y** (Yes)
-
-***
-
-Choose from:
-
-***
-
-1 LAB INTERMEC ORDER LABEL
-
-***
-
-2 RX INTERMEC MAR LABEL
-
-***
-
-1001 NAME of Patient
-
-***
-
-1002 SSN of Patient
-
-***
-
-1003 SEX of Patient
-
-***
-
-1004 AGE of Patient
-
-***
-
-1005 DOB of Patient
-
-***
-
-1006 REQUESTING LOCATION
-
-***
-
-1007 REQUESTING PHYSICIAN
-
-***
-
-1008 ROOM/BED of Patient
-
-***
-
+Select Clinical Coordinators Menu Option: **FP** Print Formats  
+Select CPRS PRINT FORMATS NAME: **?**  
+Answer with CPRS PRINT FORMATS NUMBER, or NAME  
+Do you want the entire 26-Entry OE/RR PRINT FORMATS List? **Y**  (Yes)  
+Choose from:  
+1 LAB LABEL/INTERMEC  
+2 LOCAL RX LABEL  
+1002 LAB ORDER LABEL  
+1003 LAB REQUISITION  
+1004 CHART COPY 1  
+1005 CHART COPY 2  
+1006 CHART COPY HEADER  
+1007 CHART COPY FOOTER  
+1008 SHORT  
+1009 LONG  
+1010 DOCTOR'S ORDERS  
+1011 CONSULTATION FOOTER  
+1012 CONSULTATION HEADER  
+1013 CONSULTATION BODY  
+1015 CHART COPY BODY  
+1016 DOCTORS ORDERS FOOTER  
+1017 DOCTOR'S ORDERS HEADER  
+1018 LAB SERVICE COPY HEADER  
+1019 RX HEADER  
+1020 LAB LABEL (Buffalo)  
+1021 RX FOOTER  
+1022 GENERIC ORDER LABEL  
+1023 WORK COPY FORMAT  
+1024 WORK COPY HEADER  
+1025 WORK COPY FOOTER  
+1026 RX LABEL FORMAT  
+Select OE/RR PRINT FORMATS NAME: DOCTORS ORDERS  
+NAME: DOCTORS ORDERS// **\<Enter\>**  
+Select FIELDS: AGE of Patient// **?**  
+Answer with FIELDS  
+Choose from:  
+NAME of Patient Row: 1 Col: 41 Caption: NONE  
+SSN of Patient Row: 2 Col: 41 Caption: NONE  
+AGE of Patient Row: 2 Col: 66 Caption: NONE  
+DOB of Patient Row: 2 Col: 55 Caption: NONE  
+REQUESTING PHYSICIAN Row: 4 Col: 1 Caption:  
+ROOM/BED of Patient Row: 3 Col: 58 Caption: NONE  
+LOCATION of Patient Row: 4 Col: 58 Caption: NONE  
+ORDER TEXT Row: 2 Col: 1 Caption: NONE  
+START DATE Row: 1 Col: 1 Caption: Start Date:  
+You may enter a new FIELDS, if you wish  
+Enter the field to be added to this format.  
+Answer with OE/RR PRINT FIELDS NUMBER, or NAME  
+Do you want the entire 59-Entry OE/RR PRINT FIELDS List? **Y** (Yes)  
+Choose from:  
+1 LAB INTERMEC ORDER LABEL  
+2 RX INTERMEC MAR LABEL  
+1001 NAME of Patient  
+1002 SSN of Patient  
+1003 SEX of Patient  
+1004 AGE of Patient  
+1005 DOB of Patient  
+1006 REQUESTING LOCATION  
+1007 REQUESTING PHYSICIAN  
+1008 ROOM/BED of Patient  
 **Defining a new Print Format (cont’d)**
 
-1009 LOCATION of Patient
-
-***
-
-1010 ORDER TEXT
-
-***
-
-1011 START DATE
-
-***
-
-1012 STOP DATE
-
-***
-
-1013 ORDER DATE
-
-***
-
-1014 FREE TEXT
-
-***
-
-1015 ATTENDING PHYSICIAN
-
-***
-
-1016 COLLECTION TYPE (LAB)
-
-***
-
-1017 LAB ORDER \#
-
-***
-
-1018 LAB TEST
-
-***
-
-1019 LAB URGENCY
-
-***
-
-1020 TIME COLLECTED
-
-***
-
-1021 ENTERED BY
-
-***
-
-1022 STATUS OF ORDER
-
-***
-
-1026 ELECTRONIC SIGNATURE NAME
-
-***
-
-1028 ENTERED BY (Initials)
-
-***
-
-1029 HORIZONTAL LINE
-
-***
-
-1032 NATURE OF ORDER
-
-***
-
-1033 CURRENT DATE
-
-***
-
-1034 REASON FOR REQUEST
-
-***
-
-1035 PROVISIONAL DIAGNOSIS
-
-***
-
-1036 CONSULTANT
-
-***
-
-1037 PLACE OF CONSULTATION
-
-***
-
-1038 CONSULT URGENCY
-
-***
-
-1039 REQUEST TYPE
-
-***
-
-1040 LAB ACCESSION
-
-***
-
-1041 PROCEDURE/CONSULT TYPE
-
-***
-
-1042 ELECTRONIC SIGNATURE TITLE
-
-***
-
-1043 LAB COLLECTION w/CONTAINER
-
-***
-
-1044 CURRENT DATE/TIME
-
-***
-
-1045 DC by & when
-
-***
-
-1046 WARD COMMENTS ON LAB SPECIMEN
-
-***
-
-1047 RX ADMINISTRATION TIMES
-
-***
-
-1048 RX SPECIAL INSTRUCTIONS
-
-***
-
-1050 PRIMARY CARE PHYSICIAN
-
-***
-
-1070 DC REASON
-
-***
-
-1071 DC PERSON
-
-***
-
-1072 DC DATE
-
-***
-
-1074 WHEN PRINTED
-
-***
-
-1075 EFFECTIVE DATE
-
-***
-
-1076 RX LABEL-INPATIENT
-
-***
-
-1077 LAB TEST.SPECIMEN COMMENTS
-
-***
-
-1078 LAB TEST COMMENTS
-
-***
-
-1079 CONSULT RESULTS
-
-***
-
-1080 RX ROUTING
-
-***
-
-1081 DIGITAL PAGER CLINICIAN
-
-***
-
-1082 ANALOG PAGER CLINICIAN
-
-***
-
-1083 RX URGENCY
-
-***
-
-1084 ENTERED BY SIGNATURE TITLE
-
-***
-
-Select FIELDS: **START DATE**
-
-***
-
-...OK? Yes// (Yes)
-
-***
-
-Row: 1 Col: 1 Caption: Start Date:
-
-***
-
-FIELDS: START DATE// **\<Enter\>**
-
-***
-
-ROW: 1//**\<Enter\>**
-
-***
-
-COLUMN: 1//**\<Enter\>**
-
-***
-
-CAPTION (Optional): Start Date: //**\<Enter\>**
-
-***
-
-SUPPRESS CAPTION: **?**
-
-***
-
-Answer YES to suppress printing of caption when no data for field.
-
-***
-
-Choose from:
-
-***
-
-0 NO
-
-***
-
-1 YES
-
-***
-
-SUPPRESS CAPTION: **1**
-
-***
-
+1009 LOCATION of Patient  
+1010 ORDER TEXT  
+1011 START DATE  
+1012 STOP DATE  
+1013 ORDER DATE  
+1014 FREE TEXT  
+1015 ATTENDING PHYSICIAN  
+1016 COLLECTION TYPE (LAB)  
+1017 LAB ORDER \#  
+1018 LAB TEST  
+1019 LAB URGENCY  
+1020 TIME COLLECTED  
+1021 ENTERED BY  
+1022 STATUS OF ORDER  
+1026 ELECTRONIC SIGNATURE NAME  
+1028 ENTERED BY (Initials)  
+1029 HORIZONTAL LINE  
+1032 NATURE OF ORDER  
+1033 CURRENT DATE  
+1034 REASON FOR REQUEST  
+1035 PROVISIONAL DIAGNOSIS  
+1036 CONSULTANT  
+1037 PLACE OF CONSULTATION  
+1038 CONSULT URGENCY  
+1039 REQUEST TYPE  
+1040 LAB ACCESSION  
+1041 PROCEDURE/CONSULT TYPE  
+1042 ELECTRONIC SIGNATURE TITLE  
+1043 LAB COLLECTION w/CONTAINER  
+1044 CURRENT DATE/TIME  
+1045 DC by & when  
+1046 WARD COMMENTS ON LAB SPECIMEN  
+1047 RX ADMINISTRATION TIMES  
+1048 RX SPECIAL INSTRUCTIONS  
+1050 PRIMARY CARE PHYSICIAN  
+1070 DC REASON  
+1071 DC PERSON  
+1072 DC DATE  
+1074 WHEN PRINTED  
+1075 EFFECTIVE DATE  
+1076 RX LABEL-INPATIENT  
+1077 LAB TEST.SPECIMEN COMMENTS  
+1078 LAB TEST COMMENTS  
+1079 CONSULT RESULTS  
+1080 RX ROUTING  
+1081 DIGITAL PAGER CLINICIAN  
+1082 ANALOG PAGER CLINICIAN  
+1083 RX URGENCY  
+1084 ENTERED BY SIGNATURE TITLE  
+Select FIELDS: **START DATE**  
+...OK? Yes// (Yes)  
+Row: 1 Col: 1 Caption: Start Date:  
+FIELDS: START DATE// **\<Enter\>**  
+ROW: 1//**\<Enter\>**  
+COLUMN: 1//**\<Enter\>**  
+CAPTION (Optional): Start Date: //**\<Enter\>**  
+SUPPRESS CAPTION: **?**  
+Answer YES to suppress printing of caption when no data for field.  
+Choose from:  
+0 NO  
+1 YES  
+SUPPRESS CAPTION: **1**  
 **Defining a new Print Format (cont’d)**
 
-YES FORMAT: **?**
-
+YES FORMAT: **?**  
 ***
 
-***
-
-Enter the format specifier of the selected field.
-
-***
-
-Allowable values include:
-
-***
-
-MM - Numeric months
-
-***
-
-DD - Numeric Days
-
-***
-
-YY - Numeric Years
-
-***
-
-CC - Numeric Century
-
-***
-
-HR - Numeric Hour of Day
-
-***
-
-MIN - Numeric Minute
-
-***
-
-SEC - Numeric Second
-
-***
-
-AMTH - Alphabetic Month
-
-***
-
-All other characters will be treated as delimiters.
-
-***
-
-Examples: MM/DD/YY HR:MIN ==\> 04/29/91 11:15, or
-
-***
-
-DD AMTH CCYY ==\> 29 APR 1991
-
-***
-
-FORMAT: **MM/DD HR:MIN**
-
-***
-
-Select FIELDS: **ORDER TEXT**
-
-***
-
-...OK? Yes// **\<Enter\>** (Yes)
-
-***
-
-Row: 2 Col: 1 Caption: NONE
-
-***
-
-FIELDS: ORDER TEXT// **\<Enter\>**
-
-***
-
-ROW: 2//**\<Enter\>**
-
-***
-
-COLUMN: 1//**\<Enter\>**
-
-***
-
-CAPTION (Optional): NONE//**\<Enter\>**
-
-***
-
-SUPPRESS CAPTION: **Y** YES
-
-***
-
-FORMAT: 38//**\<Enter\>**
-
-***
-
-Select FIELDS: **NAME of Patient**
-
-***
-
-...OK? Yes// (Yes)
-
-***
-
-Row: 4 Col: 1 Caption:
-
-***
-
-FIELDS: **NAME of Patient**// **\<Enter\>**
-
-***
-
-ROW: 4//**\<Enter\>**
-
-***
-
-COLUMN: 1//**\<Enter\>**
-
-***
-
-CAPTION (Optional): **\<Enter\>**
-
-***
-
-SUPPRESS CAPTION: **Y** YES FORMAT: **?**
-
-***
-
-Enter the format specifier of the selected field.
-
-***
-
-Allowable values include:
-
-***
-
-LAST - Last Name
-
-***
-
-FIRST - First Name
-
-***
-
-MI - Middle Initial
-
-***
-
-FI - First Initial
-
-***
-
-LI - Last Initial
-
-***
-
-All other characters will be treated as delimiters.
-
-***
-
-Examples: LAST,FIRST MI ==\> CPRSPATIENT,ONE B or
-
-***
-
-FI MI LAST ==\> O B CPRSPATIENT
-
-***
-
-FORMAT: **LAST,FI**
-
-***
-
-Select FIELDS:**\<Enter\>**
-
-***
-
+Enter the format specifier of the selected field.  
+Allowable values include:  
+MM - Numeric months  
+DD - Numeric Days  
+YY - Numeric Years  
+CC - Numeric Century  
+HR - Numeric Hour of Day  
+MIN - Numeric Minute  
+SEC - Numeric Second  
+AMTH - Alphabetic Month  
+All other characters will be treated as delimiters.  
+Examples: MM/DD/YY HR:MIN ==\> 04/29/91 11:15, or  
+DD AMTH CCYY ==\> 29 APR 1991  
+FORMAT: **MM/DD HR:MIN**  
+Select FIELDS: **ORDER TEXT**  
+...OK? Yes// **\<Enter\>** (Yes)  
+Row: 2 Col: 1 Caption: NONE  
+FIELDS: ORDER TEXT// **\<Enter\>**  
+ROW: 2//**\<Enter\>**  
+COLUMN: 1//**\<Enter\>**  
+CAPTION (Optional): NONE//**\<Enter\>**  
+SUPPRESS CAPTION: **Y** YES  
+FORMAT: 38//**\<Enter\>**  
+Select FIELDS: **NAME of Patient**  
+...OK? Yes// (Yes)  
+Row: 4 Col: 1 Caption:  
+FIELDS: **NAME of Patient**// **\<Enter\>**  
+ROW: 4//**\<Enter\>**  
+COLUMN: 1//**\<Enter\>**  
+CAPTION (Optional): **\<Enter\>**  
+SUPPRESS CAPTION: **Y** YES FORMAT: **?**  
+Enter the format specifier of the selected field.  
+Allowable values include:  
+LAST - Last Name  
+FIRST - First Name  
+MI - Middle Initial  
+FI - First Initial  
+LI - Last Initial  
+All other characters will be treated as delimiters.  
+Examples: LAST,FIRST MI ==\> CPRSPATIENT,ONE B or  
+FI MI LAST ==\> O B CPRSPATIENT  
+FORMAT: **LAST,FI**  
+Select FIELDS:**\<Enter\>**  
 **Defining a new Print Format (cont’d)**
 
-... 'GENERIC ORDER LABEL' format has been compiled.
-
+... 'GENERIC ORDER LABEL' format has been compiled.  
 ***
 
+\|\|\|\|\|----------------------- Column Numbers ----------------------\|\|\|\|\|  
 ***
 
-\|\|\|\|\|----------------------- Column Numbers ----------------------\|\|\|\|\|
-
+0--+---1----+----2----+----3----+----4----+----5----+----6----+---7---+---8  
+1 0 0 0 0 0 0 0 0  
 ***
 
+Start Date: 03/04/97 CPRSPATIENT,TWO  
+LDH BLOOD SERUM LB \#123 WC ROUTINE 000-00-0002 ??  
+A3/1  
+PHY: **CPRSPROVIDER,ONE** 2A  
+***  
 ***
 
-0--+---1----+----2----+----3----+----4----+----5----+----6----+---7---+---8
-
-***
-
-1 0 0 0 0 0 0 0 0
-
-***
-
-***
-
-Start Date: 03/04/97 CPRSPATIENT,TWO
-
-***
-
-LDH BLOOD SERUM LB \#123 WC ROUTINE 000-00-0002 ??
-
-***
-
-A3/1
-
-***
-
-PHY: **CPRSPROVIDER,ONE** 2A
-
-***
-
-***
-
-***
-
-***
-
-Select OE/RR PRINT FORMATS NAME: **\<Enter\>**
-
-***
-
+Select OE/RR PRINT FORMATS NAME: **\<Enter\>**  
 The format above is the result of the selections you have made for fields, row \#s and column \#s. It can be the format used for requisitions, labels, service order copies, work copies, and chart copy printouts you (or a clinician) request through the “Order Entry/ Review/Profiles” option.
 
-**Example of the Chart Copy as defined in the options above**
-
+**Example of the Chart Copy as defined in the options above**  
+MEDICAL RECORD \| D O C T O R ’ S O R D E R S  
+\----------------------------------------------------------------------------  
+NOTE: Physician's signature must accompany each entry including standing orders  
+Date and time for instituting and discontinuing the orders must be recorded  
+\----------------------------------------------------------------------------  
+DATE & TIME \| O R D E R S \| SIGNATURES  
+\----------------------------------------------------------------------------  
 ***
 
-MEDICAL RECORD \| D O C T O R ’ S O R D E R S
-
-***
-
-\----------------------------------------------------------------------------
-
-***
-
-NOTE: Physician's signature must accompany each entry including standing orders
-
-***
-
-Date and time for instituting and discontinuing the orders must be recorded
-
-***
-
-\----------------------------------------------------------------------------
-
-***
-
-DATE & TIME \| O R D E R S \| SIGNATURES
-
-***
-
-\----------------------------------------------------------------------------
-
-***
-
-***
-
-04/07 15:04 Diet Order: REGULAR /es/ CPRSPROVIDER,SIX Chief of Staff
-
-***
-
-***
-
-***
-
-03/22 10:24 CT THORAX W&W/O CONT LEFT /es/ CPRSPROVIDER,SEVEN, Att. Phys.
-
-***
-
-***
-
-***
-
-\--------------------------------------------------------------------
-
-***
-
-\|
-
-***
-
-CPRSPATIENT,FIVE 000-00-00005 \| MEDICAL RECORD
-
-***
-
-Loc: Date: 02/06/92 \|
-
-***
-
-\| D O C T O R 'S O R D E R S
-
-***
-
-\|
-
-***
-
-\| VA FORM 10-1158
-
-***
-
-\| \|________________________\_
-
-***
-
+04/07 15:04 Diet Order: REGULAR /es/ CPRSPROVIDER,SIX Chief of Staff  
+***  
+03/22 10:24 CT THORAX W&W/O CONT LEFT /es/ CPRSPROVIDER,SEVEN, Att. Phys.  
+***  
+\--------------------------------------------------------------------  
+\|  
+CPRSPATIENT,FIVE 000-00-00005 \| MEDICAL RECORD  
+Loc: Date: 02/06/92 \|  
+\| D O C T O R 'S O R D E R S  
+\|  
+\| VA FORM 10-1158  
+\| \|________________________\_  
 ***
 
  NOTE: The title is taken from the name entered in the SIGNATURE BLOCK field in the *Edit Electronic Signature Code* on the Personal Preferences menu.
 
-**Exported Print Formats**
-
-***
-
-LAB ORDER LABEL
-
-***
-
-LAB REQUISITION
-
-***
-
-CHART COPY 1
-
-***
-
-CHART COPY 2
-
-***
-
-CHART COPY HEADER
-
-***
-
-CHART COPY FOOTER
-
-***
-
-SHORT
-
-***
-
-LONG
-
-***
-
-DOCTOR'S ORDERS
-
-***
-
-CONSULTATION FOOTER
-
-***
-
-CONSULTATION HEADER
-
-***
-
-CONSULTATION BODY
-
-***
-
-CHART COPY BODY
-
-***
-
-DOCTORS ORDERS FOOTER
-
-***
-
-DOCTOR'S ORDERS HEADER
-
-***
-
-LAB SERVICE COPY HEADER
-
-***
-
-RX HEADER
-
-***
-
-LAB LABEL (Buffalo)
-
-***
-
-RX FOOTER
-
-***
-
-GENERIC ORDER LABEL
-
-***
-
-WORK COPY FORMAT
-
-***
-
-WORK COPY HEADER
-
-***
-
-WORK COPY FOOTER
-
-***
-
-RX LABEL FORMAT
-
-***
-
+**Exported Print Formats**  
+LAB ORDER LABEL  
+LAB REQUISITION  
+CHART COPY 1  
+CHART COPY 2  
+CHART COPY HEADER  
+CHART COPY FOOTER  
+SHORT  
+LONG  
+DOCTOR'S ORDERS  
+CONSULTATION FOOTER  
+CONSULTATION HEADER  
+CONSULTATION BODY  
+CHART COPY BODY  
+DOCTORS ORDERS FOOTER  
+DOCTOR'S ORDERS HEADER  
+LAB SERVICE COPY HEADER  
+RX HEADER  
+LAB LABEL (Buffalo)  
+RX FOOTER  
+GENERIC ORDER LABEL  
+WORK COPY FORMAT  
+WORK COPY HEADER  
+WORK COPY FOOTER  
+RX LABEL FORMAT  
 ***
 
 **Print Formats ⎯Review and Print orders**
@@ -15364,356 +5827,104 @@ After you have defined the print formats for your hospital, wards, and clinics, 
 
 An example of the sequence of actions to get to the print options for the List Manager interface is shown below:
 
-1.  After selecting a patient, select the Chart Contents (CC) action.
-
-***
-
-**Cover Sheet**  Jun 00, 1997 08:34:01 Page: 1 of 3
-
-***
-
-CPRSPATIENT,SIX 000-00-0006 2B JAN 00,1951 (46) \<CWA\>
-
-***
-
-Item Entered
-
-***
-
-Allergies/Adverse Reactions \|
-
-***
-
-1 PENICILLIN 1 (rash, nausea,vomiting) \| 01/00/97
-
-***
-
-2 BEESWAX (hives, itching,watering eyes, \| 03/00/97
-
-***
-
-anxiety) \|
-
-***
-
-\|
-
-***
-
-Patient Postings \|
-
-***
-
-7 CRISIS NOTE \| 06/00/97 08:28
-
-***
-
-**+ Enter the numbers of the items you wish to act on. \>\>\>**
-
-***
-
-NW Add New Orders CG Change List ... SP Select New Patient
-
-***
-
-\+ Next Screen CC Chart Contents ... Q Close Patient Chart
-
-***
-
-Select: Next Screen//**CC;O** Chart Contents ...
-
-***
-
-Searching for the patient's chart ...
-
-***
-
+1.  After selecting a patient, select the Chart Contents (CC) action.  
+**Cover Sheet**  Jun 00, 1997 08:34:01 Page: 1 of 3  
+CPRSPATIENT,SIX 000-00-0006 2B JAN 00,1951 (46) \<CWA\>  
+Item Entered  
+Allergies/Adverse Reactions \|  
+1 PENICILLIN 1 (rash, nausea,vomiting) \| 01/00/97  
+2 BEESWAX (hives, itching,watering eyes, \| 03/00/97  
+anxiety) \|  
+\|  
+Patient Postings \|  
+7 CRISIS NOTE \| 06/00/97 08:28  
+**+ Enter the numbers of the items you wish to act on. \>\>\>**  
+NW Add New Orders CG Change List ... SP Select New Patient  
+\+ Next Screen CC Chart Contents ... Q Close Patient Chart  
+Select: Next Screen//**CC;O** Chart Contents ...  
+Searching for the patient's chart ...  
 2\.  When the Orders screen appears, enter the number of an order to review.
 
-**Active Orders** Jun 26, 1997 08:34:31 Page: 1 of 17
-
-***
-
-CPRSPATIENT,SIX 000-00-0006 2B JAN 00,1951 (46) \<CWA\>
-
-***
-
-Selected date range: Not Applicable (active orders being viewed)
-
-***
-
-Item Ordered Requestor Start Stop Sts
-
-***
-
-1 Electrocardiogram Bedside \| CPRSPROVIDER,EIGHT pend
-
-***
-
-2 GLUCOSE SERUM WC QD \| CPRSPROVIDER,NINE 06/00 06/21 actv
-
-***
-
-3 GENTAMICIN CREAM,TOP ONCE TOP ONCE \| CPRSPROVIDER,NINE pend
-
-***
-
-4 TRIAMCINOLONE 0.1% CREAM 454GM Apply 1 \| CPRSPROVIDER,TEN pend
-
-***
-
-DAB TOP Q2H for 10 DAYS days Quantity: 1 \|
-
-***
-
-refills PROVIDER INSTRUCTIONS GO HERE \|
-
-***
-
-5 ENALAPRIL 10MG Quantity: 1 5 refills \| CPRSPROVIDER,TEN 06/00 06/16 pend
-
-***
-
-TAKE ONE PILL QD \|
-
-***
-
-6 PARTIAL THROMBOPLASTIN TIME PLASMA WC \| CPRSPROVIDER,TEN 05/00/97 pend
-
-***
-
-LB \#1304 \| 16:14
-
-***
-
-7 Reaction to NOIS CALLS Feb 10, 1997 \| CPRSPROVIDER,TEN 02/00/97 actv
-
-***
-
-\|
-
-***
-
-8 GLUCOSE SERUM WC LB \#1295 \| CPRSPROVIDER1,ONE 05/00/97 pend
-
-***
-
-\| 10:48
-
-***
-
-**+ Enter the numbers of the items you wish to act on. \>\>\>**
-
-***
-
-NW Add New Orders CG Change List ... SP Select New Patient
-
-***
-
-\+ Next Screen CC Chart Contents ... Q Close Patient Chart
-
-***
-
-Select: Next Screen// **4**
-
-***
-
+**Active Orders** Jun 26, 1997 08:34:31 Page: 1 of 17  
+CPRSPATIENT,SIX 000-00-0006 2B JAN 00,1951 (46) \<CWA\>  
+Selected date range: Not Applicable (active orders being viewed)  
+Item Ordered Requestor Start Stop Sts  
+1 Electrocardiogram Bedside \| CPRSPROVIDER,EIGHT pend  
+2 GLUCOSE SERUM WC QD \| CPRSPROVIDER,NINE 06/00 06/21 actv  
+3 GENTAMICIN CREAM,TOP ONCE TOP ONCE \| CPRSPROVIDER,NINE pend  
+4 TRIAMCINOLONE 0.1% CREAM 454GM Apply 1 \| CPRSPROVIDER,TEN pend  
+DAB TOP Q2H for 10 DAYS days Quantity: 1 \|  
+refills PROVIDER INSTRUCTIONS GO HERE \|  
+5 ENALAPRIL 10MG Quantity: 1 5 refills \| CPRSPROVIDER,TEN 06/00 06/16 pend  
+TAKE ONE PILL QD \|  
+6 PARTIAL THROMBOPLASTIN TIME PLASMA WC \| CPRSPROVIDER,TEN 05/00/97 pend  
+LB \#1304 \| 16:14  
+7 Reaction to NOIS CALLS Feb 10, 1997 \| CPRSPROVIDER,TEN 02/00/97 actv  
+\|  
+8 GLUCOSE SERUM WC LB \#1295 \| CPRSPROVIDER1,ONE 05/00/97 pend  
+\| 10:48  
+**+ Enter the numbers of the items you wish to act on. \>\>\>**  
+NW Add New Orders CG Change List ... SP Select New Patient  
+\+ Next Screen CC Chart Contents ... Q Close Patient Chart  
+Select: Next Screen// **4**  
 **Review and Print orders, cont’d**
 
 3\. The order you selected is highlighted.
 
 A new set of actions, which you can perform on this order, appears.
 
-**Active Orders** Jun 26, 1997 08:40:13 Page: 1 of 17
-
-***
-
-CPRSPATIENT,ONE 000-00-0001 2B JAN 00,1951 (46) \<CWA\>
-
-***
-
-Selected date range: Not Applicable (active orders being viewed)
-
-***
-
-Item Ordered Requestor Start Stop Sts
-
-***
-
-1 Electrocardiogram Bedside \| CPRSPROVI pend
-
-***
-
-2 GLUCOSE SERUM WC QD \| CPRSPRO 06/00 06/21 actv
-
-***
-
-\|
-
-***
-
-3 DAB TOP Q2H for 10 DAYS Quantity: 1 \|
-
-***
-
-GENTAMICIN CREAM,TOP ONCE TOP ONCE \| CPRSPRO pend
-
-***
-
-4 TRIAMCINOLONE 0.1% CREAM 454GM Apply 1 \| CPRSPROVI pend
-
-***
-
-refills PROVIDER INSTRUCTIONS GO HERE \|
-
-***
-
-5 ENALAPRIL 10MG Quantity: 1 5 refills \| CPRSPROVI 06/-00 06/16 pend
-
-***
-
-TAKE ONE PILL QD \|
-
-***
-
-6 PARTIAL THROMBOPLASTIN TIME PLASMA WC LB \| CPRSPROVI 05/00/97 pend
-
-***
-
-\#1304 \| 16:14
-
-***
-
-7 Reaction to NOIS CALLS Feb 10, 1997 \| CPRSPROVI 02/00/97 actv
-
-***
-
-\|
-
-***
-
-8 GLUCOSE SERUM WC LB \#1295 \| CPRSPROVI 05/00/97 pend
-
-***
-
-\| 10:48
-
-***
-
-**+ Enter ?? for more actions \>\>\>**
-
-***
-
-Change Sign Flag Details Print ...
-
-***
-
-Renew Hold Unflag Results
-
-***
-
-Discontinue Release Hold Ward Comments Alert Results
-
-***
-
-Select Action: **P Print**
-
-***
-
+**Active Orders** Jun 26, 1997 08:40:13 Page: 1 of 17  
+CPRSPATIENT,ONE 000-00-0001 2B JAN 00,1951 (46) \<CWA\>  
+Selected date range: Not Applicable (active orders being viewed)  
+Item Ordered Requestor Start Stop Sts  
+1 Electrocardiogram Bedside \| CPRSPROVI pend  
+2 GLUCOSE SERUM WC QD \| CPRSPRO 06/00 06/21 actv  
+\|  
+3 DAB TOP Q2H for 10 DAYS Quantity: 1 \|  
+GENTAMICIN CREAM,TOP ONCE TOP ONCE \| CPRSPRO pend  
+4 TRIAMCINOLONE 0.1% CREAM 454GM Apply 1 \| CPRSPROVI pend  
+refills PROVIDER INSTRUCTIONS GO HERE \|  
+5 ENALAPRIL 10MG Quantity: 1 5 refills \| CPRSPROVI 06/-00 06/16 pend  
+TAKE ONE PILL QD \|  
+6 PARTIAL THROMBOPLASTIN TIME PLASMA WC LB \| CPRSPROVI 05/00/97 pend  
+\#1304 \| 16:14  
+7 Reaction to NOIS CALLS Feb 10, 1997 \| CPRSPROVI 02/00/97 actv  
+\|  
+8 GLUCOSE SERUM WC LB \#1295 \| CPRSPROVI 05/00/97 pend  
+\| 10:48  
+**+ Enter ?? for more actions \>\>\>**  
+Change Sign Flag Details Print ...  
+Renew Hold Unflag Results  
+Discontinue Release Hold Ward Comments Alert Results  
+Select Action: **P Print**  
 ***
 
 4\. If you select Print, the available Print types are presented
 
-CPRSPATIENT,ONE 000-00-0001 2B JAN 00,1951 (46) \<CWA\>
-
+CPRSPATIENT,ONE 000-00-0001 2B JAN 00,1951 (46) \<CWA\>  
+Selected date range: Not Applicable (active orders being viewed)  
+Item Ordered Requestor Start Stop Sts  
+1 Electrocardiogram Bedside \| CPRSPROVI pend  
+2 GLUCOSE SERUM WC QD \| CPRSPRO 06/00 06/21 actv  
+\|  
+3 DAB TOP Q2H for 10 DAYS Quantity: 1 \|  
+GENTAMICIN CREAM,TOP ONCE TOP ONCE \| CPRSPRO pend  
+4 TRIAMCINOLONE 0.1% CREAM 454GM Apply 1 \| CPRSPROVI pend  
+refills PROVIDER INSTRUCTIONS GO HERE \|  
+5 ENALAPRIL 10MG Quantity: 1 5 refills \| CPRSPROVI 06/-00 06/16 pend  
+TAKE ONE PILL QD \|  
+6 PARTIAL THROMBOPLASTIN TIME PLASMA WC LB \| CPRSPROVI 05/00/97 pend  
+\#1304 \| 16:14  
+7 Reaction to NOIS CALLS Feb 10, 1997 \| CPRSPROVI 02/00/97 actv  
+\|  
+8 GLUCOSE SERUM WC LB \#1295 \| CPRSPROVI 05/00/97 pend  
+\| 10:48  
+**+ Enter ?? for more actions \>\>\>**  
+Labels Work Copies Service Copies  
+Requisitions Labels  
 ***
 
-Selected date range: Not Applicable (active orders being viewed)
-
-***
-
-Item Ordered Requestor Start Stop Sts
-
-***
-
-1 Electrocardiogram Bedside \| CPRSPROVI pend
-
-***
-
-2 GLUCOSE SERUM WC QD \| CPRSPRO 06/00 06/21 actv
-
-***
-
-\|
-
-***
-
-3 DAB TOP Q2H for 10 DAYS Quantity: 1 \|
-
-***
-
-GENTAMICIN CREAM,TOP ONCE TOP ONCE \| CPRSPRO pend
-
-***
-
-4 TRIAMCINOLONE 0.1% CREAM 454GM Apply 1 \| CPRSPROVI pend
-
-***
-
-refills PROVIDER INSTRUCTIONS GO HERE \|
-
-***
-
-5 ENALAPRIL 10MG Quantity: 1 5 refills \| CPRSPROVI 06/-00 06/16 pend
-
-***
-
-TAKE ONE PILL QD \|
-
-***
-
-6 PARTIAL THROMBOPLASTIN TIME PLASMA WC LB \| CPRSPROVI 05/00/97 pend
-
-***
-
-\#1304 \| 16:14
-
-***
-
-7 Reaction to NOIS CALLS Feb 10, 1997 \| CPRSPROVI 02/00/97 actv
-
-***
-
-\|
-
-***
-
-8 GLUCOSE SERUM WC LB \#1295 \| CPRSPROVI 05/00/97 pend
-
-***
-
-\| 10:48
-
-***
-
-**+ Enter ?? for more actions \>\>\>**
-
-***
-
-Labels Work Copies Service Copies
-
-***
-
-Requisitions Labels
-
-***
-
-***
-
-**Select type of print:**
-
-***
-
+**Select type of print:**  
 ***
 
 ### 11. Print/Report Parameters
@@ -15734,1784 +5945,584 @@ The Print/Report Parameters menu contains options for editing the parameters of 
 
 Chart Copies are the official copy for the record of all current orders that appear on a patient’s chart, using a pre-defined format. Each hospital can only have one format for Chart Copies. Chart copies can also be automatically printed on the ward.
 
-Select CPRS Configuration Menu (Clin Coord) Option: **PE** Print/Report Parameters
-
+Select CPRS Configuration Menu (Clin Coord) Option: **PE** Print/Report Parameters  
 ***
 
+CC Chart Copy Parameters  
+WC Work Copy Parameters  
+SC Service Copy Parameters  
+RE Requisition/Label Parameters  
+UM Summary Report Parameters  
+HO Print Parameters for Hospital  
+LO Print Parameters for Wards/Clinics  
+***  
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
 ***
 
-CC Chart Copy Parameters
-
+Select Print/Report Parameters Option: **CC** Chart Copy Parameters  
 ***
 
-WC Work Copy Parameters
-
+Chart Copy Definition for System: OEX.ISC-SLC.VA.GOV  
+\-------------------------------------------------------------------------  
+Chart Copy Format DOCTOR'S ORDERS  
+Chart Copy Header CHART COPY HEADER  
+Chart Copy Footer CHART COPY FOOTER  
+Expand Continuous Orders NO  
+Print Chart Copy When signing orders  
+\-------------------------------------------------------------------------  
+CHART COPY FORMAT: DOCTOR'S ORDERS// **??**  
 ***
 
-SC Service Copy Parameters
-
-***
-
-RE Requisition/Label Parameters
-
-***
-
-UM Summary Report Parameters
-
-***
-
-HO Print Parameters for Hospital
-
-***
-
-LO Print Parameters for Wards/Clinics
-
-***
-
-***
-
-***
-
-You have PENDING ALERTS
-
-***
-
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-***
-
-Select Print/Report Parameters Option: **CC** Chart Copy Parameters
-
-***
-
-***
-
-Chart Copy Definition for System: OEX.ISC-SLC.VA.GOV
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-Chart Copy Format DOCTOR'S ORDERS
-
-***
-
-Chart Copy Header CHART COPY HEADER
-
-***
-
-Chart Copy Footer CHART COPY FOOTER
-
-***
-
-Expand Continuous Orders NO
-
-***
-
-Print Chart Copy When signing orders
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-CHART COPY FORMAT: DOCTOR'S ORDERS// **??**
-
-***
-
-***
-
-Choose from:
-
-***
-
-1 LAB LABEL/INTERMEC
-
-***
-
-1002 LAB ORDER LABEL
-
-***
-
-1003 LAB REQUISITION
-
-***
-
-1004 CHART COPY 1
-
-***
-
-1005 CHART COPY 2
-
-***
-
-1006 CHART COPY HEADER
-
-***
-
-1007 CHART COPY FOOTER
-
-***
-
-1008 SHORT
-
-***
-
-1009 LONG
-
-***
-
-1010 DOCTOR'S ORDERS
-
-***
-
-1011 CONSULTATION FOOTER
-
-***
-
-1012 CONSULTATION HEADER
-
-***
-
-1013 CONSULTATION BODY
-
-***
-
-1015 CHART COPY BODY
-
-***
-
-1016 DOCTORS ORDERS FOOTER
-
-***
-
-1017 DOCTOR'S ORDERS HEADER
-
-***
-
-1018 LAB SERVICE COPY HEADER
-
-***
-
-1019 RX HEADER
-
-***
-
-1020 LAB LABEL (Buffalo)
-
-***
-
-1021 RX FOOTER
-
-***
-
-1022 GENERIC ORDER LABEL
-
-***
-
-1023 WORK COPY FORMAT
-
-***
-
-1024 WORK COPY HEADER
-
-***
-
+Choose from:  
+1 LAB LABEL/INTERMEC  
+1002 LAB ORDER LABEL  
+1003 LAB REQUISITION  
+1004 CHART COPY 1  
+1005 CHART COPY 2  
+1006 CHART COPY HEADER  
+1007 CHART COPY FOOTER  
+1008 SHORT  
+1009 LONG  
+1010 DOCTOR'S ORDERS  
+1011 CONSULTATION FOOTER  
+1012 CONSULTATION HEADER  
+1013 CONSULTATION BODY  
+1015 CHART COPY BODY  
+1016 DOCTORS ORDERS FOOTER  
+1017 DOCTOR'S ORDERS HEADER  
+1018 LAB SERVICE COPY HEADER  
+1019 RX HEADER  
+1020 LAB LABEL (Buffalo)  
+1021 RX FOOTER  
+1022 GENERIC ORDER LABEL  
+1023 WORK COPY FORMAT  
+1024 WORK COPY HEADER  
 **Chart Copy Parameters, cont’d**
 
-1025 WORK COPY FOOTER
-
+1025 WORK COPY FOOTER  
+1026 RX LABEL FORMAT  
+CHART COPY FORMAT: DOCTOR'S ORDERS// **\<Enter\>** DOCTOR'S ORDERS  
+CHART COPY HEADER: CHART COPY HEADER// **\<Enter\>** CHART COPY HEADER  
+CHART COPY FOOTER: CHART COPY FOOTER// **\<Enter\>** CHART COPY FOOTER  
+EXPAND CONTINUOUS ORDERS: NO// **??**  
 ***
 
-1026 RX LABEL FORMAT
-
+This is a site parameter to enable continuous orders (i.e., orders with a  
+continuous schedule, e.g., QD or Q4H) to be expanded or not on the chart  
+copy. If set to YES, an order for GLUCOSE BLOOD SERUM with the schedule  
+QD would appear on the chart as:  
 ***
 
-CHART COPY FORMAT: DOCTOR'S ORDERS// **\<Enter\>** DOCTOR'S ORDERS
-
+05/17 11:04 GLUCOSE BLOOD SERUM TEN CPRSPROVIDER  
+LB \#805 WC ROUTINE  
 ***
 
-CHART COPY HEADER: CHART COPY HEADER// **\<Enter\>** CHART COPY HEADER
-
+05/18 11:04 GLUCOSE BLOOD SERUM TEN CPRSPROVIDER  
+LB \#806 WC ROUTINE  
 ***
 
-CHART COPY FOOTER: CHART COPY FOOTER// **\<Enter\>** CHART COPY FOOTER
-
+05/19 11:04 GLUCOSE BLOOD SERUM TEN CPRSPROVIDER  
+LB \#807 WC ROUTINE  
 ***
 
-EXPAND CONTINUOUS ORDERS: NO// **??**
-
+If this parameter is set to NO, the same order would appear as:  
 ***
 
+05/17 11:04 GLUCOSE BLOOD SERUM QD TEN CPRSPROVIDER  
 ***
 
-This is a site parameter to enable continuous orders (i.e., orders with a
-
+EXPAND CONTINUOUS ORDERS: NO// **\<Enter\>**  
+PRINT CHART COPY WHEN: signing orders// **?**  
+'R' prints chart copy when orders are released; 'S' prints when orders  
+signed.  
+Select one of the following:  
+R releasing order  
+S signing orders  
 ***
 
-continuous schedule, e.g., QD or Q4H) to be expanded or not on the chart
-
+PRINT CHART COPY WHEN: signing orders// **??**  
 ***
 
-copy. If set to YES, an order for GLUCOSE BLOOD SERUM with the schedule
-
+Chart copies may be printed when orders are  
+a) released to the service  
+b) signed by a clinician (may be after the orders are released)  
 ***
 
-QD would appear on the chart as:
-
+This parameter determines at which point the chart copy of orders will  
+print. The chart copy may be printed when the order is released to the  
+service or delayed until the order is actually signed.  
 ***
 
+PRINT CHART COPY WHEN: signing orders// **R** releasing order  
 ***
 
-05/17 11:04 GLUCOSE BLOOD SERUM TEN CPRSPROVIDER
-
+CC Chart Copy Parameters  
+WC Work Copy Parameters  
+SC Service Copy Parameters  
+RE Requisition/Label Parameters  
+UM Summary Report Parameters  
+HO Print Parameters for Hospital  
+LO Print Parameters for Wards/Clinics  
 ***
 
-LB \#805 WC ROUTINE
-
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
 ***
 
-***
-
-05/18 11:04 GLUCOSE BLOOD SERUM TEN CPRSPROVIDER
-
-***
-
-LB \#806 WC ROUTINE
-
-***
-
-***
-
-05/19 11:04 GLUCOSE BLOOD SERUM TEN CPRSPROVIDER
-
-***
-
-LB \#807 WC ROUTINE
-
-***
-
-***
-
-If this parameter is set to NO, the same order would appear as:
-
-***
-
-***
-
-05/17 11:04 GLUCOSE BLOOD SERUM QD TEN CPRSPROVIDER
-
-***
-
-***
-
-EXPAND CONTINUOUS ORDERS: NO// **\<Enter\>**
-
-***
-
-PRINT CHART COPY WHEN: signing orders// **?**
-
-***
-
-'R' prints chart copy when orders are released; 'S' prints when orders
-
-***
-
-signed.
-
-***
-
-Select one of the following:
-
-***
-
-R releasing order
-
-***
-
-S signing orders
-
-***
-
-***
-
-PRINT CHART COPY WHEN: signing orders// **??**
-
-***
-
-***
-
-Chart copies may be printed when orders are
-
-***
-
-a) released to the service
-
-***
-
-b) signed by a clinician (may be after the orders are released)
-
-***
-
-***
-
-This parameter determines at which point the chart copy of orders will
-
-***
-
-print. The chart copy may be printed when the order is released to the
-
-***
-
-service or delayed until the order is actually signed.
-
-***
-
-***
-
-PRINT CHART COPY WHEN: signing orders// **R** releasing order
-
-***
-
-***
-
-CC Chart Copy Parameters
-
-***
-
-WC Work Copy Parameters
-
-***
-
-SC Service Copy Parameters
-
-***
-
-RE Requisition/Label Parameters
-
-***
-
-UM Summary Report Parameters
-
-***
-
-HO Print Parameters for Hospital
-
-***
-
-LO Print Parameters for Wards/Clinics
-
-***
-
-***
-
-You have PENDING ALERTS
-
-***
-
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-***
-
-Select Print/Report Parameters Option: **\<Enter\>**
-
-***
-
+Select Print/Report Parameters Option: **\<Enter\>**  
 **Work Copy Parameters**
 
-Select CPRS Configuration Menu (Clin Coord) Option: **PE** Print/Report Parameters
-
-***
-
-***
-
-CC Chart Copy Parameters
-
-***
-
-WC Work Copy Parameters
-
-***
-
-SC Service Copy Parameters
-
-***
-
-RE Requisition/Label Parameters
-
-***
-
-UM Summary Report Parameters
-
-***
-
-HO Print Parameters for Hospital
-
-***
-
-LO Print Parameters for Wards/Clinics
-
-***
-
-Select Print/Report Parameters Option: **W** Work Copy Parameters
-
-***
-
-***
-
-Work Copy Definition for System: OEX.ISC-SLC.VA.GOV
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-Work Copy Format WORK COPY FORMAT
-
-***
-
-Work Copy Header WORK COPY HEADER
-
-***
-
-Work Copy Footer WORK COPY FOOTER
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-WORK COPY FORMAT: WORK COPY FORMAT// **\<Enter\>** WORK COPY FORMAT
-
-***
-
-WORK COPY HEADER: WORK COPY HEADER// **\<Enter\>** WORK COPY HEADER
-
-***
-
-WORK COPY FOOTER: WORK COPY FOOTER// **\<Enter\>** WORK COPY FOOTER
-
-***
-
-***
-
-CC Chart Copy Parameters
-
-***
-
-WC Work Copy Parameters
-
-***
-
-SC Service Copy Parameters
-
-***
-
-RE Requisition/Label Parameters
-
-***
-
-UM Summary Report Parameters
-
-***
-
-HO Print Parameters for Hospital
-
-***
-
-LO Print Parameters for Wards/Clinics
-
-***
-
-***
-
-Select Print/Report Parameters Option:**\<Enter\>**
-
-***
-
-**Service Copy Parameters**
-
-***
-
-**This option is for editing Service Copy site parameters.**
-
-***
-
-Select CPRS Configuration Menu (Clin Coord) Option: **PE** Print/Report Parameters
-
-***
-
-***
-
-CC Chart Copy Parameters
-
-***
-
-WC Work Copy Parameters
-
-***
-
-SC Service Copy Parameters
-
-***
-
-RE Requisition/Label Parameters
-
-***
-
-UM Summary Report Parameters
-
-***
-
-HO Print Parameters for Hospital
-
-***
-
-LO Print Parameters for Wards/Clinics
-
-***
-
-***
-
-You have PENDING ALERTS
-
-***
-
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-***
-
-Select Print/Report Parameters Option: **SC** Service Copy Parameters
-
-***
-
-Service Copy Parameters
-
-***
-
-Select PACKAGE: LAB SERVICE LR
-
-***
-
-***
-
-Service Copy Definition for System: OEX.ISC-SLC.VA.GOV, LAB SERVICE
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-Service Copy Format LAB SERVICE DOCTOR'S ORDERS
-
-***
-
-Service Copy Header LAB SERVICE LAB SERVICE COPY HEADER
-
-***
-
-Service Copy Footer LAB SERVICE CHART COPY FOOTER
-
-***
-
-Service Copy Default Device LAB SERVICE LASER
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-FORMAT: DOCTOR'S ORDERS// **?**
-
-***
-
-Answer with OE/RR PRINT FORMATS NUMBER, or NAME
-
-***
-
-Do you want the entire 25-Entry OE/RR PRINT FORMATS List? **N** (No)
-
-***
-
-FORMAT: DOCTOR'S ORDERS// **\<Enter\>** DOCTOR'S ORDERS
-
-***
-
-HEADER: LAB SERVICE COPY HEADER// **\<Enter\>** LAB SERVICE COPY HEADER
-
-***
-
-FOOTER: CHART COPY FOOTER// **\<Enter\>** CHART COPY FOOTER
-
-***
-
-DEVICE: LASER// **\<Enter\>** LASER PRINTER ROOM LN11 12 PITCH \_LTA36:
-
-***
-
-***
-
-Service Copy Definition for System: OEX.ISC-SLC.VA.GOV, LAB SERVICE is now:
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-Service Copy Format LAB SERVICE DOCTOR'S ORDERS
-
-***
-
-Service Copy Header LAB SERVICE LAB SERVICE COPY HEADER
-
-***
-
-Service Copy Footer LAB SERVICE CHART COPY FOOTER
-
-***
-
-Service Copy Default Device LAB SERVICE LASER
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-Enter RETURN to continue or '\^' to exit: **\<Enter\>**
-
-***
-
-***
-
-CC Chart Copy Parameters
-
-***
-
-WC Work Copy Parameters
-
-***
-
-SC Service Copy Parameters
-
-***
-
-RE Requisition/Label Parameters
-
-***
-
-UM Summary Report Parameters
-
-***
-
-MI Miscellaneous OE/RR Parameters
-
-***
-
-HO Print Parameters for Hospital
-
-***
-
-LO Print Parameters for Wards/Clinics
-
-***
-
-***
-
-You have PENDING ALERTS
-
-***
-
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-Select Parameter Edit Option: **\<Enter\>**
-
-***
-
+Select CPRS Configuration Menu (Clin Coord) Option: **PE** Print/Report Parameters  
+***
+
+CC Chart Copy Parameters  
+WC Work Copy Parameters  
+SC Service Copy Parameters  
+RE Requisition/Label Parameters  
+UM Summary Report Parameters  
+HO Print Parameters for Hospital  
+LO Print Parameters for Wards/Clinics  
+Select Print/Report Parameters Option: **W** Work Copy Parameters  
+***
+
+Work Copy Definition for System: OEX.ISC-SLC.VA.GOV  
+\-------------------------------------------------------------------------  
+Work Copy Format WORK COPY FORMAT  
+Work Copy Header WORK COPY HEADER  
+Work Copy Footer WORK COPY FOOTER  
+\-------------------------------------------------------------------------  
+WORK COPY FORMAT: WORK COPY FORMAT// **\<Enter\>** WORK COPY FORMAT  
+WORK COPY HEADER: WORK COPY HEADER// **\<Enter\>** WORK COPY HEADER  
+WORK COPY FOOTER: WORK COPY FOOTER// **\<Enter\>** WORK COPY FOOTER  
+***
+
+CC Chart Copy Parameters  
+WC Work Copy Parameters  
+SC Service Copy Parameters  
+RE Requisition/Label Parameters  
+UM Summary Report Parameters  
+HO Print Parameters for Hospital  
+LO Print Parameters for Wards/Clinics  
+***
+
+Select Print/Report Parameters Option:**\<Enter\>**  
+**Service Copy Parameters**  
+**This option is for editing Service Copy site parameters.**  
+Select CPRS Configuration Menu (Clin Coord) Option: **PE** Print/Report Parameters  
+***
+
+CC Chart Copy Parameters  
+WC Work Copy Parameters  
+SC Service Copy Parameters  
+RE Requisition/Label Parameters  
+UM Summary Report Parameters  
+HO Print Parameters for Hospital  
+LO Print Parameters for Wards/Clinics  
+***
+
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
+***
+
+Select Print/Report Parameters Option: **SC** Service Copy Parameters  
+Service Copy Parameters  
+Select PACKAGE: LAB SERVICE LR  
+***
+
+Service Copy Definition for System: OEX.ISC-SLC.VA.GOV, LAB SERVICE  
+\-------------------------------------------------------------------------  
+Service Copy Format LAB SERVICE DOCTOR'S ORDERS  
+Service Copy Header LAB SERVICE LAB SERVICE COPY HEADER  
+Service Copy Footer LAB SERVICE CHART COPY FOOTER  
+Service Copy Default Device LAB SERVICE LASER  
+\-------------------------------------------------------------------------  
+FORMAT: DOCTOR'S ORDERS// **?**  
+Answer with OE/RR PRINT FORMATS NUMBER, or NAME  
+Do you want the entire 25-Entry OE/RR PRINT FORMATS List? **N** (No)  
+FORMAT: DOCTOR'S ORDERS// **\<Enter\>** DOCTOR'S ORDERS  
+HEADER: LAB SERVICE COPY HEADER// **\<Enter\>** LAB SERVICE COPY HEADER  
+FOOTER: CHART COPY FOOTER// **\<Enter\>** CHART COPY FOOTER  
+DEVICE: LASER// **\<Enter\>** LASER PRINTER ROOM LN11 12 PITCH \_LTA36:  
+***
+
+Service Copy Definition for System: OEX.ISC-SLC.VA.GOV, LAB SERVICE is now:  
+\-------------------------------------------------------------------------  
+Service Copy Format LAB SERVICE DOCTOR'S ORDERS  
+Service Copy Header LAB SERVICE LAB SERVICE COPY HEADER  
+Service Copy Footer LAB SERVICE CHART COPY FOOTER  
+Service Copy Default Device LAB SERVICE LASER  
+\-------------------------------------------------------------------------  
+Enter RETURN to continue or '\^' to exit: **\<Enter\>**  
+***
+
+CC Chart Copy Parameters  
+WC Work Copy Parameters  
+SC Service Copy Parameters  
+RE Requisition/Label Parameters  
+UM Summary Report Parameters  
+MI Miscellaneous OE/RR Parameters  
+HO Print Parameters for Hospital  
+LO Print Parameters for Wards/Clinics  
+***
+
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
+Select Parameter Edit Option: **\<Enter\>**  
 ***
 
 **Requisition/Label Parameters**
 
 This option is for editing print parameters for requisitions or labels. A Requisition is a working copy of order(s) that will be sent with the order to the service. It doesn’t contain a header or footer.
 
-Select Print/Report Parameters Option: **RE** Requisition/Label Parameters
-
+Select Print/Report Parameters Option: **RE** Requisition/Label Parameters  
 ***
 
+Requisition/Label Definition for System: OEX.ISC-SLC.VA.GOV  
+\-------------------------------------------------------------------------  
+Ward Requisition Format LAB SERVICE LAB REQUISITION  
+RADIOLOGY/NUCLEAR MEDICINE CHART COPY BODY  
+MEDICINE DOCTOR'S ORDERS  
+CONSULT TRACKING  
+Ward Requisition Header RADIOLOGY/NUCLEAR MEDICINE CHART COPY HEADER  
+Ward Requisition Footer RADIOLOGY/NUCLEAR MEDICINE CHART COPY FOOTER  
+Ward Label Format LAB SERVICE LAB ORDER LABEL  
+RADIOLOGY/NUCLEAR MEDICINE GENERIC ORDER LABEL  
+INPATIENT MEDICATIONS RX LABEL FORMAT  
+MEDICINE DOCTOR'S ORDERS  
+\-------------------------------------------------------------------------  
+For Ward Requisition Format -  
+Select package: **PHARMACY**  
+1 PHARMACY PS  
+Are you adding PHARMACY as a new package? Yes// **\<Enter\>** YES  
+package: PHARMACY// **\<Enter\>**  PHARMACY PS PHARMACY  
 ***
 
-Requisition/Label Definition for System: OEX.ISC-SLC.VA.GOV
-
+WARD REQUISITION FORMAT: **DOCTOR'S ORDERS**  
+For Ward Requisition Format -  
+Select package:**\<Enter\>**  
 ***
 
-\-------------------------------------------------------------------------
-
+For Ward Requisition Header -  
+Select package: **PHARMACY** PS  
+Are you adding PHARMACY as a new package? Yes// **\<Enter\>** YES  
+package: PHARMACY// **\<Enter\>** PHARMACY PS PHARMACY  
+WARD REQUISTION HEADER: **RX HEADER**  
 ***
 
-Ward Requisition Format LAB SERVICE LAB REQUISITION
-
+For Ward Requisition Header -  
+Select package: **\<Enter\>**  
+For Ward Requisition Footer -  
+Select package: **PHARMACY** PS  
+Are you adding PHARMACY as a new package? Yes// **\<Enter\>** YES  
+package: PHARMACY// **\<Enter\>** PHARMACY PS PHARMACY  
+WARD REQUISTITION FOOTER: **RX FOOTER**  
 ***
 
-RADIOLOGY/NUCLEAR MEDICINE CHART COPY BODY
-
+For Ward Requisition Footer -  
+Select package: **\<Enter\>**  
+For Ward Label Format -  
+Select PACKAGE: **PHARMACY**  
+Are you adding PHARMACY as a new PACKAGE? Yes// **\<Enter\>** YES  
 ***
 
-MEDICINE DOCTOR'S ORDERS
-
-***
-
-CONSULT TRACKING
-
-***
-
-Ward Requisition Header RADIOLOGY/NUCLEAR MEDICINE CHART COPY HEADER
-
-***
-
-Ward Requisition Footer RADIOLOGY/NUCLEAR MEDICINE CHART COPY FOOTER
-
-***
-
-Ward Label Format LAB SERVICE LAB ORDER LABEL
-
-***
-
-RADIOLOGY/NUCLEAR MEDICINE GENERIC ORDER LABEL
-
-***
-
-INPATIENT MEDICATIONS RX LABEL FORMAT
-
-***
-
-MEDICINE DOCTOR'S ORDERS
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-For Ward Requisition Format -
-
-***
-
-Select package: **PHARMACY**
-
-***
-
-1 PHARMACY PS
-
-***
-
-Are you adding PHARMACY as a new package? Yes// **\<Enter\>** YES
-
-***
-
-package: PHARMACY// **\<Enter\>**  PHARMACY PS PHARMACY
-
-***
-
-***
-
-WARD REQUISITION FORMAT: **DOCTOR'S ORDERS**
-
-***
-
-For Ward Requisition Format -
-
-***
-
-Select package:**\<Enter\>**
-
-***
-
-***
-
-For Ward Requisition Header -
-
-***
-
-Select package: **PHARMACY** PS
-
-***
-
-Are you adding PHARMACY as a new package? Yes// **\<Enter\>** YES
-
-***
-
-package: PHARMACY// **\<Enter\>** PHARMACY PS PHARMACY
-
-***
-
-WARD REQUISTION HEADER: **RX HEADER**
-
-***
-
-***
-
-For Ward Requisition Header -
-
-***
-
-Select package: **\<Enter\>**
-
-***
-
-For Ward Requisition Footer -
-
-***
-
-Select package: **PHARMACY** PS
-
-***
-
-Are you adding PHARMACY as a new package? Yes// **\<Enter\>** YES
-
-***
-
-package: PHARMACY// **\<Enter\>** PHARMACY PS PHARMACY
-
-***
-
-WARD REQUISTITION FOOTER: **RX FOOTER**
-
-***
-
-***
-
-For Ward Requisition Footer -
-
-***
-
-Select package: **\<Enter\>**
-
-***
-
-For Ward Label Format -
-
-***
-
-Select PACKAGE: **PHARMACY**
-
-***
-
-Are you adding PHARMACY as a new PACKAGE? Yes// **\<Enter\>** YES
-
-***
-
-***
-
-PACKAGE: PHARMACY// **\<Enter\>** PHARMACY PS PHARMACY
-
-***
-
-WARD LABEL FORMAT: **RX LABEL FORMAT**
-
-***
-
-For Ward Label Format -
-
-***
-
-Select PACKAGE: **\<Enter\>**
-
-***
-
+PACKAGE: PHARMACY// **\<Enter\>** PHARMACY PS PHARMACY  
+WARD LABEL FORMAT: **RX LABEL FORMAT**  
+For Ward Label Format -  
+Select PACKAGE: **\<Enter\>**  
 ***
 
 **Summary Report Parameters**
 
 This option is for editing Summary Report site parameters.
 
-CC Chart Copy Parameters
-
+CC Chart Copy Parameters  
+WC Work Copy Parameters  
+SC Service Copy Parameters  
+RE Requisition/Label Parameters  
+UM Summary Report Parameters  
+HO Print Parameters for Hospital  
+LO Print Parameters for Wards/Clinics  
+***  
+You have PENDING ALERTS  
+Enter "VA VIEW ALERTS to review alerts  
 ***
 
-WC Work Copy Parameters
-
+Select Print/Report Parameters Option: **UM** Summary Report Parameters  
 ***
 
-SC Service Copy Parameters
-
+Summary Report Definition for System: OEX.ISC-SLC.VA.GOV  
+\-------------------------------------------------------------------------  
+Chart Copy Summary Sort Forward YES  
+Work Copy Summary Sort Forward YES  
+\-------------------------------------------------------------------------  
+CHART SUMMARY ORDER: YES// **?**  
 ***
 
-RE Requisition/Label Parameters
-
+Enter YES to have the Chart Copy Summaries sort by forward date/time.  
 ***
 
-UM Summary Report Parameters
-
+CHART SUMMARY ORDER: YES// **??**  
 ***
 
-HO Print Parameters for Hospital
-
+This parameter allows the Chart Copy summaries to print in forward  
+chronological order.  
 ***
 
-LO Print Parameters for Wards/Clinics
-
+CHART SUMMARY ORDER: YES// **\<Enter\>**  
+WORK COPY SUMMARY SORT: YES// **?**  
 ***
 
+Enter YES to have the Work Copy Summaries sort by forward date/time.  
 ***
 
+WORK COPY SUMMARY SORT: YES// **??**  
 ***
 
-You have PENDING ALERTS
-
+This parameter allows the Work Copy summaries to print in forward  
+chronological order.  
 ***
 
-Enter "VA VIEW ALERTS to review alerts
-
-***
-
-***
-
-Select Print/Report Parameters Option: **UM** Summary Report Parameters
-
-***
-
-***
-
-Summary Report Definition for System: OEX.ISC-SLC.VA.GOV
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-Chart Copy Summary Sort Forward YES
-
-***
-
-Work Copy Summary Sort Forward YES
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-CHART SUMMARY ORDER: YES// **?**
-
-***
-
-***
-
-Enter YES to have the Chart Copy Summaries sort by forward date/time.
-
-***
-
-***
-
-CHART SUMMARY ORDER: YES// **??**
-
-***
-
-***
-
-This parameter allows the Chart Copy summaries to print in forward
-
-***
-
-chronological order.
-
-***
-
-***
-
-CHART SUMMARY ORDER: YES// **\<Enter\>**
-
-***
-
-WORK COPY SUMMARY SORT: YES// **?**
-
-***
-
-***
-
-Enter YES to have the Work Copy Summaries sort by forward date/time.
-
-***
-
-***
-
-WORK COPY SUMMARY SORT: YES// **??**
-
-***
-
-***
-
-This parameter allows the Work Copy summaries to print in forward
-
-***
-
-chronological order.
-
-***
-
-***
-
-WORK COPY SUMMARY SORT: YES// **\<Enter\>**
-
-***
-
+WORK COPY SUMMARY SORT: YES// **\<Enter\>**  
 **Print Parameters for Hospital**
 
 This option is for editing hospital-wide print parameters for CPRS.
 
-Select Print/Report Parameters Option: **ho** Print Parameters for Hospital
-
+Select Print/Report Parameters Option: **ho** Print Parameters for Hospital  
 ***
 
+Miscellaneous Hospital Prints for System: OEX.ISC-SLC.VA.GOV  
+\----------------------------------------------------------------------------  
+Initials on Summary YES  
+Requisition Sort Field LAB SERVICE SAMPLE  
+Label Sort Field LAB SERVICE SAMPLE  
+Order Summary Sort Forward YES  
+\----------------------------------------------------------------------------  
+PRINT INITIALS ON SUMMARY REPORT: YES// **??**  
+This parameter allows the initials of the person who entered the order to  
+be displayed on the order summary reports. The initials take up an  
+additional line on the display and are shown just below the Ord'd date  
+time.  
+PRINT INITIALS ON SUMMARY REPORT: YES// **n** NO  
 ***
 
-Miscellaneous Hospital Prints for System: OEX.ISC-SLC.VA.GOV
-
+For Requisition Sort Field -  
+Select package: **?**  
 ***
 
-\----------------------------------------------------------------------------
-
+package Value  
+\------- -----  
+LAB SERVICE SAMPLE  
 ***
 
-Initials on Summary YES
-
+Answer with PACKAGE NAME, or PREFIX, or SYNONYM, or ROUTINE  
+Do you want the entire 280-Entry PACKAGE List? **n**  (No)  
+Select package: **dietetics** FH  
+Are you adding DIETETICS as a new package? Yes//**\<Enter\>** YES  
 ***
 
-Requisition Sort Field LAB SERVICE SAMPLE
-
+package: DIETETICS// **\<Enter\>** DIETETICS FH DIETETICS  
+REQUISITION SORT FIELD: ?  
+Enter the field name to sort requisitions by.  
 ***
 
-Label Sort Field LAB SERVICE SAMPLE
-
+REQUISITION SORT FIELD: **??**  
+This is the field as defined at the \^OR(100,ifn,4.5 level in file 100  
+to be used to sort requisitions by.  
 ***
 
-Order Summary Sort Forward YES
-
+REQUISITION SORT FIELD: dietetics  
 ***
 
-\----------------------------------------------------------------------------
-
-***
-
-PRINT INITIALS ON SUMMARY REPORT: YES// **??**
-
-***
-
-This parameter allows the initials of the person who entered the order to
-
-***
-
-be displayed on the order summary reports. The initials take up an
-
-***
-
-additional line on the display and are shown just below the Ord'd date
-
-***
-
-time.
-
-***
-
-PRINT INITIALS ON SUMMARY REPORT: YES// **n** NO
-
-***
-
-***
-
-For Requisition Sort Field -
-
-***
-
-Select package: **?**
-
-***
-
-***
-
-package Value
-
-***
-
-\------- -----
-
-***
-
-LAB SERVICE SAMPLE
-
-***
-
-***
-
-Answer with PACKAGE NAME, or PREFIX, or SYNONYM, or ROUTINE
-
-***
-
-Do you want the entire 280-Entry PACKAGE List? **n**  (No)
-
-***
-
-Select package: **dietetics** FH
-
-***
-
-Are you adding DIETETICS as a new package? Yes//**\<Enter\>** YES
-
-***
-
-***
-
-package: DIETETICS// **\<Enter\>** DIETETICS FH DIETETICS
-
-***
-
-REQUISITION SORT FIELD: ?
-
-***
-
-Enter the field name to sort requisitions by.
-
-***
-
-***
-
-REQUISITION SORT FIELD: **??**
-
-***
-
-This is the field as defined at the \^OR(100,ifn,4.5 level in file 100
-
-***
-
-to be used to sort requisitions by.
-
-***
-
-***
-
-REQUISITION SORT FIELD: dietetics
-
-***
-
-***
-
-For Requisition Sort Field -
-
-***
-
-Select package: **radiology**
-
-***
-
-1 RADIOLOGY - HL7 RAHL
-
-***
-
-2 RADIOLOGY PATCH 23 RAAE
-
-***
-
-3 RADIOLOGY PATCH INIT4 RAAD
-
-***
-
-4 RADIOLOGY PATCH18 INIT RAAF
-
-***
-
-5 RADIOLOGY/NUCLEAR MEDICINE RA
-
-***
-
-CHOOSE 1-5: 5 RADIOLOGY/NUCLEAR MEDICINE
-
-***
-
-For Label Sort Field -
-
-***
-
-Select package: **dietetics** FH
-
-***
-
-Are you adding DIETETICS as a new package? Yes//**\<Enter\>**
-
-***
-
-SUMMARY SORT FORWARD: YES// **??**
-
-***
-
-This parameter allows the Order summaries to print in forward
-
-***
-
-chronological order.
-
-***
-
-SUMMARY SORT FORWARD: YES// **\<Enter\>**
-
-***
-
+For Requisition Sort Field -  
+Select package: **radiology**  
+1 RADIOLOGY - HL7 RAHL  
+2 RADIOLOGY PATCH 23 RAAE  
+3 RADIOLOGY PATCH INIT4 RAAD  
+4 RADIOLOGY PATCH18 INIT RAAF  
+5 RADIOLOGY/NUCLEAR MEDICINE RA  
+CHOOSE 1-5: 5 RADIOLOGY/NUCLEAR MEDICINE  
+For Label Sort Field -  
+Select package: **dietetics** FH  
+Are you adding DIETETICS as a new package? Yes//**\<Enter\>**  
+SUMMARY SORT FORWARD: YES// **??**  
+This parameter allows the Order summaries to print in forward  
+chronological order.  
+SUMMARY SORT FORWARD: YES// **\<Enter\>**  
 **Print Parameters for Wards/Clinics**
 
 This option is for editing print parameters for each ward/clinic location.
 
-Select Print/Report Parameters Option: **LO** Print Parameters for Wards/ Clinics
-
+Select Print/Report Parameters Option: **LO** Print Parameters for Wards/ Clinics  
+Select HOSPITAL LOCATION NAME: **XRAY CLINIC**  
 ***
 
-Select HOSPITAL LOCATION NAME: **XRAY CLINIC**
-
+Print Definition (Loc) for Location: XRAY CLINIC  
+\-------------------------------------------------------------------------  
+Chart Copy Print Device WORK  
+Prompt for Chart Copy DON'T PROMPT  
+Work Copy Print Device WORK  
+Prompt for Work Copy DON'T PROMPT  
+Requisition Print Device WORK  
+Prompt for Requisitions PROMPT AND ASK DEVICE  
+Label Print Device WORK  
+Prompt for Labels DON'T PROMPT  
+Daily Order Summary Device WORK  
+Service Copy Default Device RADIOLOGY/NUCLEAR MEDICINE WORK  
+Print Chart Copy Summary  
+Print Daily Order Summary  
+\-------------------------------------------------------------------------  
+CHART COPY PRINT DEVICE: WORK// **?**  
+Answer with DEVICE NAME, or LOCAL SYNONYM, or \$I, or VOLUME SET(CPU), or  
+SIGN-ON/SYSTEM DEVICE, or SUBTYPE, or FORM CURRENTLY MOUNTED  
+Do you want the entire DEVICE List? N (No)  
 ***
 
+CHART COPY PRINT DEVICE: WORK// **\<Enter\>** WORK OTC \_LTA33:  
+PROMPT FOR CHART COPY: DON'T PROMPT// **?**  
 ***
 
-Print Definition (Loc) for Location: XRAY CLINIC
-
+Specify how the printing of chart copies will work for this location.  
+Select one of the following:  
+0 DON'T PROMPT  
+1 PROMPT AND ASK DEVICE  
+2 PROMPT AND NOT ASK DEVICE  
+\* DON'T PRINT  
+PROMPT FOR CHART COPY: DON'T PROMPT// **??**  
 ***
 
-\-------------------------------------------------------------------------
-
-***
-
-Chart Copy Print Device WORK
-
-***
-
-Prompt for Chart Copy DON'T PROMPT
-
-***
-
-Work Copy Print Device WORK
-
-***
-
-Prompt for Work Copy DON'T PROMPT
-
-***
-
-Requisition Print Device WORK
-
-***
-
-Prompt for Requisitions PROMPT AND ASK DEVICE
-
-***
-
-Label Print Device WORK
-
-***
-
-Prompt for Labels DON'T PROMPT
-
-***
-
-Daily Order Summary Device WORK
-
-***
-
-Service Copy Default Device RADIOLOGY/NUCLEAR MEDICINE WORK
-
-***
-
-Print Chart Copy Summary
-
-***
-
-Print Daily Order Summary
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-CHART COPY PRINT DEVICE: WORK// **?**
-
-***
-
-Answer with DEVICE NAME, or LOCAL SYNONYM, or \$I, or VOLUME SET(CPU), or
-
-***
-
-SIGN-ON/SYSTEM DEVICE, or SUBTYPE, or FORM CURRENTLY MOUNTED
-
-***
-
-Do you want the entire DEVICE List? N (No)
-
-***
-
-***
-
-CHART COPY PRINT DEVICE: WORK// **\<Enter\>** WORK OTC \_LTA33:
-
-***
-
-PROMPT FOR CHART COPY: DON'T PROMPT// **?**
-
-***
-
-***
-
-Specify how the printing of chart copies will work for this location.
-
-***
-
-Select one of the following:
-
-***
-
-0 DON'T PROMPT
-
-***
-
-1 PROMPT AND ASK DEVICE
-
-***
-
-2 PROMPT AND NOT ASK DEVICE
-
-***
-
-\* DON'T PRINT
-
-***
-
-PROMPT FOR CHART COPY: DON'T PROMPT// **??**
-
-***
-
-***
-
-This field allows various levels of user interaction for printing a
-
-***
-
-chart copy of the orders.
-
-***
-
-ENTER 0 for no prompts- chart copy is automatically generated.
-
-***
-
-1 to prompt for chart copy and ask which printer should be used.
-
-***
-
-2 to prompt for chart copy and automatically print to the
-
-***
-
-printer defined in the CHART COPY PRINT DEVICE field.
-
-***
-
-\* don't print.
-
-***
-
-PROMPT FOR CHART COPY: DON'T PROMPT// **1** PROMPT AND ASK DEVICE
-
-***
-
-WORK COPY PRINT DEVICE: WORK// **\<Enter\>** WORK OTC \_LTA33:
-
-***
-
-PROMPT FOR WORK COPY: DON'T PROMPT// **1** PROMPT AND ASK DEVICE
-
-***
-
-REQUISITION PRINT DEVICE: WORK// **\<Enter\>** WORK OTC \_LTA33:
-
-***
-
-PROMPT FOR REQUISITIONS: PROMPT AND ASK DEVICE//**\<Enter\>**
-
-***
-
-LABEL PRINT DEVICE: WORK// **LABEL**
-
-***
-
-1 LABEL PRINTER NAME \_LTA9999:
-
-***
-
-2 LABEL TABLE INTERMEC 4100 LABEL TABLE \_LTA370:
-
-***
-
-CHOOSE 1-2: 2 INTERMEC 4100
-
-***
-
+This field allows various levels of user interaction for printing a  
+chart copy of the orders.  
+ENTER 0 for no prompts- chart copy is automatically generated.  
+1 to prompt for chart copy and ask which printer should be used.  
+2 to prompt for chart copy and automatically print to the  
+printer defined in the CHART COPY PRINT DEVICE field.  
+\* don't print.  
+PROMPT FOR CHART COPY: DON'T PROMPT// **1** PROMPT AND ASK DEVICE  
+WORK COPY PRINT DEVICE: WORK// **\<Enter\>** WORK OTC \_LTA33:  
+PROMPT FOR WORK COPY: DON'T PROMPT// **1** PROMPT AND ASK DEVICE  
+REQUISITION PRINT DEVICE: WORK// **\<Enter\>** WORK OTC \_LTA33:  
+PROMPT FOR REQUISITIONS: PROMPT AND ASK DEVICE//**\<Enter\>**  
+LABEL PRINT DEVICE: WORK// **LABEL**  
+1 LABEL PRINTER NAME \_LTA9999:  
+2 LABEL TABLE INTERMEC 4100 LABEL TABLE \_LTA370:  
+CHOOSE 1-2: 2 INTERMEC 4100  
 **Print Parameters for Wards/Clinics, cont’d**
 
-PROMPT FOR LABELS: DON'T PROMPT// **\<Enter\>**
-
+PROMPT FOR LABELS: DON'T PROMPT// **\<Enter\>**  
+DAILY ORDER SUMMARY DEVICE: WORK// **\<Enter\>** WORK OTC \_LTA33:  
 ***
 
-DAILY ORDER SUMMARY DEVICE: WORK// **\<Enter\>** WORK OTC \_LTA33:
-
+For Service Copy Default Device -  
+Select PACKAGE: **LAB**  
+1 LAB HL7 OERR LR7O  
+2 LAB MESSAGING LA7  
+3 LAB ORDER ENTRY LRX  
+4 LAB PRE-RELEASE OERR_V3 LR02  
+5 LAB SERVICE LR  
+Press \<RETURN\> to see more, '\^' to exit this list, OR  
+CHOOSE 1-5: **3**  
+Are you adding LAB ORDER ENTRY as a new PACKAGE? Yes//**\<Enter\>** YES  
 ***
 
+PACKAGE: LAB ORDER ENTRY//**\<Enter\>** LAB ORDER ENTRY LRX LAB ORDER ENTRY  
+SERVICE COPY DEVICE: **WORK**  
+1 WORK WORK OTC \_LTA33:  
+2 WORK SHORT WORK BOX ROOM \_LTA33:  
+3 WORKSTATION Workstation Redirector WS.DAT OER  
+4 WORK VIC CARD REGISTRATION WORK  
+CHOOSE 1-4: **1** WORK  
 ***
 
-For Service Copy Default Device -
-
+For Service Copy Default Device -  
+Select PACKAGE:**\<Enter\>**  
+PRINT CHART COPY SUMMARY: **?**  
 ***
 
-Select PACKAGE: **LAB**
-
+Specify whether chart copy summary will print for this location.  
 ***
 
-1 LAB HL7 OERR LR7O
-
+PRINT CHART COPY SUMMARY: **??**  
 ***
 
-2 LAB MESSAGING LA7
-
+This parameter specifies to the nightly background job ORTASK 24HR CHART  
+COPIES that a daily Chart Copy summary should be queued to the device  
+specified by the CHART COPY DEVICE field.  
 ***
 
-3 LAB ORDER ENTRY LRX
-
+PRINT CHART COPY SUMMARY: **YES**  
+PRINT DAILY ORDER SUMMARY: **YES**  
 ***
 
-4 LAB PRE-RELEASE OERR_V3 LR02
-
+CC Chart Copy Parameters  
+WC Work Copy Parameters  
+SC Service Copy Parameters  
+RE Requisition/Label Parameters  
+UM Summary Report Parameters  
+HO Print Parameters for Hospital  
+LO Print Parameters for Wards/Clinics  
 ***
 
-5 LAB SERVICE LR
-
-***
-
-Press \<RETURN\> to see more, '\^' to exit this list, OR
-
-***
-
-CHOOSE 1-5: **3**
-
-***
-
-Are you adding LAB ORDER ENTRY as a new PACKAGE? Yes//**\<Enter\>** YES
-
-***
-
-***
-
-PACKAGE: LAB ORDER ENTRY//**\<Enter\>** LAB ORDER ENTRY LRX LAB ORDER ENTRY
-
-***
-
-SERVICE COPY DEVICE: **WORK**
-
-***
-
-1 WORK WORK OTC \_LTA33:
-
-***
-
-2 WORK SHORT WORK BOX ROOM \_LTA33:
-
-***
-
-3 WORKSTATION Workstation Redirector WS.DAT OER
-
-***
-
-4 WORK VIC CARD REGISTRATION WORK
-
-***
-
-CHOOSE 1-4: **1** WORK
-
-***
-
-***
-
-For Service Copy Default Device -
-
-***
-
-Select PACKAGE:**\<Enter\>**
-
-***
-
-PRINT CHART COPY SUMMARY: **?**
-
-***
-
-***
-
-Specify whether chart copy summary will print for this location.
-
-***
-
-***
-
-PRINT CHART COPY SUMMARY: **??**
-
-***
-
-***
-
-This parameter specifies to the nightly background job ORTASK 24HR CHART
-
-***
-
-COPIES that a daily Chart Copy summary should be queued to the device
-
-***
-
-specified by the CHART COPY DEVICE field.
-
-***
-
-***
-
-PRINT CHART COPY SUMMARY: **YES**
-
-***
-
-PRINT DAILY ORDER SUMMARY: **YES**
-
-***
-
-***
-
-CC Chart Copy Parameters
-
-***
-
-WC Work Copy Parameters
-
-***
-
-SC Service Copy Parameters
-
-***
-
-RE Requisition/Label Parameters
-
-***
-
-UM Summary Report Parameters
-
-***
-
-HO Print Parameters for Hospital
-
-***
-
-LO Print Parameters for Wards/Clinics
-
-***
-
-***
-
-Select Print/Report Parameters Option:**\<Enter\>**
-
-***
-
+Select Print/Report Parameters Option:**\<Enter\>**  
 ### 12. Release/Delete Delayed Orders
 
 This option lets coordinators or IRMS release or cancel delayed orders that haven’t been processed for some reason.
 
-Select CPRS Configuration (Clin Coord) Option: **RE** Release/Cancel Delayed Orders
-
+Select CPRS Configuration (Clin Coord) Option: **RE** Release/Cancel Delayed Orders  
 ***
 
+**Ward 1A** Nov 00, 1997 15:08:52 Page: 1 of 1  
+Current patient: \*\* No patient selected \*\*  
 ***
 
-**Ward 1A** Nov 00, 1997 15:08:52 Page: 1 of 1
-
+Patient Name ID DOB Room-Bed  
+1 CPRSPATIENT,ONE (O0001) Sep 00, 1944 A-2  
+2 CPRSPATIENT,SEVEN (S0007) Dec 00, 1951  
+3 CPRSPATIENT,EIGHT (E0008) Apr 00, 1931  
+4 CPRSPATIENT,NINE (N0009) May 00, 1932  
+5 CPRSPATIENT,TEN (T0010) Feb 00, 1923 B-5  
+6 CPRSPATIENT1,ONE (00011) Sep 00, 1950 B-4  
+7 CPRSPATIENT1,TWO (T0012) Apr 00, 1911  
 ***
 
-Current patient: \*\* No patient selected \*\*
-
+**Enter the number of the patient chart to be opened**  
+\+ Next Screen CV Change View ... FD Find Patient  
+\- Previous Screen SV Save as Default List Q Close  
 ***
 
+Select Patient: Close// **5** CPRSPATIENT,TEN 2-00-23 000000010 YES SC VETERAN  
+Delayed Orders Nov 00, 1997 08:00:51 Page: 1 of 1  
+CPRSPATIENT,TEN 000-00-0010 1A/B-5 FEB 00,1923 (74) \<A\>  
+Selected date range: None Selected  
+Item Ordered Delayed Until  
+1 ACETAMINOPHEN 325MG Take 2 TABLET(S) PO \| Discharge  
+Q4H Quantity: 100 0 refills \|  
+2 IBUPROFEN SUSP 1TSP PO Q6H Quantity: 1 0 \| Discharge  
+refills \|  
 ***
 
-Patient Name ID DOB Room-Bed
-
+Enter the numbers of the items you wish to act on. \>\>\>  
+\+ Next Screen - Previous Screen Q Quit  
 ***
 
-1 CPRSPATIENT,ONE (O0001) Sep 00, 1944 A-2
-
+Select: Quit// **1**  
+**Delayed Orders** Nov 12, 1997 08:00:51 Page: 1 of 1  
+CPRSPATIENT,TEN 000-00-0010 1A/B-5 FEB 00,1923 (74) \<A\>  
+Selected date range: None Selected  
+Item Ordered Delayed Until  
+1 ACETAMINOPHEN 325MG Take 2 TABLET(S) PO \| Discharge  
+Q4H Quantity: 100 0 refills \|  
+2 IBUPROFEN SUSP 1TSP PO Q6H Quantity: 1 0 \| Discharge  
+refills \|  
 ***
 
-2 CPRSPATIENT,SEVEN (S0007) Dec 00, 1951
-
+**Enter the numbers of the items you wish to act on. \>\>\>**  
+Release to service Cancel Detailed Display  
 ***
 
-3 CPRSPATIENT,EIGHT (E0008) Apr 00, 1931
-
-***
-
-4 CPRSPATIENT,NINE (N0009) May 00, 1932
-
-***
-
-5 CPRSPATIENT,TEN (T0010) Feb 00, 1923 B-5
-
-***
-
-6 CPRSPATIENT1,ONE (00011) Sep 00, 1950 B-4
-
-***
-
-7 CPRSPATIENT1,TWO (T0012) Apr 00, 1911
-
-***
-
-***
-
-**Enter the number of the patient chart to be opened**
-
-***
-
-\+ Next Screen CV Change View ... FD Find Patient
-
-***
-
-\- Previous Screen SV Save as Default List Q Close
-
-***
-
-***
-
-Select Patient: Close// **5** CPRSPATIENT,TEN 2-00-23 000000010 YES SC VETERAN
-
-***
-
-Delayed Orders Nov 00, 1997 08:00:51 Page: 1 of 1
-
-***
-
-CPRSPATIENT,TEN 000-00-0010 1A/B-5 FEB 00,1923 (74) \<A\>
-
-***
-
-Selected date range: None Selected
-
-***
-
-Item Ordered Delayed Until
-
-***
-
-1 ACETAMINOPHEN 325MG Take 2 TABLET(S) PO \| Discharge
-
-***
-
-Q4H Quantity: 100 0 refills \|
-
-***
-
-2 IBUPROFEN SUSP 1TSP PO Q6H Quantity: 1 0 \| Discharge
-
-***
-
-refills \|
-
-***
-
-***
-
-Enter the numbers of the items you wish to act on. \>\>\>
-
-***
-
-\+ Next Screen - Previous Screen Q Quit
-
-***
-
-***
-
-Select: Quit// **1**
-
-***
-
-**Delayed Orders** Nov 12, 1997 08:00:51 Page: 1 of 1
-
-***
-
-CPRSPATIENT,TEN 000-00-0010 1A/B-5 FEB 00,1923 (74) \<A\>
-
-***
-
-Selected date range: None Selected
-
-***
-
-Item Ordered Delayed Until
-
-***
-
-1 ACETAMINOPHEN 325MG Take 2 TABLET(S) PO \| Discharge
-
-***
-
-Q4H Quantity: 100 0 refills \|
-
-***
-
-2 IBUPROFEN SUSP 1TSP PO Q6H Quantity: 1 0 \| Discharge
-
-***
-
-refills \|
-
-***
-
-***
-
-**Enter the numbers of the items you wish to act on. \>\>\>**
-
-***
-
-Release to service Cancel Detailed Display
-
-***
-
-***
-
-Select action: C Cancel
-
-***
-
-Are you sure you want to cancel these order(s)? NO// **YES**
-
-***
-
-Deleted
-
-***
-
+Select action: C Cancel  
+Are you sure you want to cancel these order(s)? NO// **YES**  
+Deleted  
 ## C. CPRS Configuration (IRM)
 
 **OR PARAM IRM MENU**
@@ -17525,60 +6536,27 @@ This menu is only available to those with Programmer access (holders of the XUPR
 | ORE MGR         | CPRS Clean-up Utilities             | This menu contains an option that checks consistency between lab files and OE/RR files.                                                                                                 |
 | XPAR MENU TOOLS | General Parameter Tools             | This menu contains general purpose tools for managing parameters.                                                                                                                       |
 
-### 1. Order Check Expert System
-
+### 1. Order Check Expert System  
+**Order Checking and Notifications both rely on a subset of CPRS called the Order Check Expert System. This includes a library of rules, elements, and a data dictionary, as well as facilities to maintain these data sets. Eventually the Expert System may be used for clinicians and others to create rules of their own by combining entities, elements, and rules.**  
 ***
 
-**Order Checking and Notifications both rely on a subset of CPRS called the Order Check Expert System. This includes a library of rules, elements, and a data dictionary, as well as facilities to maintain these data sets. Eventually the Expert System may be used for clinicians and others to create rules of their own by combining entities, elements, and rules.**
-
+**How it works:**  
+**The Order Check Expert System is based on a set of Rules or Medical Logic Modules (MLM). The term Medical Logic Module, synonymous with rule or frame, is derived from the Arden Syntax, a standard for sharing MLMs and knowledge bases among decision support developers. The Order Check Expert System will support the Arden Syntax and will be able to share knowledge bases with other nonprofit entities.**  
 ***
 
+**At this point, the Expert System is mostly used as a compiler and as a tool for monitoring and debugging Order Checking and Notifications. The options on the Order Check Expert System Main Menu can be used to perform these functions.**  
 ***
 
-**How it works:**
-
-***
-
-**The Order Check Expert System is based on a set of Rules or Medical Logic Modules (MLM). The term Medical Logic Module, synonymous with rule or frame, is derived from the Arden Syntax, a standard for sharing MLMs and knowledge bases among decision support developers. The Order Check Expert System will support the Arden Syntax and will be able to share knowledge bases with other nonprofit entities.**
-
-***
-
-***
-
-**At this point, the Expert System is mostly used as a compiler and as a tool for monitoring and debugging Order Checking and Notifications. The options on the Order Check Expert System Main Menu can be used to perform these functions.**
-
-***
-
-***
-
-**Compiler**
-
-***
-
+**Compiler**  
 The compiler generates routines. The OCX post-install routine runs the compiler to generate an initial set of Order Checking routines. The post-install runs the compiler with default compiler options. One of the options is called Execution Trace. The default for this option is NO. When this option is set to YES, the compiler adds write statements to the compiled code that displays various aspects of the runtime environment. It displays information about the runtime datastream as well as the sequence of line labels as the compiled routine set executes. When this option is set to NO it does not add these additional statements. Adding this extra code makes the compiled routines bigger, but, since the compiler has a routine size limit (4k) imposed on it, it tends to make more routines instead. Thus, you may wind up with more routines.
 
-**Order Check Expert System Main Menu**
-
+**Order Check Expert System Main Menu**  
 ***
 
-***
-
-1 Compile Rules [OCX RUN COMPILER]
-
-***
-
-2 Expert System Rule Activate/Inactivate [OCX RULE ACTIVATE]
-
-***
-
-3 Edit Site Local Terms [OCX LOCAL TERM EDIT]
-
-***
-
-4 Expert System Inquire [OCX EXPERT SYSTEM INQUIRE]
-
-***
-
+1 Compile Rules [OCX RUN COMPILER]  
+2 Expert System Rule Activate/Inactivate [OCX RULE ACTIVATE]  
+3 Edit Site Local Terms [OCX LOCAL TERM EDIT]  
+4 Expert System Inquire [OCX EXPERT SYSTEM INQUIRE]  
 **Edit Site Local Terms**
 
 After CPRS installation, each site must run this option to link terms used in the expert system to local terms. Some terms like DNR and NPO diet must be mapped to one or more entries in the orderable item file. Other terms like Serum Creatinine must be mapped to the lab test file.
@@ -17612,688 +6590,241 @@ After CPRS installation, each site must run this option to link terms used in th
 
 **Edit Site Local Terms Example**
 
-**Select OPTION NAME: OCX MAIN Order Check Expert System Main Menu**
-
+**Select OPTION NAME: OCX MAIN Order Check Expert System Main Menu**  
 ***
 
+**1 Compile Rules**  
+**2 Expert System Rule Activate/Inactivate**  
+**3 Edit Site Local Terms**  
+**4 Expert System Inquire**  
 ***
 
-**1 Compile Rules**
-
+**Select Order Check Expert System Main Menu Option: 3 Edit Site Local Terms**  
 ***
 
-**2 Expert System Rule Activate/Inactivate**
-
+**Order Check National Terms**  
+**SERUM CREATININE**  
+**SERUM UREA NITROGEN**  
+**DNR**  
+**PROTHROMBIN TIME**  
+**THROMBOPLASTIN TIME PARTIAL**  
+**NPO**  
+**SERUM SPECIMEN**  
+**PARTIAL THROMBOPLASTIN TIME**  
+**ANGIOGRAM (PERIPHERAL)**  
+**WBC**  
 ***
 
-**3 Edit Site Local Terms**
-
+**\< Enter ?? to see the rest of the national terms on this list\>**  
 ***
 
-**4 Expert System Inquire**
-
+**Select National Term: PROTHROMBIN TIME**  
 ***
 
+**National Term: PROTHROMBIN TIME**  
 ***
 
-**Select Order Check Expert System Main Menu Option: 3 Edit Site Local Terms**
-
+**Translated from file: 'LABORATORY TEST' 60**  
 ***
 
-***
-
-**Order Check National Terms**
-
-***
-
-**SERUM CREATININE**
-
-***
-
-**SERUM UREA NITROGEN**
-
-***
-
-**DNR**
-
-***
-
-**PROTHROMBIN TIME**
-
-***
-
-**THROMBOPLASTIN TIME PARTIAL**
-
-***
-
-**NPO**
-
-***
-
-**SERUM SPECIMEN**
-
-***
-
-**PARTIAL THROMBOPLASTIN TIME**
-
-***
-
-**ANGIOGRAM (PERIPHERAL)**
-
-***
-
-**WBC**
-
-***
-
-***
-
-**\< Enter ?? to see the rest of the national terms on this list\>**
-
-***
-
-***
-
-**Select National Term: PROTHROMBIN TIME**
-
-***
-
-***
-
-**National Term: PROTHROMBIN TIME**
-
-***
-
-***
-
-**Translated from file: 'LABORATORY TEST' 60**
-
-***
-
-***
-
-**Select LABORATORY TEST NAME: PT**
-
-***
-
-**467 PT**
-
-***
-
-**Select LABORATORY TEST name: \<Enter\>**
-
-***
-
+**Select LABORATORY TEST NAME: PT**  
+**467 PT**  
+**Select LABORATORY TEST name: \<Enter\>**  
 After you exit *Edit Site Local Terms,* the Expert System automatically runs the compiler. When the compiler is finished, the following e-mail message is automatically sent:
 
 **Mail Message**
 
-Subj: Order Check Compiler Status [\#16691] 13 Jan 98 10:53 14 Lines
-
+Subj: Order Check Compiler Status [\#16691] 13 Jan 98 10:53 14 Lines  
+From: POSTMASTER (Sender: PROVIDER,FIVE in 'IN' basket. Page 1 \*\*NEW\*\*  
+\------------------------------------------------------------------------------  
 ***
 
-From: POSTMASTER (Sender: PROVIDER,FIVE in 'IN' basket. Page 1 \*\*NEW\*\*
-
+The Order Check routine compiler has completed normally  
+on JAN 13,1998 at 10:53 by [15] CPRSPROVIDER,FIVE.  
 ***
 
-\------------------------------------------------------------------------------
-
+ORDER CHECK EXPERT version 1.0 (rev15) released DEC 15,1997 at 12:18  
 ***
 
+Elapsed time: 6 minutes 50 seconds  
+Queued  
+Execution Trace Mode: ON  
+Elapsed time Logging Mode:  
+Raw Data Logging Mode: ON Keep data for 3 days then purge.  
+Lines of code generated: 7835  
 ***
 
-The Order Check routine compiler has completed normally
-
-***
-
-on JAN 13,1998 at 10:53 by [15] CPRSPROVIDER,FIVE.
-
-***
-
-***
-
-ORDER CHECK EXPERT version 1.0 (rev15) released DEC 15,1997 at 12:18
-
-***
-
-***
-
-Elapsed time: 6 minutes 50 seconds
-
-***
-
-Queued
-
-***
-
-Execution Trace Mode: ON
-
-***
-
-Elapsed time Logging Mode:
-
-***
-
-Raw Data Logging Mode: ON Keep data for 3 days then purge.
-
-***
-
-Lines of code generated: 7835
-
-***
-
-***
-
-Select MESSAGE Action: IGNORE (in IN basket)//
-
-***
-
+Select MESSAGE Action: IGNORE (in IN basket)//  
 **Expert System Inquire**
 
 This option lets you display the components that make up the rules that control order checking and notifications.
 
-1 Compile Rules
-
+1 Compile Rules  
+2 Expert System Rule Activate/Inactivate  
+3 Edit Site Local Terms  
+4 Expert System Inquire  
 ***
 
-2 Expert System Rule Activate/Inactivate
-
+Select Order Check Expert System Main Menu Option: **4** Expert System Inquire  
 ***
 
-3 Edit Site Local Terms
-
+Expert System Display  
 ***
 
-4 Expert System Inquire
-
+Rule Display a Rule  
 ***
 
+Element Display an Element  
 ***
 
-Select Order Check Expert System Main Menu Option: **4** Expert System Inquire
-
+Field Display a Data Field  
 ***
 
+Option List -\> Element, Field, Rule  
 ***
 
-Expert System Display
-
-***
-
-***
-
-Rule Display a Rule
-
-***
-
-***
-
-Element Display an Element
-
-***
-
-***
-
-Field Display a Data Field
-
-***
-
-***
-
-Option List -\> Element, Field, Rule
-
-***
-
-***
-
-Choose an Option: **R**
-
-***
-
-Select ORDER CHECK RULE NAME: **?**
-
-***
-
-Answer with ORDER CHECK RULE NAME
-
-***
-
-Do you want the entire 38-Entry ORDER CHECK RULE List? **Y** (Yes)
-
-***
-
-Choose from:
-
-***
-
-ABNORMAL LAB RESULTS
-
-***
-
-ALLERGY - CONTRAST MEDIA REACTION
-
-***
-
-AMINOGLYCOSIDE ORDER
-
-***
-
-BIOCHEM ABNORMALITIES/CONTRAST MEDIA CHECK
-
-***
-
-CLOZAPINE
-
-***
-
-CONCURRENT LAB ORDERS FOR ANGIOGRAM, CATH - PERIPHERAL
-
-***
-
-CONSULT/REQUEST CANCELED/HELD \*\*\*INACTIVE
-
-***
-
-CONSULT/REQUEST RESOLUTION \*\*\*INACTIVE
-
-***
-
-CREATININE CLEARANCE ESTIMATION
-
-***
-
-CRITICAL HIGH LAB RESULTS
-
-***
-
-CRITICAL LOW LAB RESULTS
-
-***
-
-CT OR MRI PHYSICAL LIMIT CHECK
-
-***
-
-FOOD/DRUG INTERACTION
-
-***
-
-GLUCOPHAGE - CONTRAST MEDIA
-
-***
-
-IMAGING REQUEST CANCELLED/HELD
-
-***
-
-LAB ORDER CANCELLED
-
-***
-
-LAB RESULTS
-
-***
-
-NEW ORDER PLACED
-
-***
-
-NPO DIET FOR MORE THAN 72 HOURS \*\*\*INACTIVE
-
-***
-
-ORDER FLAGGED FOR CLARIFICATION
-
-***
-
-ORDER REQUIRES CHART SIGNATURE
-
-***
-
-ORDER REQUIRES CO-SIGNATURE
-
-***
-
-ORDER REQUIRES ELECTRONIC SIGNATURE
-
-***
-
-ORDERABLE ITEM MESSAGE
-
-***
-
-ORDERER FLAGGED RESULTS AVAILABLE
-
-***
-
-PATIENT ADMISSION
-
-***
-
-PATIENT DISCHARGE
-
-***
-
-PATIENT TRANSFERRED FROM PSYCHIATRY TO ANOTHER UNIT
-
-***
-
-POLYPHARMACY
-
-***
-
-RECENT BARIUM STUDY
-
-***
-
-RECENT CHOLECYSTOGRAM ORDER
-
-***
-
-RENAL FUNCTIONS OVER AGE 65 CHECK
-
-***
-
-SERVICE ORDER REQUIRES CHART SIGNATURE
-
-***
-
-SITE FLAGGED ORDER
-
-***
-
-SITE FLAGGED RESULT
-
-***
-
+Choose an Option: **R**  
+Select ORDER CHECK RULE NAME: **?**  
+Answer with ORDER CHECK RULE NAME  
+Do you want the entire 38-Entry ORDER CHECK RULE List? **Y** (Yes)  
+Choose from:  
+ABNORMAL LAB RESULTS  
+ALLERGY - CONTRAST MEDIA REACTION  
+AMINOGLYCOSIDE ORDER  
+BIOCHEM ABNORMALITIES/CONTRAST MEDIA CHECK  
+CLOZAPINE  
+CONCURRENT LAB ORDERS FOR ANGIOGRAM, CATH - PERIPHERAL  
+CONSULT/REQUEST CANCELED/HELD \*\*\*INACTIVE  
+CONSULT/REQUEST RESOLUTION \*\*\*INACTIVE  
+CREATININE CLEARANCE ESTIMATION  
+CRITICAL HIGH LAB RESULTS  
+CRITICAL LOW LAB RESULTS  
+CT OR MRI PHYSICAL LIMIT CHECK  
+FOOD/DRUG INTERACTION  
+GLUCOPHAGE - CONTRAST MEDIA  
+IMAGING REQUEST CANCELLED/HELD  
+LAB ORDER CANCELLED  
+LAB RESULTS  
+NEW ORDER PLACED  
+NPO DIET FOR MORE THAN 72 HOURS \*\*\*INACTIVE  
+ORDER FLAGGED FOR CLARIFICATION  
+ORDER REQUIRES CHART SIGNATURE  
+ORDER REQUIRES CO-SIGNATURE  
+ORDER REQUIRES ELECTRONIC SIGNATURE  
+ORDERABLE ITEM MESSAGE  
+ORDERER FLAGGED RESULTS AVAILABLE  
+PATIENT ADMISSION  
+PATIENT DISCHARGE  
+PATIENT TRANSFERRED FROM PSYCHIATRY TO ANOTHER UNIT  
+POLYPHARMACY  
+RECENT BARIUM STUDY  
+RECENT CHOLECYSTOGRAM ORDER  
+RENAL FUNCTIONS OVER AGE 65 CHECK  
+SERVICE ORDER REQUIRES CHART SIGNATURE  
+SITE FLAGGED ORDER  
+SITE FLAGGED RESULT  
 **Order Check Expert System, cont’d**
 
-STAT ORDER PLACED
-
+STAT ORDER PLACED  
+STAT RESULTS AVAILABLE  
+ZZ TEST RULE \*\*\*INACTIVE  
 ***
 
-STAT RESULTS AVAILABLE
-
+Select ORDER CHECK RULE NAME: **L**  
+1 LAB ORDER CANCELLED  
+2 LAB RESULTS  
+CHOOSE 1-2: **2**  
+DEVICE: HOME// **\<Enter\>** ALPHA  
 ***
 
-ZZ TEST RULE \*\*\*INACTIVE
-
+Rule: LAB RESULTS (ACTIVE Status)  
 ***
 
+Rule Element Label: HL7 LAB RESULTS  
+Element: HL7 FINAL LAB RESULT  
 ***
 
-Select ORDER CHECK RULE NAME: **L**
-
+Event-Element Name: HL7 FINAL LAB RESULT  
+Data Context: GENERIC HL7 MESSAGE ARRAY  
+Compiled Routine:  
+Expression \#3: IF \|CONTROL CODE\| EQUALS ELEMENT IN SET'RE'  
+Expression \#4: IF \|FILLER\| STARTS WITH 'LR'  
+Expression \#5: IF \|REQUEST STATUS (OBR)\| EQ FREE TEXT'F'  
 ***
 
-1 LAB ORDER CANCELLED
-
+Data Field Name: CONTROL CODE  
+Abbreviation:  
+Data Context: GENERIC HL7 MESSAGE ARRAY  
 ***
 
-2 LAB RESULTS
-
+Metadictionary Link: PATIENT.HL7_CONTROL_CODE  
+Attribute: HL7 CONTROL CODE  
+Data Type: FREE TEXT  
+OCXO VARIABLE NAME: OCXODATA("ORC",1)  
+OCXO UP-ARROW PIECE NUMBER: 1  
+OCXO DATA DRIVE SOURCE: HL7  
 ***
 
-CHOOSE 1-2: **2**
-
+Data Field Name: FILLER  
+Abbreviation: FILL  
+Data Context: GENERIC HL7 MESSAGE ARRAY  
 ***
 
-DEVICE: HOME// **\<Enter\>** ALPHA
-
+Metadictionary Link: PATIENT.HL7_FILLER  
+Attribute: HL7 FILLER  
+Data Type: FREE TEXT  
+OCXO UP-ARROW PIECE NUMBER: 2  
+OCXO VARIABLE NAME: OCXODATA("ORC",3)  
+OCXO DATA DRIVE SOURCE: HL7  
 ***
 
+Data Field Name: REQUEST STATUS (OBR)  
+Abbreviation:  
+Data Context: GENERIC HL7 MESSAGE ARRAY  
 ***
 
-Rule: LAB RESULTS (ACTIVE Status)
-
+Metadictionary Link: PATIENT.HL7_REQUEST_STATUS  
+Attribute: REQUEST STATUS  
+Data Type: FREE TEXT  
+OCXO VARIABLE NAME: OCXODATA("OBR",25)  
+OCXO UP-ARROW PIECE NUMBER: 1  
+OCXO DATA DRIVE SOURCE: HL7  
 ***
 
+Relation Expression: HL7 LAB RESULTS  
+Notification: LAB RESULTS  
+Notification Message: Lab results: \|ORDERABLE ITEM NAME\|  
 ***
 
-Rule Element Label: HL7 LAB RESULTS
-
-***
-
-Element: HL7 FINAL LAB RESULT
-
-***
-
-***
-
-Event-Element Name: HL7 FINAL LAB RESULT
-
-***
-
-Data Context: GENERIC HL7 MESSAGE ARRAY
-
-***
-
-Compiled Routine:
-
-***
-
-Expression \#3: IF \|CONTROL CODE\| EQUALS ELEMENT IN SET'RE'
-
-***
-
-Expression \#4: IF \|FILLER\| STARTS WITH 'LR'
-
-***
-
-Expression \#5: IF \|REQUEST STATUS (OBR)\| EQ FREE TEXT'F'
-
-***
-
-***
-
-Data Field Name: CONTROL CODE
-
-***
-
-Abbreviation:
-
-***
-
-Data Context: GENERIC HL7 MESSAGE ARRAY
-
-***
-
-***
-
-Metadictionary Link: PATIENT.HL7_CONTROL_CODE
-
-***
-
-Attribute: HL7 CONTROL CODE
-
-***
-
-Data Type: FREE TEXT
-
-***
-
-OCXO VARIABLE NAME: OCXODATA("ORC",1)
-
-***
-
-OCXO UP-ARROW PIECE NUMBER: 1
-
-***
-
-OCXO DATA DRIVE SOURCE: HL7
-
-***
-
-***
-
-Data Field Name: FILLER
-
-***
-
-Abbreviation: FILL
-
-***
-
-Data Context: GENERIC HL7 MESSAGE ARRAY
-
-***
-
-***
-
-Metadictionary Link: PATIENT.HL7_FILLER
-
-***
-
-Attribute: HL7 FILLER
-
-***
-
-Data Type: FREE TEXT
-
-***
-
-OCXO UP-ARROW PIECE NUMBER: 2
-
-***
-
-OCXO VARIABLE NAME: OCXODATA("ORC",3)
-
-***
-
-OCXO DATA DRIVE SOURCE: HL7
-
-***
-
-***
-
-Data Field Name: REQUEST STATUS (OBR)
-
-***
-
-Abbreviation:
-
-***
-
-Data Context: GENERIC HL7 MESSAGE ARRAY
-
-***
-
-***
-
-Metadictionary Link: PATIENT.HL7_REQUEST_STATUS
-
-***
-
-Attribute: REQUEST STATUS
-
-***
-
-Data Type: FREE TEXT
-
-***
-
-OCXO VARIABLE NAME: OCXODATA("OBR",25)
-
-***
-
-OCXO UP-ARROW PIECE NUMBER: 1
-
-***
-
-OCXO DATA DRIVE SOURCE: HL7
-
-***
-
-***
-
-Relation Expression: HL7 LAB RESULTS
-
-***
-
-Notification: LAB RESULTS
-
-***
-
-Notification Message: Lab results: \|ORDERABLE ITEM NAME\|
-
-***
-
-***
-
-Data Field Name: ORDERABLE ITEM NAME
-
-***
-
-Abbreviation:
-
-***
-
-Data Context: DATABASE LOOKUP
-
-***
-
+Data Field Name: ORDERABLE ITEM NAME  
+Abbreviation:  
+Data Context: DATABASE LOOKUP  
 **Order Check Expert System, cont’d**
 
-Metadictionary Link: PATIENT.ORD_ITEM_NAME
-
+Metadictionary Link: PATIENT.ORD_ITEM_NAME  
+Attribute: ORDERABLE ITEM  
+Data Type: FREE TEXT  
+OCXO EXTERNAL FUNCTION CALL: ORDITEM(\|ORDER NUMBER\|)  
 ***
 
-Attribute: ORDERABLE ITEM
-
+Press \<enter\> to continue... **\<Enter\>**  
 ***
 
-Data Type: FREE TEXT
-
+Expert System Display  
+***  
+Rule Display a Rule  
 ***
 
-OCXO EXTERNAL FUNCTION CALL: ORDITEM(\|ORDER NUMBER\|)
-
+Element Display an Element  
 ***
 
+Field Display a Data Field  
 ***
 
-Press \<enter\> to continue... **\<Enter\>**
-
+Option List -\> Element, Field, Rule  
 ***
 
-***
-
-Expert System Display
-
-***
-
-***
-
-***
-
-Rule Display a Rule
-
-***
-
-***
-
-Element Display an Element
-
-***
-
-***
-
-Field Display a Data Field
-
-***
-
-***
-
-Option List -\> Element, Field, Rule
-
-***
-
-***
-
-Choose an Option:
-
-***
-
+Choose an Option:  
 ### 2. ORMTIME and Job Tasking
 
 ORMTIME is a background processor that is used in conjunction with the ORTASK routines to manage background jobs for order processing. They are intended for IRMS only.
@@ -18335,86 +6866,35 @@ Schedule the following tasks, as appropriate for your site:
 | ORTASK 24HR CHART COPIES | Task 24hr Chart Copy Print by Location | run routine     |
 | ORTASK 24HR SUMMARY      | Task 24hr Chart Copy Print by Location | run routine     |
 
-**Example**
-
+**Example**  
+Select Taskman Management Option: **schedule**/Unschedule Options  
+Select OPTION to schedule or reschedule: **ortask** 24HR CHART COPIES Task 24hr Chart Copy Print by Location run routine  
+...OK? Yes// **\<Enter\>** (Yes)  
+Edit Option Schedule  
+Option Name: ORTASK 24HR CHART COPIES  
+Menu Text: Task 24hr Chart Copy Print by Lo TASK ID: 385010  
+\_________________________________________________________________________\_  
 ***
 
-Select Taskman Management Option: **schedule**/Unschedule Options
-
+QUEUED TO RUN AT WHAT TIME: OCT 18,1997@00:05  
 ***
 
-Select OPTION to schedule or reschedule: **ortask** 24HR CHART COPIES Task 24hr Chart Copy Print by Location run routine
-
+DEVICE FOR QUEUED JOB OUTPUT: WORK;P-DOC132;132;64  
 ***
 
-...OK? Yes// **\<Enter\>** (Yes)
-
+QUEUED TO RUN ON VOLUME SET:  
 ***
 
-Edit Option Schedule
-
+RESCHEDULING FREQUENCY: 1D  
 ***
 
-Option Name: ORTASK 24HR CHART COPIES
-
+TASK PARAMETERS:  
 ***
 
-Menu Text: Task 24hr Chart Copy Print by Lo TASK ID: 385010
-
-***
-
-\_________________________________________________________________________\_
-
-***
-
-***
-
-QUEUED TO RUN AT WHAT TIME: OCT 18,1997@00:05
-
-***
-
-***
-
-DEVICE FOR QUEUED JOB OUTPUT: WORK;P-DOC132;132;64
-
-***
-
-***
-
-QUEUED TO RUN ON VOLUME SET:
-
-***
-
-***
-
-RESCHEDULING FREQUENCY: 1D
-
-***
-
-***
-
-TASK PARAMETERS:
-
-***
-
-***
-
-SPECIAL QUEUEING:
-
-***
-
-\___________________________________________________________________________\_
-
-***
-
-COMMAND: Press \<PF1\>H for help Insert
-
-***
-
-### 3. CPRS Clean-up Utilities
-
-***
-
+SPECIAL QUEUEING:  
+\___________________________________________________________________________\_  
+COMMAND: Press \<PF1\>H for help Insert  
+### 3. CPRS Clean-up Utilities  
 **Lab-OE/RR Inconsistency Checker**
 
 Check Lab orders from file 100 to 69 [ORE LAB ORDERS CHECK 100=\>69]
@@ -18449,324 +6929,99 @@ Answering YES to this question will correct any problems that can be corrected. 
 
 At the end of the report, any problems found will be totaled and displayed.
 
-If you have never run this option, it should be done at your earliest convenience. After that, it can be run as often as once a month or as little as once a year, unless otherwise instructed. If your site is journaling the \^OR global and you have not run this option for a very long time, special precautions may need to be taken. Most of the corrections are status updates. A status update would make approximately three entries in a journal file. To get an idea of the total impact on the journal, run this option once without correcting the inconsistencies, take the total number of inconsistencies, and multiply by three. This should give you a general idea of how many sets and kills will be added to the journal; then you can adjust the journal space accordingly.
-
-***
-
+If you have never run this option, it should be done at your earliest convenience. After that, it can be run as often as once a month or as little as once a year, unless otherwise instructed. If your site is journaling the \^OR global and you have not run this option for a very long time, special precautions may need to be taken. Most of the corrections are status updates. A status update would make approximately three entries in a journal file. To get an idea of the total impact on the journal, run this option once without correcting the inconsistencies, take the total number of inconsistencies, and multiply by three. This should give you a general idea of how many sets and kills will be added to the journal; then you can adjust the journal space accordingly.  
 **Example**
 
-Select CPRS Manager Menu Option: IR CPRS Configuration (IRM)
-
+Select CPRS Manager Menu Option: IR CPRS Configuration (IRM)  
+OC Order Check Expert System Main Menu ...  
+UT CPRS Clean-up Utilities ...  
 ***
 
-OC Order Check Expert System Main Menu ...
-
+Select CPRS Configuration (IRM) Option: UT CPRS Clean-up Utilities  
+LA Lab Order Checks ...  
 ***
 
-UT CPRS Clean-up Utilities ...
-
+Select CPRS Clean-up Utilities Option: LA Lab Order Checks  
+1 Check Lab orders from file 69 to 100  
+\*\*\> Out of order: UNDER CONSTRUCTION  
+2 Check Lab orders from file 100 to 69  
 ***
 
+Select Lab Order Checks Option: **2** Check Lab orders from file 100 to 69  
+This utility will look for inconsistencies between OE/RR 3.0 and Lab files.  
+It will compare records in the Orders file (100) with the Lab Order file (69).  
 ***
 
-Select CPRS Configuration (IRM) Option: UT CPRS Clean-up Utilities
-
-***
-
-LA Lab Order Checks ...
-
-***
-
-***
-
-Select CPRS Clean-up Utilities Option: LA Lab Order Checks
-
-***
-
-1 Check Lab orders from file 69 to 100
-
-***
-
-\*\*\> Out of order: UNDER CONSTRUCTION
-
-***
-
-2 Check Lab orders from file 100 to 69
-
-***
-
-***
-
-Select Lab Order Checks Option: **2** Check Lab orders from file 100 to 69
-
-***
-
-This utility will look for inconsistencies between OE/RR 3.0 and Lab files.
-
-***
-
-It will compare records in the Orders file (100) with the Lab Order file (69).
-
-***
-
-***
-
-Problems identified Resolution
-
-***
-
-\------------------- ----------
-
-***
-
-\^OR(100,IFN,0) does not exist \^OR(100,IFN) killed
-
-***
-
-Bad pointers on child orders Pointers removed
-
-***
-
-Child orders with no parent order Pointer removed
-
-***
-
-Child order missing parent pointer Pointer restored
-
-***
-
-Incorrect status on parent order Status corrected
-
-***
-
-Old veiled orders Purged
-
-***
-
-Unrecognized pointer to file 69 Order cancelled
-
-***
-
-Unconverted orders from OE/RR 2.5 Order lapsed
-
-***
-
-Invalid pointer to file 69 Order cancelled
-
-***
-
+Problems identified Resolution  
+\------------------- ----------  
+\^OR(100,IFN,0) does not exist \^OR(100,IFN) killed  
+Bad pointers on child orders Pointers removed  
+Child orders with no parent order Pointer removed  
+Child order missing parent pointer Pointer restored  
+Incorrect status on parent order Status corrected  
+Old veiled orders Purged  
+Unrecognized pointer to file 69 Order cancelled  
+Unconverted orders from OE/RR 2.5 Order lapsed  
+Invalid pointer to file 69 Order cancelled  
 **CPRS Clean-up Utilities, cont’d**
 
-Incorrect status on uncollected specimens Status updated
-
+Incorrect status on uncollected specimens Status updated  
+Incorrect status on completed orders Status updated  
+Missing reference to file 69 Cancelled (optional)  
+Old pending, active & unreleased orders Status changed  
 ***
 
-Incorrect status on completed orders Status updated
-
+Any problems will be displayed. Continue? No// **Y** (Yes)  
+Check for CPRS orders that no longer exist in the Lab Order file? No// **Y** (Yes)  
+Do you want to remove old PENDING, ACTIVE and UNRELEASED orders? No// **?**  
 ***
 
-Missing reference to file 69 Cancelled (optional)
-
+Unreleased orders are removed from the system.  
+Old pending orders are changed to a Lapsed status, which will  
+remove them from the current orders context.  
+Active orders that no longer have corresponding entries in the lab files  
+are changed to Lapsed  
+Do you want to remove old PENDING, ACTIVE and UNRELEASED orders? No// **Y** (Yes)  
+Remove old orders with Start dates before: T-30// **\<Enter\>** (AUG 29, 1998)  
+Do you want me to correct the inconsistencies now? No// **Y** (Yes)p  
+2.2=\>GLUCOSE BLOOD S\<2961022.115121\>6\<Didn't get converted, NOT IN 69  
+5.2=\>DIGOXIN BLOOD S\<2961022.131419\>6\<Didn't get converted, NOT IN 69  
+12.2=\>DIGOXIN BLOOD S\<2961029.154314\>6\<Didn't get converted, NOT IN 69  
+23.2=\>PT {Profile} B\<2961031.164613\>6\<Didn't get converted, NOT IN 69  
+24.2=\>COAGULATION (PT\<2961031.164613\>6\<Didn't get converted, NOT IN 69  
+32.2=\>COAGULATION (PT\<2961101.095846\>6\<Didn't get converted, NOT IN 69  
+34.2=\>SMAC (CHEM 20) \<2961101.101734\>6\<Didn't get converted, NOT IN 69  
+37.2=\>COAGULATION (PT\<2961101.101814\>6\<Didn't get converted, NOT IN 69  
+89.1=\>CHOLESTEROL BLO\<2941129.154843\>6\<Didn't get converted, NOT IN 69  
+90.1=\>GLUCOSE BLOOD S\<2941129.154843\>6\<Didn't get converted, NOT IN 69  
+91.1=\>HDL BLOOD SERUM\<2941129.154843\>6\<Didn't get converted, NOT IN 69  
+96.1=\>CHOLESTEROL BLO\<2941129.155258\>6\<Didn't get converted, NOT IN 69  
+97.1=\>GLUCOSE BLOOD S\<2941129.155258\>6\<Didn't get converted, NOT IN 69  
+101.1=\>TRANSFUSION REQ\<2950120.120443\>6\<Status should be Complete  
+102.1=\>TRANSFUSION REQ\<2950120.125307\>6\<Status should be Complete  
+178=\>OCCULT BLOOD (S\<2911120.0936\>5\<Status should be Complete  
+277=\>CHOLESTEROL BLO\<2911120.154\>5\<Status should be Complete  
+278=\>GLUCOSE BLOOD S\<2911120.154\>5\<Status should be Complete  
+281=\>GLUCOSE BLOOD S\<2911121.1127\>5\<Status should be Complete  
+304=\>TRANSFUSION REQ\<2931217.1327\>5\<Status should be Complete  
+306=\>Consult to PULM\<\>\<No package defined  
+307=\>Consult to PULM\<\>\<No package defined  
+308=\>Consult to PULM\<\>\<No package defined  
+309=\>Consult to PULM\<\>\<No package defined  
+310=\>Consult to PULM\<\>\<No package defined  
+311=\>Consult to PULM\<\>\<No package defined  
+394=\>CHEM 7 BLOOD SE\<2980317.142517\>6\<Status should be Complete  
+409=\>CO2 BLOOD SERUM\<2980317.142527\>6\<Status should be Complete  
+445=\>TRANSFUSION REQ\<2980317.144511\>6\<Status should be Complete  
+472=\>CO2 BLOOD SERUM\<2980611.120016\>6\<Status should be Complete  
+560=\>GLUCOSE BLOOD S\<2980616.142934\>6\<Status should be Complete  
 ***
 
-Old pending, active & unreleased orders Status changed
-
-***
-
-***
-
-Any problems will be displayed. Continue? No// **Y** (Yes)
-
-***
-
-Check for CPRS orders that no longer exist in the Lab Order file? No// **Y** (Yes)
-
-***
-
-Do you want to remove old PENDING, ACTIVE and UNRELEASED orders? No// **?**
-
-***
-
-***
-
-Unreleased orders are removed from the system.
-
-***
-
-Old pending orders are changed to a Lapsed status, which will
-
-***
-
-remove them from the current orders context.
-
-***
-
-Active orders that no longer have corresponding entries in the lab files
-
-***
-
-are changed to Lapsed
-
-***
-
-Do you want to remove old PENDING, ACTIVE and UNRELEASED orders? No// **Y** (Yes)
-
-***
-
-Remove old orders with Start dates before: T-30// **\<Enter\>** (AUG 29, 1998)
-
-***
-
-Do you want me to correct the inconsistencies now? No// **Y** (Yes)p
-
-***
-
-2.2=\>GLUCOSE BLOOD S\<2961022.115121\>6\<Didn't get converted, NOT IN 69
-
-***
-
-5.2=\>DIGOXIN BLOOD S\<2961022.131419\>6\<Didn't get converted, NOT IN 69
-
-***
-
-12.2=\>DIGOXIN BLOOD S\<2961029.154314\>6\<Didn't get converted, NOT IN 69
-
-***
-
-23.2=\>PT {Profile} B\<2961031.164613\>6\<Didn't get converted, NOT IN 69
-
-***
-
-24.2=\>COAGULATION (PT\<2961031.164613\>6\<Didn't get converted, NOT IN 69
-
-***
-
-32.2=\>COAGULATION (PT\<2961101.095846\>6\<Didn't get converted, NOT IN 69
-
-***
-
-34.2=\>SMAC (CHEM 20) \<2961101.101734\>6\<Didn't get converted, NOT IN 69
-
-***
-
-37.2=\>COAGULATION (PT\<2961101.101814\>6\<Didn't get converted, NOT IN 69
-
-***
-
-89.1=\>CHOLESTEROL BLO\<2941129.154843\>6\<Didn't get converted, NOT IN 69
-
-***
-
-90.1=\>GLUCOSE BLOOD S\<2941129.154843\>6\<Didn't get converted, NOT IN 69
-
-***
-
-91.1=\>HDL BLOOD SERUM\<2941129.154843\>6\<Didn't get converted, NOT IN 69
-
-***
-
-96.1=\>CHOLESTEROL BLO\<2941129.155258\>6\<Didn't get converted, NOT IN 69
-
-***
-
-97.1=\>GLUCOSE BLOOD S\<2941129.155258\>6\<Didn't get converted, NOT IN 69
-
-***
-
-101.1=\>TRANSFUSION REQ\<2950120.120443\>6\<Status should be Complete
-
-***
-
-102.1=\>TRANSFUSION REQ\<2950120.125307\>6\<Status should be Complete
-
-***
-
-178=\>OCCULT BLOOD (S\<2911120.0936\>5\<Status should be Complete
-
-***
-
-277=\>CHOLESTEROL BLO\<2911120.154\>5\<Status should be Complete
-
-***
-
-278=\>GLUCOSE BLOOD S\<2911120.154\>5\<Status should be Complete
-
-***
-
-281=\>GLUCOSE BLOOD S\<2911121.1127\>5\<Status should be Complete
-
-***
-
-304=\>TRANSFUSION REQ\<2931217.1327\>5\<Status should be Complete
-
-***
-
-306=\>Consult to PULM\<\>\<No package defined
-
-***
-
-307=\>Consult to PULM\<\>\<No package defined
-
-***
-
-308=\>Consult to PULM\<\>\<No package defined
-
-***
-
-309=\>Consult to PULM\<\>\<No package defined
-
-***
-
-310=\>Consult to PULM\<\>\<No package defined
-
-***
-
-311=\>Consult to PULM\<\>\<No package defined
-
-***
-
-394=\>CHEM 7 BLOOD SE\<2980317.142517\>6\<Status should be Complete
-
-***
-
-409=\>CO2 BLOOD SERUM\<2980317.142527\>6\<Status should be Complete
-
-***
-
-445=\>TRANSFUSION REQ\<2980317.144511\>6\<Status should be Complete
-
-***
-
-472=\>CO2 BLOOD SERUM\<2980611.120016\>6\<Status should be Complete
-
-***
-
-560=\>GLUCOSE BLOOD S\<2980616.142934\>6\<Status should be Complete
-
-***
-
-***
-
-Total inconsistencies: 221
-
-***
-
-Old Pending orders total: 185
-
-***
-
-Old Unreleased orders total: 5
-
-***
-
-Unconverted 2.5 orders total: 13
-
-***
-
-Status should be complete: 12
-
-***
-
+Total inconsistencies: 221  
+Old Pending orders total: 185  
+Old Unreleased orders total: 5  
+Unconverted 2.5 orders total: 13  
+Status should be complete: 12  
 ### 4. General Parameter Tools
 
 ### 
@@ -18794,434 +7049,146 @@ Value What you define or set for this parameter
 
 **List Values for a Selected Parameter**
 
-Select CPRS Configuration (IRM) Option: **XX** General Parameter Tools
-
+Select CPRS Configuration (IRM) Option: **XX** General Parameter Tools  
 ***
 
+LV List Values for a Selected Parameter  
+LE List Values for a Selected Entity  
+LP List Values for a Selected Package  
+LT List Values for a Selected Template  
+EP Edit Parameter Values  
+ET Edit Parameter Values with Template  
 ***
 
-LV List Values for a Selected Parameter
-
+Select General Parameter Tools Option: **LV** List Values for a Selected Parameter  
+Select PARAMETER DEFINITION NAME: **ORPF** SERVICE COPY FORMAT Service Copy Format  
 ***
 
-LE List Values for a Selected Entity
-
+Values for ORPF SERVICE COPY FORMAT  
 ***
 
-LP List Values for a Selected Package
-
+SYS: OEX.ISC-SLC.VA.GOV PHARMACY DOCTOR'S ORDERS  
+SYS: OEX.ISC-SLC.VA.GOV LAB SERVICE DOCTOR'S ORDERS  
+SYS: OEX.ISC-SLC.VA.GOV RADIOLOGY/NUCLEAR ME DOCTOR'S ORDERS  
+SYS: OEX.ISC-SLC.VA.GOV OUTPATIENT PHARMACY DOCTOR'S ORDERS  
+SYS: OEX.ISC-SLC.VA.GOV CONSULT/REQUEST TRAC CONSULTATION BODY  
+SYS: OEX.ISC-SLC.VA.GOV CONSULT TRACKING CONSULTATION BODY  
 ***
 
-LT List Values for a Selected Template
-
-***
-
-EP Edit Parameter Values
-
-***
-
-ET Edit Parameter Values with Template
-
-***
-
-***
-
-Select General Parameter Tools Option: **LV** List Values for a Selected Parameter
-
-***
-
-Select PARAMETER DEFINITION NAME: **ORPF** SERVICE COPY FORMAT Service Copy Format
-
-***
-
-***
-
-Values for ORPF SERVICE COPY FORMAT
-
-***
-
-***
-
-SYS: OEX.ISC-SLC.VA.GOV PHARMACY DOCTOR'S ORDERS
-
-***
-
-SYS: OEX.ISC-SLC.VA.GOV LAB SERVICE DOCTOR'S ORDERS
-
-***
-
-SYS: OEX.ISC-SLC.VA.GOV RADIOLOGY/NUCLEAR ME DOCTOR'S ORDERS
-
-***
-
-SYS: OEX.ISC-SLC.VA.GOV OUTPATIENT PHARMACY DOCTOR'S ORDERS
-
-***
-
-SYS: OEX.ISC-SLC.VA.GOV CONSULT/REQUEST TRAC CONSULTATION BODY
-
-***
-
-SYS: OEX.ISC-SLC.VA.GOV CONSULT TRACKING CONSULTATION BODY
-
-***
-
-***
-
-Enter RETURN to continue or '\^' to exit:
-
-***
-
+Enter RETURN to continue or '\^' to exit:  
 **List Values for a Selected Template**
 
 List templates have been created for many parameters, to ensure a consistent format for displaying and editing parameters. You can view the default values or local settings for any of these templates through these options.
 
-Select General Parameter Tools Option: **List Values for a Selected Template**
-
+Select General Parameter Tools Option: **List Values for a Selected Template**  
+Select PARAMETER TEMPLATE NAME: **?**  
+Answer with PARAMETER TEMPLATE NAME  
+Do you want the entire 23-Entry PARAMETER TEMPLATE List? **y** (Yes)  
+Choose from:  
+LR DOMAIN Lab Domain Level Parameters  
+LR LOC Lab Location Level Parameters  
+LR PKG Lab Package Level Parameters  
+ORP CHART COPY Chart Copy Definition  
+ORP ORDER MISC Miscellaneous OE/RR Definition  
+ORP PRINTS (HOSP) Miscellaneous Hospital Prints  
+ORP PRINTS (LOC) Print Definition (Loc)  
+ORP REQUISITIONS/LABELS Requisition/Label Definition  
+ORP SERVICE COPY Service Copy Definition  
+ORP SUMMARY REPORTS Summary Report Definition  
+ORP WORK COPY Work Copy Definition  
+ORQQ SEARCH RANGE (DIVISION) GUI Cover Sheet - Division  
+ORQQ SEARCH RANGE (LOCATION) GUI Cover Sheet - Location  
+ORQQ SEARCH RANGE (SERVICE) GUI Cover Sheet - Service  
+ORQQ SEARCH RANGE (SYSTEM) GUI Cover Sheet - System  
+ORQQ SEARCH RANGE (USER) GUI Cover Sheet - User  
+XPAR TEST 2 TEST 2  
+XPAR TEST TEMPLATE Parameter Tools Test Template  
+ZZORQQ SEARCH RANGE (DIVISION) GUI Cover Sheet - Division  
+ZZORQQ SEARCH RANGE (LOCATION) GUI Cover Sheet - Location  
+ZZORQQ SEARCH RANGE (SERVICE) GUI Cover Sheet - Service  
+ZZORQQ SEARCH RANGE (SYSTEM) GUI Cover Sheet - System  
+ZZTEST GUI Cover Sheet Display Parm U  
 ***
 
-Select PARAMETER TEMPLATE NAME: **?**
-
+Select PARAMETER TEMPLATE NAME: **ORP ORDER MISC** Miscellaneous OE/RR Definition  
 ***
 
-Answer with PARAMETER TEMPLATE NAME
-
-***
-
-Do you want the entire 23-Entry PARAMETER TEMPLATE List? **y** (Yes)
-
-***
-
-Choose from:
-
-***
-
-LR DOMAIN Lab Domain Level Parameters
-
-***
-
-LR LOC Lab Location Level Parameters
-
-***
-
-LR PKG Lab Package Level Parameters
-
-***
-
-ORP CHART COPY Chart Copy Definition
-
-***
-
-ORP ORDER MISC Miscellaneous OE/RR Definition
-
-***
-
-ORP PRINTS (HOSP) Miscellaneous Hospital Prints
-
-***
-
-ORP PRINTS (LOC) Print Definition (Loc)
-
-***
-
-ORP REQUISITIONS/LABELS Requisition/Label Definition
-
-***
-
-ORP SERVICE COPY Service Copy Definition
-
-***
-
-ORP SUMMARY REPORTS Summary Report Definition
-
-***
-
-ORP WORK COPY Work Copy Definition
-
-***
-
-ORQQ SEARCH RANGE (DIVISION) GUI Cover Sheet - Division
-
-***
-
-ORQQ SEARCH RANGE (LOCATION) GUI Cover Sheet - Location
-
-***
-
-ORQQ SEARCH RANGE (SERVICE) GUI Cover Sheet - Service
-
-***
-
-ORQQ SEARCH RANGE (SYSTEM) GUI Cover Sheet - System
-
-***
-
-ORQQ SEARCH RANGE (USER) GUI Cover Sheet - User
-
-***
-
-XPAR TEST 2 TEST 2
-
-***
-
-XPAR TEST TEMPLATE Parameter Tools Test Template
-
-***
-
-ZZORQQ SEARCH RANGE (DIVISION) GUI Cover Sheet - Division
-
-***
-
-ZZORQQ SEARCH RANGE (LOCATION) GUI Cover Sheet - Location
-
-***
-
-ZZORQQ SEARCH RANGE (SERVICE) GUI Cover Sheet - Service
-
-***
-
-ZZORQQ SEARCH RANGE (SYSTEM) GUI Cover Sheet - System
-
-***
-
-ZZTEST GUI Cover Sheet Display Parm U
-
-***
-
-***
-
-Select PARAMETER TEMPLATE NAME: **ORP ORDER MISC** Miscellaneous OE/RR Definition
-
-***
-
-***
-
-Miscellaneous OE/RR Definition for System: OEX.ISC-SLC.VA.GOV
-
-***
-
-\---------------------------------------------------------------------
-
-***
-
-Active Orders Context Hours 24
-
-***
-
-Auto Unflag YES
-
-***
-
-Confirm Provider YES (Exclude ORES)
-
-***
-
-Default Provider YES
-
-***
-
-Error Days 2
-
-***
-
-Grace Days before Purge 30
-
-***
-
-Restrict Requestor YES (ORELSE & OREMAS)
-
-***
-
-Review on Patient Movement YES
-
-***
-
-Show Status Description YES
-
-***
-
-Signed on Chart Default NO
-
-***
-
-\---------------------------------------------------------------------
-
-***
-
-Enter RETURN to continue or '\^' to exit:
-
-***
-
+Miscellaneous OE/RR Definition for System: OEX.ISC-SLC.VA.GOV  
+\---------------------------------------------------------------------  
+Active Orders Context Hours 24  
+Auto Unflag YES  
+Confirm Provider YES (Exclude ORES)  
+Default Provider YES  
+Error Days 2  
+Grace Days before Purge 30  
+Restrict Requestor YES (ORELSE & OREMAS)  
+Review on Patient Movement YES  
+Show Status Description YES  
+Signed on Chart Default NO  
+\---------------------------------------------------------------------  
+Enter RETURN to continue or '\^' to exit:  
 ### Disabling Ordering per User
 
 You can use *General Parameter Tools* to disable ordering for individual users, if you have access to this option; otherwise, get an IRMS specialist to help you.
 
-Select OPTION NAME: **ORMGR** CPRS Manager Menu menu
-
+Select OPTION NAME: **ORMGR** CPRS Manager Menu menu  
 ***
 
+CL Clinician Menu ...  
+NM Nurse Menu ...  
+WC Ward Clerk Menu ...  
+PE CPRS Configuration (Clin Coord) ...  
+IR CPRS Configuration (IRM) ...  
+Select CPRS Manager Menu Option: **IR** CPRS Configuration (IRM)  
+OC Order Check Expert System Main Menu ...  
+TI ORMTIME Main Menu ...  
+UT CPRS Clean-up Utilities ...  
+XX General Parameter Tools ...  
+Select CPRS Configuration (IRM) Option: **XX** General Parameter Tools  
+LV List Values for a Selected Parameter  
+LE List Values for a Selected Entity  
+LP List Values for a Selected Package  
+LT List Values for a Selected Template  
+EP Edit Parameter Values  
+ET Edit Parameter Values with Template  
+Select General Parameter Tools Option: **EP** Edit Parameter Values  
 ***
 
-CL Clinician Menu ...
-
+Select PARAMETER DEFINITION NAME: **ORWOR DISABLE ORDERING**  Disable  
+Ordering in GUI  
 ***
 
-NM Nurse Menu ...
-
+ORWOR DISABLE ORDERING may be set for the following:  
 ***
 
-WC Ward Clerk Menu ...
-
+2 User USR [choose from NEW PERSON]  
+5 System SYS [OEX.ISC-SLC.VA.GOV]  
+10 Package PKG [ORDER ENTRY/RESULTS REPORTING]  
 ***
 
-PE CPRS Configuration (Clin Coord) ...
-
+Enter selection: **2** User NEW PERSON  
+Select NEW PERSON NAME: **CPRSUSER**,SEVEN RAF COMPUTER TYPE  
 ***
 
-IR CPRS Configuration (IRM) ...
-
+\--- Setting ORWOR DISABLE ORDERING for User: CPRSUSER,SEVEN-----  
+Disable Ordering: **?**  
 ***
 
-Select CPRS Manager Menu Option: **IR** CPRS Configuration (IRM)
-
+Enter 'Yes' if you wish to disable ordering and order action in the GUI.  
 ***
 
-OC Order Check Expert System Main Menu ...
-
+Disable Ordering: **YES**  
 ***
 
-TI ORMTIME Main Menu ...
-
+ORWOR DISABLE ORDERING may be set for the following:  
 ***
 
-UT CPRS Clean-up Utilities ...
-
+2 User USR [choose from NEW PERSON]  
+5 System SYS [OEX.ISC-SLC.VA.GOV]  
+10 Package PKG [ORDER ENTRY/RESULTS REPORTING]  
 ***
 
-XX General Parameter Tools ...
-
-***
-
-Select CPRS Configuration (IRM) Option: **XX** General Parameter Tools
-
-***
-
-LV List Values for a Selected Parameter
-
-***
-
-LE List Values for a Selected Entity
-
-***
-
-LP List Values for a Selected Package
-
-***
-
-LT List Values for a Selected Template
-
-***
-
-EP Edit Parameter Values
-
-***
-
-ET Edit Parameter Values with Template
-
-***
-
-Select General Parameter Tools Option: **EP** Edit Parameter Values
-
-***
-
-***
-
-Select PARAMETER DEFINITION NAME: **ORWOR DISABLE ORDERING**  Disable
-
-***
-
-Ordering in GUI
-
-***
-
-***
-
-ORWOR DISABLE ORDERING may be set for the following:
-
-***
-
-***
-
-2 User USR [choose from NEW PERSON]
-
-***
-
-5 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-10 Package PKG [ORDER ENTRY/RESULTS REPORTING]
-
-***
-
-***
-
-Enter selection: **2** User NEW PERSON
-
-***
-
-Select NEW PERSON NAME: **CPRSUSER**,SEVEN RAF COMPUTER TYPE
-
-***
-
-***
-
-\--- Setting ORWOR DISABLE ORDERING for User: CPRSUSER,SEVEN-----
-
-***
-
-Disable Ordering: **?**
-
-***
-
-***
-
-Enter 'Yes' if you wish to disable ordering and order action in the GUI.
-
-***
-
-***
-
-Disable Ordering: **YES**
-
-***
-
-***
-
-ORWOR DISABLE ORDERING may be set for the following:
-
-***
-
-***
-
-2 User USR [choose from NEW PERSON]
-
-***
-
-5 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-10 Package PKG [ORDER ENTRY/RESULTS REPORTING]
-
-***
-
-***
-
-This will disable all BUT NEW PROBLEM, NEW NOTE, and NEW DISCHARGE SUMMARY
-
-***
-
+This will disable all BUT NEW PROBLEM, NEW NOTE, and NEW DISCHARGE SUMMARY  
 **Creating or adding to the Write Orders list**
 
 The parameters that control the "Write Orders" list are edited via the General Parameter Tools menu (XPAR MENU TOOLS).
@@ -19246,274 +7213,94 @@ You can find what was on the "Write Orders" list to start with by using the para
 
 The "Write Orders" list, as exported, contains the following dialogs:
 
-Sequence Value Display Name
-
-***
-
-30 FHW1 Diet
-
-***
-
-52 PSJ OR PAT OE Meds, Inpatient
-
-***
-
-55 PSO OERR Meds, Outpatient
-
-***
-
-58 PSJI OR PAT FLUID OE IV Fluids
-
-***
-
-60 LR OTHER LAB TESTS Lab Tests
-
-***
-
-70 RA OERR EXAM Radiology
-
-***
-
-80 GMRCOR CONSULT Consult
-
-***
-
-85 GMRCOR REQUEST Procedure
-
-***
-
-90 GMRVOR Vitals
-
-***
-
-99 OR GXTEXT WORD PROCESSING ORDER Text Only Order
-
-***
-
+Sequence Value Display Name  
+30 FHW1 Diet  
+52 PSJ OR PAT OE Meds, Inpatient  
+55 PSO OERR Meds, Outpatient  
+58 PSJI OR PAT FLUID OE IV Fluids  
+60 LR OTHER LAB TESTS Lab Tests  
+70 RA OERR EXAM Radiology  
+80 GMRCOR CONSULT Consult  
+85 GMRCOR REQUEST Procedure  
+90 GMRVOR Vitals  
+99 OR GXTEXT WORD PROCESSING ORDER Text Only Order  
 The sequence is just an arbitrary number to indicate the order that the dialog should be in the list.
 
-Select OPTION NAME: **ORMGR** CPRS Manager Menu menu
-
+Select OPTION NAME: **ORMGR** CPRS Manager Menu menu  
 ***
 
+CL Clinician Menu ...  
+NM Nurse Menu ...  
+WC Ward Clerk Menu ...  
+PE CPRS Configuration (Clin Coord) ...  
+IR CPRS Configuration (IRM) ...  
 ***
 
-CL Clinician Menu ...
-
+Select CPRS Manager Menu Option: **IR** CPRS Configuration (IRM)  
 ***
 
-NM Nurse Menu ...
-
+OC Order Check Expert System Main Menu ...  
+TI ORMTIME Main Menu ...  
+UT CPRS Clean-up Utilities ...  
+XX General Parameter Tools ...  
 ***
 
-WC Ward Clerk Menu ...
-
+Select CPRS Configuration (IRM) Option: **XX** General Parameter Tools  
 ***
 
-PE CPRS Configuration (Clin Coord) ...
-
+LV List Values for a Selected Parameter  
+LE List Values for a Selected Entity  
+LP List Values for a Selected Package  
+LT List Values for a Selected Template  
+EP Edit Parameter Values  
+ET Edit Parameter Values with Template  
 ***
 
-IR CPRS Configuration (IRM) ...
-
+Select General Parameter Tools Option: **EP** Edit Parameter Values  
+\--- Edit Parameter Values ---  
 ***
 
+Select PARAMETER DEFINITION NAME:**ORWDX** WRITE ORDERS LIST Menu for Write  
+Orders List  
 ***
 
-Select CPRS Manager Menu Option: **IR** CPRS Configuration (IRM)
-
+ORWDX WRITE ORDERS LIST may be set for the following:  
 ***
 
+2 User USR [choose from NEW PERSON]  
+7 Division DIV [REGION 5]  
+8 System SYS [OEX.ISC-SLC.VA.GOV]  
 ***
 
-OC Order Check Expert System Main Menu ...
-
+Enter selection: **2** User NEW PERSON  
+Select NEW PERSON NAME: **CPRSPROVIDER**,FIVE CF  
 ***
 
-TI ORMTIME Main Menu ...
-
+\----------- Setting ORWDX WRITE ORDERS LIST for User: CPRSPROVIDER,FIVE------  
+Order Dialog: **??**  
 ***
 
-UT CPRS Clean-up Utilities ...
-
+Choose from:  
+FHWMENU  
+GMRVORMENU  
+OR ADD MENU CLINICIAN  
+OR GMENU ACTIVITY ORDERS  
+OR GMENU ORDER SETS  
+OR GMENU OTHER ORDERS  
+OR GMENU PATIENT CARE ORDERS  
+OR GXMOVE PATIENT MOVEMENT  
+ORZ WHATEVER  
+ZZCURTIS  
+ZZJFR MENU  
+ZZJFR TEST MENU  
+ZZKCM MENU  
+ZZKCM MENU 1  
+ZZMARCIA  
+ZZMEL MENU  
+ZZRV1  
 ***
 
-XX General Parameter Tools ...
-
-***
-
-***
-
-Select CPRS Configuration (IRM) Option: **XX** General Parameter Tools
-
-***
-
-***
-
-LV List Values for a Selected Parameter
-
-***
-
-LE List Values for a Selected Entity
-
-***
-
-LP List Values for a Selected Package
-
-***
-
-LT List Values for a Selected Template
-
-***
-
-EP Edit Parameter Values
-
-***
-
-ET Edit Parameter Values with Template
-
-***
-
-***
-
-Select General Parameter Tools Option: **EP** Edit Parameter Values
-
-***
-
-\--- Edit Parameter Values ---
-
-***
-
-***
-
-Select PARAMETER DEFINITION NAME:**ORWDX** WRITE ORDERS LIST Menu for Write
-
-***
-
-Orders List
-
-***
-
-***
-
-ORWDX WRITE ORDERS LIST may be set for the following:
-
-***
-
-***
-
-2 User USR [choose from NEW PERSON]
-
-***
-
-7 Division DIV [REGION 5]
-
-***
-
-8 System SYS [OEX.ISC-SLC.VA.GOV]
-
-***
-
-***
-
-Enter selection: **2** User NEW PERSON
-
-***
-
-Select NEW PERSON NAME: **CPRSPROVIDER**,FIVE CF
-
-***
-
-***
-
-\----------- Setting ORWDX WRITE ORDERS LIST for User: CPRSPROVIDER,FIVE------
-
-***
-
-Order Dialog: **??**
-
-***
-
-***
-
-Choose from:
-
-***
-
-FHWMENU
-
-***
-
-GMRVORMENU
-
-***
-
-OR ADD MENU CLINICIAN
-
-***
-
-OR GMENU ACTIVITY ORDERS
-
-***
-
-OR GMENU ORDER SETS
-
-***
-
-OR GMENU OTHER ORDERS
-
-***
-
-OR GMENU PATIENT CARE ORDERS
-
-***
-
-OR GXMOVE PATIENT MOVEMENT
-
-***
-
-ORZ WHATEVER
-
-***
-
-ZZCURTIS
-
-***
-
-ZZJFR MENU
-
-***
-
-ZZJFR TEST MENU
-
-***
-
-ZZKCM MENU
-
-***
-
-ZZKCM MENU 1
-
-***
-
-ZZMARCIA
-
-***
-
-ZZMEL MENU
-
-***
-
-ZZRV1
-
-***
-
-***
-
-Order Dialog: **ZZMEL MENU**
-
-***
-
+Order Dialog: **ZZMEL MENU**  
 ## D. Other CPRS Configuration
 
 ### List Manager Terminal Setup
@@ -19542,294 +7329,87 @@ Entries in this file determine the actions that are to be taken based on the nat
 
 **Nature of Order names**
 
--   WRITTEN
-
+-   WRITTEN  
+-   VERBAL  
+-   TELEPHONED  
+-   SERVICE CORRECTION  
+-   POLICY  
+-   DUPLICATE  
+-   REJECTED  
+-   PHYSICIAN ENTERED  
+-   AUTO  
+-   CHANGED  
+-   MAINTENANCE  
+Per VHA Directive 2005-044, this file has been "locked down" by Data Standardization (DS). The file definition (i.e. data dictionary) shall not be modified. All additions, changes and deletions to entries in the file shall be done by Enterprise Reference Terminology (ERT) using the Master File Server (MFS), provided by Common Services (CS). Creating and/or editing locally defined fields in the file are not permitted. Use of locally defined fields that were created prior to VHA Directive 2005-044 shall not be supported.  
+The Orders Domain has approved editing of the following fields in this file:  
+-   PRINT CHART COPY (\#.12)  
+-   PRINT DAILY SUMMARY (\#.13)  
+-   PRINT WORK COPY (\#.15)  
+-   INCLUDE IN ACTIVE ORDERS (\#.16)  
+**Nature of Order Example**  
+Select OPTION NAME: OR PARAM PRIN  
+1 OR PARAM PRINTS Print/Report Parameters menu  
+2 OR PARAM PRINTS (HOSP) Print Parameters for Hospital action  
+3 OR PARAM PRINTS (LOC) Print Parameters for Wards/Clinics action  
+CHOOSE 1-3: 1 OR PARAM PRINTS Print/Report Parameters menu  
+***  
+CC Chart Copy Parameters  
+WC Work Copy Parameters  
+SC Service Copy Parameters  
+RE Requisition/Label Parameters  
+UM Summary Report Parameters  
+HO Print Parameters for Hospital  
+LO Print Parameters for Wards/Clinics  
+NA Print Parameters for Nature of Order  
+***  
+Select Print/Report Parameters Option: NA Print Parameters for Nature of Order  
 ***
 
--   VERBAL
-
-***
-
--   TELEPHONED
-
-***
-
--   SERVICE CORRECTION
-
-***
-
--   POLICY
-
-***
-
--   DUPLICATE
-
-***
-
--   REJECTED
-
-***
-
--   PHYSICIAN ENTERED
-
-***
-
--   AUTO
-
-***
-
--   CHANGED
-
-***
-
--   MAINTENANCE
-
-***
-
-Per VHA Directive 2005-044, this file has been "locked down" by Data Standardization (DS). The file definition (i.e. data dictionary) shall not be modified. All additions, changes and deletions to entries in the file shall be done by Enterprise Reference Terminology (ERT) using the Master File Server (MFS), provided by Common Services (CS). Creating and/or editing locally defined fields in the file are not permitted. Use of locally defined fields that were created prior to VHA Directive 2005-044 shall not be supported.
-
-***
-
-The Orders Domain has approved editing of the following fields in this file:
-
-***
-
--   PRINT CHART COPY (\#.12)
-
-***
-
--   PRINT DAILY SUMMARY (\#.13)
-
-***
-
--   PRINT WORK COPY (\#.15)
-
-***
-
--   INCLUDE IN ACTIVE ORDERS (\#.16)
-
-***
-
-**Nature of Order Example**
-
-***
-
-Select OPTION NAME: OR PARAM PRIN
-
-***
-
-1 OR PARAM PRINTS Print/Report Parameters menu
-
-***
-
-2 OR PARAM PRINTS (HOSP) Print Parameters for Hospital action
-
-***
-
-3 OR PARAM PRINTS (LOC) Print Parameters for Wards/Clinics action
-
-***
-
-CHOOSE 1-3: 1 OR PARAM PRINTS Print/Report Parameters menu
-
-***
-
-***
-
-***
-
-CC Chart Copy Parameters
-
-***
-
-WC Work Copy Parameters
-
-***
-
-SC Service Copy Parameters
-
-***
-
-RE Requisition/Label Parameters
-
-***
-
-UM Summary Report Parameters
-
-***
-
-HO Print Parameters for Hospital
-
-***
-
-LO Print Parameters for Wards/Clinics
-
-***
-
-NA Print Parameters for Nature of Order
-
-***
-
-***
-
-***
-
-Select Print/Report Parameters Option: NA Print Parameters for Nature of Order
-
-***
-
-***
-
-Select NATURE OF ORDER: WRITTEN W
-
-***
-
-PRINT CHART COPY: NO//
-
-***
-
-PRINT DAILY SUMMARY: YES//
-
-***
-
-PRINT WORK COPY:
-
-***
-
-INCLUDE IN ACTIVE ORDERS: YES//
-
-***
-
-Select NATURE OF ORDER NAME: **\<Enter\>**
-
-***
-
+Select NATURE OF ORDER: WRITTEN W  
+PRINT CHART COPY: NO//  
+PRINT DAILY SUMMARY: YES//  
+PRINT WORK COPY:  
+INCLUDE IN ACTIVE ORDERS: YES//  
+Select NATURE OF ORDER NAME: **\<Enter\>**  
 ***
 
 **E. CPRS Hardware & Software Requirements and Recommendations**
 
-The following information contains recommendations for workstations, servers, and cabling plants. These recommendations are for requirements beyond the basic upgrading of the facility's main computer cluster to the newer DEC Alpha systems to provide the additional capacity needed to run CPRS and related packages (e.g. TIU, PCMM, PDM),
-
+The following information contains recommendations for workstations, servers, and cabling plants. These recommendations are for requirements beyond the basic upgrading of the facility's main computer cluster to the newer DEC Alpha systems to provide the additional capacity needed to run CPRS and related packages (e.g. TIU, PCMM, PDM),  
+VHA facilities are encouraged to budget and purchase PC workstations as replacements for dumb terminals. The VHA LAN and Workstation Requirements task force report should be used too as a guide.  
+**Note:** The List Manager interface, non-GUI version, of CPRS does not require a PC workstation.  
+**Workstation Hardware**  
+CPRS does not have specific workstation requirements beyond the VA Standard Desktop Configurations.  
+**Local Area Networks**  
+**Server hardware (non VISTA servers)**  
+For simplicity of support, facilities should consider purchasing the same type of hardware used for the *VISTA* servers. These systems would both run the recommended server NOS (network operating system) of Microsoft Windows NT. General features to be considered include:  
+-   Single processor system with capacity to expand to multi-processor  
+-   RAID magnetic disk drive configurations for critical applications  
+-   Backup device  
+-   Fast disk controller (SCSI-2)  
+-   Uninterruptable power supply (UPS) with shutdown software  
+-   Modems for RAS and system access by support personnel  
+**Server software**  
+-   Microsoft Windows NT 3.5x or 4.x. Microsoft Windows NT has been selected as the recommended server NOS (network operating system) for non- *VISTA* applications within VHA  
+-   Electronic mail: Microsoft Exchange Enterprise Version.  
+-   *VISTA* Request Broker on *VISTA* servers  
+-   CD ROM resources: Network versions of medical reference sources such as Physicians Data Reference  
+-   Optional workstation management software, e.g. SMS  
+**LAN naming conventions**  
+LAN naming conventions are important as we maximize the benefit from our installed systems. The best trade-offs need to be made to ensure that the results are user friendly, compatible with evolving computer networking technology, and compatible with other VA organizations. Conventions are needed for objects such as user names, domains, servers, shared directories, post offices, printers, printer queues, groups, workstation computer names, login scripts, and shared resource names (FAX, modem pools, CD ROM towers). It is possible that these conventions will need to change over time. The VHA NT naming conventions documents can be found on the internal VA Intranet server under medical automation, at link *h ttp://152.128.2. 7/mediauto/domain7. doc.*  
+**LAN architecture**  
+The VHA Office of the Chief Information Officer (OCIO) has developed the VHA LAN Architecture for use as guidance in the implementation of a scaleable, open local area network (LAN) architecture at VHA facilities.  
 ***
 
-VHA facilities are encouraged to budget and purchase PC workstations as replacements for dumb terminals. The VHA LAN and Workstation Requirements task force report should be used too as a guide.
-
+The key assumption underlying the design of the recommended architecture is reflected in the 1992 VHA report, DHCP Facility Data Communications Cabling Recommendations and Implementation Strategies. The network backbone is a fiber optic implementation and the horizontal wiring is realized using three four-pair unshielded twisted pair (UTP) category 5 cables to the workspace. Three corresponding architectures were recommended in support of the three business cases.  
 ***
 
-**Note:** The List Manager interface, non-GUI version, of CPRS does not require a PC workstation.
-
+The crux of the recommended VAMC architecture is LAN switching realized with Ethernet, FDDI, and ultimately, ATM technologies. The augmented recommended architecture includes an alternative architecture for VA facilities with conservative demands and limited economic resources.  
+**Facility wiring/cabling**  
+Facility wiring and cabling recommendations are outlined in the 1992 VHA report DHCP Facility Data Communications Cabling Recommendations and Implementation Strategies released to the field in January 1992.  
 ***
 
-**Workstation Hardware**
-
-***
-
-CPRS does not have specific workstation requirements beyond the VA Standard Desktop Configurations.
-
-***
-
-**Local Area Networks**
-
-***
-
-**Server hardware (non VISTA servers)**
-
-***
-
-For simplicity of support, facilities should consider purchasing the same type of hardware used for the *VISTA* servers. These systems would both run the recommended server NOS (network operating system) of Microsoft Windows NT. General features to be considered include:
-
-***
-
--   Single processor system with capacity to expand to multi-processor
-
-***
-
--   RAID magnetic disk drive configurations for critical applications
-
-***
-
--   Backup device
-
-***
-
--   Fast disk controller (SCSI-2)
-
-***
-
--   Uninterruptable power supply (UPS) with shutdown software
-
-***
-
--   Modems for RAS and system access by support personnel
-
-***
-
-**Server software**
-
-***
-
--   Microsoft Windows NT 3.5x or 4.x. Microsoft Windows NT has been selected as the recommended server NOS (network operating system) for non- *VISTA* applications within VHA
-
-***
-
--   Electronic mail: Microsoft Exchange Enterprise Version.
-
-***
-
--   *VISTA* Request Broker on *VISTA* servers
-
-***
-
--   CD ROM resources: Network versions of medical reference sources such as Physicians Data Reference
-
-***
-
--   Optional workstation management software, e.g. SMS
-
-***
-
-**LAN naming conventions**
-
-***
-
-LAN naming conventions are important as we maximize the benefit from our installed systems. The best trade-offs need to be made to ensure that the results are user friendly, compatible with evolving computer networking technology, and compatible with other VA organizations. Conventions are needed for objects such as user names, domains, servers, shared directories, post offices, printers, printer queues, groups, workstation computer names, login scripts, and shared resource names (FAX, modem pools, CD ROM towers). It is possible that these conventions will need to change over time. The VHA NT naming conventions documents can be found on the internal VA Intranet server under medical automation, at link *h ttp://152.128.2. 7/mediauto/domain7. doc.*
-
-***
-
-**LAN architecture**
-
-***
-
-The VHA Office of the Chief Information Officer (OCIO) has developed the VHA LAN Architecture for use as guidance in the implementation of a scaleable, open local area network (LAN) architecture at VHA facilities.
-
-***
-
-***
-
-The key assumption underlying the design of the recommended architecture is reflected in the 1992 VHA report, DHCP Facility Data Communications Cabling Recommendations and Implementation Strategies. The network backbone is a fiber optic implementation and the horizontal wiring is realized using three four-pair unshielded twisted pair (UTP) category 5 cables to the workspace. Three corresponding architectures were recommended in support of the three business cases.
-
-***
-
-***
-
-The crux of the recommended VAMC architecture is LAN switching realized with Ethernet, FDDI, and ultimately, ATM technologies. The augmented recommended architecture includes an alternative architecture for VA facilities with conservative demands and limited economic resources.
-
-***
-
-**Facility wiring/cabling**
-
-***
-
-Facility wiring and cabling recommendations are outlined in the 1992 VHA report DHCP Facility Data Communications Cabling Recommendations and Implementation Strategies released to the field in January 1992.
-
-***
-
-***
-
-Facility-wide connectivity would include a multi-mode fiber optic backbone to all wiring locations, and category 5 unshielded twisted pair (UTP) wiring to all work/user locations. Such a cabling scheme is anticipated to support any future recommendation for a LAN architecture. The VII Telecommunications Infrastructure Project (TIP) is currently underway aimed at helping sites upgrade to the appropriate cabling and LAN architecture.
-
-***
-
+Facility-wide connectivity would include a multi-mode fiber optic backbone to all wiring locations, and category 5 unshielded twisted pair (UTP) wiring to all work/user locations. Such a cabling scheme is anticipated to support any future recommendation for a LAN architecture. The VII Telecommunications Infrastructure Project (TIP) is currently underway aimed at helping sites upgrade to the appropriate cabling and LAN architecture.  
 # IV. Set-Up for Other CPRS Packages
 
 1.  Adverse Reaction Tracking
@@ -19856,14 +7436,8 @@ Facility-wide connectivity would include a multi-mode fiber optic backbone to al
 
     Unit Dose
 
-8.  Text Integration Utilities (TIU)
-
-***
-
-***
-
-***
-
+8.  Text Integration Utilities (TIU)  
+***  
 ## Parameters for Packages Related to CPRS
 
 The behavior of CPRS is affected by parameters controlled by the following options in ancillary packages that interface with CPRS:
@@ -20066,14 +7640,8 @@ User Class Definition [USR CLASS DEFINITION]
 
 Edit Business Rules [USR EDIT BUSINESS RULES]
 
-Manage Business Rules [USR MANAGE BUSINESS RULES]
-
-***
-
-## A. Adverse Reaction Tracking (ART)
-
-***
-
+Manage Business Rules [USR MANAGE BUSINESS RULES]  
+## A. Adverse Reaction Tracking (ART)  
 Adverse Reaction Tracking (ART) doesn’t require any set-up for CPRS.
 
 Patch GMRA\*4\*4 contains interface routines and fixes to the CPRS/ART interface. It needs to be installed before CPRS.
@@ -20108,54 +7676,18 @@ The Bed Control (Admission, Discharge, and Transfer) package doesn’t require a
 
     **Example: Entering a protocol sequence \# for DGPM MOVEMENT EVENTS**
 
-    Select OPTION: **ENTER** OR EDIT FILE ENTRIES
-
-***
-
-INPUT TO WHAT FILE: OPTION// **101** PROTOCOL (3374 entries)
-
-***
-
-EDIT WHICH FIELD: ALL// **ITEM**
-
-***
-
-EDIT WHICH ITEM SUB-FIELD: ALL// **\<Enter\>**
-
-***
-
-THEN EDIT FIELD: **\<Enter\>**
-
-***
-
-Select PROTOCOL NAME: **DGPM** MOVEMENT EVENTS MOVEMENT EVENTS v 5.0
-
-***
-
-Select ITEM: **DGOERR NOTE**
-
-***
-
-ITEM: DGOERR NOTE// **\<Enter\>**
-
-***
-
-MNEMONIC: **\<Enter\>**
-
-***
-
-SEQUENCE: 69// **13**
-
-***
-
-MODIFYING ACTION:**\^**
-
-***
-
-Select ITEM: **\<Enter\>**
-
-***
-
+    Select OPTION: **ENTER** OR EDIT FILE ENTRIES  
+INPUT TO WHAT FILE: OPTION// **101** PROTOCOL (3374 entries)  
+EDIT WHICH FIELD: ALL// **ITEM**  
+EDIT WHICH ITEM SUB-FIELD: ALL// **\<Enter\>**  
+THEN EDIT FIELD: **\<Enter\>**  
+Select PROTOCOL NAME: **DGPM** MOVEMENT EVENTS MOVEMENT EVENTS v 5.0  
+Select ITEM: **DGOERR NOTE**  
+ITEM: DGOERR NOTE// **\<Enter\>**  
+MNEMONIC: **\<Enter\>**  
+SEQUENCE: 69// **13**  
+MODIFYING ACTION:**\^**  
+Select ITEM: **\<Enter\>**  
 **DGPM Movement Events**
 
 At the completion of a patient movement, the following events take place through this option:
@@ -20210,64 +7742,28 @@ If your site has set up a Service and Specialty hierarchy through version 2.5, t
 
 The Request Services file (\#123.5) is distributed with a small selection of services. The hierarchical relationships are not in place upon distribution.
 
-The small selection of services distributed with the package should not be deleted from the Request Services file (\#123.5) under any circumstances. You may delete locally defined services and their associated hierarchies until the services are selected for ordering consults. Once the ordering process has begun **DO NOT DELETE** a service entry. Instead, disable the service using the SERVICE USAGE field in file 123.5. Disabled services are not selectable for ordering or tracking.
-
-***
-
+The small selection of services distributed with the package should not be deleted from the Request Services file (\#123.5) under any circumstances. You may delete locally defined services and their associated hierarchies until the services are selected for ordering consults. Once the ordering process has begun **DO NOT DELETE** a service entry. Instead, disable the service using the SERVICE USAGE field in file 123.5. Disabled services are not selectable for ordering or tracking.  
 The Service/Specialty hierarchy you define can be as complex as needed to meet service requirements at your site. To get started you will probably want to specify a small subset of services/specialties and add to them over a period of time. ALL SERVICES needs to be the top entry in the hierarchy.
 
 In order to build the service hierarchy, you will need to know how the service entry in the Request Services file (\#123.5) will be used. Some services will be used as a GROUPER ONLY and other services may be used for TRACKING ONLY. The SERVICE USAGE field is provided for you to differentiate the services in the hierarchy.
 
 To see your site’s hierarchy, use the *Consults Service Tracking* [GMRC SERVICE TRACKING] option and enter ?? at the "Select Service/Specialty:"
 
-**For the Consults tab of CPRS to function properly, any new service added to the hierarchy must be made a sub-service of ALL SERVICES!!**
-
-***
-
+**For the Consults tab of CPRS to function properly, any new service added to the hierarchy must be made a sub-service of ALL SERVICES!!**  
 If the service is not directly placed under the ALL SERVICES heading, it must be a sub-service of a service that IS under ALL SERVICES. If a service is not in the hierarchy under the ALL SERVICES heading, users will not be able to view or respond to the consult from the consults tab in CPRS after it has been sent.
 
 ### Sample Hierarchy
 
-ALL SERVICES
-
-***
-
-REHAB MEDICINE (GROUPER)
-
-***
-
-PHYSICAL MEDICINE & REHABILITATION
-
-***
-
-OCCUPATIONAL THERAPY (TRACKER)
-
-***
-
-KENESIOTHERAPY (TRACKER)
-
-***
-
-PHYSICAL THERAPY (TRACKER)
-
-***
-
-MEDICINE (GROUPER)
-
-***
-
-CARDIOLOGY
-
-***
-
-ALLERGY/IMMUNOLOGY
-
-***
-
-GI INFECTIOUS DISEASE
-
-***
-
+ALL SERVICES  
+REHAB MEDICINE (GROUPER)  
+PHYSICAL MEDICINE & REHABILITATION  
+OCCUPATIONAL THERAPY (TRACKER)  
+KENESIOTHERAPY (TRACKER)  
+PHYSICAL THERAPY (TRACKER)  
+MEDICINE (GROUPER)  
+CARDIOLOGY  
+ALLERGY/IMMUNOLOGY  
+GI INFECTIOUS DISEASE  
 #### 
 
 Each hospital service or primary care team should work with the IRMS staff and its Clinical Coordinator to define its service and specialty hierarchy, who the users will be, and the types of consults that are orderable from its specialties. Service users may range from clerks to nurses, pharmacists, clinical technicians, physicians, and other types of clinicians.
@@ -20278,108 +7774,42 @@ Plan every detail of your site’s consult hierarchy before ever trying to do th
 
 This checklist can help you walk through the steps needed to implement the Consults package.
 
-** NOTE:**  Important changes since Consults/Request Tacking Version 2.5 are emphasized with a note.
-
-***
-
+** NOTE:**  Important changes since Consults/Request Tacking Version 2.5 are emphasized with a note.  
 **INSTALL NOTES**
 
-![](1b9e45e828a2381d80122842e84caaca.png) The Consult/Request Tracking V. 3.0 package installs automatically when CPRS V. 1.0 installed.
-
-***
-
+![](1b9e45e828a2381d80122842e84caaca.png) The Consult/Request Tracking V. 3.0 package installs automatically when CPRS V. 1.0 installed.  
 **PLANNING NOTES**
 
-**NOTE:** Effective with Consults/Request Tracking V. 3.0:
-
-***
-
-1.  A service is only selectable for update/tracking if it is defined as part of the All Services hierarchy.
-
-***
-
-1.  Disabled services can be left in the All Services hierarchy so their order results can be returned, but are not selectable in the ordering process.
-
-***
-
-1.  Tracking services must be in the All Services hierarchy in order to receive forwarded consults. The tracking service can only be selectable in the order forwarding process if the user is an update user for the tracking service or its parent service.
-
-***
-
+**NOTE:** Effective with Consults/Request Tracking V. 3.0:  
+1.  A service is only selectable for update/tracking if it is defined as part of the All Services hierarchy.  
+1.  Disabled services can be left in the All Services hierarchy so their order results can be returned, but are not selectable in the ordering process.  
+1.  Tracking services must be in the All Services hierarchy in order to receive forwarded consults. The tracking service can only be selectable in the order forwarding process if the user is an update user for the tracking service or its parent service.  
 **Plan the Consult Service Hierarchy**
 
-![](1b9e45e828a2381d80122842e84caaca.png) 1a. Identify services to receive consults.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 1b. Determine if the service should be selectable in the ordering process from CPRS.
-
-***
-
-For some consults, the order may need to be sent to a Service control point for forwarding to a service that has been identified as a “Tracking Only” service. (Tracking Only services are not selectable during the initial CPRS order process.) If a service control point is desired, the tracking services should be sub-specialties under the control point service within the All Services hierarchy.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 1c. Determine if there should be a service that will be used as a “Grouper Only” (e.g., Inpatient Services, Outpatient Services, and Outside Services might be good services to define as groupers).
-
-***
-
+![](1b9e45e828a2381d80122842e84caaca.png) 1a. Identify services to receive consults.  
+![](1b9e45e828a2381d80122842e84caaca.png) 1b. Determine if the service should be selectable in the ordering process from CPRS.  
+For some consults, the order may need to be sent to a Service control point for forwarding to a service that has been identified as a “Tracking Only” service. (Tracking Only services are not selectable during the initial CPRS order process.) If a service control point is desired, the tracking services should be sub-specialties under the control point service within the All Services hierarchy.  
+![](1b9e45e828a2381d80122842e84caaca.png) 1c. Determine if there should be a service that will be used as a “Grouper Only” (e.g., Inpatient Services, Outpatient Services, and Outside Services might be good services to define as groupers).  
 **Consults Install, Planning, and Implementation Checklist, cont’d**
 
-When a Grouper Only service is selected in the CPRS order process, the service hierarchy defined under the grouper service will be displayed for selection items. The Grouper Only cannot be selected to receive an order. The All Services service is a Grouper Only, provided to build the Consult Service hierarchy upon.
-
+When a Grouper Only service is selected in the CPRS order process, the service hierarchy defined under the grouper service will be displayed for selection items. The Grouper Only cannot be selected to receive an order. The All Services service is a Grouper Only, provided to build the Consult Service hierarchy upon.  
+**Plan Service Users and Notification Recipients**  
+![](1b9e45e828a2381d80122842e84caaca.png) 2. Identify individuals at the receiving service who should be notified when a consult is being sent to the receiving service.  
+![](1b9e45e828a2381d80122842e84caaca.png) 3. Identify service teams of clinicians or service users who should receive notifications.  
+Team definitions may be used in addition to (or in lieu of) naming individuals to receive notifications. The teams for each service may be broken down by hospital locations that the clinicians follow if desired.  
+![](1b9e45e828a2381d80122842e84caaca.png) 4. Identify individuals at the receiving service who will NOT receive notifications about new consults, but should be able to perform update capabilities for this service.  
+![](1b9e45e828a2381d80122842e84caaca.png) 5. Identify the service printers that will be used to automatically print Consult Form 513s when a consult order is received from CPRS.  
 ***
 
-**Plan Service Users and Notification Recipients**
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 2. Identify individuals at the receiving service who should be notified when a consult is being sent to the receiving service.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 3. Identify service teams of clinicians or service users who should receive notifications.
-
-***
-
-Team definitions may be used in addition to (or in lieu of) naming individuals to receive notifications. The teams for each service may be broken down by hospital locations that the clinicians follow if desired.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 4. Identify individuals at the receiving service who will NOT receive notifications about new consults, but should be able to perform update capabilities for this service.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 5. Identify the service printers that will be used to automatically print Consult Form 513s when a consult order is received from CPRS.
-
-***
-
-***
-
-** NOTE:**  Effective with Consult/Request Tracking V. 3.0, all Consult Form 513 prints are done from Consult routines. OE/RR print templates are no longer used for consult prints.
-
-***
-
+** NOTE:**  Effective with Consult/Request Tracking V. 3.0, all Consult Form 513 prints are done from Consult routines. OE/RR print templates are no longer used for consult prints.  
 **Plan Specific Procedures or Requests for Service(s)**
 
-![](1b9e45e828a2381d80122842e84caaca.png) 6a. *Optional*: Identify direct request or procedure orders that specific consult services may receive, which do not require a Consult. (e.g.,EKG: Portable)
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 6b. Plan questions/templates for ordering clinicians to be asked when the order is placed. This would become the text for the Reason for Request.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 7. Identify the types of information the Receiving Services will need to see for their patients in a Health Summary report.
-
-***
-
+![](1b9e45e828a2381d80122842e84caaca.png) 6a. *Optional*: Identify direct request or procedure orders that specific consult services may receive, which do not require a Consult. (e.g.,EKG: Portable)  
+![](1b9e45e828a2381d80122842e84caaca.png) 6b. Plan questions/templates for ordering clinicians to be asked when the order is placed. This would become the text for the Reason for Request.  
+![](1b9e45e828a2381d80122842e84caaca.png) 7. Identify the types of information the Receiving Services will need to see for their patients in a Health Summary report.  
 **Consults Install, Planning, and Implementation Checklist, cont’d**
 
-![](1b9e45e828a2381d80122842e84caaca.png) 8. Identify Ordering Providers who should receive a notification when the Receiving Service has reached a resolution of *completed*, *denied*, or *discontinued* for a consult ordered by the provider.
-
-***
-
+![](1b9e45e828a2381d80122842e84caaca.png) 8. Identify Ordering Providers who should receive a notification when the Receiving Service has reached a resolution of *completed*, *denied*, or *discontinued* for a consult ordered by the provider.  
 **TIU Setup**
 
 ![](1b9e45e828a2381d80122842e84caaca.png) 9. Plan your hospital’s TIU hierarchy. See the *Text Integration Utility (TIU) Implementation Guide* for details on this step.
@@ -20388,110 +7818,44 @@ Team definitions may be used in addition to (or in lieu of) naming individuals t
 
 ![](1b9e45e828a2381d80122842e84caaca.png) 11. Run the TIU DEFINE CONSULTS option.
 
-** NOTE:**  If you do not run the TIU DEFINE CONSULTS option, no status update takes place when the TIU note is entered.
-
-***
-
+** NOTE:**  If you do not run the TIU DEFINE CONSULTS option, no status update takes place when the TIU note is entered.  
 ***
 
 ![](1b9e45e828a2381d80122842e84caaca.png) 12. Enter the rest of your planned TIU document hierarchy using the Manager Document Definition Menu.
 
 ![](1b9e45e828a2381d80122842e84caaca.png) 13. Define consult document parameters using the *Document Parameter Edit* option.
 
-** NOTE:**  We strongly recommend entering Yes to ALLOW \>1 RECORDS PER VISIT.
-
-***
-
+** NOTE:**  We strongly recommend entering Yes to ALLOW \>1 RECORDS PER VISIT.  
 #### IMPLEMENTATION AND MAINTENANCE (Abbreviated guidelines)
 
-![](1b9e45e828a2381d80122842e84caaca.png) 1. Add the GMRC MGR option menu to the ORMGR option menu, with a mnemonic of CS.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 2. Add the ORLP TEAM MENU option to GMRC MGR option menu, with a mnemonic of TE.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 3. Add the ORB NOT MENU option to the GMRC MGR option menu, with a mnemonic of NO.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 4. Add the GMRC GENERAL SERVICE USER, GMRC MEDICINE USER, or the GMRC PHARMACY USER menu to the menus of Consults users who need more functionality than the CPRS consults tab provides.
-
-***
-
+![](1b9e45e828a2381d80122842e84caaca.png) 1. Add the GMRC MGR option menu to the ORMGR option menu, with a mnemonic of CS.  
+![](1b9e45e828a2381d80122842e84caaca.png) 2. Add the ORLP TEAM MENU option to GMRC MGR option menu, with a mnemonic of TE.  
+![](1b9e45e828a2381d80122842e84caaca.png) 3. Add the ORB NOT MENU option to the GMRC MGR option menu, with a mnemonic of NO.  
+![](1b9e45e828a2381d80122842e84caaca.png) 4. Add the GMRC GENERAL SERVICE USER, GMRC MEDICINE USER, or the GMRC PHARMACY USER menu to the menus of Consults users who need more functionality than the CPRS consults tab provides.  
 **Consults Install, Planning, and Implementation Checklist, cont’d**
 
 ![](1b9e45e828a2381d80122842e84caaca.png) 5. (optional) Set up a team for each consult service. Use the *Team Mgmt Menu* option, ORLP TEAM MENU.
 
-![](1b9e45e828a2381d80122842e84caaca.png) 6. Turn on the NEW SERVICE CONSULT/REQUEST notification for each of the individuals who were identified to receive notifications. Use the *Enable/Disable Notifications* option of the NOTIFICATION MGMT MENU, ORB NOT MGR MENU.
-
-***
-
-** NOTE:**  Unless Consult notifications are set to mandatory, individual users must use the *Enable/Disable My Notifications* option of the Notifications Management Menu to individually enable the notifications they want to receive.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 7. Turn on the CONSULT/REQUEST RESOLUTION notification for all the ordering provider users identified to receive this notification, or train them to do it themselves. Use the *Enable/Disable Notifications* option of the NOTIFICATION MGMT MENU, ORB NOT MGR MENU.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 8. Turn on the CONSULT/REQUEST CANCEL/HOLD notification for all the ordering providers identified to receive this notification, or train them to do it themselves. Use the *Enable/Disable Notifications* option of the NOTIFICATION MGMT MENU, ORB NOT MGR MENU.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 9. Define the Service hierarchy in the Request Services File (\#123.5) with the associated users and service printer. Use the *Set up Consult Services* option, GMRC SETUP REQUEST SERVICES.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 10. Add the *Set up Service Users* [GMRC SETUP SERVICE USERS] option to the users who are allowed to manage service users.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 11. Add the following two options to Service update users’ primary or secondary menu option: *Consult Tracking* [GMRC SERVICE TRACKING] and *Service Consults Pending Resolution* [GMRC RPT PENDING CONSULTS].
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 12a. (*Optional*. With V. 3.0, services do not need to be protocols to be included on the Add New Orders screen. Adding the service to the hierarchy makes it a valid orderable item.) Create Protocol entries in the PROTOCOL File for each Service that should appear on the Add New Orders Screens.
-
-***
-
+![](1b9e45e828a2381d80122842e84caaca.png) 6. Turn on the NEW SERVICE CONSULT/REQUEST notification for each of the individuals who were identified to receive notifications. Use the *Enable/Disable Notifications* option of the NOTIFICATION MGMT MENU, ORB NOT MGR MENU.  
+** NOTE:**  Unless Consult notifications are set to mandatory, individual users must use the *Enable/Disable My Notifications* option of the Notifications Management Menu to individually enable the notifications they want to receive.  
+![](1b9e45e828a2381d80122842e84caaca.png) 7. Turn on the CONSULT/REQUEST RESOLUTION notification for all the ordering provider users identified to receive this notification, or train them to do it themselves. Use the *Enable/Disable Notifications* option of the NOTIFICATION MGMT MENU, ORB NOT MGR MENU.  
+![](1b9e45e828a2381d80122842e84caaca.png) 8. Turn on the CONSULT/REQUEST CANCEL/HOLD notification for all the ordering providers identified to receive this notification, or train them to do it themselves. Use the *Enable/Disable Notifications* option of the NOTIFICATION MGMT MENU, ORB NOT MGR MENU.  
+![](1b9e45e828a2381d80122842e84caaca.png) 9. Define the Service hierarchy in the Request Services File (\#123.5) with the associated users and service printer. Use the *Set up Consult Services* option, GMRC SETUP REQUEST SERVICES.  
+![](1b9e45e828a2381d80122842e84caaca.png) 10. Add the *Set up Service Users* [GMRC SETUP SERVICE USERS] option to the users who are allowed to manage service users.  
+![](1b9e45e828a2381d80122842e84caaca.png) 11. Add the following two options to Service update users’ primary or secondary menu option: *Consult Tracking* [GMRC SERVICE TRACKING] and *Service Consults Pending Resolution* [GMRC RPT PENDING CONSULTS].  
+![](1b9e45e828a2381d80122842e84caaca.png) 12a. (*Optional*. With V. 3.0, services do not need to be protocols to be included on the Add New Orders screen. Adding the service to the hierarchy makes it a valid orderable item.) Create Protocol entries in the PROTOCOL File for each Service that should appear on the Add New Orders Screens.  
 **Consults Install, Planning, and Implementation Checklist, cont’d**
 
-![](1b9e45e828a2381d80122842e84caaca.png) 12b. Use the *Set up Consult Protocols* [GMRC SETUP PROTOCOLS] option to define these services as “Consult Types.” These Protocol entries will be created with a name prefix of “GMRCT.”
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 13a. *(Optional)* If direct request items were identified related to a RECEIVING SERVICE, create Protocol entries in the PROTOCOL File for each Direct Request Item which should appear on an Add New Orders Screen. Use the *Set up Consult Protocols* [GMRC SETUP PROTOCOLS] option to define these direct request items as “Procedure Requests.” These Protocol entries will be created with a name prefix of “GMRCR.”
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 13b. Add the “PROCEDURES...,” GMRCOR REQUEST protocol item to the OR GMENU OTHER ORDERS protocol menu. Use the *Protocol Menu Edit* [ORCL PROTOCOL MENU EDIT] option.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 14. If using a site-defined Form 513: Transfer Consult Form print formats (defined in File 100.23) needing changes to a local print format and make the changes needed. Then alter the Order Parameters file (\#100.99) Service Copy Header, Footer, or Body for the Consult Tracking Package.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 15. Turn on the Package Site Parameter “ON:” field for the Consult Tracking Package in the ORDER PARAMETERS FILE (\#100.99).
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 16a. Define Health Summary Types that the receiving services need.
-
-***
-
-![](1b9e45e828a2381d80122842e84caaca.png) 16b. Provide Health Summary options to appropriate service users and inform them of the Health Summary Type defined for their use.
-
-***
-
+![](1b9e45e828a2381d80122842e84caaca.png) 12b. Use the *Set up Consult Protocols* [GMRC SETUP PROTOCOLS] option to define these services as “Consult Types.” These Protocol entries will be created with a name prefix of “GMRCT.”  
+![](1b9e45e828a2381d80122842e84caaca.png) 13a. *(Optional)* If direct request items were identified related to a RECEIVING SERVICE, create Protocol entries in the PROTOCOL File for each Direct Request Item which should appear on an Add New Orders Screen. Use the *Set up Consult Protocols* [GMRC SETUP PROTOCOLS] option to define these direct request items as “Procedure Requests.” These Protocol entries will be created with a name prefix of “GMRCR.”  
+![](1b9e45e828a2381d80122842e84caaca.png) 13b. Add the “PROCEDURES...,” GMRCOR REQUEST protocol item to the OR GMENU OTHER ORDERS protocol menu. Use the *Protocol Menu Edit* [ORCL PROTOCOL MENU EDIT] option.  
+![](1b9e45e828a2381d80122842e84caaca.png) 14. If using a site-defined Form 513: Transfer Consult Form print formats (defined in File 100.23) needing changes to a local print format and make the changes needed. Then alter the Order Parameters file (\#100.99) Service Copy Header, Footer, or Body for the Consult Tracking Package.  
+![](1b9e45e828a2381d80122842e84caaca.png) 15. Turn on the Package Site Parameter “ON:” field for the Consult Tracking Package in the ORDER PARAMETERS FILE (\#100.99).  
+![](1b9e45e828a2381d80122842e84caaca.png) 16a. Define Health Summary Types that the receiving services need.  
+![](1b9e45e828a2381d80122842e84caaca.png) 16b. Provide Health Summary options to appropriate service users and inform them of the Health Summary Type defined for their use.  
 #### Multi-Site
 
-![](1b9e45e828a2381d80122842e84caaca.png) Use the *Set up Consult Site Parameters* (PA) on the Consult Management menu to add multi-site or multi-division information to the Request Services list.
-
-***
-
+![](1b9e45e828a2381d80122842e84caaca.png) Use the *Set up Consult Site Parameters* (PA) on the Consult Management menu to add multi-site or multi-division information to the Request Services list.  
 ***
 
 ## D. Dietetics
@@ -20534,124 +7898,49 @@ After CPRS installation, each site must run this option to link terms used in th
 
 **Edit Site Local Terms Example**
 
-**Select OPTION NAME: OCX MAIN Order Check Expert System Main Menu**
-
+**Select OPTION NAME: OCX MAIN Order Check Expert System Main Menu**  
 ***
 
+**1 Compile Rules**  
+**2 Expert System Rule Activate/Inactivate**  
+**3 Edit Site Local Terms**  
+**4 Expert System Inquire**  
 ***
 
-**1 Compile Rules**
-
+**Select Order Check Expert System Main Menu Option: 3 Edit Site Local Terms**  
 ***
 
-**2 Expert System Rule Activate/Inactivate**
-
+**Order Check National Terms**  
+**SERUM CREATININE**  
+**SERUM UREA NITROGEN**  
+**DNR**  
+**PROTHROMBIN TIME**  
+**THROMBOPLASTIN TIME PARTIAL**  
+**NPO**  
+**SERUM SPECIMEN**  
+**PARTIAL THROMBOPLASTIN TIME**  
+**ANGIOGRAM (PERIPHERAL)**  
+**WBC**  
 ***
 
-**3 Edit Site Local Terms**
-
+**\< Enter ?? to see the rest of the national terms on this list\>**  
 ***
 
-**4 Expert System Inquire**
-
+**Select National Term: PROTHROMBIN TIME**  
 ***
 
+**National Term: PROTHROMBIN TIME**  
 ***
 
-**Select Order Check Expert System Main Menu Option: 3 Edit Site Local Terms**
-
+**Translated from file: 'LABORATORY TEST' 60**  
 ***
 
+**PT (467)**  
 ***
 
-**Order Check National Terms**
-
-***
-
-**SERUM CREATININE**
-
-***
-
-**SERUM UREA NITROGEN**
-
-***
-
-**DNR**
-
-***
-
-**PROTHROMBIN TIME**
-
-***
-
-**THROMBOPLASTIN TIME PARTIAL**
-
-***
-
-**NPO**
-
-***
-
-**SERUM SPECIMEN**
-
-***
-
-**PARTIAL THROMBOPLASTIN TIME**
-
-***
-
-**ANGIOGRAM (PERIPHERAL)**
-
-***
-
-**WBC**
-
-***
-
-***
-
-**\< Enter ?? to see the rest of the national terms on this list\>**
-
-***
-
-***
-
-**Select National Term: PROTHROMBIN TIME**
-
-***
-
-***
-
-**National Term: PROTHROMBIN TIME**
-
-***
-
-***
-
-**Translated from file: 'LABORATORY TEST' 60**
-
-***
-
-***
-
-**PT (467)**
-
-***
-
-***
-
-**Select LABORATORY TEST NAME: PT**
-
-***
-
-**467. PT**
-
-***
-
-**Select LABORATORY TEST name: \<Enter\>**
-
-***
-
+**Select LABORATORY TEST NAME: PT**  
+**467. PT**  
+**Select LABORATORY TEST name: \<Enter\>**  
 **Lab Interface, cont’d**
 
 #### 
@@ -20662,286 +7951,103 @@ This option on the GUI Cover Sheet Display Parameter menu on the CPRS Parameters
 
 All of the options on this menu are very similar to this example.
 
-Select CPRS Parameters Option: **se**  GUI Cover Sheet Display Parameters
-
+Select CPRS Parameters Option: **se**  GUI Cover Sheet Display Parameters  
 ***
 
+SY GUI Cover Sheet System Display Parameters  
+DI GUI Cover Sheet Division Display Parameters  
+SE GUI Cover Sheet Service Display Parameters  
+LO GUI Cover Sheet Location Display Parameters  
+US GUI Cover Sheet User Display Parameters  
 ***
 
-SY GUI Cover Sheet System Display Parameters
-
+Select GUI Cover Sheet Display Parameters Option: **SY**  GUI Cover Sheet System Display Parameters  
 ***
 
-DI GUI Cover Sheet Division Display Parameters
-
+GUI Cover Sheet - System for System: OEX.ISC-SLC.VA.GOV  
+\----------------------------------------------------------------------------  
+Lab Order/Result Inpatient Search Range  
+Lab Order/Result Outpatient Search Range  
+Radiology Exam Search Range 60  
+Consult/Request Search Range  
+Appt Search Start Date  
+Appt Search Stop Date  
+Visit Search Start Date  
+Visit Search Stop Date  
+Clinical Reminders for Search  
+\----------------------------------------------------------------------------  
+Inpatient Lab Number of Search Days: **60**  
+Outpatient Lab Number of Search Days: 365  
+Radiology Exam Number of Search Days: 60// **\<Enter\>**  
+Consult/Request Number of Search Days: **120**  
 ***
 
-SE GUI Cover Sheet Service Display Parameters
-
+For Appt Search Start Date -  
+Select Clinic: **\<Enter\>**  
 ***
 
-LO GUI Cover Sheet Location Display Parameters
-
+For Appt Search Stop Date -  
+Select Clinic: **\<Enter\>**  
 ***
 
-US GUI Cover Sheet User Display Parameters
-
+For Visit Search Start Date -  
+Select Hospital Location: **\<Enter\>**  
 ***
 
+For Visit Search Stop Date -  
+Select Hospital Location: **\<Enter\>**  
 ***
 
-Select GUI Cover Sheet Display Parameters Option: **SY**  GUI Cover Sheet System Display Parameters
-
-***
-
-***
-
-GUI Cover Sheet - System for System: OEX.ISC-SLC.VA.GOV
-
-***
-
-\----------------------------------------------------------------------------
-
-***
-
-Lab Order/Result Inpatient Search Range
-
-***
-
-Lab Order/Result Outpatient Search Range
-
-***
-
-Radiology Exam Search Range 60
-
-***
-
-Consult/Request Search Range
-
-***
-
-Appt Search Start Date
-
-***
-
-Appt Search Stop Date
-
-***
-
-Visit Search Start Date
-
-***
-
-Visit Search Stop Date
-
-***
-
-Clinical Reminders for Search
-
-***
-
-\----------------------------------------------------------------------------
-
-***
-
-Inpatient Lab Number of Search Days: **60**
-
-***
-
-Outpatient Lab Number of Search Days: 365
-
-***
-
-Radiology Exam Number of Search Days: 60// **\<Enter\>**
-
-***
-
-Consult/Request Number of Search Days: **120**
-
-***
-
-***
-
-For Appt Search Start Date -
-
-***
-
-Select Clinic: **\<Enter\>**
-
-***
-
-***
-
-For Appt Search Stop Date -
-
-***
-
-Select Clinic: **\<Enter\>**
-
-***
-
-***
-
-For Visit Search Start Date -
-
-***
-
-Select Hospital Location: **\<Enter\>**
-
-***
-
-***
-
-For Visit Search Stop Date -
-
-***
-
-Select Hospital Location: **\<Enter\>**
-
-***
-
-***
-
-For Clincal Reminders for Search -
-
-***
-
-Select Number: **\<Enter\>**
-
-***
-
+For Clincal Reminders for Search -  
+Select Number: **\<Enter\>**  
 **Lab Interface, cont’d**
 
 ### Lab Site parameters set within Lab
 
--   Some lab tests are not meant to be resulted. This is indicated in the Lab test file (\#60) and the Orderable Items file (\#101.43). In both files there is a field called TYPE. The field in both files is a set of codes which indicates if the lab test is to be resulted or not. The codes consist of I:Input, O:Output, B:Both and N:Neither. If the TYPE for a lab test in the Lab file or Orderable Item file is set to “I” or “N,” results will not be sent by lab. This may sometimes be set incorrectly and should be looked at when troubleshooting lab results-related notifications/alerts such as Lab Results, Abnormal Lab Results, Critical Lab Results, and STAT Results Available. If a lab results-related notification is not firing for a particular lab test, check the TYPE field for that test in the Lab Test and Orderable Items files. If it is “I” or “N” in either file, the results will not be posted via HL7 and the alert will not be sent.
-
-***
-
+-   Some lab tests are not meant to be resulted. This is indicated in the Lab test file (\#60) and the Orderable Items file (\#101.43). In both files there is a field called TYPE. The field in both files is a set of codes which indicates if the lab test is to be resulted or not. The codes consist of I:Input, O:Output, B:Both and N:Neither. If the TYPE for a lab test in the Lab file or Orderable Item file is set to “I” or “N,” results will not be sent by lab. This may sometimes be set incorrectly and should be looked at when troubleshooting lab results-related notifications/alerts such as Lab Results, Abnormal Lab Results, Critical Lab Results, and STAT Results Available. If a lab results-related notification is not firing for a particular lab test, check the TYPE field for that test in the Lab Test and Orderable Items files. If it is “I” or “N” in either file, the results will not be posted via HL7 and the alert will not be sent.  
 -   **Edit Hospital Site parameters**
 
     This option (on the OE/RR Interface Parameters menu on the Lab Liaison menu) sets the parameters used in the Lab – CPRS interface, by location, to define the maximum number of days for continuous lab orders, whether or not to ask for an urgency, and the default type of collection.
 
 **Edit Hospital Site parameters example**
 
-Select OE/RR Interface parameters Option: **EH** Edit HOSPITAL SITE parameters
-
+Select OE/RR Interface parameters Option: **EH** Edit HOSPITAL SITE parameters  
 ***
 
-***
-
-Select LABORATORY SITE SITE NAME: **HOSPITAL**
-
-***
-
-Select HOSPITAL SITE: **?**
-
-***
-
-Enter hospital location you wish to establish parameters for.
-
-***
-
-MAX DAYS FOR CONTINUOUS ORDERS:// **??**
-
-***
-
-This is the maximum number of days that multiple-continuous orders can be placed for this location.
-
-***
-
-CANCEL ON WARD TRANSFER: **??**
-
-***
-
-CANCEL ON SERVICE TRANSFER: **??**
-
-***
-
-ASK URGENCY: // **??**
-
-***
-
-Answer yes to this field to prompt for urgency for every test when ordering through OE/RR. Tests with a forced urgency, as defined in the LABORATORY TEST file, override this parameter.
-
-***
-
-DEFAULT TYPE OF COLLECTION: **??**
-
-***
-
-Enter the default type of collection for blood draws that this location uses the majority of the time. If one is not defined the default will be based upon the following:
-
-***
-
-Inpatient Locations: Lab Collect (LC)
-
-***
-
-All other locations: Send Patient (SP)
-
-***
-
+Select LABORATORY SITE SITE NAME: **HOSPITAL**  
+Select HOSPITAL SITE: **?**  
+Enter hospital location you wish to establish parameters for.  
+MAX DAYS FOR CONTINUOUS ORDERS:// **??**  
+This is the maximum number of days that multiple-continuous orders can be placed for this location.  
+CANCEL ON WARD TRANSFER: **??**  
+CANCEL ON SERVICE TRANSFER: **??**  
+ASK URGENCY: // **??**  
+Answer yes to this field to prompt for urgency for every test when ordering through OE/RR. Tests with a forced urgency, as defined in the LABORATORY TEST file, override this parameter.  
+DEFAULT TYPE OF COLLECTION: **??**  
+Enter the default type of collection for blood draws that this location uses the majority of the time. If one is not defined the default will be based upon the following:  
+Inpatient Locations: Lab Collect (LC)  
+All other locations: Send Patient (SP)  
 **Lab Interface, cont’d**
 
 -   **Edit Lab Administration Schedule**
 
     Use the *Inquire to lab administration schedule* option (on the OE/RR Interface Parameters menu on the Lab Liaison menu) to view schedules, and *Edit a lab administration schedule* option to make changes or to add new schedules.
 
-    Select OE/RR interface parameters Option: **AS** Edit a lab administration schedule
-
+    Select OE/RR interface parameters Option: **AS** Edit a lab administration schedule  
 ***
 
-***
-
-Select ADMINISTRATION SCHEDULE: **QAM**
-
-***
-
-NAME: QAM// **\<Enter\>**
-
-***
-
-TYPE OF SCHEDULE: **??**
-
-***
-
-The type of schedule determines how the schedule will be processed.
-
-***
-
-STANDARD ADMINISTRATION TIMES: **??**
-
-***
-
-The times of the day for this schedule that the action should take place. Use military time (24 hour clock) when entering the times.
-
-***
-
-FREQUENCY (IN MINUTES): // **??**
-
-***
-
-The number of minutes between each time that the action should take place.
-
-***
-
-Select HOSPITAL LOCATION: **??**
-
-***
-
-Enter a hospital location for which a specific set of times or shifts pertain.
-
-***
-
-Select ADMINISTRATION SCHEDULE:**??**
-
-***
-
-This is a set of administration times for this schedule specific to this hospital.
-
-***
-
+Select ADMINISTRATION SCHEDULE: **QAM**  
+NAME: QAM// **\<Enter\>**  
+TYPE OF SCHEDULE: **??**  
+The type of schedule determines how the schedule will be processed.  
+STANDARD ADMINISTRATION TIMES: **??**  
+The times of the day for this schedule that the action should take place. Use military time (24 hour clock) when entering the times.  
+FREQUENCY (IN MINUTES): // **??**  
+The number of minutes between each time that the action should take place.  
+Select HOSPITAL LOCATION: **??**  
+Enter a hospital location for which a specific set of times or shifts pertain.  
+Select ADMINISTRATION SCHEDULE:**??**  
+This is a set of administration times for this schedule specific to this hospital.  
  NOTE: Lab administration schedules are fully functional as exported. If sites choose to use the lab administration schedules as they are exported, all hospital location sites will have the same administration schedule. Many sites set CPRS up through a phased implementation, activating hospital locations as users become proficient with the software. Edit the administration schedules to create schedules for specific hospital locations.
 
 ### Lab Patch LR\*5.2\*121
@@ -20972,314 +8078,89 @@ The Clinical Coordinator and the Lab Coordinator need to decide if/when to imple
 
 Select the Laboratory Site file.
 
-Select OPTION: **ENTER** OR EDIT FILE ENTRIES
-
+Select OPTION: **ENTER** OR EDIT FILE ENTRIES  
+INPUT TO WHAT FILE: **LABORATORY SITE**  
+EDIT WHICH FIELD: ALL// **150.3**  CANCEL ON ADMIT  
+THEN EDIT FIELD: **150.4** CANCEL ON DISCHARGE  
+THEN EDIT FIELD: **150.5**  CANCEL ON SPECIALTY TRANSFER  
+THEN EDIT FIELD: **\<Enter\>**  
 ***
 
-INPUT TO WHAT FILE: **LABORATORY SITE**
-
-***
-
-EDIT WHICH FIELD: ALL// **150.3**  CANCEL ON ADMIT
-
-***
-
-THEN EDIT FIELD: **150.4** CANCEL ON DISCHARGE
-
-***
-
-THEN EDIT FIELD: **150.5**  CANCEL ON SPECIALTY TRANSFER
-
-***
-
-THEN EDIT FIELD: **\<Enter\>**
-
-***
-
-***
-
-Select LABORATORY SITE SITE NAME: **HOSPITAL**
-
-***
-
-CANCEL ON ADMIT: YES// **??**
-
-***
-
-This field allows the automatic cancellation of pending/uncollected
-
-***
-
-lab orders when a patient is admitted. If this field is set to YES,
-
-***
-
-the orders will be cancelled in the lab files and the OE/RR files.
-
-***
-
-Choose from:
-
-***
-
-0 NO
-
-***
-
-1 YES
-
-***
-
-CANCEL ON ADMIT: YES// **\<Enter\>**
-
-***
-
-CANCEL ON DISCHARGE: YES// **??**
-
-***
-
-This field allows the automatic cancellation of pending/uncollected
-
-***
-
-lab orders when a patient is discharged. If this field is set to YES,
-
-***
-
-the orders will be cancelled in the lab files and the OE/RR files.
-
-***
-
-Choose from:
-
-***
-
-0 NO
-
-***
-
+Select LABORATORY SITE SITE NAME: **HOSPITAL**  
+CANCEL ON ADMIT: YES// **??**  
+This field allows the automatic cancellation of pending/uncollected  
+lab orders when a patient is admitted. If this field is set to YES,  
+the orders will be cancelled in the lab files and the OE/RR files.  
+Choose from:  
+0 NO  
+1 YES  
+CANCEL ON ADMIT: YES// **\<Enter\>**  
+CANCEL ON DISCHARGE: YES// **??**  
+This field allows the automatic cancellation of pending/uncollected  
+lab orders when a patient is discharged. If this field is set to YES,  
+the orders will be cancelled in the lab files and the OE/RR files.  
+Choose from:  
+0 NO  
 **Lab Interface, cont’d**
 
-1 YES
-
-***
-
-CANCEL ON DISCHARGE: YES// **\<Enter\>**
-
-***
-
-CANCEL ON SPECIALTY TRANSFER: YES// **??**
-
-***
-
-This field will enable cancellation of pending/uncollected lab orders
-
-***
-
-when a patient's treating specialty changes.
-
-***
-
-Choose from:
-
-***
-
-0 NO
-
-***
-
-1 YES
-
-***
-
-CANCEL ON SPECIALTY TRANSFER: YES// **\<Enter\>**
-
-***
-
-Select LABORATORY SITE SITE NAME: **\<Enter\>**
-
-***
-
+1 YES  
+CANCEL ON DISCHARGE: YES// **\<Enter\>**  
+CANCEL ON SPECIALTY TRANSFER: YES// **??**  
+This field will enable cancellation of pending/uncollected lab orders  
+when a patient's treating specialty changes.  
+Choose from:  
+0 NO  
+1 YES  
+CANCEL ON SPECIALTY TRANSFER: YES// **\<Enter\>**  
+Select LABORATORY SITE SITE NAME: **\<Enter\>**  
 **2**. Go into VA Fileman again and select *Enter or Edit File Entries*. This time select the Protocol file.
 
-Select OPTION: **ENTER** OR EDIT FILE ENTRIES
-
+Select OPTION: **ENTER** OR EDIT FILE ENTRIES  
+INPUT TO WHAT FILE: OPTION// **101** PROTOCOL (3374 entries)  
+EDIT WHICH FIELD: ALL// **ITEM**  
+1 ITEM (multiple)  
+2 ITEM TEXT  
+CHOOSE 1-2: **1**  
+EDIT WHICH ITEM SUB-FIELD: ALL// **\<Enter\>**  
+THEN EDIT FIELD: **\<Enter\>**  
 ***
 
-INPUT TO WHAT FILE: OPTION// **101** PROTOCOL (3374 entries)
-
-***
-
-EDIT WHICH FIELD: ALL// **ITEM**
-
-***
-
-1 ITEM (multiple)
-
-***
-
-2 ITEM TEXT
-
-***
-
-CHOOSE 1-2: **1**
-
-***
-
-EDIT WHICH ITEM SUB-FIELD: ALL// **\<Enter\>**
-
-***
-
-THEN EDIT FIELD: **\<Enter\>**
-
-***
-
-***
-
-Select PROTOCOL NAME: **DGPM** MOVEMENT EVENTS MOVEMENT EVENTS v 5.0
-
-***
-
-Select ITEM: LR7O MOVEMENT EVENT// **?**
-
-***
-
-Answer with ITEM
-
-***
-
-Do you want the entire 22-Entry ITEM List? Y (Yes)
-
-***
-
-Choose from:
-
-***
-
-ORU PATIENT MOVMT
-
-***
-
-DGPM TREATING SPECIALTY EVENT
-
-***
-
-SD APPT STATUS
-
-***
-
-FHWMAS
-
-***
-
-PSJ OR PAT ADT
-
-***
-
-DGJ INCOMPLETE EVENT
-
-***
-
-DGOERR NOTE
-
-***
-
-GMRADGPM MARK CHART
-
-***
-
-ORU AUTOLIST
-
-***
-
-DG MEANS TEST DOM
-
-***
-
-IB CATEGORY C BILLING
-
-***
-
-VAFED EDR INPATIENT CAPTURE
-
-***
-
-YS PATIENT MOVEMENT
-
-***
-
-SC PCMM INPATIENT ACTIVITY
-
-***
-
-SC ASSIGN PC TEAM ON DISCHARGE
-
-***
-
-OCX ORDER CHECK PATIENT MOVE.
-
-***
-
-OR GUA EVENT PROCESSOR NOTASK
-
-***
-
-VSIT PATIENT STATUS
-
-***
-
-LR7O MOVEMENT EVENT
-
-***
-
-You may enter a new ITEM, if you wish
-
-***
-
-Enter a protocol. A protocol that is an ancestor may not also be a sub-item.
-
-***
-
-Answer with PROTOCOL NAME, or ITEM TEXT, or SYNONYM, or ACCESS, or
-
-***
-
-SET MEMBERSHIP
-
-***
-
-Do you want the entire 3374-Entry PROTOCOL List?
-
-***
-
-Select ITEM: LR7O MOVEMENT EVENT// **LR7O MOVEMENT EVENT** \<==Add this as a new item
-
-***
-
-ITEM: LR7O MOVEMENT EVENT// **\<Enter\>**
-
-***
-
-MNEMONIC: **\<Enter\>**
-
-***
-
-SEQUENCE: 69// **[This \# should be less than all OR\* item sequences]**
-
-***
-
-MODIFYING ACTION:**\^**
-
-***
-
-Select ITEM: **\<Enter\>**
-
-***
-
-Select PROTOCOL NAME: **\<Enter\>**
-
-***
-
+Select PROTOCOL NAME: **DGPM** MOVEMENT EVENTS MOVEMENT EVENTS v 5.0  
+Select ITEM: LR7O MOVEMENT EVENT// **?**  
+Answer with ITEM  
+Do you want the entire 22-Entry ITEM List? Y (Yes)  
+Choose from:  
+ORU PATIENT MOVMT  
+DGPM TREATING SPECIALTY EVENT  
+SD APPT STATUS  
+FHWMAS  
+PSJ OR PAT ADT  
+DGJ INCOMPLETE EVENT  
+DGOERR NOTE  
+GMRADGPM MARK CHART  
+ORU AUTOLIST  
+DG MEANS TEST DOM  
+IB CATEGORY C BILLING  
+VAFED EDR INPATIENT CAPTURE  
+YS PATIENT MOVEMENT  
+SC PCMM INPATIENT ACTIVITY  
+SC ASSIGN PC TEAM ON DISCHARGE  
+OCX ORDER CHECK PATIENT MOVE.  
+OR GUA EVENT PROCESSOR NOTASK  
+VSIT PATIENT STATUS  
+LR7O MOVEMENT EVENT  
+You may enter a new ITEM, if you wish  
+Enter a protocol. A protocol that is an ancestor may not also be a sub-item.  
+Answer with PROTOCOL NAME, or ITEM TEXT, or SYNONYM, or ACCESS, or  
+SET MEMBERSHIP  
+Do you want the entire 3374-Entry PROTOCOL List?  
+Select ITEM: LR7O MOVEMENT EVENT// **LR7O MOVEMENT EVENT** \<==Add this as a new item  
+ITEM: LR7O MOVEMENT EVENT// **\<Enter\>**  
+MNEMONIC: **\<Enter\>**  
+SEQUENCE: 69// **[This \# should be less than all OR\* item sequences]**  
+MODIFYING ACTION:**\^**  
+Select ITEM: **\<Enter\>**  
+Select PROTOCOL NAME: **\<Enter\>**  
 **Lab Interface, cont’d**
 
 **Blood Bank Evaluations**
@@ -21302,38 +8183,14 @@ VALIDATION REQUIREMENTS BY OPTION: Because of the nature of the changes made, no
 
 **New Lab Options**
 
-LR7O PAR DOMAIN Domain Level Parameter Edit
-
-***
-
-LR7O PAR LOC Location Level Parameter Edit
-
-***
-
-LR7O PAR PKG Package Level Parameter Edit
-
-***
-
-LR7O PARAM MENU Update CPRS Parameters
-
-***
-
-LR7O ORDER PARAMETERS Update CPRS with Lab order parameters
-
-***
-
-LR7O SINGLE LAB TEST Update CPRS with Single Lab test
-
-***
-
-LR7O ALL LAB TESTS Update CPRS with all Lab test parameters
-
-***
-
-LRACC MERG Merge Accessions
-
-***
-
+LR7O PAR DOMAIN Domain Level Parameter Edit  
+LR7O PAR LOC Location Level Parameter Edit  
+LR7O PAR PKG Package Level Parameter Edit  
+LR7O PARAM MENU Update CPRS Parameters  
+LR7O ORDER PARAMETERS Update CPRS with Lab order parameters  
+LR7O SINGLE LAB TEST Update CPRS with Single Lab test  
+LR7O ALL LAB TESTS Update CPRS with all Lab test parameters  
+LRACC MERG Merge Accessions  
 With the exception of LRACC MERG, these options are not used until OE/RR 3.0 is installed.
 
 **Lab Interface, cont’d**
@@ -21342,22 +8199,10 @@ LRACC MERG is installed on the Lab Accessioning menu (LR IN). It is used to merg
 
 **New Protocols**
 
-LR7O AP EVSEND OR ANATOMIC PATH =\> OE/RR ORDER MESSAGE
-
-***
-
-LR7O BB EVSEND OR BLOOD BANK =\> OE/RR ORDER MESSAGE
-
-***
-
-LR7O CH EVSEND OR LAB =\> OE/RR ORDER MESSAGE EVENT
-
-***
-
-LR7O ALL EVSEND RESULTS LAB RESULTS =\> EXTERNAL PACKAGE
-
-***
-
+LR7O AP EVSEND OR ANATOMIC PATH =\> OE/RR ORDER MESSAGE  
+LR7O BB EVSEND OR BLOOD BANK =\> OE/RR ORDER MESSAGE  
+LR7O CH EVSEND OR LAB =\> OE/RR ORDER MESSAGE EVENT  
+LR7O ALL EVSEND RESULTS LAB RESULTS =\> EXTERNAL PACKAGE  
 These new Protocols create HL7 messages to be used by applications that want to receive orders, status updates, and completed lab results from the Lab package. When OE/RR 3.0 is released, it will connect to the EVSEND protocols to pick up the HL7 messages and create new orders.
 
 If a package is only interested in messages that contain verified lab results, then the protocol LR7O ALL EVSEND RESULTS should be used to eliminate the need to look for result-only type messages (Control code=RE).
@@ -21366,18 +8211,9 @@ If a package is only interested in messages that contain verified lab results, t
 
 **1.** Code to screen out the printing of LC Lab collect type orders on the service device:
 
-File: OE/RR Print FORMAT
-
-***
-
-Name: LAB REQUlSITlON
-
-***
-
-Screen: I \$G(ORIFN),\$\$VALUE\^ORCSAVE2(ORIFN,”COLLECT”)’=”lc”
-
-***
-
+File: OE/RR Print FORMAT  
+Name: LAB REQUlSITlON  
+Screen: I \$G(ORIFN),\$\$VALUE\^ORCSAVE2(ORIFN,”COLLECT”)’=”lc”  
 **2.** Setting Up ASK URGENCY
 
 ASK URGENCY: There are three different ways that this parameter will manifest itself. Other parameters that play a part in the decision tree are the DEFAULT URGENCY field in 69.9, which is a hospital-wide parameter and the FORCED URGENCY and HIGHEST URGENCY ALLOWED fields in File 60 (LABORATORY TEST File).
@@ -21434,74 +8270,23 @@ The following page contains the options exported with this package used to compl
 
 **Maintenance (Outpatient Pharmacy) [PSO MAINTENANCE]**
 
-Site Parameter Enter/Edit
-
-***
-
-Edit Provider
-
-***
-
-Add New Providers
-
-***
-
-Queue Background Jobs
-
-***
-
-Autocancel Rx's on Admission
-
-***
-
-Bingo Board Manager ...
-
-***
-
-Edit Data for a Patient in the Clozapine Program
-
-***
-
-Enter/Edit Clinic Sort Groups
-
-***
-
-Initialize Rx Cost Statistics
-
-***
-
-Edit Pharmacy Intervention
-
-***
-
-Delete Intervention
-
-***
-
-##### Auto-delete from Suspense
-
-***
-
-Delete a Prescription
-
-***
-
-Expire Prescriptions
-
-***
-
-Purge Drug Cost Data
-
-***
-
-Purge External Batches
-
-***
-
-Recompile AMIS Data
-
-***
-
+Site Parameter Enter/Edit  
+Edit Provider  
+Add New Providers  
+Queue Background Jobs  
+Autocancel Rx's on Admission  
+Bingo Board Manager ...  
+Edit Data for a Patient in the Clozapine Program  
+Enter/Edit Clinic Sort Groups  
+Initialize Rx Cost Statistics  
+Edit Pharmacy Intervention  
+Delete Intervention  
+##### Auto-delete from Suspense  
+Delete a Prescription  
+Expire Prescriptions  
+Purge Drug Cost Data  
+Purge External Batches  
+Recompile AMIS Data  
 **Outpatient Pharmacy Keys**
 
 | **Key**      | **Assignment**                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -21515,100 +8300,31 @@ Recompile AMIS Data
 
 The following are examples for the archive device setup for file and tape. These examples may differ from site to site. If your device differs, check with your IRM service for information on setting up your device.
 
-HOST FILE SERVER (HFS) DEVICE SETUP:
-
+HOST FILE SERVER (HFS) DEVICE SETUP:  
+***  
+NAME: HFS \$I: ARC0797.TMP  
+ASK DEVICE: YES ASK PARAMETERS: NO  
+VOLUME SET(CPU): VAA QUEUING: ALLOWED  
+LOCATION OF TERMINAL: COMPUTER AREA ASK HOST FILE: YES  
+ASK HFS I/O OPERATION: YES \*MARGIN WIDTH: 132  
+\*FORM FEED: \# \*PAGE LENGTH: 64  
+\*BACK SPACE: \$C(8) SUBTYPE: P-OTHER  
+TYPE: HOST FILE SERVER  
+BAUD RATE (c): UNKNOWN  
 ***
 
-***
-
-***
-
-NAME: HFS \$I: ARC0797.TMP
-
-***
-
-ASK DEVICE: YES ASK PARAMETERS: NO
-
-***
-
-VOLUME SET(CPU): VAA QUEUING: ALLOWED
-
-***
-
-LOCATION OF TERMINAL: COMPUTER AREA ASK HOST FILE: YES
-
-***
-
-ASK HFS I/O OPERATION: YES \*MARGIN WIDTH: 132
-
-***
-
-\*FORM FEED: \# \*PAGE LENGTH: 64
-
-***
-
-\*BACK SPACE: \$C(8) SUBTYPE: P-OTHER
-
-***
-
-TYPE: HOST FILE SERVER
-
-***
-
-BAUD RATE (c): UNKNOWN
-
-***
-
-***
-
-MAGNETIC TAPE DEVICE SETUP:
-
-***
-
-***
-
-***
-
-NAME: TAPE (T7867) \$I: \$3\$MKA600:
-
-***
-
-ASK DEVICE: YES ASK PARAMETERS: YES
-
-***
-
-SIGN-ON/SYSTEM DEVICE: NO
-
-***
-
-LOCATION OF TERMINAL: COMPUTER ROOM
-
-***
-
-\*MARGIN WIDTH: 255 \*FORM FEED: \#
-
-***
-
-\*PAGE LENGTH: 256 \*BACK SPACE: \$C(8)
-
-***
-
-OPEN PARAMETERS: (FORMAT="VAL4":BLOCKSIZE=2048)
-
-***
-
-SUBTYPE: MAGTAPE TYPE: MAGTAPE
-
-***
-
-PERFORM DEVICE CHECKING: NO
-
-***
-
-BAUD RATE (c): UNKNOWN
-
-***
-
+MAGNETIC TAPE DEVICE SETUP:  
+***  
+NAME: TAPE (T7867) \$I: \$3\$MKA600:  
+ASK DEVICE: YES ASK PARAMETERS: YES  
+SIGN-ON/SYSTEM DEVICE: NO  
+LOCATION OF TERMINAL: COMPUTER ROOM  
+\*MARGIN WIDTH: 255 \*FORM FEED: \#  
+\*PAGE LENGTH: 256 \*BACK SPACE: \$C(8)  
+OPEN PARAMETERS: (FORMAT="VAL4":BLOCKSIZE=2048)  
+SUBTYPE: MAGTAPE TYPE: MAGTAPE  
+PERFORM DEVICE CHECKING: NO  
+BAUD RATE (c): UNKNOWN  
 **Outpatient Pharmacy, cont’d**
 
 **Bingo Board Device Setup**
@@ -21752,14 +8468,8 @@ Parameters Edit Menu
 
 Inpatient Ward Parameters Edit
 
-**Inpatient Meds and CPRS**
-
-***
-
-The Inpatient Medications’ protocols for use with CPRS are automatically installed as part of the KIDS build process.
-
-***
-
+**Inpatient Meds and CPRS**  
+The Inpatient Medications’ protocols for use with CPRS are automatically installed as part of the KIDS build process.  
 ### G-3.a IV Setup
 
 If your site is currently running Inpatient Medications Version 4.5, no additional set-up is required. Otherwise, do the following:
@@ -21770,10 +8480,7 @@ If your site is currently running Inpatient Medications Version 4.5, no addition
 |------------------------------------------------------------|--------------------------|
 | Nurses                                                     | PSJI USR1                |
 | Technicians                                                | PSJI USR2                |
-| Pharmacists, Supervisors, and Pharmacy Package Coordinator | PSJI MGR                 |
-
-***
-
+| Pharmacists, Supervisors, and Pharmacy Package Coordinator | PSJI MGR                 |  
 2\. Key allocation: In order for the package coordinator to have access to the *Supervisor’s Menu*, he or she must hold the PSJI MGR key. Certain users allowed to purge orders (usually the package coordinator) must hold the PSJI PURGE key.
 
 3\. The background option *PSJI BACKGROUND JOB* should be scheduled to run nightly by someone in your IRM Service or ADP Department. This option compiles the IV statistical data for each day.
@@ -21782,42 +8489,15 @@ If your site is currently running Inpatient Medications Version 4.5, no addition
 
 4\. The functionality accomplished by the following options has been moved to PDM:
 
-PRimary Drug Edit [PSJ PRIMARY DRUG EDIT]
-
-***
-
-ADditives File [PSJI DRUG]
-
-***
-
-STandard Schedule Edit (IV) [PSJI SCHEDULE EDIT]
-
-***
-
-PRimary Solution File (IV) [PSJI SOLN]
-
-***
-
-Dispense Drug Fields [PSJU DRG]
-
-***
-
-MARk/Unmark Dispense Drugs For Unit Dose [PSJU MARK UD ITEMS]
-
-***
-
-Instructions (Medications) [PSJU MI]
-
-***
-
-MEdication Routes [PSJU MR]
-
-***
-
-Standard Schedule Edit [PSJU SCHEDULE EDIT]
-
-***
-
+PRimary Drug Edit [PSJ PRIMARY DRUG EDIT]  
+ADditives File [PSJI DRUG]  
+STandard Schedule Edit (IV) [PSJI SCHEDULE EDIT]  
+PRimary Solution File (IV) [PSJI SOLN]  
+Dispense Drug Fields [PSJU DRG]  
+MARk/Unmark Dispense Drugs For Unit Dose [PSJU MARK UD ITEMS]  
+Instructions (Medications) [PSJU MI]  
+MEdication Routes [PSJU MR]  
+Standard Schedule Edit [PSJU SCHEDULE EDIT]  
 ***
 
 #### Site Parameters (IV) [PSJI SITE PARAMETERS]
@@ -21834,10 +8514,7 @@ SIte Parameters (IV)
 
 *Refer also to the IV User Manual.*
 
-### G-3.b Unit Dose Setup
-
-***
-
+### G-3.b Unit Dose Setup  
 ### Menus and Security Keys
 
 *PSJU MGR* is the only menu to be assigned to the users of this package.
@@ -21847,10 +8524,7 @@ SIte Parameters (IV)
 | PSJU PL  | This key locks the *Pick List Menu* [PSJU PLMGR]. Assign this key to the Pharmacists and/or Pharmacy technicians who will be using the *Pick List* options. |
 | PSJU MGR | This key locks the *Supervisor’s menu* [PSJU FILE]. Assign this key to the Pharmacy package coordinators and/or Supervisors.                                |
 
-**NOTE:** The PSJU RPH security key is no longer exported. You may wish to review and remove the key from options, if appropriate.
-
-***
-
+**NOTE:** The PSJU RPH security key is no longer exported. You may wish to review and remove the key from options, if appropriate.  
 **Unit Dose Setup, cont’d**
 
 #### Files Needed to Run Unit Dose
@@ -21869,10 +8543,7 @@ INPATIENT WARD PARAMETERS file.
 
 INPATIENT USER PARAMETERS file.
 
-**NOTE:** The background option *PSJU BRJ* should be scheduled by someone in your IRM Service or ADP Department to run nightly. This option compiles the Unit Dose statistical data and purges information that has become out of date.
-
-***
-
+**NOTE:** The background option *PSJU BRJ* should be scheduled by someone in your IRM Service or ADP Department to run nightly. This option compiles the Unit Dose statistical data and purges information that has become out of date.  
 ## H. Problem List
 
 Problem List doesn’t require any set-up for CPRS.
@@ -21941,270 +8612,96 @@ Patch TIU\*1.0\*4 contains an option that allows you to set Consults up as part 
 
 1\. Select the option *Define Consults for TIU/CT Interface* and enter the relevant information.
 
-Select OPTION NAME: **TIU DEFINE CONSULTS** Define CONSULTS for
-
+Select OPTION NAME: **TIU DEFINE CONSULTS** Define CONSULTS for  
+TIU/CT Interface  
+Define CONSULTS for TIU/CT Interface  
 ***
 
-TIU/CT Interface
-
+I'm going to create a new Document Definition for CONSULTS now.  
 ***
 
-Define CONSULTS for TIU/CT Interface
-
+GREAT! A new Document Definition has been created for CONSULTS.  
+Next, you need to decide whether you want CONSULTS to be set up  
+as a separate CLASS (comparable to DISCHARGE SUMMARY or PROGRESS  
+NOTES), or whether you want CONSULTS defined as a DOCUMENT CLASS  
+under PROGRESS NOTES. The benefits of each strategy are outlined  
+in the POST-INSTALLATION instructions for this patch.  
 ***
 
+NOTE: If you're not yet CERTAIN which strategy you want your site  
+to adopt, then quit here, and get consensus first (it's easier to  
+get permission than forgiveness, in this case)!  
 ***
 
-I'm going to create a new Document Definition for CONSULTS now.
-
+Select one of the following:  
 ***
 
+CL Class  
+DC Document Class  
 ***
 
-GREAT! A new Document Definition has been created for CONSULTS.
-
+Define CONSULTS as a CLASS or DOCUMENT CLASS: DC Document Class  
 ***
 
-Next, you need to decide whether you want CONSULTS to be set up
-
+Okay, you've indicated that you want to make CONSULTS a Document Class.  
 ***
 
-as a separate CLASS (comparable to DISCHARGE SUMMARY or PROGRESS
-
+Okay to continue? NO// **YES**  
 ***
 
-NOTES), or whether you want CONSULTS defined as a DOCUMENT CLASS
-
+FANTASTIC! Your NEW DOCUMENT CLASS CONSULTS will now be added under  
+the PROGRESS NOTES Class...  
 ***
 
-under PROGRESS NOTES. The benefits of each strategy are outlined
-
+Okay, I'm done...Please finish your implementation of CONSULTS by adding  
+any Titles as appropriate using the Create Document Definitions Option  
+under the TIUF DOCUMENT DEFINITION MGR Menu, as described in Step \#3 of  
+the Post-Installation Instructions.  
 ***
 
-in the POST-INSTALLATION instructions for this patch.
-
-***
-
-***
-
-NOTE: If you're not yet CERTAIN which strategy you want your site
-
-***
-
-to adopt, then quit here, and get consensus first (it's easier to
-
-***
-
-get permission than forgiveness, in this case)!
-
-***
-
-***
-
-Select one of the following:
-
-***
-
-***
-
-CL Class
-
-***
-
-DC Document Class
-
-***
-
-***
-
-Define CONSULTS as a CLASS or DOCUMENT CLASS: DC Document Class
-
-***
-
-***
-
-Okay, you've indicated that you want to make CONSULTS a Document Class.
-
-***
-
-***
-
-Okay to continue? NO// **YES**
-
-***
-
-***
-
-FANTASTIC! Your NEW DOCUMENT CLASS CONSULTS will now be added under
-
-***
-
-the PROGRESS NOTES Class...
-
-***
-
-***
-
-Okay, I'm done...Please finish your implementation of CONSULTS by adding
-
-***
-
-any Titles as appropriate using the Create Document Definitions Option
-
-***
-
-under the TIUF DOCUMENT DEFINITION MGR Menu, as described in Step \#3 of
-
-***
-
-the Post-Installation Instructions.
-
-***
-
-***
-
-Press RETURN to continue...
-
-***
-
+Press RETURN to continue...  
 **TIU, cont’d**
 
 2\. You can verify that the upload header is appropriately defined for Consults using the option [TIU UPLOAD HELP]. The output will look something like this:
 
-\<Message Header Signal\>: CONSULTS
-
-***
-
-TITLE: CARDIOLOGY CONSULT
-
-***
-
-SSN: 000-00-0001
-
-***
-
-VISIT/EVENT DATE: 5/13/97@08:00
-
-***
-
-AUTHOR: CPRSPROVIDER1,TWO
-
-***
-
-TRANSCRIBER: K5420
-
-***
-
-DATE/TIME OF DICTATION: 5/13/97@11:00
-
-***
-
-LOCATION: MEDICAL-CONSULT 6200
-
-***
-
-EXPECTED COSIGNER: CPRSPROVIDER,ONE
-
-***
-
-CONSULT REQUEST NUMBER: 1455
-
-***
-
-\<Begin Text Signal\>
-
-***
-
-CONSULTS Text
-
-***
-
+\<Message Header Signal\>: CONSULTS  
+TITLE: CARDIOLOGY CONSULT  
+SSN: 000-00-0001  
+VISIT/EVENT DATE: 5/13/97@08:00  
+AUTHOR: CPRSPROVIDER1,TWO  
+TRANSCRIBER: K5420  
+DATE/TIME OF DICTATION: 5/13/97@11:00  
+LOCATION: MEDICAL-CONSULT 6200  
+EXPECTED COSIGNER: CPRSPROVIDER,ONE  
+CONSULT REQUEST NUMBER: 1455  
+\<Begin Text Signal\>  
+CONSULTS Text  
 -   File should be ASCII with width no greater than 80 columns.
 
 -   Use "@@@" for “BLANKS” (word or phrase in dictation that isn’t understood), where \<Message Header Signal\> and \<Begin Text Signal\> will appear as you’ve defined them in your Upload Parameters for your site (e.g., \$HDR and \$TXT, etc.).
 
     3\. Use the *Create Document Definitions* option [TIUFC CREATE DDEFS MGR], under the IRM Maintenance Menu option [TIU IRM MAINTENANCE MENU], to construct a new document definition sub-tree for Consults that looks something like this:
 
-    **Edit Document Definitions** Sep 03, 1997 11:59:04 Page: 1 of 1
-
-***
-
-BASICS
-
-***
-
-Name Type
-
-***
-
-1 CLINICAL DOCUMENTS CL
-
-***
-
-2 +DISCHARGE SUMMARY CL
-
-***
-
-3 +PROGRESS NOTES CL
-
-***
-
-4 CONSULTS DC
-
-***
-
-5 MEDICINE CONSULTS DC
-
-***
-
-6 MEDICINE CONSULT TL
-
-***
-
-7 ENDOSCOPY TL
-
-***
-
-8 CARDIOLOGY CONSULTS DC
-
-***
-
-9 CARDIOLOGY COSULT TL
-
-***
-
-10 ELECTROCARDOGRAM TL
-
-***
-
-11 ECHOCARDIOGRAM INTERPRETATION TL
-
-***
-
-12 +ADDENDUM DC
-
-***
-
-**?Help \>ScrollRight PS/PL PrintScrn/List +/- \>\>\>**
-
-***
-
-Expand/Collapse Detailed Display/Edit Items: Seq Mnem MenuTxt
-
-***
-
-Jump to Document Def Status... Delete
-
-***
-
-Boilerplate Text Name/Owner/PrintName... Copy/Move
-
-***
-
-Select Action: Quit//
-
-***
-
+    **Edit Document Definitions** Sep 03, 1997 11:59:04 Page: 1 of 1  
+BASICS  
+Name Type  
+1 CLINICAL DOCUMENTS CL  
+2 +DISCHARGE SUMMARY CL  
+3 +PROGRESS NOTES CL  
+4 CONSULTS DC  
+5 MEDICINE CONSULTS DC  
+6 MEDICINE CONSULT TL  
+7 ENDOSCOPY TL  
+8 CARDIOLOGY CONSULTS DC  
+9 CARDIOLOGY COSULT TL  
+10 ELECTROCARDOGRAM TL  
+11 ECHOCARDIOGRAM INTERPRETATION TL  
+12 +ADDENDUM DC  
+**?Help \>ScrollRight PS/PL PrintScrn/List +/- \>\>\>**  
+Expand/Collapse Detailed Display/Edit Items: Seq Mnem MenuTxt  
+Jump to Document Def Status... Delete  
+Boilerplate Text Name/Owner/PrintName... Copy/Move  
+Select Action: Quit//  
 **TIU, cont’d**
 
 The example above suggests a Service-oriented set of Document Classes with
@@ -22221,196 +8718,79 @@ of Document Definitions for Consults at your site.
 
 4\. Next, define a set of Document Parameters for the new Consults class, using the Document Parameter Edit [TIU DOCUMENT PARAMETER EDIT] option under the TIU IRM MAINTENANCE MENU option, as follows:
 
-1 TIU Parameters Menu ...
-
+1 TIU Parameters Menu ...  
+2 Document Definitions (Manager) ...  
+3 User Class Management ...  
 ***
 
-2 Document Definitions (Manager) ...
-
+Select TIU Maintenance Menu Option: **1** TIU Parameters Menu  
 ***
 
-3 User Class Management ...
-
+1 Basic TIU Parameters  
+2 Modify Upload Parameters  
+3 Document Parameter Edit  
+4 Progress Notes Batch Print Locations  
+5 Division - Progress Notes Print Params  
 ***
 
+Select TIU Parameters Menu Option: **DOC**ument Parameter Edit  
 ***
 
-Select TIU Maintenance Menu Option: **1** TIU Parameters Menu
-
+First edit Institution-wide parameters:  
 ***
 
+Select DOCUMENT DEFINITION: **CONSULTS** DOCUMENT CLASS  
+...OK? Yes// **\<Enter\>** (Yes)  
 ***
 
-1 Basic TIU Parameters
-
+DOCUMENT DEFINITION: CONSULTS// \<Enter\>  
+REQUIRE RELEASE: **n** NO  
+REQUIRE MAS VERIFICATION: **u** UPLOAD ONLY  
+REQUIRE AUTHOR TO SIGN: **y** YES  
+ROUTINE PRINT EVENT(S): **\<Enter\>**  
+STAT PRINT EVENT(S): **\<Enter\>**  
+MANUAL PRINT AFTER ENTRY: **y** YES  
+ALLOW CHART PRINT OUTSIDE MAS: **y** YES  
+ALLOW \>1 RECORDS PER VISIT: **n** NO  
+ENABLE IRT INTERFACE: **\<Enter\>**  
+SUPPRESS DX/CPT ON NEW VISIT: **\<Enter\>**  
+EDITOR SET-UP CODE: **\<Enter\>**  
 ***
 
-2 Modify Upload Parameters
-
+If document is to be uploaded, specify Filing Alert Recipients:  
 ***
 
-3 Document Parameter Edit
-
+Select FILING ERROR ALERT RECIPIENTS:  
 ***
 
-4 Progress Notes Batch Print Locations
-
+Now enter the USER CLASSES for which cosignature will be required:  
 ***
 
-5 Division - Progress Notes Print Params
-
+Select USERS REQUIRING COSIGNATURE: STUDENT//  
+Now enter the DIVISIONAL parameters:  
 ***
 
+Select DIVISION: [optional...you probably won't need to set up  
+auto-printing devices]  
 ***
 
-Select TIU Parameters Menu Option: **DOC**ument Parameter Edit
-
-***
-
-***
-
-First edit Institution-wide parameters:
-
-***
-
-***
-
-Select DOCUMENT DEFINITION: **CONSULTS** DOCUMENT CLASS
-
-***
-
-...OK? Yes// **\<Enter\>** (Yes)
-
-***
-
-***
-
-DOCUMENT DEFINITION: CONSULTS// \<Enter\>
-
-***
-
-REQUIRE RELEASE: **n** NO
-
-***
-
-REQUIRE MAS VERIFICATION: **u** UPLOAD ONLY
-
-***
-
-REQUIRE AUTHOR TO SIGN: **y** YES
-
-***
-
-ROUTINE PRINT EVENT(S): **\<Enter\>**
-
-***
-
-STAT PRINT EVENT(S): **\<Enter\>**
-
-***
-
-MANUAL PRINT AFTER ENTRY: **y** YES
-
-***
-
-ALLOW CHART PRINT OUTSIDE MAS: **y** YES
-
-***
-
-ALLOW \>1 RECORDS PER VISIT: **n** NO
-
-***
-
-ENABLE IRT INTERFACE: **\<Enter\>**
-
-***
-
-SUPPRESS DX/CPT ON NEW VISIT: **\<Enter\>**
-
-***
-
-EDITOR SET-UP CODE: **\<Enter\>**
-
-***
-
-***
-
-If document is to be uploaded, specify Filing Alert Recipients:
-
-***
-
-***
-
-Select FILING ERROR ALERT RECIPIENTS:
-
-***
-
-***
-
-Now enter the USER CLASSES for which cosignature will be required:
-
-***
-
-***
-
-Select USERS REQUIRING COSIGNATURE: STUDENT//
-
-***
-
-Now enter the DIVISIONAL parameters:
-
-***
-
-***
-
-Select DIVISION: [optional...you probably won't need to set up
-
-***
-
-auto-printing devices]
-
-***
-
-***
-
-Press RETURN to continue...
-
-***
-
+Press RETURN to continue...  
 **TIU, cont’d**
 
 5\. Finally, use the option to Manage Business Rules, under the User Class Management Menu to specify the following rules, allowing Linking (or re-linking) of TIU documents with “requests” in a client application:
 
-1 An UNSIGNED (CLASS) CLINICAL DOCUMENT may be LINKED by An AUTHOR/DICTATOR
-
+1 An UNSIGNED (CLASS) CLINICAL DOCUMENT may be LINKED by An AUTHOR/DICTATOR  
 ***
 
+2 An UNCOSIGNED (CLASS) CLINICAL DOCUMENT may be LINKED by An EXPECTED  
+COSIGNER  
 ***
 
-2 An UNCOSIGNED (CLASS) CLINICAL DOCUMENT may be LINKED by An EXPECTED
-
+3 A COMPLETED (CLASS) CLINICAL DOCUMENT may be LINKED by A CHIEF, MIS  
 ***
 
-COSIGNER
-
-***
-
-***
-
-3 A COMPLETED (CLASS) CLINICAL DOCUMENT may be LINKED by A CHIEF, MIS
-
-***
-
-***
-
-4 An UNSIGNED (CLASS) CLINICAL DOCUMENT may be LINKED by A MEDICAL
-
-***
-
-RECORDS TECHNICIAN
-
-***
-
+4 An UNSIGNED (CLASS) CLINICAL DOCUMENT may be LINKED by A MEDICAL  
+RECORDS TECHNICIAN  
 # V. Troubleshooting
 
 **NOTE:** See the CPRS Troubleshooting page on the CPRS home page.
@@ -22447,46 +8827,16 @@ RECORDS TECHNICIAN
 
 **A:** In doing some investigation in a roll-and-scroll as opposed to GUI, you see the same thing. In a roll-and-scroll, the following appears:
 
-Select Patient: Change View// CPRSPATIENT1,THREE 11-00-50 000000013 NO NSC VETERAN
-
-***
-
-\*\*\* WARNING \*\*\*
-
-***
-
-\*\*\* RESTRICTED RECORD \*\*\*
-
-***
-
-\* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \*
-
-***
-
-\* This record is protected by the Privacy Act of 1974. If you elect \*
-
-***
-
-\* to proceed, you will be required to prove you have a need to know. \*
-
-***
-
-\* Accessing this patient is tracked, and your station Security Officer \*
-
-***
-
-\* will contact you for your justification. \*
-
-***
-
-\* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \*
-
-***
-
-Do you want to continue processing this patient record? No// (No)
-
-***
-
+Select Patient: Change View// CPRSPATIENT1,THREE 11-00-50 000000013 NO NSC VETERAN  
+\*\*\* WARNING \*\*\*  
+\*\*\* RESTRICTED RECORD \*\*\*  
+\* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \*  
+\* This record is protected by the Privacy Act of 1974. If you elect \*  
+\* to proceed, you will be required to prove you have a need to know. \*  
+\* Accessing this patient is tracked, and your station Security Officer \*  
+\* will contact you for your justification. \*  
+\* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \* \*  
+Do you want to continue processing this patient record? No// (No)  
 In roll-and-scroll, you still see the SSN, DOB, and Service connection as these are identifiers.
 
 In the CPRS GUI, at the Patient Selection window, if the same patient is clicked on, we see just below and to the left of the OK and CANCEL buttons:
@@ -22531,54 +8881,21 @@ When combined with administrative and legal recourse that can be taken against v
 
 **Order Checks and Notifications Troubleshooting**
 
-**Key Options for Troubleshooting Notifications**
-
+**Key Options for Troubleshooting Notifications**  
+Notification Mgmt Menu  
+Display the Notifications a User Can Receive  
+Determine Recipients for a Notification  
+Display Patient Alerts and Alert Recipients  
 ***
 
-Notification Mgmt Menu
-
+Patient List Mgmt Menu  
+Display User’s Teams  
+Display Patients Linked to a User via Teams  
 ***
 
-Display the Notifications a User Can Receive
-
-***
-
-Determine Recipients for a Notification
-
-***
-
-Display Patient Alerts and Alert Recipients
-
-***
-
-***
-
-Patient List Mgmt Menu
-
-***
-
-Display User’s Teams
-
-***
-
-Display Patients Linked to a User via Teams
-
-***
-
-***
-
-**Key Option for Troubleshooting Order Checking**
-
-***
-
-Order Checking Mgmt Menu
-
-***
-
-Display the Order Checks a User Can Receive
-
-***
-
+**Key Option for Troubleshooting Order Checking**  
+Order Checking Mgmt Menu  
+Display the Order Checks a User Can Receive  
 **Q:** When I write an order for digoxin and quinidine at the same time, the order check does not seem to take place until after it would with an order check between a new med and an old one. Did I understand that correctly?
 
 **A**: Your observations are correct regarding the order checking against new meds vs. old meds. Almost all medication-related order checks are performed by querying the pharmacy package. During the ordering process, pharmacy does not know about the meds placed during the ordering session. Meds are not “released” to the pharmacy service until they have been signed so checks between meds placed in the session cannot occur. Checks against meds already released to Pharmacy occur within the ordering process. Checking is postponed until after the session is completed (just before electronic signature), because order checks are fairly resource-intensive and this minimizes the delays between prompts.
@@ -22665,10 +8982,7 @@ Another item to remember is that alerts can be disabled for a patient location. 
 
 **Consult/Request**  Also known as Consults. Consults can function as part of
 
-**Tracking** CPRS, independently as a standalone package, or as part of TIU). Consults are referrals of patients by the primary care physician to another hospital service/specialty, to obtain a medical opinion based on patient evaluation and completion of any procedures, modalities, or treatments the consulting specialist deems necessary to render a medical opinion. For instance, if a primary care physician orders a patient evaluation from Cardiology Service, and the cardiology specialist orders an Electrocardiogram (EKG) to complete the evaluation and provide an opinion concerning the patient’s condition, this type of order is considered a “Consult.”
-
-***
-
+**Tracking** CPRS, independently as a standalone package, or as part of TIU). Consults are referrals of patients by the primary care physician to another hospital service/specialty, to obtain a medical opinion based on patient evaluation and completion of any procedures, modalities, or treatments the consulting specialist deems necessary to render a medical opinion. For instance, if a primary care physician orders a patient evaluation from Cardiology Service, and the cardiology specialist orders an Electrocardiogram (EKG) to complete the evaluation and provide an opinion concerning the patient’s condition, this type of order is considered a “Consult.”  
 **Control** An object in a window on the screen which the user can cause action with visible results or change settings to modify a future action.
 
 **COTS** Commercial Off the Shelf ; products not developed by **V***IST***A**.
@@ -23856,1018 +10170,257 @@ Select PARAMETERS ENTITY:
 
 Index
 
-**A**
-
-***
-
-Action, 241
-
-***
-
-**ACTIVATE**, 241
-
-***
-
-Add Orders menus, 107
-
-***
-
-**ADPAC**, 241
-
-***
-
-**AICS**, 241
-
-***
-
-**ALERTS**, 241
-
-***
-
-**Allocate CPRS Security Keys Example**, 24
-
-***
-
-**API**, 241
-
-***
-
-Appendix A: Order Set Examples, 253
-
-***
-
-Assign Primary Order Menu, 142
-
-***
-
-ASU, 44, 241, 246
-
-***
-
-Authorization/ Subscription Utility, 246
-
-***
-
-Authorization/Subscription Utility, 241
-
-***
-
-*Auto-Discontinue Set-Up*, 223
-
-***
-
-**B**
-
-***
-
-Boilerplate, 241
-
-***
-
-**BROKER**, 245
-
-***
-
-**C**
-
-***
-
-**CAT Scanner Height Limit**, 90
-
-***
-
-**CAT Scanner Weight Limit**, 91
-
-***
-
-Chart Copy, 150, 154, 242, 245
-
-***
-
-**Chart Copy Parameters**, 159
-
-***
-
-Checklist, 201, 202, 203, 204, 205
-
-***
-
-**CIO FIELD OFFICE**, 242
-
-***
-
-CIOFOs, 242
-
-***
-
-**CLIENT-SERVER**, 242
-
-***
-
-Clinical Coordinator, 44
-
-***
-
-Clinical Coordinator’s Menu, 102
-
-***
-
-**Clinical Danger Level**, 88
-
-***
-
-Clinician, 242
-
-***
-
-Clinician Menu, 102, 137, 138
-
-***
-
-**CONSULT/REQUEST**, 242
-
-***
-
-Consult/Request Tracking Set-Up, 199
-
-***
-
-Consults, 43, 50, 53, 242, 246
-
-***
-
-**CONTROL**, 242
-
-***
-
-Convert protocols, 143
-
-***
-
-**COTS**, 242
-
-***
-
-**COVER SHEET**, 243
-
-***
-
-CPRS, 44, 51, 52, 56
-
-***
-
-CPRS Clean-up Utilities, 102
-
-***
-
-CPRS PRINT FIELDS file, 150
-
-***
-
-**CWAD**, 243
-
-***
-
-**D**
-
-***
-
-D/C Summ tab, 50
-
-***
-
-**Danger level codes:**, 88
-
-***
-
-**Defining a New Print Format**, 151
-
-***
-
-Dialog template, 55
-
-***
-
-Dialog templates, 47
-
-***
-
-**Dietetics Order Menu**, 140
-
-***
-
-Discharge Summary, 246
-
-***
-
-**DISCHARGE SUMMARY**, 243
-
-***
-
-Display Patient Alerts and Alert recipients, 79
-
-***
-
-**Display the Order Checks a User Can Receive**, 99
-
-***
-
-**DLL**, 243
-
-***
-
-Document Templates, 50, 51
-
-***
-
-DRUG file, 226
-
-***
-
-**Duplicate Order Range**, 94
-
-***
-
-**E**
-
-***
-
-ELECTRONIC SIGNATURE CODE, 26
-
-***
-
-Electronic Signature Set-up, 23
-
-***
-
-**Enable or Disable Debug Message Logging**, 98
-
-***
-
-**Enable or Disable Notification System**, 80
-
-***
-
-**Enable or Disable Order Checking System**, 97
-
-***
-
-**Enable/Disable an Order Check**, 86
-
-***
-
-**Enable/Disable Notifications**, 73
-
-***
-
-Encounter Forms, 241
-
-***
-
-Enter/edit order menus, 141
-
-***
-
-Enter/edit orderable items, 107
-
-***
-
-Enter/edit prompts, 108
-
-***
-
-Erase Notifications, 19, 75
-
-***
-
-**EVENTS**, 243
-
-***
-
-Expert System, 171, 174, 175
-
-***
-
-**Exported Print Formats**, 155
-
-***
-
-**F**
-
-***
-
-Files Needed to Run Unit Dose, 226
-
-***
-
-**Flag Orderable Item(s) to Send Notifications**, 77
-
-***
-
-Folder, 57
-
-***
-
-**forwarded alerts**, 78
-
-***
-
-**G**
-
-***
-
-Glossary, 241
-
-***
-
-GMRC SETUP REQUEST SERVICES, 204
-
-***
-
-Graphical User Interface, 243
-
-***
-
-Group templates, 47, 51
-
-***
-
-**GUI**, 243
-
-***
-
-**H**
-
-***
-
-**HEALTH SUMMARY**, 243
-
-***
-
-Health Summary component, 207
-
-***
-
-**HL7**, 243
-
-***
-
-HOSPITAL SITE parameter, 210
-
-***
-
-**I**
-
-***
-
-**ICON**, 243
-
-***
-
-**IDCU**, 244
-
-***
-
-**IMAGING**, 244
-
-***
-
-Inpatient Medications, 220
-
-***
-
-Inpatient Medications Conversion, 220
-
-***
-
-*Inpatient Medications Options*, 223
-
-***
-
-Inpatient Medications Security Keys, 223
-
-***
-
-**Inpatient Meds and CPRS**, 224
-
-***
-
-INPATIENT USER PARAMETERS file, 226
-
-***
-
-INPATIENT WARD PARAMETERS file, 226
-
-***
-
-Introduction, 1
-
-***
-
-**IRMS**, 244
-
-***
-
-IV ROOM file, 225
-
-***
-
-IV Set-Up, 224
-
-***
-
-**K**
-
-***
-
-**KERNEL DATA BROKER**, 245
-
-***
-
-key holders, 25
-
-***
-
-**Keys**, 219
-
-***
-
-**L**
-
-***
-
-lab administration schedule, 211
-
-***
-
-**Lab Duplicate Order Range**, 95
-
-***
-
-Label, 150, 245
-
-***
-
-Laboratory, 208
-
-***
-
-**M**
-
-***
-
-MCCR, 241
-
-***
-
-*Medication Administration Set-up*, 224
-
-***
-
-MEDICATION ROUTES file., 226
-
-***
-
-Menu Assignment, 102
-
-***
-
-Miscellaneous Parameters, 63
-
-***
-
-**MODAL**, 244
-
-***
-
-**MRI Scanner Height Limit**, 92
-
-***
-
-**MRI Scanner Weight Limit**, 93
-
-***
-
-**N**
-
-***
-
-**NAMESPACING**, 244
-
-***
-
-NEW PERSON file, 26
-
-***
-
-Notification Management Menu, 71
-
-***
-
-Notifications, 66
-
-***
-
-**NOTIFICATIONS**, 244
-
-***
-
-Notifications List Example, 81
-
-***
-
-Nurse Menu, 102
-
-***
-
-**O**
-
-***
-
-**OCIO**, 244
-
-***
-
-**OE/RR**, 244
-
-***
-
-**OE/RR 2.5**, 1
-
-***
-
-OR MAIN MENU CLINICIAN, 102
-
-***
-
-OR MAIN MENU NURSE, 102
-
-***
-
-OR MAIN MENU WARD CLERK, 102
-
-***
-
-ORB NOT COORD MENU, 66
-
-***
-
-**ORB3 DEFAULT DEVICE RECIPIENTS**, 76
-
-***
-
-ORB3 DELETE MECHANISM, 75
-
-***
-
-ORB3 DETERMINE RECIPIENTS, 79, 80
-
-***
-
-ORB3 ERASE NOTIFICATIONS, 19, 75
-
-***
-
-ORB3 FORWARD SUPERVISOR, 77
-
-***
-
-**ORB3 PROCESSING FLAG**, 73
-
-***
-
-ORB3 PROVIDER RECIPIENTS, 76
-
-***
-
-ORB3 SORT METHOD, 78
-
-***
-
-**ORB3 URGENCY**, 75
-
-***
-
-ORCL MENU, 102
-
-***
-
-Order Check Expert System, 170
-
-***
-
-Order Check Expert System Main Menu, 171
-
-***
-
-Order Checking, 83
-
-***
-
-Order Checking Management Menu, 85
-
-***
-
-**Order checks exported with CPRS**, 84
-
-***
-
-**Order Conversion**, 220
-
-***
-
-Order Menu Management, 105
-
-***
-
-Order Menu Management …, 103
-
-***
-
-Order Set Examples, 253
-
-***
-
-**Orderable Item Duplicate Order Range**, 94
-
-***
-
-ORE MGR, 102
-
-***
-
-**ORELSE**, 23, 27
-
-***
-
-**OREMAS**, 23, 27
-
-***
-
-ORES, 27
-
-***
-
-ORES key, 25
-
-***
-
-ORZ ADD MENU CLINICIAN, 142
-
-***
-
-ORZ ADD MENU NURSE, 142
-
-***
-
-ORZ ADD MENU WARD CLERK, 142
-
-***
-
-Other CPRS Packages, 192
-
-***
-
-**Outpatient Pharmacy Keys**, 219
-
-***
-
-Outpatient Pharmacy Set-up, 218
-
-***
-
-**P**
-
-***
-
-Parameters for Packages Related to CPRS, 193, 195
-
-***
-
-Parameters, miscellaneous, 63
-
-***
-
-Patient and Team Lists, 146
-
-***
-
-Patient Care Encounter, 245
-
-***
-
-Patient Data Objects, 45, 51
-
-***
-
-**PATIENT POSTINGS**, 245
-
-***
-
-**PCE**, 245
-
-***
-
-**PCMM**, 245
-
-***
-
-Personal templates, 44
-
-***
-
-PRIMARY DRUG, 220
-
-***
-
-**PRINT FORMATS**, 245
-
-***
-
-**Print Parameters for Hospital**, 165
-
-***
-
-**Print Parameters for Wards/Clinics**, 166
-
-***
-
-Print/Report Parameters, 158
-
-***
-
-PROCESSING FLAG field, 70
-
-***
-
-**Processing flags**, 86
-
-***
-
-**PROGRESS NOTES**, 245
-
-***
-
-PSJI SITE PARAMETERS, 225
-
-***
-
-**PSO MAINTENANCE**, 194, 218
-
-***
-
-PSOA PURGE, 220
-
-***
-
-PSOINTERFACE, 220
-
-***
-
-PSOLOCKCLOZ, 220
-
-***
-
-PSORPH, 219
-
-***
-
-**R**
-
-***
-
-**Radiology Duplicate Order Range**, 96
-
-***
-
-Reminders, 47
-
-***
-
-**REMOTE PROCEDURE**, 245
-
-***
-
-REQUEST SERVICES (123.5) file, 199
-
-***
-
-REQUEST SERVICES File (123.5), 204
-
-***
-
-REQUEST SERVICES file (123.5), 199
-
-***
-
-Request Services list, 205
-
-***
-
-Requisition, 150, 245
-
-***
-
-**Requisition/Label Parameters**, 163
-
-***
-
-**RESOURCE**, 245
-
-***
-
-Results Reporting Search Range Queries Options, 32
-
-***
-
-**review and print orders**, 156, 157
-
-***
-
-**S**
-
-***
-
-scannable Encounter Forms, 241
-
-***
-
-**Security Keys**, 23, 223
-
-***
-
-*Selected Progress Notes*,, 207
-
-***
-
-Send Flagged Orders Bulletin, 78
-
-***
-
-**SERVER**, 246
-
-***
-
-Service copy, 150, 245, 246
-
-***
-
-**Service Copy Parameters**, 162
-
-***
-
-**Set Clinical Danger Level for an Order Check**, 88
-
-***
-
-**Set Default Recipient Device(s) for Notifications**, 76
-
-***
-
-Set Notification Display Sort Method, 78
-
-***
-
-Set Provider Recipients for Notifications, 76
-
-***
-
-Set-Up for Other CPRS Packages, 192
-
-***
-
-Set-Up Instructions, 18
-
-***
-
-Shared templates, 44
-
-***
-
-SIGNATURE BLOCK, 154
-
-***
-
-**Summary Report Parameters**, 164
-
-***
-
-**T**
-
-***
-
-Team List utility, 66
-
-***
-
-Team Lists, 146
-
-***
-
-Template
-
-***
-
-editor, 43
-
-***
-
-fields, 44, 47, 51, 52, 56
-
-***
-
-Templates, 43, 44, 47, 51, 52, 56, 57
-
-***
-
-Text Integration Utilities, 246
-
-***
-
-TIU, 47, 246
-
-***
-
-**U**
-
-***
-
-Unit Dose Menus, 225
-
-***
-
-Unit Dose Security Keys, 225
-
-***
-
-Unit Dose Set-Up, 225
-
-***
-
-**USABILITY**, 246
-
-***
-
-**USER CLASS**, 246
-
-***
-
-**USER INTERFACE**, 246
-
-***
-
-**USER-CENTERED**, 246
-
-***
-
-**V**
-
-***
-
-**VHA**, 246
-
-***
-
-View Alerts, 241
-
-***
-
-**VISN**, 246
-
-***
-
-**V***IST***A**, 246
-
-***
-
-**W**
-
-***
-
-Ward Clerk Menu, 102
-
-***
-
-**WINDOW**, 246
-
-***
-
-Work Copy, 150, 245
-
-***
-
-**Work Copy Parameters**, 161
-
-***
-
-**X**
-
-***
-
-**XUSESIG**, 28
-
-***
-
-XUSESIG CLEAR, 26
-
-***
+**A**  
+Action, 241  
+**ACTIVATE**, 241  
+Add Orders menus, 107  
+**ADPAC**, 241  
+**AICS**, 241  
+**ALERTS**, 241  
+**Allocate CPRS Security Keys Example**, 24  
+**API**, 241  
+Appendix A: Order Set Examples, 253  
+Assign Primary Order Menu, 142  
+ASU, 44, 241, 246  
+Authorization/ Subscription Utility, 246  
+Authorization/Subscription Utility, 241  
+*Auto-Discontinue Set-Up*, 223  
+**B**  
+Boilerplate, 241  
+**BROKER**, 245  
+**C**  
+**CAT Scanner Height Limit**, 90  
+**CAT Scanner Weight Limit**, 91  
+Chart Copy, 150, 154, 242, 245  
+**Chart Copy Parameters**, 159  
+Checklist, 201, 202, 203, 204, 205  
+**CIO FIELD OFFICE**, 242  
+CIOFOs, 242  
+**CLIENT-SERVER**, 242  
+Clinical Coordinator, 44  
+Clinical Coordinator’s Menu, 102  
+**Clinical Danger Level**, 88  
+Clinician, 242  
+Clinician Menu, 102, 137, 138  
+**CONSULT/REQUEST**, 242  
+Consult/Request Tracking Set-Up, 199  
+Consults, 43, 50, 53, 242, 246  
+**CONTROL**, 242  
+Convert protocols, 143  
+**COTS**, 242  
+**COVER SHEET**, 243  
+CPRS, 44, 51, 52, 56  
+CPRS Clean-up Utilities, 102  
+CPRS PRINT FIELDS file, 150  
+**CWAD**, 243  
+**D**  
+D/C Summ tab, 50  
+**Danger level codes:**, 88  
+**Defining a New Print Format**, 151  
+Dialog template, 55  
+Dialog templates, 47  
+**Dietetics Order Menu**, 140  
+Discharge Summary, 246  
+**DISCHARGE SUMMARY**, 243  
+Display Patient Alerts and Alert recipients, 79  
+**Display the Order Checks a User Can Receive**, 99  
+**DLL**, 243  
+Document Templates, 50, 51  
+DRUG file, 226  
+**Duplicate Order Range**, 94  
+**E**  
+ELECTRONIC SIGNATURE CODE, 26  
+Electronic Signature Set-up, 23  
+**Enable or Disable Debug Message Logging**, 98  
+**Enable or Disable Notification System**, 80  
+**Enable or Disable Order Checking System**, 97  
+**Enable/Disable an Order Check**, 86  
+**Enable/Disable Notifications**, 73  
+Encounter Forms, 241  
+Enter/edit order menus, 141  
+Enter/edit orderable items, 107  
+Enter/edit prompts, 108  
+Erase Notifications, 19, 75  
+**EVENTS**, 243  
+Expert System, 171, 174, 175  
+**Exported Print Formats**, 155  
+**F**  
+Files Needed to Run Unit Dose, 226  
+**Flag Orderable Item(s) to Send Notifications**, 77  
+Folder, 57  
+**forwarded alerts**, 78  
+**G**  
+Glossary, 241  
+GMRC SETUP REQUEST SERVICES, 204  
+Graphical User Interface, 243  
+Group templates, 47, 51  
+**GUI**, 243  
+**H**  
+**HEALTH SUMMARY**, 243  
+Health Summary component, 207  
+**HL7**, 243  
+HOSPITAL SITE parameter, 210  
+**I**  
+**ICON**, 243  
+**IDCU**, 244  
+**IMAGING**, 244  
+Inpatient Medications, 220  
+Inpatient Medications Conversion, 220  
+*Inpatient Medications Options*, 223  
+Inpatient Medications Security Keys, 223  
+**Inpatient Meds and CPRS**, 224  
+INPATIENT USER PARAMETERS file, 226  
+INPATIENT WARD PARAMETERS file, 226  
+Introduction, 1  
+**IRMS**, 244  
+IV ROOM file, 225  
+IV Set-Up, 224  
+**K**  
+**KERNEL DATA BROKER**, 245  
+key holders, 25  
+**Keys**, 219  
+**L**  
+lab administration schedule, 211  
+**Lab Duplicate Order Range**, 95  
+Label, 150, 245  
+Laboratory, 208  
+**M**  
+MCCR, 241  
+*Medication Administration Set-up*, 224  
+MEDICATION ROUTES file., 226  
+Menu Assignment, 102  
+Miscellaneous Parameters, 63  
+**MODAL**, 244  
+**MRI Scanner Height Limit**, 92  
+**MRI Scanner Weight Limit**, 93  
+**N**  
+**NAMESPACING**, 244  
+NEW PERSON file, 26  
+Notification Management Menu, 71  
+Notifications, 66  
+**NOTIFICATIONS**, 244  
+Notifications List Example, 81  
+Nurse Menu, 102  
+**O**  
+**OCIO**, 244  
+**OE/RR**, 244  
+**OE/RR 2.5**, 1  
+OR MAIN MENU CLINICIAN, 102  
+OR MAIN MENU NURSE, 102  
+OR MAIN MENU WARD CLERK, 102  
+ORB NOT COORD MENU, 66  
+**ORB3 DEFAULT DEVICE RECIPIENTS**, 76  
+ORB3 DELETE MECHANISM, 75  
+ORB3 DETERMINE RECIPIENTS, 79, 80  
+ORB3 ERASE NOTIFICATIONS, 19, 75  
+ORB3 FORWARD SUPERVISOR, 77  
+**ORB3 PROCESSING FLAG**, 73  
+ORB3 PROVIDER RECIPIENTS, 76  
+ORB3 SORT METHOD, 78  
+**ORB3 URGENCY**, 75  
+ORCL MENU, 102  
+Order Check Expert System, 170  
+Order Check Expert System Main Menu, 171  
+Order Checking, 83  
+Order Checking Management Menu, 85  
+**Order checks exported with CPRS**, 84  
+**Order Conversion**, 220  
+Order Menu Management, 105  
+Order Menu Management …, 103  
+Order Set Examples, 253  
+**Orderable Item Duplicate Order Range**, 94  
+ORE MGR, 102  
+**ORELSE**, 23, 27  
+**OREMAS**, 23, 27  
+ORES, 27  
+ORES key, 25  
+ORZ ADD MENU CLINICIAN, 142  
+ORZ ADD MENU NURSE, 142  
+ORZ ADD MENU WARD CLERK, 142  
+Other CPRS Packages, 192  
+**Outpatient Pharmacy Keys**, 219  
+Outpatient Pharmacy Set-up, 218  
+**P**  
+Parameters for Packages Related to CPRS, 193, 195  
+Parameters, miscellaneous, 63  
+Patient and Team Lists, 146  
+Patient Care Encounter, 245  
+Patient Data Objects, 45, 51  
+**PATIENT POSTINGS**, 245  
+**PCE**, 245  
+**PCMM**, 245  
+Personal templates, 44  
+PRIMARY DRUG, 220  
+**PRINT FORMATS**, 245  
+**Print Parameters for Hospital**, 165  
+**Print Parameters for Wards/Clinics**, 166  
+Print/Report Parameters, 158  
+PROCESSING FLAG field, 70  
+**Processing flags**, 86  
+**PROGRESS NOTES**, 245  
+PSJI SITE PARAMETERS, 225  
+**PSO MAINTENANCE**, 194, 218  
+PSOA PURGE, 220  
+PSOINTERFACE, 220  
+PSOLOCKCLOZ, 220  
+PSORPH, 219  
+**R**  
+**Radiology Duplicate Order Range**, 96  
+Reminders, 47  
+**REMOTE PROCEDURE**, 245  
+REQUEST SERVICES (123.5) file, 199  
+REQUEST SERVICES File (123.5), 204  
+REQUEST SERVICES file (123.5), 199  
+Request Services list, 205  
+Requisition, 150, 245  
+**Requisition/Label Parameters**, 163  
+**RESOURCE**, 245  
+Results Reporting Search Range Queries Options, 32  
+**review and print orders**, 156, 157  
+**S**  
+scannable Encounter Forms, 241  
+**Security Keys**, 23, 223  
+*Selected Progress Notes*,, 207  
+Send Flagged Orders Bulletin, 78  
+**SERVER**, 246  
+Service copy, 150, 245, 246  
+**Service Copy Parameters**, 162  
+**Set Clinical Danger Level for an Order Check**, 88  
+**Set Default Recipient Device(s) for Notifications**, 76  
+Set Notification Display Sort Method, 78  
+Set Provider Recipients for Notifications, 76  
+Set-Up for Other CPRS Packages, 192  
+Set-Up Instructions, 18  
+Shared templates, 44  
+SIGNATURE BLOCK, 154  
+**Summary Report Parameters**, 164  
+**T**  
+Team List utility, 66  
+Team Lists, 146  
+Template  
+editor, 43  
+fields, 44, 47, 51, 52, 56  
+Templates, 43, 44, 47, 51, 52, 56, 57  
+Text Integration Utilities, 246  
+TIU, 47, 246  
+**U**  
+Unit Dose Menus, 225  
+Unit Dose Security Keys, 225  
+Unit Dose Set-Up, 225  
+**USABILITY**, 246  
+**USER CLASS**, 246  
+**USER INTERFACE**, 246  
+**USER-CENTERED**, 246  
+**V**  
+**VHA**, 246  
+View Alerts, 241  
+**VISN**, 246  
+**V***IST***A**, 246  
+**W**  
+Ward Clerk Menu, 102  
+**WINDOW**, 246  
+Work Copy, 150, 245  
+**Work Copy Parameters**, 161  
+**X**  
+**XUSESIG**, 28  
+XUSESIG CLEAR, 26  

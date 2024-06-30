@@ -4,178 +4,49 @@ CPRS: GUI Version
 
 April 2007
 
-[**Introduction 6**](#introduction)
-
-***
-
+[**Introduction 6**](#introduction)  
 [**Pre-Install Instructions 7**](#pre-install-instructions)
-
-***
-
-[**Pre-Install Instructions 7**](#pre-install-instructions)
-
-***
-
-[ We recommend that you install CPRS first in a training or test account that is a mirror of your production account. 7](#we-recommend-that-you-install-cprs-first-in-a-training-or-test-account-that-is-a-mirror-of-your-production-account)
-
-***
-
-[ Update the Terminal Type file for the VT100s, if necessary. 7](#update-the-terminal-type-file-for-the-vt100s-if-necessary)
-
-***
-
-[ Ensure that Patch OR\*2.5\*49 is implemented. 8](#ensure-that-patch-or2549-is-implemented)
-
-***
-
-[ Make sure all required V](#make-sure-all-required-vista-software-is-installed)*IST*A software is installed 8
-
-***
-
-[ Make sure that you have at least 300-400 meg free disk space before installing CPRS. 9](#make-sure-that-you-have-at-least-300-400-meg-free-disk-space-before-installing-cprs)
-
-***
-
-[ (CMOP sites) Ensure that required CMOP tasks are completed. 9](#cmop-sites-ensure-that-required-cmop-tasks-are-completed)
-
-***
-
-[ Place and protect the two new globals introduced with CPRS: 17](#place-and-protect-the-two-new-globals-introduced-with-cprs)
-
-***
-
-[ Load the distribution for CPRS V. 1.0 19](#load-the-distribution-for-cprs-v-10)
-
-***
-
-[ Verify Checksums in the transport global. 23](#verify-checksums-in-the-transport-global)
-
-***
-
-[ Take users off the system. (The sequential order for this and the next two steps is up to your site's discretion.) 24](#take-users-off-the-system-the-sequential-order-for-this-and-the-next-two-steps-is-up-to-your-sites-discretion)
-
-***
-
-[ Shut down Taskman. 24](#shut-down-taskman)
-
-***
-
-[ Back up all systems. 24](#back-up-all-systems)
-
-***
-
-[ Unmap OR\*, GMRC\*, and PS\* Routines. 24](#unmap-or-gmrc-and-ps-routines)
-
-***
-
-[ Sign into a partition with journaling disabled. 24](#sign-into-a-partition-with-journaling-disabled)
-
-***
-
-[ Delete OR\*, GMRC\*, and PSO\* routines. 24](#delete-or-gmrc-and-pso-routines)
-
-***
-
-[**Installation 25**](#installation)
-
-***
-
-[**Post-Installation 60**](#post-installation)
-
-***
-
-[ Install the “Released Patch” and “Unreleased Patch” builds after the main CPRS installation and before the following post-installation steps. 60](#install-the-released-patch-and-unreleased-patch-builds-after-the-main-cprs-installation-and-before-the-following-post-installation-steps)
-
-***
-
-[ Review and edit CPRS parameters, if necessary. 60](#review-and-edit-cprs-parameters-if-necessary)
-
-***
-
-[*Consult/Request Tracking Parameters 61*](#consultrequest-tracking-parameters)
-
-***
-
-[*Outpatient Pharmacy Parameters 61*](#outpatient-pharmacy-parameters)
-
-***
-
-[*Inpatient Medications Parameters 61*](#inpatient-medications-parameters)
-
-***
-
-[ Re-build the map set for the following OR\*, GMRC\*, and PS\* routines: 62](#re-build-the-map-set-for-the-following-or-gmrc-and-ps-routines)
-
-***
-
-[ Re-enable journaling for the following globals: 62](#re-enable-journaling-for-the-following-globals)
-
-***
-
-[ Re-start TaskMan. (Among other things, this will task the conversions.) 63](#re-start-taskman-among-other-things-this-will-task-the-conversions)
-
-***
-
-[ Bring users back on the system. 63](#bring-users-back-on-the-system)
-
-***
-
-[Run PSOPOST1 to see if the Outpatient Pharmacy conversion has finished. 64](#run-psopost1-to-see-if-the-outpatient-pharmacy-conversion-has-finished)
-
-***
-
-[ Inpatient Pharmacy conversion 64](#inpatient-pharmacy-conversion)
-
-***
-
-[ Run STATUS\^OR3CONV1 to check the status of the orders conversion. 64](#run-statusor3conv1-to-check-the-status-of-the-orders-conversion)
-
-***
-
-[ (CMOP sites) Post-installation steps. 66](#cmop-sites-post-installation-steps)
-
-***
-
-[ Review and assign sequence numbers to protocols in the DGPM Movement Events field of the Protocol file. 69](#review-and-assign-sequence-numbers-to-protocols-in-the-dgpm-movement-events-field-of-the-protocol-file)
-
-***
-
-[ Set up Imaging Nature of Order. 69](#set-up-imaging-nature-of-order)
-
-***
-
-[ Set up the CPRS Graphic User Interface (GUI). 71](#set-up-the-cprs-graphic-user-interface-gui)
-
-***
-
-[**Release Notes 77**](#release-notes)
-
-***
-
-[OE/RR 3.0 Enhancements since 12/97 Release 77](#oerr-30-enhancements-since-1297-release)
-
-***
-
-[*Consults Enhancements 81*](#consults-enhancements)
-
-***
-
-[*GUI Enhancements 82*](#gui-enhancements)
-
-***
-
-[Released Patches 105](#released-patches)
-
-***
-
-[**Appendix A: Define CONSULTS for TIU/CT Interface 117**](#appendix-a-define-consults-for-tiuct-interface)
-
-***
-
-[**Appendix B: CPRS Hardware & Software Requirements and Recommendations 123**](#appendix-b-cprs-hardware--software-requirements-and-recommendations)
-
-***
-
+[**Pre-Install Instructions 7**](#pre-install-instructions)  
+[ We recommend that you install CPRS first in a training or test account that is a mirror of your production account. 7](#we-recommend-that-you-install-cprs-first-in-a-training-or-test-account-that-is-a-mirror-of-your-production-account)  
+[ Update the Terminal Type file for the VT100s, if necessary. 7](#update-the-terminal-type-file-for-the-vt100s-if-necessary)  
+[ Ensure that Patch OR\*2.5\*49 is implemented. 8](#ensure-that-patch-or2549-is-implemented)  
+[ Make sure all required V](#make-sure-all-required-vista-software-is-installed)*IST*A software is installed 8  
+[ Make sure that you have at least 300-400 meg free disk space before installing CPRS. 9](#make-sure-that-you-have-at-least-300-400-meg-free-disk-space-before-installing-cprs)  
+[ (CMOP sites) Ensure that required CMOP tasks are completed. 9](#cmop-sites-ensure-that-required-cmop-tasks-are-completed)  
+[ Place and protect the two new globals introduced with CPRS: 17](#place-and-protect-the-two-new-globals-introduced-with-cprs)  
+[ Load the distribution for CPRS V. 1.0 19](#load-the-distribution-for-cprs-v-10)  
+[ Verify Checksums in the transport global. 23](#verify-checksums-in-the-transport-global)  
+[ Take users off the system. (The sequential order for this and the next two steps is up to your site's discretion.) 24](#take-users-off-the-system-the-sequential-order-for-this-and-the-next-two-steps-is-up-to-your-sites-discretion)  
+[ Shut down Taskman. 24](#shut-down-taskman)  
+[ Back up all systems. 24](#back-up-all-systems)  
+[ Unmap OR\*, GMRC\*, and PS\* Routines. 24](#unmap-or-gmrc-and-ps-routines)  
+[ Sign into a partition with journaling disabled. 24](#sign-into-a-partition-with-journaling-disabled)  
+[ Delete OR\*, GMRC\*, and PSO\* routines. 24](#delete-or-gmrc-and-pso-routines)  
+[**Installation 25**](#installation)  
+[**Post-Installation 60**](#post-installation)  
+[ Install the “Released Patch” and “Unreleased Patch” builds after the main CPRS installation and before the following post-installation steps. 60](#install-the-released-patch-and-unreleased-patch-builds-after-the-main-cprs-installation-and-before-the-following-post-installation-steps)  
+[ Review and edit CPRS parameters, if necessary. 60](#review-and-edit-cprs-parameters-if-necessary)  
+[*Consult/Request Tracking Parameters 61*](#consultrequest-tracking-parameters)  
+[*Outpatient Pharmacy Parameters 61*](#outpatient-pharmacy-parameters)  
+[*Inpatient Medications Parameters 61*](#inpatient-medications-parameters)  
+[ Re-build the map set for the following OR\*, GMRC\*, and PS\* routines: 62](#re-build-the-map-set-for-the-following-or-gmrc-and-ps-routines)  
+[ Re-enable journaling for the following globals: 62](#re-enable-journaling-for-the-following-globals)  
+[ Re-start TaskMan. (Among other things, this will task the conversions.) 63](#re-start-taskman-among-other-things-this-will-task-the-conversions)  
+[ Bring users back on the system. 63](#bring-users-back-on-the-system)  
+[Run PSOPOST1 to see if the Outpatient Pharmacy conversion has finished. 64](#run-psopost1-to-see-if-the-outpatient-pharmacy-conversion-has-finished)  
+[ Inpatient Pharmacy conversion 64](#inpatient-pharmacy-conversion)  
+[ Run STATUS\^OR3CONV1 to check the status of the orders conversion. 64](#run-statusor3conv1-to-check-the-status-of-the-orders-conversion)  
+[ (CMOP sites) Post-installation steps. 66](#cmop-sites-post-installation-steps)  
+[ Review and assign sequence numbers to protocols in the DGPM Movement Events field of the Protocol file. 69](#review-and-assign-sequence-numbers-to-protocols-in-the-dgpm-movement-events-field-of-the-protocol-file)  
+[ Set up Imaging Nature of Order. 69](#set-up-imaging-nature-of-order)  
+[ Set up the CPRS Graphic User Interface (GUI). 71](#set-up-the-cprs-graphic-user-interface-gui)  
+[**Release Notes 77**](#release-notes)  
+[OE/RR 3.0 Enhancements since 12/97 Release 77](#oerr-30-enhancements-since-1297-release)  
+[*Consults Enhancements 81*](#consults-enhancements)  
+[*GUI Enhancements 82*](#gui-enhancements)  
+[Released Patches 105](#released-patches)  
+[**Appendix A: Define CONSULTS for TIU/CT Interface 117**](#appendix-a-define-consults-for-tiuct-interface)  
+[**Appendix B: CPRS Hardware & Software Requirements and Recommendations 123**](#appendix-b-cprs-hardware--software-requirements-and-recommendations)  
 ***
 
 # Introduction
@@ -301,24 +172,15 @@ It is recommended that CPRS test sites increase their symbol table to 204,800.
 
 To prevent data corruption and/or interruption of background processes, the following pre-installation tasks **must** be completed **prior to the installation** of the CPRS KIDS Build. This ensures that the installation is not running simultaneously with CMOP data transmissions, background release filer, or other associated tasks.
 
-CMOP pre-install tasks, cont’d
-
-***
-
+CMOP pre-install tasks, cont’d  
 ***
 
 **Step 1** – Determine System Status for CMOP
 
-Use the *Display System Setup* [PSXR STATUS] option from the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to review the CMOP System Status. CMOP can be inactivated only if line one of the display includes the text, “No current transmission.” If this text is not displayed, a CMOP process is currently running and **inactivation** cannot take place. Once the task is completed, the display will read “No current transmission,” as in line one of the CMOP System Status report shown below. If line one does not contain the text “No current transmission,” try again later. Normally, CMOP tasks require only a few minutes to complete, so the waiting time to retry should be minimal.
-
-***
-
+Use the *Display System Setup* [PSXR STATUS] option from the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to review the CMOP System Status. CMOP can be inactivated only if line one of the display includes the text, “No current transmission.” If this text is not displayed, a CMOP process is currently running and **inactivation** cannot take place. Once the task is completed, the display will read “No current transmission,” as in line one of the CMOP System Status report shown below. If line one does not contain the text “No current transmission,” try again later. Normally, CMOP tasks require only a few minutes to complete, so the waiting time to retry should be minimal.  
 Example Step 1:
 
-Select the CMOP Site Manager Menu Option: **DIS**play System Setup
-
-***
-
+Select the CMOP Site Manager Menu Option: **DIS**play System Setup  
 CMOP SYSTEM STATUS
 
 LEAVENWORTH (ACTIVE) No current transmission
@@ -335,38 +197,17 @@ Select CMOP Site Manager Menu Option: **\<Enter\>**
 
 **Step 2** – Record Auto Transmission Information for Rescheduling
 
-If the last line of the display in the example above reads:
-
+If the last line of the display in the example above reads:  
 ***
 
+Auto Transmission setup : NO  
+Proceed directly to Step 3.  
+If the last line of the display in the example above reads:  
 ***
 
-Auto Transmission setup : NO
-
-***
-
-Proceed directly to Step 3.
-
-***
-
-If the last line of the display in the example above reads:
-
-***
-
-***
-
-Auto Transmission setup : YES
-
-***
-
-Auto Transmission setup is in effect. Use the *Setup Auto-transmission* [PSXR AUTO TRANSMIT] menu option from the *Transmission Menu* [PSXR TRANSMIT MENU] on the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to display the information regarding the current transmission schedule. Print the screen display or retain this information for reference when completing the Post Install Tasks to reschedule Auto Transmissions.
-
-***
-
-CMOP pre-install tasks, cont’d
-
-***
-
+Auto Transmission setup : YES  
+Auto Transmission setup is in effect. Use the *Setup Auto-transmission* [PSXR AUTO TRANSMIT] menu option from the *Transmission Menu* [PSXR TRANSMIT MENU] on the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to display the information regarding the current transmission schedule. Print the screen display or retain this information for reference when completing the Post Install Tasks to reschedule Auto Transmissions.  
+CMOP pre-install tasks, cont’d  
 ***
 
 Example Step 2:
@@ -387,18 +228,9 @@ Rescheduling Frequency : 24 hours
 
 Do you want to unschedule automatic processing ? NO//**\<Enter\>**
 
-Select CMOP Site Manager Menu Option: **\<Enter\>**
-
-***
-
-**Step 3** – Inactivate CMOP Processing
-
-***
-
-Use the *Activate/Inactivate CMOP Processing* [PSXR ACTIVATE] option from the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to inactivate CMOP as illustrated in the following example.
-
-***
-
+Select CMOP Site Manager Menu Option: **\<Enter\>**  
+**Step 3** – Inactivate CMOP Processing  
+Use the *Activate/Inactivate CMOP Processing* [PSXR ACTIVATE] option from the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to inactivate CMOP as illustrated in the following example.  
  If prescription workload is currently suspended for CMOP transmission, a WARNING message will be displayed as shown in the example below. Take no action on this warning. These prescriptions will be handled appropriately when the patch Post Install Tasks are completed and CMOP processing is Activated.
 
 Example Step 3:
@@ -447,14 +279,8 @@ The LEAVENWORTH system has been inactivated.
 
 Activate another system? NO// **\<Enter\>**
 
-CMOP pre-install tasks, cont’d
-
-***
-
-Selecting Display System Setup as follows will show the site has inactivated.
-
-***
-
+CMOP pre-install tasks, cont’d  
+Selecting Display System Setup as follows will show the site has inactivated.  
 ***
 
 Select CMOP Site Manager Menu Option: **DIS**play System Setup
@@ -471,20 +297,11 @@ Last Batch Transmitted : 338
 
 CMOP RX Queue purged : SEP 19,1997@08:41:14
 
-Auto Transmission setup : NO
-
+Auto Transmission setup : NO  
+**Step 4** – Check the CMOP Resource Device  
 ***
 
-**Step 4** – Check the CMOP Resource Device
-
-***
-
-***
-
-To prevent CMOP background tasks, such as the CMOP Release Filer from running during the install and possibly causing data corruption, carefully follow the instructions listed below. Any CMOP task currently running must be allowed to complete before the resource device entry is locked. Check Taskman as shown below for PSX namespaced tasks running:
-
-***
-
+To prevent CMOP background tasks, such as the CMOP Release Filer from running during the install and possibly causing data corruption, carefully follow the instructions listed below. Any CMOP task currently running must be allowed to complete before the resource device entry is locked. Check Taskman as shown below for PSX namespaced tasks running:  
 Example Step 4a:
 
 Select Systems Manager Menu Option: **TASK**man Management
@@ -525,14 +342,8 @@ From TODAY at 9:10, By you. Started running TODAY at 9:10
 
 Job \#: 46
 
-In the previous example, task number 235907, Job \#46 is a PSX namespaced CMOP task currently running. Continue to list running tasks in this manner until this task is completed and no other PSX tasks are running.
-
-***
-
-CMOP pre-install tasks, cont’d
-
-***
-
+In the previous example, task number 235907, Job \#46 is a PSX namespaced CMOP task currently running. Continue to list running tasks in this manner until this task is completed and no other PSX tasks are running.  
+CMOP pre-install tasks, cont’d  
 *Example Step 4b:* Checking the Resource device:
 
 Display of the PSX Resource DEVICE entry when IN USE:
@@ -561,10 +372,7 @@ SLOT IN USE: 1 JOB \#: 46
 
 Select RESOURCE NAME: **\<Enter\>**
 
-Display of the Resource DEVICE entry for PSX when FREE:
-
-***
-
+Display of the Resource DEVICE entry for PSX when FREE:  
 Select Systems Manager Menu Option: **FM**  VA FileMan
 
 VA FileMan Version 21.0
@@ -585,26 +393,14 @@ NAME: PSX AVAILABLE SLOTS: 1
 
 Select RESOURCE NAME: **\<Enter\>**
 
-**Step 5** – Edit the CMOP Resource Device entry
-
-***
-
+**Step 5** – Edit the CMOP Resource Device entry  
 ***
 
 When the display (Step 4, Example 4b) indicates the PSX device entry in the RESOURCE file (\#3.54) is **free** (i.e., **Available Slots=1**), the PSX device entry may be edited and locked as shown in the example below. Locking the device in this manner signals Taskman that the device is busy. Tasks scheduled for this device will be placed on the waiting list for the device and not run until Taskman indicates the device is free.
 
-CMOP pre-install tasks, cont’d
-
-***
-
-Example Step 5:
-
-***
-
-Editing the Resource file (\#3.54) entry for PSX to lock the device:
-
-***
-
+CMOP pre-install tasks, cont’d  
+Example Step 5:  
+Editing the Resource file (\#3.54) entry for PSX to lock the device:  
 Select Systems Manager Menu Option: **FM** VA FileMan
 
 VA FileMan Version 21.0
@@ -613,20 +409,11 @@ Select VA FileMan Option: **E**nter or Edit File Entries
 
 INPUT TO WHAT FILE: RESOURCE// **\<Enter\>**
 
-EDIT WHICH FIELD: ALL// **AVAILABLE SLOTS**
-
-***
-
-THEN EDIT FIELD: **SLOTS IN USE** (multiple)
-
-***
-
+EDIT WHICH FIELD: ALL// **AVAILABLE SLOTS**  
+THEN EDIT FIELD: **SLOTS IN USE** (multiple)  
 EDIT WHICH SLOTS IN USE SUB-FIELD: ALL// **\<Enter\>**
 
-THEN EDIT FIELD: **\<Enter\>**
-
-***
-
+THEN EDIT FIELD: **\<Enter\>**  
 Select RESOURCE NAME: **PSX**
 
 AVAILABLE SLOTS: 1//  **@** - use the ‘@’ sign to delete this value in the field
@@ -842,16 +629,10 @@ Use INSTALL NAME: CPRS 1.0 to install this Distribution.
 
 Select Installation Option:
 
--   **(optional) Print a list of package components with the KIDS Build File Print option** if you would like a complete listing of package components (e.g., files, routines, and options) exported with this software.
-
+-   **(optional) Print a list of package components with the KIDS Build File Print option** if you would like a complete listing of package components (e.g., files, routines, and options) exported with this software.  
 ***
 
-***
-
- **NOTE**: You must request separate prints for each of the components of this multi-package build.
-
-***
-
+ **NOTE**: You must request separate prints for each of the components of this multi-package build.  
 ## Verify Checksums in the transport global.
 
 Run the option *Verify Checksums in Transport Global* to verify that all routines have the correct checksum. If there are any discrepancies, do not run the Install Package(s) option. Instead, run the Unload a Distribution option to remove the Transport Global from your system. Log a NOIS and/or call the national Help Desk and report the problem.
@@ -1442,1902 +1223,777 @@ DEVICE: HOME// **\<Enter\>**
 
 CPRS Installation Print Example
 
-Install Started for CPRS 1.0 :
-
-***
-
-Aug 28, 1996@12:01:50
-
-***
-
-***
-
-Installing Routines:.
-
-***
-
-Aug 28, 1996@12:01:50
-
-***
-
-***
-
-Updating Routine file.....
-
-***
-
-***
-
-Updating KIDS files.....
-
-***
-
-***
-
-CPRS 1.0 Installed.
-
-***
-
-Aug 28, 1996@12:01:50
-
-***
-
-***
-
-Install Started for ORDER ENTRY/RESULTS REPORTING 3.0 :
-
-***
-
-Aug 28, 1996@12:01:50
-
-***
-
-***
-
-Installing Routines:...................................................
-
-***
-
-Aug 28, 1996@12:03:05
-
-***
-
-***
-
-Running Pre-Install Routine: \^ORCPRE.
-
-***
-
-***
-
-PRE-conversion of notifications... Stubbing notifications 30-49,51-58.
-
-***
-
-***
-
-Notification stubbing completed. Renaming notifications 14,21,22,24,25,26,50. Notification renaming completed. Converting existing alerts... Cleaning up old alerts...
-
-***
-
-***
-
-LAB RESULTS cleaned up.
-
-***
-
-FLAGGED ORDERS cleaned up.
-
-***
-
-UNSIGNED PROGRESS NOTES cleaned up.
-
-***
-
-ORDER REQUIRES ELEC SIGNATURE cleaned up.
-
-***
-
-CO-SIGNATURE ON PROGRESS NOTES cleaned up.
-
-***
-
-ABNORMAL LAB RESULTS (ACTION) cleaned up.
-
-***
-
-CYTOLOGY RESULTS cleaned up.
-
-***
-
-ANATOMIC PATHOLOGY RESULTS cleaned up.
-
-***
-
-AUTOPSY REPORT cleaned up.
-
-***
-
-CRITICAL LAB RESULT (INFO) cleaned up.
-
-***
-
-NEW ORDER cleaned up.
-
-***
-
-TEST NOTIFICATION (97) cleaned up.
-
-***
-
-PRE-conversion of notifications completed.
-
-***
-
-***
-
-Installing Data Dictionaries: .......................................
-
-***
-
-***
-
-Data Dictionary for File \#8989.51 not installed..
-
-***
-
-***
-
-Data Dictionary for File \#8989.52 not installed..
-
-***
-
-Aug 28, 1996@12:05:27
-
-***
-
-***
-
-Installing Data: ........ Aug 28, 1996@12:07:34
-
-***
-
-***
-
-Installing PACKAGE COMPONENTS:
-
-***
-
-***
-
-Installing BULLETIN......
-
-***
-
-***
-
-Installing SECURITY KEY.....
-
-***
-
-***
-
-Installing INPUT TEMPLATE....
-
-***
-
-***
-
-Installing MAIL GROUP..
-
-***
-
-***
-
-Installing PROTOCOL.............
-
-***
-
-Not a known package or a local namespace..........
-
-***
-
-Not a known package or a local namespace......
-
-***
-
-Not a known package or a local namespace...................................
-
-***
-
-***
-
-CPRS Installation Print, cont’d
-
-***
-
-***
-
-Installing REMOTE PROCEDURE.............................................
-
-***
-
-***
-
-Installing LIST TEMPLATE...........
-
-***
-
-***
-
-Installing OPTION.......................................................
-
-***
-
-Aug 28, 1996@12:10:22
-
-***
-
-***
-
-Running Post-Install Routine: \^ORCPOST.
-
-***
-
-***
-
-Converting user pt selection defaults to parameters.....................
-
-***
-
-***
-
-Conversion of user pt selection defaults completed.
-
-***
-
-***
-
-POST-conversion of notifications...
-
-***
-
-***
-
-Adding protocol DGPM PROVIDER UPDATE EVENT as an item on protocol OR EVSEND DGPM
-
-***
-
-.........................................................................................................................................................................................................................................................................................................................................................
-
-***
-
-POST-conversion of notifications completed.
-
-***
-
-***
-
-Cleaning up unused data and fields ...
-
-***
-
-***
-
-Populating Parameters file ...
-
-***
-
-***
-
-Error: ORPF SERVICE COPY DEFLT DEVICE Value failed validation logic. Entity:LOC.\`21 Inst:\`121 Val:\`371
-
-***
-
-Error: ORPF SERVICE COPY DEFLT DEVICE Value failed validation logic. Entity:LOC.\`209 Inst:\`121 Val:\`216
-
-***
-
-Error: ORPF SERVICE COPY DEFLT DEVICE Value failed validation logic. Entity:LOC.\`476 Inst:\`121 Val:\`216
-
-***
-
-.
-
-***
-
-.
-
-***
-
-***
-
-Setting up Display Group file ...
-
-***
-
-***
-
-Adding Consult/Request urgencies to Order Urgency file ...
-
-***
-
-***
-
-Converting protocol menus ...
-
-***
-
-***
-
-206 protocols could not be converted.
-
-***
-
-These will be sent to [your name] in a bulletin.Sending bulletin ...
-
-***
-
-***
-
-Updating Routine file....
-
-***
-
-***
-
-The following Routines were created during this install:
-
-***
-
-ORD2
-
-***
-
-ORD21
-
-***
-
-ORD210
-
-***
-
-ORD211
-
-***
-
-ORD212
-
-***
-
-ORD22
-
-***
-
-ORD23
-
-***
-
-ORD24
-
-***
-
-ORD25
-
-***
-
-ORD26
-
-***
-
-ORD27
-
-***
-
-ORD28
-
-***
-
-ORD29
-
-***
-
-ORD1
-
-***
-
-ORD11
-
-***
-
-CPRS Installation Print, cont’d
-
-***
-
-ORD110
-
-***
-
-ORD111
-
-***
-
-ORD112
-
-***
-
-ORD12
-
-***
-
-ORD13
-
-***
-
-ORD14
-
-***
-
-ORD15
-
-***
-
-ORD16
-
-***
-
-ORD17
-
-***
-
-ORD18
-
-***
-
-ORD19..
-
-***
-
-***
-
-Updating KIDS files.......
-
-***
-
-***
-
-ORDER ENTRY/RESULTS REPORTING 3.0 Installed.
-
-***
-
-Aug 28, 1996@12:15:48.
-
-***
-
-***
-
-Install Message sent \#2642666
-
-***
-
-***
-
-Install Started for OUTPATIENT PHARMACY VERSION 7.0 :
-
-***
-
-Aug 28, 1996@12:15:49
-
-***
-
-***
-
-Installing Routines:
-
-***
-
-. Aug 28, 1996@12:16:34
-
-***
-
-***
-
-Running Pre-Install Routine: \^PSOSTART....
-
-***
-
-***
-
-Installing Data Dictionaries: ..........................
-
-***
-
-Aug 28, 1996@12:18:31
-
-***
-
-***
-
-Installing PACKAGE COMPONENTS:
-
-***
-
-***
-
-Installing HELP FRAME.......
-
-***
-
-***
-
-Installing SECURITY KEY.....
-
-***
-
-***
-
-Installing FUNCTION..
-
-***
-
-***
-
-Installing PRINT TEMPLATE...................
-
-***
-
-***
-
-Installing SORT TEMPLATE.........
-
-***
-
-***
-
-Installing INPUT TEMPLATE...............
-
-***
-
-***
-
-Installing HL LOWER LEVEL PROTOCOL PARAMETER.....
-
-***
-
-***
-
-Installing HL LOGICAL LINK..
-
-***
-
-***
-
-Installing HL7 APPLICATION PARAMETER...
-
-***
-
-***
-
-Installing PROTOCOL.....................................................
-
-***
-
-***
-
-Installing LIST TEMPLATE............
-
-***
-
-***
-
-Installing OPTION..............................................
-
-***
-
-Aug 28, 1996@12:20:27
-
-***
-
-***
-
-Running Post-Install Routine: \^PSOPOST. ...
-
-***
-
-***
-
-Setting up Outpatient Pharmacy's protocols...
-
-***
-
-***
-
-Protocol 'PS RECEIVE OR' is already set up under protocol menu 'OR EVSEND PS'.
-
-***
-
-***
-
-Protocol 'OR RECEIVE' is already set up under protocol menu 'PS EVSEND OR'.
-
-***
-
-Initialization Completed in 233 seconds.
-
-***
-
-CPRS Installation Print, cont’d
-
-***
-
-***
-
-Updating Routine file....
-
-***
-
-***
-
-The following Routines were created during this install:
-
-***
-
-PSOXZA
-
-***
-
-PSOXZA1
-
-***
-
-PSOXZA2
-
-***
-
-PSOXZA3
-
-***
-
-PSOXZA4
-
-***
-
-PSOXZA5
-
-***
-
-PSOXZA6
-
-***
-
-APSPT05
-
-***
-
-APSPT051
-
-***
-
-APSPT04
-
-***
-
-APSPT041
-
-***
-
-APSPT16
-
-***
-
-PSOXX..
-
-***
-
-***
-
-Updating KIDS files.......
-
-***
-
-***
-
-OUTPATIENT PHARMACY VERSION 7.0 Installed.
-
-***
-
-Aug 28, 1996@12:20:55.
-
-***
-
-***
-
-Install Message sent \#2642667
-
-***
-
-***
-
-Install Started for PSS\*1.0\*1 :
-
-***
-
-Aug 28, 1996@12:20:57
-
-***
-
-***
-
-Installing Routines:....
-
-***
-
-Aug 28, 1996@12:20:58
-
-***
-
-***
-
-Installing Data Dictionaries: ..
-
-***
-
-Aug 28, 1996@12:21:24
-
-***
-
-***
-
-Installing PACKAGE COMPONENTS:
-
-***
-
-***
-
-Installing OPTION.......
-
-***
-
-Aug 28, 1996@12:21:24
-
-***
-
-***
-
-Updating Routine file....
-
-***
-
-***
-
-The following Routines were created during this install:
-
-***
-
-PSSJXR
-
-***
-
-PSSJXR1
-
-***
-
-PSSJXR10
-
-***
-
-PSSJXR11
-
-***
-
-PSSJXR12
-
-***
-
-PSSJXR13
-
-***
-
-PSSJXR14
-
-***
-
-PSSJXR15
-
-***
-
-PSSJXR16
-
-***
-
-PSSJXR17
-
-***
-
-PSSJXR18
-
-***
-
-PSSJXR19
-
-***
-
-PSSJXR2
-
-***
-
-PSSJXR20
-
-***
-
-PSSJXR21
-
-***
-
-PSSJXR22
-
-***
-
-PSSJXR3
-
-***
-
-PSSJXR4
-
-***
-
-PSSJXR5
-
-***
-
-PSSJXR6
-
-***
-
-PSSJXR7
-
-***
-
-PSSJXR8
-
-***
-
-PSSJXR9..
-
-***
-
-CPRS Installation Print, cont’d
-
-***
-
-***
-
-Updating KIDS files.......
-
-***
-
-***
-
-PSS\*1.0\*1 Installed.
-
-***
-
-Aug 28, 1996@12:21:25
-
-***
-
-***
-
-Install Started for INPATIENT MEDICATIONS 5.0 :
-
-***
-
-Aug 28, 1996@12:21:25
-
-***
-
-***
-
-Installing Routines:....................................................
-
-***
-
-Aug 28, 1996@12:22:13
-
-***
-
-***
-
-Running Pre-Install Routine: \^PSJIPRE.
-
-***
-
-***
-
-In order to prevent the corruption of existing data while running version 5.0 install, all of the Inpatient Medications options will be placed OUT OF ORDER. They will be made available again once the version 5.0 install is finished.
-
-***
-
-....working....
-
-***
-
-***
-
-Installing Data Dictionaries:
-
-***
-
-.................... Aug 28, 1996@12:22:56
-
-***
-
-***
-
-Installing PACKAGE COMPONENTS:
-
-***
-
-***
-
-Installing SECURITY KEY........
-
-***
-
-***
-
-Installing PRINT TEMPLATE..
-
-***
-
-***
-
-Installing INPUT TEMPLATE.............................
-
-***
-
-***
-
-Installing PROTOCOL.....................................................
-
-***
-
-***
-
-Installing LIST TEMPLATE....................
-
-***
-
-***
-
-Installing OPTION.................................................
-
-***
-
-Aug 28, 1996@12:23:59
-
-***
-
-***
-
-Running Post-Install Routine: \^PSJIPST.
-
-***
-
-***
-
-POST-INIT STARTED AT AUG 28, 1996@12:24 ....
-
-***
-
-....Updating the Activity Log Reason file....
-
-***
-
-***
-
-Protocol 'PSJ OR PAT ADT' is already set up under the protocol menu 'DGPM MOVEMENT EVENTS'
-
-***
-
-.removing the 'OUT OF ORDER' message from the Inpatient Medications options.....
-
-***
-
-removing the 'DISABLE' message from the Inpatient Medications protocols...
-
-***
-
-***
-
-POST-INSTALL COMPLETED AT AUG 28, 1996@12:24:10 ....
-
-***
-
-***
-
-Updating Routine file....
-
-***
-
-***
-
-The following Routines were created during this install:
-
-***
-
-***
-
-PSGXR3
-
-***
-
-PSGXR31
-
-***
-
-PSGXR310
-
-***
-
-PSGXR32
-
-***
-
-PSGXR33
-
-***
-
-PSGXR34
-
-***
-
-PSGXR35
-
-***
-
-PSGXR36
-
-***
-
-PSGXR37
-
-***
-
-PSGXR38
-
-***
-
-PSGXR39..
-
-***
-
-CPRS Installation Print, cont’d
-
-***
-
-Updating KIDS files.......
-
-***
-
-***
-
-INPATIENT MEDICATIONS 5.0 Installed.
-
-***
-
-Aug 28, 1996@12:24:42.
-
-***
-
-***
-
-Install Message sent \#2642669
-
-***
-
-***
-
-Install Started for CONSULT/REQUEST TRACKING 3.0 :
-
-***
-
-Aug 28, 1996@12:24:42
-
-***
-
-***
-
-Installing Routines:.....................................................
-
-***
-
-Aug 28, 1996@12:24:52
-
-***
-
-***
-
-Running Pre-Install Routine: \^GMRCPRE.
-
-***
-
-***
-
-Change Protocol Name from: GMRCACT DENY REQUEST to: GMRCACT CANCEL REQUEST
-
-***
-
-***
-
-Remove menu from: GMRCACTM MEDICINE PKG MENU
-
-***
-
-Remove menu from: GMRCACTM SERVICE ACTION MENU Remove menu from: GMRCACTM USER REVIEW SCREEN
-
-***
-
-Remove menu from: GMRCRM REQUEST TYPES
-
-***
-
-***
-
-Installing Data Dictionaries: ..... Aug 28, 1996@12:25:57
-
-***
-
-***
-
-Installing Data:
-
-***
-
-\*\* ERROR IN POINTER RESOLUTION OF DATA
-
-***
-
-\*\*Unable to find exact match and resolve pointer (\^ORD(101, Entry:GMRCACT FORWARD).
-
-***
-
-Aug 28, 1996@12:25:58
-
-***
-
-***
-
-Installing PACKAGE COMPONENTS:
-
-***
-
-***
-
-Installing SECURITY KEY..
-
-***
-
-***
-
-Installing PRINT TEMPLATE......
-
-***
-
-***
-
-Installing SORT TEMPLATE...
-
-***
-
-***
-
-Installing INPUT TEMPLATE...
-
-***
-
-***
-
-Installing PROTOCOL....................................
-
-***
-
-***
-
-Installing REMOTE PROCEDURE..
-
-***
-
-***
-
-Installing LIST TEMPLATE..............
-
-***
-
-***
-
-Installing OPTION.
-
-***
-
-Aug 28, 1996@12:26:19
-
-***
-
-***
-
-Running Post-Install Routine: \^GMRCPOS.
-
-***
-
-***
-
-Updating Routine file......
-
-***
-
-***
-
-Updating KIDS files.......
-
-***
-
-***
-
-CONSULT/REQUEST TRACKING 3.0 Installed.
-
-***
-
-Aug 28, 1996@12:26:27.
-
-***
-
-***
-
-Install Message sent \#2642670
-
-***
-
-***
-
-Install Started for GMPL\*2.0\*10 :
-
-***
-
-Aug 28, 1996@12:26:27
-
-***
-
-***
-
-Installing Routines:.
-
+Install Started for CPRS 1.0 :  
+Aug 28, 1996@12:01:50  
 ***
 
-.. Aug 28, 1996@12:26:28
-
+Installing Routines:.  
+Aug 28, 1996@12:01:50  
 ***
-
-CPRS Installation Print, cont’d
 
+Updating Routine file.....  
 ***
 
+Updating KIDS files.....  
 ***
 
-Updating Routine file......
-
+CPRS 1.0 Installed.  
+Aug 28, 1996@12:01:50  
 ***
 
+Install Started for ORDER ENTRY/RESULTS REPORTING 3.0 :  
+Aug 28, 1996@12:01:50  
 ***
-
-Updating KIDS files.......
 
+Installing Routines:...................................................  
+Aug 28, 1996@12:03:05  
 ***
 
+Running Pre-Install Routine: \^ORCPRE.  
 ***
 
-GMPL\*2.0\*10 Installed.
-
+PRE-conversion of notifications... Stubbing notifications 30-49,51-58.  
 ***
-
-Aug 28, 1996@12:26:28
 
+Notification stubbing completed. Renaming notifications 14,21,22,24,25,26,50. Notification renaming completed. Converting existing alerts... Cleaning up old alerts...  
 ***
 
+LAB RESULTS cleaned up.  
+FLAGGED ORDERS cleaned up.  
+UNSIGNED PROGRESS NOTES cleaned up.  
+ORDER REQUIRES ELEC SIGNATURE cleaned up.  
+CO-SIGNATURE ON PROGRESS NOTES cleaned up.  
+ABNORMAL LAB RESULTS (ACTION) cleaned up.  
+CYTOLOGY RESULTS cleaned up.  
+ANATOMIC PATHOLOGY RESULTS cleaned up.  
+AUTOPSY REPORT cleaned up.  
+CRITICAL LAB RESULT (INFO) cleaned up.  
+NEW ORDER cleaned up.  
+TEST NOTIFICATION (97) cleaned up.  
+PRE-conversion of notifications completed.  
 ***
 
-Install Started for FH\*5.0\*6 :
-
+Installing Data Dictionaries: .......................................  
 ***
-
-Aug 28, 1996@12:26:29
 
+Data Dictionary for File \#8989.51 not installed..  
 ***
 
+Data Dictionary for File \#8989.52 not installed..  
+Aug 28, 1996@12:05:27  
 ***
 
-Installing Routines:.
-
+Installing Data: ........ Aug 28, 1996@12:07:34  
 ***
-
-Aug 28, 1996@12:26:35
 
+Installing PACKAGE COMPONENTS:  
 ***
 
+Installing BULLETIN......  
 ***
 
-Installing Data Dictionaries:
-
+Installing SECURITY KEY.....  
 ***
-
-.. Aug 28, 1996@12:26:41
 
+Installing INPUT TEMPLATE....  
 ***
 
+Installing MAIL GROUP..  
 ***
 
-Running Post-Install Routine: \^FHIPST.
-
+Installing PROTOCOL.............  
+Not a known package or a local namespace..........  
+Not a known package or a local namespace......  
+Not a known package or a local namespace...................................  
 ***
 
+CPRS Installation Print, cont’d  
 ***
-
-Updating Routine file......
 
+Installing REMOTE PROCEDURE.............................................  
 ***
 
+Installing LIST TEMPLATE...........  
 ***
 
-Updating KIDS files.......
-
+Installing OPTION.......................................................  
+Aug 28, 1996@12:10:22  
 ***
 
+Running Post-Install Routine: \^ORCPOST.  
 ***
-
-FH\*5.0\*6 Installed.
 
+Converting user pt selection defaults to parameters.....................  
 ***
 
-Aug 28, 1996@12:27:37
-
+Conversion of user pt selection defaults completed.  
 ***
 
+POST-conversion of notifications...  
 ***
 
+Adding protocol DGPM PROVIDER UPDATE EVENT as an item on protocol OR EVSEND DGPM  
+.........................................................................................................................................................................................................................................................................................................................................................  
+POST-conversion of notifications completed.  
 ***
-
-Install Started for LR\*5.2\*166 :
 
+Cleaning up unused data and fields ...  
 ***
 
-Aug 28, 1996@12:27:37
-
+Populating Parameters file ...  
 ***
 
+Error: ORPF SERVICE COPY DEFLT DEVICE Value failed validation logic. Entity:LOC.\`21 Inst:\`121 Val:\`371  
+Error: ORPF SERVICE COPY DEFLT DEVICE Value failed validation logic. Entity:LOC.\`209 Inst:\`121 Val:\`216  
+Error: ORPF SERVICE COPY DEFLT DEVICE Value failed validation logic. Entity:LOC.\`476 Inst:\`121 Val:\`216  
+.  
+.  
 ***
-
-Installing Routines:
 
+Setting up Display Group file ...  
 ***
 
-Aug 28, 1996@12:27:43
-
+Adding Consult/Request urgencies to Order Urgency file ...  
 ***
 
+Converting protocol menus ...  
 ***
-
-Running Pre-Install Routine: EN\^LR7OPRE.
 
+206 protocols could not be converted.  
+These will be sent to [your name] in a bulletin.Sending bulletin ...  
 ***
 
-DISPLAY GROUP field removed from file 60
-
+Updating Routine file....  
 ***
-
-OE/RR DEFAULT PROTOCOL field removed from file 69.9
 
+The following Routines were created during this install:  
+ORD2  
+ORD21  
+ORD210  
+ORD211  
+ORD212  
+ORD22  
+ORD23  
+ORD24  
+ORD25  
+ORD26  
+ORD27  
+ORD28  
+ORD29  
+ORD1  
+ORD11  
+CPRS Installation Print, cont’d  
+ORD110  
+ORD111  
+ORD112  
+ORD12  
+ORD13  
+ORD14  
+ORD15  
+ORD16  
+ORD17  
+ORD18  
+ORD19..  
 ***
 
-CANCEL ON WARD TRANSFER field removed from file 69.9
-
+Updating KIDS files.......  
 ***
-
-CANCEL ON SERVICE TRANSFER field removed from file 69.9
 
+ORDER ENTRY/RESULTS REPORTING 3.0 Installed.  
+Aug 28, 1996@12:15:48.  
 ***
 
+Install Message sent \#2642666  
 ***
 
-Installing Data Dictionaries: ...
-
+Install Started for OUTPATIENT PHARMACY VERSION 7.0 :  
+Aug 28, 1996@12:15:49  
 ***
 
+Installing Routines:  
+. Aug 28, 1996@12:16:34  
 ***
-
-Data Dictionary for File \#8989.51 not installed..
 
+Running Pre-Install Routine: \^PSOSTART....  
 ***
 
+Installing Data Dictionaries: ..........................  
+Aug 28, 1996@12:18:31  
 ***
 
-Data Dictionary for File \#8989.52 not installed..
-
+Installing PACKAGE COMPONENTS:  
 ***
-
-Aug 28, 1996@12:27:57
 
+Installing HELP FRAME.......  
 ***
 
+Installing SECURITY KEY.....  
 ***
 
-Installing Data:
-
+Installing FUNCTION..  
 ***
-
-. Aug 28, 1996@12:28:10
 
+Installing PRINT TEMPLATE...................  
 ***
 
+Installing SORT TEMPLATE.........  
 ***
 
-Installing PACKAGE COMPONENTS:
-
+Installing INPUT TEMPLATE...............  
 ***
 
+Installing HL LOWER LEVEL PROTOCOL PARAMETER.....  
 ***
-
-Installing PROTOCOL..
 
+Installing HL LOGICAL LINK..  
 ***
 
+Installing HL7 APPLICATION PARAMETER...  
 ***
 
-Installing OPTION.
-
+Installing PROTOCOL.....................................................  
 ***
-
-....... Aug 28, 1996@12:28:36
 
+Installing LIST TEMPLATE............  
 ***
 
+Installing OPTION..............................................  
+Aug 28, 1996@12:20:27  
 ***
 
-Running Post-Install Routine: EN\^LR7OPOS..
-
+Running Post-Install Routine: \^PSOPOST. ...  
 ***
 
+Setting up Outpatient Pharmacy's protocols...  
 ***
-
-Now sending Lab order parameters to OE/RR...
 
+Protocol 'PS RECEIVE OR' is already set up under protocol menu 'OR EVSEND PS'.  
 ***
 
+Protocol 'OR RECEIVE' is already set up under protocol menu 'PS EVSEND OR'.  
+Initialization Completed in 233 seconds.  
+CPRS Installation Print, cont’d  
 ***
 
-Updating Routine file......
-
+Updating Routine file....  
 ***
 
+The following Routines were created during this install:  
+PSOXZA  
+PSOXZA1  
+PSOXZA2  
+PSOXZA3  
+PSOXZA4  
+PSOXZA5  
+PSOXZA6  
+APSPT05  
+APSPT051  
+APSPT04  
+APSPT041  
+APSPT16  
+PSOXX..  
 ***
-
-Updating KIDS files.......
 
+Updating KIDS files.......  
 ***
 
+OUTPATIENT PHARMACY VERSION 7.0 Installed.  
+Aug 28, 1996@12:20:55.  
 ***
 
-LR\*5.2\*166 Installed.
-
+Install Message sent \#2642667  
 ***
-
-CPRS Installation Print, cont’d
 
+Install Started for PSS\*1.0\*1 :  
+Aug 28, 1996@12:20:57  
 ***
 
-Aug 28, 1996@12:28:39.
-
+Installing Routines:....  
+Aug 28, 1996@12:20:58  
 ***
 
+Installing Data Dictionaries: ..  
+Aug 28, 1996@12:21:24  
 ***
-
-Install Message sent \#2642671
 
+Installing PACKAGE COMPONENTS:  
 ***
 
+Installing OPTION.......  
+Aug 28, 1996@12:21:24  
 ***
 
-Install Started for CPRS POST INSTALL 1.0 :
-
+Updating Routine file....  
 ***
-
-Aug 28, 1996@12:28:39
 
+The following Routines were created during this install:  
+PSSJXR  
+PSSJXR1  
+PSSJXR10  
+PSSJXR11  
+PSSJXR12  
+PSSJXR13  
+PSSJXR14  
+PSSJXR15  
+PSSJXR16  
+PSSJXR17  
+PSSJXR18  
+PSSJXR19  
+PSSJXR2  
+PSSJXR20  
+PSSJXR21  
+PSSJXR22  
+PSSJXR3  
+PSSJXR4  
+PSSJXR5  
+PSSJXR6  
+PSSJXR7  
+PSSJXR8  
+PSSJXR9..  
+CPRS Installation Print, cont’d  
 ***
 
+Updating KIDS files.......  
 ***
 
-Installing Routines:.
-
+PSS\*1.0\*1 Installed.  
+Aug 28, 1996@12:21:25  
 ***
-
-. Aug 28, 1996@12:28:39
 
+Install Started for INPATIENT MEDICATIONS 5.0 :  
+Aug 28, 1996@12:21:25  
 ***
 
+Installing Routines:....................................................  
+Aug 28, 1996@12:22:13  
 ***
 
-Running Post-Install Routine: EN\^OR3POST.
-
+Running Pre-Install Routine: \^PSJIPRE.  
 ***
 
+In order to prevent the corruption of existing data while running version 5.0 install, all of the Inpatient Medications options will be placed OUT OF ORDER. They will be made available again once the version 5.0 install is finished.  
+....working....  
 ***
-
-\---Order Check Integrity Check------------------------------------
 
+Installing Data Dictionaries:  
+.................... Aug 28, 1996@12:22:56  
 ***
 
+Installing PACKAGE COMPONENTS:  
 ***
 
-Order Check Expert System Diagnostic Tool
-
+Installing SECURITY KEY........  
 ***
 
+Installing PRINT TEMPLATE..  
 ***
-
-Created: DEC 15,1997 at 14:01 in UCI: OEX,OER
 
+Installing INPUT TEMPLATE.............................  
 ***
 
+Installing PROTOCOL.....................................................  
 ***
 
-Current Date: AUG 28,1996 at 12:28 Current UCI: VAH,TOA
-
+Installing LIST TEMPLATE....................  
 ***
 
+Installing OPTION.................................................  
+Aug 28, 1996@12:23:59  
 ***
-
-Loading Data
 
+Running Post-Install Routine: \^PSJIPST.  
 ***
 
+POST-INIT STARTED AT AUG 28, 1996@12:24 ....  
+....Updating the Activity Log Reason file....  
 ***
 
-Scanning Routines ............
-
+Protocol 'PSJ OR PAT ADT' is already set up under the protocol menu 'DGPM MOVEMENT EVENTS'  
+.removing the 'OUT OF ORDER' message from the Inpatient Medications options.....  
+removing the 'DISABLE' message from the Inpatient Medications protocols...  
 ***
 
+POST-INSTALL COMPLETED AT AUG 28, 1996@12:24:10 ....  
 ***
-
-Scanning Data Files
 
+Updating Routine file....  
 ***
 
+The following Routines were created during this install:  
 ***
 
-Scanning '863.8 OCX MDD PARAMETER' file .................................................
-
+PSGXR3  
+PSGXR31  
+PSGXR310  
+PSGXR32  
+PSGXR33  
+PSGXR34  
+PSGXR35  
+PSGXR36  
+PSGXR37  
+PSGXR38  
+PSGXR39..  
+CPRS Installation Print, cont’d  
+Updating KIDS files.......  
 ***
-
-Scanning '864.1 OCX MDD DATATYPE' file ............
 
+INPATIENT MEDICATIONS 5.0 Installed.  
+Aug 28, 1996@12:24:42.  
 ***
 
+Install Message sent \#2642669  
 ***
 
-Scanning '863.7 OCX MDD PUBLIC FUNCTION' file .................................
-
+Install Started for CONSULT/REQUEST TRACKING 3.0 :  
+Aug 28, 1996@12:24:42  
 ***
 
+Installing Routines:.....................................................  
+Aug 28, 1996@12:24:52  
 ***
-
-Scanning '863.9 OCX MDD CONDITION/FUNCTION' file .................
 
+Running Pre-Install Routine: \^GMRCPRE.  
 ***
 
+Change Protocol Name from: GMRCACT DENY REQUEST to: GMRCACT CANCEL REQUEST  
 ***
 
-Scanning '863.6 OCX MDD METHOD' file .......
-
+Remove menu from: GMRCACTM MEDICINE PKG MENU  
+Remove menu from: GMRCACTM SERVICE ACTION MENU Remove menu from: GMRCACTM USER REVIEW SCREEN  
+Remove menu from: GMRCRM REQUEST TYPES  
 ***
 
+Installing Data Dictionaries: ..... Aug 28, 1996@12:25:57  
 ***
-
-Scanning '863.4 OCX MDD ATTRIBUTE' file ..................
 
+Installing Data:  
+\*\* ERROR IN POINTER RESOLUTION OF DATA  
+\*\*Unable to find exact match and resolve pointer (\^ORD(101, Entry:GMRCACT FORWARD).  
+Aug 28, 1996@12:25:58  
 ***
 
+Installing PACKAGE COMPONENTS:  
 ***
 
-Scanning '863.2 OCX MDD SUBJECT' file .
-
+Installing SECURITY KEY..  
 ***
 
+Installing PRINT TEMPLATE......  
 ***
-
-Scanning '863.1 OCX MDD APPLICATION' file
 
+Installing SORT TEMPLATE...  
 ***
 
+Installing INPUT TEMPLATE...  
 ***
 
-Scanning '863.3 OCX MDD LINK' file ......................................................
-
+Installing PROTOCOL....................................  
 ***
 
+Installing REMOTE PROCEDURE..  
 ***
-
-Scanning '863 OCX MDD CLASS' file ......
 
+Installing LIST TEMPLATE..............  
 ***
 
+Installing OPTION.  
+Aug 28, 1996@12:26:19  
 ***
 
-Scanning '860.9 ORDER CHECK NATIONAL TERM' file .
-
+Running Post-Install Routine: \^GMRCPOS.  
 ***
 
+Updating Routine file......  
 ***
-
-Scanning '860.8 ORDER CHECK COMPILER FUNCTIONS' file .......................
 
+Updating KIDS files.......  
 ***
 
+CONSULT/REQUEST TRACKING 3.0 Installed.  
+Aug 28, 1996@12:26:27.  
 ***
 
-Scanning '860.6 ORDER CHECK DATA CONTEXT' file .
-
+Install Message sent \#2642670  
 ***
 
+Install Started for GMPL\*2.0\*10 :  
+Aug 28, 1996@12:26:27  
 ***
-
-Scanning '860.5 ORDER CHECK DATA SOURCE' file ..
 
+Installing Routines:.  
+.. Aug 28, 1996@12:26:28  
+CPRS Installation Print, cont’d  
 ***
 
+Updating Routine file......  
 ***
 
-Scanning '860.4 ORDER CHECK DATA FIELD' file ..........................
-
+Updating KIDS files.......  
 ***
 
+GMPL\*2.0\*10 Installed.  
+Aug 28, 1996@12:26:28  
 ***
-
-Scanning '860.3 ORDER CHECK ELEMENT' file .........................................
 
+Install Started for FH\*5.0\*6 :  
+Aug 28, 1996@12:26:29  
 ***
 
-Scanning '860.2 ORDER CHECK RULE' file ..............
-
+Installing Routines:.  
+Aug 28, 1996@12:26:35  
 ***
 
+Installing Data Dictionaries:  
+.. Aug 28, 1996@12:26:41  
 ***
-
-CPRS Installation Print, cont’d
 
+Running Post-Install Routine: \^FHIPST.  
 ***
 
-Checking protocols
-
+Updating Routine file......  
 ***
 
+Updating KIDS files.......  
 ***
-
-'OCX ORDER CHECK PATIENT MOVE.' added as an Item to the 'DGPM MOVEMENT EVENTS' protocol
 
+FH\*5.0\*6 Installed.  
+Aug 28, 1996@12:27:37  
+***  
+Install Started for LR\*5.2\*166 :  
+Aug 28, 1996@12:27:37  
 ***
 
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'PS EVSEND OR' protocol
-
+Installing Routines:  
+Aug 28, 1996@12:27:43  
 ***
-
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'RA EVSEND OR' protocol
 
+Running Pre-Install Routine: EN\^LR7OPRE.  
+DISPLAY GROUP field removed from file 60  
+OE/RR DEFAULT PROTOCOL field removed from file 69.9  
+CANCEL ON WARD TRANSFER field removed from file 69.9  
+CANCEL ON SERVICE TRANSFER field removed from file 69.9  
 ***
 
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'LR7O CH EVSEND OR' protocol
-
+Installing Data Dictionaries: ...  
 ***
-
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'LR7O BB EVSEND OR' protocol
 
+Data Dictionary for File \#8989.51 not installed..  
 ***
 
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'LR7O AP EVSEND OR' protocol
-
+Data Dictionary for File \#8989.52 not installed..  
+Aug 28, 1996@12:27:57  
 ***
-
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'FH EVSEND OR' protocol
 
+Installing Data:  
+. Aug 28, 1996@12:28:10  
 ***
 
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'OR EVSEND ORG' protocol
-
+Installing PACKAGE COMPONENTS:  
 ***
-
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'GMRC EVSEND OR' protocol
 
+Installing PROTOCOL..  
 ***
 
+Installing OPTION.  
+....... Aug 28, 1996@12:28:36  
 ***
 
-Diagnostic Finished...
-
+Running Post-Install Routine: EN\^LR7OPOS..  
 ***
 
+Now sending Lab order parameters to OE/RR...  
 ***
-
-\---Retotaling Order Check files-----------------------------------
 
+Updating Routine file......  
 ***
 
-\---Creating Order Check Routines-----------------------------------.
-
+Updating KIDS files.......  
 ***
 
+LR\*5.2\*166 Installed.  
+CPRS Installation Print, cont’d  
+Aug 28, 1996@12:28:39.  
 ***
-
-Build list of Active Rules, Elements and Datafields....
 
+Install Message sent \#2642671  
 ***
 
+Install Started for CPRS POST INSTALL 1.0 :  
+Aug 28, 1996@12:28:39  
 ***
 
-68 DATA FIELDS
-
+Installing Routines:.  
+. Aug 28, 1996@12:28:39  
 ***
 
+Running Post-Install Routine: EN\^OR3POST.  
 ***
-
-49 ELEMENTS
 
+\---Order Check Integrity Check------------------------------------  
 ***
 
+Order Check Expert System Diagnostic Tool  
 ***
 
-33 RULES.
-
+Created: DEC 15,1997 at 14:01 in UCI: OEX,OER  
 ***
 
+Current Date: AUG 28,1996 at 12:28 Current UCI: VAH,TOA  
 ***
-
-Compile DataField Navigation code....
 
+Loading Data  
 ***
 
+Scanning Routines ............  
 ***
 
-72 DataField Navigation Code Arrays.
-
+Scanning Data Files  
 ***
 
+Scanning '863.8 OCX MDD PARAMETER' file .................................................  
+Scanning '864.1 OCX MDD DATATYPE' file ............  
 ***
-
-Compile Element Evaluation code....
 
+Scanning '863.7 OCX MDD PUBLIC FUNCTION' file .................................  
 ***
 
+Scanning '863.9 OCX MDD CONDITION/FUNCTION' file .................  
 ***
 
-45 Event Evaluation Code Arrays.
-
+Scanning '863.6 OCX MDD METHOD' file .......  
 ***
 
+Scanning '863.4 OCX MDD ATTRIBUTE' file ..................  
 ***
-
-Compile Element MetaCode....
 
+Scanning '863.2 OCX MDD SUBJECT' file .  
 ***
 
+Scanning '863.1 OCX MDD APPLICATION' file  
 ***
 
-49 Element Metacode Arrays.
-
+Scanning '863.3 OCX MDD LINK' file ......................................................  
 ***
 
+Scanning '863 OCX MDD CLASS' file ......  
 ***
-
-Get Compiler Function Code....
 
+Scanning '860.9 ORDER CHECK NATIONAL TERM' file .  
 ***
 
+Scanning '860.8 ORDER CHECK COMPILER FUNCTIONS' file .......................  
 ***
 
-36 Compiler Include Functions.
-
+Scanning '860.6 ORDER CHECK DATA CONTEXT' file .  
 ***
 
+Scanning '860.5 ORDER CHECK DATA SOURCE' file ..  
 ***
-
-Compile Rule Element Relation code....
 
+Scanning '860.4 ORDER CHECK DATA FIELD' file ..........................  
 ***
 
+Scanning '860.3 ORDER CHECK ELEMENT' file .........................................  
+Scanning '860.2 ORDER CHECK RULE' file ..............  
 ***
 
-38 Rule Element Relation Code Arrays.
-
+CPRS Installation Print, cont’d  
+Checking protocols  
 ***
 
+'OCX ORDER CHECK PATIENT MOVE.' added as an Item to the 'DGPM MOVEMENT EVENTS' protocol  
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'PS EVSEND OR' protocol  
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'RA EVSEND OR' protocol  
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'LR7O CH EVSEND OR' protocol  
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'LR7O BB EVSEND OR' protocol  
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'LR7O AP EVSEND OR' protocol  
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'FH EVSEND OR' protocol  
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'OR EVSEND ORG' protocol  
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'GMRC EVSEND OR' protocol  
 ***
-
-Construct Decision Tree....
 
+Diagnostic Finished...  
 ***
 
+\---Retotaling Order Check files-----------------------------------  
+\---Creating Order Check Routines-----------------------------------.  
 ***
 
-516 Sub-Routines.
-
+Build list of Active Rules, Elements and Datafields....  
 ***
 
+68 DATA FIELDS  
 ***
-
-Optimize Sub-Routines....
 
+49 ELEMENTS  
 ***
 
+33 RULES.  
 ***
 
-190 Sub-Routines
-
+Compile DataField Navigation code....  
 ***
 
+72 DataField Navigation Code Arrays.  
 ***
-
-63.2% Optimization.
 
+Compile Element Evaluation code....  
 ***
 
+45 Event Evaluation Code Arrays.  
 ***
 
+Compile Element MetaCode....  
 ***
 
-CPRS Installation Print, cont’d
-
+49 Element Metacode Arrays.  
 ***
-
-Assemble Routines....
 
+Get Compiler Function Code....  
 ***
 
+36 Compiler Include Functions.  
 ***
 
-24 OCXOZ\* Routines
-
+Compile Rule Element Relation code....  
 ***
 
+38 Rule Element Relation Code Arrays.  
 ***
-
-5601 Lines of code generated..
 
+Construct Decision Tree....  
 ***
 
-Orders conversion tasked - \#85..
-
+516 Sub-Routines.  
 ***
 
+Optimize Sub-Routines....  
 ***
-
-Updating Routine file......
 
+190 Sub-Routines  
 ***
 
+63.2% Optimization.  
+***  
+CPRS Installation Print, cont’d  
+Assemble Routines....  
 ***
 
-Updating KIDS files.....
-
+24 OCXOZ\* Routines  
 ***
 
+5601 Lines of code generated..  
+Orders conversion tasked - \#85..  
 ***
 
-CPRS POST INSTALL 1.0 Installed.
-
+Updating Routine file......  
 ***
-
-Aug 28, 1996@12:34:43
 
+Updating KIDS files.....  
 ***
 
+CPRS POST INSTALL 1.0 Installed.  
+Aug 28, 1996@12:34:43  
 ## 
 
 # Post-Installation
@@ -3352,60 +2008,24 @@ OE/RR parameters
 
 Notifications
 
-Notifications are exported as disabled to allow the installation and conversions to run more efficiently. To initiate notifications, use the *Enable or Disable Notification System* option to enable Notifications. This option is on the *Notification Mgmt Menu* under the *CPRS Manager Menu* option
-
-***
-
+Notifications are exported as disabled to allow the installation and conversions to run more efficiently. To initiate notifications, use the *Enable or Disable Notification System* option to enable Notifications. This option is on the *Notification Mgmt Menu* under the *CPRS Manager Menu* option  
 Order Checking
 
 Use the *Enable or Disable Order Checking System* option to enable order checking for users or systems. This option is on the *Order Checking Mgmt Menu* on the *CPRS Manager Menu*.
 
 If your site is multidivisional, you can enable or disable the system for each division.
 
-Link lab, radiology, and DNR terms used in the CPRS Expert System to local terms using the option *Edit Local Terms* on the *Order Checking Mgmt Menu*. Because some terms used for ordering (lab test names, for example) vary from site to site, the order checking system has created a file of standard terms related to the order checks used in CPRS. Sites must map the locally used term in the Orderable Items file (\#124) or the Lab Test file (\#60) to one in the order check file. After mapping the terms, the system automatically re-compiles the order checking rules. A message is sent to the person mapping the terms when the compiling has completed.
-
-***
-
-Order Check National Terms
-
-***
-
-SERUM CREATININE
-
-***
-
-SERUM UREA NITROGEN
-
-***
-
-DNR
-
-***
-
-PROTHROMBIN TIME
-
-***
-
-THROMBOPLASTIN TIME PARTIAL
-
-***
-
-NPO
-
-***
-
-SERUM SPECIMEN
-
-***
-
-PARTIAL THROMBOPLASTIN TIME
-
-***
-
-ANGIOGRAM (PERIPHERAL)
-
-***
-
+Link lab, radiology, and DNR terms used in the CPRS Expert System to local terms using the option *Edit Local Terms* on the *Order Checking Mgmt Menu*. Because some terms used for ordering (lab test names, for example) vary from site to site, the order checking system has created a file of standard terms related to the order checks used in CPRS. Sites must map the locally used term in the Orderable Items file (\#124) or the Lab Test file (\#60) to one in the order check file. After mapping the terms, the system automatically re-compiles the order checking rules. A message is sent to the person mapping the terms when the compiling has completed.  
+Order Check National Terms  
+SERUM CREATININE  
+SERUM UREA NITROGEN  
+DNR  
+PROTHROMBIN TIME  
+THROMBOPLASTIN TIME PARTIAL  
+NPO  
+SERUM SPECIMEN  
+PARTIAL THROMBOPLASTIN TIME  
+ANGIOGRAM (PERIPHERAL)  
 WBC
 
 ### Consult/Request Tracking Parameters
@@ -3498,64 +2118,28 @@ OR, OCXS, ORD, GMR, XTV, PS.
 
 ## Run PSOPOST1 to see if the Outpatient Pharmacy conversion has finished.
 
-To determine if the Outpatient Pharmacy V. 7.0 background conversion and backfill jobs have finished, do the following:
-
+To determine if the Outpatient Pharmacy V. 7.0 background conversion and backfill jobs have finished, do the following:  
+\>D \^PSOPOST1  
+DEVICE: [Select Print Device]  
+Outpatient Pharmacy Background Job Status JUN 26,1997 09:57:55 Page 1  
+\-------------------------------------------------------------------------  
+Site Name: *[site name]*  
+Current Version Installed: 7.0  
 ***
 
-\>D \^PSOPOST1
-
+Background Conversion Job Started: DEC 31, 1997 13:12:05  
+Job Completed: JAN 01, 1998 03:15:52  
 ***
 
-DEVICE: [Select Print Device]
-
+If the JOB COMPLETED field does not have a date and time, the conversion is still running or it stopped abnormally. If it has stopped, check your system error trap for an error.  
 ***
 
-Outpatient Pharmacy Background Job Status JUN 26,1997 09:57:55 Page 1
-
-***
-
-\-------------------------------------------------------------------------
-
-***
-
-Site Name: *[site name]*
-
-***
-
-Current Version Installed: 7.0
-
-***
-
-***
-
-Background Conversion Job Started: DEC 31, 1997 13:12:05
-
-***
-
-Job Completed: JAN 01, 1998 03:15:52
-
-***
-
-***
-
-If the JOB COMPLETED field does not have a date and time, the conversion is still running or it stopped abnormally. If it has stopped, check your system error trap for an error.
-
-***
-
-***
-
-If the job stops abnormally and the error has been corrected, the following entry point may be called: D RESTART\^PSOPOST. This will queue the Outpatient Pharmacy version V. 7.0 background conversion to rerun.
-
-***
-
+If the job stops abnormally and the error has been corrected, the following entry point may be called: D RESTART\^PSOPOST. This will queue the Outpatient Pharmacy version V. 7.0 background conversion to rerun.  
 ***
 
 ## Inpatient Pharmacy conversion
 
-If the Inpatient Pharmacy conversion job stops abnormally and the error has been corrected, the following entry point may be called: D \^PSJIPST. This will queue the Inpatient Medications V. 5.0 background conversions to rerun.
-
-***
-
+If the Inpatient Pharmacy conversion job stops abnormally and the error has been corrected, the following entry point may be called: D \^PSJIPST. This will queue the Inpatient Medications V. 5.0 background conversions to rerun.  
 ***
 
 ## Run STATUS\^OR3CONV1 to check the status of the orders conversion.
@@ -3600,14 +2184,8 @@ We recommend that you NOT stop the conversion unless you will be taking your sys
 
  **Important:** The Post-Installation tasks for CMOP must be completed AFTER the Outpatient Pharmacy Background Job Status displays the date and time. Obtain this information by running the PSOPOST1 routine as described previously in the Post-Installation section titled **“Run PSOPOST1 to see if the Outpatient Pharmacy conversion has finished.”**
 
-**Step 1** – Restart CMOP tasks
-
-***
-
-The resource device entry, PSX, must now be cleared to allow CMOP tasks to run as scheduled. FREE the RESOURCE file (\#3.54) entry for PSX as shown in the example below.
-
-***
-
+**Step 1** – Restart CMOP tasks  
+The resource device entry, PSX, must now be cleared to allow CMOP tasks to run as scheduled. FREE the RESOURCE file (\#3.54) entry for PSX as shown in the example below.  
 ***
 
 Example Step 1:
@@ -3640,14 +2218,8 @@ Select SLOT IN USE: **\<Enter\>**
 
 AVAILABLE SLOTS: 0// **1**
 
-Step 2 – Activate CMOP Processing
-
-***
-
-Use the *Activate/Inactivate CMOP Processing* [PSXR ACTIVATE] option from the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to activate CMOP processing as illustrated in the following example.
-
-***
-
+Step 2 – Activate CMOP Processing  
+Use the *Activate/Inactivate CMOP Processing* [PSXR ACTIVATE] option from the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to activate CMOP processing as illustrated in the following example.  
 Example Step 2:
 
 Select CMOP Site Manager Menu Option: **ACT**ivate/Inactivate CMOP Processing
@@ -3674,26 +2246,17 @@ Request to activate sent to LEAVENWORTH.
 
 ======================================
 
-Step 3 – Reschedule Automatic Transmissions
-
+Step 3 – Reschedule Automatic Transmissions  
 ***
 
-***
-
-Reschedule Automatic Transmissions to begin when Outpatient Pharmacy has resumed normal operations. This is accomplished using the *Setup Auto-transmission* [PSXR AUTO TRANSMIT] option as shown in the following example.
-
-***
-
+Reschedule Automatic Transmissions to begin when Outpatient Pharmacy has resumed normal operations. This is accomplished using the *Setup Auto-transmission* [PSXR AUTO TRANSMIT] option as shown in the following example.  
 Example Step 3:
 
 Select CMOP Site Manager Menu Option: **T**ransmission Menu
 
 Select Transmission Menu Option: **S**etup Auto-transmission
 
-Enter the date to start automatic processing: NOW// **\<Enter\>** **JAN 08, 1998@6:00**
-
-***
-
+Enter the date to start automatic processing: NOW// **\<Enter\>** **JAN 08, 1998@6:00**  
 Number of days to transmit thru: (0-10): 0// **1**
 
 Enter rescheduling frequency (hours) for transmission: (1-96): **24**
@@ -3864,202 +2427,70 @@ For more information, see the *RPC Broker V.1.1 Systems Manual*.
 
 **NOTE to VMS sites:** We recommend that you modify the \$I to use whatever scratch directory your site has set up to store all HFS files.
 
-**Auto-Update Program – CPRSUpdate.exe**
-
+**Auto-Update Program – CPRSUpdate.exe**  
+To help sites ensure that their version of the CPRS GUI and the associated Help files on local workstations are synchronized with the latest released or test versions, developers created the CPRSUpdate.exe tool. CPRSUpdate.exe serves two purposes:  
+-   Setting the values (parameters) in the registry that are required for the updates  
+-   Performing the copy functions when an update is in progress  
+**Note:** Sites are not required to use CPRSUpdate.exe, especially if they use a different method of distributing software, such as Systems Management Server (SMS) or some other method.  
 ***
 
-To help sites ensure that their version of the CPRS GUI and the associated Help files on local workstations are synchronized with the latest released or test versions, developers created the CPRSUpdate.exe tool. CPRSUpdate.exe serves two purposes:
-
+**Where Does CPRSUpate.exe Reside?**  
+CPRSUpdate.exe should reside either in the gold directory on the server as described below or in the same directory on the local or network machine as CPRSChart.exe (the CPRS GUI application).  
+**How Does CPRSUpdate.exe Work?**  
+CPRSUpdate.exe normally does not run unless called by CPRS. When the user launches the CPRS GUI, it checks the date of the CPRSChart.exe, cprs.hlp, and cprs.cnt files in the gold directory.  
+-   If the file dates match, CPRSUpate.exe is not called and CPRS runs as normal.  
+-   If the file dates are different, CPRS calls CPRSUpdate.exe and shuts itself down. CPRSUpdate.exe copies the new versions of the files to the workstation, launches the new version of CPRS, and then closes itself.  
 ***
 
--   Setting the values (parameters) in the registry that are required for the updates
-
+**CPRSUpdate.exe Options**  
+Users can configure CPRSUpdate.exe to set the registry values interactively or non-interactively. CPRSUpdate.exe uses the following command-line parameters, which are discussed in greater detail below:  
+-   GOLD (required for automatic updates)  
+-   ONLY  
+-   AUTO (required for automatic updates)  
+-   ASK  
+-   SHOW (interactive vs. non-interactive setting of registry values)  
+***  
+*GOLD=remote directory path*  
+GOLD defines the path to the directory where the copy of CPRS that matches the current server version (sometimes called the gold copy) is located. Remember to put double quote marks around directory names that include spaces if you enter the path on the command line. In the GUI dialog, the quotes are not necessary. CPRS looks for CPRSUpdate.exe in the gold directory first. If it is not there, it will check in the same directory where the CPRSChart.exe is located. If it is not in either of those two places, it will not attempt to update the executable.  
 ***
 
--   Performing the copy functions when an update is in progress
-
+*ONLY=local directory path*  
+If this registry value is present, the auto-update will only occur for CPRS executables that reside in the listed directory. This allows you to put executables that you do NOT want updated (like test versions) on the same machine but in different directories. Remember that double quote marks are required around directory names that include spaces on the command line.  
 ***
 
-**Note:** Sites are not required to use CPRSUpdate.exe, especially if they use a different method of distributing software, such as Systems Management Server (SMS) or some other method.
-
+*AUTO=YES or NO*  
+This registry value enables/disables the auto-update functionality. If AUTO=NO, no automatic updates will occur on the system regardless of other parameter settings. This is a way to disable automatic updates.  
+*ASK=YES or NO*  
+If ASK=YES, the user will be prompted before any updates occur. If ASK=NO, the update will occur without any user interaction.  
+*SHOW*  
+CPRSUpdate.exe can be used to set the registry values either from the command-line or from a GUI dialog. An example of setting this from the command-line might look like this:  
+CPRSUpdate.exe GOLD="\\\\vamcserver\\gold" ONLY="c:\\program files\\vista\\cprs"  
+AUTO=YES ASK=NO  
 ***
 
+In the above example, the user would not see anything happen on the screen, but CPRSUpdate values would be set.  
 ***
 
-**Where Does CPRSUpate.exe Reside?**
-
+If the SHOW parameter is used, CPRSUpdate.exe will display a GUI dialog where the user can set the values. The SHOW parameter was created to lessen the chance that a user would accidentally run the interactive version and change the parameters. For example,  
 ***
 
-CPRSUpdate.exe should reside either in the gold directory on the server as described below or in the same directory on the local or network machine as CPRSChart.exe (the CPRS GUI application).
-
+"C:\\Program Files\\vista\\cprs\\CPRSUpdate.exe" SHOW  
+will launch a small interactive program (GUI dialog) that will let the user view and change the auto-update registry values.  
+![](9da973a278b2c6b4c7e8263032626fbb.png)  
 ***
 
-**How Does CPRSUpdate.exe Work?**
-
+Remember that this is just set up. CPRSUpdate.exe copies the new files as these parameters dictate when it is called by CPRSChart.exe.  
 ***
 
-CPRSUpdate.exe normally does not run unless called by CPRS. When the user launches the CPRS GUI, it checks the date of the CPRSChart.exe, cprs.hlp, and cprs.cnt files in the gold directory.
-
+Using the auto-update functionality would likely involve the following steps (it may vary at your site) -  
 ***
 
--   If the file dates match, CPRSUpate.exe is not called and CPRS runs as normal.
-
-***
-
--   If the file dates are different, CPRS calls CPRSUpdate.exe and shuts itself down. CPRSUpdate.exe copies the new versions of the files to the workstation, launches the new version of CPRS, and then closes itself.
-
-***
-
-***
-
-**CPRSUpdate.exe Options**
-
-***
-
-Users can configure CPRSUpdate.exe to set the registry values interactively or non-interactively. CPRSUpdate.exe uses the following command-line parameters, which are discussed in greater detail below:
-
-***
-
--   GOLD (required for automatic updates)
-
-***
-
--   ONLY
-
-***
-
--   AUTO (required for automatic updates)
-
-***
-
--   ASK
-
-***
-
--   SHOW (interactive vs. non-interactive setting of registry values)
-
-***
-
-***
-
-***
-
-*GOLD=remote directory path*
-
-***
-
-GOLD defines the path to the directory where the copy of CPRS that matches the current server version (sometimes called the gold copy) is located. Remember to put double quote marks around directory names that include spaces if you enter the path on the command line. In the GUI dialog, the quotes are not necessary. CPRS looks for CPRSUpdate.exe in the gold directory first. If it is not there, it will check in the same directory where the CPRSChart.exe is located. If it is not in either of those two places, it will not attempt to update the executable.
-
-***
-
-***
-
-*ONLY=local directory path*
-
-***
-
-If this registry value is present, the auto-update will only occur for CPRS executables that reside in the listed directory. This allows you to put executables that you do NOT want updated (like test versions) on the same machine but in different directories. Remember that double quote marks are required around directory names that include spaces on the command line.
-
-***
-
-***
-
-*AUTO=YES or NO*
-
-***
-
-This registry value enables/disables the auto-update functionality. If AUTO=NO, no automatic updates will occur on the system regardless of other parameter settings. This is a way to disable automatic updates.
-
-***
-
-*ASK=YES or NO*
-
-***
-
-If ASK=YES, the user will be prompted before any updates occur. If ASK=NO, the update will occur without any user interaction.
-
-***
-
-*SHOW*
-
-***
-
-CPRSUpdate.exe can be used to set the registry values either from the command-line or from a GUI dialog. An example of setting this from the command-line might look like this:
-
-***
-
-CPRSUpdate.exe GOLD="\\\\vamcserver\\gold" ONLY="c:\\program files\\vista\\cprs"
-
-***
-
-AUTO=YES ASK=NO
-
-***
-
-***
-
-In the above example, the user would not see anything happen on the screen, but CPRSUpdate values would be set.
-
-***
-
-***
-
-If the SHOW parameter is used, CPRSUpdate.exe will display a GUI dialog where the user can set the values. The SHOW parameter was created to lessen the chance that a user would accidentally run the interactive version and change the parameters. For example,
-
-***
-
-***
-
-"C:\\Program Files\\vista\\cprs\\CPRSUpdate.exe" SHOW
-
-***
-
-will launch a small interactive program (GUI dialog) that will let the user view and change the auto-update registry values.
-
-***
-
-![](9da973a278b2c6b4c7e8263032626fbb.png)
-
-***
-
-***
-
-Remember that this is just set up. CPRSUpdate.exe copies the new files as these parameters dictate when it is called by CPRSChart.exe.
-
-***
-
-***
-
-Using the auto-update functionality would likely involve the following steps (it may vary at your site) -
-
-***
-
-***
-
-1.  If your site does not have one, create a directory on a server where the “gold” copy of CPRSChart.exe, CPRS.hlp, and CPRS.cnt will be placed. This directory should be shared so that all the workstations have access to it.
-
-***
-
-1.  Distribute CPRSUpdate.exe to the workstations or network server and place it in the same directory as CPRSChart.exe (generally C:\\program files\\vista\\cprs). You may want to use SMS to do this.
-
-***
-
-1.  Run CPRSUpdate.exe on each workstation with the command line parameters to setup the path to the gold copy. The GOLD and AUTO parameters must be set for the updates to work. ONLY and ASK are optional. You may also want to do this using SMS.
-
-***
-
-1.  When the site installs the next version of CPRSChart.exe on the server, place the new executable file in the gold directory. When users access CPRS, they should be updated to the latest version automatically, depending on the registry settings.
-
-***
-
-The registry values are kept in:
-
-***
-
-HKEY_LOCAL_MACHINE\\Software\\Vista\\CPRS
-
-***
-
+1.  If your site does not have one, create a directory on a server where the “gold” copy of CPRSChart.exe, CPRS.hlp, and CPRS.cnt will be placed. This directory should be shared so that all the workstations have access to it.  
+1.  Distribute CPRSUpdate.exe to the workstations or network server and place it in the same directory as CPRSChart.exe (generally C:\\program files\\vista\\cprs). You may want to use SMS to do this.  
+1.  Run CPRSUpdate.exe on each workstation with the command line parameters to setup the path to the gold copy. The GOLD and AUTO parameters must be set for the updates to work. ONLY and ASK are optional. You may also want to do this using SMS.  
+1.  When the site installs the next version of CPRSChart.exe on the server, place the new executable file in the gold directory. When users access CPRS, they should be updated to the latest version automatically, depending on the registry settings.  
+The registry values are kept in:  
+HKEY_LOCAL_MACHINE\\Software\\Vista\\CPRS  
 ***
 
 # Release Notes
