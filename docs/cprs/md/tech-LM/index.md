@@ -3,7 +3,7 @@ CPRS: List Manager Version
 December 2023
 
 
-#### Outline
+### Outline
 ```text
 Introduction
 Implementation & Maintenance
@@ -33,9 +33,9 @@ Appendix I: Event Delayed Order FAQ
 Appendix J: CPRS Parameters vs. OE/RR Parameters: File Locations
 Appendix K: Tracking Completed Text (Nursing) Orders
 Index
-'''
+```
 
-#### Contents
+### Contents
 
 
 [**1.**](#introduction) <#introduction>**Introduction 25**  

@@ -33,7 +33,7 @@ Appendix H – USING NEWPERS DEBUGGER
 Glossary
 Index
 ```
-### Content
+### Contents
 
 [**Introduction** ](#_tjcfya)**1**  
 [What is CPRS? 1](#what-is-cprs)  

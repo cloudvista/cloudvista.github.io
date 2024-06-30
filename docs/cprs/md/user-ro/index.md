@@ -22,7 +22,7 @@ Viewing a Health Summary
 Remote Data
 ```
 
-### Content
+### Contents
 
 [**Introduction** ](#_23ckvvd)**4**  
 [What is CPRS Read-Only ? 4](#what-is-cprs-read-only-)  

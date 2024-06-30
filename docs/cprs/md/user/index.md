@@ -178,7 +178,7 @@ Keyboard Shortcuts for Common CPRS Commands
 Using JAWS with CPRS
 ```
 
-#### Contents
+### Contents
 
 [**Introduction 1**](#introduction)  
 [**What is CPRS? 1**](#what-is-cprs)  

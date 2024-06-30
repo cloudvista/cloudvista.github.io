@@ -2,7 +2,44 @@
 CPRS: GUI Version  
 April 2007
 
-### Content
+
+### Outline
+```text
+We recommend that you install CPRS first in a training or test account that is a mirror of your production account.
+Update the Terminal Type file for the VT100s, if necessary.
+Ensure that Patch OR*2.5*49 is implemented.
+Make sure all required VISTA software is installed
+Make sure that you have at least 300-400 meg free disk space before installing CPRS.
+(CMOP sites) Ensure that required CMOP tasks are completed.
+Place and protect the two new globals introduced with CPRS:
+Load the distribution for CPRS V. 1.0
+Verify Checksums in the transport global.
+Take users off the system. (The sequential order for this and the next two steps is up to your site's discretion.)
+Shut down Taskman.
+Back up all systems.
+Unmap OR*, GMRC*, and PS* Routines.
+Sign into a partition with journaling disabled.
+Delete OR*, GMRC*, and PSO* routines.
+Install the “Released Patch” and “Unreleased Patch” builds after the main CPRS installation and before the following post-installation steps.
+Review and edit CPRS parameters, if necessary.
+Re-build the map set for the following OR*, GMRC*, and PS* routines:
+Re-enable journaling for the following globals:
+Re-start TaskMan. (Among other things, this will task the conversions.)
+Bring users back on the system.
+Run PSOPOST1 to see if the Outpatient Pharmacy conversion has finished.
+Inpatient Pharmacy conversion
+Run STATUS^OR3CONV1 to check the status of the orders conversion.
+(CMOP sites) Post-installation steps.
+Review and assign sequence numbers to protocols in the DGPM Movement Events field of the Protocol file.
+Set up Imaging Nature of Order.
+Set up the CPRS Graphic User Interface (GUI).
+OE/RR 3.0 Enhancements since 12/97 Release
+Released Patches
+```
+
+
+
+### Contents
 
 [**Introduction 6**](#introduction)  
 [**Pre-Install Instructions 7**](#pre-install-instructions)

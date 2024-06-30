@@ -47,7 +47,7 @@ Display Patients Linked to Me via Teams
 Display My Teams
 ```
 
-### Content
+### Contents
 
 **INTRODUCTION 6**
 WHAT IS CPRS? 6
