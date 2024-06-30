@@ -1,8 +1,6 @@
 # User Guide
-
-# CPRS: GUI Version
-
-# December 2023
+### CPRS: GUI Version
+#### December 2023
 
 [**Introduction 1**](#introduction)  
 [**What is CPRS? 1**](#what-is-cprs)  
