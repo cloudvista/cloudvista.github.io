@@ -1,16 +1,17 @@
-### docs
+### CPRS Docs
 
-CPRS  
- - userguide. 
- - userguide-ro
- - techguide
+docs/cprs/htm/  
+1. install
+2. setup
+3. starting-LM
+4. tech
+5. tech-LM
+6. user
+7. user-ro
 
 
-
-VistA Document Library  
+Source:  
 	https://www.va.gov/vdl  
-	
-CPRS Documentation  
    https://www.va.gov/vdl/application.asp?appid=61  
 
 

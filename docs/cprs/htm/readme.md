@@ -1,6 +1,6 @@
-### docs
+### CPRS Docs
 
-__CPRS Guides__  
+docs/cprs/htm/  
 1. install
 2. setup
 3. starting-LM
