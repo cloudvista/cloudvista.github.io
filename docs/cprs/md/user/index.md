@@ -735,65 +735,58 @@ Notifications are messages that provide information or prompt you to act on a cl
 There are two different listings for Notifications, Provider-centric and patient-centric. Provider-centric notifications are shown on the Patient selection screen and all pertain to the user that is logged in. The user brings up Patient-centric notifications or alerts in their own dialog box by selecting an item from the File menu.
 
 -   Provider-centric: The listing on the Patient Selection screen shows all notifications for the provider  
-***  
-***  
-***  
-***  
-***  
-***  
-***
+
 
 **![Screenshot of the provider-centric view of notifications on the Patient Selection screen](67dc7713a5d73767cfa5b0db78ab0b21.gif)**  
 Provider-centric view of Notifications on the Patient Selection screen.  
-***
 
 -   Patient-Centric: This listing is reached by selecting File \| View Patient’s Notifications…. The main difference is that all notifications listed in this dialog relate to the current patient only. The last column labeled Mine tells whether the notification belongs to the logged in provider as well.  
 ![Notif_File-View_patients_notifications_2019-08-06](07c0e90860db32b3a816bc90fb922a3f.png)  
 This screen capture shows how the user can select File \| View Patient’s Notifications to bring up the dialog below.  
-***  
+  
 ![This screen capture shows the Patient Notification dialog reached from the File menu, which shows a listing of notifications related specifically to the current patient. ](c8ac4e0538caf4fdc4e15c3752c20b6e.gif)  
 After a patient is selected, the user can view all notifications for the selected patient. New columns include “My To Do” and the “Ordering Provider” and the user can process, defer, or close the dialog. The date range of displayed alerts is also customizable.  
-***
+
 
 **Action, Informational, and Long Text Informational Alerts**  
 -   **Action alerts:** When you process notifications that require an action, such as signing an order, CPRS brings up the chart tab and the specific item (such as a note requiring a signature) that requires action.  
 -   **Informational alerts:** CPRS places an “I” before “information-only” notifications. Once you view (process) information-only notifications, CPRS deletes them.  
 -   **Long Text Information alerts:** CPRS places an “L” before a long alert. Long alerts have more text than will fit on one line as alerts are normally displayed. Processing the alert will bring up a dialog with additional actions.  
-***
+
 
 **Action Alerts Require User Interaction**  
 For action alerts, users can select the alert and CPRS will take them to the appropriate tab to complete the action. This may be to view a lab result, sign orders or notes, respond to System for Mammogram Results Tracking (SMART) notifications, etc.  
 SMART notifications are new with CPRS v31b. When users process a SMART notification, they are taken to a progress note title containing a Reminder dialog for them to complete.  
-***
+
 
 From the main listing, users can also Remove, Renew, Forward or Defer notifications.  
 -   **Removing** notifications is the same as deleting them. A new parameter (ORB REMOVE) enables you site to identify which notifications can be removed without processing.  
 -   **Renewing** notifications is useful when a user is processing a view alert, such as an abnormal lab result, and decides that the alert should not go away after the user views it. In this case, the user can renew the alert and it will still be there the next time the user logs in to CPRS.  
 -   **Forwarding** notifications enables users to send an alert to someone else at the site. The user can choose from the list of names that is in your site’s New Person file.  
 -   **Deferring** notifications enables a user to defer a notification for a period of time from 5 minutes to 14 days. Deferring will remove the notification from the display for the designated period of time, after which, it will display again. Users can defer notifications as many times as they choose until the system removes them.  
-***
+
 
 ![Screenshot of the Defer Patient Notification option](2c1ed50736690e39f20165694bcff36c.gif)  
 Example of the Defer Patient Notification option  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***  
-***
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
 
 ![Screenshot showing that a notification was successfully deferred.](a6d3af5ea16a4f258756e95258885e55.gif)  
 A dialog shows that the notification was successfully deferred  
-***
+
 
 **Note**: As a default, all Notifications are disabled. Information Resources Management (IRM) staff and Clinical Coordinators enable specific notifications by setting site parameters through the Notifications Management Menus in the List Manager version of CPRS. These specific Notifications are initially sent to all users. Users can then disable unwanted Notifications as desired, through List Manager’s Personal Preferences. Some notifications are mandatory and cannot be disabled.  
 Notifications are retained for a predetermined amount of time (up to 30 days), after which they may be sent to another destination, such as your MailMan surrogate or your supervisor. Confer with your clinical coordinator to establish and set up these options. You can also confer with your clinical coordinator to select what types of notifications you will receive. Some notifications are mandatory, however, and cannot be disabled.
@@ -874,7 +867,7 @@ Example of the Processed alerts tab in the Patient Selection dialog
 ![Pop-up menu items options are shown.](43eb9b7dad29d4f2f07a42e2a9cf7cda.jpg)
 
 **This above graphic shows the pop-up menu items available by right-clicking the Next button**  
-***
+
 
 1.  Select the individuals that you want to receive this notification.  
 **Note:** If the provider has an NPI, it will display on the screen below. See the “National Provider Identifier (NPI) Display in CPRS” section for an example of an NPI displaying on a screen.
@@ -1471,10 +1464,10 @@ To help address veterans with high risk for suicide, the VA provides two types o
 
 When the OTH veteran is enrolled, he or she is given a primary eligibility code that enables the veteran to receive care, but this eligibility will be adjudicated by the Veteran’s Benefits Association (VBA). This OTH eligibility provides two types of OTH care: OTH-90 or OTH-EXT. The OTH button displays either “OTH” or “OTH-EXT” values until VBA changes the eligibility code, then it will no longer display.  
 For patients meeting the criteria, the OTH button displays between the team information button and the Flag button on the strip available from any tab as shown in the screen captures below.  
-***
+
 
 ![Example of the OTH-90 care type button outlined in red](0d7026b819a047530eb871784256556f.png)  
-***
+
 
 On the OTH button, the label ‘OTH’ displays, along with how many days remain in the period of care and which period of care the patient is in. So, it will be a number followed by the letter “D” for the number of days and then a “P” followed the number of the current period of care.  
 The OTH 90 button shown in the example above, shows ‘36D’ meaning 36 days left in the first 90-day period of care (or ‘P1’).  
@@ -1603,12 +1596,12 @@ PDMP Results - validates the query is completed
 
 1.  Click on the **PDMP Results** button to display the PDMP report. The Prescription Drug Monitoring Program Results report displays in a separate window.  
 Note: If encounter information has not been entered, the encounter information dialog will appear before the PDMP report is displayed. You must complete the encounter information dialog before proceeding.  
-***
+
 
 Note: Retrieving the report may take a while as it must be retrieved through a third party PDMP gateway. This process is outside of CPRS’s control.  
 ![PDMP Results report](dbe0b33f17307d19ef4e4768cb8a87d1.png)  
 **PDMP Results Report**  
-***
+
 
 The report allows the user to review the PDMP results and to automatically generate a note to document any findings. It has three sections: Demographics, Summary, and Prescriptions. The bottom of the report displays the date of the last PDMP Query (which is the same date as the date previously noted in the [**hover over Note**](#4anzqyu) for the PDMP Query), Four (4) statement selections, as well as the **Cancel Without Update** and **Done and Create Note** buttons.  
 Note: You must select at least one of the Statements. Clicking the Done and Create Note button without selecting a Statement, will produce the error message: "At least one option should be selected."  
@@ -1652,7 +1645,7 @@ To request a PDMP Query, follow these steps:
 
 1.  From the ribbon bar, click on the **PDMP Query** button.  
 ![PDMP Query button](17524ec89b186bb49cadabcacb733d70.png)  
-***
+
 
 1.  You will be prompted to **Select Authorized User** from the pop-up dialog. The encounter provider (if they are an authorized PDMP user) is selected by default.  
 ![Example of Select Authorized User window](a4f26429990489dcc54e3dd8c8700e91.png)  
@@ -1669,7 +1662,7 @@ PDMP Results - validates the query is completed
 
 1.  Click on the **PDMP Results** button to display the PDMP report. The Prescription Drug Monitoring Program Results report displays in a separate window.  
 **Note:** If encounter information has not been entered, the encounter information dialog will appear before the PDMP report is displayed. You must complete the encounter information dialog before proceeding.  
-***
+
 
 **Note:** Retrieving the report may take a while as it must be retrieved through a third party PDMP gateway. This process is outside of CPRS’s control.  
 ![PDMP Results report](74ade73107268d8456d0daefff9255f4.png)  
@@ -1720,7 +1713,7 @@ There are differences between a PDMP query that is initiated on a reminder dialo
 A PDMP Health Summary Report, PDMP AOD ALL, was created to generate a PDMP Accounting of Disclosure (AOD) report. This component lists the PDMP Accounting of Disclosures for instances where a PDMP query was initiated from within CPRS and patient's data was shared outside of the VA. It will also include cases where a PDMP note was manually created to document a PDMP query made directly on a state's PDMP portal.
 
 Note: For more information, refer to [**Viewing a Health Summary**](#viewing-a-health-summary).  
-***
+
 
 ![Screenshot of an AOD report](1a23981da501da4a3becdff892d4ffcf.gif)
 
@@ -1979,7 +1972,7 @@ Note: In the example above, information regarding the patient’s eligibility fo
 | Originating Site        | Identifies the site who initiated the flag assignment                                    |
 | Owner Site              | Identifies the site who owns the flag assignment                                         |
 
-Flag Assignment actions are organized by the site. Actions displayed are: Inactivate, Reactivate, and Continue with the date/time stamp of the action in descending order (newest to oldest). Since there is not a scroll bar on the patient chart pop-up, when there are more actions available than can be displayed, users will see the following disclaimer: **\*\*\*Additional information is in VistA\*\*\***
+Flag Assignment actions are organized by the site. Actions displayed are: Inactivate, Reactivate, and Continue with the date/time stamp of the action in descending order (newest to oldest). Since there is not a scroll bar on the patient chart pop-up, when there are more actions available than can be displayed, users will see the following disclaimer: **\*\*\*Additional information is in VistA\*\*\
 
 ### Viewing Inactive Flag History
 
@@ -2908,7 +2901,7 @@ To sign orders and documents with the Review / Sign Changes dialog, follow these
 ![Screenshot of an Order Check for Albuterol and Acarbose.  ](254199a519eaad35b34dafeb27099fd2.png)
 
 **In this screen capture, CPRS displays a conflict between ordered medications. Users should review each item carefully before completing the order. Each order that has a high-level order check requires you to select that order and an override reason for it. All orders with an “Action is required” status require an override reason in order to be signed. These order checks are designated by the “\*Checks marked with \*\*\*\* require reason to override” text in red and the order check text in blue. The Accept button will not activate until all orders have been viewed, and all override reasons have been entered as needed.**  
-***
+
 
 If CPRS displays order checks, carefully review the order checks and take the appropriate action below:
 
@@ -3023,7 +3016,7 @@ right-click and select **Sign**…
 ![Screenshot of an Order Check for Albuterol and Acarbose.](254199a519eaad35b34dafeb27099fd2.png)
 
 **In this screen capture, CPRS displays a conflict between ordered medications. Users should review each item carefully before completing the order. Each order that has a high-level order check requires you to select that order and select an override reason for it. All orders with an “Action is required” status require an override reason in order to be signed. These order checks are designated by the “\*Checks marked with \*\*\*\* require reason for override” text in red and the order check text in blue. The Accept button will not activate until all orders have been viewed, and all override reasons have been entered as needed.**  
-***
+
 
 1.  If CPRS displays order checks, carefully review the order checks and take the appropriate action below:  
 1.  To redo the orders to avoid a possible interaction, select Return to Orders. This will cancel the signature process, but not the order.  
@@ -3355,7 +3348,7 @@ The Tools menu also contains two standard menu items: Lab Test Information and O
 
 **Veteran Health Library**  
 The MyHealth*e*vet Veteran Health Library (VHL) is the first item listed under the CPRS Tools menu. Selecting this link takes the user to the MyHealth*e*Vet Veteran Health Library web site.  
-***
+
 
 ## Lab Test Information
 
@@ -3710,7 +3703,7 @@ For instructions on these two dialogs, please see the following sections:
 
 -   “Creating Predefined Views”  
 -   “Setting Display Options Using the Graph Settings Dialog Box”  
-***
+
 
 ### Surrogates Tab
 
@@ -3955,7 +3948,7 @@ When a user sets “Cancel Series and stop forecasting” to Yes, the following 
 1.  Click **Save**.  
 1.  Click **Finish**.   
     **Note:** You can always edit an immunization/skin test if you accessed the Enter Immunization/Skin Test screen through the Immunization/Skin Test tab in the Encounter form. However, if you accessed an immunization through the Coversheet, you can edit it only under this condition: You have added an immunization and saved it, but you have not finished it and have kept the Edit Immunization screen open.  
-***
+
 
 #### Deleting an Immunization/Skin Test in CPRS
 
@@ -3974,7 +3967,7 @@ The Cover Sheet is the first screen you see after opening a patient record (unle
 
 ![CPRS Cover Sheet displays](188cec3b4c8bc75521b623b19a3ecf6e.png)  
 The CPRS Cover Sheet displays a variety of information about a patient. This example shows the Cover Sheet without customization. Sites can now customize which panels display and their order as described below.  
-***
+
 
 **Customizing which Panes Display and their Order**  
 Sites can now customize the CPRS Cover Sheet determining which panes display. There are ten possible panes. The CAC or similar personnel can set the pane order. There will still be three rows available for the panes, which are  
@@ -3988,7 +3981,7 @@ Sites can now customize the CPRS Cover Sheet determining which panes display. Th
 -   Appointments  
 -   Immunizations  
 -   Women's Health  
-***
+
 
 Customizing which panels display must be done by someone who has access to the Clinical Application Coordinator (CAC) menu.  
 With the customized Cover Sheet, the panels have a slightly different appearance and the user can minimize and maximize the panels on the Cover Sheet to see things better.  
@@ -4529,7 +4522,7 @@ Service-Connected Condition Abbreviations
 -   HNC – Head or Neck Cancer  
 ![The problems list on the Problems tab can be configured to show active, inactive, both active and inactive combined, or removed problems.](ce7ee8f557c7a6c08a060b6a7ad536bb.png)  
 **The problems list on the Problems tab can be configured to show active, inactive, both active and inactive combined, or removed problems. Treatment factors, SNOMED CT codes, and ICD codes display right after the problem text**  
-***
+
 
 ## Coding Systems Used to Represent Problems
 
@@ -5901,7 +5894,7 @@ After completing the UAP review, use the Discharge Meds view to see a complete l
 
 The Discharge Meds view on the Orders tab displays a list of the remaining active outpatient orders after medication decisions are recorded in the Unified Action
 
-Profile (UAP) view (refer to *Using the Unified Action Profile* *View***.**). It displays the orders that will be released with the patient upon discharge.
+Profile (UAP) view (refer to *Using the Unified Action Profile* *View.**). It displays the orders that will be released with the patient upon discharge.
 
 While the UAP provides the ability to review and make decisions about all inpatient and outpatient medications, the Discharge Meds view enables a clinician to see the full list of medication orders from the local site still prescribed for the patient after the UAP review is completed.
 
@@ -6470,17 +6463,17 @@ The dietetics ordering functionality has been modified in order to prevent previ
 -   Specialty transfer (S)  
 -   OR (O)  
 -   Transfer (T)  
-***
+
 
 and the NPO diet remains intact.  
-***
+
 
 1.  When NPO diet orders are attempted to be manually discontinued, CPRS prevents that action from being taken and displays the dialog box to the user with text “NPO Diet cannot be discontinued."  
 1.  CPRS disallows all diet orders to have an Expiration Date/Time when ordered and prevent automatic reinstatement of a previous diet. If a new diet order is desired, a new diet must be ordered to replace the active diet order.  
 1.  When ordering NPO, if a patient is currently on tube-feeding, the provider is displayed the dialog box “The patient currently has an active tubefeeding order \<display the current tube-feeding order here\>"  
 1.  The Cancel Future Order Prompt from the tubefeeding order dialog has been removed. A conversion routine has been created to remove the prompt from any Quick Order. Additionally, Quick Orders will no longer allow the features of Auto Accept or Verify.  
 1.  Accepting a tubefeeding order will prompt one of two different messages depending on the current diet status of the patient. If there is no existing order, the user will be prompted to enter a new diet order. If an existing diet order is present, the user will be prompted to keep the current diet or enter a new diet order.  
-***
+
 
 #### How Discharge Affects Diet Orders
 
@@ -6491,7 +6484,7 @@ If the diet is to be replaced, then a new diet should be ordered.
 Also, the rules for auto-discontinuing (auto-dc) orders can be affected by how different VistA packages handle discontinuing and how the package communicates with CPRS. Depending on the set up and parameters, the results may be different that a user might expect.
 
 **Note:** If discharging/readmitting patients the Nutrition & Food Service package will auto-dc diet orders upon discharge. Plan to print diet lists pre-discharge so that patient’s current diet and standing orders can be manually re-entered/re-ordered upon admission.  
-***
+
 
 #### 
 
@@ -7350,7 +7343,7 @@ Once the name is selected, CPRS displays a second dialog to select the items for
 ![Order Not Placed - Missing Patient Address popup.](cec7d1d2ddfb5c7f11670eeeaede69c4.png)
 
 **Controlled substance prescriptions require a patient address**  
-***
+
 
 1.  Select the Complex tab.  
 **Note:** After you begin a complex dose medication order, you must remain on the Complex tab until you finish the order. If you switch to the Dosage tab, CPRS clears all complex dosages and you will be forced to start again.
@@ -8513,17 +8506,16 @@ Note: The orders listed in the Write Orders pane vary from site to site.
 1.  If desired, enter a comment in the **Order comment** field. This is an optional field that allows letters, numbers, punctuation, and spaces.  
 1.  Select the **Source**. Choose a source for the specimen **(Left Anterior Iliac Crest,Left Posterior Iliac Crest,Right Anterior Iliac Crest,Right Posterior Iliac Crest**, or **Sternum**).  
 **Note:** The selection made in this field will appear in the Specimen Description field above.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  Select the **Specimen Type**. Choose a specimen type (**Aspirate** or **Core Biopsy**).  
 **Note:** The selection made in this field will appear in the Specimen Description field above.  
 -   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+
 
 1.  If desired, enter a description for the specimen in the **Specimen Description** field. This is a required field with a maximum character length of 75 which includes letters, numbers, punctuation, and spaces.  
 -   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+
 
 **Note:** If you delete a specimen and there are multiple specimens, the specimen numbers will be reordered in the Specimen Description list.  
 1.  Select the **Clinical History** tab. Enter the patient’s history in the **Clinical History** field. This is a required field that allows letters, numbers, punctuation, and spaces.  
@@ -8535,9 +8527,9 @@ Note: The orders listed in the Write Orders pane vary from site to site.
 \-or-Select **Accept Order**.  
 \-or-Select **Quit**.  
 **Note:** The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.  
-***  
-***  
-***
+  
+  
+
 
 #### Entering a Bronchial Biopsy Lab Test
 
@@ -8558,27 +8550,27 @@ Note: The orders listed in the Write Orders pane vary from site to site.
 1.  Select the **Source**. Choose a source for the specimen (**Bronchial, Left Lower Lobe (LLL) Bronchial, Left Upper Lobe (LUL) Bronchial, Lingula, Main Stem Bronchus, Right Lower Lobe (RLL) Bronchial, Right Middle Lobe (RML) Bronchial,** or **Right Upper Lobe (RUL) Bronchial**).  
 **Note:** The selection made in this field will appear in the Specimen Description field above.  
 -   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+
 
 1.  Select the **Specimen Type**. Choose a specimen type (**EBUS-TBNA, Endobronchial Biopsy,** or **Transbronchial Biopsy**).  
 **Note:** The selection made in this field will appear in the Specimen Description field above.  
 -   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+
 
 1.  Select the **Station**. Choose a station(**Station 10, Station 2, Station 4,** or **Station 7**).  
 -   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+
 
 1.  Select the **Submission Type**. Choose a submission type (**Fresh, Fixed,** or **Intra-Op Consult**).  
 **Note:** The selection made in this field will appear in the Specimen Description field above.  
 **Note:** If **Fresh** or **Intra-Op Consult** is selected, the **Urgency** field will change to **STAT**; you will receive a Warning dialog regarding the change.  
 **Note:** If you change the **Submission Type** to **Fixed** on all of the specimens (whether only one specimen on the order or multiple specimens on the order), you will need to manually change the **Urgency** to **Routine** if that is desired.  
 -   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+
 
 1.  If desired, enter a description for the specimen in the **Specimen Description** field. This is a required field with a maximum character length of 75 which includes letters, numbers, punctuation, and spaces.  
 -   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+
 
 **Note:** If you delete a specimen and there are multiple specimens, the specimen numbers will be reordered in the Specimen Description list.  
 1.  Select the **Clinical History** tab. Enter the patient’s history in the **Clinical History** field. This is a required field that allows letters, numbers, punctuation, and spaces.  
@@ -8611,16 +8603,14 @@ Note: The Lab Test order must be signed before it is sent to VistA to be accessi
 1.  Select the Source. Choose a source for the specimen (**Bronchial, Left Lower Lobe (LLL) Bronchial, Left Middle Lobe (LML) Bronchial, Left Upper Lobe (LUL) Bronchial, Lingula, Main Stem, Right Lower Lobe (RLL) Bronchial, Right Middle Lobe (RML) Bronchial,** or **Right Upper Lobe (RUL) Bronchial**).  
 **Note:** The selection made in this field will appear in the Specimen Description field above.  
 -   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+
 
 1.  Select the **Specimen Type**. Choose a specimen type (**Bronchial-Alveolar Lavage (BAL), Brushing, Sputum, Wang Needle,** or **Washing**).  
 **Note:** The selection made in this field will appear in the Specimen Description field above.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  If desired, enter a description for the specimen in the **Specimen Description** field. This is a required field with a maximum character length of 75 which includes letters, numbers, punctuation, and spaces.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 **Note:** If you delete a specimen and there are multiple specimens, the specimen numbers will be reordered in the Specimen Description list.  
 1.  Select the **Clinical History** tab. Enter the patient’s history in the **Clinical History** field. This is a required field that allows letters, numbers, punctuation, and spaces.  
@@ -8631,8 +8621,7 @@ Note: The Lab Test order must be signed before it is sent to VistA to be accessi
 1.  If desired, enter another lab test.  
 \-or-Select **Accept Order**.  
 \-or-Select **Quit**.  
-**Note:** The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.  
-***
+**Note:** The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.
 
 #### Entering a Dermatology Lab Test
 
@@ -8655,13 +8644,11 @@ Note: The Lab Test order must be signed before it is sent to VistA to be accessi
 **Note:** If **Fresh** or **Intra-Op Consult** is selected, the **Urgency** field will change to **STAT**; you will receive a Warning dialog regarding the change.  
 **Note:** If you change the **Submission Type** to **Fixed** on all of the specimens (whether only one specimen on the order or multiple specimens on the order), you will need to manually change the **Urgency** to **Routine** if that is desired.  
 -   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
-
+-  
 1.  Select the **Specimen Type**. Choose a specimen type **(Biopsy, Excision, MOHS, Punch Biopsy 2 mm, Punch Biopsy 3 mm, Punch Biopsy 4 mm, Punch Biopsy 5 mm, Punch Biopsy 6 mm, Punch Biopsy 7 mm,** or **Punch Biopsy 8 mm, Shave Biopsy,** or **Shave ED&C**).  
 **Note:** The selection made in this field will appear in the Specimen Description field above.  
 **Note:** If a particular Punch Biopsy size is not available, you may enter it in the Specimen Description field. If information is already in the Specimen Description field, enter the Punch Biopsy size at the very end of the field and use a comma after the last character in the field before entering the information.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  Select the **Laterality**. Choose the laterality (**Left, Midline,** or **Right**).  
 1.  If desired, enter a description for the specimen in the **Specimen Description** field. This is a required field with a maximum character length of 75 which includes letters, numbers, punctuation, and spaces.  
@@ -8677,8 +8664,7 @@ Note: The Lab Test order must be signed before it is sent to VistA to be accessi
 1.  If desired, enter another lab test.  
 \-or-Select **Accept Order**.  
 \-or-Select **Quit**.  
-**Note:** The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.  
-***
+**Note:** The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.
 
 ## Entering a Fine Needle Aspirate Lab Test
 
@@ -8698,14 +8684,12 @@ Note: The Lab Test order must be signed before it is sent to VistA to be accessi
 1.  Select the **Surgeon/Physician**. Choose a surgeon/physician.  
 1.  If desired, enter a comment in the **Order comment** field. This is an optional field that allows letters, numbers, punctuation, and spaces.  
 1.  If desired, enter a description for the specimen in the **Specimen Description** field. This is a required field with a maximum character length of 75 which includes letters, numbers, punctuation, and spaces.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 **Note**: If you delete a specimen and there are multiple specimens, the specimen numbers will be reordered in the Specimen Description list.  
 1.  Select the Specimen Type. Choose a specimen type (Needle Core Biopsy, Needle Washing, or Slide).  
 **Note**: The selection made in this field will appear in the Specimen Description field above.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  Select the **Laterality**. Choose the laterality (**Left**, **Midline**, or **Right**).  
 1.  Select the **Clinical History** tab. Enter the patient’s history in the Clinical History field. This is a required field.  
@@ -8719,7 +8703,6 @@ Note: The Lab Test order must be signed before it is sent to VistA to be accessi
 \-or- Select **Accept Order**.  
 \-or- Select **Quit**.  
 **Note**: The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.  
-***  
 #### Entering a Gastrointestinal Endoscopy Lab Test
 
 **To place an order for a Gastrointestinal Endoscopy lab test, follow these steps:**
@@ -8739,13 +8722,11 @@ Note: The Lab Test order must be signed before it is sent to VistA to be accessi
 1.  If desired, enter a comment in the **Order comment** field. This is an optional field that allows letters, numbers, punctuation, and spaces.  
 1.  Select the **Technique**. Choose the technique (**Biopsy**, **Brushing**, **EMR**, **FNA**, **Hot Biopsy**, or **Hot Snare**).  
 **Note:** The selection made in this field will appear in the Specimen Description field above.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  Select the **Specimen Type**. Choose a specimen type (**Erosion**, **Lesion**, **Mass**, **Polyp**, **Random**, or **Ulcer**).  
 **Note**: The selection made in this field will appear in the Specimen Description field above.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  If desired, enter a description for the specimen in the **Specimen Description** field. This is a required field with a maximum character length of 75 which includes letters, numbers, punctuation, and spaces.  
 -   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
@@ -8779,13 +8760,11 @@ Note: The Lab Test order must be signed before it is sent to VistA to be accessi
 1.  If desired, enter a comment in the **Order comment** field. This is an optional field that allows letters, numbers, punctuation, and spaces.  
 1.  When **Synovial Cytologic Material** is selected as a specimen, choose the **Source** for the specimen (**Elbow**, **Knee**, or **Toe**). The General Fluid dialog when Synovial Cytologic Material is selected as a specimen will display as shown below.  
 **Note:** The selection made in this field will appear in the Specimen Description field above.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  When **Pleural Cytologic Material** is selected as the specimen, choose the **Laterality** for the specimen of either **Left** or **Right**. The General Fluid dialog when Pleural Cytologic Material is selected as a specimen will display as shown below.  
 **Note**: The selection made in this field will appear in the Specimen Description field above.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  If desired, enter a description for the specimen in the **Specimen Description** field. This is a required field with a maximum character length of 75 which includes letters, numbers, punctuation, and spaces.  
 -   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
@@ -8826,8 +8805,7 @@ Select **Quit**.
 1.  If desired, enter a comment in the **Order comment** field. This is an optional field that allows letters, numbers, punctuation, and spaces.  
 1.  Select the **Specimen Type**. Choose a specimen type of either **Slide** or **Thin Prep/Liquid Based**.  
 1.  If desired, enter a description for the specimen in the **Specimen Description** field. This is a required field with a maximum character length of 75 which includes letters, numbers, punctuation, and spaces.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 **Note**: If you delete a specimen and there are multiple specimens, the specimen numbers will be reordered in the Specimen Description list.  
 1.  Select the **Clinical History** tab. Enter the patient’s history in the Clinical History field. This is a required field.  
@@ -8881,24 +8859,20 @@ Select **Quit**.
 1.  If desired, enter a comment in the **Order comment** field. This is an optional field that allows letters, numbers, punctuation, and spaces.  
 1.  Select the **Specimen Type**. Choose a specimen type (**IR Core Biopsy**, **Open Wedge Biopsy**, or **Percutaneous Core Biopsy**).  
 **Note**: The selection made in this field will appear in the Specimen Description field above.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  Select the **Laterality**. Choose a laterality of either **Left** or **Right**.  
 **Note**: The selection made in this field will appear in the Specimen Description field above.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  Select the **Submission Type**. Choose a submission type (**Fresh**, **Fixed**, or **Intra-Op Consult**).  
 **Note**: The selection made in this field will appear in the Specimen Description field above.  
 **Note**: If **Fresh** or **Intra-Op Consult** is selected, the **Urgency** field will change to **STAT**; you will receive a Warning dialog regarding the change.  
 **Note**: If you change the **Submission Type** to **Fixed** on all of the specimens (whether only one specimen on the order or multiple specimens on the order), you will need to manually change the **Urgency** to **Routine** if that is desired.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  If desired, enter a description for the specimen in the **Specimen Description** field. This is a required field with a maximum character length of 75 which includes letters, numbers, punctuation, and spaces.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 **Note**: If you delete a specimen and there are multiple specimens, the specimen numbers will be reordered in the Specimen Description list.  
 1.  Select the **Clinical History** tab. Enter the patient’s history in the Clinical History field. This is a required field.  
@@ -8916,8 +8890,7 @@ Select **Quit**.
 Select **Accept Order**.  
 \-or-  
 Select **Quit**.  
-**Note**: The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.  
-***
+**Note**: The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.
 
 #### Entering a Tissue Exam Lab Test
 
@@ -8937,8 +8910,7 @@ Select **Quit**.
 1.  If desired, enter a comment in the **Order comment** field. This is an optional field that allows letters, numbers, punctuation, and spaces.  
 1.  Select the **Procedure**. Choose a procedure for the specimen (**Biopsy, Cervical Biopsy, Cervix Resection, Cone Biopsy, Endocervical Curettage (ECC), Endometrial w/Pipelle Curettage, Excision, Fallopian Tube(s) Resection, LEEP, Myomas Resection, Nephrectomy, Ovary(s) Resection, Prostectomy, Resection, Uterus Resection, Vaginal Biopsy,** or **Vulvar Biopsy**).  
 **Note**: The selection made in this field will appear in the Specimen Description field above.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  Select the **Submission Type**. Choose a submission type (**Fresh**, **Fixed**, or **Intra-Op Consult)**.  
 **Note**: The selection made in this field will appear in the Specimen Description field above.  
@@ -8959,8 +8931,7 @@ Select **Quit**.
 Select **Accept Order**.  
 \-or-  
 Select **Quit**.  
-**Note**: The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.  
-***
+**Note**: The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.
 
 #### Entering a Urine Lab Test
 
@@ -8980,8 +8951,7 @@ Select **Quit**.
 1.  If desired, enter a comment in the **Order comment** field. This is an optional field that allows letters, numbers, punctuation, and spaces.  
 1.  Select the **Specimen Type**. Choose a specimen type (**Bladder Wash**, **Catheterized Urine**, **Ileal Conduit**, **Left Ureter Wash**, **Right Ureter Wash**, or **Voided**).  
 1.  If desired, enter a description for the specimen in the **Specimen Description** field. This is a required field with a maximum character length of 75 which includes letters, numbers, punctuation, and spaces.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 **Note**: If you delete a specimen and there are multiple specimens, the specimen numbers will be reordered in the Specimen Description list.  
 1.  Select the **Clinical History** tab. Enter the patient’s history in the Clinical History field. This is a required field.  
@@ -8996,8 +8966,7 @@ Select **Quit**.
 Select **Accept Order**.  
 \-or-  
 Select **Quit**.  
-**Note**: The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.  
-***
+**Note**: The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.
 
 #### Entering a Urology, Bladder/Ureter Lab Test
 
@@ -9018,21 +8987,18 @@ Select **Quit**.
 1.  If desired, enter a comment in the **Order comment** field. This is an optional field that allows letters, numbers, punctuation, and spaces.  
 1.  Select the **Specimen Type**. Choose a specimen type (**Biopsy**, **Cystectomy** **Partial Cystectomy** **Total, Excision**, **Nephrectomy** **Partial, Nephrectomy** **Total**, or **TURBT**).  
 **Note**: The selection made in this field will appear in the Specimen Description field above.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  Select the **Laterality**. Choose a laterality of either **Left** or **Right**.  
 **Note**: The selection made in this field will appear in the Specimen Description field above.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  Select the **Submission Type**. Choose a submission type (**Fresh**, **Fixed**, or **Intra-Op Consult**).  
 **Note**: The selection made in this field will appear in the Specimen Description field above.  
 **Note**: If **Fresh** or **Intra-Op Consult** is selected, the **Urgency** field will change to **STAT**; you will receive a Warning dialog regarding the change.  
 **Note**: If you change the **Submission Type** to **Fixed** on all of the specimens (whether only one specimen on the order or multiple specimens on the order), you will need to manually change the **Urgency** to **Routine** if that is desired.  
 1.  If desired, enter a description for the specimen in the **Specimen Description** field. This is a required field with a maximum character length of 75 which includes letters, numbers, punctuation, and spaces.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 **Note**: If you delete a specimen and there are multiple specimens, the specimen numbers will be reordered in the Specimen Description list.  
 1.  Select the **Clinical History** tab. Enter the patient’s history in the Clinical History field. This is a required field that allows letters, numbers, punctuation, and spaces.  
@@ -9046,8 +9012,7 @@ Select **Quit**.
 Select **Accept Order**.  
 \-or-  
 Select **Quit**.  
-**Note:** The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.  
-***
+**Note:** The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.
 
 #### Entering a Urology, Prostate Lab Test
 
@@ -9087,12 +9052,10 @@ Select **Quit**.
 **Note**: The selection made in this field will appear in the Specimen Description field above.  
 **Note**: If **Fresh** or **Intra-Op Consult** is selected, the **Urgency** field will change to **STAT**; you will receive a Warning dialog regarding the change.  
 **Note**: If you change the **Submission Type** to **Fixed** on all of the specimens (whether only one specimen on the order or multiple specimens on the order), you will need to manually change the **Urgency** to **Routine** if that is desired.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 1.  If desired, enter a description for the specimen in the **Specimen Description** field. This is a required field with a maximum character length of 75 which includes letters, numbers, punctuation, and spaces.  
--   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.  
-***
+-   If desired, select the **X** button to delete the entry. Deleting the entry will result in a CPRS Patient Chart Warning dialog box; select the **Yes** button to confirm the deletion or select the **No** button to cancel the deletion.
 
 **Note**: If you delete a specimen and there are multiple specimens, the specimen numbers will be reordered in the Specimen Description list.  
 1.  Select the **Clinical History** tab. Enter the patient’s history in the Clinical History field. This is a required field that allows letters, numbers, punctuation, and spaces.  
@@ -9108,7 +9071,6 @@ Select **Accept Order**.
 \-or-  
 Select **Quit**.  
 **Note:** The Lab Test order must be signed before it is sent to VistA to be accessioned and processed. You can either sign the order now or wait until later.  
-***  
 ### Radiology and Imaging
 
 The Reason for Study and the Clinical History fields are now two separate entries. Developers made this change to support a new system. The Reason for Study field is now required and has a limit of 64 characters (numbers, letters, space, and punctuation). The Clinical History field is optional and has no character limit.
@@ -9408,8 +9370,7 @@ The Word Processing Order dialog displays.
 1.  Enter a start date and time by doing one of the following:  
 -   entering a date (e.g. 6/21/01 or June 21, 2001).  
 -   entering a date formula (e.g. t-200).  
--   pressing the ![Click on this icon button to bring up a calendar.](f3334234edf834f85c6579298ccac9dd.jpg) button to bring up a calendar.  
-***
+-   pressing the ![Click on this icon button to bring up a calendar.](f3334234edf834f85c6579298ccac9dd.jpg) button to bring up a calendar.
 
 1.  Enter a stop date and time by doing one of the following:  
 -   entering a date (e.g. 6/21/01 or June 21, 2001).  
@@ -9543,8 +9504,7 @@ The Alert when Results dialog displays.
 With CPRS, users can flag an order to draw attention to it. When an order is flagged, the word “Flagged” will appear in the Orders column and the Service or Event column for the flagged order displays red. Below some points about flags are further explained.
 
 -   **Multiple recipients:** CPRS enables users to send the flag to multiple individuals. The user flagging the order can choose from a list of possible recipients and those recipients will receive an alert that the order has been flagged.  
-**Note:** A recipient must have the FLAG ORDER FOR CLARIFICATION notification/alert enabled to receive the alert.  
-***
+**Note:** A recipient must have the FLAG ORDER FOR CLARIFICATION notification/alert enabled to receive the alert.
 
 -   **No Action Alert:** The user flagging the order can also check the No Action Alert checkbox to receive an alert if none of the recipients acts on the flag before the specified time. When the user checks the No Action Alert checkbox, the time in the field is the default time that is controlled by a parameter. Your site can set a default time or leave it empty. If the sites do not enter a default time, the default time is 24 hours. However, the site can set the default time to a different amount of time, such as 8 hours, or 4 hours, or whatever your site chooses. But, when the user checks the No Action Alert, the user can change the time.  
 -   **Flag Information in Order Details:** CPRS records the name of the person who flagged the order and the date and time that it was flagged. CPRS also tracks comments on the flag and who unflags an order with the date and time.  
@@ -9582,15 +9542,13 @@ For a user to unflag an order, the user must meet one of the requirements:
 -   the user is assigned the ORES key  
 -   the user is assigned another security key that the site designates (the sit can determine which keys can unflag orders)  
 -   the user who flagged the order  
--   the user is a flag order recipient  
-***
+-   the user is a flag order recipient
 
 If a user tries to unflag an order, but does not have the correct key, the following error message will display:
 
 You are not allowed to unflag this order based on your security keys and the order type.
 
-**Note:** The above message is the standard message. Sites can also add their own text if they choose.  
-***
+**Note:** The above message is the standard message. Sites can also add their own text if they choose.
 
 If the user has the right security key, the user can remove the flag from an order very simply. The user must enter a reason for removing the flag (the reason must be a minimum of 4 characters, or the OK button will be disabled).  
 In the order's detailed display, CPRS will record the name of the person who removed the flag, the reason entered for removing the flag, and the date and time that person removed it.
@@ -9600,8 +9558,7 @@ In the order's detailed display, CPRS will record the name of the person who rem
 1.  Select the order you want to unflag.  
 1.  Select **Action \| Unflag**.  
 1.  Enter a reason (must be at least 4 characters).  
-1.  Select **OK**.  
-***
+1.  Select **OK**.
 
 ## Overview of CPRS/POE Functionality
 
@@ -9764,22 +9721,16 @@ The notes that meet the criteria you specified will appear on the Notes tab.
 
 CPRS enables users to set a maximum number of notes that should display when the Notes tab loads. The purpose of defining a maximum number of notes is to avoid loading a large amount of information that might slow performance. When there is a value in the Max Number to Return field (2b above), CPRS has some additional features on the tree view: a “Show More” item and another display category called “Older signed notes with recent addenda”.
 
-1.  **Show More:** If the user has more notes available than the maximum allowed, a “Show More” entry displays in the tree view. If the user double clicks “Show More”, CPRS downloads another set of notes as the initial maximum. If there are still more notes available, “Show More” appears again until there are no more notes to display.  
-***
+1.  **Show More:** If the user has more notes available than the maximum allowed, a “Show More” entry displays in the tree view. If the user double clicks “Show More”, CPRS downloads another set of notes as the initial maximum. If there are still more notes available, “Show More” appears again until there are no more notes to display.
 
-For example, if the selected patient has 300 total notes and the Maximum Number of Notes is set to 30, when the Notes tab initially opens, 30 Notes will be downloaded, and their information displayed in the tree view. A Show More item will display at the end of the tree view because there are more notes. If the user selects Show More, another 30 notes will be downloaded and listed. If the user selects Show More again, another 30 notes and the Show More item will display. This will continue until all the notes have been listed.  
-***
+For example, if the selected patient has 300 total notes and the Maximum Number of Notes is set to 30, when the Notes tab initially opens, 30 Notes will be downloaded, and their information displayed in the tree view. A Show More item will display at the end of the tree view because there are more notes. If the user selects Show More, another 30 notes will be downloaded and listed. If the user selects Show More again, another 30 notes and the Show More item will display. This will continue until all the notes have been listed.
 
 ![This screen capture shows the Notes tab tree view with the Show More item as the last item in the list.](8e070fddea457bccb9e533dfab8686cf.png)  
-***  
-1.  **Older signed notes with recent addenda:** Sometimes one or more notes outside the maximum range will have an addendum inside the range. These notes are added to the bottom of the list, under the date of the parent note. In this example, the last two notes have recent addenda but are well outside the range of the rest of the notes. This makes it appear that there are no notes between the last normal note (dated April 2019) and the older parent note with the recent addendum (dated March 2009).  
-***
+1.  **Older signed notes with recent addenda:** Sometimes one or more notes outside the maximum range will have an addendum inside the range. These notes are added to the bottom of the list, under the date of the parent note. In this example, the last two notes have recent addenda but are well outside the range of the rest of the notes. This makes it appear that there are no notes between the last normal note (dated April 2019) and the older parent note with the recent addendum (dated March 2009).
 
-![This screen capture shows the Notes tree view with a listing of notes, including 2 with addenda. ](35515cc14991e72b8d16ce41ef987ad5.png)  
-***
+![This screen capture shows the Notes tree view with a listing of notes, including 2 with addenda. ](35515cc14991e72b8d16ce41ef987ad5.png)
 
-To prevent the appearance of a gap in notes, these older notes are now separated from the rest of the notes after the “Show More” entry, marked with the label “Older signed notes with recent addenda”.  
-***
+To prevent the appearance of a gap in notes, these older notes are now separated from the rest of the notes after the “Show More” entry, marked with the label “Older signed notes with recent addenda”.
 
 ![This screen capture shows the new tree view display. There is a Show More item. Below that, is the Older signed notes with recent addenda. ](69aecdca4eccfca0ff1ce49fc5a3f35e.png)  
 As shown above, both Show More and Older signed notes with recent addenda can be in the tree view.
@@ -10643,39 +10594,34 @@ Here, you will be able to enable/disable highlighting, change the highlight colo
 
 **Auditing Copying and Pasting into Clinical Documents**  
 To improve clinical documentation, CPRS now enables individuals designated by medical centers to review clinical documents to audit how much text within the documents has been copied and pasted from another location.  
-**Note:** This feature is new with CPRS GUI v31b and patch TIU\*1.0\*290. Only documents created after the installation of these patches will have copied and pasted text tracked.  
-***
+**Note:** This feature is new with CPRS GUI v31b and patch TIU\*1.0\*290. Only documents created after the installation of these patches will have copied and pasted text tracked.
 
 Excessive copying and pasting has at least these impacts on healthcare:  
 -   unnecessary duplication of information  
 -   lengthening of notes and making chart reading more difficult  
 -   slowing the retrieval of notes by the workstation  
--   improving accuracy of the note and the patient information  
-***
+-   improving accuracy of the note and the patient information
 
 To help sites better audit what text is copied and pasted into clinical documents, CPRS defines  
 -   who can view pasted text  
 -   what constitutes tracked pasted text  
 -   how CPRS will display pasted text  
 -   how the person auditing can turn on or off the display of pasted text  
--   how the auditor can view the pasted text  
-***
+-   how the auditor can view the pasted text
 
 **Who Can View Pasted Text?**  
 In CPRS, pasted text can be viewed by the document author and cosigner before signature. When the note is signed, the displayed text becomes a part of the note and is no longer visible to the author or cosigner unless they belong to one of the user classes that the site has designated to be able to view pasted text.  
 After signature, only individuals assigned to specific User Classes will be able to view text that has been copied and pasted. With CPRS v31b, three User Classes are assigned to be able to audit copying and pasting by defaults:  
 -   CHIEF, MIS  
 -   CHIEF, HIMS  
--   PRIVACY ACT OFFICER  
-***
+-   PRIVACY ACT OFFICER
 
 In addition, sites can give other user classes the ability to view copy/paste data.  
 **What Constitutes a Tracked Paste?**  
 If a user pastes text into a clinical document within CPRS, CPRS will track that as a paste if it meets several criteria. When a user copies information within CPRS, CPRS will store characteristics about the copied text if it is available, such as the title and author of the document it came from, or whatever information it can about the source. The information gathered when text is copied can then be displayed if the text is pasted.  
 If text is copied from outside of CPRS or it is altered after being pasted into CPRS, the source information may simply read “Outside of current CPRS tracking,” meaning that CPRS does not know where it came from.  
 **Character Limits for Pasted Text**  
-A 20,000-character limit is hard-coded for tracking the source of a paste. If a paste exceeds 20,000 characters, CPRS will not try to track the source. It will still show on the report and the percentage will be calculated as discussed below. So, the text is tracked, but the source is not determined.  
-***
+A 20,000-character limit is hard-coded for tracking the source of a paste. If a paste exceeds 20,000 characters, CPRS will not try to track the source. It will still show on the report and the percentage will be calculated as discussed below. So, the text is tracked, but the source is not determined.
 
 **Other Copy/Paste Characteristics that Sites Can Set**  
 There are several criteria that determine whether a copy and paste will be tracked or displayed with identifying marks in CPRS. Sites have some control over how these criteria are set. The criteria are as follows:  
@@ -10683,11 +10629,9 @@ There are several criteria that determine whether a copy and paste will be track
 -   **Percentage Check:** Because providers often edit text after it is pasted, CPRS checks what percentage of the original paste is in the document. For example, if this percentage is set at 85 percent and the user pastes some text but then edits it so that only 75 percent of the original text remains, it will not display as pasted text. The default is 90% unless changed by your site.  
 -   **Role:** Until, the author and cosigner can see highlighted pasted text. After the note is signed, only users in specific user classes will see the pasted text.  
 -   **Exclude Note Title:** Site can specify notes that will not be tracked for copy/paste.  
--   **Exclude Application:** Sites can specify that specified applications are not tracked for copy/paste. One application (netspeak.exe) is already included in this parameter.  
-***
+-   **Exclude Application:** Sites can specify that specified applications are not tracked for copy/paste. One application (netspeak.exe) is already included in this parameter.
 
-Clinical Application Coordinators (CACs) set the values for these parameters.  
-***
+Clinical Application Coordinators (CACs) set the values for these parameters.
 
 **When Text Will Not Display as Pasted**  
 In addition to these parameters, certain actions will determine whether pasted text displays in CPRS with its identifiers.  
@@ -10699,8 +10643,7 @@ CPRS has several options to determine how pasted text will display to reviewers,
 -   Bold  
 -   Italics  
 -   Underline  
--   Highlight  
-***
+-   Highlight
 
 Auditing users can select to make text bold and italicized or whatever combination or individual text attribute they would like to show that a user pasted it. The user’s selection is stored in a CPRS parameter, but it is set in the CPRS GUI.  
 Auditing users can also turn on or off the identifying of copy/paste text in the detailed display so that users can see what was originally pasted with text that was changed highlighted, or the feature can be turned off. The edited text is in the body of the note, while the original text is marked in the detailed display.  
@@ -10711,12 +10654,10 @@ Auditing users can also turn on or off the identifying of copy/paste text in the
 Bold  
 Italics  
 Underline  
-Highlight  
-***
+Highlight
 
 ![This screen capture shows the Tools \| Options dialog on the Copy/Paste tab.  The choices of how the pasted text will display in CPRS are shown.  The toggle to turn on of off the display of pasted text is also displayed.](5a466c53eadc570c0879af062a50eab5.png)  
-From the Tools \| Options dialog on the Copy/Paste tab, the auditing user can choose any combination of the way CPRS should display the options.  
-***
+From the Tools \| Options dialog on the Copy/Paste tab, the auditing user can choose any combination of the way CPRS should display the options.
 
 1.  If you select Highlight, you may also use the default color or choose a different color. To select a different color, select the drop-down arrow and choose the color:  
 Black  
@@ -10733,21 +10674,17 @@ Yellow
 Blue  
 Fuchsia  
 Aqua  
-White  
-***
+White
 
 1.  If you would like to see in the detailed display the original text that was replaced, check the Display differences between what was paste in details pane check box.  
-1.  When done, select OK.  
-***
+1.  When done, select OK.
 
 **Auditing Pasted Text in Clinical Documents**  
 When a user is in the appropriate user class, the user can view pasted text in signed notes according to the parameters the site has set for what constitutes pasted text. For authorized users, the notes will display with a Pasted Data pane. In this pane are two areas: a listing of all items that were pasted into the note. The items are identified as New before the note is saved or signed and by the date after it is saved or signed.  
-When the user selects an item by the date, the text of the paste displays in a pane next to the list of pastes. Also, the text displays as a pasted in the way the user selected (bold, highlighted, underlined, italicized, or a combination of these attributes).  
-***
+When the user selects an item by the date, the text of the paste displays in a pane next to the list of pastes. Also, the text displays as a pasted in the way the user selected (bold, highlighted, underlined, italicized, or a combination of these attributes).
 
 ![This screen capture shows the Notes tab with the pasted text highlighted. It also shows the new Pasted Data pane, where the user selects an item of pasted text to display it in the area next to the list of selections. It is then displayed in the main note in the manner selected by the user. In this example, it is highlighted in yellow and underlined.](1a612cf53cc6fa230dd17f7a0f2f4059.png)  
-This screen capture shows a progress note on the Notes tab. The person viewing the note is in a class that enables them to see pasted text. The Pasted Data pane enables the user to select items that have been pasted so that they can be reviewed.  
-***
+This screen capture shows a progress note on the Notes tab. The person viewing the note is in a class that enables them to see pasted text. The Pasted Data pane enables the user to select items that have been pasted so that they can be reviewed.
 
 **To view pasted text in CPRS, use these steps:**  
 1.  On the Notes tab, if you have been assigned as a user who can audit and there is text that has been pasted into the note you are viewing, you will see a new Pasted Data pane below the main note pane.  
@@ -10758,11 +10695,9 @@ This screen capture shows a progress note on the Notes tab. The person viewing t
 **From:** The Source (if VistA the source will be known, if from outside VistA, it may just read from outside)  
 **Copied from Patient:** This will tell what patient the data was copied from if known.  
 **Percentage:** What percentage of the original text was pasted.  
-**Pasted Text:** This displays the text that was pasted. This is especially useful for user who might have visual difficulties.  
-***
+**Pasted Text:** This displays the text that was pasted. This is especially useful for user who might have visual difficulties.
 
-1.  To view other pasted entries, simply select the appropriate item (or date) in the list.  
-***
+1.  To view other pasted entries, simply select the appropriate item (or date) in the list.
 
 # Consults
 
@@ -11063,8 +10998,7 @@ Ordering a COMMUNITY CARE –DS or ADMIN Consult Using the ADMIN Key:
 1.  From the Consult to Service/Specialty section, select the Community Care Direct Schedule or Administrative specialty required. A consult template displays.  
 ![Consult template is displayed.](e9e331b19d32d0f4469ea8272d448a9e.jpg)
 
-1.  Complete the consult template.  
-***
+1.  Complete the consult template.
 
 1.  Click OK. The completed fields display in the Reason for Request of the Consult Order Dialog.  
 ![Order a Consult screen.](c825016af92f592bd8f38aad525b62eb.jpg)
@@ -11624,8 +11558,7 @@ Please note that the order of the reports may be different depending on the conf
 -   Outpatient Diagnosis  
 -   Outpatient Encounter  
 -   Skin Tests  
--   Treatment Provided  
-***
+-   Treatment Provided
 
 -   Pharmacy  
 -   All Medications  
@@ -11767,8 +11700,7 @@ Select **Print** (text format) or **Print Data From Table** (table format).
 
 ![Printing data from a table by right-clicking on the appropriate row and selecting the Print option.](39e55bb421bfe525cc67800a3b374df4.gif)
 
-**You can print data from a table using the context that comes up by right-clicking on the appropriate main report area or a data row and selecting the Print option.**  
-***
+**You can print data from a table using the context that comes up by right-clicking on the appropriate main report area or a data row and selecting the Print option.**
 
 ## Copying Data from a Report
 
