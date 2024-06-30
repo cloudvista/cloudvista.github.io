@@ -395,6 +395,7 @@ Autopsy
 **+** Event Capture  
 PCE Data Summary Report  
 Patient Summary Report  
+
 ## Sorting a Report (Table View)
 
 If a report is available in a table view, the table can be sorted alphabetically, numerically, or by date. To sort data in a report table:  
