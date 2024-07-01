@@ -2,7 +2,7 @@
 CPRS: GUI Version
 June 2023
 
-### In this document
+### Outline
 ```text
 Purpose of CPRS Setup Guide
 Overview of CPRS

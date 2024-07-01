@@ -2,7 +2,7 @@
 CPRS: GUI Version
 April 2024
 ∏
-### In this document
+### Outline
 ```text
 Introduction
 General Application Settings
@@ -59,76 +59,76 @@ Index
 [*Event Notification 17*](#event-notification)  
 [*Web Access 17*](#web-access)
 [**Personal Preferences (GUI)** ](#_1soa8tw)**18**  
-[General Tab 18](#general-tab)
-[Notifications Tab 19](#notifications-tab)
-[Order Checks 20](#order-checks)
-[List/Team 20](#_34g0dwd)
-[Notes tab 23](#notes-tab)
-[Reports Tab 24](#reports-tab)
-[Surrogates Tab 24](#_xvir7l)
+[General Tab 18](#general-tab)  
+[Notifications Tab 19](#notifications-tab)   
+[Order Checks 20](#order-checks).  
+[List/Team 20](#_34g0dwd).  
+[Notes tab 23](#notes-tab).  
+[Reports Tab 24](#reports-tab).  
+[Surrogates Tab 24](#_xvir7l).  
 [**Patient Selection Settings** ](#_4cnxrhp)**25**
-[Patient List Settings 25](#patient-list-settings)
-[Notifications 25](#notifications)
-[**Graphing Configuration** ](#_2rt81pi)**26**
-[Disabling CPRS Graphing 26](#disabling-cprs-graphing)
-[Disabling CPRS Graphing Background Processing 26](#disabling-cprs-graphing-background-processing)
-[Disabling Data Sources 27](#disabling-data-sources)
-[Editing Public Display Options and Views 29](#editing-public-display-options-and-views)
-[Creating Graph Reports 29](#creating-graph-reports)
-[Creating Public Views 30](#creating-public-views)
-[Creating Graph Reports 30](#creating-graph-reports-1)
-[Creating a Graph-Reports Menu 31](#creating-a-graph-reports-menu)
-[Adding Your Graph Menu to the Available Reports List 32](#adding-your-graph-menu-to-the-available-reports-list)
+[Patient List Settings 25](#patient-list-settings).  
+[Notifications 25](#notifications).  
+[**Graphing Configuration** ](#_2rt81pi)**26**  
+[Disabling CPRS Graphing 26](#disabling-cprs-graphing).  
+[Disabling CPRS Graphing Background Processing 26](#disabling-cprs-graphing-background-processing).  
+[Disabling Data Sources 27](#disabling-data-sources).  
+[Editing Public Display Options and Views 29](#editing-public-display-options-and-views).  
+[Creating Graph Reports 29](#creating-graph-reports).  
+[Creating Public Views 30](#creating-public-views)   
+[Creating Graph Reports 30](#creating-graph-reports-1). 
+[Creating a Graph-Reports Menu 31](#creating-a-graph-reports-menu). 
+[Adding Your Graph Menu to the Available Reports List 32](#adding-your-graph-menu-to-the-available-reports-list). 
 [**Remote Data View Configuration** ](#_16yibxb)**34**
-[Master Patient Index (MPI) 34](#master-patient-index-mpi)
-[Configuring Remote Data Views 34](#configuring-remote-data-views)
-[Security 35](#security)
-[Department of Defense Data 35](#department-of-defense-data)
+[Master Patient Index (MPI) 34](#master-patient-index-mpi). 
+[Configuring Remote Data Views 34](#configuring-remote-data-views). 
+[Security 35](#security). 
+[Department of Defense Data 35](#department-of-defense-data). 
 [**Overview of Clinical Indicators Data Capture** ](#_3qy5ul4)**37**
-[Enabling the Master Clinical Indicators Data Capture Switch 37](#enabling-the-master-clinical-indicators-data-capture-switch)
-[Disabling the Main Clinical Indicators Data Capture Switch 38](#disabling-the-main-clinical-indicators-data-capture-switch)
-[Assigning, Enabling, Disabling, and Reporting on the Clinical Indicators Data Capture Provider Switch 39](#assigning-enabling-disabling-and-reporting-on-the-clinical-indicators-data-capture-provider-switch)
-[*Managing the CIDC Provider Switch for Individual Providers 39*](#managing-the-cidc-provider-switch-for-individual-providers)
-[*Enabling the CIDC Provider Switch for Multiple Providers Simultaneously 41*](#enabling-the-cidc-provider-switch-for-multiple-providers-simultaneously)
-[*Assigning but Disabling the CIDC Provider Switch for Multiple Providers Simultaneously 43*](#assigning-but-disabling-the-cidc-provider-switch-for-multiple-providers-simultaneously)
-[*Creating Reports on the CIDC Provider Switch 45*](#creating-reports-on-the-cidc-provider-switch)
+[Enabling the Master Clinical Indicators Data Capture Switch 37](#enabling-the-master-clinical-indicators-data-capture-switch). 
+[Disabling the Main Clinical Indicators Data Capture Switch 38](#disabling-the-main-clinical-indicators-data-capture-switch). 
+[Assigning, Enabling, Disabling, and Reporting on the Clinical Indicators Data Capture Provider Switch 39](#assigning-enabling-disabling-and-reporting-on-the-clinical-indicators-data-capture-provider-switch). 
+[*Managing the CIDC Provider Switch for Individual Providers 39*](#managing-the-cidc-provider-switch-for-individual-providers). 
+[*Enabling the CIDC Provider Switch for Multiple Providers Simultaneously 41*](#enabling-the-cidc-provider-switch-for-multiple-providers-simultaneously)  
+[*Assigning but Disabling the CIDC Provider Switch for Multiple Providers Simultaneously 43*](#assigning-but-disabling-the-cidc-provider-switch-for-multiple-providers-simultaneously)  
+[*Creating Reports on the CIDC Provider Switch 45*](#creating-reports-on-the-cidc-provider-switch)  
 [**SNOMED to Describe Problems in CPRS** ](#_263g4sx)**51**
-[A New Mail Group for Term Review 51](#a-new-mail-group-for-term-review)
-[Adding Members to the OR CACS Mail Group 52](#adding-members-to-the-or-cacs-mail-group)
-[NTRT Request Bulletin Sent to OR CACS Mail Group 54](#ntrt-request-bulletin-sent-to-or-cacs-mail-group)
+[A New Mail Group for Term Review 51](#a-new-mail-group-for-term-review)  
+[Adding Members to the OR CACS Mail Group 52](#adding-members-to-the-or-cacs-mail-group)  
+[NTRT Request Bulletin Sent to OR CACS Mail Group 54](#ntrt-request-bulletin-sent-to-or-cacs-mail-group)  
 [**Cover Sheet Settings** ](#_l8qf0q)**56**
-[Background / Foreground Retrieval 56](#background--foreground-retrieval)
-[*Customizing the Cover Sheet Layout 58*](#_1qoc8b1)
-[Content Criteria 63](#content-criteria)
-[*Problem List 63*](#problem-list)
-[*Allergies 63*](#allergies)
-[*Postings 63*](#postings)
-[*Medications 63*](#medications)
-[*Reminders 64*](#reminders)
-[*Lab Results 64*](#lab-results)
-[*Vitals 64*](#vitals)
-[*Visits/Admissions 64*](#visitsadmissions)
-[*Immunizations 64*](#immunizations)
-[*Women’s Health 64*](#womens-health)
+[Background / Foreground Retrieval 56](#background--foreground-retrieval)  
+[*Customizing the Cover Sheet Layout 58*](#_1qoc8b1)  
+[Content Criteria 63](#content-criteria)  
+[*Problem List 63*](#problem-list)  
+[*Allergies 63*](#allergies)  
+[*Postings 63*](#postings)  
+[*Medications 63*](#medications)  
+[*Reminders 64*](#reminders)  
+[*Lab Results 64*](#lab-results)  
+[*Vitals 64*](#vitals)  
+[*Visits/Admissions 64*](#visitsadmissions)  
+[*Immunizations 64*](#immunizations)  
+[*Women’s Health 64*](#womens-health)  
 [**Problem Tab Settings** ](#_358dxoj)**65**
-[Default Views 65](#default-views)
-[Setting Up Problem Selection Lists 65](#setting-up-problem-selection-lists)
-[*What Is a Selection List? 66*](#what-is-a-selection-list)
-[*Assigning Problem Selection Lists 67*](#assigning-problem-selection-lists)
-[*User Access and Privileges 67*](#user-access-and-privileges)
+[Default Views 65](#default-views)  
+[Setting Up Problem Selection Lists 65](#setting-up-problem-selection-lists)  
+[*What Is a Selection List? 66*](#what-is-a-selection-list)  
+[*Assigning Problem Selection Lists 67*](#assigning-problem-selection-lists)  
+[*User Access and Privileges 67*](#user-access-and-privileges)  
 [**Medications Tab Settings** ](#_1kdo7wc)**68**
-[Medication List Content 68](#medication-list-content)
-[*Active 68*](#active)
-[*Pending 68*](#pending)
-[*Non-active 68*](#non-active)
-[How Long to Display Expired and Discontinued Meds 68](#how-long-to-display-expired-and-discontinued-meds)
-[New Medication Orders 69](#new-medication-orders)
-[*Inpatient Medication Orders for Outpatients: Setting the ORWDX NEW MED Parameter 70*](#_2eclud0)
-[*Additional Options 70*](#additional-options)
+[Medication List Content 68](#medication-list-content)  
+[*Active 68*](#active)  
+[*Pending 68*](#pending)  
+[*Non-active 68*](#non-active)  
+[How Long to Display Expired and Discontinued Meds 68](#how-long-to-display-expired-and-discontinued-meds)  
+[New Medication Orders 69](#new-medication-orders)  
+[*Inpatient Medication Orders for Outpatients: Setting the ORWDX NEW MED Parameter 70*](#_2eclud0)  
+[*Additional Options 70*](#additional-options)  
 [**Orders Tab Settings** ](#_44dbqk5)**72**
-[Order View 72](#order-view)
-[*Expiring Orders 73*](#expiring-orders)
-[*Active Orders 73*](#active-orders)
+[Order View 72](#order-view)  
+[*Expiring Orders 73*](#expiring-orders)  
+[*Active Orders 73*](#active-orders)  
 [*Recent Activity 74*](#recent-activity)
 [*Recently Expired 74*](#recently-expired)
 [*Unified Action Profile 74*](#_3im3ia3)
