@@ -10,16 +10,6 @@ docs/cprs/md/[doc]/index.md
 6. user
 7. user-ro
 
-docs/fm/md/[doc]/index.md
-1. dde
-2. developer
-3. key-index
-4. screenman
-5. technical
-6. user1
-7. user2
-
-
 
 __Source__  
 * https://www.va.gov/vdl
@@ -33,4 +23,4 @@ __Conversion__
 4. gdoc [saveAs] html
 5. gdoc [saveAs] docx
 6. docx [writeage:saveAs] md
-7. md [vscode] clean3 (find/replace)
+7. md [vscode] clean3
