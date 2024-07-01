@@ -2,22 +2,22 @@
 
 __Path__  
 docs/cprs/md/[doc]/index.md
-1. install
+1. installation
 2. setup
 3. starting-LM
-4. tech
-5. tech-LM
+4. technical
+5. technical-LM
 6. user
 7. user-ro
 
-docs/fm/md/[doc]/index.md
-1. dde
+docs/fm22_2/md/[doc]/index.md
+1. entity-utility
 2. developer
-3. key-index
+3. key-index-tutorial
 4. screenman
-5. technical
-6. user1
-7. user2
+5. technical_guide
+6. user_guide
+7. user_guide-advanced
 
 
 
