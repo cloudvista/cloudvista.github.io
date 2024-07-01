@@ -1,23 +1,23 @@
 ### CPRS Docs
 
 __Path__  
-docs/cprs/md/[doc]/index.md
-1. installation
+docs/cprs/[md|htm]]/[doc]/index.md
+1. install
 2. setup
 3. starting-LM
 4. technical
 5. technical-LM
 6. user
-7. user-ro
+7. user-RO
 
 docs/fm22_2/md/[doc]/index.md
-1. entity-utility
-2. developer
-3. key-index-tutorial
+1. developer
+2. entity_utility
+3. key_index
 4. screenman
-5. technical_guide
-6. user_guide
-7. user_guide-advanced
+5. technical
+6. user
+7. user-advanced
 
 
 
