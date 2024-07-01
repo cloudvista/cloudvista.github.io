@@ -1,14 +1,24 @@
 ### CPRS Docs
 
 __Path__  
-docs/cprs/md/[doc]/index.md
+cprs/md/[doc]/index.md
 1. install
 2. setup
 3. starting-LM
-4. tech
-5. tech-LM
+4. technical
+5. technical-LM
 6. user
-7. user-ro
+7. user-RO
+
+fm22_2/md/[doc]/index.md
+1. developer
+2. entity_utility
+3. key_index
+4. screenman
+5. technical
+6. user
+7. user-advanced
+
 
 
 __Source__  
@@ -23,4 +33,4 @@ __Conversion__
 4. gdoc [saveAs] html
 5. gdoc [saveAs] docx
 6. docx [writeage:saveAs] md
-7. md [vscode] clean3
+7. md [vscode] clean3 (find/replace)
