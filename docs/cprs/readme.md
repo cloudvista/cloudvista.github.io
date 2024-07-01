@@ -1,7 +1,7 @@
 ### CPRS Docs
 
 __Path__  
-docs/cprs/[md|htm]]/[doc]/index.md
+docs/cprs/md/[doc]/index.md
 1. install
 2. setup
 3. starting-LM
