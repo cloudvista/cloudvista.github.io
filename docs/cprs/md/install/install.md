@@ -1,9 +1,8 @@
 # Installation Guide
-CPRS: GUI Version  
+CPRS: GUI Version
 April 2007
 
-
-### Outline
+### In this document
 ```text
 We recommend that you install CPRS first in a training or test account that is a mirror of your production account.
 Update the Terminal Type file for the VT100s, if necessary.
@@ -37,14 +36,12 @@ OE/RR 3.0 Enhancements since 12/97 Release
 Released Patches
 ```
 
-
-
 ### Contents
 
 [**Introduction 6**](#introduction)  
-[**Pre-Install Instructions 7**](#pre-install-instructions)
 [**Pre-Install Instructions 7**](#pre-install-instructions)  
-[ We recommend that you install CPRS first in a training or test account that is a mirror of your production account. 7](#we-recommend-that-you-install-cprs-first-in-a-training-or-test-account-that-is-a-mirror-of-your-production-account)  
+[**Pre-Install Instructions 7**](#pre-install-instructions)  
+[ We recommend that you install CPRS first in a training or test account that is a mirror of your production account. 7] (#we-recommend-that-you-install-cprs-first-in-a-training-or-test-account-that-is-a-mirror-of-your-production-account)  
 [ Update the Terminal Type file for the VT100s, if necessary. 7](#update-the-terminal-type-file-for-the-vt100s-if-necessary)  
 [ Ensure that Patch OR\*2.5\*49 is implemented. 8](#ensure-that-patch-or2549-is-implemented)  
 [ Make sure all required V](#make-sure-all-required-vista-software-is-installed)*IST*A software is installed 8  
@@ -209,15 +206,15 @@ It is recommended that CPRS test sites increase their symbol table to 204,800.
 
 To prevent data corruption and/or interruption of background processes, the following pre-installation tasks **must** be completed **prior to the installation** of the CPRS KIDS Build. This ensures that the installation is not running simultaneously with CMOP data transmissions, background release filer, or other associated tasks.
 
-CMOP pre-install tasks, cont’d  
+CMOP pre-install tasks, cont’d
 ***
 
 **Step 1** – Determine System Status for CMOP
 
-Use the *Display System Setup* [PSXR STATUS] option from the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to review the CMOP System Status. CMOP can be inactivated only if line one of the display includes the text, “No current transmission.” If this text is not displayed, a CMOP process is currently running and **inactivation** cannot take place. Once the task is completed, the display will read “No current transmission,” as in line one of the CMOP System Status report shown below. If line one does not contain the text “No current transmission,” try again later. Normally, CMOP tasks require only a few minutes to complete, so the waiting time to retry should be minimal.  
+Use the *Display System Setup* [PSXR STATUS] option from the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to review the CMOP System Status. CMOP can be inactivated only if line one of the display includes the text, “No current transmission.” If this text is not displayed, a CMOP process is currently running and **inactivation** cannot take place. Once the task is completed, the display will read “No current transmission,” as in line one of the CMOP System Status report shown below. If line one does not contain the text “No current transmission,” try again later. Normally, CMOP tasks require only a few minutes to complete, so the waiting time to retry should be minimal.
 Example Step 1:
 
-Select the CMOP Site Manager Menu Option: **DIS**play System Setup  
+Select the CMOP Site Manager Menu Option: **DIS**play System Setup
 CMOP SYSTEM STATUS
 
 LEAVENWORTH (ACTIVE) No current transmission
@@ -234,17 +231,17 @@ Select CMOP Site Manager Menu Option: **\<Enter\>**
 
 **Step 2** – Record Auto Transmission Information for Rescheduling
 
-If the last line of the display in the example above reads:  
+If the last line of the display in the example above reads:
 ***
 
-Auto Transmission setup : NO  
-Proceed directly to Step 3.  
-If the last line of the display in the example above reads:  
+Auto Transmission setup : NO
+Proceed directly to Step 3.
+If the last line of the display in the example above reads:
 ***
 
-Auto Transmission setup : YES  
-Auto Transmission setup is in effect. Use the *Setup Auto-transmission* [PSXR AUTO TRANSMIT] menu option from the *Transmission Menu* [PSXR TRANSMIT MENU] on the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to display the information regarding the current transmission schedule. Print the screen display or retain this information for reference when completing the Post Install Tasks to reschedule Auto Transmissions.  
-CMOP pre-install tasks, cont’d  
+Auto Transmission setup : YES
+Auto Transmission setup is in effect. Use the *Setup Auto-transmission* [PSXR AUTO TRANSMIT] menu option from the *Transmission Menu* [PSXR TRANSMIT MENU] on the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to display the information regarding the current transmission schedule. Print the screen display or retain this information for reference when completing the Post Install Tasks to reschedule Auto Transmissions.
+CMOP pre-install tasks, cont’d
 ***
 
 Example Step 2:
@@ -265,9 +262,9 @@ Rescheduling Frequency : 24 hours
 
 Do you want to unschedule automatic processing ? NO//**\<Enter\>**
 
-Select CMOP Site Manager Menu Option: **\<Enter\>**  
-**Step 3** – Inactivate CMOP Processing  
-Use the *Activate/Inactivate CMOP Processing* [PSXR ACTIVATE] option from the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to inactivate CMOP as illustrated in the following example.  
+Select CMOP Site Manager Menu Option: **\<Enter\>**
+**Step 3** – Inactivate CMOP Processing
+Use the *Activate/Inactivate CMOP Processing* [PSXR ACTIVATE] option from the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to inactivate CMOP as illustrated in the following example.
  If prescription workload is currently suspended for CMOP transmission, a WARNING message will be displayed as shown in the example below. Take no action on this warning. These prescriptions will be handled appropriately when the patch Post Install Tasks are completed and CMOP processing is Activated.
 
 Example Step 3:
@@ -316,8 +313,8 @@ The LEAVENWORTH system has been inactivated.
 
 Activate another system? NO// **\<Enter\>**
 
-CMOP pre-install tasks, cont’d  
-Selecting Display System Setup as follows will show the site has inactivated.  
+CMOP pre-install tasks, cont’d
+Selecting Display System Setup as follows will show the site has inactivated.
 ***
 
 Select CMOP Site Manager Menu Option: **DIS**play System Setup
@@ -334,11 +331,11 @@ Last Batch Transmitted : 338
 
 CMOP RX Queue purged : SEP 19,1997@08:41:14
 
-Auto Transmission setup : NO  
-**Step 4** – Check the CMOP Resource Device  
+Auto Transmission setup : NO
+**Step 4** – Check the CMOP Resource Device
 ***
 
-To prevent CMOP background tasks, such as the CMOP Release Filer from running during the install and possibly causing data corruption, carefully follow the instructions listed below. Any CMOP task currently running must be allowed to complete before the resource device entry is locked. Check Taskman as shown below for PSX namespaced tasks running:  
+To prevent CMOP background tasks, such as the CMOP Release Filer from running during the install and possibly causing data corruption, carefully follow the instructions listed below. Any CMOP task currently running must be allowed to complete before the resource device entry is locked. Check Taskman as shown below for PSX namespaced tasks running:
 Example Step 4a:
 
 Select Systems Manager Menu Option: **TASK**man Management
@@ -379,8 +376,8 @@ From TODAY at 9:10, By you. Started running TODAY at 9:10
 
 Job \#: 46
 
-In the previous example, task number 235907, Job \#46 is a PSX namespaced CMOP task currently running. Continue to list running tasks in this manner until this task is completed and no other PSX tasks are running.  
-CMOP pre-install tasks, cont’d  
+In the previous example, task number 235907, Job \#46 is a PSX namespaced CMOP task currently running. Continue to list running tasks in this manner until this task is completed and no other PSX tasks are running.
+CMOP pre-install tasks, cont’d
 *Example Step 4b:* Checking the Resource device:
 
 Display of the PSX Resource DEVICE entry when IN USE:
@@ -409,7 +406,7 @@ SLOT IN USE: 1 JOB \#: 46
 
 Select RESOURCE NAME: **\<Enter\>**
 
-Display of the Resource DEVICE entry for PSX when FREE:  
+Display of the Resource DEVICE entry for PSX when FREE:
 Select Systems Manager Menu Option: **FM**  VA FileMan
 
 VA FileMan Version 21.0
@@ -430,14 +427,14 @@ NAME: PSX AVAILABLE SLOTS: 1
 
 Select RESOURCE NAME: **\<Enter\>**
 
-**Step 5** – Edit the CMOP Resource Device entry  
+**Step 5** – Edit the CMOP Resource Device entry
 ***
 
 When the display (Step 4, Example 4b) indicates the PSX device entry in the RESOURCE file (\#3.54) is **free** (i.e., **Available Slots=1**), the PSX device entry may be edited and locked as shown in the example below. Locking the device in this manner signals Taskman that the device is busy. Tasks scheduled for this device will be placed on the waiting list for the device and not run until Taskman indicates the device is free.
 
-CMOP pre-install tasks, cont’d  
-Example Step 5:  
-Editing the Resource file (\#3.54) entry for PSX to lock the device:  
+CMOP pre-install tasks, cont’d
+Example Step 5:
+Editing the Resource file (\#3.54) entry for PSX to lock the device:
 Select Systems Manager Menu Option: **FM** VA FileMan
 
 VA FileMan Version 21.0
@@ -446,11 +443,11 @@ Select VA FileMan Option: **E**nter or Edit File Entries
 
 INPUT TO WHAT FILE: RESOURCE// **\<Enter\>**
 
-EDIT WHICH FIELD: ALL// **AVAILABLE SLOTS**  
-THEN EDIT FIELD: **SLOTS IN USE** (multiple)  
+EDIT WHICH FIELD: ALL// **AVAILABLE SLOTS**
+THEN EDIT FIELD: **SLOTS IN USE** (multiple)
 EDIT WHICH SLOTS IN USE SUB-FIELD: ALL// **\<Enter\>**
 
-THEN EDIT FIELD: **\<Enter\>**  
+THEN EDIT FIELD: **\<Enter\>**
 Select RESOURCE NAME: **PSX**
 
 AVAILABLE SLOTS: 1//  **@** - use the ‘@’ sign to delete this value in the field
@@ -666,10 +663,10 @@ Use INSTALL NAME: CPRS 1.0 to install this Distribution.
 
 Select Installation Option:
 
--   **(optional) Print a list of package components with the KIDS Build File Print option** if you would like a complete listing of package components (e.g., files, routines, and options) exported with this software.  
+-   **(optional) Print a list of package components with the KIDS Build File Print option** if you would like a complete listing of package components (e.g., files, routines, and options) exported with this software.
 ***
 
- **NOTE**: You must request separate prints for each of the components of this multi-package build.  
+ **NOTE**: You must request separate prints for each of the components of this multi-package build.
 ## Verify Checksums in the transport global.
 
 Run the option *Verify Checksums in Transport Global* to verify that all routines have the correct checksum. If there are any discrepancies, do not run the Install Package(s) option. Instead, run the Unload a Distribution option to remove the Transport Global from your system. Log a NOIS and/or call the national Help Desk and report the problem.
@@ -1260,778 +1257,778 @@ DEVICE: HOME// **\<Enter\>**
 
 CPRS Installation Print Example
 
-Install Started for CPRS 1.0 :  
-Aug 28, 1996@12:01:50  
+Install Started for CPRS 1.0 :
+Aug 28, 1996@12:01:50
 ***
 
-Installing Routines:.  
-Aug 28, 1996@12:01:50  
+Installing Routines:.
+Aug 28, 1996@12:01:50
 ***
 
-Updating Routine file.....  
+Updating Routine file.....
 ***
 
-Updating KIDS files.....  
+Updating KIDS files.....
 ***
 
-CPRS 1.0 Installed.  
-Aug 28, 1996@12:01:50  
+CPRS 1.0 Installed.
+Aug 28, 1996@12:01:50
 ***
 
-Install Started for ORDER ENTRY/RESULTS REPORTING 3.0 :  
-Aug 28, 1996@12:01:50  
+Install Started for ORDER ENTRY/RESULTS REPORTING 3.0 :
+Aug 28, 1996@12:01:50
 ***
 
-Installing Routines:...................................................  
-Aug 28, 1996@12:03:05  
+Installing Routines:...................................................
+Aug 28, 1996@12:03:05
 ***
 
-Running Pre-Install Routine: \^ORCPRE.  
+Running Pre-Install Routine: \^ORCPRE.
 ***
 
-PRE-conversion of notifications... Stubbing notifications 30-49,51-58.  
+PRE-conversion of notifications... Stubbing notifications 30-49,51-58.
 ***
 
-Notification stubbing completed. Renaming notifications 14,21,22,24,25,26,50. Notification renaming completed. Converting existing alerts... Cleaning up old alerts...  
+Notification stubbing completed. Renaming notifications 14,21,22,24,25,26,50. Notification renaming completed. Converting existing alerts... Cleaning up old alerts...
 ***
 
-LAB RESULTS cleaned up.  
-FLAGGED ORDERS cleaned up.  
-UNSIGNED PROGRESS NOTES cleaned up.  
-ORDER REQUIRES ELEC SIGNATURE cleaned up.  
-CO-SIGNATURE ON PROGRESS NOTES cleaned up.  
-ABNORMAL LAB RESULTS (ACTION) cleaned up.  
-CYTOLOGY RESULTS cleaned up.  
-ANATOMIC PATHOLOGY RESULTS cleaned up.  
-AUTOPSY REPORT cleaned up.  
-CRITICAL LAB RESULT (INFO) cleaned up.  
-NEW ORDER cleaned up.  
-TEST NOTIFICATION (97) cleaned up.  
-PRE-conversion of notifications completed.  
+LAB RESULTS cleaned up.
+FLAGGED ORDERS cleaned up.
+UNSIGNED PROGRESS NOTES cleaned up.
+ORDER REQUIRES ELEC SIGNATURE cleaned up.
+CO-SIGNATURE ON PROGRESS NOTES cleaned up.
+ABNORMAL LAB RESULTS (ACTION) cleaned up.
+CYTOLOGY RESULTS cleaned up.
+ANATOMIC PATHOLOGY RESULTS cleaned up.
+AUTOPSY REPORT cleaned up.
+CRITICAL LAB RESULT (INFO) cleaned up.
+NEW ORDER cleaned up.
+TEST NOTIFICATION (97) cleaned up.
+PRE-conversion of notifications completed.
 ***
 
-Installing Data Dictionaries: .......................................  
+Installing Data Dictionaries: .......................................
 ***
 
-Data Dictionary for File \#8989.51 not installed..  
+Data Dictionary for File \#8989.51 not installed..
 ***
 
-Data Dictionary for File \#8989.52 not installed..  
-Aug 28, 1996@12:05:27  
+Data Dictionary for File \#8989.52 not installed..
+Aug 28, 1996@12:05:27
 ***
 
-Installing Data: ........ Aug 28, 1996@12:07:34  
+Installing Data: ........ Aug 28, 1996@12:07:34
 ***
 
-Installing PACKAGE COMPONENTS:  
+Installing PACKAGE COMPONENTS:
 ***
 
-Installing BULLETIN......  
+Installing BULLETIN......
 ***
 
-Installing SECURITY KEY.....  
+Installing SECURITY KEY.....
 ***
 
-Installing INPUT TEMPLATE....  
+Installing INPUT TEMPLATE....
 ***
 
-Installing MAIL GROUP..  
+Installing MAIL GROUP..
 ***
 
-Installing PROTOCOL.............  
-Not a known package or a local namespace..........  
-Not a known package or a local namespace......  
-Not a known package or a local namespace...................................  
+Installing PROTOCOL.............
+Not a known package or a local namespace..........
+Not a known package or a local namespace......
+Not a known package or a local namespace...................................
 ***
 
-CPRS Installation Print, cont’d  
+CPRS Installation Print, cont’d
 ***
 
-Installing REMOTE PROCEDURE.............................................  
+Installing REMOTE PROCEDURE.............................................
 ***
 
-Installing LIST TEMPLATE...........  
+Installing LIST TEMPLATE...........
 ***
 
-Installing OPTION.......................................................  
-Aug 28, 1996@12:10:22  
+Installing OPTION.......................................................
+Aug 28, 1996@12:10:22
 ***
 
-Running Post-Install Routine: \^ORCPOST.  
+Running Post-Install Routine: \^ORCPOST.
 ***
 
-Converting user pt selection defaults to parameters.....................  
+Converting user pt selection defaults to parameters.....................
 ***
 
-Conversion of user pt selection defaults completed.  
+Conversion of user pt selection defaults completed.
 ***
 
-POST-conversion of notifications...  
+POST-conversion of notifications...
 ***
 
-Adding protocol DGPM PROVIDER UPDATE EVENT as an item on protocol OR EVSEND DGPM  
-.........................................................................................................................................................................................................................................................................................................................................................  
-POST-conversion of notifications completed.  
+Adding protocol DGPM PROVIDER UPDATE EVENT as an item on protocol OR EVSEND DGPM
+.........................................................................................................................................................................................................................................................................................................................................................
+POST-conversion of notifications completed.
 ***
 
-Cleaning up unused data and fields ...  
+Cleaning up unused data and fields ...
 ***
 
-Populating Parameters file ...  
+Populating Parameters file ...
 ***
 
-Error: ORPF SERVICE COPY DEFLT DEVICE Value failed validation logic. Entity:LOC.\`21 Inst:\`121 Val:\`371  
-Error: ORPF SERVICE COPY DEFLT DEVICE Value failed validation logic. Entity:LOC.\`209 Inst:\`121 Val:\`216  
-Error: ORPF SERVICE COPY DEFLT DEVICE Value failed validation logic. Entity:LOC.\`476 Inst:\`121 Val:\`216  
-.  
-.  
+Error: ORPF SERVICE COPY DEFLT DEVICE Value failed validation logic. Entity:LOC.\`21 Inst:\`121 Val:\`371
+Error: ORPF SERVICE COPY DEFLT DEVICE Value failed validation logic. Entity:LOC.\`209 Inst:\`121 Val:\`216
+Error: ORPF SERVICE COPY DEFLT DEVICE Value failed validation logic. Entity:LOC.\`476 Inst:\`121 Val:\`216
+.
+.
 ***
 
-Setting up Display Group file ...  
+Setting up Display Group file ...
 ***
 
-Adding Consult/Request urgencies to Order Urgency file ...  
+Adding Consult/Request urgencies to Order Urgency file ...
 ***
 
-Converting protocol menus ...  
+Converting protocol menus ...
 ***
 
-206 protocols could not be converted.  
-These will be sent to [your name] in a bulletin.Sending bulletin ...  
+206 protocols could not be converted.
+These will be sent to [your name] in a bulletin.Sending bulletin ...
 ***
 
-Updating Routine file....  
+Updating Routine file....
 ***
 
-The following Routines were created during this install:  
-ORD2  
-ORD21  
-ORD210  
-ORD211  
-ORD212  
-ORD22  
-ORD23  
-ORD24  
-ORD25  
-ORD26  
-ORD27  
-ORD28  
-ORD29  
-ORD1  
-ORD11  
-CPRS Installation Print, cont’d  
-ORD110  
-ORD111  
-ORD112  
-ORD12  
-ORD13  
-ORD14  
-ORD15  
-ORD16  
-ORD17  
-ORD18  
-ORD19..  
+The following Routines were created during this install:
+ORD2
+ORD21
+ORD210
+ORD211
+ORD212
+ORD22
+ORD23
+ORD24
+ORD25
+ORD26
+ORD27
+ORD28
+ORD29
+ORD1
+ORD11
+CPRS Installation Print, cont’d
+ORD110
+ORD111
+ORD112
+ORD12
+ORD13
+ORD14
+ORD15
+ORD16
+ORD17
+ORD18
+ORD19..
 ***
 
-Updating KIDS files.......  
+Updating KIDS files.......
 ***
 
-ORDER ENTRY/RESULTS REPORTING 3.0 Installed.  
-Aug 28, 1996@12:15:48.  
+ORDER ENTRY/RESULTS REPORTING 3.0 Installed.
+Aug 28, 1996@12:15:48.
 ***
 
-Install Message sent \#2642666  
+Install Message sent \#2642666
 ***
 
-Install Started for OUTPATIENT PHARMACY VERSION 7.0 :  
-Aug 28, 1996@12:15:49  
+Install Started for OUTPATIENT PHARMACY VERSION 7.0 :
+Aug 28, 1996@12:15:49
 ***
 
-Installing Routines:  
-. Aug 28, 1996@12:16:34  
+Installing Routines:
+. Aug 28, 1996@12:16:34
 ***
 
-Running Pre-Install Routine: \^PSOSTART....  
+Running Pre-Install Routine: \^PSOSTART....
 ***
 
-Installing Data Dictionaries: ..........................  
-Aug 28, 1996@12:18:31  
+Installing Data Dictionaries: ..........................
+Aug 28, 1996@12:18:31
 ***
 
-Installing PACKAGE COMPONENTS:  
+Installing PACKAGE COMPONENTS:
 ***
 
-Installing HELP FRAME.......  
+Installing HELP FRAME.......
 ***
 
-Installing SECURITY KEY.....  
+Installing SECURITY KEY.....
 ***
 
-Installing FUNCTION..  
+Installing FUNCTION..
 ***
 
-Installing PRINT TEMPLATE...................  
+Installing PRINT TEMPLATE...................
 ***
 
-Installing SORT TEMPLATE.........  
+Installing SORT TEMPLATE.........
 ***
 
-Installing INPUT TEMPLATE...............  
+Installing INPUT TEMPLATE...............
 ***
 
-Installing HL LOWER LEVEL PROTOCOL PARAMETER.....  
+Installing HL LOWER LEVEL PROTOCOL PARAMETER.....
 ***
 
-Installing HL LOGICAL LINK..  
+Installing HL LOGICAL LINK..
 ***
 
-Installing HL7 APPLICATION PARAMETER...  
+Installing HL7 APPLICATION PARAMETER...
 ***
 
-Installing PROTOCOL.....................................................  
+Installing PROTOCOL.....................................................
 ***
 
-Installing LIST TEMPLATE............  
+Installing LIST TEMPLATE............
 ***
 
-Installing OPTION..............................................  
-Aug 28, 1996@12:20:27  
+Installing OPTION..............................................
+Aug 28, 1996@12:20:27
 ***
 
-Running Post-Install Routine: \^PSOPOST. ...  
+Running Post-Install Routine: \^PSOPOST. ...
 ***
 
-Setting up Outpatient Pharmacy's protocols...  
+Setting up Outpatient Pharmacy's protocols...
 ***
 
-Protocol 'PS RECEIVE OR' is already set up under protocol menu 'OR EVSEND PS'.  
+Protocol 'PS RECEIVE OR' is already set up under protocol menu 'OR EVSEND PS'.
 ***
 
-Protocol 'OR RECEIVE' is already set up under protocol menu 'PS EVSEND OR'.  
-Initialization Completed in 233 seconds.  
-CPRS Installation Print, cont’d  
+Protocol 'OR RECEIVE' is already set up under protocol menu 'PS EVSEND OR'.
+Initialization Completed in 233 seconds.
+CPRS Installation Print, cont’d
 ***
 
-Updating Routine file....  
+Updating Routine file....
 ***
 
-The following Routines were created during this install:  
-PSOXZA  
-PSOXZA1  
-PSOXZA2  
-PSOXZA3  
-PSOXZA4  
-PSOXZA5  
-PSOXZA6  
-APSPT05  
-APSPT051  
-APSPT04  
-APSPT041  
-APSPT16  
-PSOXX..  
+The following Routines were created during this install:
+PSOXZA
+PSOXZA1
+PSOXZA2
+PSOXZA3
+PSOXZA4
+PSOXZA5
+PSOXZA6
+APSPT05
+APSPT051
+APSPT04
+APSPT041
+APSPT16
+PSOXX..
 ***
 
-Updating KIDS files.......  
+Updating KIDS files.......
 ***
 
-OUTPATIENT PHARMACY VERSION 7.0 Installed.  
-Aug 28, 1996@12:20:55.  
+OUTPATIENT PHARMACY VERSION 7.0 Installed.
+Aug 28, 1996@12:20:55.
 ***
 
-Install Message sent \#2642667  
+Install Message sent \#2642667
 ***
 
-Install Started for PSS\*1.0\*1 :  
-Aug 28, 1996@12:20:57  
+Install Started for PSS\*1.0\*1 :
+Aug 28, 1996@12:20:57
 ***
 
-Installing Routines:....  
-Aug 28, 1996@12:20:58  
+Installing Routines:....
+Aug 28, 1996@12:20:58
 ***
 
-Installing Data Dictionaries: ..  
-Aug 28, 1996@12:21:24  
+Installing Data Dictionaries: ..
+Aug 28, 1996@12:21:24
 ***
 
-Installing PACKAGE COMPONENTS:  
+Installing PACKAGE COMPONENTS:
 ***
 
-Installing OPTION.......  
-Aug 28, 1996@12:21:24  
+Installing OPTION.......
+Aug 28, 1996@12:21:24
 ***
 
-Updating Routine file....  
+Updating Routine file....
 ***
 
-The following Routines were created during this install:  
-PSSJXR  
-PSSJXR1  
-PSSJXR10  
-PSSJXR11  
-PSSJXR12  
-PSSJXR13  
-PSSJXR14  
-PSSJXR15  
-PSSJXR16  
-PSSJXR17  
-PSSJXR18  
-PSSJXR19  
-PSSJXR2  
-PSSJXR20  
-PSSJXR21  
-PSSJXR22  
-PSSJXR3  
-PSSJXR4  
-PSSJXR5  
-PSSJXR6  
-PSSJXR7  
-PSSJXR8  
-PSSJXR9..  
-CPRS Installation Print, cont’d  
+The following Routines were created during this install:
+PSSJXR
+PSSJXR1
+PSSJXR10
+PSSJXR11
+PSSJXR12
+PSSJXR13
+PSSJXR14
+PSSJXR15
+PSSJXR16
+PSSJXR17
+PSSJXR18
+PSSJXR19
+PSSJXR2
+PSSJXR20
+PSSJXR21
+PSSJXR22
+PSSJXR3
+PSSJXR4
+PSSJXR5
+PSSJXR6
+PSSJXR7
+PSSJXR8
+PSSJXR9..
+CPRS Installation Print, cont’d
 ***
 
-Updating KIDS files.......  
+Updating KIDS files.......
 ***
 
-PSS\*1.0\*1 Installed.  
-Aug 28, 1996@12:21:25  
+PSS\*1.0\*1 Installed.
+Aug 28, 1996@12:21:25
 ***
 
-Install Started for INPATIENT MEDICATIONS 5.0 :  
-Aug 28, 1996@12:21:25  
+Install Started for INPATIENT MEDICATIONS 5.0 :
+Aug 28, 1996@12:21:25
 ***
 
-Installing Routines:....................................................  
-Aug 28, 1996@12:22:13  
+Installing Routines:....................................................
+Aug 28, 1996@12:22:13
 ***
 
-Running Pre-Install Routine: \^PSJIPRE.  
+Running Pre-Install Routine: \^PSJIPRE.
 ***
 
-In order to prevent the corruption of existing data while running version 5.0 install, all of the Inpatient Medications options will be placed OUT OF ORDER. They will be made available again once the version 5.0 install is finished.  
-....working....  
+In order to prevent the corruption of existing data while running version 5.0 install, all of the Inpatient Medications options will be placed OUT OF ORDER. They will be made available again once the version 5.0 install is finished.
+....working....
 ***
 
-Installing Data Dictionaries:  
-.................... Aug 28, 1996@12:22:56  
+Installing Data Dictionaries:
+.................... Aug 28, 1996@12:22:56
 ***
 
-Installing PACKAGE COMPONENTS:  
+Installing PACKAGE COMPONENTS:
 ***
 
-Installing SECURITY KEY........  
+Installing SECURITY KEY........
 ***
 
-Installing PRINT TEMPLATE..  
+Installing PRINT TEMPLATE..
 ***
 
-Installing INPUT TEMPLATE.............................  
+Installing INPUT TEMPLATE.............................
 ***
 
-Installing PROTOCOL.....................................................  
+Installing PROTOCOL.....................................................
 ***
 
-Installing LIST TEMPLATE....................  
+Installing LIST TEMPLATE....................
 ***
 
-Installing OPTION.................................................  
-Aug 28, 1996@12:23:59  
+Installing OPTION.................................................
+Aug 28, 1996@12:23:59
 ***
 
-Running Post-Install Routine: \^PSJIPST.  
+Running Post-Install Routine: \^PSJIPST.
 ***
 
-POST-INIT STARTED AT AUG 28, 1996@12:24 ....  
-....Updating the Activity Log Reason file....  
+POST-INIT STARTED AT AUG 28, 1996@12:24 ....
+....Updating the Activity Log Reason file....
 ***
 
-Protocol 'PSJ OR PAT ADT' is already set up under the protocol menu 'DGPM MOVEMENT EVENTS'  
-.removing the 'OUT OF ORDER' message from the Inpatient Medications options.....  
-removing the 'DISABLE' message from the Inpatient Medications protocols...  
+Protocol 'PSJ OR PAT ADT' is already set up under the protocol menu 'DGPM MOVEMENT EVENTS'
+.removing the 'OUT OF ORDER' message from the Inpatient Medications options.....
+removing the 'DISABLE' message from the Inpatient Medications protocols...
 ***
 
-POST-INSTALL COMPLETED AT AUG 28, 1996@12:24:10 ....  
+POST-INSTALL COMPLETED AT AUG 28, 1996@12:24:10 ....
 ***
 
-Updating Routine file....  
+Updating Routine file....
 ***
 
-The following Routines were created during this install:  
+The following Routines were created during this install:
 ***
 
-PSGXR3  
-PSGXR31  
-PSGXR310  
-PSGXR32  
-PSGXR33  
-PSGXR34  
-PSGXR35  
-PSGXR36  
-PSGXR37  
-PSGXR38  
-PSGXR39..  
-CPRS Installation Print, cont’d  
-Updating KIDS files.......  
+PSGXR3
+PSGXR31
+PSGXR310
+PSGXR32
+PSGXR33
+PSGXR34
+PSGXR35
+PSGXR36
+PSGXR37
+PSGXR38
+PSGXR39..
+CPRS Installation Print, cont’d
+Updating KIDS files.......
 ***
 
-INPATIENT MEDICATIONS 5.0 Installed.  
-Aug 28, 1996@12:24:42.  
+INPATIENT MEDICATIONS 5.0 Installed.
+Aug 28, 1996@12:24:42.
 ***
 
-Install Message sent \#2642669  
+Install Message sent \#2642669
 ***
 
-Install Started for CONSULT/REQUEST TRACKING 3.0 :  
-Aug 28, 1996@12:24:42  
+Install Started for CONSULT/REQUEST TRACKING 3.0 :
+Aug 28, 1996@12:24:42
 ***
 
-Installing Routines:.....................................................  
-Aug 28, 1996@12:24:52  
+Installing Routines:.....................................................
+Aug 28, 1996@12:24:52
 ***
 
-Running Pre-Install Routine: \^GMRCPRE.  
+Running Pre-Install Routine: \^GMRCPRE.
 ***
 
-Change Protocol Name from: GMRCACT DENY REQUEST to: GMRCACT CANCEL REQUEST  
+Change Protocol Name from: GMRCACT DENY REQUEST to: GMRCACT CANCEL REQUEST
 ***
 
-Remove menu from: GMRCACTM MEDICINE PKG MENU  
-Remove menu from: GMRCACTM SERVICE ACTION MENU Remove menu from: GMRCACTM USER REVIEW SCREEN  
-Remove menu from: GMRCRM REQUEST TYPES  
+Remove menu from: GMRCACTM MEDICINE PKG MENU
+Remove menu from: GMRCACTM SERVICE ACTION MENU Remove menu from: GMRCACTM USER REVIEW SCREEN
+Remove menu from: GMRCRM REQUEST TYPES
 ***
 
-Installing Data Dictionaries: ..... Aug 28, 1996@12:25:57  
+Installing Data Dictionaries: ..... Aug 28, 1996@12:25:57
 ***
 
-Installing Data:  
-\*\* ERROR IN POINTER RESOLUTION OF DATA  
-\*\*Unable to find exact match and resolve pointer (\^ORD(101, Entry:GMRCACT FORWARD).  
-Aug 28, 1996@12:25:58  
+Installing Data:
+\*\* ERROR IN POINTER RESOLUTION OF DATA
+\*\*Unable to find exact match and resolve pointer (\^ORD(101, Entry:GMRCACT FORWARD).
+Aug 28, 1996@12:25:58
 ***
 
-Installing PACKAGE COMPONENTS:  
+Installing PACKAGE COMPONENTS:
 ***
 
-Installing SECURITY KEY..  
+Installing SECURITY KEY..
 ***
 
-Installing PRINT TEMPLATE......  
+Installing PRINT TEMPLATE......
 ***
 
-Installing SORT TEMPLATE...  
+Installing SORT TEMPLATE...
 ***
 
-Installing INPUT TEMPLATE...  
+Installing INPUT TEMPLATE...
 ***
 
-Installing PROTOCOL....................................  
+Installing PROTOCOL....................................
 ***
 
-Installing REMOTE PROCEDURE..  
+Installing REMOTE PROCEDURE..
 ***
 
-Installing LIST TEMPLATE..............  
+Installing LIST TEMPLATE..............
 ***
 
-Installing OPTION.  
-Aug 28, 1996@12:26:19  
+Installing OPTION.
+Aug 28, 1996@12:26:19
 ***
 
-Running Post-Install Routine: \^GMRCPOS.  
+Running Post-Install Routine: \^GMRCPOS.
 ***
 
-Updating Routine file......  
+Updating Routine file......
 ***
 
-Updating KIDS files.......  
+Updating KIDS files.......
 ***
 
-CONSULT/REQUEST TRACKING 3.0 Installed.  
-Aug 28, 1996@12:26:27.  
+CONSULT/REQUEST TRACKING 3.0 Installed.
+Aug 28, 1996@12:26:27.
 ***
 
-Install Message sent \#2642670  
+Install Message sent \#2642670
 ***
 
-Install Started for GMPL\*2.0\*10 :  
-Aug 28, 1996@12:26:27  
+Install Started for GMPL\*2.0\*10 :
+Aug 28, 1996@12:26:27
 ***
 
-Installing Routines:.  
-.. Aug 28, 1996@12:26:28  
-CPRS Installation Print, cont’d  
+Installing Routines:.
+.. Aug 28, 1996@12:26:28
+CPRS Installation Print, cont’d
 ***
 
-Updating Routine file......  
+Updating Routine file......
 ***
 
-Updating KIDS files.......  
+Updating KIDS files.......
 ***
 
-GMPL\*2.0\*10 Installed.  
-Aug 28, 1996@12:26:28  
+GMPL\*2.0\*10 Installed.
+Aug 28, 1996@12:26:28
 ***
 
-Install Started for FH\*5.0\*6 :  
-Aug 28, 1996@12:26:29  
+Install Started for FH\*5.0\*6 :
+Aug 28, 1996@12:26:29
 ***
 
-Installing Routines:.  
-Aug 28, 1996@12:26:35  
+Installing Routines:.
+Aug 28, 1996@12:26:35
 ***
 
-Installing Data Dictionaries:  
-.. Aug 28, 1996@12:26:41  
+Installing Data Dictionaries:
+.. Aug 28, 1996@12:26:41
 ***
 
-Running Post-Install Routine: \^FHIPST.  
+Running Post-Install Routine: \^FHIPST.
 ***
 
-Updating Routine file......  
+Updating Routine file......
 ***
 
-Updating KIDS files.......  
+Updating KIDS files.......
 ***
 
-FH\*5.0\*6 Installed.  
-Aug 28, 1996@12:27:37  
-***  
-Install Started for LR\*5.2\*166 :  
-Aug 28, 1996@12:27:37  
+FH\*5.0\*6 Installed.
+Aug 28, 1996@12:27:37
 ***
+Install Started for LR\*5.2\*166 :
+Aug 28, 1996@12:27:37
+***
 
-Installing Routines:  
-Aug 28, 1996@12:27:43  
+Installing Routines:
+Aug 28, 1996@12:27:43
 ***
 
-Running Pre-Install Routine: EN\^LR7OPRE.  
-DISPLAY GROUP field removed from file 60  
-OE/RR DEFAULT PROTOCOL field removed from file 69.9  
-CANCEL ON WARD TRANSFER field removed from file 69.9  
-CANCEL ON SERVICE TRANSFER field removed from file 69.9  
+Running Pre-Install Routine: EN\^LR7OPRE.
+DISPLAY GROUP field removed from file 60
+OE/RR DEFAULT PROTOCOL field removed from file 69.9
+CANCEL ON WARD TRANSFER field removed from file 69.9
+CANCEL ON SERVICE TRANSFER field removed from file 69.9
 ***
 
-Installing Data Dictionaries: ...  
+Installing Data Dictionaries: ...
 ***
 
-Data Dictionary for File \#8989.51 not installed..  
+Data Dictionary for File \#8989.51 not installed..
 ***
 
-Data Dictionary for File \#8989.52 not installed..  
-Aug 28, 1996@12:27:57  
+Data Dictionary for File \#8989.52 not installed..
+Aug 28, 1996@12:27:57
 ***
 
-Installing Data:  
-. Aug 28, 1996@12:28:10  
+Installing Data:
+. Aug 28, 1996@12:28:10
 ***
 
-Installing PACKAGE COMPONENTS:  
+Installing PACKAGE COMPONENTS:
 ***
 
-Installing PROTOCOL..  
+Installing PROTOCOL..
 ***
 
-Installing OPTION.  
-....... Aug 28, 1996@12:28:36  
+Installing OPTION.
+....... Aug 28, 1996@12:28:36
 ***
 
-Running Post-Install Routine: EN\^LR7OPOS..  
+Running Post-Install Routine: EN\^LR7OPOS..
 ***
 
-Now sending Lab order parameters to OE/RR...  
+Now sending Lab order parameters to OE/RR...
 ***
 
-Updating Routine file......  
+Updating Routine file......
 ***
 
-Updating KIDS files.......  
+Updating KIDS files.......
 ***
 
-LR\*5.2\*166 Installed.  
-CPRS Installation Print, cont’d  
-Aug 28, 1996@12:28:39.  
+LR\*5.2\*166 Installed.
+CPRS Installation Print, cont’d
+Aug 28, 1996@12:28:39.
 ***
 
-Install Message sent \#2642671  
+Install Message sent \#2642671
 ***
 
-Install Started for CPRS POST INSTALL 1.0 :  
-Aug 28, 1996@12:28:39  
+Install Started for CPRS POST INSTALL 1.0 :
+Aug 28, 1996@12:28:39
 ***
 
-Installing Routines:.  
-. Aug 28, 1996@12:28:39  
+Installing Routines:.
+. Aug 28, 1996@12:28:39
 ***
 
-Running Post-Install Routine: EN\^OR3POST.  
+Running Post-Install Routine: EN\^OR3POST.
 ***
 
-\---Order Check Integrity Check------------------------------------  
+\---Order Check Integrity Check------------------------------------
 ***
 
-Order Check Expert System Diagnostic Tool  
+Order Check Expert System Diagnostic Tool
 ***
 
-Created: DEC 15,1997 at 14:01 in UCI: OEX,OER  
+Created: DEC 15,1997 at 14:01 in UCI: OEX,OER
 ***
 
-Current Date: AUG 28,1996 at 12:28 Current UCI: VAH,TOA  
+Current Date: AUG 28,1996 at 12:28 Current UCI: VAH,TOA
 ***
 
-Loading Data  
+Loading Data
 ***
 
-Scanning Routines ............  
+Scanning Routines ............
 ***
 
-Scanning Data Files  
+Scanning Data Files
 ***
 
-Scanning '863.8 OCX MDD PARAMETER' file .................................................  
-Scanning '864.1 OCX MDD DATATYPE' file ............  
+Scanning '863.8 OCX MDD PARAMETER' file .................................................
+Scanning '864.1 OCX MDD DATATYPE' file ............
 ***
 
-Scanning '863.7 OCX MDD PUBLIC FUNCTION' file .................................  
+Scanning '863.7 OCX MDD PUBLIC FUNCTION' file .................................
 ***
 
-Scanning '863.9 OCX MDD CONDITION/FUNCTION' file .................  
+Scanning '863.9 OCX MDD CONDITION/FUNCTION' file .................
 ***
 
-Scanning '863.6 OCX MDD METHOD' file .......  
+Scanning '863.6 OCX MDD METHOD' file .......
 ***
 
-Scanning '863.4 OCX MDD ATTRIBUTE' file ..................  
+Scanning '863.4 OCX MDD ATTRIBUTE' file ..................
 ***
 
-Scanning '863.2 OCX MDD SUBJECT' file .  
+Scanning '863.2 OCX MDD SUBJECT' file .
 ***
 
-Scanning '863.1 OCX MDD APPLICATION' file  
+Scanning '863.1 OCX MDD APPLICATION' file
 ***
 
-Scanning '863.3 OCX MDD LINK' file ......................................................  
+Scanning '863.3 OCX MDD LINK' file ......................................................
 ***
 
-Scanning '863 OCX MDD CLASS' file ......  
+Scanning '863 OCX MDD CLASS' file ......
 ***
 
-Scanning '860.9 ORDER CHECK NATIONAL TERM' file .  
+Scanning '860.9 ORDER CHECK NATIONAL TERM' file .
 ***
 
-Scanning '860.8 ORDER CHECK COMPILER FUNCTIONS' file .......................  
+Scanning '860.8 ORDER CHECK COMPILER FUNCTIONS' file .......................
 ***
 
-Scanning '860.6 ORDER CHECK DATA CONTEXT' file .  
+Scanning '860.6 ORDER CHECK DATA CONTEXT' file .
 ***
 
-Scanning '860.5 ORDER CHECK DATA SOURCE' file ..  
+Scanning '860.5 ORDER CHECK DATA SOURCE' file ..
 ***
 
-Scanning '860.4 ORDER CHECK DATA FIELD' file ..........................  
+Scanning '860.4 ORDER CHECK DATA FIELD' file ..........................
 ***
 
-Scanning '860.3 ORDER CHECK ELEMENT' file .........................................  
-Scanning '860.2 ORDER CHECK RULE' file ..............  
+Scanning '860.3 ORDER CHECK ELEMENT' file .........................................
+Scanning '860.2 ORDER CHECK RULE' file ..............
 ***
 
-CPRS Installation Print, cont’d  
-Checking protocols  
+CPRS Installation Print, cont’d
+Checking protocols
 ***
 
-'OCX ORDER CHECK PATIENT MOVE.' added as an Item to the 'DGPM MOVEMENT EVENTS' protocol  
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'PS EVSEND OR' protocol  
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'RA EVSEND OR' protocol  
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'LR7O CH EVSEND OR' protocol  
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'LR7O BB EVSEND OR' protocol  
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'LR7O AP EVSEND OR' protocol  
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'FH EVSEND OR' protocol  
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'OR EVSEND ORG' protocol  
-'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'GMRC EVSEND OR' protocol  
+'OCX ORDER CHECK PATIENT MOVE.' added as an Item to the 'DGPM MOVEMENT EVENTS' protocol
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'PS EVSEND OR' protocol
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'RA EVSEND OR' protocol
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'LR7O CH EVSEND OR' protocol
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'LR7O BB EVSEND OR' protocol
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'LR7O AP EVSEND OR' protocol
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'FH EVSEND OR' protocol
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'OR EVSEND ORG' protocol
+'OCX ORDER CHECK HL7 RECIEVE' added as an Item to the 'GMRC EVSEND OR' protocol
 ***
 
-Diagnostic Finished...  
+Diagnostic Finished...
 ***
 
-\---Retotaling Order Check files-----------------------------------  
-\---Creating Order Check Routines-----------------------------------.  
+\---Retotaling Order Check files-----------------------------------
+\---Creating Order Check Routines-----------------------------------.
 ***
 
-Build list of Active Rules, Elements and Datafields....  
+Build list of Active Rules, Elements and Datafields....
 ***
 
-68 DATA FIELDS  
+68 DATA FIELDS
 ***
 
-49 ELEMENTS  
+49 ELEMENTS
 ***
 
-33 RULES.  
+33 RULES.
 ***
 
-Compile DataField Navigation code....  
+Compile DataField Navigation code....
 ***
 
-72 DataField Navigation Code Arrays.  
+72 DataField Navigation Code Arrays.
 ***
 
-Compile Element Evaluation code....  
+Compile Element Evaluation code....
 ***
 
-45 Event Evaluation Code Arrays.  
+45 Event Evaluation Code Arrays.
 ***
 
-Compile Element MetaCode....  
+Compile Element MetaCode....
 ***
 
-49 Element Metacode Arrays.  
+49 Element Metacode Arrays.
 ***
 
-Get Compiler Function Code....  
+Get Compiler Function Code....
 ***
 
-36 Compiler Include Functions.  
+36 Compiler Include Functions.
 ***
 
-Compile Rule Element Relation code....  
+Compile Rule Element Relation code....
 ***
 
-38 Rule Element Relation Code Arrays.  
+38 Rule Element Relation Code Arrays.
 ***
 
-Construct Decision Tree....  
+Construct Decision Tree....
 ***
 
-516 Sub-Routines.  
+516 Sub-Routines.
 ***
 
-Optimize Sub-Routines....  
+Optimize Sub-Routines....
 ***
 
-190 Sub-Routines  
+190 Sub-Routines
 ***
 
-63.2% Optimization.  
-***  
-CPRS Installation Print, cont’d  
-Assemble Routines....  
+63.2% Optimization.
+***
+CPRS Installation Print, cont’d
+Assemble Routines....
 ***
 
-24 OCXOZ\* Routines  
+24 OCXOZ\* Routines
 ***
 
-5601 Lines of code generated..  
-Orders conversion tasked - \#85..  
+5601 Lines of code generated..
+Orders conversion tasked - \#85..
 ***
 
-Updating Routine file......  
+Updating Routine file......
 ***
 
-Updating KIDS files.....  
+Updating KIDS files.....
 ***
 
-CPRS POST INSTALL 1.0 Installed.  
-Aug 28, 1996@12:34:43  
-## 
+CPRS POST INSTALL 1.0 Installed.
+Aug 28, 1996@12:34:43
+##
 
 # Post-Installation
 
@@ -2045,24 +2042,24 @@ OE/RR parameters
 
 Notifications
 
-Notifications are exported as disabled to allow the installation and conversions to run more efficiently. To initiate notifications, use the *Enable or Disable Notification System* option to enable Notifications. This option is on the *Notification Mgmt Menu* under the *CPRS Manager Menu* option  
+Notifications are exported as disabled to allow the installation and conversions to run more efficiently. To initiate notifications, use the *Enable or Disable Notification System* option to enable Notifications. This option is on the *Notification Mgmt Menu* under the *CPRS Manager Menu* option
 Order Checking
 
 Use the *Enable or Disable Order Checking System* option to enable order checking for users or systems. This option is on the *Order Checking Mgmt Menu* on the *CPRS Manager Menu*.
 
 If your site is multidivisional, you can enable or disable the system for each division.
 
-Link lab, radiology, and DNR terms used in the CPRS Expert System to local terms using the option *Edit Local Terms* on the *Order Checking Mgmt Menu*. Because some terms used for ordering (lab test names, for example) vary from site to site, the order checking system has created a file of standard terms related to the order checks used in CPRS. Sites must map the locally used term in the Orderable Items file (\#124) or the Lab Test file (\#60) to one in the order check file. After mapping the terms, the system automatically re-compiles the order checking rules. A message is sent to the person mapping the terms when the compiling has completed.  
-Order Check National Terms  
-SERUM CREATININE  
-SERUM UREA NITROGEN  
-DNR  
-PROTHROMBIN TIME  
-THROMBOPLASTIN TIME PARTIAL  
-NPO  
-SERUM SPECIMEN  
-PARTIAL THROMBOPLASTIN TIME  
-ANGIOGRAM (PERIPHERAL)  
+Link lab, radiology, and DNR terms used in the CPRS Expert System to local terms using the option *Edit Local Terms* on the *Order Checking Mgmt Menu*. Because some terms used for ordering (lab test names, for example) vary from site to site, the order checking system has created a file of standard terms related to the order checks used in CPRS. Sites must map the locally used term in the Orderable Items file (\#124) or the Lab Test file (\#60) to one in the order check file. After mapping the terms, the system automatically re-compiles the order checking rules. A message is sent to the person mapping the terms when the compiling has completed.
+Order Check National Terms
+SERUM CREATININE
+SERUM UREA NITROGEN
+DNR
+PROTHROMBIN TIME
+THROMBOPLASTIN TIME PARTIAL
+NPO
+SERUM SPECIMEN
+PARTIAL THROMBOPLASTIN TIME
+ANGIOGRAM (PERIPHERAL)
 WBC
 
 ### Consult/Request Tracking Parameters
@@ -2155,28 +2152,28 @@ OR, OCXS, ORD, GMR, XTV, PS.
 
 ## Run PSOPOST1 to see if the Outpatient Pharmacy conversion has finished.
 
-To determine if the Outpatient Pharmacy V. 7.0 background conversion and backfill jobs have finished, do the following:  
-\>D \^PSOPOST1  
-DEVICE: [Select Print Device]  
-Outpatient Pharmacy Background Job Status JUN 26,1997 09:57:55 Page 1  
-\-------------------------------------------------------------------------  
-Site Name: *[site name]*  
-Current Version Installed: 7.0  
+To determine if the Outpatient Pharmacy V. 7.0 background conversion and backfill jobs have finished, do the following:
+\>D \^PSOPOST1
+DEVICE: [Select Print Device]
+Outpatient Pharmacy Background Job Status JUN 26,1997 09:57:55 Page 1
+\-------------------------------------------------------------------------
+Site Name: *[site name]*
+Current Version Installed: 7.0
 ***
 
-Background Conversion Job Started: DEC 31, 1997 13:12:05  
-Job Completed: JAN 01, 1998 03:15:52  
+Background Conversion Job Started: DEC 31, 1997 13:12:05
+Job Completed: JAN 01, 1998 03:15:52
 ***
 
-If the JOB COMPLETED field does not have a date and time, the conversion is still running or it stopped abnormally. If it has stopped, check your system error trap for an error.  
+If the JOB COMPLETED field does not have a date and time, the conversion is still running or it stopped abnormally. If it has stopped, check your system error trap for an error.
 ***
 
-If the job stops abnormally and the error has been corrected, the following entry point may be called: D RESTART\^PSOPOST. This will queue the Outpatient Pharmacy version V. 7.0 background conversion to rerun.  
+If the job stops abnormally and the error has been corrected, the following entry point may be called: D RESTART\^PSOPOST. This will queue the Outpatient Pharmacy version V. 7.0 background conversion to rerun.
 ***
 
 ## Inpatient Pharmacy conversion
 
-If the Inpatient Pharmacy conversion job stops abnormally and the error has been corrected, the following entry point may be called: D \^PSJIPST. This will queue the Inpatient Medications V. 5.0 background conversions to rerun.  
+If the Inpatient Pharmacy conversion job stops abnormally and the error has been corrected, the following entry point may be called: D \^PSJIPST. This will queue the Inpatient Medications V. 5.0 background conversions to rerun.
 ***
 
 ## Run STATUS\^OR3CONV1 to check the status of the orders conversion.
@@ -2221,8 +2218,8 @@ We recommend that you NOT stop the conversion unless you will be taking your sys
 
  **Important:** The Post-Installation tasks for CMOP must be completed AFTER the Outpatient Pharmacy Background Job Status displays the date and time. Obtain this information by running the PSOPOST1 routine as described previously in the Post-Installation section titled **“Run PSOPOST1 to see if the Outpatient Pharmacy conversion has finished.”**
 
-**Step 1** – Restart CMOP tasks  
-The resource device entry, PSX, must now be cleared to allow CMOP tasks to run as scheduled. FREE the RESOURCE file (\#3.54) entry for PSX as shown in the example below.  
+**Step 1** – Restart CMOP tasks
+The resource device entry, PSX, must now be cleared to allow CMOP tasks to run as scheduled. FREE the RESOURCE file (\#3.54) entry for PSX as shown in the example below.
 ***
 
 Example Step 1:
@@ -2255,8 +2252,8 @@ Select SLOT IN USE: **\<Enter\>**
 
 AVAILABLE SLOTS: 0// **1**
 
-Step 2 – Activate CMOP Processing  
-Use the *Activate/Inactivate CMOP Processing* [PSXR ACTIVATE] option from the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to activate CMOP processing as illustrated in the following example.  
+Step 2 – Activate CMOP Processing
+Use the *Activate/Inactivate CMOP Processing* [PSXR ACTIVATE] option from the *CMOP Site Manager Menu* [PSXR CMOP MANAGER] to activate CMOP processing as illustrated in the following example.
 Example Step 2:
 
 Select CMOP Site Manager Menu Option: **ACT**ivate/Inactivate CMOP Processing
@@ -2283,17 +2280,17 @@ Request to activate sent to LEAVENWORTH.
 
 ======================================
 
-Step 3 – Reschedule Automatic Transmissions  
+Step 3 – Reschedule Automatic Transmissions
 ***
 
-Reschedule Automatic Transmissions to begin when Outpatient Pharmacy has resumed normal operations. This is accomplished using the *Setup Auto-transmission* [PSXR AUTO TRANSMIT] option as shown in the following example.  
+Reschedule Automatic Transmissions to begin when Outpatient Pharmacy has resumed normal operations. This is accomplished using the *Setup Auto-transmission* [PSXR AUTO TRANSMIT] option as shown in the following example.
 Example Step 3:
 
 Select CMOP Site Manager Menu Option: **T**ransmission Menu
 
 Select Transmission Menu Option: **S**etup Auto-transmission
 
-Enter the date to start automatic processing: NOW// **\<Enter\>** **JAN 08, 1998@6:00**  
+Enter the date to start automatic processing: NOW// **\<Enter\>** **JAN 08, 1998@6:00**
 Number of days to transmit thru: (0-10): 0// **1**
 
 Enter rescheduling frequency (hours) for transmission: (1-96): **24**
@@ -2451,9 +2448,7 @@ g. Close the HOSTS file.
 The best workaround is to create a shortcut to the CPRS executable on your PC:
 
 -   right click on the shortcut icon
-
 -   select “Properties”
-
 -   add s="your server name" p="your listener port" after the .exe command
 
 For more information, see the *RPC Broker V.1.1 Systems Manual*.
@@ -2464,70 +2459,70 @@ For more information, see the *RPC Broker V.1.1 Systems Manual*.
 
 **NOTE to VMS sites:** We recommend that you modify the \$I to use whatever scratch directory your site has set up to store all HFS files.
 
-**Auto-Update Program – CPRSUpdate.exe**  
-To help sites ensure that their version of the CPRS GUI and the associated Help files on local workstations are synchronized with the latest released or test versions, developers created the CPRSUpdate.exe tool. CPRSUpdate.exe serves two purposes:  
--   Setting the values (parameters) in the registry that are required for the updates  
--   Performing the copy functions when an update is in progress  
-**Note:** Sites are not required to use CPRSUpdate.exe, especially if they use a different method of distributing software, such as Systems Management Server (SMS) or some other method.  
+**Auto-Update Program – CPRSUpdate.exe**
+To help sites ensure that their version of the CPRS GUI and the associated Help files on local workstations are synchronized with the latest released or test versions, developers created the CPRSUpdate.exe tool. CPRSUpdate.exe serves two purposes:
+-   Setting the values (parameters) in the registry that are required for the updates
+-   Performing the copy functions when an update is in progress
+**Note:** Sites are not required to use CPRSUpdate.exe, especially if they use a different method of distributing software, such as Systems Management Server (SMS) or some other method.
 ***
 
-**Where Does CPRSUpate.exe Reside?**  
-CPRSUpdate.exe should reside either in the gold directory on the server as described below or in the same directory on the local or network machine as CPRSChart.exe (the CPRS GUI application).  
-**How Does CPRSUpdate.exe Work?**  
-CPRSUpdate.exe normally does not run unless called by CPRS. When the user launches the CPRS GUI, it checks the date of the CPRSChart.exe, cprs.hlp, and cprs.cnt files in the gold directory.  
--   If the file dates match, CPRSUpate.exe is not called and CPRS runs as normal.  
--   If the file dates are different, CPRS calls CPRSUpdate.exe and shuts itself down. CPRSUpdate.exe copies the new versions of the files to the workstation, launches the new version of CPRS, and then closes itself.  
+**Where Does CPRSUpate.exe Reside?**
+CPRSUpdate.exe should reside either in the gold directory on the server as described below or in the same directory on the local or network machine as CPRSChart.exe (the CPRS GUI application).
+**How Does CPRSUpdate.exe Work?**
+CPRSUpdate.exe normally does not run unless called by CPRS. When the user launches the CPRS GUI, it checks the date of the CPRSChart.exe, cprs.hlp, and cprs.cnt files in the gold directory.
+-   If the file dates match, CPRSUpate.exe is not called and CPRS runs as normal.
+-   If the file dates are different, CPRS calls CPRSUpdate.exe and shuts itself down. CPRSUpdate.exe copies the new versions of the files to the workstation, launches the new version of CPRS, and then closes itself.
 ***
 
-**CPRSUpdate.exe Options**  
-Users can configure CPRSUpdate.exe to set the registry values interactively or non-interactively. CPRSUpdate.exe uses the following command-line parameters, which are discussed in greater detail below:  
--   GOLD (required for automatic updates)  
--   ONLY  
--   AUTO (required for automatic updates)  
--   ASK  
--   SHOW (interactive vs. non-interactive setting of registry values)  
-***  
-*GOLD=remote directory path*  
-GOLD defines the path to the directory where the copy of CPRS that matches the current server version (sometimes called the gold copy) is located. Remember to put double quote marks around directory names that include spaces if you enter the path on the command line. In the GUI dialog, the quotes are not necessary. CPRS looks for CPRSUpdate.exe in the gold directory first. If it is not there, it will check in the same directory where the CPRSChart.exe is located. If it is not in either of those two places, it will not attempt to update the executable.  
+**CPRSUpdate.exe Options**
+Users can configure CPRSUpdate.exe to set the registry values interactively or non-interactively. CPRSUpdate.exe uses the following command-line parameters, which are discussed in greater detail below:
+-   GOLD (required for automatic updates)
+-   ONLY
+-   AUTO (required for automatic updates)
+-   ASK
+-   SHOW (interactive vs. non-interactive setting of registry values)
+***
+*GOLD=remote directory path*
+GOLD defines the path to the directory where the copy of CPRS that matches the current server version (sometimes called the gold copy) is located. Remember to put double quote marks around directory names that include spaces if you enter the path on the command line. In the GUI dialog, the quotes are not necessary. CPRS looks for CPRSUpdate.exe in the gold directory first. If it is not there, it will check in the same directory where the CPRSChart.exe is located. If it is not in either of those two places, it will not attempt to update the executable.
 ***
 
-*ONLY=local directory path*  
-If this registry value is present, the auto-update will only occur for CPRS executables that reside in the listed directory. This allows you to put executables that you do NOT want updated (like test versions) on the same machine but in different directories. Remember that double quote marks are required around directory names that include spaces on the command line.  
+*ONLY=local directory path*
+If this registry value is present, the auto-update will only occur for CPRS executables that reside in the listed directory. This allows you to put executables that you do NOT want updated (like test versions) on the same machine but in different directories. Remember that double quote marks are required around directory names that include spaces on the command line.
 ***
 
-*AUTO=YES or NO*  
-This registry value enables/disables the auto-update functionality. If AUTO=NO, no automatic updates will occur on the system regardless of other parameter settings. This is a way to disable automatic updates.  
-*ASK=YES or NO*  
-If ASK=YES, the user will be prompted before any updates occur. If ASK=NO, the update will occur without any user interaction.  
-*SHOW*  
-CPRSUpdate.exe can be used to set the registry values either from the command-line or from a GUI dialog. An example of setting this from the command-line might look like this:  
-CPRSUpdate.exe GOLD="\\\\vamcserver\\gold" ONLY="c:\\program files\\vista\\cprs"  
-AUTO=YES ASK=NO  
+*AUTO=YES or NO*
+This registry value enables/disables the auto-update functionality. If AUTO=NO, no automatic updates will occur on the system regardless of other parameter settings. This is a way to disable automatic updates.
+*ASK=YES or NO*
+If ASK=YES, the user will be prompted before any updates occur. If ASK=NO, the update will occur without any user interaction.
+*SHOW*
+CPRSUpdate.exe can be used to set the registry values either from the command-line or from a GUI dialog. An example of setting this from the command-line might look like this:
+CPRSUpdate.exe GOLD="\\\\vamcserver\\gold" ONLY="c:\\program files\\vista\\cprs"
+AUTO=YES ASK=NO
 ***
 
-In the above example, the user would not see anything happen on the screen, but CPRSUpdate values would be set.  
+In the above example, the user would not see anything happen on the screen, but CPRSUpdate values would be set.
 ***
 
-If the SHOW parameter is used, CPRSUpdate.exe will display a GUI dialog where the user can set the values. The SHOW parameter was created to lessen the chance that a user would accidentally run the interactive version and change the parameters. For example,  
+If the SHOW parameter is used, CPRSUpdate.exe will display a GUI dialog where the user can set the values. The SHOW parameter was created to lessen the chance that a user would accidentally run the interactive version and change the parameters. For example,
 ***
 
-"C:\\Program Files\\vista\\cprs\\CPRSUpdate.exe" SHOW  
-will launch a small interactive program (GUI dialog) that will let the user view and change the auto-update registry values.  
-![](9da973a278b2c6b4c7e8263032626fbb.png)  
+"C:\\Program Files\\vista\\cprs\\CPRSUpdate.exe" SHOW
+will launch a small interactive program (GUI dialog) that will let the user view and change the auto-update registry values.
+![](media/9da973a278b2c6b4c7e8263032626fbb.png)
 ***
 
-Remember that this is just set up. CPRSUpdate.exe copies the new files as these parameters dictate when it is called by CPRSChart.exe.  
+Remember that this is just set up. CPRSUpdate.exe copies the new files as these parameters dictate when it is called by CPRSChart.exe.
 ***
 
-Using the auto-update functionality would likely involve the following steps (it may vary at your site) -  
+Using the auto-update functionality would likely involve the following steps (it may vary at your site) -
 ***
 
-1.  If your site does not have one, create a directory on a server where the “gold” copy of CPRSChart.exe, CPRS.hlp, and CPRS.cnt will be placed. This directory should be shared so that all the workstations have access to it.  
-1.  Distribute CPRSUpdate.exe to the workstations or network server and place it in the same directory as CPRSChart.exe (generally C:\\program files\\vista\\cprs). You may want to use SMS to do this.  
-1.  Run CPRSUpdate.exe on each workstation with the command line parameters to setup the path to the gold copy. The GOLD and AUTO parameters must be set for the updates to work. ONLY and ASK are optional. You may also want to do this using SMS.  
-1.  When the site installs the next version of CPRSChart.exe on the server, place the new executable file in the gold directory. When users access CPRS, they should be updated to the latest version automatically, depending on the registry settings.  
-The registry values are kept in:  
-HKEY_LOCAL_MACHINE\\Software\\Vista\\CPRS  
+1.  If your site does not have one, create a directory on a server where the “gold” copy of CPRSChart.exe, CPRS.hlp, and CPRS.cnt will be placed. This directory should be shared so that all the workstations have access to it.
+1.  Distribute CPRSUpdate.exe to the workstations or network server and place it in the same directory as CPRSChart.exe (generally C:\\program files\\vista\\cprs). You may want to use SMS to do this.
+1.  Run CPRSUpdate.exe on each workstation with the command line parameters to setup the path to the gold copy. The GOLD and AUTO parameters must be set for the updates to work. ONLY and ASK are optional. You may also want to do this using SMS.
+1.  When the site installs the next version of CPRSChart.exe on the server, place the new executable file in the gold directory. When users access CPRS, they should be updated to the latest version automatically, depending on the registry settings.
+The registry values are kept in:
+HKEY_LOCAL_MACHINE\\Software\\Vista\\CPRS
 ***
 
 # Release Notes
@@ -2537,109 +2532,67 @@ HKEY_LOCAL_MACHINE\\Software\\Vista\\CPRS
 (In Released and Unreleased patch builds)
 
 -   Modifications have been made to process medication order checks based on type (inpatient, outpatient.) This allows determination between inpatient and outpatient med orders when looking for duplicate drugs and drug classes. Order check messages for duplicate drug and duplicate drug class are sent only if the drug being ordered is in the same order display group as the existing (duplicate) drug/class. Inpatient meds can be duplicates against other inpatient meds. Outpatient meds can be duplicates against other outpatient meds.
-
 -   An order date/time to consult orders was added to allow order checking for duplicate consult orders. This consult order date/time occurs within order checking processes only and is not stored with the consult order.
-
 -   Orderable items can be set up to have an Orderable Item Duplicate Order Range value of zero. This tells the order checking system to not perform duplicate order checks for the orderable item. To prevent duplicate order checks for an orderable item, set the duplicate order range for that orderable item to zero. Do this via the Order Check Mgmt menu (Clin Coord), option *Orderable Item Duplicate Order Range*. For most instances, select the System level. Enter the orderable item, then 0 (zero) as the hours value. Note: users will see the duplicate order message for orders flagged prior to setting the hours value.
-
 -   For duplicate lab order check messages, the status now displays COLLECTED vs. COMPLETE and UNCOLLECTED vs. PENDING.
-
 -   The follow-up action for *Order Requires Electronic Signature* notifications varies, depending upon the user's privileges. If the user has the ORES key, but is not linked to the patient via OE/RR teams, nor as attending or inpatient primary provider, the follow-up action will check all unsigned orders for the patient. If the most recent unsigned action on any order was requested/entered by the user, the alert won't be deleted; e.g. if the user still has an unsigned action on one or more of the patient's orders. If none of the unsigned orders' most recent actions is credited to the user, the alert is deleted for that user only; i.e. the user has no unsigned actions for the patient's orders. This process was improved to use the unsigned action for each order to determine who was responsible for the order's unsigned status. Previously, the provider who originally requested the order was used. This caused incorrect user comparisons when a non-original ordering provider DCed an order without electronically signing the DC action.
-
 -   The default action on the List Manager Orders screen is now "Next Screen" until viewing the final page of orders when it will change to "Sign All Orders".
 
 Enhancements, cont'd
 
 -   After signing and/or releasing a lab order, the lab order number is now displayed. The parameter "Show Lab \#" used to turn this functionality on or off for ORES key holders in OE/RR 2.5 will also be restored in this patch.
-
 -   Orders that do not require a signature can now be released via the 'Sign' action with the other orders.
-
 -   The RV Review New Orders action now includes all unsigned orders for the current patient every time, regardless of which ordering session the orders were placed in.
-
 -   When placing a new diet order, the user is prompted to cancel any future diet orders that exist for the patient. The status of those orders is checked and the program will not prompt if they have already been cancelled.
-
 -   When placing a new tubefeeding order, the current tubefeeding order for the patient is displayed if one exists.
-
 -   A late tray for a new diet order that missed the mealtime cutoff had incorrectly required an additional step to sign and/or release the order, after the diet order itself had been released; the order for the late tray will now be released with the diet order. Also, checks have been added to ensure that the tray time selected has not passed, and NPO orders that incorrectly prompted for a late tray will no longer do so.
-
 -   When discontinuing orders that have not been signed and released to the service, ORELSE and OREMAS users had been prompted for the requesting provider and a reason for dc; these prompts have been moved to later in the dc action, as unreleased orders are simply deleted from the Orders file.
-
 -   Releasing orders without a physician's signature will now require ORELSE key holders to enter an electronic signature code as well. If the nature of order selected is "policy," then the order is considered to be signed and the current user becomes the requesting provider, otherwise the designated provider will still receive an alert to sign the order as usual. Also, a parameter has been created to determine the default signature action for ORELSE users.
-
 -   The Inactive Date field in the New Person file (\#200) will now be checked to screen out inactive users at the Requesting Provider prompt. Also, inactive locations are now screened out at the Patient Location prompt, and inpatient locations will no longer be selectable for patients who are not currently admitted.
 
 enhancements, cont'd
 
 -   The default action on the Review New Orders screen (RV) was "Sign All Orders." A parameter from OE/RR 2.5 has been reinstated that allows the default action to be changed to "Sign & Release," which will prompt the user for the orders that are to be signed and/or released instead of assuming all orders. This parameter may be changed via the *Miscellaneous Parameters* option on the CPRS Configuration (Clin Coord) menu.
-
 -   When using the *Enter/edit generic orders* option and answering YES to the prompt "Do you wish to copy an existing one?," the software assumed the package to be Order Entry. It will now copy the package into the new order dialog to permit local customization of dialogs.
-
 -   A new option has been created to allow users to enter and edit action-type entries in the Order Dialog file. Also, the Entry and Exit Action fields may now be used with order sets.
-
 -   A new option has been created to allow users to search for a specified item and list the menus that it appears on. This option also prompts for a new item to automatically replace the current one on the listed menus, if desired.
-
 -   Before allowing an entry to be deleted from the Order Dialog file, a check will now be done to ensure that nothing is pointing to that item. If the item is in use, a message will be displayed and the deletion prevented.
-
 -   "Other Hospital Services" is now a choice at the "Type of Orderable" prompt.
-
 -   An output transform has been added to the Value field of the Response multiple in the Order Dialog file, so that standard FileMan displays and reports can display the external form of the value instead of the internal form.
-
 -   For the "Toggle Display" option, the editor will now redisplay the menu at the same screen; prior to this patch, the editor would always force the display back to the first screen of the menu.
-
 -   Users can now set up surrogates to receive their notifications (OE/RR alerts).
-
 -   The order summary report has been enhanced to print in a condensed format to get multiple patient reports on one page. This is controlled by a new parameter ORPF CONDENSED ORDER SUMMARY, that can be edited from the Summary Reports Parameter menu.
-
 -   Four new fields have been added to the Orders file (100) to help track the printing of chart copies.
-
 -   The Protocol ORS RX ACTION PROFILE is being exported in this patch with a new name to make it consistent with other places where this report is found. The new name text is *Outpatient RX Profile.*
 
 enhancements, cont'd
 
 -   A new parameter is being exported to allow a condensed version of the Order Summary reports, called ORPF CONDENSED ORDER SUMMARY. This parameter is being added to the ORP SUMMARY REPORTS parameter template, so it can be edited by the clinical coordinator from the Summary Report Parameters menu.
-
 -   Notifications are now exported as disabled (unless Mandatory).
-
 -   The messages displayed when using the option *Determine Recipients for a Notification* have been modified. The team (or personal list) type is now included in the display. The team type now appears in brackets "[\<team type\>]" after the team name.
-
 -   The *Task 24hr Order Summary by Location* [ORTASK 24HR SUMMARY] option is now using the parameter to sort the orders in forward date/time. Also a change was made in the routine that prints location header pages to keep the header page from over-flowing onto a second page.
-
 -   A parameter that allows a site to specify whether or not to dc generic orders on transfer, and if so on a specialty change or a ward location transfer has been added (with a default value of "specialty change"). This parameter value may be modified via the CPRS Configuration (Clin Coord) menu, *Miscellaneous Parameters* option.
-
 -   A parameter has been added to allow generic orders to be auto-discontinued on admission. The default will be to not auto-dc on admission to be backwards-compatible, but this value may be modified via the CPRS Configuration (Clin Coord) menu, *Miscellaneous Parameters* option.
-
 -   A parameter has been added to allow sites to define a cutoff time when delayed orders are to be considered "lapsed" instead of being released on an MAS patient event. This value will be the number of days to allow delayed orders to remain eligible for release, and may be modified via the CPRS Configuration (Clin Coord) menu, *Miscellaneous Parameters* option.
-
 -   An optional entry point in the post-init routine will loop through the Orders file and update the status of any generic order that has a past stop date, or a start date more than 90 days ago, and update the status of Allergy orders that have been placed more that 90 days ago to complete. This cleanup job may be tasked from programmer mode by D TASK\^ORY24.
-
 -   The column header for the date displayed in the D/C Summary tab has been changed to "Ref Date" to match the "Reference Date" header used in TIU and to avoid the ambiguity of discharge vs transcription date.
 
 enhancements, cont'd
 
 -   The date displayed on the Notes tab showed the time instead of the year if the note was written within the past year; otherwise it showed the year instead of the time. This has been changed to always show both time and year. The Orders tab will also now include the year whenever possible in the start and stop date columns of the Long Format. For orders with both dates, the year will appear with the stop date.
-
 -   A "sort order by status" capability has now been applied to the Meds tab, for both Inpatient and Outpatient views. Orders with an active status (active, suspended, hold) will be grouped together at the top of the list, followed by pending orders (pending, non-verified) and non-active orders (expired, dc'd, dc'd due to edit). The Start Date has also been added to the Inpatient view, and the Change View (CV) option "Save as Preferred View" will now save the Inpatient vs Outpatient specification as well.
-
 -   The Verify action has been corrected to prevent users holding the OREMAS from verifying problems.
-
 -   Comments may now be viewed on the Problems tab via a new option under Change View (CV). This is a toggle that will simply turn on or off the display of the comments with each problem in the list.
-
 -   The case number has been added to the display for each exam listed on the Imaging Tab.
-
 -   The Recent Orders view on the Orders tab (via CV/Status) has been corrected to match the Daily Order Summary.
-
 -   The Orders Tab will now show the provider who signed the order instead of the original requestor of the order, if they are different users.
-
 -   The Verify action for users holding either the ORELSE or OREMAS key has now become a sub-menu containing the old Verify action (here renamed "Acknowledge") and a new "Chart Review" action. Another column has been added to the far right of the Orders tab labeled "Chart" to display the user's initials who reviewed the order via this new action.
 
 ### Consults Enhancements
 
 -   The menu of actions for service update users on the Consults tab of CPRS will be updated to match the text and mnemonics used in the Consults package options; this includes the addition of two more actions to the CPRS menu: Results Display and Significant Findings.
-
 -   The default urgency for consult and procedure orders will now always be Routine; the Order Dialog file entries GMRCOR CONSULT and GMRCOR REQUEST are updated in this patch to accomplish this.
-
 -   A new prompt for "Service" has been added to the Procedures ordering dialog. If only one service is available to select from, that value will be stuffed in and the user will not be prompted.
-
 -   A new free text field has been added to the Consult ordering dialog to support Consult Types. This field will only be presented while placing orders using one of these quick orders, and this text will now be sent to the Consults package as part of the order. Any existing Consult Type quick orders may now be edited via the Order Menu Management options to populate this new field with the desired text.
 
 ### GUI Enhancements
@@ -2933,29 +2886,21 @@ New functionality in v11
 Ordering
 
 -   Event delayed (admit, transfer, discharge) orders may now be entered. This is accomplished by selecting the event for which you wish to enter delayed orders from the Order Sheet list box on the left upper side of the orders screen. You may also use the items in the Order Sheets list to view event delayed orders that have already been written.
-
 -   A new parameter will allow you to suppress the display of mnemonics on ordering menus. The parameter is ORWDXM ORDER MENU STYLE. The default is to show the mnemonics.
 
 Graphs
 
 -   Zoom feature added to Lab Worksheet.
-
 -   Graphs on worksheet and vitals will retain a zoomed date range when viewing other results in the list.
-
 -   Points are graphed so that they do not fit exactly against an axis - the margin is slightly inflated.
-
 -   Date/Time axis can display a label on increments down to one minute.
-
 -   Date range selection added to Lab tab and the Vitals form.
-
 -   Right click on graphs have actions for Values, 3D, Enable Zoom, Zoom Back, Copy, and Details.
-
 -   Details are enabled when right clicking on a point on the graph or the graph legend. Details on the legend provide a detailed report for all test values within the date range of the graph. Details on a point provide all results (any vitals or lab results) for that particular day. Details are also displayed by simply clicking on the legend or on any point on the graph.
 
 Printing
 
 -   Added printing of orders on signature/release in cases where the orders are not auto-printed.
-
 -   The File \| Print actions on the Orders tab has also been implemented.
 
 GUI Enhancements, cont'd
@@ -2971,53 +2916,35 @@ Reports
 CPRSUpdate
 
 -   CPRSUpdate has been recompiled with Delphi 4 (as has CPRSChart). This should allow the registry to be opened read-only and accessed with a lower level of privilege. The latest CPRSUpdate.exe is available in the Salt Lake City BETA directory.
-
 -   Note that when the updates run, the current version of CPRSChart (v10) will still be accessing the registry in read/write mode. So you may not see a difference in behavior until this version (v11) needs to be updated.
 
 Patch 10 v11 bug fixes
 
 -   Changed Allergy ordering dialog so that the site's top ten symptoms are presented at the top of the symptoms list, as defined in the Allergy Site Parameters file (120.84).
-
 -   Changed main form so that the CWAD indicator is updated when an allergy is added to a patient who did not previously have one.
-
 -   Corrected a problem in the Lab order dialog where, if a personal quick order was selected and the ACCEPT button clicked, the user was not correctly returned to the list of quick orders, but was instead left down the list at the orderable item contained in that quick order. (WPB-1198-31615)
-
 -   Corrected a sporadic access violation on initialization of the lab order dialog when certain tests were selected.
-
 -   Corrected some miscellaneous filtering problems on the Problems tab.
 
 GUI Enhancements, cont'd
 
 -   Corrected a problem on the Radiology order dialog related to patient status and ordering category not matching (inpatient/outpatient). This was partially fixed in v10, but the selected location was not being correctly recorded in the order. (PUG-1298-52434, SHE-0299-50666)
-
 -   Corrected a problem in the Consults and Procedures dialogs that was causing the dialogs to display partially off the right side of the screen when the user was in 640x480 mode. This error was introduced by v10b when the 'Reason for Request' field was widened to prevent incorrect word wrap.
-
 -   The forms have been rearranged to maximize the size of the 'Reason' box, the treeview has been hidden, and a button has been added to make the treeview drop down and be usable if the button is clicked.(PUG-0299-51180, LOM-0299-60729)
-
 -   Fixed problem on Lab results list on cover sheet, where orders with non-integer IENs (e.g., 123456.7;1) would not display results when clicked.
-
 -   Changed "OTHER" selection in Lab Collection Time list to "FUTURE". Also added a check to prevent ordering 'LAB COLLECT' times for INPATIENTS more than one week in the future. This is now consistent with List Manager. (DAY-0299-40917)
-
 -   Corrected a problem on the reports tab with the processing of Imaging notifications. Recent changes to the upper list box contents caused the previous functionality to stop working.
-
 -   Added code to Notes tab to ensure the list of consults on the Consults tab gets updated on signature of a progress note completing a consult.
-
 -   Corrected Problem List tab so that the check for a clinical user is determined by the presence of the ORES or ORELSE keys, rather than by the absence of the OREMAS key.
-
 -   The Consults and Procedures ordering dialogs now check for the presence of the variables GMRCNOAT and GMRCNOPD, and disable the Attention and Provisional Diagnosis entry boxes if these variables are greater than zero, as defined in the entry action of the ordering menu. This setting affects all quick orders on the menu where it is set.
-
 -   Added code to Notes tab to ensure the service connected encounter questions are answered when TIU indicates this requirement. The same code was also added to the Consults tab. (HUN-0199-22223)
 
 GUI Enhancements, cont'd
 
 -   Added code to the notes tab so all titles marked by TIU to prompt for workload will provide a prompt before signing. The same code was also added to the Consults tab. (SHE-0199-51122, HIN-1198-40606, HIN-1198-40606)
-
 -   Added code disabling encounters for future dates. (HUN-0199-20762)
-
 -   The orders tab should now display orders the same as list manager. Previously, there were differences in the way the two dealt with context hours and filtered outpatient meds while the patient was an inpatient.
-
 -   There should no longer be a server error when long text strings are pasted into the progress notes title box.
-
 -   Renewing medications now checks to make sure the provider is authorized to write med orders.
 
 Patch 10 v10
@@ -3045,17 +2972,13 @@ The entry actions for menus and quick orders are now parsed to see if values hav
 Ordering
 
 -   The actions on the meds tab have now been implemented.
-
 -   Mnemonics will now display on the ordering menus.
-
 -   An ordering dialog for Allergies has been added.
 
 Consults
 
 -   Added Edit/Resubmit followup action for alerts regarding cancelled Consults and Procedures.
-
 -   Changed Enabled property of Consults tab ordering buttons/menus to reflect the state of [ORWOR WRITE ORDERS LIST] for the user. If User. No Ordering is true, then all are disabled. Otherwise, they correspond to the presence or absence of the particular ordering dialog for the user. The Add New Orders menu will still allow ordering, if present.
-
 -   Added combo box for selection of Consult service to Order Dialog, Forward, View by Service, Custom List, and Edit/Resubmit actions. Changed display of consults list to match the new format used in List Manager.
 
 GUI Enhancements, cont'd
@@ -3063,103 +2986,64 @@ GUI Enhancements, cont'd
 Printing
 
 -   Printing has been enabled for the Reports Tab. This functionality will allow printing of reports using printer devices defined on Server.
-
 -   Printing has been enabled for the Labs Tab. This functionality will allow printing of Lab reports using printer devices defined on Server. Some of the reports on this tab contain window graphics and cannot be printed to printers on the server. These are the Worksheet, Graph, and Most Recent displays.
-
 -   The device selection window, used in the Consults, Notes, Labs and Reports tabs, now does similar screening on devices found in Kernel s Device Handler. Screening now includes:
-
 -   'P'rinter subtypes
-
 -   Device Types of HG and TRM allowed
-
 -   Queuing allowed
-
 -   Out of Service
-
 -   Prohibited times
-
 -   Security checks
 
 General
 
 -   Added context-sensitive help at the tab level.
-
 -   Added double-click event handler to notifications list box, to allow processing of a single alert by double-clicking.
-
 -   The Lab Status report has been added to the Labs Tab.
-
 -   The user is now warned when a deceased patient is selected.
 
 Patch 10 v10 BUG FIXES
 
 -   Corrected a problem where notes created for patients who had been interward-transferred were still picking up and storing the original ward as the note location. (STX-1098-71924)
-
 -   Added display of Admission and Discharge dates to Discharge Summary tab.(PUG-0998-51778, and test site call request)
-
 -   Widened Consults and Procedures order dialogs slightly to accommodate the full width of List Manager-entered text in the Reason for Request memo box and prevent unwanted word wrap. (PUG-1198-52546)
 
 GUI Enhancements, cont'd
 
 -   Corrected a problem with the Collection Times box on the Lab Order Dialog screen. If a quick order left that field blank, the combo box was initializing as empty until a collection type was reselected. (DAY-1198-42472) Also changed the label to read "Collection Date/Time", per Washington request on test site call of 12/2/98.
-
 -   Corrected a problem in all 5 of the Consults service Treeviews, where if a grouper service was added under a grouper service, but also appeared elsewhere in the tree, all of its children would appear doubled in both places. (PUG-0798-51923)
-
 -   Fixed an error at ORDERS+4\^ORCXPND1 that could only have been occurring in the processing of Site-flagged or Order-flagged Results alerts or displaying lab results from the cover sheet. (DAY-1198-42111)
-
 -   Changed logic for retrieval of orderable procedures to check for both an inactivation date in the Orderable Items file and a DISABLED entry in the Protocol file, and whether a Consults service is defined that can perform each procedure. Only procedures that are active in all three places will be displayed for selection. (HUN-0898-20422, PAL-1098-61762)
-
 -   Changed alert processing logic so that unsigned order alerts are deleted when there are no more unsigned orders for the patient. (SHE-1098-52598)
-
 -   Corrected error on Problem List tab, where the current Problem List User Parameters were getting set based on Encounter.Provider instead of User.DUZ. (PUG-0798-51948)
-
 -   On patient selection screen, if any alerts were selected and the 'Process Info' button clicked, the selected alerts would be processed in addition to the informational alerts. Corrected.
-
 -   Changed color of 'Previous Tests' box on Radiology dialog to display correctly regardless of the user's color scheme.
-
 -   Changed Radiology order dialog to preserve the contents of the REASON box both when a different procedure is selected and on accepting an order and reinitializing the dialog. (WPB-1298-30758)
-
 -   Corrected M error in Radiology order dialog related to retrieval of APPROVAL requirement for a radiology procedure. (POP-1298-41460)
 
 GUI Enhancements, cont'd
 
 -   Added code to check for a zero Display Group value on clicking the Imaging Type selection box. If zero, procedure exits without error. This should prevent an intermittent error on some systems reported by Denver and Huntington. (DEN-1198-51849, HUN-1298-20562)
-
 -   Corrected a problem on the Lab order dialog where Collection Sample was not being correctly prompted when only one collection sample was defined, even though it was not a UNIQUE collection sample. (IND-1298-41218)
-
 -   Corrected a problem on the Lab order dialog where selecting same orderable item twice in sequence failed to populate, allow selection from, or enable the collection sample or specimen combo boxes. (PRO-1298-10967)
-
 -   Corrected the radiology order dialog so that text in the 'History and Reason for Exam' box automatically wraps at 74 characters.
-
 -   Added keyboard control-key shortcuts to the Consults tab for 'Significant Findings' and 'Administrative Complete' actions. Changed several other existing shortcuts on the 'Tracking' menu to eliminate duplicates already present.
-
 -   Corrected problem on Radiology order dialog where an inpatient procedure could not be ordered for a current outpatient, and vice versa. Added a new prompt for Ordering Location in these circumstances. (PUG-1298-52434)
-
 -   Corrected a problem in the processing of TIU notifications on the Consults tab, where no consult was found to be associated with the alert. (SHE-0199-50142)
-
 -   Corrected the order that vitals are entered to provide consistency with the list manager interface. (PUG-1098-52654)
-
 -   Corrected an error with the "Add to PL." check box, on the diagnoses page of the encounter form, not remaining checked for the associated item. (WPB-1298-30757)
-
 -   Corrected an error with the problem list items, on the diagnoses page of the encounter form, not being reloaded when the patient changes and the clinic does not. (WPB-1198-31958)
-
 -   The problem list items on the diagnoses page of the encounter form have been moved to the top of the list. (WPB-1198-31749)
-
 -   When displaying the Lab cumulative, a limitation has been imposed because of restrictions in previous versions of Delphi. This limitation is no longer necessary, and has been removed. (PUG-1298-50885)
 
 GUI Enhancements, cont'd
 
 -   When a nurse releases orders, electronic signature is now prompted.
-
 -   When a med student enters an order, the notifications should now fire.
-
 -   The disabled flag is now checked for each quick order, ordering menu, and order dialog.
-
 -   Orders that are only a few pixels high (and thus unreadable) should no longer appear on the Orders tab.
-
 -   An order may no longer be verified twice.
-
 -   The IV Fluids dialog should no longer inappropriately reject some infusion rates.
-
 -   The values for routing and refills in an outpatient med quick order should no longer be overwritten.
 
 Patch 10 v10b
@@ -3167,37 +3051,25 @@ Patch 10 v10b
 The following changes are in the 10b executable:
 
 -   Corrected hanging of Consults and Procedures order dialogs when information was missing and the Accept button was clicked. Error message now correctly displays ON TOP of the dialog instead of behind it.
-
 -   Corrected extreme slowness problem on building of consults service tree for large sites. Additional speed should be achievable by defining the services hierarchically in file 123.5 rather than placing 300 services under ALL SERVICES.
-
 -   Corrected cover sheet so that Allergy list and Postings list are correctly updated when a new allergy is entered and the order signed, either from the Review screen or from the Orders tab menus. CWAD indicator updating will be included in v11. (ALB-0199-51747)
-
 -   Corrected Problems tab so that the initially highlighted problem when displaying the tab is actually selected and appropriate menus are active. (ALB-0199-51747)
-
 -   Corrected Problems tab so that (u)nverified status indicator is visible to ALL users, but only clinical users are still allowed to actually verify the problem. (PUG-0798-51948)
 
 GUI Enhancements, cont'd
 
 -   Corrected bug in the grid component on the Problems tab that was preventing filtering from working correctly. View/Filters should now correctly select problems by clinic, service, provider, and inpatient/outpatient status. (WPB-1098-30159)
-
 -   Changed Problems tab so that ENTERED BY will be set to the current user, and RECORDED BY will be set to the selected encounter provider. Previously, ENTERED BY was being set to the selected encounter provider.
-
 -   Changed behavior of memo boxes on Notes, Consults, and Discharge Summary tabs to allow use of the tab key within the note.
 
 Patch 10v9
 
 -   Order Checking has been implemented.
-
 -   Order sets are now supported when selected from an orders menu. When an order set is selected, the system iterates through each order, as with list manager. If there is user interaction required, a dialog is displayed. Otherwise, the order is simply placed. At this point in time, if the order set contains a menu, the menu is skipped. There needs to be a considerable amount of additional work if menus are to be accessed from within an order set.
-
 -   New orders now always go to the top of the Orders screen when placed. At the point they are signed, they get reshuffled into their various categories. Since new orders now always appear at the top of the orders list, the small box at the bottom of the ordering menu has been removed. It was only there to provide feedback that an order was actually placed when there was no interactive dialog. This was problematic for order sets, so it seemed better to consistently have the feedback on the orders sheet itself.
-
 -   The Lab ordering dialog has been enhanced to include a prompt for collection type, including Immediate Collect, if available at the ordering location. Collection sample and specimen selection has also been enhanced to include "Other" in appropriate circumstances.
-
 -   The Problem List tab now includes the display of active comments for any problems, where they are present.
-
 -   The encounter button on the progress notes tab is enabled for outpatient clinics. This enabled capture of encounters for inpatients assigned to an outpatient clinic.
-
 -   Problem list items are now selectable from the diagnoses tab on the encounter form.
 
 GUI Enhancements, cont'd
@@ -3205,93 +3077,57 @@ GUI Enhancements, cont'd
 Bug Fixes
 
 -   Corrected Problem List tab so that current category of problems is redisplayed when switching to another tab and back again. (WPB-0998-31907)
-
 -   Corrected another problem list error of original provider being recorded as the source of comment actions. (PUG-0998-52376)
-
 -   Added display of active comments to Problems tab for problems that have had comments added. (WPB-0398-31730)
-
 -   Wrapped text in 'Reason for Request' field of Consults and Procedures order dialogs at 74 characters. (WPB-1098-30158, WPB-1098-30857)
-
 -   Corrected problem where clerks were able to verify unverified problems under certain circumstances. (PUG-0998-52377)
-
 -   Fixed a problem where a value of '0' was being passed in to a function that returned information about a Consult IEN. UNDEF was the result. (LIT-0998-72059)
-
 -   Fixed a situation where a clinic's list of problem categories was not being returned on entry of new encounter information. (HUN-0898-20848)
-
 -   Corrected a problem where the ICD9 code was not being correctly returned/stored when a problem was selected from a user's common problem list. (WPB-1098-30709)
-
 -   Corrected tab order on the "Receive a Consult" screen. (WPB-1098-30856)
-
 -   Added the selection of multiple statuses to the consults list by status and custom list, both on the View menu. (PUG-1098-52071)
-
 -   Added logic to the Lab Ordering Dialog to respect the location's defined value for parameter "LR DEFAULT TYPE QUICK" when first opening the dialog. (IND-1098-42170)
-
 -   The value of POS was showing up in lab results displays. This was happening after a test was selected that had a Print Code associated with it. (PUG-0998-51770)
-
 -   Corrected updating to Most Recent lab report (WPB-0798-30392)
-
 -   Properly displays Most Recent and All Tests lab reports when chem and micro samples have the same exact collection time (WPB-0898-31674, BAY-1098-31866)
 
 GUI Enhancements, cont'd
 
 -   Corrected passing a zero as a provider when a diagnosis was selected from the encounter form, using the "other button (EKH-1098-41755, DAY-0898-41009, CIN-0898-40916, SHE-0798-52204).
-
 -   A provider is no longer required to enter vitals (SHE-0698-51955).
 
 Previous GUI Patches
 
 -   The ability to enter Skin Tests, Immunizations, Health Factors, Patient Education, and Exams from the Encounter Form while entering a new Progress Note has been added.
-
 -   The Reports Tab has been enhanced to include:
-
 -   Summary of Patient Procedures report from the Medicine package.
-
 -   The same Anatomic Path report that is used in the ListMan interface.
-
 -   Daily Order Summary
-
 -   Order Summary for a Date Range
-
 -   Chart Copy Summary
-
 -   Outpatient RX Profile
-
 -   It is now possible to process notifications that have follow-up actions. Notifications are selected from the Patient Selection window. Pressing the Process button will navigate the user to the proper location in the chart where action on the selected notification may be taken. The notification being processed is displayed in the status bar at the bottom. The Next button, displayed alongside it, will take the user to the next selected notification. While processing a notification, all the other chart tabs are active and may be used.
-
 -   Order dialogs for Consults, Diet, IV, Labs, Inpatient and Outpatient Meds, Procedures, Radiology, Text Only, and Vitals are available.
-
 -   Vitals can also be ordered from the Cover Sheet.
-
 -   The Consults, Notes, and Discharge Summary Tabs have been enhanced to include "Identify Additional Signers."
-
 -   The cover sheet can now load some of the boxes in the background. This is controlled by the parameter, ORWOR COVER RETRIEVAL. The exported behavior is to load Clinical Reminders, Lab Tests, and Appointments in the background. This can be modified locally.
 
 GUI Enhancements, cont'd
 
 -   The GUI will timeout and close if there is no mouse or keyboard activity for DTIME. A parameter is available for setting the timeout used by the GUI. This timeout will not affect any applications except CPRSChart.exe. The parameter is named ORWOR TIMEOUT CHART. (It also needs to be edited using General Parameter Tools). It can be set at the site level or for individual users.
-
 -   Locking the patient when ordering has now been implemented. During the time that you have the lock on the patient, the word 'LOCK' is displayed in the status bar.
-
 -   The Discharge Summary tab is now implemented, and is very similar to the current Notes tab. Only one summary is allowed per admission. Incomplete summaries can be edited with appropriate user privileges. The attending is the required cosigner in all cases. Entry by a transcriptionist is not yet supported.
-
 -   Quick Orders are now available. An Add New Orders choice is available from the Write Orders box; this selection presents a screen of quick orders similar to the List Manager (and OE/RR 2.5) Add Order screen. Order menus like those used in the List Manager interface may now be used from the GUI. These menus are displayed in a navigation window, allowing the user to quickly traverse the menus. To use these menus from the GUI they need to be added so that they appear in the Write Orders listbox. This can be done by adding the menu(s) to the parameter, ORWOR WRITE ORDERS LIST, the same way an ordering dialog would be added. Alternatively, you can use a -new- parameter, ORWDX WRITE ORDERS LIST. This is a single valued parameter that points to entries of type MENU in the ORDER DIALOG file. The selected menu will be used to create the items in the listbox.
-
 -   The primary care team, primary care physician, and attending physician (in the case of inpatients) are now displayed in the header bar. Clicking on the area will display phone and pager numbers. There is also a place in the header bar for an indicator that CIRN data is available. This is disabled at present.
-
 -   When pasting into a progress note, the paste is now intercepted so that formatting information (font changes, bolding, etc.), which can't be stored on the M server, doesn't appear in the progress note.
-
 -   When a TIU document is deleted by a user authorized to do so, a reason for deletion is prompted if the progress note has been signed.
-
 -   Users without the provider key can now be selected as the encounter provider so that they can fill out encounter data. The provider key isn't checked until the user starts to place orders.
 
 GUI Enhancements, cont'd
 
 -   The Problem List tab now requires entry of encounter information, if not already present, before any entry/update action can be taken on a problem.
-
 -   A new menu, Options, appears when the Orders tab is selected. The items on this menu manage quick orders. A user may, during the course of most ordering dialogs, choose to save the responses they have entered as a quick order. The quick orders a user has saved will then appear at the top of the initial listbox the next time the user clicks that dialog in the "Write Orders" list.
-
 -   Order sets can be set up for the GUI now.
-
 -   The ability to add an Encounter diagnosis to the Problem List is available now.
 
 ## Released Patches
@@ -3782,7 +3618,6 @@ CONSULT REQUEST NUMBER: 1455
 CONSULTS Text
 
 -   File should be ASCII with width no greater than 80 columns.
-
 -   Use "@@@" for “BLANKS” (word or phrase in dictation that isn’t understood), where \<Message Header Signal\> and \<Begin Text Signal\> will appear as you’ve defined them in your Upload Parameters for your site (e.g., \$HDR and \$TXT, etc.).
 
 3\. Use the *Create Document Definitions* option [TIUFC CREATE DDEFS MGR], under the IRM Maintenance Menu option [TIU IRM MAINTENANCE MENU], to construct a new document definition sub-tree for Consults that looks something like this:
@@ -3934,27 +3769,18 @@ Local Area Networks
 For simplicity of support, facilities should consider purchasing the same type of hardware used for the *VISTA* servers. These systems would both run the recommended server NOS (network operating system) of Microsoft Windows NT. General features to be considered include:
 
 -   Single processor system with capacity to expand to multi-processor
-
 -   RAID magnetic disk drive configurations for critical applications
-
 -   Backup device
-
 -   Fast disk controller (SCSI-2)
-
 -   Uninterruptible power supply (UPS) with shutdown software
-
 -   Modems for RAS and system access by support personnel
 
 Server software
 
 -   Microsoft Windows NT 3.5x or 4.x. Microsoft Windows NT has been selected as the recommended server NOS (network operating system) for non- *VISTA* applications within VHA
-
 -   Electronic mail: Microsoft Exchange Enterprise Version.
-
 -   *VISTA* Request Broker on *VISTA* servers
-
 -   CD ROM resources: Network versions of medical reference sources such as Physicians Data Reference
-
 -   Optional workstation management software, e.g. SMS
 
 LAN naming conventions
