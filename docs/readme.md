@@ -1,7 +1,7 @@
-### CPRS Docs
+### Fileman Docs
 
 __Path__  
-fm22_2/md/[doc]/index.md
+fileman/[doc]
 1. developer
 2. entity_utility
 3. key_index
@@ -10,16 +10,13 @@ fm22_2/md/[doc]/index.md
 6. user
 7. user-advanced
 
-
-
 __Source__  
 * https://www.va.gov/vdl
 * https://www.va.gov/vdl/application.asp?appid=61  
 
-
 __Conversion__  
 1. VA VDL [download] docx
-2. docx: clean1 (standard title, delete rev history)
+2. docx: clean1 (standard title, remove rev history)
 3. docx [upload] gdoc [clean2] (toc fonts:Arial)
 4. gdoc [saveAs] html
 5. gdoc [saveAs] docx
