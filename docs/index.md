@@ -1,15 +1,6 @@
 ### CPRS Docs
 
 __Path__  
-cprs/md/[doc]/index.md
-1. install
-2. setup
-3. starting-LM
-4. technical
-5. technical-LM
-6. user
-7. user-RO
-
 fm22_2/md/[doc]/index.md
 1. developer
 2. entity_utility
