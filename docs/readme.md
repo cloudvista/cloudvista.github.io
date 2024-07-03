@@ -1,12 +1,14 @@
 ### VistA docs
 
-__cprs__  
+__Paths__
+
+__docs/cprs__  
 - install
 - setup
 - technical
 - user
 
-__fileman__
+__docs/fileman__
 - developer
 - screenman
 - technical
