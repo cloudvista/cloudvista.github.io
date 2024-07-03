@@ -1,14 +1,14 @@
-### Documentation
+### VistA/CPRS Documentation
 
 
 
-__CPRS__ (Graphical User Interface)  
+__CPRS__ (User Interface)  
 [user guide](cprs/user/)  
 [technical guide](cprs/technical)  
 [installation guide](cprs/install/)  
 [setup guide](cprs/setup/)  
 
-__Fileman__ (Database Management System)  
+__VISTA__ (Application Database)  
 [user guide](fileman/user/)  
 [advanced user guide](fileman/user-advanced/)  
 [developer guide](fileman/developer)  
