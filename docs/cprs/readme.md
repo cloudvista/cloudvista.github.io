@@ -1,17 +1,12 @@
-### VistA docs
+[
+### Fileman Docs
 
-__cprs__  
+__Path__  
+cprs/[doc]
 - install
 - setup
 - technical
 - user
-
-__fileman__
-- developer
-- screenman
-- technical
-- user
-- user-advanced
 
 
 __Source__  
@@ -21,8 +16,4 @@ __Source__
 __Conversion__  
 1. VA VDL [download] docx
 2. docx: clean1 (standard title, remove rev history)
-3. docx [upload] gdoc [clean2] (toc fonts:Arial)
-4. gdoc [saveAs] html
-5. gdoc [saveAs] docx
-6. docx [writeage:saveAs] md
-7. md [vscode] clean3 (find/replace)
+3. docx [saveAs] html
