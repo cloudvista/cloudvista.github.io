@@ -1,6 +1,6 @@
 ### Documentation
 
-gov/vdl)  
+
 
 __CPRS__ (Graphical User Interface)  
 [user guide](cprs/user/)  
@@ -16,7 +16,7 @@ __Fileman__ (Database Management System)
 [technical manual](fileman/technical/)  
 
 
-__Source__: [VA Documentation Library (VDL)](https://www.va.
+__Source__: [VA Documentation Library (VDL)](https://www.va.gov/vdl)
 
 __Conversion__  
 1- VDL [download] docx  
