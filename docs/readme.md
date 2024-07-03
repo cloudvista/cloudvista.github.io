@@ -1,19 +1,18 @@
-### VistA docs
+### VistA documentation
 
-__Paths__
 
-__docs/cprs__  
-- install
-- setup
-- technical
-- user
+#### User Interface (CPRS)
+[user guide](cprs/user/)  
+[installation guide](cprs/install/)  
+[setup guide](cprs/setup/)  
+[technical guide](cprs/technical)
 
-__docs/fileman__
-- developer
-- screenman
-- technical
-- user
-- user-advanced
+#### Database Management (File Manager)
+[developer guide](fileman/developer)  
+[screen manager](fileman/screenman)  
+[technical manual](fileman/technical/)  
+[user guide](fileman/user/)
+[advanced user guide](fileman/user-advanced/)
 
 
 __Source__  
