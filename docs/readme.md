@@ -1,6 +1,13 @@
-### Fileman Docs
+### VistA docs
 
-__Path__  
+__CPRS__  
+cprs/[doc]
+1. install
+2. setup
+3. technical
+4. user
+
+__Fileman__
 fileman/[doc]
 1. developer
 2. entity_utility
@@ -9,6 +16,7 @@ fileman/[doc]
 5. technical
 6. user
 7. user-advanced
+
 
 __Source__  
 * https://www.va.gov/vdl
