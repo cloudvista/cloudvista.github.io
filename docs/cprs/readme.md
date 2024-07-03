@@ -1,6 +1,6 @@
 ### CPRS Docs
 
-Path:  
+__Path__  
 ```text
 cprs/[doc]  
    install 
@@ -8,4 +8,3 @@ cprs/[doc]
    technical
    user 
 ```
-
