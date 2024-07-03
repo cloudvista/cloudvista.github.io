@@ -1,21 +1,17 @@
 ### VistA docs
 
-__CPRS__  
-cprs/[doc]
-1. install
-2. setup
-3. technical
-4. user
+__cprs__  
+- install
+- setup
+- technical
+- user
 
-__Fileman__
-fileman/[doc]
-1. developer
-2. entity_utility
-3. key_index
-4. screenman
-5. technical
-6. user
-7. user-advanced
+__fileman__
+- developer
+- screenman
+- technical
+- user
+- user-advanced
 
 
 __Source__  
