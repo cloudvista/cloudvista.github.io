@@ -1,19 +1,18 @@
-### VistA documentation
+### Documentation
 
 
 #### User Interface (CPRS)
 [user guide](cprs/user/)  
+[technical guide](cprs/technical)
 [installation guide](cprs/install/)  
 [setup guide](cprs/setup/)  
-[technical guide](cprs/technical)
 
-#### Database Management (File Manager)
+#### Database (File Manager)
+[user guide](fileman/user/)
+[advanced user guide](fileman/user-advanced/)
 [developer guide](fileman/developer)  
 [screen manager](fileman/screenman)  
 [technical manual](fileman/technical/)  
-[user guide](fileman/user/)
-[advanced user guide](fileman/user-advanced/)
-
 
 __Source__  
 * https://www.va.gov/vdl
