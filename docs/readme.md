@@ -1,13 +1,13 @@
 ### Documentation
 
 
-__User Interface (CPRS)__  
+__CPRS__ (User Interface)  
 .  [user guide](cprs/user/)  
 .  [technical guide](cprs/technical)
 .  [installation guide](cprs/install/)  
 .  [setup guide](cprs/setup/)  
 
-__Database (File Manager)__  
+__Fileman__ (Database Manager)  
 .  [user guide](fileman/user/)
 .  [advanced user guide](fileman/user-advanced/)
 .  [developer guide](fileman/developer)  
